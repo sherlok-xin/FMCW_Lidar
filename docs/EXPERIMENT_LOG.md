@@ -7,7 +7,7 @@ This log records experiments that can be inferred from repository artifacts. It 
 ## Provenance rules for recovered experiments
 
 - Artifact modification times are approximate evidence of when outputs were written, not guaranteed execution timestamps.
-- The repository is not under Git, so “code version” below is a SHA-256 snapshot of the currently present script. It is **UNKNOWN** whether every July 2026 output was generated from byte-identical current code.
+- At the 2026-09-20 reconstruction the repository was not under Git. Git is now initialized on `main`; E11's tested script/tests are in `e62848f787dcfd1bb2f91536ca23e6a50580a77b`. SHA-256 remains the authoritative identity for older artifacts and dirty working-tree runs.
 - Pseudo-label results are diagnostics, not synchronized ground truth.
 - Internal tracker metrics are not UAV accuracy metrics.
 
@@ -26,6 +26,61 @@ This log records experiments that can be inferred from repository artifacts. It 
 | `target_track_without_initialize_and_grid.py` | `5bd6b74bb19a532b3a66660328871ca4b7fbfc998595d134be365f9557c5643b` |
 | `scripts/build_gt_benchmark_v0.py` | `508b0264485109f75c754f05e070d4a8e1e1244569a4b9f9bd16f0c3605493d0` |
 | `scripts/calibration_closure.py` | `111e59a6a66a8336d67d42ca6ea68c2988d1cd6b159bac1c98c50900ebd60c55` |
+| `scripts/sparse_uav_mvp.py` | `2ff01d1b0e3906968b99886c4c793fe3e84c5628d78c3a99e3f9cf0a2bd3d3dc` |
+
+## E11 — Frozen sparse-UAV DEV benchmark and Doppler ablation
+
+**Run date:** 2026-09-22
+
+**Objective:** Freeze closure-confirmed cross-flight LiDAR trajectories as development-only silver labels, audit preprocessing survival, reproduce a Khosravi-style temporal detector, and isolate Doppler value.
+
+**Status:** **TESTED / VERIFIED RESULT on DEV silver labels; not final paper GT.**
+
+**Code/version:** `scripts/sparse_uav_mvp.py`, hash above.
+
+**Git snapshot:** `e62848f787dcfd1bb2f91536ca23e6a50580a77b` contains the tested script/tests; this experiment-log/report update remained uncommitted at handoff.
+
+**Inputs:** five closure-passing cross sequences, closure evidence trajectories, raw bags, and existing raw-voxel/current-stage caches.
+**Outputs:** `FMCW_Sparse_UAV_MVP.md` and `results/research_dev_v0/`.
+
+### Commands and environment
+
+```bash
+python3 scripts/sparse_uav_mvp.py freeze
+python3 scripts/sparse_uav_mvp.py audit
+python3 scripts/sparse_uav_mvp.py benchmark
+python3 -m pytest -q tests/test_sparse_uav_mvp.py
+```
+
+Python 3.10; NumPy 2.2.6; SciPy 1.15.3; scikit-learn 1.7.2. Three targeted tests passed.
+
+### Frozen data and configuration
+
+- 80 observed, non-interpolated LiDAR evidence frames in five 100/200/300 m cross-flight sequences.
+- Labels SHA-256 `37c4452a68e544d75034389f82bbaf1e868903bb2225b395b9d66d0cdd48b8db`.
+- Protocol SHA-256 `b8575fc94efa1b33624a0ac92f1e464c2e58e1955817ff125c7154d176490b67`.
+- Input addendum SHA-256 `2edf3d49dae537fe4b8df1ea8065944bcf0941c4b186a090d9cf09fdefb0f9ee`.
+- The addendum applies the unchanged 10 m height threshold after provisional 6-DoF gravity alignment. The uncorrected pilot is preserved.
+
+### Results
+
+- Intensity retained 1,877/1,883 target-neighborhood raw points. Raw LiDAR `z>10` retained 0/1,877; leveled `z>10` retained 1,877/1,877.
+- Current baseline detected 0/80 silver frames.
+- No-Doppler temporal baseline detected 41/80 (51.25%) with 1,914 false candidates on labeled positive frames and 2.10% candidate precision.
+- Fixed and observability-aware Doppler each detected 40/80. Fixed Doppler had 1,817 false candidates; aware Doppler had 1,840. No independent recall gain was observed.
+- Removing temporal consistency increased recall to 61.25% with essentially unchanged 2.10% candidate precision; temporal consistency itself was not shown to improve the detector.
+- At 300 m, minPts 1/2/3 recall was 0.90/0.30/0.00; target support had median 5 raw points and 1.5 occupied 1 m voxels.
+
+### Interpretation and decision
+
+The original height filter is in the wrong coordinate frame for the February data. The Khosravi-style pipeline improves recall over the current baseline, but remains far too cluttered for an operational detector and does not establish a temporal-consistency benefit. Doppler provides no verified independent gain in this cross-flight-only DEV set. A controlled TBD study is justified at 300 m after independent labels and negative scenes exist.
+
+### Limitations
+
+- Labels are LiDAR-derived and selection-conditioned; localization error is self-consistency, not independent accuracy.
+- Precision is measured only on labeled positive frames because negative-scene labels are absent.
+- The gravity transform is provisional and shares calibration-closure provenance with label selection.
+- This is a project adaptation, not an exact parameter reproduction of Khosravi et al. 2026.
 
 ## E10 — Independent LiDAR trajectory search and calibration closure
 

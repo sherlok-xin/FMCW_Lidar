@@ -13,6 +13,9 @@ The ordering below reflects dependency and scientific value. Algorithm novelty i
 - Independent full-space LiDAR trajectory search and shared-extrinsic closure: **IMPLEMENTED and TESTED**. Five cross sequences pass provisional closure; pitch near -6.5° is stable across leave-one-out fits.
 - Remaining P0 blocker: resolve per-package time aliases/boundary solutions and validate the provisional 6-DoF pose against an independent common time event or surveyed target. Do not promote the provisional CSV coordinates to Benchmark v1 before this gate.
 - Exclude `300m_roundtrip_5`, `300m_roundtrip_13`, and `300m_cross_5` from quantitative algorithm ranking; use `300m_roundtrip_10` only as a spatial diagnostic until its Doppler inconsistency is resolved.
+- `research_dev_v0` is now frozen and tested on five cross sequences. Keep it development-only: the labels are LiDAR-derived silver trajectories and may not be used for final paper claims.
+- Before any parameter revision, add independently labeled negative/static-clutter frames and at least one high-radial-observability longitudinal sequence. The current positive-frame precision and eta analysis cannot validate operational false alarms or Doppler dependence.
+- Preserve the current no-gain Doppler result. Do not retune Doppler gates on these 80 frames and then report the same set as held-out evidence.
 
 ### 1. Put the project under version control
 

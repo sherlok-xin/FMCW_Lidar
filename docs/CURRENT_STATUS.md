@@ -3,11 +3,19 @@
 Status date: **2026-09-22**  
 Basis: repository-wide source and artifact inspection; no chat-history claims are treated as evidence.
 
+Git is now initialized on branch `main` (unlike the 2026-09-20 audit). The tested sparse-MVP script and tests are present in snapshot `e62848f787dcfd1bb2f91536ca23e6a50580a77b`; generated `results/` artifacts are ignored, so their run-manifest hashes remain required for provenance.
+
 ## Executive status
 
 The repository contains a substantial rule-based FMCW-LiDAR processing and tracking prototype, several ROS/offline variants, and a useful body of retrospective data archaeology. It does **not** yet contain the ground truth, provenance, calibration, evaluation protocol, or controlled comparisons required to make reliable UAV detection/tracking accuracy claims.
 
 The strongest current outcome is diagnostic rather than algorithmic: two successful motion sequences show that compactness, spatial isolation, temporal persistence, and agreement between Doppler and range change are more transferable cues than raw Doppler magnitude or a stable single-frame shape. The existing FMT benchmark does not demonstrate an improvement over the baseline.
+
+### 2026-09-22 sparse-UAV DEV benchmark update
+
+`research_dev_v0` is frozen with 80 non-interpolated **DEV/silver** observations from five closure-passing cross-flight sequences. It is a method-development set, not final paper GT. The machine-readable labels, protocol, stage audit, A–D results, full ablations, observability strata, and plots are in `results/research_dev_v0/`; the report is `FMCW_Sparse_UAV_MVP.md`.
+
+The original LiDAR-frame `z>10` stage removes all 1,877 intensity-surviving target-neighborhood points. The same threshold after provisional 6-DoF gravity alignment retains all 1,877. The current baseline therefore has 0/80 DEV recall. The Khosravi-style no-Doppler baseline reaches 41/80, but candidate precision on positive frames is only 2.10%. Temporal consistency is not independently beneficial in the frozen ablation, and neither fixed nor observability-aware Doppler improves recall. At 300 m, minPts sensitivity (0.90/0.30/0.00 recall for 1/2/3) supports studying pre-cluster temporal evidence, subject to an independent-label/negative-scene gate.
 
 ### 2026-09-22 calibration-closure update
 
@@ -51,6 +59,7 @@ The last bullet is a **historical v0 result and is superseded by E10**: its heig
 | `GrassmannDynamicFilter` | Yes | No isolated evaluation found | Implementation is running-mean/residual, not verified Grassmann learning |
 | FMT tracker/benchmark | Yes | Five benchmark result sets | TESTED, but comparison is confounded and accuracy is UNKNOWN |
 | Data archaeology pipeline | Yes | Reports, JSON/CSV, plots | TESTED and currently the best evidence base |
+| Frozen sparse-UAV DEV benchmark | Yes | 80 silver observations, A–D and ablations | TESTED; development-only, selection-conditioned |
 | Synchronized truth evaluation | No | No | Critical blocker |
 | Reproducible experiment/config registry | No | No | Critical blocker |
 

@@ -222,6 +222,30 @@ These decisions are evidence-bounded, not permanent prohibitions.
 
 **Conclusion:** The data support a provisional cross-flight spatial solution, not a nine-package calibration or Benchmark v1.
 
+### H15 — The Khosravi-style temporal layer is the main source of improvement over the current baseline
+
+**Status:** not supported.
+
+**Evidence:** The full B pipeline reaches 51.25% DEV recall versus zero for A, but A loses every silver target point at raw LiDAR `z>10`. Within B, disabling M-of-K raises recall to 61.25% while candidate precision remains approximately 2.10%.
+
+**Conclusion:** Corrected coordinate handling and sparse candidate permissiveness explain the demonstrated gain. Temporal consistency reduces candidate volume but was not shown to improve the recall/precision trade-off.
+
+### H16 — FMCW Doppler provides independent detection gain after spatial temporal consistency
+
+**Status:** not supported on `research_dev_v0`.
+
+**Evidence:** B/C/D detect 41/40/40 of 80 silver frames. Fixed gating reduces false candidates from 1,914 to 1,817; observability-aware gating leaves 1,840. C and D have identical recall in low/mid/high eta strata.
+
+**Conclusion:** A small false-candidate reduction is observed, but it costs one true frame and does not constitute independent detection gain. The cross-flight set has only seven high-eta frames, so observability dependence remains UNKNOWN.
+
+### H17 — Per-frame clustering is a bottleneck at 300 m
+
+**Status:** supported as a DEV diagnosis.
+
+**Evidence:** Median support is five raw points and 1.5 occupied 1 m voxels. At 300 m, minPts 1/2/3 recall is 0.90/0.30/0.00, while minPts=1 has only 1.76% positive-frame candidate precision.
+
+**Conclusion:** There is a strong cluster-before-track recall/false-candidate trade-off. Track-Before-Detect is a justified next hypothesis, not a verified solution.
+
 ## Possible research directions
 
 Everything in this section is **PROPOSED** or **SPECULATIVE**, not an experimental result.
