@@ -1,0 +1,10 @@
+﻿method,eta_band,label_frames,detected_frames,frame_recall
+B_temporal,low_<0.25,60,31,0.5166666666666667
+B_temporal,mid_0.25-0.60,13,6,0.46153846153846156
+B_temporal,high_>=0.60,7,4,0.5714285714285714
+C_fixed_doppler,low_<0.25,60,30,0.5
+C_fixed_doppler,mid_0.25-0.60,13,6,0.46153846153846156
+C_fixed_doppler,high_>=0.60,7,4,0.5714285714285714
+D_aware_doppler,low_<0.25,60,30,0.5
+D_aware_doppler,mid_0.25-0.60,13,6,0.46153846153846156
+D_aware_doppler,high_>=0.60,7,4,0.5714285714285714

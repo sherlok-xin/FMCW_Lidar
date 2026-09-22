@@ -1,0 +1,8 @@
+{
+  "created_utc": "2026-09-22T14:25:28.405298+00:00",
+  "script_sha256": "2ff01d1b0e3906968b99886c4c793fe3e84c5628d78c3a99e3f9cf0a2bd3d3dc",
+  "protocol_sha256": "b8575fc94efa1b33624a0ac92f1e464c2e58e1955817ff125c7154d176490b67",
+  "input_protocol_addendum_sha256": "2edf3d49dae537fe4b8df1ea8065944bcf0941c4b186a090d9cf09fdefb0f9ee",
+  "labels_sha256": "37c4452a68e544d75034389f82bbaf1e868903bb2225b395b9d66d0cdd48b8db",
+  "command": "python3 scripts/sparse_uav_mvp.py benchmark"
+}

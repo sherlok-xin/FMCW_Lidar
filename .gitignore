@@ -2,7 +2,6 @@ bag
 data
 fmcw
 *.npz
-results
 # 忽略所有 Python 缓存
 __pycache__/
 *.pyc

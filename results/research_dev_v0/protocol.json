@@ -1,0 +1,68 @@
+{
+  "protocol_version": 1,
+  "status": "DEV_SILVER_NOT_PAPER_GT",
+  "random_seed": 20260922,
+  "coordinate_transform_rich80": "[x,z,-y]",
+  "label_source": "calibration-closure selected LiDAR evidence trajectories",
+  "label_interpolation": "none; observed evidence frames only",
+  "label_radius_m": 3.0,
+  "broad_roi_m": {
+    "x": [
+      8.0,
+      510.0
+    ],
+    "y": [
+      -200.0,
+      200.0
+    ],
+    "z": [
+      -60.0,
+      60.0
+    ]
+  },
+  "intensity_range_inclusive": [
+    10.0,
+    250.0
+  ],
+  "detector_input_voxel_m": 1.0,
+  "detector_input_note": "existing closure raw voxel cache; intensity is voxel mean",
+  "fixed_dbscan_eps_m": 2.0,
+  "adaptive_dbscan_eps0_m": 0.8,
+  "adaptive_dbscan_alpha": 0.004,
+  "adaptive_dbscan_reference_m": 10.0,
+  "adaptive_dbscan_eps_cap_m": 2.5,
+  "cluster_max_voxels": 32,
+  "cluster_max_raw_points": 120,
+  "cluster_max_extent_m": 6.0,
+  "cluster_range_m": [
+    8.0,
+    510.0
+  ],
+  "spatial_jump_tau_min_m": 3.0,
+  "spatial_jump_vmax_mps": 25.0,
+  "temporal_m": 2,
+  "temporal_k": 3,
+  "max_track_gap_frames": 2,
+  "doppler_sign": "compare -measured_velocity with predicted Cartesian velocity projected on LOS",
+  "doppler_fixed_gate_mps": 4.0,
+  "doppler_aware_gate": "eta*abs(residual)<=4; eta=abs(er.T@v)/(norm(v)+eps)",
+  "formal_methods": {
+    "A": "current preprocessing through neighborhood+DBSCAN; real-time candidate linking",
+    "B": "adaptive DBSCAN + geometric/jump/M-of-K; no Doppler",
+    "C": "B + fixed Doppler consistency",
+    "D": "B + observability-aware Doppler consistency"
+  },
+  "selected_candidates": {
+    "100m_cross_5": "100m_cross_5_e0001",
+    "100m_cross_10": "100m_cross_10_e0003",
+    "200m_cross_5": "200m_cross_5_e0003",
+    "200m_cross_10": "200m_cross_10_e0001",
+    "300m_cross_10": "300m_cross_10_e0003"
+  },
+  "source_sha256": {
+    "calibration_alignment": "f9533b258353d6d138ae13c2f1ffd52958a08ca66419b06f0c391345d68d4a63",
+    "calibration_protocol": "db6d4899aaa18b1af2d7b5017911a6eb24a7e92093b5a04441b8eccb28c1a15c",
+    "build_gt_benchmark_v0.py": "508b0264485109f75c754f05e070d4a8e1e1244569a4b9f9bd16f0c3605493d0",
+    "target_track_without_initialize_and_grid.py": "5bd6b74bb19a532b3a66660328871ca4b7fbfc998595d134be365f9557c5643b"
+  }
+}

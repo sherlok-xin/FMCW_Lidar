@@ -1,0 +1,18 @@
+{
+  "addendum_version": 1,
+  "reason": "Khosravi-style ROI includes ground removal; raw LiDAR z is not gravity aligned",
+  "applies_to": [
+    "B",
+    "C",
+    "D",
+    "ablations"
+  ],
+  "does_not_apply_to": [
+    "A_current"
+  ],
+  "transform": "enu_like = R_full_6dof.T @ (lidar_xyz - t_full_6dof)",
+  "leveled_height_gt_m": 10.0,
+  "threshold_provenance": "unchanged legacy z>10 threshold, applied in the physically appropriate leveled frame",
+  "status": "PROVISIONAL because the shared 6-DoF calibration is provisional",
+  "calibration_alignment_sha256": "f9533b258353d6d138ae13c2f1ffd52958a08ca66419b06f0c391345d68d4a63"
+}
