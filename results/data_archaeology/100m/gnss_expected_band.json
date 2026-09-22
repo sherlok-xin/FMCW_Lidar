@@ -1,0 +1,430 @@
+{
+  "label_status": "GNSS-derived broad search envelope, not synchronized point-level ground truth",
+  "gnss_expected_horizontal_range_m": [
+    105,
+    120
+  ],
+  "gnss_expected_relative_height_m": [
+    6.9,
+    12.8
+  ],
+  "tested_broad_horizontal_range_m": [
+    90,
+    130
+  ],
+  "tested_broad_height_m": [
+    4,
+    16
+  ],
+  "frames": [
+    {
+      "frame": 0,
+      "raw_band_n": 0,
+      "intensity_band_n": 0,
+      "low_altitude_n": 273,
+      "bag_time": 1770275309.3347964,
+      "header_time": 1649362684.999989
+    },
+    {
+      "frame": 1,
+      "raw_band_n": 0,
+      "intensity_band_n": 0,
+      "low_altitude_n": 239,
+      "bag_time": 1770275310.3365185,
+      "header_time": 1649362685.99984
+    },
+    {
+      "frame": 2,
+      "raw_band_n": 0,
+      "intensity_band_n": 0,
+      "low_altitude_n": 232,
+      "bag_time": 1770275311.3306572,
+      "header_time": 1649362686.999851
+    },
+    {
+      "frame": 3,
+      "raw_band_n": 1,
+      "intensity_band_n": 0,
+      "low_altitude_n": 238,
+      "bag_time": 1770275312.3226254,
+      "header_time": 1649362687.999862
+    },
+    {
+      "frame": 4,
+      "raw_band_n": 0,
+      "intensity_band_n": 0,
+      "low_altitude_n": 217,
+      "bag_time": 1770275313.3230386,
+      "header_time": 1649362688.999873
+    },
+    {
+      "frame": 5,
+      "raw_band_n": 0,
+      "intensity_band_n": 0,
+      "low_altitude_n": 229,
+      "bag_time": 1770275314.3304663,
+      "header_time": 1649362689.999884
+    },
+    {
+      "frame": 6,
+      "raw_band_n": 0,
+      "intensity_band_n": 0,
+      "low_altitude_n": 227,
+      "bag_time": 1770275315.327158,
+      "header_time": 1649362690.999895
+    },
+    {
+      "frame": 7,
+      "raw_band_n": 0,
+      "intensity_band_n": 0,
+      "low_altitude_n": 212,
+      "bag_time": 1770275316.3272212,
+      "header_time": 1649362691.999909
+    },
+    {
+      "frame": 8,
+      "raw_band_n": 0,
+      "intensity_band_n": 0,
+      "low_altitude_n": 169,
+      "bag_time": 1770275317.3291566,
+      "header_time": 1649362692.999917
+    },
+    {
+      "frame": 9,
+      "raw_band_n": 0,
+      "intensity_band_n": 0,
+      "low_altitude_n": 170,
+      "bag_time": 1770275318.3198152,
+      "header_time": 1649362693.999928
+    },
+    {
+      "frame": 10,
+      "raw_band_n": 0,
+      "intensity_band_n": 0,
+      "low_altitude_n": 172,
+      "bag_time": 1770275319.3352602,
+      "header_time": 1649362694.999939
+    },
+    {
+      "frame": 11,
+      "raw_band_n": 0,
+      "intensity_band_n": 0,
+      "low_altitude_n": 177,
+      "bag_time": 1770275320.333125,
+      "header_time": 1649362695.99995
+    },
+    {
+      "frame": 12,
+      "raw_band_n": 0,
+      "intensity_band_n": 0,
+      "low_altitude_n": 181,
+      "bag_time": 1770275321.3312345,
+      "header_time": 1649362696.999961
+    },
+    {
+      "frame": 13,
+      "raw_band_n": 0,
+      "intensity_band_n": 0,
+      "low_altitude_n": 172,
+      "bag_time": 1770275322.3276477,
+      "header_time": 1649362697.999972
+    },
+    {
+      "frame": 14,
+      "raw_band_n": 0,
+      "intensity_band_n": 0,
+      "low_altitude_n": 175,
+      "bag_time": 1770275323.3371584,
+      "header_time": 1649362698.999983
+    },
+    {
+      "frame": 15,
+      "raw_band_n": 0,
+      "intensity_band_n": 0,
+      "low_altitude_n": 185,
+      "bag_time": 1770275324.312367,
+      "header_time": 1649362699.999994
+    },
+    {
+      "frame": 16,
+      "raw_band_n": 0,
+      "intensity_band_n": 0,
+      "low_altitude_n": 172,
+      "bag_time": 1770275325.3341484,
+      "header_time": 1649362700.999848
+    },
+    {
+      "frame": 17,
+      "raw_band_n": 0,
+      "intensity_band_n": 0,
+      "low_altitude_n": 172,
+      "bag_time": 1770275326.338775,
+      "header_time": 1649362701.999857
+    },
+    {
+      "frame": 18,
+      "raw_band_n": 0,
+      "intensity_band_n": 0,
+      "low_altitude_n": 206,
+      "bag_time": 1770275327.3188448,
+      "header_time": 1649362702.999868
+    },
+    {
+      "frame": 19,
+      "raw_band_n": 0,
+      "intensity_band_n": 0,
+      "low_altitude_n": 233,
+      "bag_time": 1770275328.3327084,
+      "header_time": 1649362703.999879
+    },
+    {
+      "frame": 20,
+      "raw_band_n": 0,
+      "intensity_band_n": 0,
+      "low_altitude_n": 217,
+      "bag_time": 1770275329.3416195,
+      "header_time": 1649362704.99989
+    },
+    {
+      "frame": 21,
+      "raw_band_n": 0,
+      "intensity_band_n": 0,
+      "low_altitude_n": 206,
+      "bag_time": 1770275330.3456955,
+      "header_time": 1649362705.9999
+    },
+    {
+      "frame": 22,
+      "raw_band_n": 0,
+      "intensity_band_n": 0,
+      "low_altitude_n": 209,
+      "bag_time": 1770275331.3233402,
+      "header_time": 1649362706.999911
+    },
+    {
+      "frame": 23,
+      "raw_band_n": 0,
+      "intensity_band_n": 0,
+      "low_altitude_n": 227,
+      "bag_time": 1770275332.31876,
+      "header_time": 1649362707.999922
+    },
+    {
+      "frame": 24,
+      "raw_band_n": 0,
+      "intensity_band_n": 0,
+      "low_altitude_n": 219,
+      "bag_time": 1770275333.3226686,
+      "header_time": 1649362708.999936
+    },
+    {
+      "frame": 25,
+      "raw_band_n": 0,
+      "intensity_band_n": 0,
+      "low_altitude_n": 215,
+      "bag_time": 1770275334.3379436,
+      "header_time": 1649362709.999947
+    },
+    {
+      "frame": 26,
+      "raw_band_n": 0,
+      "intensity_band_n": 0,
+      "low_altitude_n": 175,
+      "bag_time": 1770275335.3242373,
+      "header_time": 1649362710.999958
+    },
+    {
+      "frame": 27,
+      "raw_band_n": 0,
+      "intensity_band_n": 0,
+      "low_altitude_n": 177,
+      "bag_time": 1770275336.3327715,
+      "header_time": 1649362711.999977
+    },
+    {
+      "frame": 28,
+      "raw_band_n": 0,
+      "intensity_band_n": 0,
+      "low_altitude_n": 199,
+      "bag_time": 1770275337.336372,
+      "header_time": 1649362712.999979
+    },
+    {
+      "frame": 29,
+      "raw_band_n": 0,
+      "intensity_band_n": 0,
+      "low_altitude_n": 218,
+      "bag_time": 1770275338.325019,
+      "header_time": 1649362713.999996
+    },
+    {
+      "frame": 30,
+      "raw_band_n": 0,
+      "intensity_band_n": 0,
+      "low_altitude_n": 187,
+      "bag_time": 1770275339.3381367,
+      "header_time": 1649362714.999841
+    },
+    {
+      "frame": 31,
+      "raw_band_n": 0,
+      "intensity_band_n": 0,
+      "low_altitude_n": 219,
+      "bag_time": 1770275340.3380077,
+      "header_time": 1649362715.999859
+    },
+    {
+      "frame": 32,
+      "raw_band_n": 0,
+      "intensity_band_n": 0,
+      "low_altitude_n": 194,
+      "bag_time": 1770275341.3413877,
+      "header_time": 1649362716.999863
+    },
+    {
+      "frame": 33,
+      "raw_band_n": 0,
+      "intensity_band_n": 0,
+      "low_altitude_n": 203,
+      "bag_time": 1770275342.326537,
+      "header_time": 1649362717.999873
+    },
+    {
+      "frame": 34,
+      "raw_band_n": 0,
+      "intensity_band_n": 0,
+      "low_altitude_n": 205,
+      "bag_time": 1770275343.3252664,
+      "header_time": 1649362718.999884
+    },
+    {
+      "frame": 35,
+      "raw_band_n": 0,
+      "intensity_band_n": 0,
+      "low_altitude_n": 195,
+      "bag_time": 1770275344.329735,
+      "header_time": 1649362719.999897
+    },
+    {
+      "frame": 36,
+      "raw_band_n": 0,
+      "intensity_band_n": 0,
+      "low_altitude_n": 202,
+      "bag_time": 1770275345.3181677,
+      "header_time": 1649362720.999906
+    },
+    {
+      "frame": 37,
+      "raw_band_n": 0,
+      "intensity_band_n": 0,
+      "low_altitude_n": 214,
+      "bag_time": 1770275346.321245,
+      "header_time": 1649362721.999917
+    },
+    {
+      "frame": 38,
+      "raw_band_n": 0,
+      "intensity_band_n": 0,
+      "low_altitude_n": 203,
+      "bag_time": 1770275347.3327892,
+      "header_time": 1649362722.999928
+    },
+    {
+      "frame": 39,
+      "raw_band_n": 0,
+      "intensity_band_n": 0,
+      "low_altitude_n": 198,
+      "bag_time": 1770275348.3263726,
+      "header_time": 1649362723.99994
+    },
+    {
+      "frame": 40,
+      "raw_band_n": 0,
+      "intensity_band_n": 0,
+      "low_altitude_n": 214,
+      "bag_time": 1770275349.3333611,
+      "header_time": 1649362724.99995
+    },
+    {
+      "frame": 41,
+      "raw_band_n": 0,
+      "intensity_band_n": 0,
+      "low_altitude_n": 191,
+      "bag_time": 1770275350.3318772,
+      "header_time": 1649362725.999963
+    },
+    {
+      "frame": 42,
+      "raw_band_n": 0,
+      "intensity_band_n": 0,
+      "low_altitude_n": 191,
+      "bag_time": 1770275351.3312614,
+      "header_time": 1649362726.999975
+    },
+    {
+      "frame": 43,
+      "raw_band_n": 0,
+      "intensity_band_n": 0,
+      "low_altitude_n": 208,
+      "bag_time": 1770275352.3336334,
+      "header_time": 1649362727.999991
+    },
+    {
+      "frame": 44,
+      "raw_band_n": 0,
+      "intensity_band_n": 0,
+      "low_altitude_n": 202,
+      "bag_time": 1770275353.3188143,
+      "header_time": 1649362728.999997
+    },
+    {
+      "frame": 45,
+      "raw_band_n": 0,
+      "intensity_band_n": 0,
+      "low_altitude_n": 218,
+      "bag_time": 1770275354.318434,
+      "header_time": 1649362729.999847
+    }
+  ],
+  "aggregate": {
+    "expected_band_raw_points": 1,
+    "expected_band_after_intensity": 0,
+    "expected_band_intensity": {
+      "n": 1,
+      "min": 8.0,
+      "q25": 8.0,
+      "median": 8.0,
+      "q75": 8.0,
+      "max": 8.0,
+      "mean": 8.0
+    },
+    "expected_band_radial_velocity": {
+      "n": 1,
+      "min": -2.390000104904175,
+      "q25": -2.390000104904175,
+      "median": -2.390000104904175,
+      "q75": -2.390000104904175,
+      "max": -2.390000104904175,
+      "mean": -2.390000104904175
+    },
+    "low_altitude_points": 9357,
+    "low_altitude_intensity": {
+      "n": 9357,
+      "min": 6.0,
+      "q25": 25.0,
+      "median": 31.0,
+      "q75": 36.0,
+      "max": 63.0,
+      "mean": 30.799081802368164
+    },
+    "low_altitude_radial_velocity": {
+      "n": 9357,
+      "min": -49.689998626708984,
+      "q25": -0.11999999731779099,
+      "median": 0.0,
+      "q75": 0.09000000357627869,
+      "max": 13.5,
+      "mean": 0.005528473760932684
+    }
+  }
+}

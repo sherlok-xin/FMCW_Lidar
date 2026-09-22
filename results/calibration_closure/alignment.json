@@ -1,0 +1,3009 @@
+{
+  "created_utc": "2026-09-22T02:09:33.422973+00:00",
+  "protocol_sha256": "db6d4899aaa18b1af2d7b5017911a6eb24a7e92093b5a04441b8eccb28c1a15c",
+  "calibration_selected": {
+    "300m_roundtrip_10": {
+      "candidate_id": "300m_roundtrip_10_e0003",
+      "lidar_rank": 3,
+      "summary": {
+        "observations": 69,
+        "supported_observations": 68,
+        "support_fraction": 0.9855072463768116,
+        "span_frames": 70,
+        "coverage": 0.9857142857142858,
+        "path_length_m": 232.74182391209203,
+        "displacement_m": 220.45447772679293,
+        "median_speed_mps": 2.768713744592385,
+        "p90_acceleration_mps2": 3.470449234189645,
+        "median_direction_cosine": 0.9972084999157567,
+        "median_doppler_residual_mps": 2.992672331233438,
+        "median_points": 11.0,
+        "median_extent_m": 0.20723317593279905,
+        "median_intensity": 29.11111111111111,
+        "median_radial_velocity_mps": 5.064285618918283,
+        "median_persistence": 0.004255319148936171
+      }
+    },
+    "100m_cross_5": {
+      "candidate_id": "100m_cross_5_e0001",
+      "lidar_rank": 1,
+      "summary": {
+        "observations": 19,
+        "supported_observations": 19,
+        "support_fraction": 1.0,
+        "span_frames": 21,
+        "coverage": 0.9047619047619048,
+        "path_length_m": 57.546240888627246,
+        "displacement_m": 12.688740826425132,
+        "median_speed_mps": 1.9627903240683646,
+        "p90_acceleration_mps2": 4.22633068597772,
+        "median_direction_cosine": 0.9940091347213232,
+        "median_doppler_residual_mps": 0.14784123790194315,
+        "median_points": 40.0,
+        "median_extent_m": 0.0,
+        "median_intensity": 40.43478260869565,
+        "median_radial_velocity_mps": -0.03365384733590942,
+        "median_persistence": 0.0625
+      }
+    },
+    "200m_cross_5": {
+      "candidate_id": "200m_cross_5_e0003",
+      "lidar_rank": 3,
+      "summary": {
+        "observations": 22,
+        "supported_observations": 22,
+        "support_fraction": 1.0,
+        "span_frames": 22,
+        "coverage": 1.0,
+        "path_length_m": 120.14718037445972,
+        "displacement_m": 20.756672056269885,
+        "median_speed_mps": 7.390618964235442,
+        "p90_acceleration_mps2": 3.845202308977528,
+        "median_direction_cosine": 0.9995429724654927,
+        "median_doppler_residual_mps": 0.5368610276074887,
+        "median_points": 13.0,
+        "median_extent_m": 0.1773961614841435,
+        "median_intensity": 29.555555555555557,
+        "median_radial_velocity_mps": -0.16075396862265373,
+        "median_persistence": 0.018674698795180723
+      }
+    },
+    "300m_cross_5": {
+      "candidate_id": "300m_cross_5_e0001",
+      "lidar_rank": 1,
+      "summary": {
+        "observations": 18,
+        "supported_observations": 14,
+        "support_fraction": 0.7777777777777778,
+        "span_frames": 24,
+        "coverage": 0.75,
+        "path_length_m": 85.71976976484576,
+        "displacement_m": 42.064374461943316,
+        "median_speed_mps": 3.761178500910779,
+        "p90_acceleration_mps2": 3.575503249003571,
+        "median_direction_cosine": 0.9960704629182966,
+        "median_doppler_residual_mps": 0.3314849464063963,
+        "median_points": 4.0,
+        "median_extent_m": 0.0,
+        "median_intensity": 22.083333333333336,
+        "median_radial_velocity_mps": 0.13399999607354401,
+        "median_persistence": 0.03125
+      }
+    }
+  },
+  "calibration_failures": [
+    "300m_roundtrip_5"
+  ],
+  "selection_audit": {
+    "300m_roundtrip_5": [],
+    "300m_roundtrip_10": [
+      {
+        "candidate_id": "300m_roundtrip_10_e0003",
+        "offset_s": 93.77159976959229,
+        "shape_score": 9.203317399703838,
+        "shape_position_rmse_m": 8.476924444508223,
+        "shape_direction_median_deg": 7.26392955195616
+      },
+      {
+        "candidate_id": "300m_roundtrip_10_e0002",
+        "offset_s": 95.72106075286865,
+        "shape_score": 9.893608108482145,
+        "shape_position_rmse_m": 9.170098487728989,
+        "shape_direction_median_deg": 7.235096207531562
+      }
+    ],
+    "100m_cross_5": [
+      {
+        "candidate_id": "100m_cross_5_e0001",
+        "offset_s": 96.42915320396423,
+        "shape_score": 3.9626600554435836,
+        "shape_position_rmse_m": 3.690427039203669,
+        "shape_direction_median_deg": 2.722330162399149
+      },
+      {
+        "candidate_id": "100m_cross_5_e0002",
+        "offset_s": 115.19424605369568,
+        "shape_score": 8.36245771353683,
+        "shape_position_rmse_m": 7.870774121683363,
+        "shape_direction_median_deg": 4.9168359185346695
+      },
+      {
+        "candidate_id": "100m_cross_5_e0003",
+        "offset_s": 98.45240139961243,
+        "shape_score": 12.360913542426896,
+        "shape_position_rmse_m": 4.445403179686497,
+        "shape_direction_median_deg": 79.155103627404
+      }
+    ],
+    "200m_cross_5": [
+      {
+        "candidate_id": "200m_cross_5_e0003",
+        "offset_s": 122.2219409942627,
+        "shape_score": 10.499748155546499,
+        "shape_position_rmse_m": 10.27290730568551,
+        "shape_direction_median_deg": 2.2684084986098854
+      },
+      {
+        "candidate_id": "200m_cross_5_e0007",
+        "offset_s": 81.2243139743805,
+        "shape_score": 15.963139490488347,
+        "shape_position_rmse_m": 9.054361279633703,
+        "shape_direction_median_deg": 69.08778210854643
+      },
+      {
+        "candidate_id": "200m_cross_5_e0001",
+        "offset_s": 89.22509479522705,
+        "shape_score": 27.91849366906981,
+        "shape_position_rmse_m": 20.01443331421406,
+        "shape_direction_median_deg": 79.04060354855751
+      },
+      {
+        "candidate_id": "200m_cross_5_e0002",
+        "offset_s": 74.22231650352478,
+        "shape_score": 35.08271150487116,
+        "shape_position_rmse_m": 26.16991379692712,
+        "shape_direction_median_deg": 89.12797707944041
+      }
+    ],
+    "300m_cross_5": [
+      {
+        "candidate_id": "300m_cross_5_e0001",
+        "offset_s": 69.14805221557617,
+        "shape_score": 25.02809082416129,
+        "shape_position_rmse_m": 24.290238453178983,
+        "shape_direction_median_deg": 7.378523709823049
+      }
+    ]
+  },
+  "planar": {
+    "model": "planar",
+    "success": true,
+    "cost": 283.2661261178311,
+    "yaw_deg": 173.53788308362624,
+    "pitch_deg": 0.0,
+    "roll_deg": 0.0,
+    "translation_m": [
+      1.763437032161469,
+      -5.904969279967448,
+      -21.143924729656483
+    ],
+    "offsets_s": {
+      "100m_cross_5": 96.30350231886815,
+      "200m_cross_5": 122.31215786932971,
+      "300m_cross_5": 69.14805221557619,
+      "300m_roundtrip_10": 95.43680845352634
+    },
+    "rotation_matrix": [
+      [
+        -0.9936464867085552,
+        -0.11254625472109306,
+        0.0
+      ],
+      [
+        0.11254625472109306,
+        -0.9936464867085552,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "optimizer_message": "Both `ftol` and `xtol` termination conditions are satisfied.",
+    "per_condition": {
+      "100m_cross_5": {
+        "position_rmse_m": 11.94711432726847,
+        "range_rmse_m": 0.7264174381019973,
+        "direction_median_deg": 2.7183246340727782,
+        "doppler_vs_gnss_rmse_mps": 0.7355068368004543,
+        "doppler_vs_lidar_rmse_mps": 0.5604678542007929,
+        "path_fraction_of_gnss": 0.6954184377501514,
+        "composite": 1.6628302840637628
+      },
+      "200m_cross_5": {
+        "position_rmse_m": 9.984777437165548,
+        "range_rmse_m": 1.8524061527392504,
+        "direction_median_deg": 2.2791977593212978,
+        "doppler_vs_gnss_rmse_mps": 1.978730730142569,
+        "doppler_vs_lidar_rmse_mps": 1.3166981638217006,
+        "path_fraction_of_gnss": 0.6348572454790172,
+        "composite": 2.093655820292536
+      },
+      "300m_cross_5": {
+        "position_rmse_m": 35.92945428938144,
+        "range_rmse_m": 6.211698541757047,
+        "direction_median_deg": 7.104229661107634,
+        "doppler_vs_gnss_rmse_mps": 2.6394728718038025,
+        "doppler_vs_lidar_rmse_mps": 1.2031481017119887,
+        "path_fraction_of_gnss": 0.2979240433196302,
+        "composite": 5.918087418208182
+      },
+      "300m_roundtrip_10": {
+        "position_rmse_m": 8.746110578948084,
+        "range_rmse_m": 4.22206321858492,
+        "direction_median_deg": 7.257232384865152,
+        "doppler_vs_gnss_rmse_mps": 6.399211394388854,
+        "doppler_vs_lidar_rmse_mps": 4.08854754387999,
+        "path_fraction_of_gnss": 0.343754139295467,
+        "composite": 4.05944366311851
+      }
+    }
+  },
+  "full_6dof": {
+    "model": "full_6dof",
+    "success": true,
+    "cost": 180.34049208409235,
+    "yaw_deg": 173.44983158906356,
+    "pitch_deg": -6.51494549054177,
+    "roll_deg": 2.2360777378238184,
+    "translation_m": [
+      1.2056482767247563,
+      -6.269788556095859,
+      2.006575609624585
+    ],
+    "offsets_s": {
+      "100m_cross_5": 96.305750645698,
+      "200m_cross_5": 122.31215786933898,
+      "300m_cross_5": 69.14805221557619,
+      "300m_roundtrip_10": 95.61161984142167
+    },
+    "rotation_matrix": [
+      [
+        -0.9870568002992101,
+        -0.10958821879490373,
+        0.11708669986145206
+      ],
+      [
+        0.11333649475718847,
+        -0.9932208682010544,
+        0.025829168126318722
+      ],
+      [
+        0.11346238116327033,
+        0.03876505219013846,
+        0.9927857567418342
+      ]
+    ],
+    "optimizer_message": "`ftol` termination condition is satisfied.",
+    "per_condition": {
+      "100m_cross_5": {
+        "position_rmse_m": 3.7380612831030926,
+        "range_rmse_m": 0.5090916492192606,
+        "direction_median_deg": 2.590782895438492,
+        "doppler_vs_gnss_rmse_mps": 0.7314746289830671,
+        "doppler_vs_lidar_rmse_mps": 0.5604678542007929,
+        "path_fraction_of_gnss": 0.6954184377501514,
+        "composite": 0.7934717029229502
+      },
+      "200m_cross_5": {
+        "position_rmse_m": 9.982022408530458,
+        "range_rmse_m": 1.843935074141755,
+        "direction_median_deg": 2.3100551749986535,
+        "doppler_vs_gnss_rmse_mps": 1.9770261232365214,
+        "doppler_vs_lidar_rmse_mps": 1.3166981638217006,
+        "path_fraction_of_gnss": 0.6348572454790172,
+        "composite": 2.0919995398554367
+      },
+      "300m_cross_5": {
+        "position_rmse_m": 33.88407109485396,
+        "range_rmse_m": 6.024725523738441,
+        "direction_median_deg": 6.059646208025576,
+        "doppler_vs_gnss_rmse_mps": 2.6404246156132563,
+        "doppler_vs_lidar_rmse_mps": 1.2031481017119887,
+        "path_fraction_of_gnss": 0.2979240433196302,
+        "composite": 5.646626501571567
+      },
+      "300m_roundtrip_10": {
+        "position_rmse_m": 4.936719887740104,
+        "range_rmse_m": 4.196656921810756,
+        "direction_median_deg": 2.7432986268805415,
+        "doppler_vs_gnss_rmse_mps": 6.397669103405143,
+        "doppler_vs_lidar_rmse_mps": 4.08854754387999,
+        "path_fraction_of_gnss": 0.343754139295467,
+        "composite": 3.543939701705891
+      }
+    }
+  },
+  "leave_one_out": {
+    "100m_cross_5": {
+      "model": "full_6dof",
+      "success": true,
+      "cost": 175.6088032810339,
+      "yaw_deg": 173.4412648994042,
+      "pitch_deg": -6.491707401547161,
+      "roll_deg": 2.1027863702751306,
+      "translation_m": [
+        1.5891645422662957,
+        -6.193906146820701,
+        1.7977301452960242
+      ],
+      "offsets_s": {
+        "200m_cross_5": 122.31215786933898,
+        "300m_cross_5": 69.14805221557619,
+        "300m_roundtrip_10": 95.73020247283479
+      },
+      "rotation_matrix": [
+        [
+          -0.9870854793857535,
+          -0.11002350924545863,
+          0.11643489081504567
+        ],
+        [
+          0.11348932214564822,
+          -0.993260142815649,
+          0.023547026410093624
+        ],
+        [
+          0.11305940980174278,
+          0.03645704468481836,
+          0.9929191577102996
+        ]
+      ],
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "per_condition": {
+        "200m_cross_5": {
+          "position_rmse_m": 10.015184550941854,
+          "range_rmse_m": 1.8778070064684411,
+          "direction_median_deg": 2.324124256678119,
+          "doppler_vs_gnss_rmse_mps": 1.9780364758813762,
+          "doppler_vs_lidar_rmse_mps": 1.3166981638217006,
+          "path_fraction_of_gnss": 0.6348572454790172,
+          "composite": 2.1028288985391357
+        },
+        "300m_cross_5": {
+          "position_rmse_m": 33.86738337089286,
+          "range_rmse_m": 5.772992657709137,
+          "direction_median_deg": 6.130290908732419,
+          "doppler_vs_gnss_rmse_mps": 2.6396687356250172,
+          "doppler_vs_lidar_rmse_mps": 1.2031481017119887,
+          "path_fraction_of_gnss": 0.2979240433196302,
+          "composite": 5.596377615993712
+        },
+        "300m_roundtrip_10": {
+          "position_rmse_m": 4.956256432042861,
+          "range_rmse_m": 4.203137077564736,
+          "direction_median_deg": 2.7384850334112008,
+          "doppler_vs_gnss_rmse_mps": 6.398727810571591,
+          "doppler_vs_lidar_rmse_mps": 4.08854754387999,
+          "path_fraction_of_gnss": 0.343754139295467,
+          "composite": 3.5474047584337978
+        }
+      }
+    },
+    "200m_cross_5": {
+      "model": "full_6dof",
+      "success": true,
+      "cost": 157.768376801697,
+      "yaw_deg": 173.26565300421282,
+      "pitch_deg": -6.523856392054264,
+      "roll_deg": 2.3462468747023504,
+      "translation_m": [
+        1.6472193600421536,
+        -6.0341944157429,
+        1.9651908113550494
+      ],
+      "offsets_s": {
+        "100m_cross_5": 96.3071126199779,
+        "300m_cross_5": 69.14805221557619,
+        "300m_roundtrip_10": 95.77083497822804
+      },
+      "rotation_matrix": [
+        [
+          -0.986669842116178,
+          -0.11254859325267257,
+          0.11753908632995601
+        ],
+        [
+          0.11650674953076774,
+          -0.9928134291203139,
+          0.027343596547247814
+        ],
+        [
+          0.11361690002905084,
+          0.04067319897928094,
+          0.9926917401250906
+        ]
+      ],
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "per_condition": {
+        "100m_cross_5": {
+          "position_rmse_m": 3.8414015392960508,
+          "range_rmse_m": 0.8683465640032262,
+          "direction_median_deg": 2.595092968459252,
+          "doppler_vs_gnss_rmse_mps": 0.7349167004559276,
+          "doppler_vs_lidar_rmse_mps": 0.5604678542007929,
+          "path_fraction_of_gnss": 0.6954184377501514,
+          "composite": 0.8769272136001095
+        },
+        "300m_cross_5": {
+          "position_rmse_m": 34.3638315404089,
+          "range_rmse_m": 5.7303417904643466,
+          "direction_median_deg": 6.1829567046648455,
+          "doppler_vs_gnss_rmse_mps": 2.6391197365009056,
+          "doppler_vs_lidar_rmse_mps": 1.2031481017119887,
+          "path_fraction_of_gnss": 0.2979240433196302,
+          "composite": 5.638813996814962
+        },
+        "300m_roundtrip_10": {
+          "position_rmse_m": 4.799116171255405,
+          "range_rmse_m": 4.20072179275356,
+          "direction_median_deg": 2.621024942912255,
+          "doppler_vs_gnss_rmse_mps": 6.399415076370323,
+          "doppler_vs_lidar_rmse_mps": 4.08854754387999,
+          "path_fraction_of_gnss": 0.343754139295467,
+          "composite": 3.5280807614067102
+        }
+      }
+    },
+    "300m_cross_5": {
+      "model": "full_6dof",
+      "success": true,
+      "cost": 77.5536455953874,
+      "yaw_deg": 172.17454385930495,
+      "pitch_deg": -6.478557782400685,
+      "roll_deg": 2.564652090530615,
+      "translation_m": [
+        0.3001491372963649,
+        -3.1794056239854522,
+        2.1091535841211604
+      ],
+      "offsets_s": {
+        "100m_cross_5": 96.31527986981116,
+        "200m_cross_5": 122.31215786933898,
+        "300m_roundtrip_10": 95.47071279743699
+      },
+      "rotation_matrix": [
+        [
+          -0.984361064678682,
+          -0.13101755198905513,
+          0.11776117957734075
+        ],
+        [
+          0.13528627180813016,
+          -0.9903825657912046,
+          0.02898271962889163
+        ],
+        [
+          0.11283137420464302,
+          0.044460931699925654,
+          0.9926189130514622
+        ]
+      ],
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "per_condition": {
+        "100m_cross_5": {
+          "position_rmse_m": 3.80712201752066,
+          "range_rmse_m": 0.79133172250739,
+          "direction_median_deg": 2.055569863477316,
+          "doppler_vs_gnss_rmse_mps": 0.7717071554831378,
+          "doppler_vs_lidar_rmse_mps": 0.5604678542007929,
+          "path_fraction_of_gnss": 0.6954184377501514,
+          "composite": 0.8549448322758466
+        },
+        "200m_cross_5": {
+          "position_rmse_m": 10.040711586312836,
+          "range_rmse_m": 2.0846898083799417,
+          "direction_median_deg": 1.4962023517788139,
+          "doppler_vs_gnss_rmse_mps": 2.0147473304056644,
+          "doppler_vs_lidar_rmse_mps": 1.3166981638217006,
+          "path_fraction_of_gnss": 0.6348572454790172,
+          "composite": 2.1353402023980785
+        },
+        "300m_roundtrip_10": {
+          "position_rmse_m": 4.367636365463245,
+          "range_rmse_m": 4.183051106987408,
+          "direction_median_deg": 2.2034994807298545,
+          "doppler_vs_gnss_rmse_mps": 6.400860246285075,
+          "doppler_vs_lidar_rmse_mps": 4.08854754387999,
+          "path_fraction_of_gnss": 0.343754139295467,
+          "composite": 3.469951068059684
+        }
+      }
+    },
+    "300m_roundtrip_10": {
+      "model": "full_6dof",
+      "success": true,
+      "cost": 104.89387831792774,
+      "yaw_deg": 178.42349190872318,
+      "pitch_deg": -6.618387028211348,
+      "roll_deg": 1.672272850716388,
+      "translation_m": [
+        2.8879384536317434,
+        -16.341763121491393,
+        2.230873926079224
+      ],
+      "offsets_s": {
+        "100m_cross_5": 96.30639709591003,
+        "200m_cross_5": 122.31215786933898,
+        "300m_cross_5": 69.14805221557619
+      },
+      "rotation_matrix": [
+        [
+          -0.9929598312164172,
+          -0.02413788199296228,
+          0.11596609954447072
+        ],
+        [
+          0.02732844186355522,
+          -0.999288274636766,
+          0.026001931443369788
+        ],
+        [
+          0.11525593197738045,
+          0.028988046266853647,
+          0.992912767224622
+        ]
+      ],
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "per_condition": {
+        "100m_cross_5": {
+          "position_rmse_m": 4.516368381756083,
+          "range_rmse_m": 1.976297844158399,
+          "direction_median_deg": 7.136108898874159,
+          "doppler_vs_gnss_rmse_mps": 0.6583820179348995,
+          "doppler_vs_lidar_rmse_mps": 0.5604678542007929,
+          "path_fraction_of_gnss": 0.6954184377501514,
+          "composite": 1.2702459053343733
+        },
+        "200m_cross_5": {
+          "position_rmse_m": 12.52707957151217,
+          "range_rmse_m": 1.660474940084675,
+          "direction_median_deg": 7.2279335100280315,
+          "doppler_vs_gnss_rmse_mps": 1.866752375080205,
+          "doppler_vs_lidar_rmse_mps": 1.3166981638217006,
+          "path_fraction_of_gnss": 0.6348572454790172,
+          "composite": 2.4135661228623544
+        },
+        "300m_cross_5": {
+          "position_rmse_m": 24.36887275774166,
+          "range_rmse_m": 5.933693385784255,
+          "direction_median_deg": 10.63000938585941,
+          "doppler_vs_gnss_rmse_mps": 2.681005484141531,
+          "doppler_vs_lidar_rmse_mps": 1.2031481017119887,
+          "path_fraction_of_gnss": 0.2979240433196302,
+          "composite": 4.8210090015265585
+        }
+      }
+    }
+  },
+  "validation": {
+    "300m_roundtrip_13": [
+      {
+        "candidate_id": "300m_roundtrip_13_e0007",
+        "lidar_rank": 7,
+        "lidar_score": 3.0694658105209034,
+        "offset_s": 71.87580728530884,
+        "summary": {
+          "observations": 5,
+          "supported_observations": 5,
+          "support_fraction": 1.0,
+          "span_frames": 6,
+          "coverage": 0.8333333333333334,
+          "path_length_m": 8.915600334300361,
+          "displacement_m": 7.658685971276753,
+          "median_speed_mps": 1.9223448755057193,
+          "p90_acceleration_mps2": 3.2936149033068043,
+          "median_direction_cosine": 0.5466331129609435,
+          "median_doppler_residual_mps": 0.9141051863415947,
+          "median_points": 13.0,
+          "median_extent_m": 4.95302706402138,
+          "median_intensity": 25.45,
+          "median_radial_velocity_mps": -1.6461538408811276,
+          "median_persistence": 0.054111405835543774
+        },
+        "metrics": {
+          "position_rmse_m": 12.311584550562552,
+          "range_rmse_m": 11.309348749540627,
+          "direction_median_deg": 42.503313972201326,
+          "doppler_vs_gnss_rmse_mps": 4.854832492180366,
+          "doppler_vs_lidar_rmse_mps": 1.00744826105989,
+          "path_fraction_of_gnss": 0.010955615567432174,
+          "composite": 6.325686101563588
+        }
+      },
+      {
+        "candidate_id": "300m_roundtrip_13_e0004",
+        "lidar_rank": 4,
+        "lidar_score": 3.58673412641586,
+        "offset_s": 86.86742091178894,
+        "summary": {
+          "observations": 7,
+          "supported_observations": 5,
+          "support_fraction": 0.7142857142857143,
+          "span_frames": 7,
+          "coverage": 1.0,
+          "path_length_m": 11.906524052398836,
+          "displacement_m": 8.751585469787488,
+          "median_speed_mps": 1.519333087703787,
+          "p90_acceleration_mps2": 3.656672165139453,
+          "median_direction_cosine": 0.4080345594041741,
+          "median_doppler_residual_mps": 0.5921979662636297,
+          "median_points": 7.0,
+          "median_extent_m": 2.822826135053813,
+          "median_intensity": 22.5,
+          "median_radial_velocity_mps": -1.0628571489027567,
+          "median_persistence": 0.05586206896551724
+        },
+        "metrics": {
+          "position_rmse_m": 14.580258743916641,
+          "range_rmse_m": 13.744720780581126,
+          "direction_median_deg": 35.4769735637221,
+          "doppler_vs_gnss_rmse_mps": 5.0652649667477245,
+          "doppler_vs_lidar_rmse_mps": 1.961975560061556,
+          "path_fraction_of_gnss": 0.014630904860172007,
+          "composite": 6.90901950219681
+        }
+      },
+      {
+        "candidate_id": "300m_roundtrip_13_e0006",
+        "lidar_rank": 6,
+        "lidar_score": 3.374176321171814,
+        "offset_s": 65.85609793663025,
+        "summary": {
+          "observations": 7,
+          "supported_observations": 6,
+          "support_fraction": 0.8571428571428571,
+          "span_frames": 7,
+          "coverage": 1.0,
+          "path_length_m": 11.667508404023568,
+          "displacement_m": 3.454839110525999,
+          "median_speed_mps": 2.1488261472148604,
+          "p90_acceleration_mps2": 2.280053271393823,
+          "median_direction_cosine": 0.6599969362021102,
+          "median_doppler_residual_mps": 1.2153706880862236,
+          "median_points": 4.0,
+          "median_extent_m": 1.7460127547204125,
+          "median_intensity": 24.25,
+          "median_radial_velocity_mps": -1.7866666674613954,
+          "median_persistence": 0.06620689655172414
+        },
+        "metrics": {
+          "position_rmse_m": 16.21319845715263,
+          "range_rmse_m": 15.381361948118014,
+          "direction_median_deg": 67.85052656276905,
+          "doppler_vs_gnss_rmse_mps": 4.652785942049824,
+          "doppler_vs_lidar_rmse_mps": 1.5895071934487701,
+          "path_fraction_of_gnss": 0.014337199056859382,
+          "composite": 8.18710735591078
+        }
+      },
+      {
+        "candidate_id": "300m_roundtrip_13_e0008",
+        "lidar_rank": 8,
+        "lidar_score": 2.869716004966844,
+        "offset_s": 78.0902853012085,
+        "summary": {
+          "observations": 6,
+          "supported_observations": 5,
+          "support_fraction": 0.8333333333333334,
+          "span_frames": 7,
+          "coverage": 0.8571428571428571,
+          "path_length_m": 13.725960657216348,
+          "displacement_m": 12.270226370876708,
+          "median_speed_mps": 2.424661932748746,
+          "p90_acceleration_mps2": 3.829005657828517,
+          "median_direction_cosine": 0.42853450026848416,
+          "median_doppler_residual_mps": 0.15311246218610125,
+          "median_points": 3.0,
+          "median_extent_m": 0.0,
+          "median_intensity": 24.979166666666664,
+          "median_radial_velocity_mps": -0.07020833459682763,
+          "median_persistence": 0.12413793103448276
+        },
+        "metrics": {
+          "position_rmse_m": 21.46081087430742,
+          "range_rmse_m": 11.237418234386105,
+          "direction_median_deg": 70.86753262427048,
+          "doppler_vs_gnss_rmse_mps": 5.7501595356517665,
+          "doppler_vs_lidar_rmse_mps": 1.4830066061519536,
+          "path_fraction_of_gnss": 0.01686665424824267,
+          "composite": 8.335071225932946
+        }
+      },
+      {
+        "candidate_id": "300m_roundtrip_13_e0025",
+        "lidar_rank": 25,
+        "lidar_score": 1.1336647432142977,
+        "offset_s": 62.85446214675903,
+        "summary": {
+          "observations": 8,
+          "supported_observations": 6,
+          "support_fraction": 0.75,
+          "span_frames": 9,
+          "coverage": 0.8888888888888888,
+          "path_length_m": 31.077082702320048,
+          "displacement_m": 3.9700223683653153,
+          "median_speed_mps": 3.399663495233182,
+          "p90_acceleration_mps2": 4.6760762917062095,
+          "median_direction_cosine": 0.556596411889855,
+          "median_doppler_residual_mps": 2.984906824738914,
+          "median_points": 3.0,
+          "median_extent_m": 0.15446558592047308,
+          "median_intensity": 24.25,
+          "median_radial_velocity_mps": -1.924166664481163,
+          "median_persistence": 0.0367816091954023
+        },
+        "metrics": {
+          "position_rmse_m": 23.24919809995614,
+          "range_rmse_m": 22.57686364787324,
+          "direction_median_deg": 58.97755158138089,
+          "doppler_vs_gnss_rmse_mps": 4.91330798687983,
+          "doppler_vs_lidar_rmse_mps": 3.917176322932986,
+          "path_fraction_of_gnss": 0.038187957992470115,
+          "composite": 10.163134770855375
+        }
+      },
+      {
+        "candidate_id": "300m_roundtrip_13_e0005",
+        "lidar_rank": 5,
+        "lidar_score": 3.4163912488231754,
+        "offset_s": 65.85609793663025,
+        "summary": {
+          "observations": 9,
+          "supported_observations": 7,
+          "support_fraction": 0.7777777777777778,
+          "span_frames": 9,
+          "coverage": 1.0,
+          "path_length_m": 15.023054766863423,
+          "displacement_m": 4.912749790267494,
+          "median_speed_mps": 1.8074323995296777,
+          "p90_acceleration_mps2": 3.479928480354207,
+          "median_direction_cosine": 0.7038994555023151,
+          "median_doppler_residual_mps": 1.6382564575761207,
+          "median_points": 7.0,
+          "median_extent_m": 2.123901452447869,
+          "median_intensity": 20.916666666666668,
+          "median_radial_velocity_mps": -1.0933333339790503,
+          "median_persistence": 0.07214854111405836
+        },
+        "metrics": {
+          "position_rmse_m": 24.744408189557635,
+          "range_rmse_m": 24.043543347197627,
+          "direction_median_deg": 82.48285654686904,
+          "doppler_vs_gnss_rmse_mps": 5.497969006710583,
+          "doppler_vs_lidar_rmse_mps": 2.062194428759138,
+          "path_fraction_of_gnss": 0.018460541803453415,
+          "composite": 11.472458868161741
+        }
+      },
+      {
+        "candidate_id": "300m_roundtrip_13_e0022",
+        "lidar_rank": 22,
+        "lidar_score": 1.339136587253528,
+        "offset_s": 63.86059880256653,
+        "summary": {
+          "observations": 8,
+          "supported_observations": 6,
+          "support_fraction": 0.75,
+          "span_frames": 8,
+          "coverage": 1.0,
+          "path_length_m": 19.550122276072827,
+          "displacement_m": 12.105754699808408,
+          "median_speed_mps": 2.3724294039541762,
+          "p90_acceleration_mps2": 4.632158456746913,
+          "median_direction_cosine": 0.3527476439610218,
+          "median_doppler_residual_mps": 3.6794338979015464,
+          "median_points": 6.0,
+          "median_extent_m": 2.5740959607230325,
+          "median_intensity": 23.375,
+          "median_radial_velocity_mps": -2.007777777810891,
+          "median_persistence": 0.022758620689655173
+        },
+        "metrics": {
+          "position_rmse_m": 22.34901423009336,
+          "range_rmse_m": 20.52970533824746,
+          "direction_median_deg": 130.12704035052366,
+          "doppler_vs_gnss_rmse_mps": 4.4686425657621935,
+          "doppler_vs_lidar_rmse_mps": 4.19780212005792,
+          "path_fraction_of_gnss": 0.024023466275056367,
+          "composite": 11.548305451165948
+        }
+      },
+      {
+        "candidate_id": "300m_roundtrip_13_e0024",
+        "lidar_rank": 24,
+        "lidar_score": 1.1487833914398549,
+        "offset_s": 126.0902853012085,
+        "summary": {
+          "observations": 9,
+          "supported_observations": 6,
+          "support_fraction": 0.6666666666666666,
+          "span_frames": 9,
+          "coverage": 1.0,
+          "path_length_m": 18.39890011126662,
+          "displacement_m": 4.771974680563145,
+          "median_speed_mps": 2.183709571461931,
+          "p90_acceleration_mps2": 4.337727293435205,
+          "median_direction_cosine": 0.4593785102309381,
+          "median_doppler_residual_mps": 3.022245422983243,
+          "median_points": 3.0,
+          "median_extent_m": 1.4660354465052647,
+          "median_intensity": 20.772727272727273,
+          "median_radial_velocity_mps": -2.288333316644033,
+          "median_persistence": 0.062068965517241385
+        },
+        "metrics": {
+          "position_rmse_m": 23.523128354075673,
+          "range_rmse_m": 21.750618813928646,
+          "direction_median_deg": 91.69685454005509,
+          "doppler_vs_gnss_rmse_mps": 8.045104764185567,
+          "doppler_vs_lidar_rmse_mps": 4.202706577996464,
+          "path_fraction_of_gnss": 0.022608828225187616,
+          "composite": 12.004048315971012
+        }
+      },
+      {
+        "candidate_id": "300m_roundtrip_13_e0026",
+        "lidar_rank": 26,
+        "lidar_score": 0.9608008242782465,
+        "offset_s": 92.8402853012085,
+        "summary": {
+          "observations": 7,
+          "supported_observations": 6,
+          "support_fraction": 0.8571428571428571,
+          "span_frames": 7,
+          "coverage": 1.0,
+          "path_length_m": 9.052363286503658,
+          "displacement_m": 3.5049096486313838,
+          "median_speed_mps": 1.2985898995100889,
+          "p90_acceleration_mps2": 4.008829762589287,
+          "median_direction_cosine": 0.9853436026839575,
+          "median_doppler_residual_mps": 2.98874890543219,
+          "median_points": 3.0,
+          "median_extent_m": 1.1618834605285093,
+          "median_intensity": 23.0,
+          "median_radial_velocity_mps": -0.7766666474441687,
+          "median_persistence": 0.09425287356321839
+        },
+        "metrics": {
+          "position_rmse_m": 47.72470333978046,
+          "range_rmse_m": 9.49471686110906,
+          "direction_median_deg": 90.67605538078556,
+          "doppler_vs_gnss_rmse_mps": 10.013551523198212,
+          "doppler_vs_lidar_rmse_mps": 7.366819363802022,
+          "path_fraction_of_gnss": 0.011123671814014026,
+          "composite": 12.600008653383613
+        }
+      },
+      {
+        "candidate_id": "300m_roundtrip_13_e0014",
+        "lidar_rank": 14,
+        "lidar_score": 2.0349848502210204,
+        "offset_s": 98.5902853012085,
+        "summary": {
+          "observations": 11,
+          "supported_observations": 7,
+          "support_fraction": 0.6363636363636364,
+          "span_frames": 12,
+          "coverage": 0.9166666666666666,
+          "path_length_m": 31.4434278025145,
+          "displacement_m": 4.407640212474663,
+          "median_speed_mps": 3.021251592305786,
+          "p90_acceleration_mps2": 4.714057472721177,
+          "median_direction_cosine": 0.3060863936129806,
+          "median_doppler_residual_mps": 1.6618018869599307,
+          "median_points": 3.0,
+          "median_extent_m": 1.6357377759252136,
+          "median_intensity": 16.333333333333332,
+          "median_radial_velocity_mps": -0.1899999976158142,
+          "median_persistence": 0.14482758620689656
+        },
+        "metrics": {
+          "position_rmse_m": 55.67204445811668,
+          "range_rmse_m": 16.27844476450163,
+          "direction_median_deg": 98.51259748516372,
+          "doppler_vs_gnss_rmse_mps": 4.566102523649341,
+          "doppler_vs_lidar_rmse_mps": 6.061443961982255,
+          "path_fraction_of_gnss": 0.03863812802390387,
+          "composite": 13.159573215695023
+        }
+      },
+      {
+        "candidate_id": "300m_roundtrip_13_e0009",
+        "lidar_rank": 9,
+        "lidar_score": 2.6815233697515053,
+        "offset_s": 64.84794306755066,
+        "summary": {
+          "observations": 10,
+          "supported_observations": 8,
+          "support_fraction": 0.8,
+          "span_frames": 13,
+          "coverage": 0.7692307692307693,
+          "path_length_m": 36.395110285625016,
+          "displacement_m": 18.719328043075095,
+          "median_speed_mps": 2.2684085769536972,
+          "p90_acceleration_mps2": 4.539585894621838,
+          "median_direction_cosine": 0.7444688488756376,
+          "median_doppler_residual_mps": 1.5576507554841006,
+          "median_points": 4.5,
+          "median_extent_m": 2.082597670073525,
+          "median_intensity": 24.861538461538462,
+          "median_radial_velocity_mps": -2.0392307318173923,
+          "median_persistence": 0.04775862068965517
+        },
+        "metrics": {
+          "position_rmse_m": 35.74454502934435,
+          "range_rmse_m": 35.20506366932096,
+          "direction_median_deg": 45.173981717566235,
+          "doppler_vs_gnss_rmse_mps": 4.654478499272733,
+          "doppler_vs_lidar_rmse_mps": 3.4748200422864914,
+          "path_fraction_of_gnss": 0.04472282537044592,
+          "composite": 13.457645261820002
+        }
+      },
+      {
+        "candidate_id": "300m_roundtrip_13_e0020",
+        "lidar_rank": 20,
+        "lidar_score": 1.4129705300162767,
+        "offset_s": 86.86742091178894,
+        "summary": {
+          "observations": 8,
+          "supported_observations": 5,
+          "support_fraction": 0.625,
+          "span_frames": 9,
+          "coverage": 0.8888888888888888,
+          "path_length_m": 21.751883978742534,
+          "displacement_m": 12.716564839035202,
+          "median_speed_mps": 2.387942888317126,
+          "p90_acceleration_mps2": 3.3503803477153875,
+          "median_direction_cosine": 0.8848602136974462,
+          "median_doppler_residual_mps": 2.398039538848338,
+          "median_points": 3.5,
+          "median_extent_m": 1.234451023190243,
+          "median_intensity": 21.63235294117647,
+          "median_radial_velocity_mps": -0.7125000059604645,
+          "median_persistence": 0.03620689655172414
+        },
+        "metrics": {
+          "position_rmse_m": 26.48153026472967,
+          "range_rmse_m": 25.86373686192031,
+          "direction_median_deg": 133.87519316890294,
+          "doppler_vs_gnss_rmse_mps": 5.755388496558756,
+          "doppler_vs_lidar_rmse_mps": 2.9481967906187134,
+          "path_fraction_of_gnss": 0.026729022141299345,
+          "composite": 13.564368750154793
+        }
+      },
+      {
+        "candidate_id": "300m_roundtrip_13_e0021",
+        "lidar_rank": 21,
+        "lidar_score": 1.357525997930302,
+        "offset_s": 117.0902853012085,
+        "summary": {
+          "observations": 7,
+          "supported_observations": 5,
+          "support_fraction": 0.7142857142857143,
+          "span_frames": 8,
+          "coverage": 0.875,
+          "path_length_m": 24.946288708885355,
+          "displacement_m": 20.85916458179993,
+          "median_speed_mps": 1.4613543483087743,
+          "p90_acceleration_mps2": 5.09490500138949,
+          "median_direction_cosine": 0.5268923563662483,
+          "median_doppler_residual_mps": 1.3867483242673908,
+          "median_points": 3.0,
+          "median_extent_m": 0.7599067868213902,
+          "median_intensity": 15.571428571428571,
+          "median_radial_velocity_mps": -2.547142880303519,
+          "median_persistence": 0.04689655172413793
+        },
+        "metrics": {
+          "position_rmse_m": 25.06177080751707,
+          "range_rmse_m": 23.857764344012438,
+          "direction_median_deg": 129.1066289636922,
+          "doppler_vs_gnss_rmse_mps": 7.862310473496131,
+          "doppler_vs_lidar_rmse_mps": 2.1623685151099843,
+          "path_fraction_of_gnss": 0.030654351774525662,
+          "composite": 13.587260934920302
+        }
+      },
+      {
+        "candidate_id": "300m_roundtrip_13_e0001",
+        "lidar_rank": 1,
+        "lidar_score": 4.46291569576634,
+        "offset_s": 109.3402853012085,
+        "summary": {
+          "observations": 11,
+          "supported_observations": 7,
+          "support_fraction": 0.6363636363636364,
+          "span_frames": 11,
+          "coverage": 1.0,
+          "path_length_m": 16.576340786663817,
+          "displacement_m": 6.538120535319024,
+          "median_speed_mps": 1.0113770080726372,
+          "p90_acceleration_mps2": 2.839868832770327,
+          "median_direction_cosine": 0.5730811132367114,
+          "median_doppler_residual_mps": 0.6232242037566873,
+          "median_points": 3.0,
+          "median_extent_m": 0.27007890448744387,
+          "median_intensity": 22.0,
+          "median_radial_velocity_mps": -0.05166666675359011,
+          "median_persistence": 0.13201970443349756
+        },
+        "metrics": {
+          "position_rmse_m": 56.81206869931332,
+          "range_rmse_m": 18.545776502620427,
+          "direction_median_deg": 89.76194838727145,
+          "doppler_vs_gnss_rmse_mps": 5.441623302557661,
+          "doppler_vs_lidar_rmse_mps": 1.6006565632111418,
+          "path_fraction_of_gnss": 0.020369241594956053,
+          "composite": 13.76886370142049
+        }
+      },
+      {
+        "candidate_id": "300m_roundtrip_13_e0012",
+        "lidar_rank": 12,
+        "lidar_score": 2.4588437121131084,
+        "offset_s": 91.0902853012085,
+        "summary": {
+          "observations": 12,
+          "supported_observations": 9,
+          "support_fraction": 0.75,
+          "span_frames": 13,
+          "coverage": 0.9230769230769231,
+          "path_length_m": 28.17238429686247,
+          "displacement_m": 12.893526616140006,
+          "median_speed_mps": 2.8206110278782783,
+          "p90_acceleration_mps2": 4.4495694739672125,
+          "median_direction_cosine": 0.8412022987205733,
+          "median_doppler_residual_mps": 2.5652705219992473,
+          "median_points": 4.5,
+          "median_extent_m": 0.9413652928333309,
+          "median_intensity": 24.42857142857143,
+          "median_radial_velocity_mps": -0.8300000067489843,
+          "median_persistence": 0.10919540229885058
+        },
+        "metrics": {
+          "position_rmse_m": 52.521583750381666,
+          "range_rmse_m": 18.365653295866622,
+          "direction_median_deg": 52.1321547160988,
+          "doppler_vs_gnss_rmse_mps": 11.001308315465348,
+          "doppler_vs_lidar_rmse_mps": 8.361441138780458,
+          "path_fraction_of_gnss": 0.03461862358129233,
+          "composite": 14.081881940778954
+        }
+      },
+      {
+        "candidate_id": "300m_roundtrip_13_e0017",
+        "lidar_rank": 17,
+        "lidar_score": 1.6683577231649365,
+        "offset_s": 64.0902853012085,
+        "summary": {
+          "observations": 7,
+          "supported_observations": 5,
+          "support_fraction": 0.7142857142857143,
+          "span_frames": 8,
+          "coverage": 0.875,
+          "path_length_m": 26.803588195293585,
+          "displacement_m": 20.26704587872685,
+          "median_speed_mps": 3.128793212830925,
+          "p90_acceleration_mps2": 4.702018179189047,
+          "median_direction_cosine": 0.5568894921044684,
+          "median_doppler_residual_mps": 1.1199662739829608,
+          "median_points": 3.0,
+          "median_extent_m": 2.898057774744801,
+          "median_intensity": 21.166666666666668,
+          "median_radial_velocity_mps": -0.5649999994784594,
+          "median_persistence": 0.135632183908046
+        },
+        "metrics": {
+          "position_rmse_m": 59.66449949008518,
+          "range_rmse_m": 16.638978556195447,
+          "direction_median_deg": 88.22681178291123,
+          "doppler_vs_gnss_rmse_mps": 6.967334328804552,
+          "doppler_vs_lidar_rmse_mps": 1.3853947157197175,
+          "path_fraction_of_gnss": 0.03293662760606949,
+          "composite": 14.137456487456113
+        }
+      },
+      {
+        "candidate_id": "300m_roundtrip_13_e0002",
+        "lidar_rank": 2,
+        "lidar_score": 4.377416229640259,
+        "offset_s": 92.59794306755066,
+        "summary": {
+          "observations": 8,
+          "supported_observations": 7,
+          "support_fraction": 0.875,
+          "span_frames": 9,
+          "coverage": 0.8888888888888888,
+          "path_length_m": 21.569322055516118,
+          "displacement_m": 20.388761763317635,
+          "median_speed_mps": 3.0480759173337186,
+          "p90_acceleration_mps2": 2.61680349409984,
+          "median_direction_cosine": 0.9684679023716387,
+          "median_doppler_residual_mps": 0.971318860172881,
+          "median_points": 4.0,
+          "median_extent_m": 2.4790214406083226,
+          "median_intensity": 25.25,
+          "median_radial_velocity_mps": 2.4774999003857374,
+          "median_persistence": 0.05890804597701149
+        },
+        "metrics": {
+          "position_rmse_m": 31.961008372548125,
+          "range_rmse_m": 20.58365755007243,
+          "direction_median_deg": 161.73279578833478,
+          "doppler_vs_gnss_rmse_mps": 8.885554033846061,
+          "doppler_vs_lidar_rmse_mps": 2.42159638571845,
+          "path_fraction_of_gnss": 0.02650468747250257,
+          "composite": 14.895620714408505
+        }
+      },
+      {
+        "candidate_id": "300m_roundtrip_13_e0011",
+        "lidar_rank": 11,
+        "lidar_score": 2.5546133103548665,
+        "offset_s": 99.85655903816223,
+        "summary": {
+          "observations": 12,
+          "supported_observations": 8,
+          "support_fraction": 0.6666666666666666,
+          "span_frames": 13,
+          "coverage": 0.9230769230769231,
+          "path_length_m": 22.033592246671002,
+          "displacement_m": 1.4394979043122509,
+          "median_speed_mps": 1.5097423592298191,
+          "p90_acceleration_mps2": 5.593631747536511,
+          "median_direction_cosine": 0.3197188167138939,
+          "median_doppler_residual_mps": 0.9065209630833553,
+          "median_points": 3.0,
+          "median_extent_m": 0.9741204514302451,
+          "median_intensity": 17.35,
+          "median_radial_velocity_mps": -1.5366666634877522,
+          "median_persistence": 0.08379310344827587
+        },
+        "metrics": {
+          "position_rmse_m": 36.775040975893,
+          "range_rmse_m": 36.35103756117129,
+          "direction_median_deg": 72.67776136942128,
+          "doppler_vs_gnss_rmse_mps": 5.712931465808202,
+          "doppler_vs_lidar_rmse_mps": 2.0636421068125443,
+          "path_fraction_of_gnss": 0.027075189238283028,
+          "composite": 14.928529566124041
+        }
+      },
+      {
+        "candidate_id": "300m_roundtrip_13_e0019",
+        "lidar_rank": 19,
+        "lidar_score": 1.482641033366543,
+        "offset_s": 139.34817051887512,
+        "summary": {
+          "observations": 6,
+          "supported_observations": 5,
+          "support_fraction": 0.8333333333333334,
+          "span_frames": 7,
+          "coverage": 0.8571428571428571,
+          "path_length_m": 15.33800951424635,
+          "displacement_m": 11.666616216018783,
+          "median_speed_mps": 1.9084948881730033,
+          "p90_acceleration_mps2": 2.0161641294588053,
+          "median_direction_cosine": 0.6496076734263518,
+          "median_doppler_residual_mps": 2.71138039626366,
+          "median_points": 3.0,
+          "median_extent_m": 2.3923299320632156,
+          "median_intensity": 16.625,
+          "median_radial_velocity_mps": -0.4216665589871506,
+          "median_persistence": 0.08850574712643677
+        },
+        "metrics": {
+          "position_rmse_m": 82.17724384069265,
+          "range_rmse_m": 24.141117876933944,
+          "direction_median_deg": 18.896898056295534,
+          "doppler_vs_gnss_rmse_mps": 6.887722869546656,
+          "doppler_vs_lidar_rmse_mps": 5.437946155792952,
+          "path_fraction_of_gnss": 0.018847562643787643,
+          "composite": 15.881766955675287
+        }
+      },
+      {
+        "candidate_id": "300m_roundtrip_13_e0003",
+        "lidar_rank": 3,
+        "lidar_score": 4.185633460008689,
+        "offset_s": 115.5902853012085,
+        "summary": {
+          "observations": 11,
+          "supported_observations": 7,
+          "support_fraction": 0.6363636363636364,
+          "span_frames": 12,
+          "coverage": 0.9166666666666666,
+          "path_length_m": 44.331266546934216,
+          "displacement_m": 33.675712562403916,
+          "median_speed_mps": 2.843647062490308,
+          "p90_acceleration_mps2": 4.462569838857751,
+          "median_direction_cosine": 0.41346010501261543,
+          "median_doppler_residual_mps": 0.4838400436318966,
+          "median_points": 3.0,
+          "median_extent_m": 0.0,
+          "median_intensity": 22.666666666666668,
+          "median_radial_velocity_mps": -0.014999999664723873,
+          "median_persistence": 0.06896551724137931
+        },
+        "metrics": {
+          "position_rmse_m": 56.22323184114303,
+          "range_rmse_m": 24.91354445576855,
+          "direction_median_deg": 111.3119980793177,
+          "doppler_vs_gnss_rmse_mps": 6.564877205740978,
+          "doppler_vs_lidar_rmse_mps": 2.5965599083883175,
+          "path_fraction_of_gnss": 0.054474886232514196,
+          "composite": 15.973667279447895
+        }
+      },
+      {
+        "candidate_id": "300m_roundtrip_13_e0013",
+        "lidar_rank": 13,
+        "lidar_score": 2.4230673831352196,
+        "offset_s": 59.590285301208496,
+        "summary": {
+          "observations": 10,
+          "supported_observations": 8,
+          "support_fraction": 0.8,
+          "span_frames": 11,
+          "coverage": 0.9090909090909091,
+          "path_length_m": 18.61519677870071,
+          "displacement_m": 6.928451880383022,
+          "median_speed_mps": 1.4544127079138636,
+          "p90_acceleration_mps2": 3.3873493191743975,
+          "median_direction_cosine": 0.34328701980712484,
+          "median_doppler_residual_mps": 2.81124547170177,
+          "median_points": 5.5,
+          "median_extent_m": 1.4996335708216844,
+          "median_intensity": 22.9125,
+          "median_radial_velocity_mps": -1.8668750636279583,
+          "median_persistence": 0.07672413793103448
+        },
+        "metrics": {
+          "position_rmse_m": 35.54085431422578,
+          "range_rmse_m": 35.334555645003064,
+          "direction_median_deg": 139.53214382569672,
+          "doppler_vs_gnss_rmse_mps": 4.782818887439115,
+          "doppler_vs_lidar_rmse_mps": 3.57000462904986,
+          "path_fraction_of_gnss": 0.02287461662395735,
+          "composite": 16.20190220363709
+        }
+      },
+      {
+        "candidate_id": "300m_roundtrip_13_e0018",
+        "lidar_rank": 18,
+        "lidar_score": 1.5445978616160503,
+        "offset_s": 80.5902853012085,
+        "summary": {
+          "observations": 8,
+          "supported_observations": 5,
+          "support_fraction": 0.625,
+          "span_frames": 9,
+          "coverage": 0.8888888888888888,
+          "path_length_m": 18.89809384890094,
+          "displacement_m": 14.826975366259724,
+          "median_speed_mps": 2.589662467003605,
+          "p90_acceleration_mps2": 4.195415991329565,
+          "median_direction_cosine": 0.6806342648151598,
+          "median_doppler_residual_mps": 1.296143298603353,
+          "median_points": 3.0,
+          "median_extent_m": 0.0,
+          "median_intensity": 23.0,
+          "median_radial_velocity_mps": -0.10499999858438969,
+          "median_persistence": 0.15632183908045977
+        },
+        "metrics": {
+          "position_rmse_m": 61.172305065840696,
+          "range_rmse_m": 19.14300253389956,
+          "direction_median_deg": 152.65766891913438,
+          "doppler_vs_gnss_rmse_mps": 6.62072297754688,
+          "doppler_vs_lidar_rmse_mps": 1.9590114992409038,
+          "path_fraction_of_gnss": 0.023222244537956908,
+          "composite": 16.514386355950116
+        }
+      },
+      {
+        "candidate_id": "300m_roundtrip_13_e0016",
+        "lidar_rank": 16,
+        "lidar_score": 1.8359178283164057,
+        "offset_s": 59.590285301208496,
+        "summary": {
+          "observations": 11,
+          "supported_observations": 7,
+          "support_fraction": 0.6363636363636364,
+          "span_frames": 11,
+          "coverage": 1.0,
+          "path_length_m": 39.50205697250789,
+          "displacement_m": 36.65038669231942,
+          "median_speed_mps": 4.808514596041286,
+          "p90_acceleration_mps2": 4.95157413033319,
+          "median_direction_cosine": 0.869441921055764,
+          "median_doppler_residual_mps": 2.816345269688834,
+          "median_points": 4.0,
+          "median_extent_m": 0.0,
+          "median_intensity": 22.75,
+          "median_radial_velocity_mps": -0.06750000081956387,
+          "median_persistence": 0.18620689655172415
+        },
+        "metrics": {
+          "position_rmse_m": 50.98935121159319,
+          "range_rmse_m": 42.377291737190674,
+          "direction_median_deg": 24.2961053993455,
+          "doppler_vs_gnss_rmse_mps": 9.983728686882182,
+          "doppler_vs_lidar_rmse_mps": 9.25499227740407,
+          "path_fraction_of_gnss": 0.04854068532532095,
+          "composite": 17.596477470872813
+        }
+      },
+      {
+        "candidate_id": "300m_roundtrip_13_e0023",
+        "lidar_rank": 23,
+        "lidar_score": 1.297388385088352,
+        "offset_s": 139.5902853012085,
+        "summary": {
+          "observations": 9,
+          "supported_observations": 6,
+          "support_fraction": 0.6666666666666666,
+          "span_frames": 11,
+          "coverage": 0.8181818181818182,
+          "path_length_m": 26.566228671239667,
+          "displacement_m": 5.056518009452147,
+          "median_speed_mps": 2.8346632512379997,
+          "p90_acceleration_mps2": 4.598420939216486,
+          "median_direction_cosine": 0.7649129102056428,
+          "median_doppler_residual_mps": 2.607710833846154,
+          "median_points": 4.0,
+          "median_extent_m": 1.3299136961770257,
+          "median_intensity": 24.0,
+          "median_radial_velocity_mps": -1.6866666475931804,
+          "median_persistence": 0.02413793103448276
+        },
+        "metrics": {
+          "position_rmse_m": 79.69945377560829,
+          "range_rmse_m": 79.18276417647147,
+          "direction_median_deg": 58.392926158540234,
+          "doppler_vs_gnss_rmse_mps": 8.016919086098174,
+          "doppler_vs_lidar_rmse_mps": 2.9753889662872686,
+          "path_fraction_of_gnss": 0.03264495687170526,
+          "composite": 28.147173893703282
+        }
+      },
+      {
+        "candidate_id": "300m_roundtrip_13_e0015",
+        "lidar_rank": 15,
+        "lidar_score": 1.8855690950025767,
+        "offset_s": 139.35655903816223,
+        "summary": {
+          "observations": 10,
+          "supported_observations": 7,
+          "support_fraction": 0.7,
+          "span_frames": 10,
+          "coverage": 1.0,
+          "path_length_m": 16.238381622938743,
+          "displacement_m": 5.0274054037133995,
+          "median_speed_mps": 2.0099531226709986,
+          "p90_acceleration_mps2": 5.658138281735807,
+          "median_direction_cosine": 0.33230393703551964,
+          "median_doppler_residual_mps": 1.2007302423268689,
+          "median_points": 3.0,
+          "median_extent_m": 3.1036788421711536,
+          "median_intensity": 16.5,
+          "median_radial_velocity_mps": -0.0666666654869914,
+          "median_persistence": 0.11954022988505747
+        },
+        "metrics": {
+          "position_rmse_m": 121.49162214017831,
+          "range_rmse_m": 119.09184409807611,
+          "direction_median_deg": 90.0,
+          "doppler_vs_gnss_rmse_mps": 6.589806001562411,
+          "doppler_vs_lidar_rmse_mps": 6.41154137647893,
+          "path_fraction_of_gnss": 0.01995395260302825,
+          "composite": 40.735561605582426
+        }
+      },
+      {
+        "candidate_id": "300m_roundtrip_13_e0010",
+        "lidar_rank": 10,
+        "lidar_score": 2.572398523109829,
+        "offset_s": 59.590285301208496,
+        "summary": {
+          "observations": 7,
+          "supported_observations": 6,
+          "support_fraction": 0.8571428571428571,
+          "span_frames": 8,
+          "coverage": 0.875,
+          "path_length_m": 12.94656023033964,
+          "displacement_m": 8.71381452030821,
+          "median_speed_mps": 1.7371510434960362,
+          "p90_acceleration_mps2": 3.8175954427371437,
+          "median_direction_cosine": 0.6530455412587871,
+          "median_doppler_residual_mps": 0.7967347017895965,
+          "median_points": 4.0,
+          "median_extent_m": 1.0974093178674145,
+          "median_intensity": 16.416666666666668,
+          "median_radial_velocity_mps": -0.6375000107412537,
+          "median_persistence": 0.09137931034482759
+        },
+        "metrics": {
+          "position_rmse_m": 156.90561455984528,
+          "range_rmse_m": 156.5170811094563,
+          "direction_median_deg": 54.76214441103211,
+          "doppler_vs_gnss_rmse_mps": 4.588652839366151,
+          "doppler_vs_lidar_rmse_mps": 1.083904649586822,
+          "path_fraction_of_gnss": 0.015908915999579488,
+          "composite": 50.08816132178923
+        }
+      }
+    ],
+    "100m_cross_10": [
+      {
+        "candidate_id": "100m_cross_10_e0003",
+        "lidar_rank": 3,
+        "lidar_score": 18.930817637142265,
+        "offset_s": 96.57586932182312,
+        "summary": {
+          "observations": 11,
+          "supported_observations": 11,
+          "support_fraction": 1.0,
+          "span_frames": 14,
+          "coverage": 0.7857142857142857,
+          "path_length_m": 61.548442347311344,
+          "displacement_m": 38.69250295230657,
+          "median_speed_mps": 3.978284722143896,
+          "p90_acceleration_mps2": 3.4170345931424064,
+          "median_direction_cosine": 0.9989642602176684,
+          "median_doppler_residual_mps": 0.566156062081897,
+          "median_points": 38.0,
+          "median_extent_m": 0.2904949397856149,
+          "median_intensity": 38.20454545454545,
+          "median_radial_velocity_mps": -0.046136364213783636,
+          "median_persistence": 0.022418478260869564
+        },
+        "metrics": {
+          "position_rmse_m": 6.441106833119225,
+          "range_rmse_m": 0.6866463463283856,
+          "direction_median_deg": 2.4445482575158026,
+          "doppler_vs_gnss_rmse_mps": 1.5415102266001566,
+          "doppler_vs_lidar_rmse_mps": 1.2437783568700902,
+          "path_fraction_of_gnss": 0.5100249240662872,
+          "composite": 1.3651209307066745
+        }
+      },
+      {
+        "candidate_id": "100m_cross_10_e0002",
+        "lidar_rank": 2,
+        "lidar_score": 28.51220850538187,
+        "offset_s": 93.5696952342987,
+        "summary": {
+          "observations": 14,
+          "supported_observations": 14,
+          "support_fraction": 1.0,
+          "span_frames": 17,
+          "coverage": 0.8235294117647058,
+          "path_length_m": 40.82484709423565,
+          "displacement_m": 9.344393142836413,
+          "median_speed_mps": 1.7457718449789934,
+          "p90_acceleration_mps2": 3.2635354564510344,
+          "median_direction_cosine": 0.922831676179011,
+          "median_doppler_residual_mps": 0.17354123161039547,
+          "median_points": 26.5,
+          "median_extent_m": 0.3139727856300849,
+          "median_intensity": 37.3025078369906,
+          "median_radial_velocity_mps": -0.04902777782020469,
+          "median_persistence": 0.0861513687600644
+        },
+        "metrics": {
+          "position_rmse_m": 9.486661345790392,
+          "range_rmse_m": 0.8324776324394254,
+          "direction_median_deg": 33.16100487527333,
+          "doppler_vs_gnss_rmse_mps": 0.9191430447343425,
+          "doppler_vs_lidar_rmse_mps": 0.45574622745185606,
+          "path_fraction_of_gnss": 0.3382975871551831,
+          "composite": 2.3689999581290384
+        }
+      },
+      {
+        "candidate_id": "100m_cross_10_e0001",
+        "lidar_rank": 1,
+        "lidar_score": 69.76017948373263,
+        "offset_s": 120.55991768836975,
+        "summary": {
+          "observations": 19,
+          "supported_observations": 19,
+          "support_fraction": 1.0,
+          "span_frames": 19,
+          "coverage": 1.0,
+          "path_length_m": 38.10298230078117,
+          "displacement_m": 20.2744135586451,
+          "median_speed_mps": 0.6173668942270162,
+          "p90_acceleration_mps2": 2.369688994018042,
+          "median_direction_cosine": 0.7603246124714895,
+          "median_doppler_residual_mps": 0.17650732363520744,
+          "median_points": 52.0,
+          "median_extent_m": 0.19378857223663146,
+          "median_intensity": 37.96666666666667,
+          "median_radial_velocity_mps": -0.018620688660905278,
+          "median_persistence": 0.10762211486849169
+        },
+        "metrics": {
+          "position_rmse_m": 16.896688158752394,
+          "range_rmse_m": 10.160968667769072,
+          "direction_median_deg": 57.34613426738409,
+          "doppler_vs_gnss_rmse_mps": 1.589878513639769,
+          "doppler_vs_lidar_rmse_mps": 0.8762233306495621,
+          "path_fraction_of_gnss": 0.31574268841758796,
+          "composite": 5.89028303304376
+        }
+      },
+      {
+        "candidate_id": "100m_cross_10_e0005",
+        "lidar_rank": 5,
+        "lidar_score": 2.169872679588345,
+        "offset_s": 88.57137393951416,
+        "summary": {
+          "observations": 13,
+          "supported_observations": 8,
+          "support_fraction": 0.6153846153846154,
+          "span_frames": 13,
+          "coverage": 1.0,
+          "path_length_m": 28.988085515705244,
+          "displacement_m": 7.9862574595963265,
+          "median_speed_mps": 2.117425987820172,
+          "p90_acceleration_mps2": 4.1920325712198965,
+          "median_direction_cosine": 0.6298953238801549,
+          "median_doppler_residual_mps": 2.3477644651404144,
+          "median_points": 3.0,
+          "median_extent_m": 2.018040806275029,
+          "median_intensity": 13.0,
+          "median_radial_velocity_mps": -3.087272730740634,
+          "median_persistence": 0.057971014492753624
+        },
+        "metrics": {
+          "position_rmse_m": 100.68438357221832,
+          "range_rmse_m": 100.43164182181091,
+          "direction_median_deg": 42.14676848268055,
+          "doppler_vs_gnss_rmse_mps": 2.0986710472563397,
+          "doppler_vs_lidar_rmse_mps": 2.738786371265259,
+          "path_fraction_of_gnss": 0.2402115398883113,
+          "composite": 32.05851712255557
+        }
+      },
+      {
+        "candidate_id": "100m_cross_10_e0012",
+        "lidar_rank": 12,
+        "lidar_score": 1.1078762098375488,
+        "offset_s": 104.56056571006775,
+        "summary": {
+          "observations": 8,
+          "supported_observations": 5,
+          "support_fraction": 0.625,
+          "span_frames": 10,
+          "coverage": 0.8,
+          "path_length_m": 32.2829936146287,
+          "displacement_m": 27.236399097404448,
+          "median_speed_mps": 2.6128176891387502,
+          "p90_acceleration_mps2": 4.711114046964337,
+          "median_direction_cosine": 0.7678314321461857,
+          "median_doppler_residual_mps": 2.3328203055570693,
+          "median_points": 3.5,
+          "median_extent_m": 0.971326580862434,
+          "median_intensity": 14.5,
+          "median_radial_velocity_mps": 0.0033333323275049525,
+          "median_persistence": 0.09821428571428571
+        },
+        "metrics": {
+          "position_rmse_m": 109.88734857343555,
+          "range_rmse_m": 106.87004554871119,
+          "direction_median_deg": 19.224453341827235,
+          "doppler_vs_gnss_rmse_mps": 5.734497676878594,
+          "doppler_vs_lidar_rmse_mps": 6.319574608144901,
+          "path_fraction_of_gnss": 0.2675149969518716,
+          "composite": 34.82351328819277
+        }
+      },
+      {
+        "candidate_id": "100m_cross_10_e0004",
+        "lidar_rank": 4,
+        "lidar_score": 8.303865751405908,
+        "offset_s": 83.55670642852783,
+        "summary": {
+          "observations": 13,
+          "supported_observations": 13,
+          "support_fraction": 1.0,
+          "span_frames": 15,
+          "coverage": 0.8666666666666667,
+          "path_length_m": 45.95777548053506,
+          "displacement_m": 35.110905151888396,
+          "median_speed_mps": 3.7448632028013815,
+          "p90_acceleration_mps2": 4.632906894638148,
+          "median_direction_cosine": 0.8604980041531061,
+          "median_doppler_residual_mps": 2.4202117945827393,
+          "median_points": 39.0,
+          "median_extent_m": 2.48440214961453,
+          "median_intensity": 31.419354838709676,
+          "median_radial_velocity_mps": -4.508602224370485,
+          "median_persistence": 0.03216200119118522
+        },
+        "metrics": {
+          "position_rmse_m": 161.78163190534949,
+          "range_rmse_m": 154.89984885535685,
+          "direction_median_deg": 75.66774168144889,
+          "doppler_vs_gnss_rmse_mps": 5.264410560029733,
+          "doppler_vs_lidar_rmse_mps": 3.0131585817788205,
+          "path_fraction_of_gnss": 0.38083191151204326,
+          "composite": 51.07487195822905
+        }
+      },
+      {
+        "candidate_id": "100m_cross_10_e0009",
+        "lidar_rank": 9,
+        "lidar_score": 1.799535696424749,
+        "offset_s": 122.5720887184143,
+        "summary": {
+          "observations": 8,
+          "supported_observations": 5,
+          "support_fraction": 0.625,
+          "span_frames": 8,
+          "coverage": 1.0,
+          "path_length_m": 25.07037006401266,
+          "displacement_m": 4.275098152565738,
+          "median_speed_mps": 3.24267073376647,
+          "p90_acceleration_mps2": 4.837335794739531,
+          "median_direction_cosine": 0.748270844256776,
+          "median_doppler_residual_mps": 1.1516637520602084,
+          "median_points": 3.0,
+          "median_extent_m": 0.7368890101824725,
+          "median_intensity": 17.833333333333336,
+          "median_radial_velocity_mps": 0.16333333700895308,
+          "median_persistence": 0.08333333333333334
+        },
+        "metrics": {
+          "position_rmse_m": 218.0880960207242,
+          "range_rmse_m": 216.40136415818264,
+          "direction_median_deg": 21.281813490457242,
+          "doppler_vs_gnss_rmse_mps": 1.649250493739349,
+          "doppler_vs_lidar_rmse_mps": 1.835310851010377,
+          "path_fraction_of_gnss": 0.20774715168352814,
+          "composite": 66.2468844123018
+        }
+      },
+      {
+        "candidate_id": "100m_cross_10_e0006",
+        "lidar_rank": 6,
+        "lidar_score": 2.0315151565391574,
+        "offset_s": 127.8081955909729,
+        "summary": {
+          "observations": 7,
+          "supported_observations": 5,
+          "support_fraction": 0.7142857142857143,
+          "span_frames": 7,
+          "coverage": 1.0,
+          "path_length_m": 25.222144582807847,
+          "displacement_m": 24.30665636227367,
+          "median_speed_mps": 3.28988342390544,
+          "p90_acceleration_mps2": 4.278124897786558,
+          "median_direction_cosine": 0.9156713073806259,
+          "median_doppler_residual_mps": 1.7292700411034243,
+          "median_points": 5.0,
+          "median_extent_m": 1.7135726913601705,
+          "median_intensity": 15.0,
+          "median_radial_velocity_mps": 0.03749999776482582,
+          "median_persistence": 0.10144927536231885
+        },
+        "metrics": {
+          "position_rmse_m": 220.541051444356,
+          "range_rmse_m": 218.82203027035305,
+          "direction_median_deg": 22.846540565364165,
+          "doppler_vs_gnss_rmse_mps": 0.2570593559404404,
+          "doppler_vs_lidar_rmse_mps": 2.4941766327120756,
+          "path_fraction_of_gnss": 0.20900484049694934,
+          "composite": 66.55695595235392
+        }
+      },
+      {
+        "candidate_id": "100m_cross_10_e0011",
+        "lidar_rank": 11,
+        "lidar_score": 1.7799688895545758,
+        "offset_s": 120.3220887184143,
+        "summary": {
+          "observations": 7,
+          "supported_observations": 5,
+          "support_fraction": 0.7142857142857143,
+          "span_frames": 7,
+          "coverage": 1.0,
+          "path_length_m": 14.177152209903209,
+          "displacement_m": 10.20924748830634,
+          "median_speed_mps": 2.5034943423337452,
+          "p90_acceleration_mps2": 2.923332771955166,
+          "median_direction_cosine": 0.5194060458290162,
+          "median_doppler_residual_mps": 1.699562956283195,
+          "median_points": 3.0,
+          "median_extent_m": 0.0,
+          "median_intensity": 15.25,
+          "median_radial_velocity_mps": -1.1074999868869781,
+          "median_persistence": 0.1467391304347826
+        },
+        "metrics": {
+          "position_rmse_m": 224.27075211576866,
+          "range_rmse_m": 220.99049745361424,
+          "direction_median_deg": 46.94471849168261,
+          "doppler_vs_gnss_rmse_mps": 6.832050987363897,
+          "doppler_vs_lidar_rmse_mps": 6.8891503301440675,
+          "path_fraction_of_gnss": 0.11747983707743569,
+          "composite": 70.24380270261196
+        }
+      },
+      {
+        "candidate_id": "100m_cross_10_e0007",
+        "lidar_rank": 7,
+        "lidar_score": 1.853006714129243,
+        "offset_s": 107.82489895820618,
+        "summary": {
+          "observations": 7,
+          "supported_observations": 5,
+          "support_fraction": 0.7142857142857143,
+          "span_frames": 9,
+          "coverage": 0.7777777777777778,
+          "path_length_m": 16.354552063424652,
+          "displacement_m": 10.602706717485647,
+          "median_speed_mps": 1.5578289516935535,
+          "p90_acceleration_mps2": 3.111096424885515,
+          "median_direction_cosine": 0.493306972142888,
+          "median_doppler_residual_mps": 1.0196597686177005,
+          "median_points": 3.0,
+          "median_extent_m": 2.564216346273153,
+          "median_intensity": 12.0,
+          "median_radial_velocity_mps": -0.043333335469166435,
+          "median_persistence": 0.12318840579710144
+        },
+        "metrics": {
+          "position_rmse_m": 245.29981149669507,
+          "range_rmse_m": 243.086602078448,
+          "direction_median_deg": 30.56035201905276,
+          "doppler_vs_gnss_rmse_mps": 1.4729283861023659,
+          "doppler_vs_lidar_rmse_mps": 1.7622046994106666,
+          "path_fraction_of_gnss": 0.13552299385933483,
+          "composite": 74.51143060888998
+        }
+      },
+      {
+        "candidate_id": "100m_cross_10_e0008",
+        "lidar_rank": 8,
+        "lidar_score": 1.8391802952884533,
+        "offset_s": 91.06194257736206,
+        "summary": {
+          "observations": 11,
+          "supported_observations": 6,
+          "support_fraction": 0.5454545454545454,
+          "span_frames": 12,
+          "coverage": 0.9166666666666666,
+          "path_length_m": 32.770906277082645,
+          "displacement_m": 16.745372282694042,
+          "median_speed_mps": 2.80409191866162,
+          "p90_acceleration_mps2": 3.4875151131349966,
+          "median_direction_cosine": 0.6112174008468023,
+          "median_doppler_residual_mps": 2.2514807343833074,
+          "median_points": 3.0,
+          "median_extent_m": 1.7077229797124809,
+          "median_intensity": 15.0,
+          "median_radial_velocity_mps": -0.5499999970197678,
+          "median_persistence": 0.1217391304347826
+        },
+        "metrics": {
+          "position_rmse_m": 268.702519217246,
+          "range_rmse_m": 264.9116026399201,
+          "direction_median_deg": 87.2678069957509,
+          "doppler_vs_gnss_rmse_mps": 2.933918928101372,
+          "doppler_vs_lidar_rmse_mps": 3.396814502938728,
+          "path_fraction_of_gnss": 0.2715581150086184,
+          "composite": 83.32391133990673
+        }
+      },
+      {
+        "candidate_id": "100m_cross_10_e0010",
+        "lidar_rank": 10,
+        "lidar_score": 1.7901154481169241,
+        "offset_s": 109.567556142807,
+        "summary": {
+          "observations": 9,
+          "supported_observations": 5,
+          "support_fraction": 0.5555555555555556,
+          "span_frames": 10,
+          "coverage": 0.9,
+          "path_length_m": 16.13344169796705,
+          "displacement_m": 6.793075185607028,
+          "median_speed_mps": 1.5022041982057757,
+          "p90_acceleration_mps2": 3.3204741296871996,
+          "median_direction_cosine": 0.40000561228196285,
+          "median_doppler_residual_mps": 1.2915623508238565,
+          "median_points": 3.0,
+          "median_extent_m": 0.0,
+          "median_intensity": 14.25,
+          "median_radial_velocity_mps": -0.16250000055879354,
+          "median_persistence": 0.1358695652173913
+        },
+        "metrics": {
+          "position_rmse_m": 292.3815168037761,
+          "range_rmse_m": 290.07702260884207,
+          "direction_median_deg": 80.14703522606769,
+          "doppler_vs_gnss_rmse_mps": 1.3220123198295033,
+          "doppler_vs_lidar_rmse_mps": 2.31211540810539,
+          "path_fraction_of_gnss": 0.13369074932069283,
+          "composite": 89.98414226759589
+        }
+      }
+    ],
+    "200m_cross_10": [
+      {
+        "candidate_id": "200m_cross_10_e0001",
+        "lidar_rank": 1,
+        "lidar_score": 40.94870804209797,
+        "offset_s": 96.3393325805664,
+        "summary": {
+          "observations": 18,
+          "supported_observations": 18,
+          "support_fraction": 1.0,
+          "span_frames": 18,
+          "coverage": 1.0,
+          "path_length_m": 75.15335771160579,
+          "displacement_m": 10.5320842321135,
+          "median_speed_mps": 3.6050291928888165,
+          "p90_acceleration_mps2": 3.7461603656313702,
+          "median_direction_cosine": 0.9994437206426517,
+          "median_doppler_residual_mps": 0.26685841493899465,
+          "median_points": 22.5,
+          "median_extent_m": 0.244145221761079,
+          "median_intensity": 30.011538461538464,
+          "median_radial_velocity_mps": -0.15887424051119337,
+          "median_persistence": 0.051571800595238096
+        },
+        "metrics": {
+          "position_rmse_m": 6.60521374234284,
+          "range_rmse_m": 0.5321706738811287,
+          "direction_median_deg": 2.0469285784549403,
+          "doppler_vs_gnss_rmse_mps": 0.8936036029910494,
+          "doppler_vs_lidar_rmse_mps": 0.6064413028995128,
+          "path_fraction_of_gnss": 0.3791373877351568,
+          "composite": 1.123307050344334
+        }
+      },
+      {
+        "candidate_id": "200m_cross_10_e0002",
+        "lidar_rank": 2,
+        "lidar_score": 38.37278009658697,
+        "offset_s": 124.34367942810059,
+        "summary": {
+          "observations": 20,
+          "supported_observations": 20,
+          "support_fraction": 1.0,
+          "span_frames": 20,
+          "coverage": 1.0,
+          "path_length_m": 114.08332045480526,
+          "displacement_m": 31.861423998726963,
+          "median_speed_mps": 5.372479241010773,
+          "p90_acceleration_mps2": 4.695742935672722,
+          "median_direction_cosine": 0.9996954269892437,
+          "median_doppler_residual_mps": 0.31165820572784597,
+          "median_points": 19.5,
+          "median_extent_m": 0.14848957739041663,
+          "median_intensity": 28.55,
+          "median_radial_velocity_mps": -0.09333333305807578,
+          "median_persistence": 0.03421052631578947
+        },
+        "metrics": {
+          "position_rmse_m": 11.159954733065764,
+          "range_rmse_m": 2.3338043502082204,
+          "direction_median_deg": 2.654766786201392,
+          "doppler_vs_gnss_rmse_mps": 2.1655151961400256,
+          "doppler_vs_lidar_rmse_mps": 1.2415792296076262,
+          "path_fraction_of_gnss": 0.5755331953013741,
+          "composite": 2.3804452216673164
+        }
+      },
+      {
+        "candidate_id": "200m_cross_10_e0005",
+        "lidar_rank": 5,
+        "lidar_score": 7.668473654973772,
+        "offset_s": 86.34312105178833,
+        "summary": {
+          "observations": 8,
+          "supported_observations": 8,
+          "support_fraction": 1.0,
+          "span_frames": 8,
+          "coverage": 1.0,
+          "path_length_m": 18.9901577471184,
+          "displacement_m": 16.88322001071722,
+          "median_speed_mps": 2.8987401273999054,
+          "p90_acceleration_mps2": 2.4078222507294185,
+          "median_direction_cosine": 0.9912940534160584,
+          "median_doppler_residual_mps": 2.9085752200435864,
+          "median_points": 70.0,
+          "median_extent_m": 2.1308441269652967,
+          "median_intensity": 39.83594299788881,
+          "median_radial_velocity_mps": -5.791734456196467,
+          "median_persistence": 0.04134778911564625
+        },
+        "metrics": {
+          "position_rmse_m": 52.27411428278231,
+          "range_rmse_m": 30.300658896474594,
+          "direction_median_deg": 78.71380009459637,
+          "doppler_vs_gnss_rmse_mps": 5.430834652642623,
+          "doppler_vs_lidar_rmse_mps": 3.7688157526144868,
+          "path_fraction_of_gnss": 0.0958024900038386,
+          "composite": 15.346787142109157
+        }
+      },
+      {
+        "candidate_id": "200m_cross_10_e0003",
+        "lidar_rank": 3,
+        "lidar_score": 13.907534275870887,
+        "offset_s": 85.34312105178833,
+        "summary": {
+          "observations": 9,
+          "supported_observations": 9,
+          "support_fraction": 1.0,
+          "span_frames": 11,
+          "coverage": 0.8181818181818182,
+          "path_length_m": 30.951490034796926,
+          "displacement_m": 30.814740845690224,
+          "median_speed_mps": 2.931639720099967,
+          "p90_acceleration_mps2": 1.4008537435775121,
+          "median_direction_cosine": 0.9960992968253273,
+          "median_doppler_residual_mps": 2.318579070000008,
+          "median_points": 76.0,
+          "median_extent_m": 3.2140902329163925,
+          "median_intensity": 28.105263157894736,
+          "median_radial_velocity_mps": -5.815660341730657,
+          "median_persistence": 0.047619047619047616
+        },
+        "metrics": {
+          "position_rmse_m": 60.35815392149446,
+          "range_rmse_m": 39.76934951418926,
+          "direction_median_deg": 73.35262513876611,
+          "doppler_vs_gnss_rmse_mps": 5.0544256724144425,
+          "doppler_vs_lidar_rmse_mps": 2.5823041245813356,
+          "path_fraction_of_gnss": 0.1561456125930545,
+          "composite": 17.77028314213781
+        }
+      },
+      {
+        "candidate_id": "200m_cross_10_e0016",
+        "lidar_rank": 16,
+        "lidar_score": 1.2835066532734614,
+        "offset_s": 90.8532202243805,
+        "summary": {
+          "observations": 6,
+          "supported_observations": 5,
+          "support_fraction": 0.8333333333333334,
+          "span_frames": 6,
+          "coverage": 1.0,
+          "path_length_m": 12.817395506972048,
+          "displacement_m": 11.16342270137718,
+          "median_speed_mps": 2.9877849202223024,
+          "p90_acceleration_mps2": 2.8071940172271255,
+          "median_direction_cosine": 0.8466945607075489,
+          "median_doppler_residual_mps": 2.7248192075094084,
+          "median_points": 3.0,
+          "median_extent_m": 0.9512428058101172,
+          "median_intensity": 14.333333333333332,
+          "median_radial_velocity_mps": 0.38433331698179246,
+          "median_persistence": 0.13194444444444445
+        },
+        "metrics": {
+          "position_rmse_m": 54.27016964805895,
+          "range_rmse_m": 46.510549337146855,
+          "direction_median_deg": 66.89073625451601,
+          "doppler_vs_gnss_rmse_mps": 4.6479561739494395,
+          "doppler_vs_lidar_rmse_mps": 3.966453962978146,
+          "path_fraction_of_gnss": 0.06466183279168732,
+          "composite": 18.18960944987125
+        }
+      },
+      {
+        "candidate_id": "200m_cross_10_e0004",
+        "lidar_rank": 4,
+        "lidar_score": 8.041169691201938,
+        "offset_s": 82.6027660369873,
+        "summary": {
+          "observations": 18,
+          "supported_observations": 15,
+          "support_fraction": 0.8333333333333334,
+          "span_frames": 22,
+          "coverage": 0.8181818181818182,
+          "path_length_m": 54.773193250949944,
+          "displacement_m": 43.863495364963484,
+          "median_speed_mps": 2.4242142182995536,
+          "p90_acceleration_mps2": 3.299178042453205,
+          "median_direction_cosine": 0.9671624653208385,
+          "median_doppler_residual_mps": 2.60569402468331,
+          "median_points": 11.5,
+          "median_extent_m": 0.2516220156060847,
+          "median_intensity": 20.30798319327731,
+          "median_radial_velocity_mps": -4.972083330154419,
+          "median_persistence": 0.0625
+        },
+        "metrics": {
+          "position_rmse_m": 72.76982374683004,
+          "range_rmse_m": 37.23463326798546,
+          "direction_median_deg": 78.09182440429178,
+          "doppler_vs_gnss_rmse_mps": 8.379698560390118,
+          "doppler_vs_lidar_rmse_mps": 8.048233015332084,
+          "path_fraction_of_gnss": 0.2763225228973521,
+          "composite": 19.748336864723235
+        }
+      },
+      {
+        "candidate_id": "200m_cross_10_e0023",
+        "lidar_rank": 23,
+        "lidar_score": 0.8719836951801886,
+        "offset_s": 104.84984636306763,
+        "summary": {
+          "observations": 6,
+          "supported_observations": 5,
+          "support_fraction": 0.8333333333333334,
+          "span_frames": 7,
+          "coverage": 0.8571428571428571,
+          "path_length_m": 12.701461859634229,
+          "displacement_m": 8.5928829520757,
+          "median_speed_mps": 2.1018304064448,
+          "p90_acceleration_mps2": 3.4319478730817243,
+          "median_direction_cosine": 0.5041249910307128,
+          "median_doppler_residual_mps": 3.365937374706774,
+          "median_points": 3.5,
+          "median_extent_m": 2.3432129185281725,
+          "median_intensity": 17.520833333333336,
+          "median_radial_velocity_mps": -4.6925001591444016,
+          "median_persistence": 0.15494791666666669
+        },
+        "metrics": {
+          "position_rmse_m": 62.554550625145296,
+          "range_rmse_m": 53.948698851647194,
+          "direction_median_deg": 54.90871482594785,
+          "doppler_vs_gnss_rmse_mps": 4.014545951474422,
+          "doppler_vs_lidar_rmse_mps": 4.093118140304846,
+          "path_fraction_of_gnss": 0.06407696497552211,
+          "composite": 19.952197240267285
+        }
+      },
+      {
+        "candidate_id": "200m_cross_10_e0017",
+        "lidar_rank": 17,
+        "lidar_score": 1.2778733509836844,
+        "offset_s": 87.59162545204163,
+        "summary": {
+          "observations": 10,
+          "supported_observations": 6,
+          "support_fraction": 0.6,
+          "span_frames": 10,
+          "coverage": 1.0,
+          "path_length_m": 29.202361161478432,
+          "displacement_m": 9.111826893717417,
+          "median_speed_mps": 2.968878363651668,
+          "p90_acceleration_mps2": 3.798959589026756,
+          "median_direction_cosine": 0.4941194316263057,
+          "median_doppler_residual_mps": 3.6223327452601692,
+          "median_points": 3.0,
+          "median_extent_m": 2.006023249567958,
+          "median_intensity": 16.416666666666664,
+          "median_radial_velocity_mps": -0.4874999988824129,
+          "median_persistence": 0.13749999999999998
+        },
+        "metrics": {
+          "position_rmse_m": 67.86491387529482,
+          "range_rmse_m": 56.40292847875357,
+          "direction_median_deg": 88.60776763929175,
+          "doppler_vs_gnss_rmse_mps": 2.9656559499255564,
+          "doppler_vs_lidar_rmse_mps": 5.953922600251252,
+          "path_fraction_of_gnss": 0.14732152046949393,
+          "composite": 21.58727957056848
+        }
+      },
+      {
+        "candidate_id": "200m_cross_10_e0021",
+        "lidar_rank": 21,
+        "lidar_score": 1.068837898278823,
+        "offset_s": 86.09312105178833,
+        "summary": {
+          "observations": 7,
+          "supported_observations": 5,
+          "support_fraction": 0.7142857142857143,
+          "span_frames": 9,
+          "coverage": 0.7777777777777778,
+          "path_length_m": 37.518599166804876,
+          "displacement_m": 22.718991875432938,
+          "median_speed_mps": 4.179978362924513,
+          "p90_acceleration_mps2": 4.534274305525116,
+          "median_direction_cosine": 0.5108741124687172,
+          "median_doppler_residual_mps": 2.327645831577762,
+          "median_points": 3.0,
+          "median_extent_m": 0.0,
+          "median_intensity": 19.0,
+          "median_radial_velocity_mps": -0.029999999329447746,
+          "median_persistence": 0.0625
+        },
+        "metrics": {
+          "position_rmse_m": 69.4706976534096,
+          "range_rmse_m": 57.596757091224966,
+          "direction_median_deg": 77.32930479448964,
+          "doppler_vs_gnss_rmse_mps": 9.101168729159763,
+          "doppler_vs_lidar_rmse_mps": 12.601313297085497,
+          "path_fraction_of_gnss": 0.18927569057088367,
+          "composite": 23.709552801719862
+        }
+      },
+      {
+        "candidate_id": "200m_cross_10_e0013",
+        "lidar_rank": 13,
+        "lidar_score": 1.8903326777479526,
+        "offset_s": 93.8560426235199,
+        "summary": {
+          "observations": 12,
+          "supported_observations": 6,
+          "support_fraction": 0.5,
+          "span_frames": 13,
+          "coverage": 0.9230769230769231,
+          "path_length_m": 53.00483637961687,
+          "displacement_m": 33.322583054164255,
+          "median_speed_mps": 3.60934451132504,
+          "p90_acceleration_mps2": 4.135464961683513,
+          "median_direction_cosine": 0.3495807002759397,
+          "median_doppler_residual_mps": 1.8510976280153275,
+          "median_points": 2.5,
+          "median_extent_m": 1.7603267734437238,
+          "median_intensity": 17.666666666666664,
+          "median_radial_velocity_mps": -0.2500000041909516,
+          "median_persistence": 0.11805555555555555
+        },
+        "metrics": {
+          "position_rmse_m": 79.33579352672159,
+          "range_rmse_m": 71.57844559639882,
+          "direction_median_deg": 51.904221216550994,
+          "doppler_vs_gnss_rmse_mps": 3.204668417652279,
+          "doppler_vs_lidar_rmse_mps": 3.135540516464411,
+          "path_fraction_of_gnss": 0.2674014284154059,
+          "composite": 24.80046902688033
+        }
+      },
+      {
+        "candidate_id": "200m_cross_10_e0008",
+        "lidar_rank": 8,
+        "lidar_score": 4.291421846396848,
+        "offset_s": 84.59312105178833,
+        "summary": {
+          "observations": 9,
+          "supported_observations": 8,
+          "support_fraction": 0.8888888888888888,
+          "span_frames": 11,
+          "coverage": 0.8181818181818182,
+          "path_length_m": 22.85377127932327,
+          "displacement_m": 10.389346908011133,
+          "median_speed_mps": 2.1592932626830788,
+          "p90_acceleration_mps2": 5.342441664449368,
+          "median_direction_cosine": 0.30772905608223444,
+          "median_doppler_residual_mps": 0.3667438019925973,
+          "median_points": 5.0,
+          "median_extent_m": 1.3543926214487279,
+          "median_intensity": 21.333333333333332,
+          "median_radial_velocity_mps": -0.029999999329447746,
+          "median_persistence": 0.1527777777777778
+        },
+        "metrics": {
+          "position_rmse_m": 88.66665256316365,
+          "range_rmse_m": 77.05484927032504,
+          "direction_median_deg": 70.26855001176139,
+          "doppler_vs_gnss_rmse_mps": 1.9038526947367884,
+          "doppler_vs_lidar_rmse_mps": 3.4534776287715268,
+          "path_fraction_of_gnss": 0.11529383924520648,
+          "composite": 26.91992553277253
+        }
+      },
+      {
+        "candidate_id": "200m_cross_10_e0007",
+        "lidar_rank": 7,
+        "lidar_score": 4.705279648396532,
+        "offset_s": 81.59312105178833,
+        "summary": {
+          "observations": 8,
+          "supported_observations": 7,
+          "support_fraction": 0.875,
+          "span_frames": 11,
+          "coverage": 0.7272727272727273,
+          "path_length_m": 17.219517507132714,
+          "displacement_m": 5.582411854314993,
+          "median_speed_mps": 1.1950057830848744,
+          "p90_acceleration_mps2": 3.275036991122929,
+          "median_direction_cosine": 0.413719110987473,
+          "median_doppler_residual_mps": 1.036698388282038,
+          "median_points": 15.0,
+          "median_extent_m": 0.30946003654069104,
+          "median_intensity": 26.307692307692307,
+          "median_radial_velocity_mps": -1.572463381748933,
+          "median_persistence": 0.04092261904761905
+        },
+        "metrics": {
+          "position_rmse_m": 95.20534104128741,
+          "range_rmse_m": 78.39906060459886,
+          "direction_median_deg": 76.38820938558361,
+          "doppler_vs_gnss_rmse_mps": 1.0858539161320604,
+          "doppler_vs_lidar_rmse_mps": 2.348886699253102,
+          "path_fraction_of_gnss": 0.08686987627042382,
+          "composite": 27.744817798585398
+        }
+      },
+      {
+        "candidate_id": "200m_cross_10_e0011",
+        "lidar_rank": 11,
+        "lidar_score": 2.286852867997374,
+        "offset_s": 105.8402168750763,
+        "summary": {
+          "observations": 11,
+          "supported_observations": 7,
+          "support_fraction": 0.6363636363636364,
+          "span_frames": 12,
+          "coverage": 0.9166666666666666,
+          "path_length_m": 29.359781253225684,
+          "displacement_m": 1.9955442043811846,
+          "median_speed_mps": 3.0561342985050244,
+          "p90_acceleration_mps2": 5.175467258633532,
+          "median_direction_cosine": 0.6734413545558003,
+          "median_doppler_residual_mps": 1.1498506316304358,
+          "median_points": 3.0,
+          "median_extent_m": 1.4982137491548673,
+          "median_intensity": 16.0,
+          "median_radial_velocity_mps": -0.08000000110930866,
+          "median_persistence": 0.09375
+        },
+        "metrics": {
+          "position_rmse_m": 137.47926283333177,
+          "range_rmse_m": 115.8614875522321,
+          "direction_median_deg": 44.26248514688907,
+          "doppler_vs_gnss_rmse_mps": 1.6012484702845635,
+          "doppler_vs_lidar_rmse_mps": 1.755988720476205,
+          "path_fraction_of_gnss": 0.14811568115877563,
+          "composite": 38.71861571664272
+        }
+      },
+      {
+        "candidate_id": "200m_cross_10_e0006",
+        "lidar_rank": 6,
+        "lidar_score": 5.236600183162389,
+        "offset_s": 103.59130883216858,
+        "summary": {
+          "observations": 8,
+          "supported_observations": 6,
+          "support_fraction": 0.75,
+          "span_frames": 8,
+          "coverage": 1.0,
+          "path_length_m": 15.576429549021523,
+          "displacement_m": 13.687732415810933,
+          "median_speed_mps": 1.9038293039238992,
+          "p90_acceleration_mps2": 2.098031053434451,
+          "median_direction_cosine": 0.9599574365716219,
+          "median_doppler_residual_mps": 0.5619982297127364,
+          "median_points": 3.5,
+          "median_extent_m": 2.9434733602138072,
+          "median_intensity": 15.166666666666668,
+          "median_radial_velocity_mps": 0.05500000109896064,
+          "median_persistence": 0.1527777777777778
+        },
+        "metrics": {
+          "position_rmse_m": 150.09721199083495,
+          "range_rmse_m": 119.20534430151372,
+          "direction_median_deg": 27.210870505894736,
+          "doppler_vs_gnss_rmse_mps": 2.31744198502533,
+          "doppler_vs_lidar_rmse_mps": 1.9673636444540628,
+          "path_fraction_of_gnss": 0.07858074461714616,
+          "composite": 40.40072416408692
+        }
+      },
+      {
+        "candidate_id": "200m_cross_10_e0020",
+        "lidar_rank": 20,
+        "lidar_score": 1.1329292176770314,
+        "offset_s": 91.34710216522217,
+        "summary": {
+          "observations": 9,
+          "supported_observations": 5,
+          "support_fraction": 0.5555555555555556,
+          "span_frames": 10,
+          "coverage": 0.9,
+          "path_length_m": 29.623012147821008,
+          "displacement_m": 6.310363285471317,
+          "median_speed_mps": 3.507138914132244,
+          "p90_acceleration_mps2": 3.8311492445350432,
+          "median_direction_cosine": 0.7060648167472423,
+          "median_doppler_residual_mps": 2.899987708693006,
+          "median_points": 3.0,
+          "median_extent_m": 0.0,
+          "median_intensity": 16.642857142857142,
+          "median_radial_velocity_mps": -0.07500000298023224,
+          "median_persistence": 0.14583333333333334
+        },
+        "metrics": {
+          "position_rmse_m": 130.6249066869538,
+          "range_rmse_m": 128.0462865170014,
+          "direction_median_deg": 68.46620897795961,
+          "doppler_vs_gnss_rmse_mps": 0.7877862235340579,
+          "doppler_vs_lidar_rmse_mps": 2.806508091049584,
+          "path_fraction_of_gnss": 0.14944364143609332,
+          "composite": 40.89052077931062
+        }
+      },
+      {
+        "candidate_id": "200m_cross_10_e0025",
+        "lidar_rank": 25,
+        "lidar_score": 0.7637832911566611,
+        "offset_s": 84.35699009895325,
+        "summary": {
+          "observations": 8,
+          "supported_observations": 5,
+          "support_fraction": 0.625,
+          "span_frames": 8,
+          "coverage": 1.0,
+          "path_length_m": 21.41241207063872,
+          "displacement_m": 13.580320337752168,
+          "median_speed_mps": 2.86975760204099,
+          "p90_acceleration_mps2": 4.902387672265894,
+          "median_direction_cosine": 0.5666825173596853,
+          "median_doppler_residual_mps": 3.78117002055781,
+          "median_points": 3.0,
+          "median_extent_m": 0.8868418418690678,
+          "median_intensity": 15.5,
+          "median_radial_velocity_mps": -0.05833333358168602,
+          "median_persistence": 0.1326388888888889
+        },
+        "metrics": {
+          "position_rmse_m": 147.07228591480938,
+          "range_rmse_m": 118.73963444782223,
+          "direction_median_deg": 56.55111963195719,
+          "doppler_vs_gnss_rmse_mps": 3.9821379590370354,
+          "doppler_vs_lidar_rmse_mps": 4.8179961521942545,
+          "path_fraction_of_gnss": 0.10802239879585605,
+          "composite": 41.398281075923165
+        }
+      },
+      {
+        "candidate_id": "200m_cross_10_e0015",
+        "lidar_rank": 15,
+        "lidar_score": 1.3827870410455758,
+        "offset_s": 93.84710216522217,
+        "summary": {
+          "observations": 7,
+          "supported_observations": 6,
+          "support_fraction": 0.8571428571428571,
+          "span_frames": 10,
+          "coverage": 0.7,
+          "path_length_m": 26.13154724727861,
+          "displacement_m": 19.759164800324072,
+          "median_speed_mps": 3.9726198995869084,
+          "p90_acceleration_mps2": 4.856695637369524,
+          "median_direction_cosine": 0.518459047403936,
+          "median_doppler_residual_mps": 1.754997702081945,
+          "median_points": 4.0,
+          "median_extent_m": 0.0,
+          "median_intensity": 23.5,
+          "median_radial_velocity_mps": -3.6111110581292047,
+          "median_persistence": 0.026041666666666664
+        },
+        "metrics": {
+          "position_rmse_m": 180.51731734474095,
+          "range_rmse_m": 180.30841570134504,
+          "direction_median_deg": 72.95069384466382,
+          "doppler_vs_gnss_rmse_mps": 3.5712424112405907,
+          "doppler_vs_lidar_rmse_mps": 2.4458148288586834,
+          "path_fraction_of_gnss": 0.13182972607597881,
+          "composite": 57.38813455024227
+        }
+      },
+      {
+        "candidate_id": "200m_cross_10_e0018",
+        "lidar_rank": 18,
+        "lidar_score": 1.1806311632509894,
+        "offset_s": 92.35842990875244,
+        "summary": {
+          "observations": 5,
+          "supported_observations": 5,
+          "support_fraction": 1.0,
+          "span_frames": 8,
+          "coverage": 0.625,
+          "path_length_m": 11.699454564687919,
+          "displacement_m": 7.329307825774168,
+          "median_speed_mps": 1.590887143587853,
+          "p90_acceleration_mps2": 3.0958499005557996,
+          "median_direction_cosine": 0.4041009960291168,
+          "median_doppler_residual_mps": 1.6434200365774512,
+          "median_points": 4.0,
+          "median_extent_m": 1.5226901968997522,
+          "median_intensity": 24.0,
+          "median_radial_velocity_mps": -0.5820000022649765,
+          "median_persistence": 0.11458333333333336
+        },
+        "metrics": {
+          "position_rmse_m": 192.1219270070129,
+          "range_rmse_m": 191.74723961941416,
+          "direction_median_deg": 21.389257904013306,
+          "doppler_vs_gnss_rmse_mps": 1.3276843457899035,
+          "doppler_vs_lidar_rmse_mps": 2.4428491453916963,
+          "path_fraction_of_gnss": 0.05902198885914763,
+          "composite": 58.61532372758114
+        }
+      },
+      {
+        "candidate_id": "200m_cross_10_e0022",
+        "lidar_rank": 22,
+        "lidar_score": 0.8896621443273244,
+        "offset_s": 92.09710216522217,
+        "summary": {
+          "observations": 9,
+          "supported_observations": 6,
+          "support_fraction": 0.6666666666666666,
+          "span_frames": 11,
+          "coverage": 0.8181818181818182,
+          "path_length_m": 26.679616291983226,
+          "displacement_m": 9.9932079761379,
+          "median_speed_mps": 2.5013722997088683,
+          "p90_acceleration_mps2": 4.659685369835637,
+          "median_direction_cosine": 0.3843429713598246,
+          "median_doppler_residual_mps": 3.4881595287657836,
+          "median_points": 3.0,
+          "median_extent_m": 0.0,
+          "median_intensity": 23.0,
+          "median_radial_velocity_mps": -2.7799999713897705,
+          "median_persistence": 0.0625
+        },
+        "metrics": {
+          "position_rmse_m": 187.673147585719,
+          "range_rmse_m": 187.04966305789296,
+          "direction_median_deg": 55.734101073560396,
+          "doppler_vs_gnss_rmse_mps": 2.7984395002387807,
+          "doppler_vs_lidar_rmse_mps": 4.436768772324499,
+          "path_fraction_of_gnss": 0.13459465198528014,
+          "composite": 58.70246342471276
+        }
+      },
+      {
+        "candidate_id": "200m_cross_10_e0012",
+        "lidar_rank": 12,
+        "lidar_score": 2.2383655265686384,
+        "offset_s": 94.85842990875244,
+        "summary": {
+          "observations": 11,
+          "supported_observations": 8,
+          "support_fraction": 0.7272727272727273,
+          "span_frames": 11,
+          "coverage": 1.0,
+          "path_length_m": 25.37043068926738,
+          "displacement_m": 10.029446440745703,
+          "median_speed_mps": 2.3971260798406036,
+          "p90_acceleration_mps2": 4.339816696475474,
+          "median_direction_cosine": 0.45902362544029884,
+          "median_doppler_residual_mps": 2.036223082981506,
+          "median_points": 3.0,
+          "median_extent_m": 0.09318371779179506,
+          "median_intensity": 24.166666666666668,
+          "median_radial_velocity_mps": -2.964999943971634,
+          "median_persistence": 0.041666666666666664
+        },
+        "metrics": {
+          "position_rmse_m": 188.90244001710235,
+          "range_rmse_m": 188.43823841277907,
+          "direction_median_deg": 51.342269646005356,
+          "doppler_vs_gnss_rmse_mps": 2.5063290314402376,
+          "doppler_vs_lidar_rmse_mps": 2.8070381372028397,
+          "path_fraction_of_gnss": 0.1279900075011454,
+          "composite": 58.880256684631995
+        }
+      },
+      {
+        "candidate_id": "200m_cross_10_e0014",
+        "lidar_rank": 14,
+        "lidar_score": 1.8071918768924995,
+        "offset_s": 96.8568983078003,
+        "summary": {
+          "observations": 7,
+          "supported_observations": 6,
+          "support_fraction": 0.8571428571428571,
+          "span_frames": 7,
+          "coverage": 1.0,
+          "path_length_m": 13.317531010737676,
+          "displacement_m": 8.324569450697362,
+          "median_speed_mps": 2.2109077962205457,
+          "p90_acceleration_mps2": 3.6956477502962475,
+          "median_direction_cosine": 0.8441824546831106,
+          "median_doppler_residual_mps": 2.3717484114652896,
+          "median_points": 5.0,
+          "median_extent_m": 2.0477867610289335,
+          "median_intensity": 26.333333333333332,
+          "median_radial_velocity_mps": -3.820000092188517,
+          "median_persistence": 0.062499999999999986
+        },
+        "metrics": {
+          "position_rmse_m": 186.12863477568663,
+          "range_rmse_m": 185.90962489482632,
+          "direction_median_deg": 81.0908559712757,
+          "doppler_vs_gnss_rmse_mps": 4.378909093451524,
+          "doppler_vs_lidar_rmse_mps": 2.6942589387313953,
+          "path_fraction_of_gnss": 0.06718494119542567,
+          "composite": 59.57130642019707
+        }
+      },
+      {
+        "candidate_id": "200m_cross_10_e0019",
+        "lidar_rank": 19,
+        "lidar_score": 1.139457530131132,
+        "offset_s": 98.8568983078003,
+        "summary": {
+          "observations": 12,
+          "supported_observations": 6,
+          "support_fraction": 0.5,
+          "span_frames": 13,
+          "coverage": 0.9230769230769231,
+          "path_length_m": 40.85248404062443,
+          "displacement_m": 9.467483397442752,
+          "median_speed_mps": 2.8102547304403886,
+          "p90_acceleration_mps2": 4.9736467983816155,
+          "median_direction_cosine": 0.39404633542465034,
+          "median_doppler_residual_mps": 2.8063810382961374,
+          "median_points": 2.5,
+          "median_extent_m": 0.04659185889589753,
+          "median_intensity": 22.583333333333336,
+          "median_radial_velocity_mps": -3.376666684945424,
+          "median_persistence": 0.04513888888888888
+        },
+        "metrics": {
+          "position_rmse_m": 187.72597698243092,
+          "range_rmse_m": 187.55920372155492,
+          "direction_median_deg": 76.56757503289488,
+          "doppler_vs_gnss_rmse_mps": 3.3444695684953816,
+          "doppler_vs_lidar_rmse_mps": 4.235228117306169,
+          "path_fraction_of_gnss": 0.20609463839381642,
+          "composite": 59.58690663299239
+        }
+      },
+      {
+        "candidate_id": "200m_cross_10_e0010",
+        "lidar_rank": 10,
+        "lidar_score": 2.754087578389863,
+        "offset_s": 96.84312105178833,
+        "summary": {
+          "observations": 18,
+          "supported_observations": 13,
+          "support_fraction": 0.7222222222222222,
+          "span_frames": 19,
+          "coverage": 0.9473684210526315,
+          "path_length_m": 53.899890581774855,
+          "displacement_m": 5.3254919269715595,
+          "median_speed_mps": 2.6076921034741583,
+          "p90_acceleration_mps2": 5.021013688357625,
+          "median_direction_cosine": 0.31701369186644107,
+          "median_doppler_residual_mps": 3.474484906936861,
+          "median_points": 3.5,
+          "median_extent_m": 1.6876660529667715,
+          "median_intensity": 26.666666666666664,
+          "median_radial_velocity_mps": -3.5869999647140505,
+          "median_persistence": 0.05260416666666667
+        },
+        "metrics": {
+          "position_rmse_m": 188.5239400015111,
+          "range_rmse_m": 188.16195154310802,
+          "direction_median_deg": 66.8174178198704,
+          "doppler_vs_gnss_rmse_mps": 3.7012785950952356,
+          "doppler_vs_lidar_rmse_mps": 4.664019769375024,
+          "path_fraction_of_gnss": 0.2719168422627788,
+          "composite": 59.62761292103885
+        }
+      },
+      {
+        "candidate_id": "200m_cross_10_e0024",
+        "lidar_rank": 24,
+        "lidar_score": 0.84036002670575,
+        "offset_s": 88.3527660369873,
+        "summary": {
+          "observations": 9,
+          "supported_observations": 5,
+          "support_fraction": 0.5555555555555556,
+          "span_frames": 10,
+          "coverage": 0.9,
+          "path_length_m": 17.738091993556502,
+          "displacement_m": 13.777765909187861,
+          "median_speed_mps": 1.8653761483661455,
+          "p90_acceleration_mps2": 3.6634405228627758,
+          "median_direction_cosine": 0.3861365096312824,
+          "median_doppler_residual_mps": 3.664945034375724,
+          "median_points": 3.0,
+          "median_extent_m": 0.0,
+          "median_intensity": 13.0,
+          "median_radial_velocity_mps": 0.6299999952316284,
+          "median_persistence": 0.125
+        },
+        "metrics": {
+          "position_rmse_m": 197.18952768724628,
+          "range_rmse_m": 194.95831728424884,
+          "direction_median_deg": 71.37172688662994,
+          "doppler_vs_gnss_rmse_mps": 7.68122461884983,
+          "doppler_vs_lidar_rmse_mps": 8.10697011857097,
+          "path_fraction_of_gnss": 0.08948600656873054,
+          "composite": 63.31021662861853
+        }
+      },
+      {
+        "candidate_id": "200m_cross_10_e0009",
+        "lidar_rank": 9,
+        "lidar_score": 3.1096817881485777,
+        "offset_s": 110.8411123752594,
+        "summary": {
+          "observations": 13,
+          "supported_observations": 8,
+          "support_fraction": 0.6153846153846154,
+          "span_frames": 13,
+          "coverage": 1.0,
+          "path_length_m": 37.36114692604833,
+          "displacement_m": 0.37247545603205956,
+          "median_speed_mps": 3.590270929155375,
+          "p90_acceleration_mps2": 3.1084379155192536,
+          "median_direction_cosine": 0.8907017241620652,
+          "median_doppler_residual_mps": 2.6754682493078317,
+          "median_points": 4.0,
+          "median_extent_m": 0.6847066582883973,
+          "median_intensity": 10.666666666666666,
+          "median_radial_velocity_mps": -0.11200000047683716,
+          "median_persistence": 0.11805555555555557
+        },
+        "metrics": {
+          "position_rmse_m": 202.39398935713322,
+          "range_rmse_m": 200.64544298085252,
+          "direction_median_deg": 96.2335227379335,
+          "doppler_vs_gnss_rmse_mps": 9.007409213560958,
+          "doppler_vs_lidar_rmse_mps": 7.428537747450644,
+          "path_fraction_of_gnss": 0.1884813676946848,
+          "composite": 66.12048649082129
+        }
+      }
+    ],
+    "300m_cross_10": [
+      {
+        "candidate_id": "300m_cross_10_e0003",
+        "lidar_rank": 3,
+        "lidar_score": 6.460838695549958,
+        "offset_s": 129.75867342948914,
+        "summary": {
+          "observations": 10,
+          "supported_observations": 9,
+          "support_fraction": 0.9,
+          "span_frames": 11,
+          "coverage": 0.9090909090909091,
+          "path_length_m": 67.18840090253747,
+          "displacement_m": 66.04519148085488,
+          "median_speed_mps": 8.319352835771351,
+          "p90_acceleration_mps2": 4.125240371937872,
+          "median_direction_cosine": 0.9995398982952923,
+          "median_doppler_residual_mps": 0.8692735365743043,
+          "median_points": 5.0,
+          "median_extent_m": 0.0667363393270266,
+          "median_intensity": 23.253246753246753,
+          "median_radial_velocity_mps": -1.5533333122730255,
+          "median_persistence": 0.030158730158730156
+        },
+        "metrics": {
+          "position_rmse_m": 5.5803996775814175,
+          "range_rmse_m": 1.4114164798973627,
+          "direction_median_deg": 1.7221374407432448,
+          "doppler_vs_gnss_rmse_mps": 2.0832152349726063,
+          "doppler_vs_lidar_rmse_mps": 1.3779926098024553,
+          "path_fraction_of_gnss": 0.21640930273864425,
+          "composite": 1.583932268940195
+        }
+      },
+      {
+        "candidate_id": "300m_cross_10_e0002",
+        "lidar_rank": 2,
+        "lidar_score": 7.414346831450027,
+        "offset_s": 95.00363826751709,
+        "summary": {
+          "observations": 10,
+          "supported_observations": 8,
+          "support_fraction": 0.8,
+          "span_frames": 12,
+          "coverage": 0.8333333333333334,
+          "path_length_m": 98.81173969554146,
+          "displacement_m": 98.78005274793215,
+          "median_speed_mps": 9.99625195715438,
+          "p90_acceleration_mps2": 1.787349906813078,
+          "median_direction_cosine": 0.999675307951596,
+          "median_doppler_residual_mps": 1.2334821055619793,
+          "median_points": 3.5,
+          "median_extent_m": 0.0,
+          "median_intensity": 21.715384615384615,
+          "median_radial_velocity_mps": 2.56800000667572,
+          "median_persistence": 0.015873015873015872
+        },
+        "metrics": {
+          "position_rmse_m": 10.58973556566612,
+          "range_rmse_m": 1.7144209185259363,
+          "direction_median_deg": 1.9704207693136422,
+          "doppler_vs_gnss_rmse_mps": 1.5285091067098342,
+          "doppler_vs_lidar_rmse_mps": 1.2652342339786777,
+          "path_fraction_of_gnss": 0.31826594177949774,
+          "composite": 1.9676585121078478
+        }
+      },
+      {
+        "candidate_id": "300m_cross_10_e0001",
+        "lidar_rank": 1,
+        "lidar_score": 16.18046560925782,
+        "offset_s": 60.358672857284546,
+        "summary": {
+          "observations": 14,
+          "supported_observations": 11,
+          "support_fraction": 0.7857142857142857,
+          "span_frames": 15,
+          "coverage": 0.9333333333333333,
+          "path_length_m": 69.03956801664891,
+          "displacement_m": 67.97819666261942,
+          "median_speed_mps": 3.8900544458223556,
+          "p90_acceleration_mps2": 2.2983681615229714,
+          "median_direction_cosine": 0.9983820041338147,
+          "median_doppler_residual_mps": 0.4645760374222109,
+          "median_points": 5.0,
+          "median_extent_m": 0.0,
+          "median_intensity": 22.0,
+          "median_radial_velocity_mps": 0.8950000256299973,
+          "median_persistence": 0.031746031746031744
+        },
+        "metrics": {
+          "position_rmse_m": 13.15400723330441,
+          "range_rmse_m": 1.2648887275250411,
+          "direction_median_deg": 3.4998504825824313,
+          "doppler_vs_gnss_rmse_mps": 1.7350016004103916,
+          "doppler_vs_lidar_rmse_mps": 1.2879210895885445,
+          "path_fraction_of_gnss": 0.22237178702218427,
+          "composite": 2.246708063712697
+        }
+      },
+      {
+        "candidate_id": "300m_cross_10_e0004",
+        "lidar_rank": 4,
+        "lidar_score": 4.293699730200978,
+        "offset_s": 96.49638652801514,
+        "summary": {
+          "observations": 8,
+          "supported_observations": 7,
+          "support_fraction": 0.875,
+          "span_frames": 8,
+          "coverage": 1.0,
+          "path_length_m": 85.53659651072853,
+          "displacement_m": 85.53173201094788,
+          "median_speed_mps": 13.617188719241371,
+          "p90_acceleration_mps2": 3.749189902213026,
+          "median_direction_cosine": 0.9999585058157753,
+          "median_doppler_residual_mps": 1.8661366267504813,
+          "median_points": 5.5,
+          "median_extent_m": 0.0,
+          "median_intensity": 26.785714285714285,
+          "median_radial_velocity_mps": -3.6349999847866243,
+          "median_persistence": 0.020634920634920634
+        },
+        "metrics": {
+          "position_rmse_m": 12.76971577131433,
+          "range_rmse_m": 2.2772018997748105,
+          "direction_median_deg": 1.3157204398880213,
+          "doppler_vs_gnss_rmse_mps": 2.797624358535615,
+          "doppler_vs_lidar_rmse_mps": 1.9077794321465436,
+          "path_fraction_of_gnss": 0.27550760192038476,
+          "composite": 2.702545422499829
+        }
+      },
+      {
+        "candidate_id": "300m_cross_10_e0007",
+        "lidar_rank": 7,
+        "lidar_score": 3.210644808663807,
+        "offset_s": 100.7489926815033,
+        "summary": {
+          "observations": 6,
+          "supported_observations": 6,
+          "support_fraction": 1.0,
+          "span_frames": 7,
+          "coverage": 0.8571428571428571,
+          "path_length_m": 93.7883281583048,
+          "displacement_m": 93.44870395754278,
+          "median_speed_mps": 15.673284255516776,
+          "p90_acceleration_mps2": 1.9229088984722427,
+          "median_direction_cosine": 0.9959253732429423,
+          "median_doppler_residual_mps": 3.014575694717201,
+          "median_points": 4.0,
+          "median_extent_m": 0.8798481063534969,
+          "median_intensity": 23.125,
+          "median_radial_velocity_mps": 4.342708356678486,
+          "median_persistence": 0.015873015873015872
+        },
+        "metrics": {
+          "position_rmse_m": 30.15495548285194,
+          "range_rmse_m": 21.69884531653977,
+          "direction_median_deg": 1.6649213013856037,
+          "doppler_vs_gnss_rmse_mps": 6.239177471522101,
+          "doppler_vs_lidar_rmse_mps": 3.723969461650864,
+          "path_fraction_of_gnss": 0.3020858723993736,
+          "composite": 9.482559615473438
+        }
+      },
+      {
+        "candidate_id": "300m_cross_10_e0009",
+        "lidar_rank": 9,
+        "lidar_score": 2.024633228270409,
+        "offset_s": 90.49639344215393,
+        "summary": {
+          "observations": 9,
+          "supported_observations": 6,
+          "support_fraction": 0.6666666666666666,
+          "span_frames": 10,
+          "coverage": 0.9,
+          "path_length_m": 29.749698861206674,
+          "displacement_m": 17.126281623964356,
+          "median_speed_mps": 3.065230476585044,
+          "p90_acceleration_mps2": 3.6765046293507258,
+          "median_direction_cosine": 0.529257503261877,
+          "median_doppler_residual_mps": 1.7086547952574906,
+          "median_points": 3.0,
+          "median_extent_m": 0.0,
+          "median_intensity": 17.0,
+          "median_radial_velocity_mps": -0.0875000013038516,
+          "median_persistence": 0.15873015873015872
+        },
+        "metrics": {
+          "position_rmse_m": 39.28805362795732,
+          "range_rmse_m": 27.519899196597436,
+          "direction_median_deg": 91.34697086043445,
+          "doppler_vs_gnss_rmse_mps": 14.720877518756138,
+          "doppler_vs_lidar_rmse_mps": 17.44985578700299,
+          "path_fraction_of_gnss": 0.09582177132891447,
+          "composite": 16.949657828189203
+        }
+      },
+      {
+        "candidate_id": "300m_cross_10_e0006",
+        "lidar_rank": 6,
+        "lidar_score": 3.4416794942494264,
+        "offset_s": 66.85867285728455,
+        "summary": {
+          "observations": 7,
+          "supported_observations": 5,
+          "support_fraction": 0.7142857142857143,
+          "span_frames": 7,
+          "coverage": 1.0,
+          "path_length_m": 11.196560666768079,
+          "displacement_m": 5.950074721113423,
+          "median_speed_mps": 1.5531720807837808,
+          "p90_acceleration_mps2": 2.5757478707051895,
+          "median_direction_cosine": 0.5453428721583288,
+          "median_doppler_residual_mps": 0.4087326513486492,
+          "median_points": 3.0,
+          "median_extent_m": 2.019639391867243,
+          "median_intensity": 12.0,
+          "median_radial_velocity_mps": -1.0775000005960464,
+          "median_persistence": 0.0873015873015873
+        },
+        "metrics": {
+          "position_rmse_m": 281.4418474886094,
+          "range_rmse_m": 281.23756664301783,
+          "direction_median_deg": 40.423667206961085,
+          "doppler_vs_gnss_rmse_mps": 1.0934791532585242,
+          "doppler_vs_lidar_rmse_mps": 0.46786577909983806,
+          "path_fraction_of_gnss": 0.036063365914617264,
+          "composite": 85.91115304874957
+        }
+      },
+      {
+        "candidate_id": "300m_cross_10_e0010",
+        "lidar_rank": 10,
+        "lidar_score": 0.9387257263151757,
+        "offset_s": 84.5010175704956,
+        "summary": {
+          "observations": 8,
+          "supported_observations": 5,
+          "support_fraction": 0.625,
+          "span_frames": 9,
+          "coverage": 0.8888888888888888,
+          "path_length_m": 20.849868376281528,
+          "displacement_m": 6.435811247389856,
+          "median_speed_mps": 3.0499956966128727,
+          "p90_acceleration_mps2": 4.054599579965901,
+          "median_direction_cosine": 0.31334573276767697,
+          "median_doppler_residual_mps": 3.0048778626514228,
+          "median_points": 3.0,
+          "median_extent_m": 0.0,
+          "median_intensity": 16.833333333333332,
+          "median_radial_velocity_mps": -0.10166666470468044,
+          "median_persistence": 0.031746031746031744
+        },
+        "metrics": {
+          "position_rmse_m": 279.9889259632909,
+          "range_rmse_m": 279.8344787498265,
+          "direction_median_deg": 68.58416595183026,
+          "doppler_vs_gnss_rmse_mps": 0.9014331438560622,
+          "doppler_vs_lidar_rmse_mps": 2.763141933201625,
+          "path_fraction_of_gnss": 0.0671560182545316,
+          "composite": 86.2258136595368
+        }
+      },
+      {
+        "candidate_id": "300m_cross_10_e0005",
+        "lidar_rank": 5,
+        "lidar_score": 3.94808849924981,
+        "offset_s": 71.48223447799683,
+        "summary": {
+          "observations": 6,
+          "supported_observations": 5,
+          "support_fraction": 0.8333333333333334,
+          "span_frames": 7,
+          "coverage": 0.8571428571428571,
+          "path_length_m": 7.0497096268465835,
+          "displacement_m": 4.294157512117616,
+          "median_speed_mps": 1.1602758969756863,
+          "p90_acceleration_mps2": 1.183919265614684,
+          "median_direction_cosine": 0.5843699768639239,
+          "median_doppler_residual_mps": 0.43712230990657286,
+          "median_points": 3.0,
+          "median_extent_m": 0.5033343954994535,
+          "median_intensity": 19.833333333333332,
+          "median_radial_velocity_mps": -1.2350000043710074,
+          "median_persistence": 0.0291005291005291
+        },
+        "metrics": {
+          "position_rmse_m": 280.8093678788166,
+          "range_rmse_m": 280.6387557785402,
+          "direction_median_deg": 77.55440166893872,
+          "doppler_vs_gnss_rmse_mps": 0.8484206776379847,
+          "doppler_vs_lidar_rmse_mps": 0.8343926998227946,
+          "path_fraction_of_gnss": 0.022706638710881414,
+          "composite": 86.70733488381966
+        }
+      },
+      {
+        "candidate_id": "300m_cross_10_e0008",
+        "lidar_rank": 8,
+        "lidar_score": 2.290796075736298,
+        "offset_s": 113.75186419487,
+        "summary": {
+          "observations": 10,
+          "supported_observations": 6,
+          "support_fraction": 0.6,
+          "span_frames": 11,
+          "coverage": 0.9090909090909091,
+          "path_length_m": 21.760779784332186,
+          "displacement_m": 4.334253179640772,
+          "median_speed_mps": 1.6835157503858946,
+          "p90_acceleration_mps2": 2.8883193240049945,
+          "median_direction_cosine": 0.6147819552879968,
+          "median_doppler_residual_mps": 1.6529012925684077,
+          "median_points": 3.0,
+          "median_extent_m": 0.06459359161334623,
+          "median_intensity": 21.666666666666664,
+          "median_radial_velocity_mps": -2.3499999841054278,
+          "median_persistence": 0.06349206349206349
+        },
+        "metrics": {
+          "position_rmse_m": 279.0681844291057,
+          "range_rmse_m": 278.73027169285905,
+          "direction_median_deg": 87.0040873203938,
+          "doppler_vs_gnss_rmse_mps": 2.477454028817271,
+          "doppler_vs_lidar_rmse_mps": 2.1767970024454413,
+          "path_fraction_of_gnss": 0.07009000239502147,
+          "composite": 86.96452185738511
+        }
+      }
+    ]
+  }
+}

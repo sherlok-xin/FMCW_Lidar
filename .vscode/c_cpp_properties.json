@@ -1,0 +1,22 @@
+{
+  "configurations": [
+    {
+      "name": "Linux",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "/usr/include",
+        "/usr/include/pcl-1.10",         // 保留：系统默认安装路径
+        "/usr/include/pcl-1.10/pcl/io", 
+        "/usr/include/eigen3",
+        "${workspaceFolder}/dynablox/include",
+        "${workspaceFolder}/dynablox/build"
+      ],
+      "defines": [],
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "c17",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "linux-gcc-x64"
+    }
+  ],
+  "version": 4
+}

@@ -1,0 +1,78 @@
+{
+  "config": {
+    "voxel_size": 1.0,
+    "prob_threshold": 0.05,
+    "init_frames": 8,
+    "height_threshold": 10.0,
+    "search_radius": 15.0,
+    "radial_threshold": 5.0,
+    "max_association_dist": 30.0,
+    "dbscan_eps": 2.0,
+    "min_points": 1
+  },
+  "dataset": "data/100m_v10m_s_2026-02-05-15-08-28_filtered_data",
+  "n_frames": 46,
+  "final_metrics": {
+    "baseline": {
+      "active_tracks": 0,
+      "total_generated": 0,
+      "fragmentations": 0,
+      "smoothness": 0.0,
+      "tracks_evaluated": 0
+    },
+    "fmt": {
+      "active_tracks": 0,
+      "total_generated": 0,
+      "fragmentations": 0,
+      "smoothness": 0.0,
+      "tracks_evaluated": 0,
+      "mean_kinematic_residual": 0
+    }
+  },
+  "avg_latency_ms": {
+    "baseline": 0,
+    "fmt": 0
+  },
+  "frame_metrics": [
+    {
+      "frame": 0,
+      "phase": "background",
+      "count": 1
+    },
+    {
+      "frame": 1,
+      "phase": "background",
+      "count": 2
+    },
+    {
+      "frame": 2,
+      "phase": "background",
+      "count": 3
+    },
+    {
+      "frame": 3,
+      "phase": "background",
+      "count": 4
+    },
+    {
+      "frame": 4,
+      "phase": "background",
+      "count": 5
+    },
+    {
+      "frame": 5,
+      "phase": "background",
+      "count": 6
+    },
+    {
+      "frame": 6,
+      "phase": "background",
+      "count": 7
+    },
+    {
+      "frame": 7,
+      "phase": "background",
+      "count": 8
+    }
+  ]
+}

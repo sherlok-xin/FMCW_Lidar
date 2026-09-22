@@ -1,0 +1,229 @@
+{
+  "created_utc": "2026-09-22T00:29:18.482706+00:00",
+  "workbook": "bag/20260205/飞行轨迹坐标.xlsx",
+  "workbook_sha256": "5adc1f090b84731b23a2c8cd02f38c002cafef94b9bdaaee98827981a8e54c69",
+  "gps_utc_leap_seconds": 18,
+  "device_origin": {
+    "index": 1,
+    "tow_s": 369612.048255,
+    "gps_week": 2404,
+    "n_raw": -4,
+    "e_raw": -40,
+    "v_raw": 189,
+    "lat_deg": 31.83749046,
+    "lon_deg": 118.76606266,
+    "ellh_m": 25.544,
+    "unknown_1": 0.011411,
+    "unknown_2": 0.0134,
+    "unknown_3": 0.025919,
+    "q_raw": 50
+  },
+  "spatial": {
+    "yaw_rad": 3.0229393171523977,
+    "yaw_deg": 173.2016645969914,
+    "between_roundtrip_sd_deg": 0.8141951160287585,
+    "method": "PCA axes of three named roundtrip trajectories mapped to +LiDAR x",
+    "diagnostics": [
+      {
+        "condition_id": "300m_roundtrip_10",
+        "axis_angle_deg": -173.53210747783697,
+        "yaw_deg": 173.53210747783697,
+        "pca_linearity": 0.9909410230597407
+      },
+      {
+        "condition_id": "300m_roundtrip_13",
+        "axis_angle_deg": -173.79867242998503,
+        "yaw_deg": 173.79867242998503,
+        "pca_linearity": 0.9988225701507363
+      },
+      {
+        "condition_id": "300m_roundtrip_5",
+        "axis_angle_deg": -172.27418601285493,
+        "yaw_deg": 172.27418601285493,
+        "pca_linearity": 0.9996638614081852
+      }
+    ],
+    "translation_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "translation_status": "UNKNOWN lever arm; device ENU origin is provisionally identified with LiDAR origin",
+    "status": "trajectory-geometry yaw only; real point clouds insufficient for a unique rigid fit",
+    "real_cluster_match_count": 0,
+    "real_cluster_supported_conditions": 0
+  },
+  "conditions": {
+    "300m_roundtrip_10": {
+      "offset": {
+        "offset_s": 98.27159976959229,
+        "offset_method": "LiDAR/GNSS interval-midpoint registration; no unique target event found",
+        "offset_confidence": "LOW",
+        "offset_uncertainty_s": 9.665771722793579,
+        "interval_midpoint_offset_s": 98.27159976959229,
+        "bag_start_to_gnss_start_s": 103.70545196533203,
+        "bag_end_to_gnss_end_s": 92.83774757385254,
+        "fit": {
+          "matches": [],
+          "match_count": 0,
+          "valid_frame_count": 223,
+          "distance_rmse_m": null,
+          "distance_median_m": null,
+          "velocity_residual_median_mps": null
+        }
+      }
+    },
+    "300m_roundtrip_13": {
+      "offset": {
+        "offset_s": 99.5902853012085,
+        "offset_method": "LiDAR/GNSS interval-midpoint registration; no unique target event found",
+        "offset_confidence": "LOW",
+        "offset_uncertainty_s": 7.437338471412659,
+        "interval_midpoint_offset_s": 99.5902853012085,
+        "bag_start_to_gnss_start_s": 100.84690451622009,
+        "bag_end_to_gnss_end_s": 98.33366560935974,
+        "fit": {
+          "matches": [],
+          "match_count": 0,
+          "valid_frame_count": 141,
+          "distance_rmse_m": null,
+          "distance_median_m": null,
+          "velocity_residual_median_mps": null
+        }
+      }
+    },
+    "300m_roundtrip_5": {
+      "offset": {
+        "offset_s": 98.38127112388611,
+        "offset_method": "LiDAR/GNSS interval-midpoint registration; no unique target event found",
+        "offset_confidence": "LOW",
+        "offset_uncertainty_s": 8.178115844726562,
+        "interval_midpoint_offset_s": 98.38127112388611,
+        "bag_start_to_gnss_start_s": 97.63620734214783,
+        "bag_end_to_gnss_end_s": 99.12633514404297,
+        "fit": {
+          "matches": [],
+          "match_count": 0,
+          "valid_frame_count": 91,
+          "distance_rmse_m": null,
+          "distance_median_m": null,
+          "velocity_residual_median_mps": null
+        }
+      }
+    },
+    "100m_cross_10": {
+      "offset": {
+        "offset_s": 100.69470882415771,
+        "offset_method": "LiDAR/GNSS interval-midpoint registration; no unique target event found",
+        "offset_confidence": "LOW",
+        "offset_uncertainty_s": 12.27405333518982,
+        "interval_midpoint_offset_s": 100.69470882415771,
+        "bag_start_to_gnss_start_s": 107.80991768836975,
+        "bag_end_to_gnss_end_s": 93.57949995994568,
+        "fit": {
+          "matches": [],
+          "match_count": 0,
+          "valid_frame_count": 30,
+          "distance_rmse_m": null,
+          "distance_median_m": null,
+          "velocity_residual_median_mps": null
+        }
+      }
+    },
+    "100m_cross_5": {
+      "offset": {
+        "offset_s": 99.19806265830994,
+        "offset_method": "LiDAR/GNSS interval-midpoint registration; no unique target event found",
+        "offset_confidence": "LOW",
+        "offset_uncertainty_s": 6.667035818099976,
+        "interval_midpoint_offset_s": 99.19806265830994,
+        "bag_start_to_gnss_start_s": 101.19424605369568,
+        "bag_end_to_gnss_end_s": 97.2018792629242,
+        "fit": {
+          "matches": [],
+          "match_count": 0,
+          "valid_frame_count": 28,
+          "distance_rmse_m": null,
+          "distance_median_m": null,
+          "velocity_residual_median_mps": null
+        }
+      }
+    },
+    "200m_cross_10": {
+      "offset": {
+        "offset_s": 100.83423948287964,
+        "offset_method": "LiDAR/GNSS interval-midpoint registration; no unique target event found",
+        "offset_confidence": "LOW",
+        "offset_uncertainty_s": 10.76451289653778,
+        "interval_midpoint_offset_s": 100.83423948287964,
+        "bag_start_to_gnss_start_s": 105.09367942810059,
+        "bag_end_to_gnss_end_s": 96.57479953765869,
+        "fit": {
+          "matches": [],
+          "match_count": 0,
+          "valid_frame_count": 38,
+          "distance_rmse_m": null,
+          "distance_median_m": null,
+          "velocity_residual_median_mps": null
+        }
+      }
+    },
+    "200m_cross_5": {
+      "offset": {
+        "offset_s": 84.76811623573303,
+        "offset_method": "LiDAR/GNSS interval-midpoint registration; no unique target event found",
+        "offset_confidence": "LOW",
+        "offset_uncertainty_s": 27.68561029434204,
+        "interval_midpoint_offset_s": 84.76811623573303,
+        "bag_start_to_gnss_start_s": 106.2219409942627,
+        "bag_end_to_gnss_end_s": 63.31429147720337,
+        "fit": {
+          "matches": [],
+          "match_count": 0,
+          "valid_frame_count": 38,
+          "distance_rmse_m": null,
+          "distance_median_m": null,
+          "velocity_residual_median_mps": null
+        }
+      }
+    },
+    "300m_cross_10": {
+      "offset": {
+        "offset_s": 100.35867285728455,
+        "offset_method": "LiDAR/GNSS interval-midpoint registration; no unique target event found",
+        "offset_confidence": "LOW",
+        "offset_uncertainty_s": 15.550358057022095,
+        "interval_midpoint_offset_s": 100.35867285728455,
+        "bag_start_to_gnss_start_s": 107.75867342948914,
+        "bag_end_to_gnss_end_s": 92.95867228507996,
+        "fit": {
+          "matches": [],
+          "match_count": 0,
+          "valid_frame_count": 47,
+          "distance_rmse_m": null,
+          "distance_median_m": null,
+          "velocity_residual_median_mps": null
+        }
+      }
+    },
+    "300m_cross_5": {
+      "offset": {
+        "offset_s": 100.03352451324463,
+        "offset_method": "LiDAR/GNSS interval-midpoint registration; no unique target event found",
+        "offset_confidence": "LOW",
+        "offset_uncertainty_s": 16.910552620887756,
+        "interval_midpoint_offset_s": 100.03352451324463,
+        "bag_start_to_gnss_start_s": 109.1565580368042,
+        "bag_end_to_gnss_end_s": 90.91049075126648,
+        "fit": {
+          "matches": [],
+          "match_count": 0,
+          "valid_frame_count": 44,
+          "distance_rmse_m": null,
+          "distance_median_m": null,
+          "velocity_residual_median_mps": null
+        }
+      }
+    }
+  }
+}

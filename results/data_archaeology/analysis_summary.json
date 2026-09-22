@@ -1,0 +1,272 @@
+{
+  "cross": {
+    "label_status": "manual/trajectory-guided pseudo ground truth; not synchronized true ground truth",
+    "survival_totals": {
+      "raw": 504,
+      "intensity": 499,
+      "height": 499,
+      "background": 438,
+      "neighborhood": 419,
+      "cluster": 419
+    },
+    "survival_fraction_of_raw": {
+      "raw": 1.0,
+      "intensity": 0.9900793650793651,
+      "height": 0.9900793650793651,
+      "background": 0.8690476190476191,
+      "neighborhood": 0.8313492063492064,
+      "cluster": 0.8313492063492064
+    },
+    "uav_features": {
+      "intensity": {
+        "n": 499,
+        "mean": 27.53306613226453,
+        "q25": 22.0,
+        "median": 27.0,
+        "q75": 33.0,
+        "min": 11.0,
+        "max": 47.0
+      },
+      "radial_velocity": {
+        "n": 499,
+        "mean": -0.05965932446694326,
+        "q25": -0.33000001311302185,
+        "median": 0.0,
+        "q75": 0.20999999344348907,
+        "min": -0.9700000286102295,
+        "max": 0.7400000095367432
+      },
+      "range": {
+        "n": 499,
+        "mean": 222.6534456547372,
+        "q25": 221.9600067138672,
+        "median": 222.46002197265625,
+        "q75": 223.40499877929688,
+        "min": 221.04000854492188,
+        "max": 224.3500213623047
+      }
+    },
+    "nearby_clutter_features": {
+      "intensity": {
+        "n": 2432,
+        "mean": 24.314967105263158,
+        "q25": 19.0,
+        "median": 24.0,
+        "q75": 29.0,
+        "min": 10.0,
+        "max": 44.0
+      },
+      "radial_velocity": {
+        "n": 2432,
+        "mean": -0.04215871702610074,
+        "q25": -0.10999999940395355,
+        "median": -0.10999999940395355,
+        "q75": 0.0,
+        "min": -17.229999542236328,
+        "max": 10.15999984741211
+      },
+      "range": {
+        "n": 2432,
+        "mean": 225.85748083340494,
+        "q25": 225.79998779296875,
+        "median": 225.8699951171875,
+        "q75": 225.9700164794922,
+        "min": 215.75997924804688,
+        "max": 235.13002014160156
+      }
+    },
+    "velocity_geometry": {
+      "correlation_measured_vs_geometric": -0.9727906130230608,
+      "correlation_negative_measured_vs_geometric": 0.9727906130230608,
+      "median_abs_frame_median_vr": 0.2750000059604645,
+      "fraction_frames_abs_median_vr_le_0_25": 0.4666666666666667,
+      "interpretation": "Measured sign is opposite to increasing range; magnitude and changes closely follow geometric radial motion."
+    },
+    "point_count_vs_range": {
+      "bins": [
+        {
+          "range_m": [
+            221.36332752746395,
+            222.09105512116503
+          ],
+          "frames": 22,
+          "mean_points": 8.227272727272727,
+          "median_points": 8.0,
+          "min": 2,
+          "max": 21
+        },
+        {
+          "range_m": [
+            222.09105512116503,
+            222.81878271486613
+          ],
+          "frames": 14,
+          "mean_points": 7.714285714285714,
+          "median_points": 7.5,
+          "min": 0,
+          "max": 14
+        },
+        {
+          "range_m": [
+            222.81878271486613,
+            223.5465103085672
+          ],
+          "frames": 12,
+          "mean_points": 9.833333333333334,
+          "median_points": 9.0,
+          "min": 5,
+          "max": 17
+        },
+        {
+          "range_m": [
+            223.5465103085672,
+            224.27423790226828
+          ],
+          "frames": 12,
+          "mean_points": 7.666666666666667,
+          "median_points": 7.0,
+          "min": 3,
+          "max": 13
+        }
+      ],
+      "spearman_rho": 0.019568465692346416,
+      "p": 0.8820253076106872,
+      "warning": "Within-sequence association only; distance is confounded with flight phase and path revisits."
+    }
+  },
+  "300m": {
+    "label_status": "manual/trajectory-guided pseudo ground truth; not synchronized true ground truth",
+    "survival_totals": {
+      "raw": 200,
+      "intensity": 198,
+      "height": 198,
+      "background": 163,
+      "neighborhood": 163,
+      "cluster": 163
+    },
+    "survival_fraction_of_raw": {
+      "raw": 1.0,
+      "intensity": 0.99,
+      "height": 0.99,
+      "background": 0.815,
+      "neighborhood": 0.815,
+      "cluster": 0.815
+    },
+    "uav_features": {
+      "intensity": {
+        "n": 198,
+        "mean": 23.045454545454547,
+        "q25": 18.0,
+        "median": 22.5,
+        "q75": 28.0,
+        "min": 10.0,
+        "max": 43.0
+      },
+      "radial_velocity": {
+        "n": 198,
+        "mean": 0.4397980011247023,
+        "q25": -0.5025000125169754,
+        "median": 0.14000000059604645,
+        "q75": 3.34499990940094,
+        "min": -6.079999923706055,
+        "max": 4.349999904632568
+      },
+      "range": {
+        "n": 198,
+        "mean": 298.45898283370815,
+        "q25": 293.81250762939453,
+        "median": 296.9499969482422,
+        "q75": 302.5450134277344,
+        "min": 293.0099792480469,
+        "max": 307.0299987792969
+      }
+    },
+    "nearby_clutter_features": {
+      "intensity": {
+        "n": 3163,
+        "mean": 26.58457160923174,
+        "q25": 22.0,
+        "median": 26.0,
+        "q75": 31.0,
+        "min": 10.0,
+        "max": 47.0
+      },
+      "radial_velocity": {
+        "n": 3163,
+        "mean": -0.06274106886816146,
+        "q25": -0.15000000596046448,
+        "median": -0.05000000074505806,
+        "q75": 0.0,
+        "min": -0.5699999928474426,
+        "max": 4.159999847412109
+      },
+      "range": {
+        "n": 3163,
+        "mean": 307.85477915693605,
+        "q25": 307.7799987792969,
+        "median": 307.8599548339844,
+        "q75": 307.96998596191406,
+        "min": 293.0099792480469,
+        "max": 308.2599792480469
+      }
+    },
+    "velocity_geometry": {
+      "correlation_measured_vs_geometric": -0.966460018791068,
+      "correlation_negative_measured_vs_geometric": 0.966460018791068,
+      "median_abs_frame_median_vr": 0.7799999713897705,
+      "fraction_frames_abs_median_vr_le_0_25": 0.3,
+      "interpretation": "Measured sign is opposite to increasing range; magnitude and changes closely follow geometric radial motion."
+    },
+    "point_count_vs_range": {
+      "bins": [
+        {
+          "range_m": [
+            293.01499312911636,
+            296.5041068284957
+          ],
+          "frames": 26,
+          "mean_points": 3.5384615384615383,
+          "median_points": 3.5,
+          "min": 0,
+          "max": 9
+        },
+        {
+          "range_m": [
+            296.5041068284957,
+            299.99322052787505
+          ],
+          "frames": 4,
+          "mean_points": 3.25,
+          "median_points": 2.5,
+          "min": 0,
+          "max": 8
+        },
+        {
+          "range_m": [
+            299.99322052787505,
+            303.4823342272544
+          ],
+          "frames": 6,
+          "mean_points": 11.0,
+          "median_points": 12.5,
+          "min": 2,
+          "max": 20
+        },
+        {
+          "range_m": [
+            303.4823342272544,
+            306.97144792663374
+          ],
+          "frames": 14,
+          "mean_points": 1.9285714285714286,
+          "median_points": 0.5,
+          "min": 0,
+          "max": 8
+        }
+      ],
+      "spearman_rho": -0.10493227845932561,
+      "p": 0.46831577165321714,
+      "warning": "Within-sequence association only; distance is confounded with flight phase and path revisits."
+    }
+  }
+}

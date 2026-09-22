@@ -1,0 +1,262 @@
+{
+  "status": "reverse analysis of benchmark_fmt.py baseline; target identity cross-checked against trajectory-guided pseudo label",
+  "final_surviving_track_id": 1,
+  "analyzed_frames": [
+    8,
+    59
+  ],
+  "observed_frames": 48,
+  "predicted_only_frames": [
+    28,
+    30,
+    47,
+    50
+  ],
+  "initial_tracks": 15,
+  "removal_events": [
+    {
+      "frame": 14,
+      "track_id": 0,
+      "reason": "lost"
+    },
+    {
+      "frame": 14,
+      "track_id": 6,
+      "reason": "lost"
+    },
+    {
+      "frame": 14,
+      "track_id": 8,
+      "reason": "lost"
+    },
+    {
+      "frame": 14,
+      "track_id": 9,
+      "reason": "lost"
+    },
+    {
+      "frame": 14,
+      "track_id": 10,
+      "reason": "lost"
+    },
+    {
+      "frame": 14,
+      "track_id": 12,
+      "reason": "lost"
+    },
+    {
+      "frame": 14,
+      "track_id": 13,
+      "reason": "lost"
+    },
+    {
+      "frame": 14,
+      "track_id": 14,
+      "reason": "lost"
+    },
+    {
+      "frame": 17,
+      "track_id": 7,
+      "reason": "lost"
+    },
+    {
+      "frame": 18,
+      "track_id": 2,
+      "reason": "lost"
+    },
+    {
+      "frame": 18,
+      "track_id": 3,
+      "reason": "lost"
+    },
+    {
+      "frame": 18,
+      "track_id": 4,
+      "reason": "lost"
+    },
+    {
+      "frame": 18,
+      "track_id": 5,
+      "reason": "lost"
+    },
+    {
+      "frame": 18,
+      "track_id": 11,
+      "reason": "lost"
+    }
+  ],
+  "point_count": {
+    "n": 48,
+    "mean": 8.729166666666666,
+    "q25": 6.75,
+    "median": 8.5,
+    "q75": 11.0,
+    "min": 3.0,
+    "max": 17.0
+  },
+  "target_fraction_of_dynamic": {
+    "n": 48,
+    "mean": 0.36965925507445824,
+    "q25": 0.29058823529411765,
+    "median": 0.3717105263157895,
+    "q75": 0.45208333333333334,
+    "min": 0.16666666666666666,
+    "max": 0.5833333333333334
+  },
+  "cluster_diameter_m": {
+    "n": 48,
+    "mean": 0.4448567245349029,
+    "q25": 0.31303194587300287,
+    "median": 0.3937879645424479,
+    "q75": 0.5452874978021733,
+    "min": 0.1458173627823936,
+    "max": 0.9008164632903269
+  },
+  "span_z_m": {
+    "n": 48,
+    "mean": 0.1880426605542501,
+    "q25": 0.1405634880065918,
+    "median": 0.20136451721191406,
+    "q75": 0.23641419410705566,
+    "min": 0.04691886901855469,
+    "max": 0.30739593505859375
+  },
+  "radial_thickness_m": {
+    "n": 48,
+    "mean": 0.1733089826594397,
+    "q25": 0.13001749117508576,
+    "median": 0.15008834549442587,
+    "q75": 0.21242977209372194,
+    "min": 0.06000838705928839,
+    "max": 0.44001960585667155
+  },
+  "tangential_radius_max_m": {
+    "n": 48,
+    "mean": 0.2610274689311223,
+    "q25": 0.16033249336596,
+    "median": 0.24782610772681046,
+    "q75": 0.3250729827507676,
+    "min": 0.03667596993462136,
+    "max": 0.6587363935334063
+  },
+  "uav_intensity": {
+    "n": 419,
+    "mean": 27.880668257756565,
+    "q25": 22.5,
+    "median": 27.0,
+    "q75": 33.0,
+    "min": 11.0,
+    "max": 47.0
+  },
+  "other_dynamic_intensity": {
+    "n": 720,
+    "mean": 14.7125,
+    "q25": 11.0,
+    "median": 13.0,
+    "q75": 16.0,
+    "min": 10.0,
+    "max": 40.0
+  },
+  "uav_radial_velocity": {
+    "n": 419,
+    "mean": -0.06410501856436877,
+    "q25": -0.3800000101327896,
+    "median": -0.10999999940395355,
+    "q75": 0.3199999928474426,
+    "min": -0.9700000286102295,
+    "max": 0.7400000095367432
+  },
+  "other_dynamic_radial_velocity": {
+    "n": 720,
+    "mean": -0.6084305364845528,
+    "q25": -21.562499523162842,
+    "median": -0.054999999701976776,
+    "q75": 19.149999618530273,
+    "min": -49.869998931884766,
+    "max": 49.86000061035156
+  },
+  "within_frame_intensity_iqr": {
+    "n": 48,
+    "mean": 9.145833333333334,
+    "q25": 6.0,
+    "median": 9.875,
+    "q75": 11.5,
+    "min": 1.5,
+    "max": 19.0
+  },
+  "within_frame_radial_velocity_iqr": {
+    "n": 48,
+    "mean": 0.10192708073494335,
+    "q25": 0.0550000062212348,
+    "median": 0.10000000149011612,
+    "q75": 0.1162500106729567,
+    "min": 0.0,
+    "max": 0.3749999739229679
+  },
+  "other_dynamic_cluster_size": {
+    "n": 602,
+    "mean": 1.196013289036545,
+    "q25": 1.0,
+    "median": 1.0,
+    "q75": 1.0,
+    "min": 1.0,
+    "max": 10.0
+  },
+  "other_dynamic_cluster_diameter_m": {
+    "n": 602,
+    "mean": 0.051030994111903163,
+    "q25": 0.0,
+    "median": 0.0,
+    "q75": 0.0,
+    "min": 0.0,
+    "max": 1.9924917038311492
+  },
+  "fraction_frames_target_is_largest_cluster": 0.9583333333333334,
+  "fraction_uav_points_abs_vr_le_1": 1.0,
+  "fraction_other_dynamic_points_abs_vr_le_1": 0.17777777777777778,
+  "fraction_uav_points_intensity_gt_20": 0.8162291169451074,
+  "fraction_other_dynamic_points_intensity_gt_20": 0.11944444444444445,
+  "step_xy_m": {
+    "n": 51,
+    "mean": 3.564330264769366,
+    "q25": 2.411714949158039,
+    "median": 3.523395142271638,
+    "q75": 4.195064851645372,
+    "min": 0.0,
+    "max": 11.388676133445562
+  },
+  "range_m": {
+    "n": 52,
+    "mean": 222.76505873479576,
+    "q25": 222.0608455499244,
+    "median": 222.641741934567,
+    "q75": 223.48224848723086,
+    "min": 221.3799824980392,
+    "max": 224.27425216977224
+  },
+  "nearest_other_cluster_m": {
+    "n": 48,
+    "mean": 59.91178671518961,
+    "q25": 43.47408390045166,
+    "median": 58.20222854614258,
+    "q75": 77.22846221923828,
+    "min": 17.93080711364746,
+    "max": 107.71914672851562
+  },
+  "pseudo_center_distance_m": {
+    "n": 48,
+    "mean": 0.011370461551330755,
+    "q25": 0.0,
+    "median": 3.814697265625e-06,
+    "q75": 1.5778871214726226e-05,
+    "min": 0.0,
+    "max": 0.25136045696387516
+  },
+  "velocity_correlation_negative_measured_vs_geometric": 0.9654968649517421,
+  "important_code_facts": [
+    "Input PCD is already intensity-filtered; baseline association does not use intensity.",
+    "DBSCAN min_points=1 creates tracks for singleton clusters.",
+    "The used-cluster set is populated but not used to prevent duplicate association.",
+    "Predicted-only frames retain the previous num_points/radial_velocity state."
+  ]
+}

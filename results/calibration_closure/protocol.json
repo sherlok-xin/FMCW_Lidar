@@ -1,0 +1,71 @@
+{
+  "protocol_version": 4,
+  "random_seed": 20260922,
+  "candidate_generation_uses_gnss": false,
+  "coordinate_transform_rich80": "[x,z,-y]",
+  "valid_volume_m": {
+    "x": [
+      0.0,
+      520.0
+    ],
+    "y": [
+      -250.0,
+      250.0
+    ],
+    "z": [
+      -100.0,
+      120.0
+    ]
+  },
+  "exclude_zero_placeholders": true,
+  "voxel_size_m": 1.0,
+  "max_voxel_frame_fraction_primary": 0.1,
+  "max_voxel_frame_fraction_sensitivity": [
+    0.05,
+    0.2
+  ],
+  "component_eps_m": 2.25,
+  "component_max_extent_m": 6.0,
+  "component_max_points": 120,
+  "component_max_voxels": 32,
+  "component_min_range_m": 8.0,
+  "component_max_range_m": 510.0,
+  "max_components_per_frame": 1500,
+  "association_initial_speed_mps": 18.0,
+  "association_max_speed_mps": 25.0,
+  "association_base_gate_m": 3.0,
+  "association_prediction_acceleration_mps2": 5.0,
+  "association_max_gap_frames": 2,
+  "min_track_observations": 5,
+  "min_track_span_frames": 6,
+  "min_median_speed_mps": 0.5,
+  "max_median_speed_mps": 20.0,
+  "max_p90_acceleration_mps2": 8.0,
+  "min_median_direction_cosine": 0.3,
+  "max_median_doppler_residual_mps": 4.0,
+  "evidence_min_points_per_observation": 3,
+  "evidence_min_supported_observations": 5,
+  "evidence_max_supported_gap_frames": 3,
+  "calibration_conditions": [
+    "300m_roundtrip_5",
+    "300m_roundtrip_10",
+    "100m_cross_5",
+    "200m_cross_5",
+    "300m_cross_5"
+  ],
+  "validation_conditions": [
+    "300m_roundtrip_13",
+    "100m_cross_10",
+    "200m_cross_10",
+    "300m_cross_10"
+  ],
+  "offset_search_margin_from_interval_midpoint_s": 40.0,
+  "position_huber_scale_m": 5.0,
+  "closure_position_rmse_m": 10.0,
+  "closure_range_rmse_m": 5.0,
+  "closure_direction_median_deg": 35.0,
+  "closure_doppler_rmse_mps": 3.0,
+  "closure_min_path_fraction": 0.15,
+  "frozen_utc": "2026-09-22T00:00:00+00:00",
+  "note": "Thresholds are common across all bags and fixed before GNSS alignment scoring."
+}

@@ -1,0 +1,3605 @@
+{
+  "condition_id": "300m_roundtrip_13",
+  "searches": [
+    {
+      "fraction": 0.1,
+      "accepted_tracks": 298,
+      "component_diagnostics": {
+        "condition_id": "300m_roundtrip_13",
+        "frame_count": 145,
+        "frequency_fraction": 0.1,
+        "max_frames": 15,
+        "frames": [
+          {
+            "frame_index": 0,
+            "rare_voxels": 217,
+            "components": 178,
+            "retained": 178
+          },
+          {
+            "frame_index": 1,
+            "rare_voxels": 193,
+            "components": 150,
+            "retained": 150
+          },
+          {
+            "frame_index": 2,
+            "rare_voxels": 222,
+            "components": 172,
+            "retained": 172
+          },
+          {
+            "frame_index": 3,
+            "rare_voxels": 176,
+            "components": 149,
+            "retained": 149
+          },
+          {
+            "frame_index": 4,
+            "rare_voxels": 168,
+            "components": 135,
+            "retained": 135
+          },
+          {
+            "frame_index": 5,
+            "rare_voxels": 189,
+            "components": 153,
+            "retained": 153
+          },
+          {
+            "frame_index": 6,
+            "rare_voxels": 184,
+            "components": 138,
+            "retained": 138
+          },
+          {
+            "frame_index": 7,
+            "rare_voxels": 198,
+            "components": 145,
+            "retained": 145
+          },
+          {
+            "frame_index": 8,
+            "rare_voxels": 249,
+            "components": 191,
+            "retained": 191
+          },
+          {
+            "frame_index": 9,
+            "rare_voxels": 227,
+            "components": 171,
+            "retained": 171
+          },
+          {
+            "frame_index": 10,
+            "rare_voxels": 210,
+            "components": 167,
+            "retained": 167
+          },
+          {
+            "frame_index": 11,
+            "rare_voxels": 220,
+            "components": 146,
+            "retained": 146
+          },
+          {
+            "frame_index": 12,
+            "rare_voxels": 228,
+            "components": 166,
+            "retained": 166
+          },
+          {
+            "frame_index": 13,
+            "rare_voxels": 225,
+            "components": 175,
+            "retained": 175
+          },
+          {
+            "frame_index": 14,
+            "rare_voxels": 210,
+            "components": 164,
+            "retained": 164
+          },
+          {
+            "frame_index": 15,
+            "rare_voxels": 219,
+            "components": 165,
+            "retained": 165
+          },
+          {
+            "frame_index": 16,
+            "rare_voxels": 207,
+            "components": 152,
+            "retained": 152
+          },
+          {
+            "frame_index": 17,
+            "rare_voxels": 227,
+            "components": 176,
+            "retained": 176
+          },
+          {
+            "frame_index": 18,
+            "rare_voxels": 213,
+            "components": 168,
+            "retained": 168
+          },
+          {
+            "frame_index": 19,
+            "rare_voxels": 207,
+            "components": 161,
+            "retained": 161
+          },
+          {
+            "frame_index": 20,
+            "rare_voxels": 196,
+            "components": 154,
+            "retained": 154
+          },
+          {
+            "frame_index": 21,
+            "rare_voxels": 193,
+            "components": 157,
+            "retained": 157
+          },
+          {
+            "frame_index": 22,
+            "rare_voxels": 202,
+            "components": 161,
+            "retained": 161
+          },
+          {
+            "frame_index": 23,
+            "rare_voxels": 201,
+            "components": 161,
+            "retained": 161
+          },
+          {
+            "frame_index": 24,
+            "rare_voxels": 207,
+            "components": 155,
+            "retained": 155
+          },
+          {
+            "frame_index": 25,
+            "rare_voxels": 191,
+            "components": 146,
+            "retained": 146
+          },
+          {
+            "frame_index": 26,
+            "rare_voxels": 207,
+            "components": 154,
+            "retained": 154
+          },
+          {
+            "frame_index": 27,
+            "rare_voxels": 215,
+            "components": 170,
+            "retained": 170
+          },
+          {
+            "frame_index": 28,
+            "rare_voxels": 217,
+            "components": 168,
+            "retained": 168
+          },
+          {
+            "frame_index": 29,
+            "rare_voxels": 214,
+            "components": 173,
+            "retained": 173
+          },
+          {
+            "frame_index": 30,
+            "rare_voxels": 196,
+            "components": 150,
+            "retained": 150
+          },
+          {
+            "frame_index": 31,
+            "rare_voxels": 205,
+            "components": 163,
+            "retained": 163
+          },
+          {
+            "frame_index": 32,
+            "rare_voxels": 200,
+            "components": 147,
+            "retained": 147
+          },
+          {
+            "frame_index": 33,
+            "rare_voxels": 241,
+            "components": 193,
+            "retained": 193
+          },
+          {
+            "frame_index": 34,
+            "rare_voxels": 215,
+            "components": 160,
+            "retained": 160
+          },
+          {
+            "frame_index": 35,
+            "rare_voxels": 205,
+            "components": 159,
+            "retained": 159
+          },
+          {
+            "frame_index": 36,
+            "rare_voxels": 189,
+            "components": 148,
+            "retained": 148
+          },
+          {
+            "frame_index": 37,
+            "rare_voxels": 240,
+            "components": 177,
+            "retained": 177
+          },
+          {
+            "frame_index": 38,
+            "rare_voxels": 247,
+            "components": 180,
+            "retained": 180
+          },
+          {
+            "frame_index": 39,
+            "rare_voxels": 255,
+            "components": 180,
+            "retained": 180
+          },
+          {
+            "frame_index": 40,
+            "rare_voxels": 233,
+            "components": 175,
+            "retained": 175
+          },
+          {
+            "frame_index": 41,
+            "rare_voxels": 232,
+            "components": 175,
+            "retained": 175
+          },
+          {
+            "frame_index": 42,
+            "rare_voxels": 237,
+            "components": 173,
+            "retained": 173
+          },
+          {
+            "frame_index": 43,
+            "rare_voxels": 206,
+            "components": 157,
+            "retained": 157
+          },
+          {
+            "frame_index": 44,
+            "rare_voxels": 236,
+            "components": 180,
+            "retained": 180
+          },
+          {
+            "frame_index": 45,
+            "rare_voxels": 212,
+            "components": 152,
+            "retained": 152
+          },
+          {
+            "frame_index": 46,
+            "rare_voxels": 269,
+            "components": 211,
+            "retained": 211
+          },
+          {
+            "frame_index": 47,
+            "rare_voxels": 234,
+            "components": 179,
+            "retained": 179
+          },
+          {
+            "frame_index": 48,
+            "rare_voxels": 220,
+            "components": 172,
+            "retained": 172
+          },
+          {
+            "frame_index": 49,
+            "rare_voxels": 265,
+            "components": 203,
+            "retained": 203
+          },
+          {
+            "frame_index": 50,
+            "rare_voxels": 241,
+            "components": 186,
+            "retained": 186
+          },
+          {
+            "frame_index": 51,
+            "rare_voxels": 247,
+            "components": 195,
+            "retained": 195
+          },
+          {
+            "frame_index": 52,
+            "rare_voxels": 253,
+            "components": 207,
+            "retained": 207
+          },
+          {
+            "frame_index": 53,
+            "rare_voxels": 215,
+            "components": 184,
+            "retained": 184
+          },
+          {
+            "frame_index": 54,
+            "rare_voxels": 229,
+            "components": 188,
+            "retained": 188
+          },
+          {
+            "frame_index": 55,
+            "rare_voxels": 231,
+            "components": 197,
+            "retained": 197
+          },
+          {
+            "frame_index": 56,
+            "rare_voxels": 244,
+            "components": 191,
+            "retained": 191
+          },
+          {
+            "frame_index": 57,
+            "rare_voxels": 240,
+            "components": 194,
+            "retained": 194
+          },
+          {
+            "frame_index": 58,
+            "rare_voxels": 223,
+            "components": 182,
+            "retained": 182
+          },
+          {
+            "frame_index": 59,
+            "rare_voxels": 208,
+            "components": 173,
+            "retained": 173
+          },
+          {
+            "frame_index": 60,
+            "rare_voxels": 211,
+            "components": 178,
+            "retained": 178
+          },
+          {
+            "frame_index": 61,
+            "rare_voxels": 210,
+            "components": 167,
+            "retained": 167
+          },
+          {
+            "frame_index": 62,
+            "rare_voxels": 209,
+            "components": 183,
+            "retained": 183
+          },
+          {
+            "frame_index": 63,
+            "rare_voxels": 221,
+            "components": 177,
+            "retained": 177
+          },
+          {
+            "frame_index": 64,
+            "rare_voxels": 202,
+            "components": 164,
+            "retained": 164
+          },
+          {
+            "frame_index": 65,
+            "rare_voxels": 194,
+            "components": 154,
+            "retained": 154
+          },
+          {
+            "frame_index": 66,
+            "rare_voxels": 194,
+            "components": 165,
+            "retained": 165
+          },
+          {
+            "frame_index": 67,
+            "rare_voxels": 203,
+            "components": 170,
+            "retained": 170
+          },
+          {
+            "frame_index": 68,
+            "rare_voxels": 217,
+            "components": 173,
+            "retained": 173
+          },
+          {
+            "frame_index": 69,
+            "rare_voxels": 212,
+            "components": 182,
+            "retained": 182
+          },
+          {
+            "frame_index": 70,
+            "rare_voxels": 210,
+            "components": 178,
+            "retained": 178
+          },
+          {
+            "frame_index": 71,
+            "rare_voxels": 200,
+            "components": 159,
+            "retained": 159
+          },
+          {
+            "frame_index": 72,
+            "rare_voxels": 216,
+            "components": 180,
+            "retained": 180
+          },
+          {
+            "frame_index": 73,
+            "rare_voxels": 200,
+            "components": 168,
+            "retained": 168
+          },
+          {
+            "frame_index": 74,
+            "rare_voxels": 209,
+            "components": 175,
+            "retained": 175
+          },
+          {
+            "frame_index": 75,
+            "rare_voxels": 169,
+            "components": 145,
+            "retained": 145
+          },
+          {
+            "frame_index": 76,
+            "rare_voxels": 191,
+            "components": 161,
+            "retained": 161
+          },
+          {
+            "frame_index": 77,
+            "rare_voxels": 229,
+            "components": 199,
+            "retained": 199
+          },
+          {
+            "frame_index": 78,
+            "rare_voxels": 208,
+            "components": 172,
+            "retained": 172
+          },
+          {
+            "frame_index": 79,
+            "rare_voxels": 192,
+            "components": 165,
+            "retained": 165
+          },
+          {
+            "frame_index": 80,
+            "rare_voxels": 187,
+            "components": 161,
+            "retained": 161
+          },
+          {
+            "frame_index": 81,
+            "rare_voxels": 194,
+            "components": 178,
+            "retained": 178
+          },
+          {
+            "frame_index": 82,
+            "rare_voxels": 186,
+            "components": 163,
+            "retained": 163
+          },
+          {
+            "frame_index": 83,
+            "rare_voxels": 201,
+            "components": 177,
+            "retained": 177
+          },
+          {
+            "frame_index": 84,
+            "rare_voxels": 223,
+            "components": 187,
+            "retained": 187
+          },
+          {
+            "frame_index": 85,
+            "rare_voxels": 220,
+            "components": 182,
+            "retained": 182
+          },
+          {
+            "frame_index": 86,
+            "rare_voxels": 196,
+            "components": 159,
+            "retained": 159
+          },
+          {
+            "frame_index": 87,
+            "rare_voxels": 219,
+            "components": 187,
+            "retained": 187
+          },
+          {
+            "frame_index": 88,
+            "rare_voxels": 197,
+            "components": 177,
+            "retained": 177
+          },
+          {
+            "frame_index": 89,
+            "rare_voxels": 200,
+            "components": 167,
+            "retained": 167
+          },
+          {
+            "frame_index": 90,
+            "rare_voxels": 216,
+            "components": 189,
+            "retained": 189
+          },
+          {
+            "frame_index": 91,
+            "rare_voxels": 207,
+            "components": 182,
+            "retained": 182
+          },
+          {
+            "frame_index": 92,
+            "rare_voxels": 240,
+            "components": 212,
+            "retained": 212
+          },
+          {
+            "frame_index": 93,
+            "rare_voxels": 210,
+            "components": 193,
+            "retained": 193
+          },
+          {
+            "frame_index": 94,
+            "rare_voxels": 179,
+            "components": 157,
+            "retained": 157
+          },
+          {
+            "frame_index": 95,
+            "rare_voxels": 200,
+            "components": 169,
+            "retained": 169
+          },
+          {
+            "frame_index": 96,
+            "rare_voxels": 226,
+            "components": 193,
+            "retained": 193
+          },
+          {
+            "frame_index": 97,
+            "rare_voxels": 219,
+            "components": 184,
+            "retained": 184
+          },
+          {
+            "frame_index": 98,
+            "rare_voxels": 222,
+            "components": 187,
+            "retained": 187
+          },
+          {
+            "frame_index": 99,
+            "rare_voxels": 204,
+            "components": 174,
+            "retained": 174
+          },
+          {
+            "frame_index": 100,
+            "rare_voxels": 181,
+            "components": 158,
+            "retained": 158
+          },
+          {
+            "frame_index": 101,
+            "rare_voxels": 214,
+            "components": 181,
+            "retained": 181
+          },
+          {
+            "frame_index": 102,
+            "rare_voxels": 192,
+            "components": 156,
+            "retained": 156
+          },
+          {
+            "frame_index": 103,
+            "rare_voxels": 217,
+            "components": 177,
+            "retained": 177
+          },
+          {
+            "frame_index": 104,
+            "rare_voxels": 180,
+            "components": 157,
+            "retained": 157
+          },
+          {
+            "frame_index": 105,
+            "rare_voxels": 182,
+            "components": 161,
+            "retained": 161
+          },
+          {
+            "frame_index": 106,
+            "rare_voxels": 172,
+            "components": 156,
+            "retained": 156
+          },
+          {
+            "frame_index": 107,
+            "rare_voxels": 213,
+            "components": 181,
+            "retained": 181
+          },
+          {
+            "frame_index": 108,
+            "rare_voxels": 210,
+            "components": 176,
+            "retained": 176
+          },
+          {
+            "frame_index": 109,
+            "rare_voxels": 195,
+            "components": 159,
+            "retained": 159
+          },
+          {
+            "frame_index": 110,
+            "rare_voxels": 230,
+            "components": 181,
+            "retained": 181
+          },
+          {
+            "frame_index": 111,
+            "rare_voxels": 221,
+            "components": 171,
+            "retained": 171
+          },
+          {
+            "frame_index": 112,
+            "rare_voxels": 244,
+            "components": 184,
+            "retained": 184
+          },
+          {
+            "frame_index": 113,
+            "rare_voxels": 294,
+            "components": 196,
+            "retained": 196
+          },
+          {
+            "frame_index": 114,
+            "rare_voxels": 237,
+            "components": 182,
+            "retained": 182
+          },
+          {
+            "frame_index": 115,
+            "rare_voxels": 200,
+            "components": 167,
+            "retained": 167
+          },
+          {
+            "frame_index": 116,
+            "rare_voxels": 203,
+            "components": 164,
+            "retained": 164
+          },
+          {
+            "frame_index": 117,
+            "rare_voxels": 215,
+            "components": 184,
+            "retained": 184
+          },
+          {
+            "frame_index": 118,
+            "rare_voxels": 234,
+            "components": 192,
+            "retained": 192
+          },
+          {
+            "frame_index": 119,
+            "rare_voxels": 227,
+            "components": 193,
+            "retained": 193
+          },
+          {
+            "frame_index": 120,
+            "rare_voxels": 225,
+            "components": 188,
+            "retained": 188
+          },
+          {
+            "frame_index": 121,
+            "rare_voxels": 241,
+            "components": 188,
+            "retained": 188
+          },
+          {
+            "frame_index": 122,
+            "rare_voxels": 231,
+            "components": 185,
+            "retained": 185
+          },
+          {
+            "frame_index": 123,
+            "rare_voxels": 235,
+            "components": 185,
+            "retained": 185
+          },
+          {
+            "frame_index": 124,
+            "rare_voxels": 214,
+            "components": 167,
+            "retained": 167
+          },
+          {
+            "frame_index": 125,
+            "rare_voxels": 240,
+            "components": 171,
+            "retained": 171
+          },
+          {
+            "frame_index": 126,
+            "rare_voxels": 294,
+            "components": 209,
+            "retained": 209
+          },
+          {
+            "frame_index": 127,
+            "rare_voxels": 296,
+            "components": 185,
+            "retained": 185
+          },
+          {
+            "frame_index": 128,
+            "rare_voxels": 285,
+            "components": 192,
+            "retained": 192
+          },
+          {
+            "frame_index": 129,
+            "rare_voxels": 295,
+            "components": 173,
+            "retained": 173
+          },
+          {
+            "frame_index": 130,
+            "rare_voxels": 243,
+            "components": 170,
+            "retained": 170
+          },
+          {
+            "frame_index": 131,
+            "rare_voxels": 208,
+            "components": 169,
+            "retained": 169
+          },
+          {
+            "frame_index": 132,
+            "rare_voxels": 212,
+            "components": 181,
+            "retained": 181
+          },
+          {
+            "frame_index": 133,
+            "rare_voxels": 210,
+            "components": 172,
+            "retained": 172
+          },
+          {
+            "frame_index": 134,
+            "rare_voxels": 208,
+            "components": 168,
+            "retained": 168
+          },
+          {
+            "frame_index": 135,
+            "rare_voxels": 195,
+            "components": 168,
+            "retained": 168
+          },
+          {
+            "frame_index": 136,
+            "rare_voxels": 226,
+            "components": 184,
+            "retained": 184
+          },
+          {
+            "frame_index": 137,
+            "rare_voxels": 215,
+            "components": 178,
+            "retained": 178
+          },
+          {
+            "frame_index": 138,
+            "rare_voxels": 201,
+            "components": 153,
+            "retained": 153
+          },
+          {
+            "frame_index": 139,
+            "rare_voxels": 223,
+            "components": 171,
+            "retained": 171
+          },
+          {
+            "frame_index": 140,
+            "rare_voxels": 238,
+            "components": 191,
+            "retained": 191
+          },
+          {
+            "frame_index": 141,
+            "rare_voxels": 243,
+            "components": 191,
+            "retained": 191
+          },
+          {
+            "frame_index": 142,
+            "rare_voxels": 222,
+            "components": 173,
+            "retained": 173
+          },
+          {
+            "frame_index": 143,
+            "rare_voxels": 226,
+            "components": 191,
+            "retained": 191
+          },
+          {
+            "frame_index": 144,
+            "rare_voxels": 201,
+            "components": 160,
+            "retained": 160
+          }
+        ]
+      }
+    },
+    {
+      "fraction": 0.05,
+      "accepted_tracks": 196,
+      "component_diagnostics": {
+        "condition_id": "300m_roundtrip_13",
+        "frame_count": 145,
+        "frequency_fraction": 0.05,
+        "max_frames": 8,
+        "frames": [
+          {
+            "frame_index": 0,
+            "rare_voxels": 121,
+            "components": 99,
+            "retained": 99
+          },
+          {
+            "frame_index": 1,
+            "rare_voxels": 117,
+            "components": 94,
+            "retained": 94
+          },
+          {
+            "frame_index": 2,
+            "rare_voxels": 147,
+            "components": 117,
+            "retained": 117
+          },
+          {
+            "frame_index": 3,
+            "rare_voxels": 92,
+            "components": 78,
+            "retained": 78
+          },
+          {
+            "frame_index": 4,
+            "rare_voxels": 105,
+            "components": 82,
+            "retained": 82
+          },
+          {
+            "frame_index": 5,
+            "rare_voxels": 121,
+            "components": 93,
+            "retained": 93
+          },
+          {
+            "frame_index": 6,
+            "rare_voxels": 109,
+            "components": 76,
+            "retained": 76
+          },
+          {
+            "frame_index": 7,
+            "rare_voxels": 103,
+            "components": 78,
+            "retained": 78
+          },
+          {
+            "frame_index": 8,
+            "rare_voxels": 139,
+            "components": 111,
+            "retained": 111
+          },
+          {
+            "frame_index": 9,
+            "rare_voxels": 127,
+            "components": 104,
+            "retained": 104
+          },
+          {
+            "frame_index": 10,
+            "rare_voxels": 121,
+            "components": 105,
+            "retained": 105
+          },
+          {
+            "frame_index": 11,
+            "rare_voxels": 123,
+            "components": 84,
+            "retained": 84
+          },
+          {
+            "frame_index": 12,
+            "rare_voxels": 126,
+            "components": 96,
+            "retained": 96
+          },
+          {
+            "frame_index": 13,
+            "rare_voxels": 124,
+            "components": 103,
+            "retained": 103
+          },
+          {
+            "frame_index": 14,
+            "rare_voxels": 118,
+            "components": 103,
+            "retained": 103
+          },
+          {
+            "frame_index": 15,
+            "rare_voxels": 127,
+            "components": 108,
+            "retained": 108
+          },
+          {
+            "frame_index": 16,
+            "rare_voxels": 127,
+            "components": 102,
+            "retained": 102
+          },
+          {
+            "frame_index": 17,
+            "rare_voxels": 126,
+            "components": 113,
+            "retained": 113
+          },
+          {
+            "frame_index": 18,
+            "rare_voxels": 120,
+            "components": 103,
+            "retained": 103
+          },
+          {
+            "frame_index": 19,
+            "rare_voxels": 103,
+            "components": 93,
+            "retained": 93
+          },
+          {
+            "frame_index": 20,
+            "rare_voxels": 100,
+            "components": 88,
+            "retained": 88
+          },
+          {
+            "frame_index": 21,
+            "rare_voxels": 108,
+            "components": 99,
+            "retained": 99
+          },
+          {
+            "frame_index": 22,
+            "rare_voxels": 104,
+            "components": 90,
+            "retained": 90
+          },
+          {
+            "frame_index": 23,
+            "rare_voxels": 109,
+            "components": 97,
+            "retained": 97
+          },
+          {
+            "frame_index": 24,
+            "rare_voxels": 105,
+            "components": 91,
+            "retained": 91
+          },
+          {
+            "frame_index": 25,
+            "rare_voxels": 110,
+            "components": 96,
+            "retained": 96
+          },
+          {
+            "frame_index": 26,
+            "rare_voxels": 115,
+            "components": 101,
+            "retained": 101
+          },
+          {
+            "frame_index": 27,
+            "rare_voxels": 114,
+            "components": 101,
+            "retained": 101
+          },
+          {
+            "frame_index": 28,
+            "rare_voxels": 124,
+            "components": 111,
+            "retained": 111
+          },
+          {
+            "frame_index": 29,
+            "rare_voxels": 131,
+            "components": 119,
+            "retained": 119
+          },
+          {
+            "frame_index": 30,
+            "rare_voxels": 119,
+            "components": 101,
+            "retained": 101
+          },
+          {
+            "frame_index": 31,
+            "rare_voxels": 107,
+            "components": 93,
+            "retained": 93
+          },
+          {
+            "frame_index": 32,
+            "rare_voxels": 116,
+            "components": 99,
+            "retained": 99
+          },
+          {
+            "frame_index": 33,
+            "rare_voxels": 138,
+            "components": 121,
+            "retained": 121
+          },
+          {
+            "frame_index": 34,
+            "rare_voxels": 136,
+            "components": 107,
+            "retained": 107
+          },
+          {
+            "frame_index": 35,
+            "rare_voxels": 119,
+            "components": 102,
+            "retained": 102
+          },
+          {
+            "frame_index": 36,
+            "rare_voxels": 109,
+            "components": 94,
+            "retained": 94
+          },
+          {
+            "frame_index": 37,
+            "rare_voxels": 140,
+            "components": 112,
+            "retained": 112
+          },
+          {
+            "frame_index": 38,
+            "rare_voxels": 153,
+            "components": 110,
+            "retained": 110
+          },
+          {
+            "frame_index": 39,
+            "rare_voxels": 155,
+            "components": 117,
+            "retained": 117
+          },
+          {
+            "frame_index": 40,
+            "rare_voxels": 136,
+            "components": 110,
+            "retained": 110
+          },
+          {
+            "frame_index": 41,
+            "rare_voxels": 141,
+            "components": 114,
+            "retained": 114
+          },
+          {
+            "frame_index": 42,
+            "rare_voxels": 137,
+            "components": 109,
+            "retained": 109
+          },
+          {
+            "frame_index": 43,
+            "rare_voxels": 118,
+            "components": 95,
+            "retained": 95
+          },
+          {
+            "frame_index": 44,
+            "rare_voxels": 142,
+            "components": 114,
+            "retained": 114
+          },
+          {
+            "frame_index": 45,
+            "rare_voxels": 116,
+            "components": 91,
+            "retained": 91
+          },
+          {
+            "frame_index": 46,
+            "rare_voxels": 159,
+            "components": 133,
+            "retained": 133
+          },
+          {
+            "frame_index": 47,
+            "rare_voxels": 137,
+            "components": 108,
+            "retained": 108
+          },
+          {
+            "frame_index": 48,
+            "rare_voxels": 124,
+            "components": 102,
+            "retained": 102
+          },
+          {
+            "frame_index": 49,
+            "rare_voxels": 164,
+            "components": 130,
+            "retained": 130
+          },
+          {
+            "frame_index": 50,
+            "rare_voxels": 133,
+            "components": 110,
+            "retained": 110
+          },
+          {
+            "frame_index": 51,
+            "rare_voxels": 132,
+            "components": 109,
+            "retained": 109
+          },
+          {
+            "frame_index": 52,
+            "rare_voxels": 145,
+            "components": 127,
+            "retained": 127
+          },
+          {
+            "frame_index": 53,
+            "rare_voxels": 110,
+            "components": 99,
+            "retained": 99
+          },
+          {
+            "frame_index": 54,
+            "rare_voxels": 135,
+            "components": 120,
+            "retained": 120
+          },
+          {
+            "frame_index": 55,
+            "rare_voxels": 119,
+            "components": 107,
+            "retained": 107
+          },
+          {
+            "frame_index": 56,
+            "rare_voxels": 139,
+            "components": 116,
+            "retained": 116
+          },
+          {
+            "frame_index": 57,
+            "rare_voxels": 140,
+            "components": 119,
+            "retained": 119
+          },
+          {
+            "frame_index": 58,
+            "rare_voxels": 134,
+            "components": 120,
+            "retained": 120
+          },
+          {
+            "frame_index": 59,
+            "rare_voxels": 107,
+            "components": 99,
+            "retained": 99
+          },
+          {
+            "frame_index": 60,
+            "rare_voxels": 112,
+            "components": 102,
+            "retained": 102
+          },
+          {
+            "frame_index": 61,
+            "rare_voxels": 118,
+            "components": 103,
+            "retained": 103
+          },
+          {
+            "frame_index": 62,
+            "rare_voxels": 109,
+            "components": 101,
+            "retained": 101
+          },
+          {
+            "frame_index": 63,
+            "rare_voxels": 116,
+            "components": 100,
+            "retained": 100
+          },
+          {
+            "frame_index": 64,
+            "rare_voxels": 110,
+            "components": 98,
+            "retained": 98
+          },
+          {
+            "frame_index": 65,
+            "rare_voxels": 118,
+            "components": 102,
+            "retained": 102
+          },
+          {
+            "frame_index": 66,
+            "rare_voxels": 124,
+            "components": 111,
+            "retained": 111
+          },
+          {
+            "frame_index": 67,
+            "rare_voxels": 121,
+            "components": 111,
+            "retained": 111
+          },
+          {
+            "frame_index": 68,
+            "rare_voxels": 137,
+            "components": 116,
+            "retained": 116
+          },
+          {
+            "frame_index": 69,
+            "rare_voxels": 122,
+            "components": 111,
+            "retained": 111
+          },
+          {
+            "frame_index": 70,
+            "rare_voxels": 122,
+            "components": 109,
+            "retained": 109
+          },
+          {
+            "frame_index": 71,
+            "rare_voxels": 118,
+            "components": 102,
+            "retained": 102
+          },
+          {
+            "frame_index": 72,
+            "rare_voxels": 135,
+            "components": 118,
+            "retained": 118
+          },
+          {
+            "frame_index": 73,
+            "rare_voxels": 116,
+            "components": 104,
+            "retained": 104
+          },
+          {
+            "frame_index": 74,
+            "rare_voxels": 125,
+            "components": 114,
+            "retained": 114
+          },
+          {
+            "frame_index": 75,
+            "rare_voxels": 95,
+            "components": 89,
+            "retained": 89
+          },
+          {
+            "frame_index": 76,
+            "rare_voxels": 105,
+            "components": 91,
+            "retained": 91
+          },
+          {
+            "frame_index": 77,
+            "rare_voxels": 130,
+            "components": 118,
+            "retained": 118
+          },
+          {
+            "frame_index": 78,
+            "rare_voxels": 115,
+            "components": 100,
+            "retained": 100
+          },
+          {
+            "frame_index": 79,
+            "rare_voxels": 115,
+            "components": 104,
+            "retained": 104
+          },
+          {
+            "frame_index": 80,
+            "rare_voxels": 108,
+            "components": 98,
+            "retained": 98
+          },
+          {
+            "frame_index": 81,
+            "rare_voxels": 105,
+            "components": 99,
+            "retained": 99
+          },
+          {
+            "frame_index": 82,
+            "rare_voxels": 99,
+            "components": 93,
+            "retained": 93
+          },
+          {
+            "frame_index": 83,
+            "rare_voxels": 123,
+            "components": 112,
+            "retained": 112
+          },
+          {
+            "frame_index": 84,
+            "rare_voxels": 135,
+            "components": 117,
+            "retained": 117
+          },
+          {
+            "frame_index": 85,
+            "rare_voxels": 119,
+            "components": 109,
+            "retained": 109
+          },
+          {
+            "frame_index": 86,
+            "rare_voxels": 121,
+            "components": 102,
+            "retained": 102
+          },
+          {
+            "frame_index": 87,
+            "rare_voxels": 126,
+            "components": 117,
+            "retained": 117
+          },
+          {
+            "frame_index": 88,
+            "rare_voxels": 98,
+            "components": 94,
+            "retained": 94
+          },
+          {
+            "frame_index": 89,
+            "rare_voxels": 98,
+            "components": 88,
+            "retained": 88
+          },
+          {
+            "frame_index": 90,
+            "rare_voxels": 120,
+            "components": 106,
+            "retained": 106
+          },
+          {
+            "frame_index": 91,
+            "rare_voxels": 124,
+            "components": 111,
+            "retained": 111
+          },
+          {
+            "frame_index": 92,
+            "rare_voxels": 142,
+            "components": 131,
+            "retained": 131
+          },
+          {
+            "frame_index": 93,
+            "rare_voxels": 113,
+            "components": 108,
+            "retained": 108
+          },
+          {
+            "frame_index": 94,
+            "rare_voxels": 90,
+            "components": 88,
+            "retained": 88
+          },
+          {
+            "frame_index": 95,
+            "rare_voxels": 109,
+            "components": 99,
+            "retained": 99
+          },
+          {
+            "frame_index": 96,
+            "rare_voxels": 120,
+            "components": 109,
+            "retained": 109
+          },
+          {
+            "frame_index": 97,
+            "rare_voxels": 134,
+            "components": 116,
+            "retained": 116
+          },
+          {
+            "frame_index": 98,
+            "rare_voxels": 122,
+            "components": 109,
+            "retained": 109
+          },
+          {
+            "frame_index": 99,
+            "rare_voxels": 121,
+            "components": 107,
+            "retained": 107
+          },
+          {
+            "frame_index": 100,
+            "rare_voxels": 94,
+            "components": 89,
+            "retained": 89
+          },
+          {
+            "frame_index": 101,
+            "rare_voxels": 120,
+            "components": 113,
+            "retained": 113
+          },
+          {
+            "frame_index": 102,
+            "rare_voxels": 118,
+            "components": 100,
+            "retained": 100
+          },
+          {
+            "frame_index": 103,
+            "rare_voxels": 124,
+            "components": 112,
+            "retained": 112
+          },
+          {
+            "frame_index": 104,
+            "rare_voxels": 100,
+            "components": 89,
+            "retained": 89
+          },
+          {
+            "frame_index": 105,
+            "rare_voxels": 101,
+            "components": 94,
+            "retained": 94
+          },
+          {
+            "frame_index": 106,
+            "rare_voxels": 103,
+            "components": 96,
+            "retained": 96
+          },
+          {
+            "frame_index": 107,
+            "rare_voxels": 114,
+            "components": 107,
+            "retained": 107
+          },
+          {
+            "frame_index": 108,
+            "rare_voxels": 123,
+            "components": 106,
+            "retained": 106
+          },
+          {
+            "frame_index": 109,
+            "rare_voxels": 114,
+            "components": 99,
+            "retained": 99
+          },
+          {
+            "frame_index": 110,
+            "rare_voxels": 135,
+            "components": 110,
+            "retained": 110
+          },
+          {
+            "frame_index": 111,
+            "rare_voxels": 124,
+            "components": 94,
+            "retained": 94
+          },
+          {
+            "frame_index": 112,
+            "rare_voxels": 163,
+            "components": 121,
+            "retained": 121
+          },
+          {
+            "frame_index": 113,
+            "rare_voxels": 193,
+            "components": 127,
+            "retained": 127
+          },
+          {
+            "frame_index": 114,
+            "rare_voxels": 147,
+            "components": 109,
+            "retained": 109
+          },
+          {
+            "frame_index": 115,
+            "rare_voxels": 118,
+            "components": 100,
+            "retained": 100
+          },
+          {
+            "frame_index": 116,
+            "rare_voxels": 115,
+            "components": 102,
+            "retained": 102
+          },
+          {
+            "frame_index": 117,
+            "rare_voxels": 116,
+            "components": 112,
+            "retained": 112
+          },
+          {
+            "frame_index": 118,
+            "rare_voxels": 136,
+            "components": 115,
+            "retained": 115
+          },
+          {
+            "frame_index": 119,
+            "rare_voxels": 128,
+            "components": 113,
+            "retained": 113
+          },
+          {
+            "frame_index": 120,
+            "rare_voxels": 125,
+            "components": 108,
+            "retained": 108
+          },
+          {
+            "frame_index": 121,
+            "rare_voxels": 151,
+            "components": 127,
+            "retained": 127
+          },
+          {
+            "frame_index": 122,
+            "rare_voxels": 134,
+            "components": 110,
+            "retained": 110
+          },
+          {
+            "frame_index": 123,
+            "rare_voxels": 134,
+            "components": 105,
+            "retained": 105
+          },
+          {
+            "frame_index": 124,
+            "rare_voxels": 126,
+            "components": 91,
+            "retained": 91
+          },
+          {
+            "frame_index": 125,
+            "rare_voxels": 157,
+            "components": 110,
+            "retained": 110
+          },
+          {
+            "frame_index": 126,
+            "rare_voxels": 197,
+            "components": 141,
+            "retained": 141
+          },
+          {
+            "frame_index": 127,
+            "rare_voxels": 212,
+            "components": 133,
+            "retained": 133
+          },
+          {
+            "frame_index": 128,
+            "rare_voxels": 191,
+            "components": 120,
+            "retained": 120
+          },
+          {
+            "frame_index": 129,
+            "rare_voxels": 203,
+            "components": 107,
+            "retained": 107
+          },
+          {
+            "frame_index": 130,
+            "rare_voxels": 161,
+            "components": 102,
+            "retained": 102
+          },
+          {
+            "frame_index": 131,
+            "rare_voxels": 117,
+            "components": 100,
+            "retained": 100
+          },
+          {
+            "frame_index": 132,
+            "rare_voxels": 114,
+            "components": 107,
+            "retained": 107
+          },
+          {
+            "frame_index": 133,
+            "rare_voxels": 121,
+            "components": 105,
+            "retained": 105
+          },
+          {
+            "frame_index": 134,
+            "rare_voxels": 112,
+            "components": 93,
+            "retained": 93
+          },
+          {
+            "frame_index": 135,
+            "rare_voxels": 110,
+            "components": 98,
+            "retained": 98
+          },
+          {
+            "frame_index": 136,
+            "rare_voxels": 142,
+            "components": 122,
+            "retained": 122
+          },
+          {
+            "frame_index": 137,
+            "rare_voxels": 134,
+            "components": 115,
+            "retained": 115
+          },
+          {
+            "frame_index": 138,
+            "rare_voxels": 124,
+            "components": 93,
+            "retained": 93
+          },
+          {
+            "frame_index": 139,
+            "rare_voxels": 147,
+            "components": 114,
+            "retained": 114
+          },
+          {
+            "frame_index": 140,
+            "rare_voxels": 156,
+            "components": 130,
+            "retained": 130
+          },
+          {
+            "frame_index": 141,
+            "rare_voxels": 154,
+            "components": 130,
+            "retained": 130
+          },
+          {
+            "frame_index": 142,
+            "rare_voxels": 143,
+            "components": 111,
+            "retained": 111
+          },
+          {
+            "frame_index": 143,
+            "rare_voxels": 147,
+            "components": 131,
+            "retained": 131
+          },
+          {
+            "frame_index": 144,
+            "rare_voxels": 124,
+            "components": 102,
+            "retained": 102
+          }
+        ]
+      }
+    },
+    {
+      "fraction": 0.2,
+      "accepted_tracks": 489,
+      "component_diagnostics": {
+        "condition_id": "300m_roundtrip_13",
+        "frame_count": 145,
+        "frequency_fraction": 0.2,
+        "max_frames": 29,
+        "frames": [
+          {
+            "frame_index": 0,
+            "rare_voxels": 408,
+            "components": 286,
+            "retained": 286
+          },
+          {
+            "frame_index": 1,
+            "rare_voxels": 395,
+            "components": 279,
+            "retained": 279
+          },
+          {
+            "frame_index": 2,
+            "rare_voxels": 408,
+            "components": 280,
+            "retained": 280
+          },
+          {
+            "frame_index": 3,
+            "rare_voxels": 357,
+            "components": 264,
+            "retained": 264
+          },
+          {
+            "frame_index": 4,
+            "rare_voxels": 347,
+            "components": 250,
+            "retained": 250
+          },
+          {
+            "frame_index": 5,
+            "rare_voxels": 381,
+            "components": 273,
+            "retained": 273
+          },
+          {
+            "frame_index": 6,
+            "rare_voxels": 342,
+            "components": 237,
+            "retained": 237
+          },
+          {
+            "frame_index": 7,
+            "rare_voxels": 374,
+            "components": 253,
+            "retained": 253
+          },
+          {
+            "frame_index": 8,
+            "rare_voxels": 438,
+            "components": 286,
+            "retained": 286
+          },
+          {
+            "frame_index": 9,
+            "rare_voxels": 411,
+            "components": 269,
+            "retained": 269
+          },
+          {
+            "frame_index": 10,
+            "rare_voxels": 391,
+            "components": 262,
+            "retained": 262
+          },
+          {
+            "frame_index": 11,
+            "rare_voxels": 409,
+            "components": 252,
+            "retained": 252
+          },
+          {
+            "frame_index": 12,
+            "rare_voxels": 412,
+            "components": 283,
+            "retained": 283
+          },
+          {
+            "frame_index": 13,
+            "rare_voxels": 400,
+            "components": 285,
+            "retained": 285
+          },
+          {
+            "frame_index": 14,
+            "rare_voxels": 398,
+            "components": 270,
+            "retained": 270
+          },
+          {
+            "frame_index": 15,
+            "rare_voxels": 400,
+            "components": 275,
+            "retained": 275
+          },
+          {
+            "frame_index": 16,
+            "rare_voxels": 366,
+            "components": 252,
+            "retained": 252
+          },
+          {
+            "frame_index": 17,
+            "rare_voxels": 406,
+            "components": 272,
+            "retained": 272
+          },
+          {
+            "frame_index": 18,
+            "rare_voxels": 401,
+            "components": 293,
+            "retained": 293
+          },
+          {
+            "frame_index": 19,
+            "rare_voxels": 368,
+            "components": 256,
+            "retained": 256
+          },
+          {
+            "frame_index": 20,
+            "rare_voxels": 372,
+            "components": 250,
+            "retained": 250
+          },
+          {
+            "frame_index": 21,
+            "rare_voxels": 374,
+            "components": 266,
+            "retained": 266
+          },
+          {
+            "frame_index": 22,
+            "rare_voxels": 392,
+            "components": 267,
+            "retained": 267
+          },
+          {
+            "frame_index": 23,
+            "rare_voxels": 382,
+            "components": 267,
+            "retained": 267
+          },
+          {
+            "frame_index": 24,
+            "rare_voxels": 405,
+            "components": 278,
+            "retained": 278
+          },
+          {
+            "frame_index": 25,
+            "rare_voxels": 351,
+            "components": 244,
+            "retained": 244
+          },
+          {
+            "frame_index": 26,
+            "rare_voxels": 401,
+            "components": 271,
+            "retained": 271
+          },
+          {
+            "frame_index": 27,
+            "rare_voxels": 384,
+            "components": 272,
+            "retained": 272
+          },
+          {
+            "frame_index": 28,
+            "rare_voxels": 403,
+            "components": 272,
+            "retained": 272
+          },
+          {
+            "frame_index": 29,
+            "rare_voxels": 427,
+            "components": 292,
+            "retained": 292
+          },
+          {
+            "frame_index": 30,
+            "rare_voxels": 381,
+            "components": 259,
+            "retained": 259
+          },
+          {
+            "frame_index": 31,
+            "rare_voxels": 382,
+            "components": 270,
+            "retained": 270
+          },
+          {
+            "frame_index": 32,
+            "rare_voxels": 369,
+            "components": 259,
+            "retained": 259
+          },
+          {
+            "frame_index": 33,
+            "rare_voxels": 416,
+            "components": 290,
+            "retained": 290
+          },
+          {
+            "frame_index": 34,
+            "rare_voxels": 393,
+            "components": 259,
+            "retained": 259
+          },
+          {
+            "frame_index": 35,
+            "rare_voxels": 372,
+            "components": 251,
+            "retained": 251
+          },
+          {
+            "frame_index": 36,
+            "rare_voxels": 378,
+            "components": 247,
+            "retained": 247
+          },
+          {
+            "frame_index": 37,
+            "rare_voxels": 431,
+            "components": 273,
+            "retained": 273
+          },
+          {
+            "frame_index": 38,
+            "rare_voxels": 411,
+            "components": 277,
+            "retained": 277
+          },
+          {
+            "frame_index": 39,
+            "rare_voxels": 439,
+            "components": 293,
+            "retained": 293
+          },
+          {
+            "frame_index": 40,
+            "rare_voxels": 416,
+            "components": 270,
+            "retained": 270
+          },
+          {
+            "frame_index": 41,
+            "rare_voxels": 432,
+            "components": 294,
+            "retained": 294
+          },
+          {
+            "frame_index": 42,
+            "rare_voxels": 429,
+            "components": 284,
+            "retained": 284
+          },
+          {
+            "frame_index": 43,
+            "rare_voxels": 400,
+            "components": 277,
+            "retained": 277
+          },
+          {
+            "frame_index": 44,
+            "rare_voxels": 432,
+            "components": 291,
+            "retained": 291
+          },
+          {
+            "frame_index": 45,
+            "rare_voxels": 397,
+            "components": 255,
+            "retained": 255
+          },
+          {
+            "frame_index": 46,
+            "rare_voxels": 437,
+            "components": 304,
+            "retained": 304
+          },
+          {
+            "frame_index": 47,
+            "rare_voxels": 418,
+            "components": 277,
+            "retained": 277
+          },
+          {
+            "frame_index": 48,
+            "rare_voxels": 410,
+            "components": 288,
+            "retained": 288
+          },
+          {
+            "frame_index": 49,
+            "rare_voxels": 456,
+            "components": 309,
+            "retained": 309
+          },
+          {
+            "frame_index": 50,
+            "rare_voxels": 414,
+            "components": 278,
+            "retained": 278
+          },
+          {
+            "frame_index": 51,
+            "rare_voxels": 434,
+            "components": 301,
+            "retained": 301
+          },
+          {
+            "frame_index": 52,
+            "rare_voxels": 435,
+            "components": 306,
+            "retained": 306
+          },
+          {
+            "frame_index": 53,
+            "rare_voxels": 409,
+            "components": 313,
+            "retained": 313
+          },
+          {
+            "frame_index": 54,
+            "rare_voxels": 422,
+            "components": 294,
+            "retained": 294
+          },
+          {
+            "frame_index": 55,
+            "rare_voxels": 418,
+            "components": 300,
+            "retained": 300
+          },
+          {
+            "frame_index": 56,
+            "rare_voxels": 432,
+            "components": 292,
+            "retained": 292
+          },
+          {
+            "frame_index": 57,
+            "rare_voxels": 408,
+            "components": 294,
+            "retained": 294
+          },
+          {
+            "frame_index": 58,
+            "rare_voxels": 397,
+            "components": 294,
+            "retained": 294
+          },
+          {
+            "frame_index": 59,
+            "rare_voxels": 398,
+            "components": 282,
+            "retained": 282
+          },
+          {
+            "frame_index": 60,
+            "rare_voxels": 384,
+            "components": 288,
+            "retained": 288
+          },
+          {
+            "frame_index": 61,
+            "rare_voxels": 390,
+            "components": 283,
+            "retained": 283
+          },
+          {
+            "frame_index": 62,
+            "rare_voxels": 401,
+            "components": 297,
+            "retained": 297
+          },
+          {
+            "frame_index": 63,
+            "rare_voxels": 403,
+            "components": 296,
+            "retained": 296
+          },
+          {
+            "frame_index": 64,
+            "rare_voxels": 387,
+            "components": 275,
+            "retained": 275
+          },
+          {
+            "frame_index": 65,
+            "rare_voxels": 361,
+            "components": 264,
+            "retained": 264
+          },
+          {
+            "frame_index": 66,
+            "rare_voxels": 398,
+            "components": 290,
+            "retained": 290
+          },
+          {
+            "frame_index": 67,
+            "rare_voxels": 381,
+            "components": 285,
+            "retained": 285
+          },
+          {
+            "frame_index": 68,
+            "rare_voxels": 402,
+            "components": 290,
+            "retained": 290
+          },
+          {
+            "frame_index": 69,
+            "rare_voxels": 426,
+            "components": 316,
+            "retained": 316
+          },
+          {
+            "frame_index": 70,
+            "rare_voxels": 398,
+            "components": 288,
+            "retained": 288
+          },
+          {
+            "frame_index": 71,
+            "rare_voxels": 408,
+            "components": 297,
+            "retained": 297
+          },
+          {
+            "frame_index": 72,
+            "rare_voxels": 426,
+            "components": 300,
+            "retained": 300
+          },
+          {
+            "frame_index": 73,
+            "rare_voxels": 386,
+            "components": 293,
+            "retained": 293
+          },
+          {
+            "frame_index": 74,
+            "rare_voxels": 398,
+            "components": 276,
+            "retained": 276
+          },
+          {
+            "frame_index": 75,
+            "rare_voxels": 346,
+            "components": 262,
+            "retained": 262
+          },
+          {
+            "frame_index": 76,
+            "rare_voxels": 386,
+            "components": 284,
+            "retained": 284
+          },
+          {
+            "frame_index": 77,
+            "rare_voxels": 425,
+            "components": 309,
+            "retained": 309
+          },
+          {
+            "frame_index": 78,
+            "rare_voxels": 422,
+            "components": 295,
+            "retained": 295
+          },
+          {
+            "frame_index": 79,
+            "rare_voxels": 369,
+            "components": 277,
+            "retained": 277
+          },
+          {
+            "frame_index": 80,
+            "rare_voxels": 378,
+            "components": 282,
+            "retained": 282
+          },
+          {
+            "frame_index": 81,
+            "rare_voxels": 390,
+            "components": 299,
+            "retained": 299
+          },
+          {
+            "frame_index": 82,
+            "rare_voxels": 369,
+            "components": 275,
+            "retained": 275
+          },
+          {
+            "frame_index": 83,
+            "rare_voxels": 395,
+            "components": 297,
+            "retained": 297
+          },
+          {
+            "frame_index": 84,
+            "rare_voxels": 399,
+            "components": 300,
+            "retained": 300
+          },
+          {
+            "frame_index": 85,
+            "rare_voxels": 422,
+            "components": 301,
+            "retained": 301
+          },
+          {
+            "frame_index": 86,
+            "rare_voxels": 393,
+            "components": 291,
+            "retained": 291
+          },
+          {
+            "frame_index": 87,
+            "rare_voxels": 421,
+            "components": 294,
+            "retained": 294
+          },
+          {
+            "frame_index": 88,
+            "rare_voxels": 382,
+            "components": 292,
+            "retained": 292
+          },
+          {
+            "frame_index": 89,
+            "rare_voxels": 381,
+            "components": 274,
+            "retained": 274
+          },
+          {
+            "frame_index": 90,
+            "rare_voxels": 426,
+            "components": 300,
+            "retained": 300
+          },
+          {
+            "frame_index": 91,
+            "rare_voxels": 398,
+            "components": 291,
+            "retained": 291
+          },
+          {
+            "frame_index": 92,
+            "rare_voxels": 433,
+            "components": 323,
+            "retained": 323
+          },
+          {
+            "frame_index": 93,
+            "rare_voxels": 402,
+            "components": 302,
+            "retained": 302
+          },
+          {
+            "frame_index": 94,
+            "rare_voxels": 368,
+            "components": 282,
+            "retained": 282
+          },
+          {
+            "frame_index": 95,
+            "rare_voxels": 387,
+            "components": 296,
+            "retained": 296
+          },
+          {
+            "frame_index": 96,
+            "rare_voxels": 412,
+            "components": 302,
+            "retained": 302
+          },
+          {
+            "frame_index": 97,
+            "rare_voxels": 421,
+            "components": 317,
+            "retained": 317
+          },
+          {
+            "frame_index": 98,
+            "rare_voxels": 406,
+            "components": 295,
+            "retained": 295
+          },
+          {
+            "frame_index": 99,
+            "rare_voxels": 399,
+            "components": 309,
+            "retained": 309
+          },
+          {
+            "frame_index": 100,
+            "rare_voxels": 367,
+            "components": 270,
+            "retained": 270
+          },
+          {
+            "frame_index": 101,
+            "rare_voxels": 407,
+            "components": 307,
+            "retained": 307
+          },
+          {
+            "frame_index": 102,
+            "rare_voxels": 374,
+            "components": 288,
+            "retained": 288
+          },
+          {
+            "frame_index": 103,
+            "rare_voxels": 413,
+            "components": 303,
+            "retained": 303
+          },
+          {
+            "frame_index": 104,
+            "rare_voxels": 375,
+            "components": 287,
+            "retained": 287
+          },
+          {
+            "frame_index": 105,
+            "rare_voxels": 362,
+            "components": 277,
+            "retained": 277
+          },
+          {
+            "frame_index": 106,
+            "rare_voxels": 352,
+            "components": 267,
+            "retained": 267
+          },
+          {
+            "frame_index": 107,
+            "rare_voxels": 395,
+            "components": 293,
+            "retained": 293
+          },
+          {
+            "frame_index": 108,
+            "rare_voxels": 407,
+            "components": 290,
+            "retained": 290
+          },
+          {
+            "frame_index": 109,
+            "rare_voxels": 394,
+            "components": 274,
+            "retained": 274
+          },
+          {
+            "frame_index": 110,
+            "rare_voxels": 425,
+            "components": 304,
+            "retained": 304
+          },
+          {
+            "frame_index": 111,
+            "rare_voxels": 437,
+            "components": 284,
+            "retained": 284
+          },
+          {
+            "frame_index": 112,
+            "rare_voxels": 448,
+            "components": 306,
+            "retained": 306
+          },
+          {
+            "frame_index": 113,
+            "rare_voxels": 483,
+            "components": 316,
+            "retained": 316
+          },
+          {
+            "frame_index": 114,
+            "rare_voxels": 415,
+            "components": 281,
+            "retained": 281
+          },
+          {
+            "frame_index": 115,
+            "rare_voxels": 400,
+            "components": 297,
+            "retained": 297
+          },
+          {
+            "frame_index": 116,
+            "rare_voxels": 390,
+            "components": 278,
+            "retained": 278
+          },
+          {
+            "frame_index": 117,
+            "rare_voxels": 405,
+            "components": 292,
+            "retained": 292
+          },
+          {
+            "frame_index": 118,
+            "rare_voxels": 428,
+            "components": 315,
+            "retained": 315
+          },
+          {
+            "frame_index": 119,
+            "rare_voxels": 461,
+            "components": 332,
+            "retained": 332
+          },
+          {
+            "frame_index": 120,
+            "rare_voxels": 399,
+            "components": 296,
+            "retained": 296
+          },
+          {
+            "frame_index": 121,
+            "rare_voxels": 451,
+            "components": 302,
+            "retained": 302
+          },
+          {
+            "frame_index": 122,
+            "rare_voxels": 430,
+            "components": 310,
+            "retained": 310
+          },
+          {
+            "frame_index": 123,
+            "rare_voxels": 425,
+            "components": 305,
+            "retained": 305
+          },
+          {
+            "frame_index": 124,
+            "rare_voxels": 374,
+            "components": 274,
+            "retained": 274
+          },
+          {
+            "frame_index": 125,
+            "rare_voxels": 406,
+            "components": 277,
+            "retained": 277
+          },
+          {
+            "frame_index": 126,
+            "rare_voxels": 526,
+            "components": 313,
+            "retained": 313
+          },
+          {
+            "frame_index": 127,
+            "rare_voxels": 471,
+            "components": 293,
+            "retained": 293
+          },
+          {
+            "frame_index": 128,
+            "rare_voxels": 469,
+            "components": 292,
+            "retained": 292
+          },
+          {
+            "frame_index": 129,
+            "rare_voxels": 477,
+            "components": 285,
+            "retained": 285
+          },
+          {
+            "frame_index": 130,
+            "rare_voxels": 442,
+            "components": 282,
+            "retained": 282
+          },
+          {
+            "frame_index": 131,
+            "rare_voxels": 386,
+            "components": 283,
+            "retained": 283
+          },
+          {
+            "frame_index": 132,
+            "rare_voxels": 392,
+            "components": 281,
+            "retained": 281
+          },
+          {
+            "frame_index": 133,
+            "rare_voxels": 388,
+            "components": 277,
+            "retained": 277
+          },
+          {
+            "frame_index": 134,
+            "rare_voxels": 409,
+            "components": 294,
+            "retained": 294
+          },
+          {
+            "frame_index": 135,
+            "rare_voxels": 390,
+            "components": 278,
+            "retained": 278
+          },
+          {
+            "frame_index": 136,
+            "rare_voxels": 439,
+            "components": 301,
+            "retained": 301
+          },
+          {
+            "frame_index": 137,
+            "rare_voxels": 399,
+            "components": 290,
+            "retained": 290
+          },
+          {
+            "frame_index": 138,
+            "rare_voxels": 383,
+            "components": 269,
+            "retained": 269
+          },
+          {
+            "frame_index": 139,
+            "rare_voxels": 385,
+            "components": 281,
+            "retained": 281
+          },
+          {
+            "frame_index": 140,
+            "rare_voxels": 444,
+            "components": 308,
+            "retained": 308
+          },
+          {
+            "frame_index": 141,
+            "rare_voxels": 392,
+            "components": 278,
+            "retained": 278
+          },
+          {
+            "frame_index": 142,
+            "rare_voxels": 412,
+            "components": 274,
+            "retained": 274
+          },
+          {
+            "frame_index": 143,
+            "rare_voxels": 403,
+            "components": 310,
+            "retained": 310
+          },
+          {
+            "frame_index": 144,
+            "rare_voxels": 402,
+            "components": 295,
+            "retained": 295
+          }
+        ]
+      }
+    }
+  ],
+  "unique_tracks": 884,
+  "evidence_tracks": 26,
+  "top_summaries": [
+    {
+      "candidate_id": "300m_roundtrip_13_c0001",
+      "lidar_rank": 1,
+      "lidar_score": 19.253029611186676,
+      "observations": 113,
+      "span_frames": 145,
+      "coverage": 0.7793103448275862,
+      "path_length_m": 501.4525416938422,
+      "displacement_m": 73.70338740269203,
+      "median_speed_mps": 3.271017499479246,
+      "p90_acceleration_mps2": 5.108382343795052,
+      "median_direction_cosine": 0.5427256722520838,
+      "median_doppler_residual_mps": 3.6571384398421904,
+      "median_points": 1.0,
+      "median_extent_m": 0.0,
+      "median_intensity": 19.0,
+      "median_radial_velocity_mps": 0.019999999552965164,
+      "median_persistence": 0.11724137931034483
+    },
+    {
+      "candidate_id": "300m_roundtrip_13_c0002",
+      "lidar_rank": 2,
+      "lidar_score": 17.763442987581982,
+      "observations": 102,
+      "span_frames": 133,
+      "coverage": 0.7669172932330827,
+      "path_length_m": 502.3304629278087,
+      "displacement_m": 55.79013103814623,
+      "median_speed_mps": 3.140310867091101,
+      "p90_acceleration_mps2": 5.162717455942644,
+      "median_direction_cosine": 0.7016025251012288,
+      "median_doppler_residual_mps": 3.4455626927694327,
+      "median_points": 1.0,
+      "median_extent_m": 0.0,
+      "median_intensity": 18.833333333333336,
+      "median_radial_velocity_mps": -0.05000000074505806,
+      "median_persistence": 0.10689655172413792
+    },
+    {
+      "candidate_id": "300m_roundtrip_13_c0003",
+      "lidar_rank": 3,
+      "lidar_score": 16.766646731662064,
+      "observations": 80,
+      "span_frames": 116,
+      "coverage": 0.6896551724137931,
+      "path_length_m": 468.91913701900785,
+      "displacement_m": 127.67531229028678,
+      "median_speed_mps": 3.2157307407806246,
+      "p90_acceleration_mps2": 4.8250965358521345,
+      "median_direction_cosine": 0.4880310998726384,
+      "median_doppler_residual_mps": 2.4755900553630754,
+      "median_points": 1.0,
+      "median_extent_m": 0.0,
+      "median_intensity": 19.25,
+      "median_radial_velocity_mps": -0.09999999776482582,
+      "median_persistence": 0.11724137931034483
+    },
+    {
+      "candidate_id": "300m_roundtrip_13_c0004",
+      "lidar_rank": 4,
+      "lidar_score": 16.614261731708847,
+      "observations": 79,
+      "span_frames": 102,
+      "coverage": 0.7745098039215687,
+      "path_length_m": 314.8677380639582,
+      "displacement_m": 23.0586352322385,
+      "median_speed_mps": 2.9547787741183846,
+      "p90_acceleration_mps2": 5.1977419861932335,
+      "median_direction_cosine": 0.42389637082455783,
+      "median_doppler_residual_mps": 2.4198669966204127,
+      "median_points": 1.0,
+      "median_extent_m": 0.0,
+      "median_intensity": 23.0,
+      "median_radial_velocity_mps": -1.4449999630451202,
+      "median_persistence": 0.020689655172413793
+    },
+    {
+      "candidate_id": "300m_roundtrip_13_c0005",
+      "lidar_rank": 5,
+      "lidar_score": 16.383898936835024,
+      "observations": 70,
+      "span_frames": 80,
+      "coverage": 0.875,
+      "path_length_m": 249.52584233172075,
+      "displacement_m": 33.93283279828466,
+      "median_speed_mps": 2.708072795823726,
+      "p90_acceleration_mps2": 5.158161460923259,
+      "median_direction_cosine": 0.44904639037819927,
+      "median_doppler_residual_mps": 2.3531810294704147,
+      "median_points": 1.0,
+      "median_extent_m": 0.0,
+      "median_intensity": 21.833333333333336,
+      "median_radial_velocity_mps": -0.01749999960884452,
+      "median_persistence": 0.14655172413793105
+    },
+    {
+      "candidate_id": "300m_roundtrip_13_c0006",
+      "lidar_rank": 6,
+      "lidar_score": 15.904540783565274,
+      "observations": 54,
+      "span_frames": 80,
+      "coverage": 0.675,
+      "path_length_m": 258.4116025449099,
+      "displacement_m": 95.08769419690596,
+      "median_speed_mps": 2.3092415316916153,
+      "p90_acceleration_mps2": 4.935082328084323,
+      "median_direction_cosine": 0.507749587895542,
+      "median_doppler_residual_mps": 1.1463507661535808,
+      "median_points": 2.0,
+      "median_extent_m": 0.0,
+      "median_intensity": 15.75,
+      "median_radial_velocity_mps": -0.05803571485116013,
+      "median_persistence": 0.09741379310344828
+    },
+    {
+      "candidate_id": "300m_roundtrip_13_c0007",
+      "lidar_rank": 7,
+      "lidar_score": 15.578646545779641,
+      "observations": 65,
+      "span_frames": 89,
+      "coverage": 0.7303370786516854,
+      "path_length_m": 277.284215978687,
+      "displacement_m": 49.53137303782259,
+      "median_speed_mps": 1.9199127970052885,
+      "p90_acceleration_mps2": 4.660774893702476,
+      "median_direction_cosine": 0.4044418898463081,
+      "median_doppler_residual_mps": 2.029945368018554,
+      "median_points": 1.0,
+      "median_extent_m": 0.0,
+      "median_intensity": 18.0,
+      "median_radial_velocity_mps": 0.18000000715255737,
+      "median_persistence": 0.06637931034482758
+    },
+    {
+      "candidate_id": "300m_roundtrip_13_c0008",
+      "lidar_rank": 8,
+      "lidar_score": 15.256557114515067,
+      "observations": 90,
+      "span_frames": 117,
+      "coverage": 0.7692307692307693,
+      "path_length_m": 462.8319888991169,
+      "displacement_m": 64.33829272080249,
+      "median_speed_mps": 3.2173372229563673,
+      "p90_acceleration_mps2": 5.376848791821793,
+      "median_direction_cosine": 0.5978528127459639,
+      "median_doppler_residual_mps": 3.368889763093805,
+      "median_points": 1.0,
+      "median_extent_m": 0.0,
+      "median_intensity": 17.75,
+      "median_radial_velocity_mps": -0.0400000000372529,
+      "median_persistence": 0.1413793103448276
+    },
+    {
+      "candidate_id": "300m_roundtrip_13_c0009",
+      "lidar_rank": 9,
+      "lidar_score": 14.399099062428872,
+      "observations": 52,
+      "span_frames": 72,
+      "coverage": 0.7222222222222222,
+      "path_length_m": 221.7746482688757,
+      "displacement_m": 70.07456585740714,
+      "median_speed_mps": 1.8485681282279642,
+      "p90_acceleration_mps2": 4.636691394343621,
+      "median_direction_cosine": 0.3478538980623652,
+      "median_doppler_residual_mps": 1.5015176152981935,
+      "median_points": 1.0,
+      "median_extent_m": 0.0,
+      "median_intensity": 29.5,
+      "median_radial_velocity_mps": 0.029999999329447746,
+      "median_persistence": 0.11264367816091955
+    },
+    {
+      "candidate_id": "300m_roundtrip_13_c0010",
+      "lidar_rank": 10,
+      "lidar_score": 14.290275920897315,
+      "observations": 53,
+      "span_frames": 64,
+      "coverage": 0.828125,
+      "path_length_m": 252.63806374789922,
+      "displacement_m": 124.32621662940232,
+      "median_speed_mps": 2.8493369204291628,
+      "p90_acceleration_mps2": 5.173436276429865,
+      "median_direction_cosine": 0.5709217454033138,
+      "median_doppler_residual_mps": 1.7541847498010152,
+      "median_points": 1.0,
+      "median_extent_m": 0.0,
+      "median_intensity": 19.77777777777778,
+      "median_radial_velocity_mps": -0.04333333298563957,
+      "median_persistence": 0.10344827586206896
+    },
+    {
+      "candidate_id": "300m_roundtrip_13_c0011",
+      "lidar_rank": 11,
+      "lidar_score": 13.779366374145921,
+      "observations": 44,
+      "span_frames": 65,
+      "coverage": 0.676923076923077,
+      "path_length_m": 206.16213620880703,
+      "displacement_m": 42.74821090013797,
+      "median_speed_mps": 2.3630281196476832,
+      "p90_acceleration_mps2": 4.202445786370822,
+      "median_direction_cosine": 0.3487555590364765,
+      "median_doppler_residual_mps": 1.2159891402374037,
+      "median_points": 2.0,
+      "median_extent_m": 0.0,
+      "median_intensity": 16.0,
+      "median_radial_velocity_mps": -0.1000000024214387,
+      "median_persistence": 0.09137931034482759
+    },
+    {
+      "candidate_id": "300m_roundtrip_13_c0012",
+      "lidar_rank": 12,
+      "lidar_score": 13.692621062082893,
+      "observations": 70,
+      "span_frames": 92,
+      "coverage": 0.7608695652173914,
+      "path_length_m": 303.32099599551225,
+      "displacement_m": 40.22011150170163,
+      "median_speed_mps": 2.6792485839184037,
+      "p90_acceleration_mps2": 4.678375658165001,
+      "median_direction_cosine": 0.41852082262846124,
+      "median_doppler_residual_mps": 2.9169497670359954,
+      "median_points": 1.0,
+      "median_extent_m": 0.0,
+      "median_intensity": 18.166666666666664,
+      "median_radial_velocity_mps": -0.07416666042990983,
+      "median_persistence": 0.11724137931034483
+    },
+    {
+      "candidate_id": "300m_roundtrip_13_c0013",
+      "lidar_rank": 13,
+      "lidar_score": 13.605144986259042,
+      "observations": 46,
+      "span_frames": 59,
+      "coverage": 0.7796610169491526,
+      "path_length_m": 193.06980405308752,
+      "displacement_m": 57.10659810804202,
+      "median_speed_mps": 1.5782112502952845,
+      "p90_acceleration_mps2": 4.746008869553521,
+      "median_direction_cosine": 0.5380287798541836,
+      "median_doppler_residual_mps": 1.416895737377799,
+      "median_points": 1.0,
+      "median_extent_m": 0.0,
+      "median_intensity": 24.25,
+      "median_radial_velocity_mps": -0.0400000000372529,
+      "median_persistence": 0.05517241379310345
+    },
+    {
+      "candidate_id": "300m_roundtrip_13_c0014",
+      "lidar_rank": 14,
+      "lidar_score": 13.593401563747411,
+      "observations": 74,
+      "span_frames": 116,
+      "coverage": 0.6379310344827587,
+      "path_length_m": 570.7568244139082,
+      "displacement_m": 166.25928352939104,
+      "median_speed_mps": 3.423911321235615,
+      "p90_acceleration_mps2": 4.844406512371825,
+      "median_direction_cosine": 0.6547483332013453,
+      "median_doppler_residual_mps": 2.772442552677159,
+      "median_points": 1.0,
+      "median_extent_m": 0.0,
+      "median_intensity": 18.0,
+      "median_radial_velocity_mps": -0.0400000000372529,
+      "median_persistence": 0.05517241379310345
+    },
+    {
+      "candidate_id": "300m_roundtrip_13_c0015",
+      "lidar_rank": 15,
+      "lidar_score": 13.516210286773713,
+      "observations": 75,
+      "span_frames": 98,
+      "coverage": 0.7653061224489796,
+      "path_length_m": 369.44308532326335,
+      "displacement_m": 112.72268690992892,
+      "median_speed_mps": 3.075365710238583,
+      "p90_acceleration_mps2": 5.287841856632822,
+      "median_direction_cosine": 0.41108528103949693,
+      "median_doppler_residual_mps": 2.9945936653048766,
+      "median_points": 1.0,
+      "median_extent_m": 0.0,
+      "median_intensity": 24.0,
+      "median_radial_velocity_mps": 0.019999999552965164,
+      "median_persistence": 0.12068965517241378
+    },
+    {
+      "candidate_id": "300m_roundtrip_13_c0016",
+      "lidar_rank": 16,
+      "lidar_score": 13.312144825360901,
+      "observations": 51,
+      "span_frames": 70,
+      "coverage": 0.7285714285714285,
+      "path_length_m": 226.3024254995166,
+      "displacement_m": 18.858546654775637,
+      "median_speed_mps": 2.9470047166620343,
+      "p90_acceleration_mps2": 5.164819451057744,
+      "median_direction_cosine": 0.44258092844499164,
+      "median_doppler_residual_mps": 1.4568363473412855,
+      "median_points": 1.0,
+      "median_extent_m": 0.0,
+      "median_intensity": 23.0,
+      "median_radial_velocity_mps": -1.2799999713897705,
+      "median_persistence": 0.013793103448275862
+    },
+    {
+      "candidate_id": "300m_roundtrip_13_c0017",
+      "lidar_rank": 17,
+      "lidar_score": 13.008639384750966,
+      "observations": 45,
+      "span_frames": 57,
+      "coverage": 0.7894736842105263,
+      "path_length_m": 182.47395252424346,
+      "displacement_m": 53.14500751646709,
+      "median_speed_mps": 2.8097310575808483,
+      "p90_acceleration_mps2": 5.129404090343982,
+      "median_direction_cosine": 0.3031793844979121,
+      "median_doppler_residual_mps": 1.322258220677153,
+      "median_points": 1.0,
+      "median_extent_m": 0.0,
+      "median_intensity": 17.0,
+      "median_radial_velocity_mps": -0.05000000074505806,
+      "median_persistence": 0.12413793103448276
+    },
+    {
+      "candidate_id": "300m_roundtrip_13_c0018",
+      "lidar_rank": 18,
+      "lidar_score": 12.77069506768272,
+      "observations": 50,
+      "span_frames": 63,
+      "coverage": 0.7936507936507936,
+      "path_length_m": 204.9785244840351,
+      "displacement_m": 80.36103264239398,
+      "median_speed_mps": 2.945099982620582,
+      "p90_acceleration_mps2": 4.707502457661925,
+      "median_direction_cosine": 0.5911819442318803,
+      "median_doppler_residual_mps": 1.9005772804244625,
+      "median_points": 2.0,
+      "median_extent_m": 0.0,
+      "median_intensity": 18.0,
+      "median_radial_velocity_mps": -0.029999999329447746,
+      "median_persistence": 0.10344827586206896
+    },
+    {
+      "candidate_id": "300m_roundtrip_13_c0019",
+      "lidar_rank": 19,
+      "lidar_score": 12.456042729327097,
+      "observations": 59,
+      "span_frames": 76,
+      "coverage": 0.7763157894736842,
+      "path_length_m": 286.5562056607826,
+      "displacement_m": 106.53798696256584,
+      "median_speed_mps": 2.835797075728882,
+      "p90_acceleration_mps2": 4.541959610984881,
+      "median_direction_cosine": 0.44073260476652026,
+      "median_doppler_residual_mps": 2.7564034663576473,
+      "median_points": 2.0,
+      "median_extent_m": 0.0,
+      "median_intensity": 17.5,
+      "median_radial_velocity_mps": -0.016666666915019352,
+      "median_persistence": 0.13256704980842915
+    },
+    {
+      "candidate_id": "300m_roundtrip_13_c0020",
+      "lidar_rank": 20,
+      "lidar_score": 12.1430031119523,
+      "observations": 57,
+      "span_frames": 89,
+      "coverage": 0.6404494382022472,
+      "path_length_m": 262.61917124714796,
+      "displacement_m": 34.13203244941566,
+      "median_speed_mps": 2.9309955630521776,
+      "p90_acceleration_mps2": 4.86128107030185,
+      "median_direction_cosine": 0.5313370867828453,
+      "median_doppler_residual_mps": 1.8592188672678658,
+      "median_points": 1.0,
+      "median_extent_m": 0.0,
+      "median_intensity": 22.0,
+      "median_radial_velocity_mps": -1.4800000190734863,
+      "median_persistence": 0.013793103448275862
+    },
+    {
+      "candidate_id": "300m_roundtrip_13_c0021",
+      "lidar_rank": 21,
+      "lidar_score": 11.932121249820069,
+      "observations": 58,
+      "span_frames": 71,
+      "coverage": 0.8169014084507042,
+      "path_length_m": 208.48239884144692,
+      "displacement_m": 30.133365962690714,
+      "median_speed_mps": 3.012394039281021,
+      "p90_acceleration_mps2": 4.891184151190698,
+      "median_direction_cosine": 0.3670486640768534,
+      "median_doppler_residual_mps": 2.6024322099381356,
+      "median_points": 1.0,
+      "median_extent_m": 0.0,
+      "median_intensity": 18.0,
+      "median_radial_velocity_mps": 0.0,
+      "median_persistence": 0.12155172413793104
+    },
+    {
+      "candidate_id": "300m_roundtrip_13_c0022",
+      "lidar_rank": 22,
+      "lidar_score": 11.861972665190708,
+      "observations": 52,
+      "span_frames": 63,
+      "coverage": 0.8253968253968254,
+      "path_length_m": 188.94534904567254,
+      "displacement_m": 29.118900663346206,
+      "median_speed_mps": 2.5403164979453465,
+      "p90_acceleration_mps2": 5.32675366805626,
+      "median_direction_cosine": 0.3926811496852285,
+      "median_doppler_residual_mps": 2.0006651774448034,
+      "median_points": 1.0,
+      "median_extent_m": 0.0,
+      "median_intensity": 19.25,
+      "median_radial_velocity_mps": -1.8600000143051147,
+      "median_persistence": 0.020689655172413793
+    },
+    {
+      "candidate_id": "300m_roundtrip_13_c0023",
+      "lidar_rank": 23,
+      "lidar_score": 11.851428433069072,
+      "observations": 47,
+      "span_frames": 59,
+      "coverage": 0.7966101694915254,
+      "path_length_m": 174.28949878048908,
+      "displacement_m": 25.54251914889015,
+      "median_speed_mps": 2.858037120517772,
+      "p90_acceleration_mps2": 5.096818144536943,
+      "median_direction_cosine": 0.5443685258729271,
+      "median_doppler_residual_mps": 1.6770782231387455,
+      "median_points": 1.0,
+      "median_extent_m": 0.0,
+      "median_intensity": 18.0,
+      "median_radial_velocity_mps": -0.029999999329447746,
+      "median_persistence": 0.1057471264367816
+    },
+    {
+      "candidate_id": "300m_roundtrip_13_c0024",
+      "lidar_rank": 24,
+      "lidar_score": 11.774708664750477,
+      "observations": 37,
+      "span_frames": 57,
+      "coverage": 0.6491228070175439,
+      "path_length_m": 263.6927743662476,
+      "displacement_m": 154.00040844631786,
+      "median_speed_mps": 2.727936248823709,
+      "p90_acceleration_mps2": 4.1980114960383625,
+      "median_direction_cosine": 0.6671241015389666,
+      "median_doppler_residual_mps": 1.1890922259639973,
+      "median_points": 1.0,
+      "median_extent_m": 0.0,
+      "median_intensity": 17.0,
+      "median_radial_velocity_mps": -0.05000000074505806,
+      "median_persistence": 0.1396551724137931
+    },
+    {
+      "candidate_id": "300m_roundtrip_13_c0025",
+      "lidar_rank": 25,
+      "lidar_score": 11.644649122162983,
+      "observations": 52,
+      "span_frames": 71,
+      "coverage": 0.7323943661971831,
+      "path_length_m": 315.3898119341865,
+      "displacement_m": 167.06001303140434,
+      "median_speed_mps": 3.2068385867838427,
+      "p90_acceleration_mps2": 4.680514789364549,
+      "median_direction_cosine": 0.4631388544579427,
+      "median_doppler_residual_mps": 2.314580591329131,
+      "median_points": 1.0,
+      "median_extent_m": 0.0,
+      "median_intensity": 18.0,
+      "median_radial_velocity_mps": -0.05000000074505806,
+      "median_persistence": 0.1367816091954023
+    },
+    {
+      "candidate_id": "300m_roundtrip_13_c0026",
+      "lidar_rank": 26,
+      "lidar_score": 11.629477675929241,
+      "observations": 51,
+      "span_frames": 62,
+      "coverage": 0.8225806451612904,
+      "path_length_m": 168.7982387851944,
+      "displacement_m": 40.423353443698815,
+      "median_speed_mps": 2.239116907763631,
+      "p90_acceleration_mps2": 4.965256421936206,
+      "median_direction_cosine": 0.33969609920316685,
+      "median_doppler_residual_mps": 2.1050376813094416,
+      "median_points": 1.0,
+      "median_extent_m": 0.0,
+      "median_intensity": 16.0,
+      "median_radial_velocity_mps": -0.05000000074505806,
+      "median_persistence": 0.11724137931034484
+    },
+    {
+      "candidate_id": "300m_roundtrip_13_c0027",
+      "lidar_rank": 27,
+      "lidar_score": 11.310848242439802,
+      "observations": 37,
+      "span_frames": 51,
+      "coverage": 0.7254901960784313,
+      "path_length_m": 138.80769345968804,
+      "displacement_m": 34.873102882941836,
+      "median_speed_mps": 2.354047012091938,
+      "p90_acceleration_mps2": 3.9386051295241615,
+      "median_direction_cosine": 0.48846316400238676,
+      "median_doppler_residual_mps": 1.3740195458999558,
+      "median_points": 2.0,
+      "median_extent_m": 0.0,
+      "median_intensity": 20.5,
+      "median_radial_velocity_mps": -1.2249999642372131,
+      "median_persistence": 0.020689655172413793
+    },
+    {
+      "candidate_id": "300m_roundtrip_13_c0028",
+      "lidar_rank": 28,
+      "lidar_score": 11.154723755184353,
+      "observations": 54,
+      "span_frames": 67,
+      "coverage": 0.8059701492537313,
+      "path_length_m": 199.9961350228316,
+      "displacement_m": 33.50696342127224,
+      "median_speed_mps": 2.4205460387907287,
+      "p90_acceleration_mps2": 4.812089433513176,
+      "median_direction_cosine": 0.3887531846235518,
+      "median_doppler_residual_mps": 2.5601363510391244,
+      "median_points": 2.0,
+      "median_extent_m": 0.3311748802257182,
+      "median_intensity": 15.0,
+      "median_radial_velocity_mps": -0.09149999972432851,
+      "median_persistence": 0.09310344827586206
+    },
+    {
+      "candidate_id": "300m_roundtrip_13_c0029",
+      "lidar_rank": 29,
+      "lidar_score": 10.78046359161691,
+      "observations": 52,
+      "span_frames": 69,
+      "coverage": 0.7536231884057971,
+      "path_length_m": 253.26685739632106,
+      "displacement_m": 119.87062794683658,
+      "median_speed_mps": 2.4896780044012665,
+      "p90_acceleration_mps2": 4.725894063499929,
+      "median_direction_cosine": 0.4118829015581106,
+      "median_doppler_residual_mps": 2.5160896585419987,
+      "median_points": 2.0,
+      "median_extent_m": 0.0,
+      "median_intensity": 17.675,
+      "median_radial_velocity_mps": -0.04500000039115548,
+      "median_persistence": 0.12413793103448276
+    },
+    {
+      "candidate_id": "300m_roundtrip_13_c0030",
+      "lidar_rank": 30,
+      "lidar_score": 10.766215815277967,
+      "observations": 71,
+      "span_frames": 110,
+      "coverage": 0.6454545454545455,
+      "path_length_m": 506.8730208931783,
+      "displacement_m": 156.5091471067238,
+      "median_speed_mps": 3.770198643709425,
+      "p90_acceleration_mps2": 5.724764815282768,
+      "median_direction_cosine": 0.4101760076527261,
+      "median_doppler_residual_mps": 2.94355599616975,
+      "median_points": 1.0,
+      "median_extent_m": 0.0,
+      "median_intensity": 18.75,
+      "median_radial_velocity_mps": -0.0949999988079071,
+      "median_persistence": 0.11034482758620691
+    },
+    {
+      "candidate_id": "300m_roundtrip_13_c0031",
+      "lidar_rank": 31,
+      "lidar_score": 10.751520914516176,
+      "observations": 49,
+      "span_frames": 63,
+      "coverage": 0.7777777777777778,
+      "path_length_m": 204.85259338937345,
+      "displacement_m": 23.308217619870867,
+      "median_speed_mps": 2.924502975711394,
+      "p90_acceleration_mps2": 5.051899855788195,
+      "median_direction_cosine": 0.4004832618196715,
+      "median_doppler_residual_mps": 2.120223782957886,
+      "median_points": 1.0,
+      "median_extent_m": 0.0,
+      "median_intensity": 19.0,
+      "median_radial_velocity_mps": -0.0066666627923647566,
+      "median_persistence": 0.1310344827586207
+    },
+    {
+      "candidate_id": "300m_roundtrip_13_c0032",
+      "lidar_rank": 32,
+      "lidar_score": 10.740273314638074,
+      "observations": 69,
+      "span_frames": 93,
+      "coverage": 0.7419354838709677,
+      "path_length_m": 347.0305661377736,
+      "displacement_m": 40.861104109044575,
+      "median_speed_mps": 3.172099944239545,
+      "p90_acceleration_mps2": 4.974783466966875,
+      "median_direction_cosine": 0.44996376294549206,
+      "median_doppler_residual_mps": 3.668781945191364,
+      "median_points": 1.0,
+      "median_extent_m": 0.0,
+      "median_intensity": 19.0,
+      "median_radial_velocity_mps": -0.17000000178813934,
+      "median_persistence": 0.12413793103448276
+    },
+    {
+      "candidate_id": "300m_roundtrip_13_c0033",
+      "lidar_rank": 33,
+      "lidar_score": 10.648136407882694,
+      "observations": 50,
+      "span_frames": 58,
+      "coverage": 0.8620689655172413,
+      "path_length_m": 175.40231503195182,
+      "displacement_m": 2.962145901502512,
+      "median_speed_mps": 3.0158671116033067,
+      "p90_acceleration_mps2": 4.53395508347595,
+      "median_direction_cosine": 0.7271955265049267,
+      "median_doppler_residual_mps": 2.783778614838698,
+      "median_points": 1.0,
+      "median_extent_m": 0.0,
+      "median_intensity": 13.125,
+      "median_radial_velocity_mps": -0.08999999985098839,
+      "median_persistence": 0.08275862068965517
+    },
+    {
+      "candidate_id": "300m_roundtrip_13_c0034",
+      "lidar_rank": 34,
+      "lidar_score": 10.642387469595498,
+      "observations": 51,
+      "span_frames": 72,
+      "coverage": 0.7083333333333334,
+      "path_length_m": 267.2231622852716,
+      "displacement_m": 94.49834920654654,
+      "median_speed_mps": 2.7693363761418874,
+      "p90_acceleration_mps2": 4.340447401239367,
+      "median_direction_cosine": 0.6857182938934757,
+      "median_doppler_residual_mps": 2.5542197678365532,
+      "median_points": 1.0,
+      "median_extent_m": 0.0,
+      "median_intensity": 18.666666666666668,
+      "median_radial_velocity_mps": 0.019999999552965164,
+      "median_persistence": 0.09655172413793103
+    },
+    {
+      "candidate_id": "300m_roundtrip_13_c0035",
+      "lidar_rank": 35,
+      "lidar_score": 10.494701082459205,
+      "observations": 27,
+      "span_frames": 34,
+      "coverage": 0.7941176470588235,
+      "path_length_m": 126.52072260900445,
+      "displacement_m": 73.15492697316249,
+      "median_speed_mps": 2.292770995624596,
+      "p90_acceleration_mps2": 4.61882020329389,
+      "median_direction_cosine": 0.48268301228561167,
+      "median_doppler_residual_mps": 0.7628728774544988,
+      "median_points": 1.0,
+      "median_extent_m": 0.0,
+      "median_intensity": 18.5,
+      "median_radial_velocity_mps": -0.03499999921768904,
+      "median_persistence": 0.09137931034482759
+    },
+    {
+      "candidate_id": "300m_roundtrip_13_c0036",
+      "lidar_rank": 36,
+      "lidar_score": 10.392040711875026,
+      "observations": 47,
+      "span_frames": 53,
+      "coverage": 0.8867924528301887,
+      "path_length_m": 164.1174700448502,
+      "displacement_m": 72.83283591418473,
+      "median_speed_mps": 2.8030069113027025,
+      "p90_acceleration_mps2": 4.428408521381232,
+      "median_direction_cosine": 0.36941380067939583,
+      "median_doppler_residual_mps": 2.772968552104257,
+      "median_points": 1.0,
+      "median_extent_m": 0.0,
+      "median_intensity": 18.0,
+      "median_radial_velocity_mps": -0.05000000074505806,
+      "median_persistence": 0.10344827586206896
+    },
+    {
+      "candidate_id": "300m_roundtrip_13_c0037",
+      "lidar_rank": 37,
+      "lidar_score": 10.23294195639249,
+      "observations": 39,
+      "span_frames": 44,
+      "coverage": 0.8863636363636364,
+      "path_length_m": 146.84974962199607,
+      "displacement_m": 34.3391856894741,
+      "median_speed_mps": 3.3543316769440423,
+      "p90_acceleration_mps2": 5.143162966599531,
+      "median_direction_cosine": 0.543506213143233,
+      "median_doppler_residual_mps": 1.7474101967556543,
+      "median_points": 1.0,
+      "median_extent_m": 0.0,
+      "median_intensity": 21.0,
+      "median_radial_velocity_mps": -0.05000000074505806,
+      "median_persistence": 0.1103448275862069
+    },
+    {
+      "candidate_id": "300m_roundtrip_13_c0038",
+      "lidar_rank": 38,
+      "lidar_score": 10.13920740775335,
+      "observations": 62,
+      "span_frames": 95,
+      "coverage": 0.6526315789473685,
+      "path_length_m": 467.22103398180946,
+      "displacement_m": 267.7238529473843,
+      "median_speed_mps": 4.355513214216689,
+      "p90_acceleration_mps2": 4.849045957774158,
+      "median_direction_cosine": 0.7874020414294032,
+      "median_doppler_residual_mps": 3.1953772806805922,
+      "median_points": 1.0,
+      "median_extent_m": 0.0,
+      "median_intensity": 22.5,
+      "median_radial_velocity_mps": -1.5199999809265137,
+      "median_persistence": 0.013793103448275862
+    },
+    {
+      "candidate_id": "300m_roundtrip_13_c0039",
+      "lidar_rank": 39,
+      "lidar_score": 9.933987559567214,
+      "observations": 44,
+      "span_frames": 68,
+      "coverage": 0.6470588235294118,
+      "path_length_m": 273.7196150885555,
+      "displacement_m": 95.12359452381716,
+      "median_speed_mps": 3.2984088901416047,
+      "p90_acceleration_mps2": 5.316275734742857,
+      "median_direction_cosine": 0.5446349589144914,
+      "median_doppler_residual_mps": 1.5481183217201353,
+      "median_points": 1.0,
+      "median_extent_m": 0.0,
+      "median_intensity": 18.333333333333332,
+      "median_radial_velocity_mps": -0.02249999949708581,
+      "median_persistence": 0.10344827586206898
+    },
+    {
+      "candidate_id": "300m_roundtrip_13_c0040",
+      "lidar_rank": 40,
+      "lidar_score": 9.87525342621343,
+      "observations": 34,
+      "span_frames": 43,
+      "coverage": 0.7906976744186046,
+      "path_length_m": 150.7439732410302,
+      "displacement_m": 44.81857685620001,
+      "median_speed_mps": 2.37139946766959,
+      "p90_acceleration_mps2": 4.842094814441935,
+      "median_direction_cosine": 0.4526679086882516,
+      "median_doppler_residual_mps": 1.3402705872178484,
+      "median_points": 1.5,
+      "median_extent_m": 0.0,
+      "median_intensity": 19.0,
+      "median_radial_velocity_mps": 0.0,
+      "median_persistence": 0.1310344827586207
+    },
+    {
+      "candidate_id": "300m_roundtrip_13_c0041",
+      "lidar_rank": 41,
+      "lidar_score": 9.751529187278544,
+      "observations": 52,
+      "span_frames": 74,
+      "coverage": 0.7027027027027027,
+      "path_length_m": 284.489275495661,
+      "displacement_m": 10.45461073518574,
+      "median_speed_mps": 3.8532100528609035,
+      "p90_acceleration_mps2": 4.840197336887595,
+      "median_direction_cosine": 0.7150806804968477,
+      "median_doppler_residual_mps": 2.627824169087791,
+      "median_points": 1.0,
+      "median_extent_m": 0.0,
+      "median_intensity": 20.583333333333336,
+      "median_radial_velocity_mps": -0.05875000000620882,
+      "median_persistence": 0.08275862068965519
+    },
+    {
+      "candidate_id": "300m_roundtrip_13_c0042",
+      "lidar_rank": 42,
+      "lidar_score": 9.70574128168459,
+      "observations": 23,
+      "span_frames": 31,
+      "coverage": 0.7419354838709677,
+      "path_length_m": 139.66205501820488,
+      "displacement_m": 126.32703433606507,
+      "median_speed_mps": 1.7581255230596078,
+      "p90_acceleration_mps2": 3.6926746876236427,
+      "median_direction_cosine": 0.8601075211861935,
+      "median_doppler_residual_mps": 0.8532352910098366,
+      "median_points": 2.0,
+      "median_extent_m": 0.0,
+      "median_intensity": 20.0,
+      "median_radial_velocity_mps": 0.015999999642372132,
+      "median_persistence": 0.13793103448275862
+    },
+    {
+      "candidate_id": "300m_roundtrip_13_c0043",
+      "lidar_rank": 43,
+      "lidar_score": 9.620314227778398,
+      "observations": 32,
+      "span_frames": 44,
+      "coverage": 0.7272727272727273,
+      "path_length_m": 109.10207839872011,
+      "displacement_m": 22.71955714924423,
+      "median_speed_mps": 2.2860418215351355,
+      "p90_acceleration_mps2": 4.917878647775097,
+      "median_direction_cosine": 0.3598634859360236,
+      "median_doppler_residual_mps": 0.9218518316699112,
+      "median_points": 1.0,
+      "median_extent_m": 0.0,
+      "median_intensity": 16.5,
+      "median_radial_velocity_mps": -0.05000000074505806,
+      "median_persistence": 0.10689655172413792
+    },
+    {
+      "candidate_id": "300m_roundtrip_13_c0044",
+      "lidar_rank": 44,
+      "lidar_score": 9.535574410216052,
+      "observations": 49,
+      "span_frames": 72,
+      "coverage": 0.6805555555555556,
+      "path_length_m": 216.84759503583092,
+      "displacement_m": 22.943410234161064,
+      "median_speed_mps": 3.0132751855618323,
+      "p90_acceleration_mps2": 5.150655549943977,
+      "median_direction_cosine": 0.4295235302763004,
+      "median_doppler_residual_mps": 2.061117288612955,
+      "median_points": 1.0,
+      "median_extent_m": 0.0,
+      "median_intensity": 21.6,
+      "median_radial_velocity_mps": -1.15666667620341,
+      "median_persistence": 0.013793103448275862
+    },
+    {
+      "candidate_id": "300m_roundtrip_13_c0045",
+      "lidar_rank": 45,
+      "lidar_score": 9.535436087149002,
+      "observations": 64,
+      "span_frames": 88,
+      "coverage": 0.7272727272727273,
+      "path_length_m": 340.5519860325925,
+      "displacement_m": 55.43380624923644,
+      "median_speed_mps": 3.610206840279721,
+      "p90_acceleration_mps2": 5.340876771428806,
+      "median_direction_cosine": 0.6845071882223334,
+      "median_doppler_residual_mps": 3.4907264132324816,
+      "median_points": 1.0,
+      "median_extent_m": 0.0,
+      "median_intensity": 21.75,
+      "median_radial_velocity_mps": 0.09249999932944775,
+      "median_persistence": 0.12413793103448276
+    },
+    {
+      "candidate_id": "300m_roundtrip_13_c0046",
+      "lidar_rank": 46,
+      "lidar_score": 9.506178101381947,
+      "observations": 49,
+      "span_frames": 62,
+      "coverage": 0.7903225806451613,
+      "path_length_m": 312.20314340882123,
+      "displacement_m": 53.369165044937944,
+      "median_speed_mps": 4.361069371702418,
+      "p90_acceleration_mps2": 5.453853477193372,
+      "median_direction_cosine": 0.6758296361943495,
+      "median_doppler_residual_mps": 2.6274834139435947,
+      "median_points": 1.0,
+      "median_extent_m": 0.0,
+      "median_intensity": 19.0,
+      "median_radial_velocity_mps": -0.05000000074505806,
+      "median_persistence": 0.0896551724137931
+    },
+    {
+      "candidate_id": "300m_roundtrip_13_c0047",
+      "lidar_rank": 47,
+      "lidar_score": 9.501706615513166,
+      "observations": 52,
+      "span_frames": 87,
+      "coverage": 0.5977011494252874,
+      "path_length_m": 300.79374070051676,
+      "displacement_m": 135.42760588822583,
+      "median_speed_mps": 2.9286158577181305,
+      "p90_acceleration_mps2": 5.087986822960201,
+      "median_direction_cosine": 0.597693920017389,
+      "median_doppler_residual_mps": 2.067811961183108,
+      "median_points": 1.0,
+      "median_extent_m": 0.0,
+      "median_intensity": 17.416666666666664,
+      "median_radial_velocity_mps": -0.0366666669336458,
+      "median_persistence": 0.06206896551724138
+    },
+    {
+      "candidate_id": "300m_roundtrip_13_c0048",
+      "lidar_rank": 48,
+      "lidar_score": 9.45158108389315,
+      "observations": 37,
+      "span_frames": 50,
+      "coverage": 0.74,
+      "path_length_m": 167.56996166598435,
+      "displacement_m": 66.0061276961957,
+      "median_speed_mps": 2.6166980991105104,
+      "p90_acceleration_mps2": 4.240378058890169,
+      "median_direction_cosine": 0.6299639900499042,
+      "median_doppler_residual_mps": 1.834388629626729,
+      "median_points": 1.0,
+      "median_extent_m": 0.0,
+      "median_intensity": 19.5,
+      "median_radial_velocity_mps": -0.17000000178813934,
+      "median_persistence": 0.10689655172413792
+    },
+    {
+      "candidate_id": "300m_roundtrip_13_c0049",
+      "lidar_rank": 49,
+      "lidar_score": 9.380906597698084,
+      "observations": 53,
+      "span_frames": 72,
+      "coverage": 0.7361111111111112,
+      "path_length_m": 243.87016900040473,
+      "displacement_m": 27.217665302262844,
+      "median_speed_mps": 2.9025758051825545,
+      "p90_acceleration_mps2": 5.274215927410463,
+      "median_direction_cosine": 0.5743113508553724,
+      "median_doppler_residual_mps": 2.646155212901082,
+      "median_points": 2.0,
+      "median_extent_m": 0.0,
+      "median_intensity": 20.0,
+      "median_radial_velocity_mps": -2.439999997615814,
+      "median_persistence": 0.020689655172413793
+    },
+    {
+      "candidate_id": "300m_roundtrip_13_c0050",
+      "lidar_rank": 50,
+      "lidar_score": 8.975906934915775,
+      "observations": 55,
+      "span_frames": 76,
+      "coverage": 0.7236842105263158,
+      "path_length_m": 213.21749001496227,
+      "displacement_m": 26.54183695570087,
+      "median_speed_mps": 1.7431342375515424,
+      "p90_acceleration_mps2": 4.57333631761746,
+      "median_direction_cosine": 0.5508398774977596,
+      "median_doppler_residual_mps": 3.270208956272939,
+      "median_points": 1.0,
+      "median_extent_m": 0.0,
+      "median_intensity": 20.0,
+      "median_radial_velocity_mps": -0.0699999990562598,
+      "median_persistence": 0.06896551724137931
+    }
+  ]
+}
