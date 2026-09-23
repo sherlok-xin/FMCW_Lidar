@@ -6,3 +6,7 @@ fmcw
 __pycache__/
 *.pyc
 .pytest_cache/
+.local/share/Trash/
+.bash_logout
+.zshrc
+.claude/settings.local.json
