@@ -1,0 +1,11 @@
+{
+  "status": "NO_RELIABLE_NEGATIVE_WINDOWS",
+  "reason": "all included bags are target-flight bags and LiDAR silver trajectories are fragmented; frames outside silver observations cannot be asserted target-absent",
+  "false_alarm_rate_reported": false,
+  "pr_curve_reported": false,
+  "allowed_metrics": [
+    "unmatched candidates per labeled positive frame",
+    "all output candidates per LiDAR frame",
+    "recall on frozen silver observations"
+  ]
+}

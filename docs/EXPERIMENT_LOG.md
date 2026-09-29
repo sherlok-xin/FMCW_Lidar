@@ -27,6 +27,59 @@ This log records experiments that can be inferred from repository artifacts. It 
 | `scripts/build_gt_benchmark_v0.py` | `508b0264485109f75c754f05e070d4a8e1e1244569a4b9f9bd16f0c3605493d0` |
 | `scripts/calibration_closure.py` | `111e59a6a66a8336d67d42ca6ea68c2988d1cd6b159bac1c98c50900ebd60c55` |
 | `scripts/sparse_uav_mvp.py` | `2ff01d1b0e3906968b99886c4c793fe3e84c5628d78c3a99e3f9cf0a2bd3d3dc` |
+| `scripts/temporal_evidence_mvp.py` | `fd82d3e6cd7a98ece32f2d85f5eeb69aded88f31c1ef96ba7aa3e11f6cb43e7e` |
+
+## E12 — Frozen lightweight temporal-evidence accumulator
+
+**Run date:** 2026-09-29
+
+**Objective / falsifiable question:** Determine whether retaining `minPts=1` singleton/small candidates and accumulating soft motion, persistence, and compactness evidence can retain high silver-label recall while materially reducing candidate volume; compare fixed/adaptive windows and optional soft Doppler.
+
+**Status:** **TESTED / VERIFIED RESULT on DEV silver labels; formal soft result negative.**
+
+**Input and label status:** the unchanged five-sequence `research_dev_v0`, containing 80 LiDAR-derived `DEV_SILVER` observations. Labels SHA-256: `37c4452a68e544d75034389f82bbaf1e868903bb2225b395b9d66d0cdd48b8db`. They are not final paper GT.
+
+**Code/version:** `scripts/temporal_evidence_mvp.py`, hash above. Run at Git HEAD `2982624b7a0884dd0a27ed7c7fad8e57f0f77fdc` with a dirty worktree containing the new experiment and pre-existing `.local/`.
+
+**Environment:** Python 3.10.12; NumPy 2.2.6; SciPy 1.15.3; scikit-learn 1.7.2; Matplotlib 3.10.9.
+
+**Commands:**
+
+```bash
+python3 scripts/temporal_evidence_mvp.py freeze
+python3 scripts/temporal_evidence_mvp.py run
+python3 -m pytest -q tests/test_temporal_evidence_mvp.py tests/test_sparse_uav_mvp.py
+```
+
+**Configuration and seed:** protocol version 1, seed 20260929; formal score threshold 0.68; 4 s fixed window; adaptive windows 3/4/6 s; score weights 0.45 persistence, 0.35 motion, 0.20 compactness; Doppler is a bounded observability-weighted residual term and never a hard gate. Frozen protocol SHA-256: `6114f11bbec4e44b6fe373bec632f8fd911daa1f13d8ad1f0602491de215099a`.
+
+**Output:** `FMCW_Temporal_Evidence_MVP.md` and `results/temporal_evidence_mvp/`.
+
+### Metrics and result
+
+Metrics are silver-frame recall, unmatched candidates per labeled positive frame, and outputs per all LiDAR frames. False alarms per verified negative frame and PR are **UNKNOWN** because reliable negative windows do not exist.
+
+- Corrected legacy A′ reruns background/neighborhood/DBSCAN in provisional leveled coordinates from the pre-stage raw-voxel artifact. It detects 41/80 with 5.98 outputs/LiDAR frame.
+- Current Khosravi-style B reproduces 41/80 with 23.88 outputs/LiDAR frame.
+- Unaccumulated `minPts=1` detects 80/80 but emits 62.48 outputs/LiDAR frame.
+- At the frozen 0.68 threshold, fixed/adaptive/adaptive+Doppler detect 7/7/8 of 80 and emit 1.89/1.90/1.72 outputs per frame. The formal high-recall objective fails.
+- In the predeclared diagnostic sweep, fixed threshold 0.55 detects 52/80 with 17.23 outputs/frame, an observed Pareto improvement over B on this DEV set. This is not a new selected default or held-out validation result; a maximally compact first-observation candidate scores approximately 0.552, so this point does not require multi-frame evidence.
+- Adaptive windows do not improve the overall recall–candidate curve. They help 300 m recall at some thresholds but preserve more far/sparse clutter.
+- Soft Doppler changes rankings but does not consistently dominate fixed spatial accumulation; independent Doppler gain remains unsupported.
+- A′ target-neighborhood support is 1,883 raw points/80 frames before legacy background, 1,504/56 after background, and 1,032/41 after neighborhood/DBSCAN.
+
+### Interpretation and decision
+
+Simple soft accumulation can expose a promising diagnostic operating region, but the frozen formal method over-suppresses target paths and low-threshold variants remain cluttered. Persistence, motion consistency, and compactness do not adequately separate target from persistent clutter on their own. The adaptive heuristic is rejected as an overall improvement. Do not retune on these 80 labels; next require independent negative/static windows and held-out evaluation of one predeclared operating point.
+
+### Limitations / failure notes
+
+- Labels and evaluated candidates share LiDAR/calibration-closure provenance.
+- A′ uses 1 m voxel centroids and voxel-mean intensity, not raw points.
+- Frames outside silver fragments cannot be asserted target-absent.
+- Center errors near zero for some A′ matches are representation self-consistency, not independent localization accuracy.
+- Runtime excludes raw bag decoding/cache construction.
+- Eight new/legacy targeted tests passed; artifact row-count and threshold-reproduction invariants passed.
 
 ## E11 — Frozen sparse-UAV DEV benchmark and Doppler ablation
 

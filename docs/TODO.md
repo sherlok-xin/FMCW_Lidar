@@ -1,6 +1,6 @@
 # Prioritized TODO
 
-Status date: **2026-09-20**
+Status date: **2026-09-29**
 
 The ordering below reflects dependency and scientific value. Algorithm novelty is intentionally placed after provenance, labels, calibration, and evaluation because the current evidence cannot otherwise distinguish improvement from additional false tracks or implementation drift.
 
@@ -16,6 +16,15 @@ The ordering below reflects dependency and scientific value. Algorithm novelty i
 - `research_dev_v0` is now frozen and tested on five cross sequences. Keep it development-only: the labels are LiDAR-derived silver trajectories and may not be used for final paper claims.
 - Before any parameter revision, add independently labeled negative/static-clutter frames and at least one high-radial-observability longitudinal sequence. The current positive-frame precision and eta analysis cannot validate operational false alarms or Doppler dependence.
 - Preserve the current no-gain Doppler result. Do not retune Doppler gates on these 80 frames and then report the same set as held-out evidence.
+
+### 2026-09-29 temporal-evidence progress note
+
+- Corrected-coordinate legacy A′ and the lightweight singleton evidence accumulator are **IMPLEMENTED and TESTED** on the frozen DEV set; see `FMCW_Temporal_Evidence_MVP.md` and `results/temporal_evidence_mvp/`.
+- The formal soft accumulator result is negative: fixed/adaptive/adaptive+Doppler recover only 7/7/8 of 80 silver observations at the frozen threshold.
+- Do not change the formal threshold after seeing E12. Fixed threshold 0.55 is only a candidate for a new prospectively frozen experiment because it was identified on the same DEV set.
+- Highest-priority data task: identify and label truly target-absent/static windows. Until then, false alarms/frame, operational precision, and PR curves remain UNKNOWN.
+- Reproduce A′ directly from raw points before treating its 1 m raw-voxel approximation as the authoritative corrected legacy baseline.
+- Validate one fixed-window operating point on held-out data before adding model complexity. Do not proceed to full DP-TBD, deep learning, or manifold work on the strength of this DEV sweep.
 
 ### 1. Put the project under version control
 
@@ -171,7 +180,7 @@ Only after P1 fixes:
 
 ### 17. Test multi-frame weak-return accumulation / track-before-detect
 
-**PROPOSED HYPOTHESIS:** accumulating sub-threshold evidence before hard clustering can improve far-range recall. Evaluate false alarms on negative scenes and do not compare using active-track count alone.
+**PARTIALLY TESTED HYPOTHESIS:** E12 tested a lightweight soft path accumulator, not full DP-TBD. Its frozen formal operating point failed; a lower fixed-window DEV point remains only hypothesis-generating. Next acquire reliable negative windows and evaluate one prospectively frozen setting on held-out data. Do not compare using active-track count alone.
 
 ### 18. Evaluate probabilistic multi-target tracking
 

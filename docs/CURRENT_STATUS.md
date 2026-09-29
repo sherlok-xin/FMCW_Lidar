@@ -1,6 +1,6 @@
 # Current Status
 
-Status date: **2026-09-22**  
+Status date: **2026-09-29**
 Basis: repository-wide source and artifact inspection; no chat-history claims are treated as evidence.
 
 Git is now initialized on branch `main` (unlike the 2026-09-20 audit). The tested sparse-MVP script and tests are present in snapshot `e62848f787dcfd1bb2f91536ca23e6a50580a77b`; generated `results/` artifacts are ignored, so their run-manifest hashes remain required for provenance.
@@ -10,6 +10,16 @@ Git is now initialized on branch `main` (unlike the 2026-09-20 audit). The teste
 The repository contains a substantial rule-based FMCW-LiDAR processing and tracking prototype, several ROS/offline variants, and a useful body of retrospective data archaeology. It does **not** yet contain the ground truth, provenance, calibration, evaluation protocol, or controlled comparisons required to make reliable UAV detection/tracking accuracy claims.
 
 The strongest current outcome is diagnostic rather than algorithmic: two successful motion sequences show that compactness, spatial isolation, temporal persistence, and agreement between Doppler and range change are more transferable cues than raw Doppler magnitude or a stable single-frame shape. The existing FMT benchmark does not demonstrate an improvement over the baseline.
+
+### 2026-09-29 temporal-evidence DEV experiment update
+
+The frozen lightweight accumulator experiment is **TESTED** on the unchanged 80-frame `research_dev_v0` silver set. The report is `FMCW_Temporal_Evidence_MVP.md`; protocol, per-frame results, accepted candidates, corrected-legacy stage survival, threshold sweep, and figures are in `results/temporal_evidence_mvp/`.
+
+The corrected legacy A′ baseline reruns legacy background, neighborhood, and DBSCAN in provisional leveled coordinates from the pre-stage 1 m raw-voxel artifact. It detects 41/80 silver observations with 5.98 outputs per LiDAR frame, compared with the current Khosravi-style B at 41/80 and 23.88 outputs/frame. A′ remains an approximation to raw-point legacy processing and its near-zero matched-center errors are representation self-consistency, not independent accuracy.
+
+Unaccumulated `minPts=1` reaches 80/80 but emits 62.48 candidates/frame. The prospectively frozen soft threshold of 0.68 over-suppresses the target: fixed/adaptive/adaptive+Doppler recover only 7/7/8 observations. A predeclared diagnostic threshold of 0.55 gives fixed-window 52/80 and 17.23 outputs/frame, but this same-DEV observation must not be promoted to a selected default without held-out data. The simple adaptive window does not improve the overall trade-off; soft Doppler has no consistent Pareto advantage.
+
+Operational precision, false alarms/frame, and PR remain **UNKNOWN**. All bags are target-flight bags and frames outside fragmented silver trajectories are not reliable negatives.
 
 ### 2026-09-22 sparse-UAV DEV benchmark update
 
@@ -60,6 +70,7 @@ The last bullet is a **historical v0 result and is superseded by E10**: its heig
 | FMT tracker/benchmark | Yes | Five benchmark result sets | TESTED, but comparison is confounded and accuracy is UNKNOWN |
 | Data archaeology pipeline | Yes | Reports, JSON/CSV, plots | TESTED and currently the best evidence base |
 | Frozen sparse-UAV DEV benchmark | Yes | 80 silver observations, A–D and ablations | TESTED; development-only, selection-conditioned |
+| Lightweight temporal evidence accumulator | Yes | Frozen E12 run, threshold sweep, tests, and artifacts | TESTED; formal high-recall objective failed; diagnostic 0.55 point needs independent validation |
 | Synchronized truth evaluation | No | No | Critical blocker |
 | Reproducible experiment/config registry | No | No | Critical blocker |
 
@@ -114,7 +125,8 @@ Detailed records are in [`EXPERIMENT_LOG.md`](EXPERIMENT_LOG.md). Recovered comp
 5. point-feature and velocity-sign analysis;
 6. GNSS-informed raw-data search for the nominal 100 m sequence;
 7. reverse engineering of the successful cross-range baseline track;
-8. reverse engineering of the successful longitudinal baseline track.
+8. reverse engineering of the successful longitudinal baseline track;
+9. frozen corrected-legacy and lightweight temporal-evidence comparison on `research_dev_v0`.
 
 No matching experimental output was found for the GM-PHD, EKF GM-PHD, C++ ROS, or `target_track_fmt.py` integration paths.
 
@@ -133,6 +145,12 @@ No matching experimental output was found for the GM-PHD, EKF GM-PHD, C++ ROS, o
 6. **Single-frame shape is not reliably stable.** The reconstructed target clusters contain few points and vary substantially in point count and extent.
 
 7. **The current FMT benchmark does not establish an improvement.** It retains more final tracks in two datasets, but has no truth labels, shows higher reported smoothness variance in both sequences where baseline smoothness is defined, and has large residual errors.
+
+8. **Corrected-coordinate legacy processing is a necessary baseline.** A′ reaches the same 41/80 silver recall as B with 5.98 rather than 23.88 outputs per LiDAR frame, although its 1 m pre-stage voxel input is only an approximation to raw-point legacy processing.
+
+9. **Simple formal soft accumulation does not solve singleton clutter.** At the frozen threshold, it reduces outputs by about 97% but retains only 7–8 of 80 silver observations.
+
+10. **A fixed-window diagnostic point is promising but unvalidated.** Threshold 0.55 yields 52/80 with 17.23 outputs/frame; adaptive windows and soft Doppler do not consistently improve on it. Negative scenes and held-out validation are still required.
 
 ## Major observed problems
 

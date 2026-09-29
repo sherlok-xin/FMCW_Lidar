@@ -1,0 +1,108 @@
+{
+  "protocol_version": 1,
+  "status": "FROZEN_DEV_SILVER_NOT_PAPER_GT",
+  "random_seed": 20260929,
+  "labels": "unchanged research_dev_v0/silver_labels.csv",
+  "negative_windows": "NONE_RELIABLE",
+  "negative_window_reason": "all included bags are target-flight bags and LiDAR silver trajectories are fragmented; frames outside silver observations cannot be asserted target-absent",
+  "input": {
+    "source": "calibration_closure 1 m pre-stage raw-voxel cache",
+    "intensity_mean_range_inclusive": [
+      10.0,
+      250.0
+    ],
+    "leveled_height_gt_m": 10.0,
+    "level_transform": "q=Rz(yaw_full)@R_full.T@(p_lidar-t_full)",
+    "note": "raw-voxel input is shared across new methods; no old background/neighborhood cache"
+  },
+  "legacy_corrected": {
+    "grid_bounds_m": {
+      "x": [
+        0.0,
+        500.0
+      ],
+      "y": [
+        -150.0,
+        150.0
+      ],
+      "z": [
+        -5.0,
+        50.0
+      ]
+    },
+    "voxel_m": 1.0,
+    "background_init_frames": 8,
+    "background_probability_threshold": 0.05,
+    "neighborhood_static_ratio_gt": 0.6,
+    "dbscan_eps_m": 2.0,
+    "dbscan_min_pts": 1
+  },
+  "singleton_candidates": {
+    "min_pts": 1,
+    "range_adaptive_dbscan": "inherit frozen research_dev_v0 parameters",
+    "geometry_validation": "inherit frozen research_dev_v0 parameters"
+  },
+  "association": {
+    "real_bag_dt": true,
+    "tau_min_m": 3.0,
+    "vmax_mps": 25.0,
+    "nearest_track_queries": 6,
+    "velocity_change_scale_mps": 8.0,
+    "preferred_motion_scale_mps": 1.0
+  },
+  "soft_score": {
+    "formula": "0.45*persistence + 0.35*motion_consistency + 0.20*compactness",
+    "persistence": "1-exp(-0.5*sum(exp(-age/(window/2))))",
+    "motion": "weighted mean of soft nonzero-speed and prediction/velocity consistency",
+    "compactness": "exp(-extent/2m)",
+    "formal_threshold": 0.68,
+    "threshold_sweep_diagnostic_only": [
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.68,
+      0.7,
+      0.75,
+      0.8,
+      0.85
+    ]
+  },
+  "windows": {
+    "fixed_s": 4.0,
+    "adaptive_far_or_sparse_s": 6.0,
+    "adaptive_dense_or_fast_s": 3.0,
+    "adaptive_default_s": 4.0,
+    "far_range_m": 250.0,
+    "sparse_raw_support_le": 5,
+    "dense_raw_support_ge": 20,
+    "fast_speed_ge_mps": 8.0
+  },
+  "doppler": {
+    "hard_gate": false,
+    "sign": "-measured radial velocity",
+    "residual_scale_mps": 4.0,
+    "soft_adjustment": "base_score + 0.15*eta*(exp(-residual/4)-0.5)"
+  },
+  "formal_methods": [
+    "A_prime_legacy_corrected",
+    "B_khosravi_current",
+    "fixed_soft",
+    "adaptive_soft",
+    "adaptive_soft_doppler"
+  ],
+  "selected_conditions": [
+    "100m_cross_5",
+    "100m_cross_10",
+    "200m_cross_5",
+    "200m_cross_10",
+    "300m_cross_10"
+  ],
+  "source_sha256": {
+    "silver_labels": "37c4452a68e544d75034389f82bbaf1e868903bb2225b395b9d66d0cdd48b8db",
+    "research_dev_protocol": "b8575fc94efa1b33624a0ac92f1e464c2e58e1955817ff125c7154d176490b67",
+    "research_dev_addendum": "2edf3d49dae537fe4b8df1ea8065944bcf0941c4b186a090d9cf09fdefb0f9ee",
+    "research_dev_script": "2ff01d1b0e3906968b99886c4c793fe3e84c5628d78c3a99e3f9cf0a2bd3d3dc",
+    "calibration_alignment": "f9533b258353d6d138ae13c2f1ffd52958a08ca66419b06f0c391345d68d4a63"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "created_utc": "2026-09-29T03:56:02.667221+00:00",
+  "git_head": "2982624b7a0884dd0a27ed7c7fad8e57f0f77fdc",
+  "git_dirty": true,
+  "script_sha256": "fd82d3e6cd7a98ece32f2d85f5eeb69aded88f31c1ef96ba7aa3e11f6cb43e7e",
+  "protocol_sha256": "6114f11bbec4e44b6fe373bec632f8fd911daa1f13d8ad1f0602491de215099a",
+  "labels_sha256": "37c4452a68e544d75034389f82bbaf1e868903bb2225b395b9d66d0cdd48b8db",
+  "command": "python3 scripts/temporal_evidence_mvp.py run"
+}

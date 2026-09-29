@@ -129,6 +129,7 @@ This document separates tested evidence from scientific interpretation. Chronolo
 | Voxel occupancy background subtraction | TESTED | Useful after initialization; blind during initialization and vulnerable to revisits |
 | 27-neighbor density suppression | TESTED | Reduces isolated points but deletes some sparse selected target returns |
 | DBSCAN with singleton clusters | TESTED | Supplies candidates, but permissive singleton behavior is not accuracy-validated |
+| Lightweight soft temporal evidence over singleton candidates | TESTED | Frozen formal threshold retains only 7–8/80; a fixed-window DEV diagnostic point is promising but unvalidated |
 | Manual ROI initialization | IMPLEMENTED | Historical prototype; no comparative artifact |
 | Automatic initialization/pending tracks | IMPLEMENTED | Present in main baseline; benchmark variant does not reproduce all semantics |
 | Position + radial-velocity association | TESTED | Can maintain two selected trajectories; sign, timing, and duplicate-association issues remain |
@@ -246,6 +247,22 @@ These decisions are evidence-bounded, not permanent prohibitions.
 
 **Conclusion:** There is a strong cluster-before-track recall/false-candidate trade-off. Track-Before-Detect is a justified next hypothesis, not a verified solution.
 
+### H18 — Lightweight soft temporal evidence resolves the `minPts=1` recall–clutter trade-off
+
+**Status:** not supported by the frozen formal experiment; a narrower fixed-window operating point remains unresolved.
+
+**Evidence:** Unaccumulated `minPts=1` detects 80/80 silver observations with 62.48 outputs per LiDAR frame. At the frozen score threshold 0.68, fixed/adaptive/adaptive+Doppler retain only 7/7/8 observations while reducing output to 1.89/1.90/1.72 per frame. In the predeclared diagnostic sweep, fixed threshold 0.55 obtains 52/80 with 17.23 outputs/frame, compared with current B at 41/80 and 23.88; this is same-DEV evidence without reliable negatives. A maximally compact first-observation candidate scores approximately 0.552, so the 0.55 point does not enforce multi-frame evidence.
+
+**Conclusion:** Simple persistence, motion consistency, and compactness do not provide enough separation at the frozen formal operating point. The adaptive window is not an overall improvement and soft Doppler has no consistent Pareto advantage. Fixed-window threshold 0.55 may be tested prospectively, but must not be promoted from this DEV sweep to a verified result.
+
+### H19 — Correcting the legacy coordinate frame is sufficient to create a competitive baseline
+
+**Status:** supported as a DEV diagnostic, subject to raw-voxel approximation and non-independent labels.
+
+**Evidence:** A′ reruns legacy background/neighborhood/DBSCAN after provisional leveling and reaches the same 41/80 recall as B while emitting 5.98 rather than 23.88 candidates per LiDAR frame. Survival falls from 1,883 target-neighborhood raw points/80 frames at input to 1,032/41 after neighborhood, exposing initialization/background/neighborhood losses that were hidden by the historical raw-coordinate `z>10` failure.
+
+**Conclusion:** Future method comparisons must include A′ or a raw-point equivalent. The result does not establish final accuracy because the calibration and labels are provisional and center self-consistency is circular.
+
 ## Possible research directions
 
 Everything in this section is **PROPOSED** or **SPECULATIVE**, not an experimental result.
@@ -260,7 +277,9 @@ Everything in this section is **PROPOSED** or **SPECULATIVE**, not an experiment
 
 **Hypothesis:** A track-before-detect or temporal evidence accumulator can recover sparse/intermittent UAV returns lost by per-frame neighbor and background thresholds.
 
-**Required test:** Point/region labels that include weak returns and false-alarm measurements on negative scenes. Avoid claiming benefit from track persistence alone.
+**Current evidence:** E12 tested one lightweight candidate-path accumulator. Its frozen formal operating point failed, while a lower fixed-window DEV threshold was only diagnostically promising. This does not test a complete DP-TBD formulation.
+
+**Required test:** Point/region labels that include weak returns, false-alarm measurements on negative scenes, and a held-out prospective evaluation of one frozen operating point. Avoid claiming benefit from track persistence alone.
 
 ### R3 — Background model with revisit awareness
 
