@@ -11,6 +11,14 @@ The repository contains a substantial rule-based FMCW-LiDAR processing and track
 
 The strongest current outcome is diagnostic rather than algorithmic: two successful motion sequences show that compactness, spatial isolation, temporal persistence, and agreement between Doppler and range change are more transferable cues than raw Doppler magnitude or a stable single-frame shape. The existing FMT benchmark does not demonstrate an improvement over the baseline.
 
+### 2026-09-29 DP failure-forensics update
+
+The frozen E13 candidate graph was replayed exactly and analyzed without algorithm or parameter changes. A full silver-consistent feasible path exists in all five sequences, so the 0/80 output is a ranking failure rather than graph/candidate loss. See `FMCW_DP_Failure_Forensics.md` and `results/dp_failure_forensics/`.
+
+The always-positive `0.50` per-node base term makes a full-bag stationary return accumulate the largest score. On equal time spans, compactness slightly favors clutter; the capped raw-support component removes most of the target's support advantage. In the two sparse-gap cases, one missing node and the gap penalty further lower the UAV path.
+
+Legacy occupancy/revisit, nonzero speed, directional smoothness, absolute Doppler, and raw support separate the selected UAV/clutter paths descriptively. They are not validated general detector features: labels are retrospective, only winning clutter is compared, and Doppler residual itself favors near-static clutter.
+
 ### 2026-09-29 published-baseline and candidate-graph DP update
 
 The independent Khosravi-2026 processing-chain reconstruction and minimal candidate-graph DP are **IMPLEMENTED and TESTED** on the frozen 80-frame `research_dev_v0` silver set. See `FMCW_Published_Baseline_and_DP_TBD_MVP.md` and `results/published_baseline_dp_mvp/`. A machine-readable parameter audit separates paper-reported values, paper-`UNKNOWN` values, and project adaptations; the implementation is not presented as an exact reproduction.

@@ -29,6 +29,46 @@ This log records experiments that can be inferred from repository artifacts. It 
 | `scripts/sparse_uav_mvp.py` | `2ff01d1b0e3906968b99886c4c793fe3e84c5628d78c3a99e3f9cf0a2bd3d3dc` |
 | `scripts/temporal_evidence_mvp.py` | `fd82d3e6cd7a98ece32f2d85f5eeb69aded88f31c1ef96ba7aa3e11f6cb43e7e` |
 | `scripts/published_baseline_dp_mvp.py` | `0601d93a804ecb66dcb1d0185fc6f2c272a5c5ac9f47674bc4d34cefa7766d9f` |
+| `scripts/dp_failure_forensics.py` | `9116d6e724b4e8460ee2914a55b83ec9f6bb9dcae50a86b6f17d5852db8be328` |
+
+## E14 — Frozen DP persistent-clutter failure forensics
+
+**Run date:** 2026-09-29
+
+**Objective / falsifiable question:** Determine whether the E13 DP failed because the silver UAV path was absent/infeasible, or because a feasible UAV path was outranked by persistent clutter; identify which recorded features distinguish the selected paths without modifying scores or parameters.
+
+**Status:** **TESTED / VERIFIED RESULT on DEV silver diagnostics; label-guided and post hoc.**
+
+**Inputs:** exact E13 graph protocol and minPts=1 candidates; unchanged 80-frame `DEV_SILVER` observations; prior-only replay of A′ legacy occupancy. Source DP protocol SHA-256 `5552c35cf9de614c98a668647b66d3ece27efa60695e13bc856c5488b58324af`.
+
+**Code/version:** `scripts/dp_failure_forensics.py`, hash above. Base Git revision `c913dcd6598ba9f0c06433a50d4a9105b417058e`.
+
+**Commands:**
+
+```bash
+python3 scripts/dp_failure_forensics.py freeze
+python3 scripts/dp_failure_forensics.py run
+```
+
+Three direct synthetic tests passed; the original top paths were exactly replayed to `1e-5 m`. `pytest` remained unavailable.
+
+### Result
+
+- Full silver-consistent feasible paths exist in all sequences: 19/19, 11/11, 22/22, 18/18, and 10/10 observations.
+- Exact edge-state-winner ranks are 4 for `100m_cross_5` and 9 for `200m_cross_5`. Rank lower bounds are 259, 21, and 466 for `100m_cross_10`, `200m_cross_10`, and `300m_cross_10`; exact all-raw-path ranks are **UNKNOWN**.
+- Full-bag clutter paths occupy every frame and score 31.16–81.08. The silver paths cover only their observed spans and score 9.10–21.09. The always-positive 0.50/node base term is therefore the principal full-run persistence advantage.
+- On a common silver time span, clutter still leads by 0.126–1.586. Compactness slightly favors clutter in every sequence; at 100 m/10 m/s and 300 m/10 m/s the UAV also loses one node and pays a 0.25 gap penalty.
+- Raw support has paired descriptive AUC 0.850, but the capped support-score component has AUC 0.512 and a median tie at 0.20.
+- Strong selected-path differences are legacy background probability/revisit (AUC 0.980–0.985), speed (0.922), acceleration (0.898), curvature (0.867), and absolute measured Doppler (0.866). These are not current positive score terms.
+- Doppler–range-rate residual is larger for the UAV in all five sequences; near-static clutter trivially has both near-zero range rate and Doppler. A small residual therefore favors clutter in this comparison.
+
+### Interpretation and decision
+
+The UAV was not pruned from the graph. The frozen DP correctly optimizes an objective that rewards any long, compact path and contains no positive evidence for actual motion. Persistence is not target-specific and becomes the dominant clutter reward. Do not retune on these labels; preserve the result as a ranking-failure diagnosis.
+
+The feature separation statistics compare five selected silver paths with five winning clutter paths and are not general detector evidence. Operational target–clutter separation remains **UNKNOWN** without independently labeled negatives and the complete clutter population.
+
+**Output:** `FMCW_DP_Failure_Forensics.md` and `results/dp_failure_forensics/`.
 
 ## E13 — Published-structure detector and candidate-graph DP/Viterbi MVP
 

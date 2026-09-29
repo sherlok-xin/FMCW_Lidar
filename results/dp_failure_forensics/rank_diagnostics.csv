@@ -1,0 +1,6 @@
+﻿condition_id,silver_labels,silver_path_hits,full_silver_path_exists,silver_path_score,top_span_score,score_rank_lower_bound_among_state_winners,qualifying_edge_state_winners,top_k_state_winners_checked,maximum_silver_hits_in_top_k,first_full_hit_path_rank_in_top_k,exact_silver_path_rank_in_top_k,exact_rank_among_all_raw_paths
+100m_cross_5,19,19,True,20.412338682900803,20.538201494694533,4,26707,100,19,4,4,UNKNOWN_COMBINATORIAL_NOT_RETAINED_BY_ORIGINAL_DP
+100m_cross_10,11,11,True,12.195598663246827,13.865619657866464,259,14718,100,0,,,UNKNOWN_COMBINATORIAL_NOT_RETAINED_BY_ORIGINAL_DP
+200m_cross_5,22,22,True,21.093801828176964,21.394782918711883,9,26530,100,22,9,9,UNKNOWN_COMBINATORIAL_NOT_RETAINED_BY_ORIGINAL_DP
+200m_cross_10,18,18,True,17.22731873586273,17.699076591497985,21,20710,100,17,,,UNKNOWN_COMBINATORIAL_NOT_RETAINED_BY_ORIGINAL_DP
+300m_cross_10,10,10,True,9.099952859023094,10.686276321488846,466,11754,100,0,,,UNKNOWN_COMBINATORIAL_NOT_RETAINED_BY_ORIGINAL_DP

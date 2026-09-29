@@ -1,0 +1,51 @@
+{
+  "protocol_version": 1,
+  "status": "POST_HOC_DIAGNOSTIC_DEV_SILVER_NOT_ALGORITHM_SELECTION",
+  "algorithm_change": "NONE",
+  "dp_parameter_change": "NONE",
+  "source_dp_protocol": "results/published_baseline_dp_mvp/protocol.json",
+  "candidate_source": "exact frozen 1 m range-adaptive minPts=1 candidates",
+  "top_path": "exact replay of frozen DP over the complete bag",
+  "silver_feasible_path": {
+    "search_span": "inclusive first-to-last silver observation frame",
+    "objective": "lexicographically maximize silver-frame hits, then frozen cumulative DP score",
+    "match_radius_m": 3.0,
+    "constraints": "unchanged frozen graph pruning, dt, speed, acceleration, gap and duration rules",
+    "warning": "label-guided diagnostic path; not a deployable output and not independent GT"
+  },
+  "rank": {
+    "top_k": 100,
+    "definition": "unique Viterbi edge-state winner paths within the silver span, sorted by frozen score",
+    "limit": "not an exact rank among the exponentially many non-winning raw paths",
+    "lower_bound": "1 + number of qualifying edge-state winner scores strictly above the silver path score"
+  },
+  "doppler_residual": "abs(-measured_radial_velocity - geometric_dr_dt); dataset-observed sign convention",
+  "legacy_revisit": {
+    "coordinate_frame": "provisional yaw-preserving leveled coordinates used by A-prime",
+    "cell_m": 1.0,
+    "prior_only": true,
+    "cell_revisit_fraction": "prior frames containing an input voxel in the same legacy cell / prior frames",
+    "neighborhood_revisit_fraction": "prior frames containing an input voxel in any 3x3x3 neighbor cell / prior frames",
+    "background_probability": "legacy static count before current frame / legacy frame_count after current-frame increment"
+  },
+  "feature_separation": {
+    "comparison": "silver-compatible UAV nodes versus top-clutter nodes at the same silver frames",
+    "statistics": "pooled ROC AUC plus per-sequence median direction count; descriptive only",
+    "no_feature_threshold_selection": true
+  },
+  "selected_conditions": [
+    "100m_cross_5",
+    "100m_cross_10",
+    "200m_cross_5",
+    "200m_cross_10",
+    "300m_cross_10"
+  ],
+  "source_sha256": {
+    "frozen_dp_protocol": "5552c35cf9de614c98a668647b66d3ece27efa60695e13bc856c5488b58324af",
+    "frozen_dp_results": "fb22075226e6d9dc585dcfcb812468b95b86ba65bc84b35762ed3a58a2486199",
+    "frozen_dp_detections": "c2530fc9342100bdf1a3314bbd21feb2e9f2af96adda3f58184789410e536a35",
+    "frozen_dp_script": "0601d93a804ecb66dcb1d0185fc6f2c272a5c5ac9f47674bc4d34cefa7766d9f",
+    "silver_labels": "37c4452a68e544d75034389f82bbaf1e868903bb2225b395b9d66d0cdd48b8db",
+    "legacy_protocol": "6114f11bbec4e44b6fe373bec632f8fd911daa1f13d8ad1f0602491de215099a"
+  }
+}

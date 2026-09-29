@@ -1,0 +1,6 @@
+﻿condition_id,nodes,edges,full_qualifying_state_winners,span_first_frame,span_last_frame,span_qualifying_state_winners,top_replay_verified
+100m_cross_5,2072,44422,42917,11,31,26707,True
+100m_cross_10,2781,60306,58795,18,31,14718,True
+200m_cross_5,5202,114064,112198,0,21,26530,True
+200m_cross_10,3068,67348,65698,30,47,20710,True
+300m_cross_10,3872,85460,83927,0,10,11754,True

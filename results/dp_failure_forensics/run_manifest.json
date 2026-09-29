@@ -1,0 +1,9 @@
+{
+  "created_utc": "2026-09-29T09:58:16.722615+00:00",
+  "git_head_before_run": "c913dcd6598ba9f0c06433a50d4a9105b417058e",
+  "script_sha256": "9116d6e724b4e8460ee2914a55b83ec9f6bb9dcae50a86b6f17d5852db8be328",
+  "protocol_sha256": "d088ed8a0500abf771842dfb2be8cdef48226ee4a9499b65134dc68b247d83a8",
+  "source_dp_protocol_sha256": "5552c35cf9de614c98a668647b66d3ece27efa60695e13bc856c5488b58324af",
+  "labels_sha256": "37c4452a68e544d75034389f82bbaf1e868903bb2225b395b9d66d0cdd48b8db",
+  "command": "python3 scripts/dp_failure_forensics.py run"
+}

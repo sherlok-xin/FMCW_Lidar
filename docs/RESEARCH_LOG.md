@@ -279,6 +279,14 @@ These decisions are evidence-bounded, not permanent prohibitions.
 
 **Conclusion:** Persistence, compactness, and upper-bound kinematics are insufficient to rank the target above static structured clutter. This negative result does not rule out full point-level TBD, but it removes the current minimal score from consideration without same-DEV retuning.
 
+### H22 — The E13 DP fails because the UAV path is absent from the graph
+
+**Status:** contradicted.
+
+**Evidence:** Under the exact frozen graph and constraints, a label-guided feasible path reaches every silver observation in all five sequences. Exact state-winner ranks are 4 and 9 in two bags; lower bounds are 259, 21, and 466 in the others. Replayed top paths exactly match E13 outputs.
+
+**Conclusion:** The failure occurs at scoring/ranking, not candidate generation or graph feasibility. Positive per-node accumulation rewards full-bag persistent clutter. Compactness and the saturated support component do not distinguish the selected paths, while several unscored quantities do. These post-hoc differences remain diagnostic rather than a basis for method selection.
+
 ## Possible research directions
 
 Everything in this section is **PROPOSED** or **SPECULATIVE**, not an experimental result.

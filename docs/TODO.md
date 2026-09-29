@@ -34,6 +34,13 @@ The ordering below reflects dependency and scientific value. Algorithm novelty i
 - Before any richer graph/TBD or Doppler ablation, acquire reliable target-absent windows and create a held-out sequence split with independently defined labels.
 - If the published reconstruction is studied further, isolate 4 cm voxelization, DBSCAN schedule, centroid rule, and M-of-K semantics one at a time under a newly frozen protocol; do not infer causality from E13's bundled difference.
 
+### 2026-09-29 DP failure-forensics progress note
+
+- The E13 graph contains a fully silver-consistent feasible UAV path in every sequence. Do not attribute the DP failure to missing singleton evidence or graph pruning.
+- Preserve the diagnostic rank result: exact ranks 4/9 in two sequences and lower bounds 259/21/466 in the others. Exact rank among all raw paths is `UNKNOWN` because the original Viterbi stores only one winner per edge state.
+- Do not tune score weights or gap/kinematic parameters on these paths. The current evidence explains the failure but does not authorize a new operating point.
+- Treat occupancy/revisit, speed, curvature, Doppler magnitude, and raw support as post-hoc selected-path diagnostics only. Their general separation must be tested on independently labeled target and negative clutter data.
+
 ### 1. Put the project under version control
 
 **Deliverable:** initialize Git, add a data-aware `.gitignore`, and commit source/config/docs without committing the 115 GB bag archive, 4 GB PCD corpus, virtual environment, or generated caches unless intentionally managed through an external data system.
