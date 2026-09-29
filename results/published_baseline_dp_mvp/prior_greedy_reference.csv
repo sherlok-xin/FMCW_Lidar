@@ -1,0 +1,7 @@
+﻿reference,threshold,status,nominal_range_m,lidar_frames,label_frames,detected_frames,frame_recall,output_candidates_all_frames,output_candidates_per_lidar_frame,interpretation_limit
+fixed_soft,0.68,FORMAL_FROZEN,100,78,30,1,0.03333333333333333,153,1.9615384615384615,same DEV labels; 0.55 was inspected after the formal run
+fixed_soft,0.68,FORMAL_FROZEN,200,131,40,5,0.125,239,1.8244274809160306,same DEV labels; 0.55 was inspected after the formal run
+fixed_soft,0.68,FORMAL_FROZEN,300,63,10,1,0.1,123,1.9523809523809523,same DEV labels; 0.55 was inspected after the formal run
+fixed_soft,0.55,POST_HOC_DIAGNOSTIC,100,78,30,16,0.5333333333333333,1273,16.32051282051282,same DEV labels; 0.55 was inspected after the formal run
+fixed_soft,0.55,POST_HOC_DIAGNOSTIC,200,131,40,29,0.725,2356,17.984732824427482,same DEV labels; 0.55 was inspected after the formal run
+fixed_soft,0.55,POST_HOC_DIAGNOSTIC,300,63,10,7,0.7,1058,16.793650793650794,same DEV labels; 0.55 was inspected after the formal run

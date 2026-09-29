@@ -1,0 +1,41 @@
+﻿parameter,value,provenance,note
+source_configuration,"""Table I Config C for eps0/minPts/voxel; rref from Eq. 1 text""",PAPER_REPORTED,Khosravi et al. 2026
+voxel_m,0.04,PAPER_REPORTED,Khosravi et al. 2026
+dbscan_eps0_m,0.6,PAPER_REPORTED,Khosravi et al. 2026
+dbscan_min_pts,2,PAPER_REPORTED,Khosravi et al. 2026
+dbscan_reference_range_m,10.0,PAPER_REPORTED,Khosravi et al. 2026
+eps_equation,"""eps(r)=eps0+alpha*max(r-rref,0)""",PAPER_REPORTED,Khosravi et al. 2026
+centroid,"""component-wise median for cluster size >=3; arithmetic mean below 3""",PAPER_REPORTED,Khosravi et al. 2026
+alpha,UNKNOWN,PAPER_NOT_GIVEN,not numerically specified in the public paper
+hmin,UNKNOWN,PAPER_NOT_GIVEN,not numerically specified in the public paper
+rmax,UNKNOWN,PAPER_NOT_GIVEN,not numerically specified in the public paper
+rexcl,UNKNOWN,PAPER_NOT_GIVEN,not numerically specified in the public paper
+nmin,UNKNOWN,PAPER_NOT_GIVEN,not numerically specified in the public paper
+nmax,UNKNOWN,PAPER_NOT_GIVEN,not numerically specified in the public paper
+emax,UNKNOWN,PAPER_NOT_GIVEN,not numerically specified in the public paper
+tau_min,UNKNOWN,PAPER_NOT_GIVEN,not numerically specified in the public paper
+vmax,UNKNOWN,PAPER_NOT_GIVEN,not numerically specified in the public paper
+M,UNKNOWN,PAPER_NOT_GIVEN,not numerically specified in the public paper
+K,UNKNOWN,PAPER_NOT_GIVEN,not numerically specified in the public paper
+d_cons,UNKNOWN,PAPER_NOT_GIVEN,not numerically specified in the public paper
+T_cons,UNKNOWN,PAPER_NOT_GIVEN,not numerically specified in the public paper
+coordinate_transform_rich80,"""[x,z,-y]""",PROJECT_ADAPTATION,frozen before DEV comparison
+intensity_range_inclusive,"[10.0, 250.0]",PROJECT_ADAPTATION,frozen before DEV comparison
+broad_roi_m,"{""x"": [8.0, 510.0], ""y"": [-200.0, 200.0], ""z"": [-60.0, 60.0]}",PROJECT_ADAPTATION,frozen before DEV comparison
+leveled_height_gt_m,10.0,PROJECT_ADAPTATION,frozen before DEV comparison
+level_transform,"""R_full_6dof.T@(p_lidar-t_full_6dof)""",PROJECT_ADAPTATION,frozen before DEV comparison
+dbscan_alpha,0.004,PROJECT_ADAPTATION,frozen before DEV comparison
+dbscan_eps_cap,"""NONE; follows the published equation""",PROJECT_ADAPTATION,frozen before DEV comparison
+cluster_min_voxels,2,PROJECT_ADAPTATION,frozen before DEV comparison
+cluster_max_voxels,32,PROJECT_ADAPTATION,frozen before DEV comparison
+cluster_max_raw_points,120,PROJECT_ADAPTATION,frozen before DEV comparison
+cluster_max_axis_extent_m,6.0,PROJECT_ADAPTATION,frozen before DEV comparison
+cluster_range_m,"[8.0, 510.0]",PROJECT_ADAPTATION,frozen before DEV comparison
+jump_tau_min_m,3.0,PROJECT_ADAPTATION,frozen before DEV comparison
+jump_vmax_mps,25.0,PROJECT_ADAPTATION,frozen before DEV comparison
+temporal_M,2,PROJECT_ADAPTATION,frozen before DEV comparison
+temporal_K_prior_observations,3,PROJECT_ADAPTATION,frozen before DEV comparison
+temporal_d_cons_m,30.0,PROJECT_ADAPTATION,frozen before DEV comparison
+temporal_T_cons_s,3.5,PROJECT_ADAPTATION,frozen before DEV comparison
+association,"""one-to-one greedy nearest last centroid; real bag dt""",PROJECT_ADAPTATION,frozen before DEV comparison
+M_interpretation,"""current output requires at least M qualifying prior observations (M+1 total hits)""",PROJECT_ADAPTATION,frozen before DEV comparison

@@ -28,6 +28,58 @@ This log records experiments that can be inferred from repository artifacts. It 
 | `scripts/calibration_closure.py` | `111e59a6a66a8336d67d42ca6ea68c2988d1cd6b159bac1c98c50900ebd60c55` |
 | `scripts/sparse_uav_mvp.py` | `2ff01d1b0e3906968b99886c4c793fe3e84c5628d78c3a99e3f9cf0a2bd3d3dc` |
 | `scripts/temporal_evidence_mvp.py` | `fd82d3e6cd7a98ece32f2d85f5eeb69aded88f31c1ef96ba7aa3e11f6cb43e7e` |
+| `scripts/published_baseline_dp_mvp.py` | `0601d93a804ecb66dcb1d0185fc6f2c272a5c5ac9f47674bc4d34cefa7766d9f` |
+
+## E13 — Published-structure detector and candidate-graph DP/Viterbi MVP
+
+**Run date:** 2026-09-29
+
+**Objective / falsifiable question:** Independently reconstruct the processing chain in Khosravi et al. 2026, then test whether a global singleton-preserving candidate-path DP can suppress clutter without losing 100/200/300 m silver target evidence.
+
+**Status:** **TESTED / VERIFIED RESULT on DEV silver labels; DP result negative.**
+
+**Inputs and labels:** unchanged five-sequence `research_dev_v0`, 80 LiDAR-derived `DEV_SILVER` observations. No reliable negative frames. Label SHA-256 `37c4452a68e544d75034389f82bbaf1e868903bb2225b395b9d66d0cdd48b8db`.
+
+**Code/version:** `scripts/published_baseline_dp_mvp.py`, hash above. Base Git HEAD before the new experiment was `1a069b2`; `.local/` remained an unrelated untracked path.
+
+**Paper identity:** arXiv:2603.11586; retrieved PDF SHA-256 `68e5e1aba52abd00d085de91c3d55ff31dcfa4d7a26b37a0f5405e760cdd8174`. The implementation is a structure-faithful reconstruction, not an exact reproduction: the paper does not numerically specify `alpha`, ROI/geometry, jump, or M-of-K thresholds, and no Table I row combines range adaptation with Layer 3.
+
+**Environment:** Python 3.10.12; NumPy 2.2.6; SciPy 1.15.3; scikit-learn 1.7.2; Linux x86_64. `pytest` was unavailable; four test functions were loaded and executed directly and all passed.
+
+**Commands:**
+
+```bash
+python3 scripts/published_baseline_dp_mvp.py freeze
+python3 scripts/published_baseline_dp_mvp.py cache
+python3 scripts/published_baseline_dp_mvp.py run
+```
+
+**Frozen protocol:** `results/published_baseline_dp_mvp/protocol.json`, SHA-256 `5552c35cf9de614c98a668647b66d3ece27efa60695e13bc856c5488b58324af`. Full parameter provenance is in `parameter_provenance.csv`.
+
+### Result
+
+- A′ and B were imported unchanged from E12: each detects 41/80; outputs are 5.98 and 23.88 per LiDAR frame.
+- The published-structure reconstruction detects 58/80 and emits 26.39 outputs/frame. By range it obtains 14/30, 37/40, and 7/10 at 100/200/300 m.
+- Before M-of-K, its candidate recall is 22/30, 40/40, and 9/10. The temporal layer therefore removes true evidence as well as candidates, especially at 100 m.
+- The DP input contains all 80/80 silver observations at 62.48 candidates/frame. Its selected path emits exactly one point/frame but detects 0/80.
+- Four of five DP paths have median range about 204.05 m and start-to-end displacement below 0.20 m; the remaining path is at median range 447.13 m. They are persistent near-static clutter paths.
+- The previous frozen greedy soft accumulator obtains 7/80 at 1.89 outputs/frame; its same-DEV post-hoc threshold-0.55 diagnostic obtains 52/80 at 17.23 outputs/frame. The DP is not superior in recall.
+
+### Interpretation and decision
+
+The published-structure reconstruction is materially different from B on this DEV set, but its higher recall comes with higher candidate volume and simultaneous changes in voxelization, DBSCAN, centroid, and temporal semantics. With no negative scenes it is not a verified operational improvement.
+
+The minimal global DP fails because positive persistence/compactness evidence makes an all-frame stationary clutter path dominate, while speed and acceleration are only upper bounds. Preserve this negative result and do not tune its weights on the same 80 labels. Reliable negative windows and held-out data are required before evaluating a richer motion or Doppler term.
+
+**Output:** `FMCW_Published_Baseline_and_DP_TBD_MVP.md` and `results/published_baseline_dp_mvp/`.
+
+### Limitations
+
+- Labels are retrospective LiDAR-only evidence, not independent paper GT.
+- Candidate/output volume is not precision; operational precision and false alarms/frame remain **UNKNOWN**.
+- The paper operates at 5–25 m with a different LiDAR and geometry.
+- Runtime excludes raw bag-to-cache construction.
+- The DP is a candidate-graph temporal baseline, not full point-level DP-TBD.
 
 ## E12 — Frozen lightweight temporal-evidence accumulator
 

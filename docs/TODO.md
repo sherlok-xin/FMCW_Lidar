@@ -26,6 +26,14 @@ The ordering below reflects dependency and scientific value. Algorithm novelty i
 - Reproduce A′ directly from raw points before treating its 1 m raw-voxel approximation as the authoritative corrected legacy baseline.
 - Validate one fixed-window operating point on held-out data before adding model complexity. Do not proceed to full DP-TBD, deep learning, or manifold work on the strength of this DEV sweep.
 
+### 2026-09-29 published-baseline / DP progress note
+
+- The independent published-structure reconstruction and minimal candidate-graph DP are **IMPLEMENTED and TESTED**; see `FMCW_Published_Baseline_and_DP_TBD_MVP.md`.
+- Preserve `parameter_provenance.csv`: the public paper leaves multiple thresholds `UNKNOWN`, so do not relabel this implementation as an exact reproduction.
+- Do not retune the failed DP node score or motion limits on `research_dev_v0`. Its 0/80 result and stationary-clutter failure are part of the record.
+- Before any richer graph/TBD or Doppler ablation, acquire reliable target-absent windows and create a held-out sequence split with independently defined labels.
+- If the published reconstruction is studied further, isolate 4 cm voxelization, DBSCAN schedule, centroid rule, and M-of-K semantics one at a time under a newly frozen protocol; do not infer causality from E13's bundled difference.
+
 ### 1. Put the project under version control
 
 **Deliverable:** initialize Git, add a data-aware `.gitignore`, and commit source/config/docs without committing the 115 GB bag archive, 4 GB PCD corpus, virtual environment, or generated caches unless intentionally managed through an external data system.

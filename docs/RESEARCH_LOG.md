@@ -263,6 +263,22 @@ These decisions are evidence-bounded, not permanent prohibitions.
 
 **Conclusion:** Future method comparisons must include A′ or a raw-point equivalent. The result does not establish final accuracy because the calibration and labels are provisional and center self-consistency is circular.
 
+### H20 — A closer published-structure reconstruction is equivalent to project-adapted B
+
+**Status:** contradicted on the frozen DEV set; operational superiority remains unresolved.
+
+**Evidence:** The independent reconstruction obtains 58/80 silver recall and 26.39 outputs/frame versus B at 41/80 and 23.88. At 100 m it is slightly worse, while at 200/300 m it is substantially more permissive. The paper omits several required numeric parameters and no reported configuration combines range adaptation with Layer 3.
+
+**Conclusion:** B must not be described as an exact Khosravi reproduction. The new reconstruction is materially different, but the observed recall increase cannot be isolated to one paper component and is not precision evidence.
+
+### H21 — Global singleton-path DP resolves the recall–clutter conflict
+
+**Status:** contradicted for the frozen minimal candidate-graph formulation.
+
+**Evidence:** All 80 silver observations exist in the DP input, but the single maximum-score paths detect 0/80. Four selected paths are nearly stationary at approximately 204 m; one is near 447 m. Volume falls from 62.48 to 1.00 output/frame by selecting persistent clutter rather than the UAV.
+
+**Conclusion:** Persistence, compactness, and upper-bound kinematics are insufficient to rank the target above static structured clutter. This negative result does not rule out full point-level TBD, but it removes the current minimal score from consideration without same-DEV retuning.
+
 ## Possible research directions
 
 Everything in this section is **PROPOSED** or **SPECULATIVE**, not an experimental result.

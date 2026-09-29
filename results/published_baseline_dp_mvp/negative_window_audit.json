@@ -1,0 +1,11 @@
+{
+  "status": "NO_RELIABLE_NEGATIVE_WINDOWS",
+  "operational_precision_reported": false,
+  "false_alarms_per_frame_reported": false,
+  "pr_curve_reported": false,
+  "allowed_volume_metrics": [
+    "input candidates per LiDAR frame",
+    "outputs per LiDAR frame",
+    "unmatched outputs per labeled positive frame"
+  ]
+}

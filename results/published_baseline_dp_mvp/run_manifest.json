@@ -1,0 +1,20 @@
+{
+  "created_utc": "2026-09-29T09:03:43.407005+00:00",
+  "git_head_before_run": "1a069b217c6d0eb26b80c0e64a441009c9d1e71c",
+  "git_dirty_before_run": true,
+  "script_sha256": "0601d93a804ecb66dcb1d0185fc6f2c272a5c5ac9f47674bc4d34cefa7766d9f",
+  "protocol_sha256": "5552c35cf9de614c98a668647b66d3ece27efa60695e13bc856c5488b58324af",
+  "labels_sha256": "37c4452a68e544d75034389f82bbaf1e868903bb2225b395b9d66d0cdd48b8db",
+  "commands": [
+    "python3 scripts/published_baseline_dp_mvp.py freeze",
+    "python3 scripts/published_baseline_dp_mvp cache",
+    "python3 scripts/published_baseline_dp_mvp run"
+  ],
+  "fine_cache": {
+    "100m_cross_5": "1ff489548feae1cac1e642c3fa067ca406ac74e2981a4c851d73a5ad7b394979",
+    "100m_cross_10": "fa12296d036d4fd4e3c00255727f40ba4dd18e9ebb9ba3c35c091cf0163c36f2",
+    "200m_cross_5": "7581b32c2546344efa605c1b15592c4d2b24b291238be87704df5a31d72e6cf5",
+    "200m_cross_10": "a2327fb6a21260368315d6f5456a0be905c13794b743eb1f717641437a4879e8",
+    "300m_cross_10": "db89b00e164e8f2347316bae0a84f6bf5a9acd294a158f5ca72414f7564732ff"
+  }
+}

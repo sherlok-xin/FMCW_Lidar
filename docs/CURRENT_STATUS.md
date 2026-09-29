@@ -11,6 +11,14 @@ The repository contains a substantial rule-based FMCW-LiDAR processing and track
 
 The strongest current outcome is diagnostic rather than algorithmic: two successful motion sequences show that compactness, spatial isolation, temporal persistence, and agreement between Doppler and range change are more transferable cues than raw Doppler magnitude or a stable single-frame shape. The existing FMT benchmark does not demonstrate an improvement over the baseline.
 
+### 2026-09-29 published-baseline and candidate-graph DP update
+
+The independent Khosravi-2026 processing-chain reconstruction and minimal candidate-graph DP are **IMPLEMENTED and TESTED** on the frozen 80-frame `research_dev_v0` silver set. See `FMCW_Published_Baseline_and_DP_TBD_MVP.md` and `results/published_baseline_dp_mvp/`. A machine-readable parameter audit separates paper-reported values, paper-`UNKNOWN` values, and project adaptations; the implementation is not presented as an exact reproduction.
+
+The published-structure reconstruction detects 58/80 silver observations with 26.39 outputs/frame, versus project-adapted B at 41/80 and 23.88 outputs/frame. The difference is material on this DEV set but confounded by voxel, clustering, centroid, and temporal-semantic changes. With no reliable negative labels, operational improvement remains **UNKNOWN**.
+
+The singleton candidate-graph DP preserves 80/80 observations at input and reduces 62.48 candidates/frame to one selected path point/frame, but its output recall is 0/80. It consistently selects long-lived near-static clutter, usually around 204 m. This frozen minimal DP is rejected as a solution; its weights must not be tuned on the same labels.
+
 ### 2026-09-29 temporal-evidence DEV experiment update
 
 The frozen lightweight accumulator experiment is **TESTED** on the unchanged 80-frame `research_dev_v0` silver set. The report is `FMCW_Temporal_Evidence_MVP.md`; protocol, per-frame results, accepted candidates, corrected-legacy stage survival, threshold sweep, and figures are in `results/temporal_evidence_mvp/`.

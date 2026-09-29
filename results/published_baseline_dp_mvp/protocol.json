@@ -1,0 +1,136 @@
+{
+  "protocol_version": 1,
+  "status": "FROZEN_DEV_SILVER_NOT_PAPER_GT",
+  "random_seed": 20260929,
+  "labels": "unchanged research_dev_v0/silver_labels.csv",
+  "negative_windows": "NONE_RELIABLE",
+  "paper": {
+    "citation": "Khosravi, Ventura, Basiri, Unsupervised LiDAR-Based Multi-UAV Detection and Tracking Under Extreme Sparsity, 2026",
+    "url": "https://arxiv.org/abs/2603.11586",
+    "pdf_sha256": "68e5e1aba52abd00d085de91c3d55ff31dcfa4d7a26b37a0f5405e760cdd8174",
+    "scope_warning": "paper experiments use Livox Mid-360 at 5-25 m; this project uses ground-based FMCW LiDAR at nominal 100-300 m",
+    "reproduction_status": "STRUCTURE_FAITHFUL_RECONSTRUCTION_NOT_EXACT_REPRODUCTION"
+  },
+  "published_structure_baseline": {
+    "stage_order": [
+      "ROI and VoxelGrid",
+      "range-adaptive DBSCAN",
+      "geometric validation",
+      "spatial-jump validation",
+      "M-of-K temporal consistency"
+    ],
+    "paper_reported": {
+      "source_configuration": "Table I Config C for eps0/minPts/voxel; rref from Eq. 1 text",
+      "voxel_m": 0.04,
+      "dbscan_eps0_m": 0.6,
+      "dbscan_min_pts": 2,
+      "dbscan_reference_range_m": 10.0,
+      "eps_equation": "eps(r)=eps0+alpha*max(r-rref,0)",
+      "centroid": "component-wise median for cluster size >=3; arithmetic mean below 3"
+    },
+    "paper_not_numerically_specified": [
+      "alpha",
+      "hmin",
+      "rmax",
+      "rexcl",
+      "nmin",
+      "nmax",
+      "emax",
+      "tau_min",
+      "vmax",
+      "M",
+      "K",
+      "d_cons",
+      "T_cons"
+    ],
+    "paper_configuration_limit": "Table I has range-adaptive alpha>0 only for C/D and Layer 3 only for S1/S4/MR; no reported row combines both.  The required full chain is therefore a reconstruction.",
+    "project_adapted": {
+      "coordinate_transform_rich80": "[x,z,-y]",
+      "intensity_range_inclusive": [
+        10.0,
+        250.0
+      ],
+      "broad_roi_m": {
+        "x": [
+          8.0,
+          510.0
+        ],
+        "y": [
+          -200.0,
+          200.0
+        ],
+        "z": [
+          -60.0,
+          60.0
+        ]
+      },
+      "leveled_height_gt_m": 10.0,
+      "level_transform": "R_full_6dof.T@(p_lidar-t_full_6dof)",
+      "dbscan_alpha": 0.004,
+      "dbscan_eps_cap": "NONE; follows the published equation",
+      "cluster_min_voxels": 2,
+      "cluster_max_voxels": 32,
+      "cluster_max_raw_points": 120,
+      "cluster_max_axis_extent_m": 6.0,
+      "cluster_range_m": [
+        8.0,
+        510.0
+      ],
+      "jump_tau_min_m": 3.0,
+      "jump_vmax_mps": 25.0,
+      "temporal_M": 2,
+      "temporal_K_prior_observations": 3,
+      "temporal_d_cons_m": 30.0,
+      "temporal_T_cons_s": 3.5,
+      "association": "one-to-one greedy nearest last centroid; real bag dt",
+      "M_interpretation": "current output requires at least M qualifying prior observations (M+1 total hits)"
+    }
+  },
+  "candidate_graph_dp": {
+    "input": "same frozen 1 m range-adaptive minPts=1 candidates used by temporal_evidence_mvp",
+    "doppler": "NOT_USED",
+    "node_score": "0.50 + 0.30*exp(-extent/2m) + 0.20*min(log1p(raw_support)/log(6),1)",
+    "node_threshold": "NONE",
+    "edge_max_frame_gap": 3,
+    "edge_max_dt_s": 3.5,
+    "edge_max_speed_mps": 25.0,
+    "edge_max_acceleration_mps2": 15.0,
+    "edge_nearest_predecessors_per_prior_frame": 12,
+    "gap_penalty_per_skipped_frame": 0.25,
+    "path_min_nodes": 3,
+    "path_min_duration_s": 2.0,
+    "output": "single highest-score admissible path per bag; one UAV is assumed by the DEV flight design",
+    "algorithm": "second-order Viterbi over pruned candidate DAG edge states"
+  },
+  "evaluation": {
+    "label_radius_m": 3.0,
+    "report_operational_precision": false,
+    "reason": "no reliable negative labels; unlabeled frames cannot be asserted target-absent",
+    "primary_methods": [
+      "A_prime_legacy_corrected",
+      "B_khosravi_current",
+      "Khosravi_2026_structure_reconstruction",
+      "candidate_graph_DP"
+    ],
+    "prior_greedy_references": [
+      "fixed_soft@0.68_FORMAL",
+      "fixed_soft@0.55_DIAGNOSTIC"
+    ]
+  },
+  "selected_conditions": [
+    "100m_cross_5",
+    "100m_cross_10",
+    "200m_cross_5",
+    "200m_cross_10",
+    "300m_cross_10"
+  ],
+  "source_sha256": {
+    "silver_labels": "37c4452a68e544d75034389f82bbaf1e868903bb2225b395b9d66d0cdd48b8db",
+    "research_dev_protocol": "b8575fc94efa1b33624a0ac92f1e464c2e58e1955817ff125c7154d176490b67",
+    "research_dev_addendum": "2edf3d49dae537fe4b8df1ea8065944bcf0941c4b186a090d9cf09fdefb0f9ee",
+    "previous_temporal_protocol": "6114f11bbec4e44b6fe373bec632f8fd911daa1f13d8ad1f0602491de215099a",
+    "previous_temporal_results": "89b9949fd010f3813af371c6809dce5b228e8ea9f3bda3f06355a30395827a20",
+    "previous_score_tradeoff": "dfab62d864da13c7bddbd4548e32f1edc70a1b4092017d1889cc86519242e70b",
+    "calibration_alignment": "f9533b258353d6d138ae13c2f1ffd52958a08ca66419b06f0c391345d68d4a63"
+  }
+}
