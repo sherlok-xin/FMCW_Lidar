@@ -287,6 +287,22 @@ These decisions are evidence-bounded, not permanent prohibitions.
 
 **Conclusion:** The failure occurs at scoring/ranking, not candidate generation or graph feasibility. Positive per-node accumulation rewards full-bag persistent clutter. Compactness and the saturated support component do not distinguish the selected paths, while several unscored quantities do. These post-hoc differences remain diagnostic rather than a basis for method selection.
 
+### H23 — Range reduction yields stable point-count growth and motivates a larger far-range epsilon
+
+**Status:** mixed descriptive support; stable/causal law not established (E15, 2026-10-10).
+
+**Evidence:** Same-date observed cross medians39.5/17.5/5 raw returns at100/200/300 m. Legacy approach324→195 m has count rho=-0.695, but only9/19 intervals increase and9 decrease. Unique-xyz NN medians rise0.023/0.040/0.060 m, yet pairwise/MST/extent do not share a monotonic law; longitudinal MST rho=+0.063. Six Feb frames have 1→3 m radius-dependent long edges of UNKNOWN point identity.
+
+**Conclusion:** Support attenuation is more directly evidenced than a full-cluster connectivity law. Raw counts, occupied cells and extent of voxel means must not be conflated. Larger epsilon, adaptive minPts and adaptive-window performance remain UNKNOWN; no parameters or labels changed.
+
+### H24 — Target spacing range dependence is distinct from surrounding clutter
+
+**Status:** not established; surrounding sampling changes too (E15).
+
+**Evidence:** The 3–30 m raw clutter NN rises0.027/0.050/0.062 m across Feb groups and has longitudinal rho=+0.755. The 3–15 m NN is defined in only3/10 far-cross and1/20 longitudinal frames. No independent clutter point labels or operational merge experiment exist.
+
+**Conclusion:** Range-dependent spacing is not target-specific evidence. Merge frequency remains UNKNOWN. Preserve the temporal/DP negative results; physical sparse-support motivation is not proof of adaptive temporal gain. Historical approach “3→18 target points” is unsupported by current raw/old cluster records (1–13); exact original attribution UNKNOWN, frame15 target3/dynamic18 is only a possible confusion example.
+
 ## Possible research directions
 
 Everything in this section is **PROPOSED** or **SPECULATIVE**, not an experimental result.

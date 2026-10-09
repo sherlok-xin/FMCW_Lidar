@@ -1,6 +1,6 @@
 # Current Status
 
-Status date: **2026-09-29**
+Status date: **2026-10-10**
 Basis: repository-wide source and artifact inspection; no chat-history claims are treated as evidence.
 
 Git is now initialized on branch `main` (unlike the 2026-09-20 audit). The tested sparse-MVP script and tests are present in snapshot `e62848f787dcfd1bb2f91536ca23e6a50580a77b`; generated `results/` artifacts are ignored, so their run-manifest hashes remain required for provenance.
@@ -10,6 +10,14 @@ Git is now initialized on branch `main` (unlike the 2026-09-20 audit). The teste
 The repository contains a substantial rule-based FMCW-LiDAR processing and tracking prototype, several ROS/offline variants, and a useful body of retrospective data archaeology. It does **not** yet contain the ground truth, provenance, calibration, evaluation protocol, or controlled comparisons required to make reliable UAV detection/tracking accuracy claims.
 
 The strongest current outcome is diagnostic rather than algorithmic: two successful motion sequences show that compactness, spatial isolation, temporal persistence, and agreement between Doppler and range change are more transferable cues than raw Doppler magnitude or a stable single-frame shape. The existing FMT benchmark does not demonstrate an improvement over the baseline.
+
+### 2026-10-10 read-only range/sparsity audit
+
+**TESTED / VERIFIED RESULT on observed DEV/pseudo neighborhoods only.** `FMCW_Range_Sparsity_Audit.md` and `results/range_sparsity_audit/` reconstruct raw/4 cm/1 m occupied count, raw extent/NN/pairwise/MST, intensity, Doppler, and surrounding clutter from 80 frozen cross observations plus 48 legacy cross and 20 legacy approach observations. No detector/tracker or labels changed; 39 protected files retain identical SHA-256.
+
+Feb 100/200/300 m raw-count medians are 39.5/17.5/5; unique-xyz NN medians are 0.023/0.040/0.060 m, but pairwise/MST/extent do not share a stable monotonic range law. Surrounding 3–30 m raw clutter NN also rises, 0.027/0.050/0.062 m. The 3–15 m shell is often empty, especially at 300 m, so its conditional NN is not a stable density estimate.
+
+Legacy approach range decreases 324.18→194.67 m; count rho=-0.695, but successive count changes are 9 increases/1 tie/9 decreases. Its raw counts equal the old target cluster, 1–13 points, not 3→18. Exact old claim source UNKNOWN; frame15 contains target3 and whole-dynamic18. Evidence supports sparse-support/representation concerns and a temporal-context motivation, not an adaptive-epsilon function or proven adaptive-window gain. Prior algorithm negative results remain unchanged.
 
 ### 2026-09-29 DP failure-forensics update
 

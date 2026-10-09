@@ -1,0 +1,10 @@
+{
+  "command": "scripts/plot_range_sparsity_audit.py",
+  "script_sha256": "670b4d370ca17a99362ba1820941ae648e72df45427e2045f6d5a2c10249bb85",
+  "source_frame_csv_sha256": "597639a8d17da1e68250c693841c608f286a8d23f1b910ab491c5a4202f94d0f",
+  "matplotlib": "3.10.9",
+  "output_sha256": {
+    "longitudinal_approach.png": "f85c0663ecbe21b349ae4ad9c77aabfa83b3d2d84f84a85c9888148623fb591c",
+    "range_microstructure.png": "e233e3983fbd6e3de0b7bf3fb1180a60b60a4e09086a6ac9811d5c979f5b1a00"
+  }
+}

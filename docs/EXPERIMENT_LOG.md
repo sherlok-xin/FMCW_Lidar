@@ -31,6 +31,42 @@ This log records experiments that can be inferred from repository artifacts. It 
 | `scripts/published_baseline_dp_mvp.py` | `0601d93a804ecb66dcb1d0185fc6f2c272a5c5ac9f47674bc4d34cefa7766d9f` |
 | `scripts/dp_failure_forensics.py` | `9116d6e724b4e8460ee2914a55b83ec9f6bb9dcae50a86b6f17d5852db8be328` |
 
+## E15 — Read-only range/sparsity physical-evidence audit
+
+**Run date:** 2026-10-10 +08:00 (2026-10-09 16:00:07–16:05:52 UTC).
+
+**Objective:** Determine whether raw target-neighborhood support, spacing and surrounding clutter exhibit range-dependent descriptive trends; recover the provenance of the old approach “3→18 points” statement. No algorithm changes or tuning.
+
+**Status:** TESTED / VERIFIED RESULT on existing observed DEV/pseudo neighborhoods, not independent point/object GT.
+
+**Inputs:** five Feb raw ZIP/bags and 68 legacy raw PCDs; unchanged 80 DEV_SILVER centers plus 48 legacy measured cross/20 legacy measured approach centers. 73 raw input SHA identities and three label hashes: `results/range_sparsity_audit/run_manifest.json`. Prediction-only/interpolated centers and unresolved Feb roundtrips excluded.
+
+**Code identity:** parent Git `feb9eda4009a5795ca02e0a3aaac5b8fafcfb1a2`; `scripts/range_sparsity_audit.py` SHA-256 `d7e5f34e3e2f0d85f603a70e29d5d9e9dae6c4aa5c30b3f1864d8bd6aa9902d4`; frozen diagnostic protocol SHA-256 `32be7ef26911cf7570783abe712f519fb1c695b4154c70e268a56742f048df9b`.
+
+**Environment:** Python3.10.12 / NumPy2.2.6 / SciPy1.15.3 / Linux; no randomness.
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python -m unittest discover -s tests -p test_range_sparsity_audit.py -v
+PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python scripts/range_sparsity_audit.py --phase freeze
+PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python scripts/range_sparsity_audit.py --phase audit
+PYTHONDONTWRITEBYTECODE=1 MPLCONFIGDIR=/tmp/fmcw_range_sparsity_mpl fmcw/bin/python scripts/plot_range_sparsity_audit.py
+```
+
+**Definitions:** raw finite/nonzero xyz; fixed existing centers, 0.5/1/3 m balls (3 m DEV-compatible primary); fixed sensor-grid 4 cm/1 m occupancy; raw/unique NN, pairwise and MST maximum edge; 3–15/3–30 m surrounding raw/intensity-subset shells; true timestamps; 25 m actual-range bins; frame-level medians/descriptive rho, no p-values.
+
+**Results:**
+
+- 148 observations / 444 radius rows / 2,434 primary raw proxy points. 80/80 old DEV raw counts match, four synthetic tests pass, independent raw/CSV/MST/summary checks pass; 39 protected files unchanged.
+- Feb raw medians39.5/17.5/5, 4 cm voxels27.5/14/5, 1 m voxels2/2/1.5. Unique NN0.023/0.040/0.060 m, but raw NN/pairwise/MST/extent lack consistent monotonic growth.
+- Legacy approach324.18→194.67 m, raw counts1–13, rho=-0.695; 9 count increases/1 tie/9 decreases. Raw and old target counts agree per frame. Old “3→18” source UNKNOWN; frame15 target3/whole-dynamic18 is a verified possible confusion, not an attributed origin.
+- Clutter 3–30 m NN0.027/0.050/0.062 m across Feb groups; approach rho=+0.755. Smaller shells often lack points; actual merge probability UNKNOWN.
+
+**Interpretation / decision:** support attenuation and representation-dependent sparsity are better established than an epsilon connectivity law. Do not select adaptive minPts/window/epsilon or erase E12/E13 negative results. No detector/tracker executed or parameter changed.
+
+**Limitations:** observed selected centers, not point GT; one legacy approach/one Feb300 m case; dependent frames; aspect/time/speed/scene confounds; shell density uncorrected for FOV/occlusion; six Feb frames sensitive to 1→3 m inclusion. Full report preserves denominators and two unused diagnostic geometry corner cases.
+
+**Outputs:** `FMCW_Range_Sparsity_Audit.md`, diagnostic/plot scripts and tests, `results/range_sparsity_audit/` CSVs/provenance/figures.
+
 ## E14 — Frozen DP persistent-clutter failure forensics
 
 **Run date:** 2026-09-29

@@ -1,10 +1,17 @@
 # Prioritized TODO
 
-Status date: **2026-09-29**
+Status date: **2026-10-10**
 
 The ordering below reflects dependency and scientific value. Algorithm novelty is intentionally placed after provenance, labels, calibration, and evaluation because the current evidence cannot otherwise distinguish improvement from additional false tracks or implementation drift.
 
 ## P0 — Establish an auditable baseline
+
+### 2026-10-10 range/sparsity diagnostic note
+
+- E15 raw audit is complete; preserve `FMCW_Range_Sparsity_Audit.md` and `results/range_sparsity_audit/` as descriptive evidence, not an adaptive-parameter selection run.
+- Keep raw return counts, occupied-voxel counts, whole dynamic counts and ROI counts separate. The old approach 3→18 claim source is UNKNOWN; verified target counts are1–13.
+- Before general range-adaptive claims, independently label weak/missed observations and clutter, replicate an approach sequence, and establish sensor angular/beam metadata. Do not tune epsilon/minPts/window on E15 neighborhoods.
+- No detector/tracker change was authorized in E15. Prior frozen temporal/DP negative results and the independent-negative/held-out evaluation gate remain unchanged.
 
 ### 2026-09-22 progress note
 

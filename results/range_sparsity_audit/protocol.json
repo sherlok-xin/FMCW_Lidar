@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "diagnostic_only": true,
+  "target_definition": "existing observed center; raw finite/nonzero xyz in nested 3D balls, NOT point identity GT",
+  "target_radii_m": [
+    0.5,
+    1.0,
+    3.0
+  ],
+  "primary_radius_m": 3.0,
+  "primary_radius_provenance": "unchanged research_dev_v0 neighborhood; 1m/0.5m sensitivity, no recentering",
+  "voxel_sizes_m": [
+    0.04,
+    1.0
+  ],
+  "voxel_origin_m": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "voxel_frame": "sensor-relative [x,z,-y], not provisional gravity/ENU coordinates",
+  "clutter_shell_inner_m": 3.0,
+  "clutter_shell_outer_m": [
+    15.0,
+    30.0
+  ],
+  "clutter_definition": "unlabeled surrounding raw returns, not confirmed non-target negatives",
+  "clutter_density_denominator": "complete spherical shell volume; scan/FOV/occlusion not corrected",
+  "intensity_subset_inclusive": [
+    10.0,
+    250.0
+  ],
+  "broad_roi_m": {
+    "x": [
+      8.0,
+      510.0
+    ],
+    "y": [
+      -200.0,
+      200.0
+    ],
+    "z": [
+      -60.0,
+      60.0
+    ]
+  },
+  "range_bin_width_m": 25.0,
+  "spacing_singleton": "UNKNOWN / empty numeric CSV field, never zero",
+  "spacing_duplicates": "raw NN includes coincident returns; unique-xyz NN also reported",
+  "pairwise_limit_points": 2000,
+  "inference": "descriptive Spearman rho only; no p-values, no independent-frame assumption",
+  "selection": "80 frozen Feb cross observations + 48 legacy measured cross + 20 legacy measured approach; no interpolation",
+  "excluded": "legacy prediction-only rows; unresolved Feb roundtrips; old heuristic/interpolated 300m labels",
+  "randomness": "none",
+  "label_sha256": {
+    "results/research_dev_v0/silver_labels.csv": "37c4452a68e544d75034389f82bbaf1e868903bb2225b395b9d66d0cdd48b8db",
+    "results/data_archaeology/cross/baseline_reverse/baseline_uav_frames.csv": "c4d213e4e844f4fd2fed736d980c7bdd2695e4bf5f1a5d0da55800aa56eb7676",
+    "results/data_archaeology/longitudinal/baseline_reverse/longitudinal_uav_frames.csv": "d74c9033793dd5d02a7f48936bf6b3e4d6e976642af6927f8c688c10f82e13b4"
+  }
+}

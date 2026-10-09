@@ -1,0 +1,29 @@
+{
+  "date_local": "2026-10-10",
+  "status": "VERIFIED_DESCRIPTIVE_ARTIFACTS_NOT_INDEPENDENT_GT",
+  "synthetic_tests": {"run": 4, "passed": 4, "command": "PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python -m unittest discover -s tests -p test_range_sparsity_audit.py -v"},
+  "raw_count_validation": {"dev_frames": 80, "exact_matches": 80, "legacy_independent_raw_frames": 68},
+  "independent_numeric_review": {
+    "point_csv_rows": 2434,
+    "frame_radius_rows": 444,
+    "unique_observations": 148,
+    "counts_voxels_nn_pairwise": "independently reconstructed from saved raw proxy points; matched",
+    "mst": "independent Prim implementation; matched",
+    "summaries_and_descriptive_rho": "independently recomputed; matched",
+    "claim_boundary": "review implementation is separate, but data and silver centers are shared, not independent GT"
+  },
+  "protected_files": {"count": 39, "before_after_sha_identical": true, "final_sha_rechecked": true},
+  "output_hashes_rechecked": {"all_csv": true, "plots": true, "raw_script": true, "plot_script": true, "protocol": true},
+  "syntax_and_links": {"all_three_new_python_files_parse": true, "all_report_links_resolve": true, "singleton_spacing_is_unknown_not_zero": true},
+  "unused_geometry_corner_cases": {
+    "exact_3m_boundary_points": 0,
+    "raw_ge2_all_coincident_groups": 0,
+    "effect_on_this_audit": "NONE; documented in report, no algorithm/label retuning"
+  },
+  "legacy_count_claim": {
+    "three_to_eighteen_original_source": "UNKNOWN",
+    "approach_actual_target_count_min_max": [1, 13],
+    "frame15": {"target_points": 3, "all_dynamic_points": 18, "raw_broad_roi_points": 272875},
+    "attributing_the_original_claim_to_frame15": "NOT_ESTABLISHED"
+  }
+}
