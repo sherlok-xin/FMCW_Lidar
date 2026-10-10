@@ -335,6 +335,20 @@ These decisions are evidence-bounded, not permanent prohibitions.
 
 **Conclusion / decision:** True dimensions/attitude, point membership, negative and held-out validity remain UNKNOWN. Do not promote near-constant medians or positive-support envelopes to thresholds, and do not tune on these observations. User's final descriptive diagnostic is complete; no further algorithm experiment initiated.
 
+### H29 — Causal background-relative evidence and motion coherence improve fixed UAV path ranking
+
+**Status before the requested E18 run (2026-10-10): PROPOSED; no real-data scores evaluated yet.** This new user request authorizes one isolated MVP after E17's completed read-only stop, not changes to historical baselines or labels.
+
+**Falsifiable test:** Freeze one Beta(1,1)-smoothed prior-frame occupancy contrast and real-dt speed/direction transition penalty; compare old/new scoring on identical frozen graphs. Primary uses all existing E16 adaptive-minPts1 4 cm components before geometry; exact E13 1 m graph is a separate control. No Doppler, DBSCAN/geometry tuning, hard count-size rejection or silver-derived weight selection. Silver is opened only after unconditioned outputs exist, to fix old-score feasibility witnesses and rescore the same paths. All-path combinatorial rank remains UNKNOWN.
+
+**Prospective stop:** Require rank-surrogate reduction and same-span score-margin improvement in at least4/5 sequences each; stop if old reference or new near-static zero-hit output dominates in at least3/5, zero observations are recovered, or complete evaluable witnesses cannot be established. Preserve failures and do not stack features or retune.
+
+**Completed E18 evidence:** One frozen run passed the prospective gate. Same-fine-graph unconditioned hits56/80→79/80, fixed-witness rank and matched-window margin each improve4/5; historical control0/80→79/80, allfive original persistent-clutter paths demoted. Background terms account for most of these historical fixed-path score losses; this is decomposition, not a separate background-only performance ablation. Full80-observation feasible witnesses exist in both families;124protected files/source identity remain unchanged.
+
+**Null/negative evidence:** fine100m_cross_5alreadyrank1/margin0 stays unchanged; fine200m_cross_10fixed margin remains−0.034;300m fixed-witness new rank only≥8. Both new winners miss200m_cross_5/frame21(~3.254m at unchanged3m gate). Fine old winners are not all clutter (56silver hits), and new unobserved path nodes are not validated target points.
+
+**Conclusion / bounded decision:** Supported on this retrospective DEV graph for the combined score, not independent GT/negative/held-out performance, operational precision or each feature's independent value. Gate passed, so kill not triggered; end this one experiment without further feature stacking, weight changes, label edits or formal-baseline adoption. Global combinatorial rank and separate background/motion/Doppler value remain UNKNOWN. See E18 in `EXPERIMENT_LOG.md` and the independent report.
+
 ## Possible research directions
 
 Everything in this section is **PROPOSED** or **SPECULATIVE**, not an experimental result.

@@ -31,6 +31,40 @@ This log records experiments that can be inferred from repository artifacts. It 
 | `scripts/published_baseline_dp_mvp.py` | `0601d93a804ecb66dcb1d0185fc6f2c272a5c5ac9f47674bc4d34cefa7766d9f` |
 | `scripts/dp_failure_forensics.py` | `9116d6e724b4e8460ee2914a55b83ec9f6bb9dcae50a86b6f17d5852db8be328` |
 
+## E18 — Frozen causal background-relative + motion-coherence DP MVP
+
+**Run date:** 2026-10-10. Freeze09:48:37.422UTC; unconditioned run09:49:17.523–09:51:49.360UTC,151.837s. **Status:** TESTED / VERIFIED RESULT only on80frozen DEV_SILVER observations; not independent paper GT.
+
+**Question:** Can one prior-frame occupancy contrast plus real-dt motion-coherence soft penalty demote original persistent-static-clutter winners without label-informed weight search?
+
+**Identity/inputs:** Parent `bf149c8eaeea1734736ab589285103b27d10c26b`; dirty-run wrapperSHA `9c536437b0e8ec6ddb75b9caa9d7da7910d319fef2ddf0fc7b76cf5e2757c0d3`, coreSHA `f056d21196afc3c7b89366c4d15b2ddc5aaa77bb3fd9f9b9c8f9ce2efbcb875f`; protocolSHA `ef29bba4a15e909248fc5b790d1401938e3799ffcd9c2a55f19826545f18cb36`. LabelsSHA `37c4452a68e544d75034389f82bbaf1e868903bb2225b395b9d66d0cdd48b8db` unchanged.124protected input/source/cache/result hashes recorded. Primary: existing all E16adaptive-minPts1pregeometry components,20,122nodes/479,081edges,7,202singletons; control: exact E13historical1m16,995nodes/371,600edges, allfive originalwinnersreplayed.272bagframes. Same nodes/edges for both scores within each family; no cross-family score attribution.
+
+**Environment:** Existing `fmcw` Python3.10.12, NumPy2.2.6, SciPy1.15.3, scikit-learn1.7.2; Linux6.8.0-136generic. No randomness or parameter search.
+
+**Exact commands:**
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python -m unittest discover -s tests -p 'test_background_motion*.py' -v
+PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python scripts/background_motion_dp_mvp.py freeze
+PYTHONDONTWRITECODE=1 PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python scripts/background_motion_dp_mvp.py graph
+PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python scripts/background_motion_dp_mvp.py run
+PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python scripts/background_motion_dp_mvp.py evaluate
+```
+
+The extra graph `PYTHONDONTWRITECODE` variable was unused, no code effect. Effective graph command also appears in its manifest. Output: `FMCW_Background_Motion_DP_MVP.md`, `results/background_motion_dp_mvp/`; no historical evidence overwritten.
+
+**Configuration:** Old node formula unchanged; add `1−2p`, p=(pastoccupiedframes+1)/(pastframes+2),1mzero-origin sensor grid, all fine cache cells queried before current frame update, Beta(1,1), weight1, no candidate delete. Real-dt transition: speed-change penalty normalized by inherited15m/s² acceleration bound, regularized directional change with1m scale; unitweight, first2nodehistoryzero penalty. Original graph pruning/gates/gap/count/duration unchanged; common eligibility-aware DP retains legal negative-score histories. No Doppler/intensity additions, no geometry/DBSCAN retuning; fine input is explicitly before oldgeometry, historicalgeometry preserved. One offline global path perbag, no score threshold. Protocol/source/functions/kill frozen before graph and real scoring; labels only parsed after full outputs complete.
+
+**Metrics:** Unconditioned observed-silver center hits within existing3m gate; fixed old-score-guided witnesses rescored identically; strict-greater terminal-edge representative rank evidence, global rank UNKNOWN; matched-window score margins; volume/runtime not precision. Reference witnesses coverall80inbothgraphs. Entire sequence denominator5 preserved.
+
+**Results:** Primary recall56/80→79/80 (70→98.75%);100/200/300m19/30→30/30,37/40→39/40,0/10→10/10. Witness ranks1→1,296→1,3→1,≥5→≥2,291→≥8; rank and margin each improve4/5. Fine oldreference remains≥witness2/5 (one identicalUAV-like reference tie), no newnearstaticzero-hitwinner. Historical score-only0/80→79/80; witnessrank4→1,259→1,9→1,≥21→≥2,≥466→≥4, originalfullclutter scores31.158→12.381,44.745→6.394,81.084→5.610,46.979→5.555,61.480→5.536. Originalclutter newrank lowerbounds26,720/50,944/105,146/58,323/76,919. Independent causal review37,117nodes/850,681edges/20graphfiles passes;14synthetic unit tests pass;124protected files/source/testhashes unchanged.
+
+**Negative/null record:** Both new full winners miss200m_cross_5/frame21(~3.254m); no label/gate change. Primary firstsequencealreadyrank1unchanged; fine200m_cross_10marginstill−0.034,300m witnessnotrank1. Unlabeled-pathidentity/operationalprecision/falsealarms/independentGTperformance and separatebackground/motionincrementalvalue UNKNOWN. Oldfinefull winnersalready56hits, not allclutter. Center-cellbackgroundmaymiss empty-centroidcells/penalizerevisits; offline optimizernotonline.
+
+**Decision:** `MVP_GATE_PASSED_NOT_OPERATIONAL_VALIDATION` in both families; predeclared kill not triggered. Preserve all20unconditioned outputs, fixed-path decompositions/rank pools and one miss. Do not automatically stackfeatures, tuneparameters, modifylabels/formalbaseline, upgradeBenchmarkv1 or claimpaperperformance. New user authorization covered this isolated run after E17, not further work.
+
+**Verification environment limitation:** Optional `fmcw/bin/python -m pytest -q` for the two new and two historical test files failed with `No module named pytest`; no package installed or environment changed.14new tests passed viaunittest, and7fixture-free historicaltest functions passed bydirectimport/invocation. Exact commands/logic retained in `results/background_motion_dp_mvp/validation_checks.json`. Independent result accounting checks60score/rank records,20selectedoutputs,12groups and51evaluated-outputhashes, plus historicalreferencepaths; all pass. These are verification, not extra realscore variants.
+
 ## E17 — Final read-only geometry/support invariance audit
 
 **Run date:** 2026-10-10;08:14:44.057–08:14:45.558 UTC, descriptor run1.5005 s (not detector runtime).

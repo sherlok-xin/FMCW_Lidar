@@ -6,6 +6,15 @@ The ordering below reflects dependency and scientific value. Algorithm novelty i
 
 ## P0 — Establish an auditable baseline
 
+### 2026-10-10 one frozen background/motion DP MVP — complete
+
+- E18 is the new explicitly authorized experiment after E17's stop. Preserve `FMCW_Background_Motion_DP_MVP.md`, all graph/path/rank/score artifacts and `results/background_motion_dp_mvp/`; do not alter old baseline, labels, caches or weights.
+- Primary score-only same-fine-graph comparison56/80→79/80; historical exact-graph control0/80→79/80. Predeclared gate passed, but this is not permission for feature stacking, tuning or automatic next experiments.
+- Keep the one200m_cross_5/frame21 miss (~3.254m), rank1→1null, fine200m margin stillnegative and300m witness rank≥8; do not widen the3m gate or choose a new silver oracle.
+- Fine graph old winners already include56silver hits: never call every old reference persistent static clutter or count cross-family candidate/geometry differences as score gain.
+- Global combinatorial rank, operational precision/false alarms, target-absent behavior, independent held-out performance and background-versus-motion independent gains remain UNKNOWN. Existing independent point/negative/GT gates still apply; execution needs a new scoped request.
+- Stop work at this frozen MVP handoff. No formal default change, Benchmark v1 upgrade or paper headline claim is justified by DEV recall alone.
+
 ### 2026-10-10 final geometry invariance diagnostic — complete
 
 - E17 complete: preserve `FMCW_Geometry_Invariance_Audit.md` and `results/geometry_invariance_audit/`, all80observations/9misses and old1/3m sensitivity.100protected files unchanged; no algorithm/parameter/label/cache edits.

@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "status": "FROZEN_MVP_DEV_SILVER_NOT_PAPER_GT",
+  "primary_family": "fine_4cm_pregeometry",
+  "families": [
+    "fine_4cm_pregeometry",
+    "historical_1m_graph"
+  ],
+  "methods": [
+    "original_score",
+    "background_motion"
+  ],
+  "fine_candidates": "READ all saved E16 adaptive_minPts1 components before geometric acceptance; no rerun/reparameterization or acceptance/count/extent/range hard rejection",
+  "historical_control": "exact E13 1m candidate generator and graph replay; old hard geometry stays historical only; cannot call this a 4cm graph",
+  "graph_rules": {
+    "input": "same frozen 1 m range-adaptive minPts=1 candidates used by temporal_evidence_mvp",
+    "doppler": "NOT_USED",
+    "node_score": "0.50 + 0.30*exp(-extent/2m) + 0.20*min(log1p(raw_support)/log(6),1)",
+    "node_threshold": "NONE",
+    "edge_max_frame_gap": 3,
+    "edge_max_dt_s": 3.5,
+    "edge_max_speed_mps": 25.0,
+    "edge_max_acceleration_mps2": 15.0,
+    "edge_nearest_predecessors_per_prior_frame": 12,
+    "gap_penalty_per_skipped_frame": 0.25,
+    "path_min_nodes": 3,
+    "path_min_duration_s": 2.0,
+    "output": "single highest-score admissible path per bag; one UAV is assumed by the DEV flight design",
+    "algorithm": "second-order Viterbi over pruned candidate DAG edge states"
+  },
+  "graph_rules_scope": "inherited numeric gates/pruning/qualification; nested historical input description does NOT describe primary fine candidates",
+  "graph_identity": "both scores share byte-identical frozen nodes/edges within each family; no cross-family score-causality claim",
+  "background": {
+    "cell_m": 1.0,
+    "coordinate_frame": "sensor-relative [x,z,-y], zero-origin floor",
+    "history_source": "ALL existing post-ROI/intensity/leveled-height 4cm cache voxels, not just accepted candidates",
+    "update": "query before update; each occupied cell increments once per frame; include empty frames in prior-frame denominator",
+    "prior": "Beta(1,1), neutral first-frame p=0.5; not calibrated P(clutter|data)",
+    "p": "(prior occupied frames + 1)/(prior frames + 2)",
+    "soft_contrast": "1 - 2*p",
+    "background_weight": 1.0,
+    "deletion": "NONE",
+    "limits": "center-cell proxy may miss within-cell shape, centroid cell empty for large components; no neighborhood feature added"
+  },
+  "node_score": "original frozen score + 1*(1-2*p); original compactness/support stay soft, not physical-size hard priors",
+  "transition": {
+    "real_dt": true,
+    "a_dt": "0.5*(previous_edge_dt+current_edge_dt)",
+    "speed_penalty": "0.5*((norm(v)-norm(v_previous))/(15*a_dt))**2",
+    "direction_penalty": "0.5*(norm(v)*norm(v_previous)-dot(v,v_previous))/(norm(v)*norm(v_previous)+(1m/a_dt)**2)",
+    "motion_weight": 1.0,
+    "root_two_nodes": "no prior velocity, zero motion term",
+    "scales": "15 m/s^2 inherited hard acceleration bound; 1m inherited occupancy scale, not measured position uncertainty",
+    "no_minimum_speed_bonus_or_gate": true
+  },
+  "weights_provenance": "one unit background contrast and one unit motion penalty, generic dimensionless equal weighting; no fit, sweep, label-derived values, or bag/range-specific values; design informed by prior failure diagnosis, not a blind held-out study",
+  "search_correctness": "eligibility-aware edge DP: preserve unqualified (capped_count,start_frame) states and one qualified winner; both scores same solver; negative-score qualification bug avoided",
+  "doppler": "NOT_USED, neither score nor graph; no intensity term added",
+  "labels": "unchanged 80 silver observations, parsed/used ONLY after unconditioned run artifacts complete; bytes may be hashed for integrity earlier",
+  "reference_paths": "historical graph: E14 fixed silver_feasible and top_clutter_full paths exactly; fine graph: one old-score lexicographic silver witness and old-score full winner, then FREEZE same paths for both rescores; never optimize silver witness by new score",
+  "incomplete_references": "record partial/absent witness and candidate presence, never force 80 hits or move labels; ineligible ranks/margins UNKNOWN; incomplete silver witnesses force STOP_INSUFFICIENT_WITNESS and do not count as systematic improvement; denominator remains five",
+  "rank": "within each graph, full-bag and matched silver-span eligible edge-state winner representatives; strict better-score count+1; exact representative rank only if fixed path itself retained; exact combinatorial rank UNKNOWN",
+  "ranking_tie_tolerance": 1e-09,
+  "top_k_representatives": 100,
+  "output": "one highest-score eligible offline path per bag, no threshold; causal features do not imply online outputs",
+  "kill": {
+    "scope": "primary fine graph; historical control separately reported",
+    "systematic_improvement": "strict representative exceedance-count reduction AND strict same-span UAV-minus-old-clutter margin increase in at least 4 of 5 sequences each",
+    "persistent_old_clutter_dominance": "old fixed reference's same-window new score >= fixed silver witness new score in >=3/5 sequences; historical reference is E14 clutter, fine reference is not pre-assumed clutter",
+    "persistent_new_static_dominance": "new unconditioned winner has zero silver hits and median speed <=1m/median real bag dt in >=3/5 sequences; diagnostic static scale, not an algorithm gate",
+    "zero_recovery": "new primary unconditioned output zero silver hits across all five sequences",
+    "action": "if any failure criterion holds: STOP_DIRECTION; no retuning/extra features/threshold search",
+    "invalid_run": "causal, graph, path replay, or exhaustive correctness failures mean IMPLEMENTATION_INVALID, not a method negative"
+  },
+  "evaluation": "per sequence and nominal100/200/300: fixed-path score components/rank evidence, unconditioned silver recall/coverage, candidate/output volume, runtime; precision/false alarms UNKNOWN",
+  "randomness": "NONE"
+}

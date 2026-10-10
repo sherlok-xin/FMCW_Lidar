@@ -1,0 +1,40 @@
+{
+  "utc_start": "2026-10-10T09:49:17.523155+00:00",
+  "utc_end": "2026-10-10T09:51:49.360404+00:00",
+  "elapsed_s": 151.8372671249963,
+  "command": "PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python scripts/background_motion_dp_mvp.py run",
+  "labels_parsed_or_used_for_inference": false,
+  "labels_bytes_hashed_for_integrity": true,
+  "environment": {
+    "python": "3.10.12",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "sklearn": "1.7.2",
+    "platform": "Linux-6.8.0-136-generic-x86_64-with-glibc2.35"
+  },
+  "output_sha256": {
+    "results/background_motion_dp_mvp/selected_paths.csv": "f205fa1a18cbfef59e7ea27f2959162003b290ce88a974c606e7d4c29a3cc84c",
+    "results/background_motion_dp_mvp/top100_full_paths.csv": "77d09a5a0048bc54c6708771ffb1ba139eec4b1c3810075a23b3c8dfb3d1639d",
+    "results/background_motion_dp_mvp/unconditioned_summary.csv": "7b5a97b33db33366f5ea2d34e1dc28cd2a0944eed281435b43b1ca1791db78b6",
+    "results/background_motion_dp_mvp/winner_pools/fine_4cm_pregeometry__100m_cross_10__background_motion__full.csv": "cef3fd4f7fa9c2c87af4a06c2b9962d9638b2fe0b1352e2ffdc6b565ffdf9951",
+    "results/background_motion_dp_mvp/winner_pools/fine_4cm_pregeometry__100m_cross_10__original_score__full.csv": "40bd4883e2277d1cd32d92f2660e66ba0e1497c8cc33a68550c40ecf042ea6cb",
+    "results/background_motion_dp_mvp/winner_pools/fine_4cm_pregeometry__100m_cross_5__background_motion__full.csv": "7d80e81edb3119539c2df29e00a0f21980fe6ec93e9c248ab8933d831583bbce",
+    "results/background_motion_dp_mvp/winner_pools/fine_4cm_pregeometry__100m_cross_5__original_score__full.csv": "e9fb89b9148a82c7a33f5d40745a2d9c179b44fba760d5b2cc0c45cbebe396ab",
+    "results/background_motion_dp_mvp/winner_pools/fine_4cm_pregeometry__200m_cross_10__background_motion__full.csv": "7e397fa2ca8ccf7600b371d25fe64b8fa270274c1c1066c5ceaf51367bd71fd4",
+    "results/background_motion_dp_mvp/winner_pools/fine_4cm_pregeometry__200m_cross_10__original_score__full.csv": "41beb28f3a9429018aa918a78c8492a5cd7a61de1124119a3c94355535cade7b",
+    "results/background_motion_dp_mvp/winner_pools/fine_4cm_pregeometry__200m_cross_5__background_motion__full.csv": "1771c02b53b64f3c250988cfb81a1e38525587508aa67afd1f5c68370ee57c99",
+    "results/background_motion_dp_mvp/winner_pools/fine_4cm_pregeometry__200m_cross_5__original_score__full.csv": "a49073117311477d5376fdbd4f2e6948749123afd1c1a1ab587777b96d70392b",
+    "results/background_motion_dp_mvp/winner_pools/fine_4cm_pregeometry__300m_cross_10__background_motion__full.csv": "293952de1db6c365890eb6fddb6ff546b3ddafbcaa63c29b7ab2a66ea7f13832",
+    "results/background_motion_dp_mvp/winner_pools/fine_4cm_pregeometry__300m_cross_10__original_score__full.csv": "83c2144d3259e3ca1cb88feff5dc707fc99778ec1c00f95bc0c5bb1dbf978e87",
+    "results/background_motion_dp_mvp/winner_pools/historical_1m_graph__100m_cross_10__background_motion__full.csv": "cc1800c13909bc6525ee4f1fe5876192d7e4123c770291d66dd53bc2478af6ad",
+    "results/background_motion_dp_mvp/winner_pools/historical_1m_graph__100m_cross_10__original_score__full.csv": "9000c3afe581d6af9b275257616df659242b81c1eda30e30f8ba7af1889caacc",
+    "results/background_motion_dp_mvp/winner_pools/historical_1m_graph__100m_cross_5__background_motion__full.csv": "542368283afd60f26a6b5018af17ad04c2f94310c1ac1fff15c6daadd03d39c6",
+    "results/background_motion_dp_mvp/winner_pools/historical_1m_graph__100m_cross_5__original_score__full.csv": "155679e9492ee28ccb164a0f78b015078ba7239fb38547e8a87d1a2f9055fe6c",
+    "results/background_motion_dp_mvp/winner_pools/historical_1m_graph__200m_cross_10__background_motion__full.csv": "177b35d3d37f218065623d5f22e7ea268f00d30a398588e8be926fc25e0c2758",
+    "results/background_motion_dp_mvp/winner_pools/historical_1m_graph__200m_cross_10__original_score__full.csv": "4169fed4fa8fdc34759ae9b05d23154e10343fa6fb77eaca35e06a2cfde3e001",
+    "results/background_motion_dp_mvp/winner_pools/historical_1m_graph__200m_cross_5__background_motion__full.csv": "a878738d1a54af269782c192ed6a119154b52a149d22cd706a2a3a485e3dbcd8",
+    "results/background_motion_dp_mvp/winner_pools/historical_1m_graph__200m_cross_5__original_score__full.csv": "fe76d47856e31c319a67c43901df9f4d1524cf2b74f1a50d1da936a00761b5eb",
+    "results/background_motion_dp_mvp/winner_pools/historical_1m_graph__300m_cross_10__background_motion__full.csv": "8c190e92980c5592d5c28f319917f13b285f9d937998679c662b0246e4012a65",
+    "results/background_motion_dp_mvp/winner_pools/historical_1m_graph__300m_cross_10__original_score__full.csv": "47bd8480cdd272282b466f6d7e31d706ec0c9f51cf466c87d719394eecc61673"
+  }
+}

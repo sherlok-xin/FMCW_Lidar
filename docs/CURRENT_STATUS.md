@@ -11,6 +11,16 @@ The repository contains a substantial rule-based FMCW-LiDAR processing and track
 
 The strongest current outcome is diagnostic rather than algorithmic: two successful motion sequences show that compactness, spatial isolation, temporal persistence, and agreement between Doppler and range change are more transferable cues than raw Doppler magnitude or a stable single-frame shape. The existing FMT benchmark does not demonstrate an improvement over the baseline.
 
+### 2026-10-10 isolated background-relative + motion-coherence DP MVP
+
+**TESTED / VERIFIED RESULT on frozen DEV_SILVER only; new user-authorized E18 after the completed E17 diagnostic.** `FMCW_Background_Motion_DP_MVP.md` and `results/background_motion_dp_mvp/` freeze a single causal prior-frame occupancy contrast plus real-dt soft speed/direction transition. No Doppler, sweep, silver-derived weight selection or historical baseline/DBSCAN/geometry/cache/label edit.
+
+Historical E13 graph is1m, not4cm. Primary uses all20,122saved E16adaptive-minPts1components before geometry, including7,202singletons/10,325old rejected components, with479,081frozenedges; both scores share identical inputs. Historical control separately replays16,995nodes/371,600edges and all five old winners. Common eligibility-aware DP corrects negative-score qualification handling without changing historical source/gates.
+
+Primary unconditioned silver hits56/80→79/80;100/200/300m19/30→30/30,37/40→39/40,0/10→10/10. Fixed-witness rank-surrogate and matched-window margin each improve4/5; fine100m_cross_5 alreadyrank1 has no improvement, fine200m_cross_10 margin remains−0.034 and300m fixed-witness rank is only≥8. Historical original static winners all lose rank/score, unconditioned0/80→79/80. New full paths in both families miss200m_cross_5/frame21, distance~3.254m at unchanged3m gate. All80observations have fixed feasible witnesses in both graphs.
+
+Predeclared gate **MVP_GATE_PASSED_NOT_OPERATIONAL_VALIDATION**; no kill triggered, no additional features/weights/experiments run. Operational precision/false alarms, unlabeled path identity, independent GT/held-out performance and separate background/motion contributions remain UNKNOWN. Features are causal but full-bag DP is offline. Rank is terminal-edge representative evidence, not global combinatorial rank.14synthetic tests pass;124protected files unchanged; independent causal audit validates37,117nodes/850,681edges. Completed result audit and manifests preserve all negative/null results. No Benchmark v1 or final operating point selected.
+
 ### 2026-10-10 final read-only geometry invariance audit
 
 **TESTED / VERIFIED RESULT on 80 existing observed DEV/SILVER center-neighborhood proxies only.** `FMCW_Geometry_Invariance_Audit.md` and `results/geometry_invariance_audit/` compare raw/4 cm/1 m support, XYZ spans, diameter, range thickness, NN/MST and intensity; no detector/clustering or threshold search was run. All historical 71hits/9misses remain unchanged.

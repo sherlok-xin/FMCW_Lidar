@@ -1,0 +1,3 @@
+family,condition_id,frame_index,method,selected_node_id,selected_to_silver_distance_m,frozen_matching_radius_m,status
+fine_4cm_pregeometry,200m_cross_5,21,background_motion,1563,3.25369304484578,3.0,MISS_KEEP_LABEL_AND_GATE_UNCHANGED
+historical_1m_graph,200m_cross_5,21,background_motion,1327,3.253689753354447,3.0,MISS_KEEP_LABEL_AND_GATE_UNCHANGED

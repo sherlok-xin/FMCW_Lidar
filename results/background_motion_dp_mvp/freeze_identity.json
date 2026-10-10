@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-10T09:48:37.422436+00:00",
+  "command": "PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python scripts/background_motion_dp_mvp.py freeze",
+  "parent_commit": "bf149c8eaeea1734736ab589285103b27d10c26b",
+  "dirty": true,
+  "source_sha256": {
+    "scripts/background_motion_core.py": "f056d21196afc3c7b89366c4d15b2ddc5aaa77bb3fd9f9b9c8f9ce2efbcb875f",
+    "scripts/background_motion_dp_mvp.py": "9c536437b0e8ec6ddb75b9caa9d7da7910d319fef2ddf0fc7b76cf5e2757c0d3"
+  },
+  "test_sha256": {
+    "tests/test_background_motion_core.py": "a0f3220bd551d5cea138340463c8ec56923b1657c6fda6932d0f1427a3add5af",
+    "tests/test_background_motion_wrapper.py": "51d251d2b4d608f8c94eab5138939e3930b2b580f736cf997dfc66193aeae12c"
+  },
+  "protocol_sha256": "ef29bba4a15e909248fc5b790d1401938e3799ffcd9c2a55f19826545f18cb36"
+}

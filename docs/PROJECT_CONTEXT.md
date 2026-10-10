@@ -273,6 +273,10 @@ Other repository-local metadata:
 | `scripts/reverse_engineer_baseline_uav.py` | Reconstructs cross-range baseline target track | TESTED |
 | `scripts/reverse_engineer_longitudinal_baseline.py` | Reconstructs longitudinal baseline target track | TESTED |
 | `visualize_pcd.py` | PCD visualization utility | IMPLEMENTED |
+| `scripts/background_motion_core.py` | Isolated causal occupancy annotations and eligibility-aware real-dt DP; no Doppler | TESTED in E18, DEV/SILVER only; not formal baseline |
+| `scripts/background_motion_dp_mvp.py` | Prospectively freezes separate fine-pregeometry and exact historical graphs, scores without labels, then evaluates fixed references | TESTED; E18 report/results preserve formulas, hashes, rank bounds and one miss |
+
+E18's historical candidate graph is1m; the separate primary graph contains all saved E16adaptive-minPts1fine4cm components before oldgeometry. Within-family scoring comparisons are controlled; cross-family representation/candidate differences are not score attribution. `FMCW_Background_Motion_DP_MVP.md` and `results/background_motion_dp_mvp/README.md` document this isolated research MVP. Neither the historical processing pipeline nor labels/default thresholds have been changed. Combined-score DEV hits79/80 do not establish independent GT performance or operational precision.
 
 ## Datasets and data formats
 

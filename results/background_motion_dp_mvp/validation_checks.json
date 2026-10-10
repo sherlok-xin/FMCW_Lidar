@@ -1,0 +1,18 @@
+{
+  "status": "PASS_WITH_PYTEST_ENVIRONMENT_LIMITATION",
+  "new_synthetic_tests": 14,
+  "new_test_command": "PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python -m unittest discover -s tests -p 'test_background_motion*.py' -v",
+  "legacy_synthetic_regression_functions": 7,
+  "legacy_test_files": ["tests/test_dp_failure_forensics.py", "tests/test_published_baseline_dp_mvp.py"],
+  "legacy_execution": "Direct importlib loading and invocation of all sorted test_* functions; these seven functions use no pytest fixtures/dependency. All assertions passed. No raw-data scoring or alternate algorithm run.",
+  "legacy_exact_python_source": "import importlib.util\nfrom pathlib import Path\npassed=[]\nfor path in (Path('tests/test_dp_failure_forensics.py'),Path('tests/test_published_baseline_dp_mvp.py')):\n spec=importlib.util.spec_from_file_location(path.stem,path)\n module=importlib.util.module_from_spec(spec)\n spec.loader.exec_module(module)\n for name in sorted(dir(module)):\n  if name.startswith('test_'):\n   getattr(module,name)()\n   passed.append(f'{path}:{name}')\nprint('PASS',len(passed))\n",
+  "legacy_shell_invocation": "PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python - <<'PY' [legacy_exact_python_source] PY",
+  "attempted_pytest_command": "PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python -m pytest -q tests/test_background_motion_core.py tests/test_background_motion_wrapper.py tests/test_dp_failure_forensics.py tests/test_published_baseline_dp_mvp.py",
+  "attempted_pytest_result": "Exit 1: fmcw/bin/python: No module named pytest; no tests executed via pytest, no environment/package modification made",
+  "pytest_failure_interpretation": "Environment limitation, not a detector/score failure; new tests passed via unittest and legacy assertions passed by direct invocation",
+  "frozen_source_protocol_and_protected_check": "PASS, 124 files unchanged after documentation/report creation",
+  "git_diff_check": "PASS for tracked documentation edits",
+  "supplemental_csv": "observed_miss_diagnostic.csv is a read-only post-run diagnostic, not an extra score trial or original evaluation-manifest output",
+  "algorithm_parameters_changed_after_freeze": false,
+  "additional_real_data_score_trials": 0
+}
