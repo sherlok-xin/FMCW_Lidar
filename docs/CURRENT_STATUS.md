@@ -3,13 +3,21 @@
 Status date: **2026-10-10**
 Basis: repository-wide source and artifact inspection; no chat-history claims are treated as evidence.
 
-Git is now initialized on branch `main` (unlike the 2026-09-20 audit). The tested sparse-MVP script and tests are present in snapshot `e62848f787dcfd1bb2f91536ca23e6a50580a77b`; generated `results/` artifacts are ignored, so their run-manifest hashes remain required for provenance.
+Git is now initialized on branch `main` (unlike the 2026-09-20 audit). The tested sparse-MVP script and tests are present in snapshot `e62848f787dcfd1bb2f91536ca23e6a50580a77b`. Necessary diagnostic CSV/JSON/report artifacts are now tracked; raw bags/PCDs, virtual environment and NPZ caches remain excluded. Run-manifest hashes remain required for provenance, including local caches.
 
 ## Executive status
 
 The repository contains a substantial rule-based FMCW-LiDAR processing and tracking prototype, several ROS/offline variants, and a useful body of retrospective data archaeology. It does **not** yet contain the ground truth, provenance, calibration, evaluation protocol, or controlled comparisons required to make reliable UAV detection/tracking accuracy claims.
 
 The strongest current outcome is diagnostic rather than algorithmic: two successful motion sequences show that compactness, spatial isolation, temporal persistence, and agreement between Doppler and range change are more transferable cues than raw Doppler magnitude or a stable single-frame shape. The existing FMT benchmark does not demonstrate an improvement over the baseline.
+
+### 2026-10-10 final read-only geometry invariance audit
+
+**TESTED / VERIFIED RESULT on 80 existing observed DEV/SILVER center-neighborhood proxies only.** `FMCW_Geometry_Invariance_Audit.md` and `results/geometry_invariance_audit/` compare raw/4 cm/1 m support, XYZ spans, diameter, range thickness, NN/MST and intensity; no detector/clustering or threshold search was run. All historical 71hits/9misses remain unchanged.
+
+Raw-count/fine-cell group-median max/min ratios are7.9/5.5, while raw diameter/max-axis are1.79/1.92. This is relative descriptive stability, not invariance: x-span/range thickness still vary4.88/3.73;1 m representation erases internal shape in31/80frames,30of which are not raw singletons.8near fixed-component misses have34–46fine voxels but max-axis only0.268–0.813 m, overlapping near hits; adaptive frame20 becomes47voxels/max-axis1.583m but retains the same max32 rejection. The remaining far miss is singleton. No UAV-specific single-frame geometry hard rejection is validated by these selected positive observations; independent point/negative labels and true body dimensions remain UNKNOWN.
+
+100protected files remain identical;6synthetic tests pass;160raw descriptor rows and same-child support reconstruct correctly; independent1802summary/106ratio/1440NN-uniqueNN-MST comparisons pass. Nearest saved component is not automatically the accepted component explaining a frame hit (`300m_cross_10/frame4/fixed`); lookup and historical hit remain separate. Final diagnostic requested by the user is complete; no new rule, feature selection, parameter or algorithm work authorized.
 
 ### 2026-10-10 frozen DBSCAN fragmentation attribution
 

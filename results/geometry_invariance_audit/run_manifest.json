@@ -1,0 +1,29 @@
+{
+  "utc_start": "2026-10-10T08:14:44.057077+00:00",
+  "utc_end": "2026-10-10T08:14:45.557560+00:00",
+  "elapsed_s": 1.5005008159932913,
+  "freeze": {
+    "utc": "2026-10-10T08:14:43.111588+00:00",
+    "script_sha256": "8900eb3f3e6aa3116e1514ed231d80adbf3e68cd4a1756af045ae8250e1a533c",
+    "protocol_sha256": "c0961702c184d7d3cf0bd0fe8d88d56c50d5f2e82242b5cd6b434ece9fd97438",
+    "git_head": "8912fb8eb67dd441483fb378ddb5bb532fbcfd1a",
+    "git_status": "?? .local/\n?? results/geometry_invariance_audit/\n?? scripts/geometry_invariance_audit.py\n?? tests/test_geometry_invariance_audit.py\n"
+  },
+  "environment": {
+    "python": "3.10.12",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "platform": "Linux-6.8.0-136-generic-x86_64-with-glibc2.35"
+  },
+  "command": "PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python scripts/geometry_invariance_audit.py run",
+  "protected_files_unchanged": true,
+  "output_sha256": {
+    "results/geometry_invariance_audit/existing_component_geometry.csv": "a66cc0f3465b02a98276f83cf36a88d6ffbb34ce01d82e1f04f49dd1f6f044e6",
+    "results/geometry_invariance_audit/feature_summary.csv": "fdef84ef0b3e6964840de0606d1a6aa4ff510779682e102ef5e75f259b333b2a",
+    "results/geometry_invariance_audit/join_validation.csv": "3d4209f291f69851128aace30e29286af5c3b4ca1c1dfa19f5d09aa3bb90154a",
+    "results/geometry_invariance_audit/miss_geometry.csv": "93484a376d31d4dc30fcfc558cf29b1c7dfd7167795cae2b400cf149c2186ca4",
+    "results/geometry_invariance_audit/observation_features.csv": "9d5aad0b4159726d57212088a8ee25842ff6ad84cd8b757a8dac1caf957ce4b1",
+    "results/geometry_invariance_audit/range_associations.csv": "ec61f55274e67a5a8d96cb4a11e7a598df7dfaa9d5c3a661eb3d2fcee0134878",
+    "results/geometry_invariance_audit/range_stability.csv": "bb663ba7c452f730c79f15f3359aaae9fc35cfab29fa54176fa92a077f55d9b0"
+  }
+}

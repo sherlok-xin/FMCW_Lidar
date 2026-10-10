@@ -319,6 +319,22 @@ These decisions are evidence-bounded, not permanent prohibitions.
 
 **Conclusion / decision:** Coarse voxel collapse and representation-dependent geometric count limits must be separated from real raw non-return. Epsilon is not the observed recall bottleneck here. No voxel/geometry/minPts default chosen or changed, and no complete coarse/fine performance experiment inferred from cell counts.
 
+### H27 — A fixed voxel-count interval describes an invariant physical UAV size
+
+**Status:** contradicted as a physical-size interpretation on E17 observed DEV/SILVER support (2026-10-10), not a validation of alternative rejection rules.
+
+**Evidence:** Raw/fine-cell group-median ratios7.9/5.5 across100/200/300m; samechildren1m representation produces31singlecell frames,30with multiple raw returns.8of9existing geometry misses exceed32fine voxels while fixed saved component max-axis0.268–0.813m overlaps near hits; adaptive frame20 becomes1.583m but still only fails max32. Far singleton is removed by minimum2.100m_cross_5/frame30 has52raw/36fine/1coarse but raw diameter0.382m.
+
+**Conclusion / decision:** Cell count measures sampled/represented support, not body dimensions. Preserve the count-rule miss record; no new interval, representation, parameter or method selected.
+
+### H28 — One observed single-frame metric supports a cross-range UAV-specific hard rejection
+
+**Status:** NOT VERIFIED by current evidence; no validated feature established. This is not a theorem excluding every conceivable fixed constraint.
+
+**Evidence:** Raw diameter/max-axis group-median ratios1.79/1.92 are smaller than count ratios, but x-span/range thickness ratios4.88/3.73, sparse singleton degeneracy, mean-cell shape collapse and1/3m peripheral sensitivity remain. NN/MST/intensity also depend on sampling/range/selection; near hits/misses overlap. All80samples are retrospective observed positives, not independent point/body or negative GT. Radius3m'sdiameter≤6m is tautological, not safe-bound evidence.
+
+**Conclusion / decision:** True dimensions/attitude, point membership, negative and held-out validity remain UNKNOWN. Do not promote near-constant medians or positive-support envelopes to thresholds, and do not tune on these observations. User's final descriptive diagnostic is complete; no further algorithm experiment initiated.
+
 ## Possible research directions
 
 Everything in this section is **PROPOSED** or **SPECULATIVE**, not an experimental result.

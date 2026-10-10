@@ -6,6 +6,14 @@ The ordering below reflects dependency and scientific value. Algorithm novelty i
 
 ## P0 — Establish an auditable baseline
 
+### 2026-10-10 final geometry invariance diagnostic — complete
+
+- E17 complete: preserve `FMCW_Geometry_Invariance_Audit.md` and `results/geometry_invariance_audit/`, all80observations/9misses and old1/3m sensitivity.100protected files unchanged; no algorithm/parameter/label/cache edits.
+- Do not equate cell count with UAV dimensions, singleton centroid extent0 with a zero-size UAV, or near-constant group medians with per-frame invariance.
+- No validated UAV-specific single-frame geometry hard rejection emerged. Record this evidence limit, not a new threshold proposal or a universal impossibility claim.
+- Nearest saved component is only a descriptor lookup; frame hit is existence of an accepted match within the old gate. Keep these separate.
+- This was the user's final read-only diagnostic. Stop new diagnostic/algorithm experimentation here; existing independent-label/negative/held-out gates remain, but their execution requires a new user request.
+
 ### 2026-10-10 DBSCAN attribution diagnostic note
 
 - E16 is complete: preserve `FMCW_DBSCAN_Fragmentation_Attribution.md` and `results/dbscan_fragmentation_attribution/`; no selected/default parameter changes.

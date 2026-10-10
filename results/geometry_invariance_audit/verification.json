@@ -1,0 +1,18 @@
+{
+  "protected_files": 100,
+  "all_unchanged": true,
+  "observations": 80,
+  "radius_rows": 160,
+  "frozen_hit_frames": 71,
+  "frozen_miss_frames": 9,
+  "miss_max32": 8,
+  "miss_min2": 1,
+  "raw_feature_reconstruction_tolerance_m": 1e-12,
+  "raw_feature_reconstruction_all_pass": true,
+  "recorded_cell_support_reproduced": true,
+  "no_clustering_or_detector_invoked": true,
+  "no_new_thresholds_or_sweeps": true,
+  "no_pvalues": true,
+  "negative_label_status": "NONE_RELIABLE",
+  "uav_vs_clutter_hard_rejection_validation": "UNKNOWN_no_independent_negative_or_point_GT"
+}

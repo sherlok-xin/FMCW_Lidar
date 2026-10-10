@@ -31,6 +31,36 @@ This log records experiments that can be inferred from repository artifacts. It 
 | `scripts/published_baseline_dp_mvp.py` | `0601d93a804ecb66dcb1d0185fc6f2c272a5c5ac9f47674bc4d34cefa7766d9f` |
 | `scripts/dp_failure_forensics.py` | `9116d6e724b4e8460ee2914a55b83ec9f6bb9dcae50a86b6f17d5852db8be328` |
 
+## E17 — Final read-only geometry/support invariance audit
+
+**Run date:** 2026-10-10;08:14:44.057–08:14:45.558 UTC, descriptor run1.5005 s (not detector runtime).
+
+**Objective:** Describe which single-frame geometry/support quantities remain comparable across100/200/300 m and raw/4 cm/1 m representations; explain the existing2–32voxel rule's9misses without algorithms, new thresholds, sweeps or feature selection.
+
+**Status:** TESTED / VERIFIED RESULT on all80observed frozen DEV_SILVER centers, not independently verified UAV point/body GT. Final requested diagnostic, not a new method experiment.
+
+**Inputs:** E15raw frame/neighborhood point CSVs; E16representation support, original frame hit flags and saved full-scene cluster metrics; unchanged silver labels and provisional calibration.100protected input/source/cache/result files hashed in `results/geometry_invariance_audit/input_identity.json`, unchanged before/after and independently rechecked.
+
+**Code identity:** Git parent `8912fb8eb67dd441483fb378ddb5bb532fbcfd1a`; standalone `scripts/geometry_invariance_audit.py` SHA `8900eb3f3e6aa3116e1514ed231d80adbf3e68cd4a1756af045ae8250e1a533c`; test SHA `0976839d556d491487461aaa8d94f74ebee9aa8bd6067d5f99903784eebcf71e`.
+
+**Protocol:** SHA `c0961702c184d7d3cf0bd0fe8d88d56c50d5f2e82242b5cd6b434ece9fd97438`; unchanged80labels, existing1/3m neighborhoods; raw `[x,z,-y]` geometry, frame-equal-weight median/IQR/min/max, all range/sequence/hit group distributions and descriptive correlations. Same point-filtered children arithmetic means at existing0.04/1m sizes only; nearest saved component descriptor lookup separate from existence-based original frame match. No randomness, clustering, detector invocation, new limits or p-values.
+
+**Environment:** Python3.10.12 / NumPy2.2.6 / SciPy1.15.3 / Linux.
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python -m unittest discover -s tests -p test_geometry_invariance_audit.py -v
+PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python scripts/geometry_invariance_audit.py freeze
+PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python scripts/geometry_invariance_audit.py run
+```
+
+**Results:** 80observations×2radii=160rows;71HIT/9MISS preserved. Raw/fine count group-median ratios7.9/5.5 vs raw diameter/max-axis1.79/1.92; x-span4.88,range-thickness3.73.31coarse singlecell frames,30not raw singletons, raw countmedian21/range1–52.8near fixed misses exceed32voxels but saved component spans0.268–0.813m with44–56raw support, overlapping near-hit geometry; adaptive frame20 is47voxels/57raw/span1.583m with the same max32 rejection.1far singleton violates geometric min2. No raw>120 or axis≥6 deletion in these9saved components for either schedule.6descriptor/lookup tests pass;160raw descriptors and same-child counts/support match source, independent1802summary and106ratio rows match;1440NN/uniqueNN/MST checks match≤1e−12.100protected hashes unchanged.
+
+**Interpretation / decision:** Voxel count is sampling/representation-dependent, not an invariant physical UAV size prior. Some raw meter-scale descriptors vary less than counts but are not proved invariant. No UAV-specific single-frame fixed hard rejection is validated on this positive-only silver set. Do not pick replacement limits or alter formal methods; stop after final diagnostic.
+
+**Limitations / failure notes:** Centers are not point identity GT; peripheral returns matter in6frames. Isolated double arithmetic means are not whole-scene cache/component shape. Nearest component can be rejected while frame isHIT (`300m_cross_10/frame4/fixed`); this lookup bug was caught and corrected before freeze, original algorithms/hit flags unaffected. Missing true UAV dimensions, attitude/sampling metadata, negatives, weak/missed frames and independent held-out evidence. Radius3m imposes diameter≤6m by construction, not a learned safe size bound. No operational accuracy claimed.
+
+**Outputs:** `FMCW_Geometry_Invariance_Audit.md`; standalone descriptor script/test; `results/geometry_invariance_audit/` observation,miss,component,summary,range,join CSVs plus frozen input/run/verification/review identities.
+
 ## E16 — Frozen fine-cache DBSCAN fragmentation attribution
 
 **Run date:** 2026-10-10; main02:56:14–02:57:13 UTC, post-run component-lineage/QA02:59:22–03:00:06 UTC.

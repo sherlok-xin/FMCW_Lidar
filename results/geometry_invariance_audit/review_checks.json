@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-10",
+  "status": "TESTED_REPOSITORY_DESCRIPTOR_VALIDATION_ONLY",
+  "synthetic_tests": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python -m unittest discover -s tests -p test_geometry_invariance_audit.py -v",
+    "passed": 6,
+    "failed": 0,
+    "test_script_sha256": "0976839d556d491487461aaa8d94f74ebee9aa8bd6067d5f99903784eebcf71e"
+  },
+  "independent_csv_review": {
+    "unique_radius_rows": 160,
+    "silver_observations": 80,
+    "each_radius_hit_miss": [71, 9],
+    "summary_rows_recomputed": 1802,
+    "summary_match": true,
+    "median_ratio_rows_recomputed": 106,
+    "median_ratio_match": true,
+    "nn_unique_nn_mst_recomputations": 1440,
+    "nn_unique_nn_mst_all_match_atol_1e_minus_12": true,
+    "protected_hashes_rechecked": 100,
+    "protected_hashes_unchanged": true
+  },
+  "pre_freeze_lookup_issue": "300m_cross_10/frame4/fixed nearest rejected singleton is not the accepted component explaining recorded HIT. Diagnostic lookup assertion corrected before freeze; original algorithms and hit flags unchanged; regression test added.",
+  "limits": [
+    "DEV_SILVER centers are not independently verified point membership GT",
+    "same-child double arithmetic means are isolated proxies, not exact actual cache/component geometry",
+    "zero singleton extent is degenerate sampled support, not zero UAV dimensions",
+    "no negative GT or operational classifier validation",
+    "no new threshold, sweep, feature selection or algorithm change"
+  ],
+  "statistical_fallacy_scan_coverage": "11/11; scoped warnings and handling in FMCW_Geometry_Invariance_Audit.md"
+}
