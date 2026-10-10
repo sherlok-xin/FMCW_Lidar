@@ -1,0 +1,17 @@
+﻿nominal_range_m,radius_m,schedule,silver_frames,induced_connected,induced_fragmented,empty_proxy,accepted_component_touching_proxy_frames,large_component_touching_proxy_frames
+100,1.0,fixed,30,29,1,0,22,8
+100,1.0,adaptive,30,30,0,0,22,8
+100,3.0,fixed,30,27,3,0,22,8
+100,3.0,adaptive,30,29,1,0,22,8
+200,1.0,fixed,40,35,5,0,40,0
+200,1.0,adaptive,40,40,0,0,40,0
+200,3.0,fixed,40,32,8,0,40,0
+200,3.0,adaptive,40,38,2,0,40,0
+300,1.0,fixed,10,6,4,0,9,0
+300,1.0,adaptive,10,10,0,0,9,0
+300,3.0,fixed,10,6,4,0,9,0
+300,3.0,adaptive,10,9,1,0,9,0
+ALL,1.0,fixed,80,70,10,0,71,8
+ALL,1.0,adaptive,80,80,0,0,71,8
+ALL,3.0,fixed,80,65,15,0,71,8
+ALL,3.0,adaptive,80,76,4,0,71,8

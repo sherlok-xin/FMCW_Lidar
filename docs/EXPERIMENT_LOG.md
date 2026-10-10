@@ -31,6 +31,37 @@ This log records experiments that can be inferred from repository artifacts. It 
 | `scripts/published_baseline_dp_mvp.py` | `0601d93a804ecb66dcb1d0185fc6f2c272a5c5ac9f47674bc4d34cefa7766d9f` |
 | `scripts/dp_failure_forensics.py` | `9116d6e724b4e8460ee2914a55b83ec9f6bb9dcae50a86b6f17d5852db8be328` |
 
+## E16 — Frozen fine-cache DBSCAN fragmentation attribution
+
+**Run date:** 2026-10-10; main02:56:14–02:57:13 UTC, post-run component-lineage/QA02:59:22–03:00:06 UTC.
+
+**Objective:** With published-structure candidate input/geometry fixed, determine whether epsilon adaptation recovers fragmented silver observations, as distinct from changing scene connectivity/permissiveness; describe4 cm vs1 m support collapse without joint tuning.
+
+**Status:** TESTED / VERIFIED RESULT on unchanged80 observed DEV_SILVER center-neighborhood proxies, not independent UAV point/object GT.
+
+**Inputs:** existing five4 cm fine caches (272 frames), existing1 m raw-voxel cache after frozen postfilter, E15raw neighborhood point/frame CSVs, provisional alignment, unchanged labels.74 protected source/protocol/cache/artifact hashes in `results/dbscan_fragmentation_attribution/input_identity.json` remain identical.
+
+**Code identity:** Git parent `7e865cb55bc61b49d6debcb3ed69dd950f1d0a62`; standalone `scripts/dbscan_fragmentation_attribution.py` SHA `99f21bcc1716be1bb857084f529233b0dadac4ae4133bbd1fc33c091c6e6ba26`; summary/QA script SHA `c7b93bc212876856df388b8dd24cbcb550c5725066708d1b0bb65916b592ea9c`.
+
+**Protocol:** SHA `f74375153991a536a54a65870edb6f910937d5961806060abbabd63a8f37d418`; fixed eps0.6 vs existing global-per-frame `0.6+0.004*max(mean_scene_voxel_range−10,0)`, minPts1/2; geometric2–32 voxel/raw≤120/axis<6/range8–510 unchanged. Candidate centroid median≥3; no jump/temporal/Doppler/tracker. Primary silver center gate3 m; induced proxy connectivity recorded at existing1/3 m radii. No randomness.
+
+**Environment:** Python3.10.12 / NumPy2.2.6 / SciPy1.15.3 / sklearn1.7.2 / Linux.
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python -m unittest discover -s tests -p test_dbscan_fragmentation_attribution.py -v
+PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python scripts/dbscan_fragmentation_attribution.py freeze
+PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python scripts/dbscan_fragmentation_attribution.py run
+PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python scripts/summarize_dbscan_fragmentation.py
+```
+
+**Results:** All four71/80;100/200/300 m22/30,40/40,9/10; zero adaptive gained/lost. Candidates30457→9797 (111.97→36.02/frame), proxy3 m connectivity65→76/80.8miss components exceed32 fine voxels;1miss is a true single-input-voxel proxy. Geometry nmin2 makes final minPts1/2 outputs identical. Adaptive forms390 newly-large components while398 old-large components coalesce (net−8);19184 fixed accepted components enter rejected large components. Same filtered-point4 cm→1 m support<2 is1→31/80; medians27.5→2,14→2,5→1.5.6synthetic tests pass; exact original-function replay272 frames/9797 accepted candidates; all74 protected files unchanged.
+
+**Interpretation / decision:** No silver recall gain attributable to fragmentation repair. Epsilon contrast mainly changes full-scene merging/geometric survival; do not call output-volume reduction precision. Coarse support collapse is established; current fine misses are geometric max32 and singleton/minimum-support failures, not epsilon insufficiency. No best parameter or method revision selected.
+
+**Limitations:** retrospective observed silver centers, not point GT; scene-global eps not target-range-conditioned; neighborhoods may contain peripheral returns; only cross trajectories; no negative labels; representation comparison is not a full detector-performance sweep. Operational precision, independent UAV recovery and general range-adaptive effectiveness UNKNOWN. Runtime not deployment benchmark.
+
+**Outputs:** `FMCW_DBSCAN_Fragmentation_Attribution.md`, two standalone scripts/test, `results/dbscan_fragmentation_attribution/` complete component/frame/representation/merge CSVs and provenance.
+
 ## E15 — Read-only range/sparsity physical-evidence audit
 
 **Run date:** 2026-10-10 +08:00 (2026-10-09 16:00:07–16:05:52 UTC).

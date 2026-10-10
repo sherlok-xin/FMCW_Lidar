@@ -1,0 +1,6 @@
+﻿condition_id,frames_exact,candidates_exact,centers_voxels_raw_extent_eps_exact
+100m_cross_5,32,1233,True
+100m_cross_10,46,1579,True
+200m_cross_5,83,2961,True
+200m_cross_10,48,1823,True
+300m_cross_10,63,2201,True

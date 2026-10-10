@@ -1,0 +1,9 @@
+﻿nominal_range_m,radius_m,silver_frames,audit_raw_points_median,same_input_point_filtered_raw_support_median,same_input_point_filtered_4cm_cells_median,same_input_point_filtered_4cm_cells_below2_frames,same_input_point_filtered_4cm_cells_below3_frames,same_input_point_filtered_1m_cells_median,same_input_point_filtered_1m_cells_below2_frames,same_input_point_filtered_1m_cells_below3_frames,actual_fine_cache_voxels_median,actual_fine_cache_voxels_below2_frames,actual_fine_cache_voxels_below3_frames,existing_1m_postfilter_voxels_median,existing_1m_postfilter_voxels_below2_frames,existing_1m_postfilter_voxels_below3_frames,same_fine_means_coarsened_1m_voxels_median,same_fine_means_coarsened_1m_voxels_below2_frames,same_fine_means_coarsened_1m_voxels_below3_frames,pure_cell_collapse_fraction_median
+100,1.0,30,39.5,39.5,27.5,0,0,2.0,12,25,27.5,0,0,2.0,12,25,2.0,12,25,0.9375
+100,3.0,30,39.5,39.5,27.5,0,0,2.0,12,24,27.5,0,0,2.0,12,24,2.0,12,24,0.9375
+200,1.0,40,17.0,17.0,14.0,0,0,2.0,14,31,14.0,0,0,2.0,14,31,2.0,14,31,0.8651515151515152
+200,3.0,40,17.5,17.5,14.0,0,0,2.0,14,29,14.0,0,0,2.0,14,29,2.0,14,29,0.8636363636363636
+300,1.0,10,5.0,5.0,5.0,1,1,1.5,5,9,5.0,1,1,1.5,5,9,1.5,5,9,0.6458333333333334
+300,3.0,10,5.0,5.0,5.0,1,1,1.5,5,8,5.0,1,1,1.5,5,8,1.5,5,8,0.6458333333333334
+ALL,1.0,80,21.5,21.5,17.0,1,1,2.0,31,65,17.0,1,1,2.0,31,65,2.0,31,65,0.8823529411764706
+ALL,3.0,80,21.5,21.5,17.0,1,1,2.0,31,61,17.0,1,1,2.0,31,61,2.0,31,61,0.8823529411764706

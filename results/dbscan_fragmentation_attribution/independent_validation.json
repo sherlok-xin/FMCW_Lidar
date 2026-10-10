@@ -1,0 +1,64 @@
+{
+  "utc_start": "2026-10-10T02:59:22.242593+00:00",
+  "utc_end": "2026-10-10T03:00:06.114567+00:00",
+  "elapsed_s": 43.871984249999514,
+  "script_sha256": "c7b93bc212876856df388b8dd24cbcb550c5725066708d1b0bb65916b592ea9c",
+  "command": "PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python scripts/summarize_dbscan_fragmentation.py",
+  "original_function_replay": [
+    {
+      "condition_id": "100m_cross_5",
+      "frames_exact": 32,
+      "candidates_exact": 1233,
+      "centers_voxels_raw_extent_eps_exact": true
+    },
+    {
+      "condition_id": "100m_cross_10",
+      "frames_exact": 46,
+      "candidates_exact": 1579,
+      "centers_voxels_raw_extent_eps_exact": true
+    },
+    {
+      "condition_id": "200m_cross_5",
+      "frames_exact": 83,
+      "candidates_exact": 2961,
+      "centers_voxels_raw_extent_eps_exact": true
+    },
+    {
+      "condition_id": "200m_cross_10",
+      "frames_exact": 48,
+      "candidates_exact": 1823,
+      "centers_voxels_raw_extent_eps_exact": true
+    },
+    {
+      "condition_id": "300m_cross_10",
+      "frames_exact": 63,
+      "candidates_exact": 2201,
+      "centers_voxels_raw_extent_eps_exact": true
+    }
+  ],
+  "protected_all_unchanged": true,
+  "merge_partition_checks_all_frames": true,
+  "descriptive_only_no_pvalues": true,
+  "fallacy_scan_11_of_11": {
+    "Simpson": "nominal groups and all reported",
+    "ecological": "no population or actual-range causal law claimed",
+    "Berkson": "selected DEV observed trajectories; selection-conditioned",
+    "collider": "no adjusted regression",
+    "base_rate": "no reliable negatives; volume is not precision",
+    "regression_to_mean": "paired identical inputs, no extreme-case selection",
+    "survivorship": "missed/weak silver frames preserved; unlabeled misses UNKNOWN",
+    "look_elsewhere": "all four mandated variants and both frozen radii retained",
+    "forking_paths": "no result-driven parameter selection; merge summaries post-run descriptive QA",
+    "causal": "controlled code-level epsilon contrast only, no physical/operational benefit inferred",
+    "reverse_causality": "not a physical causal model"
+  },
+  "postprocess_output_sha256": {
+    "results/dbscan_fragmentation_attribution/adaptive_delta_by_range.csv": "2b67d54dccbff65b4dbe2e57d6406419668f336dd7390792393ffa9046c68939",
+    "results/dbscan_fragmentation_attribution/component_merge_audit.csv": "1ddc2e35a06be8fe1013274204f1ee75c08f6222941d2b06528265786d3747e5",
+    "results/dbscan_fragmentation_attribution/component_merge_summary.csv": "e8e6157ff7c4ba5f9a0811ae4dfdc405ed0d190e2e9f66828bb980effe7ee01e",
+    "results/dbscan_fragmentation_attribution/connectivity_by_range.csv": "51d189a112dcddba57d956c1433889659e6b605af7ba889edfb300e4dd03e681",
+    "results/dbscan_fragmentation_attribution/miss_attribution.csv": "6dc2071c235236f57666d20407096f293043bccf1f85420b57aa058af075fe33",
+    "results/dbscan_fragmentation_attribution/original_function_replay.csv": "ecb9af3aec89fb46c07b2ad33edf652a81609ba7c69bbb97de86ede0904266c8",
+    "results/dbscan_fragmentation_attribution/representation_by_range.csv": "13c3d15b5182f246f863d637397ca7ef98a58b801be7a20adf3f01a074032759"
+  }
+}

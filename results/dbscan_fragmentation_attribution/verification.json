@@ -1,0 +1,12 @@
+{
+  "protected_files": 74,
+  "all_unchanged": true,
+  "minpts_accepted_component_equivalence_all_frames": true,
+  "E13_replay_all_five_exact": true,
+  "label_rows": 80,
+  "frame_rows": 1088,
+  "component_rows": 124380,
+  "silver_rows": 640,
+  "transition_rows": 320,
+  "representation_rows": 160
+}

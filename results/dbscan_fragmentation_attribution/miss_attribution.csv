@@ -1,0 +1,10 @@
+﻿condition_id,nominal_range_m,frame_index,radius_m,minpts,fixed_hit,adaptive_hit,gained,lost,attribution,fixed_induced_components,adaptive_induced_components,fixed_proxy_voxels,max_fixed_proxy_components_in_adaptive_match,fixed_proxy_rejection_flags,adaptive_proxy_rejection_flags,fixed_proxy_noise_voxels,adaptive_proxy_noise_voxels,fixed_accepted_components_touching_proxy,adaptive_matched_max_outside_proxy_voxels
+100m_cross_5,100,16,3.0,2,0,0,0,0,RETAINED_MISS,1,1,38,0,"{""too_many_voxels"": 1}","{""too_many_voxels"": 1}",0,0,0,0
+100m_cross_5,100,20,3.0,2,0,0,0,0,RETAINED_MISS,2,1,47,0,"{""too_many_voxels"": 1}","{""too_many_voxels"": 1}",1,0,0,0
+100m_cross_5,100,27,3.0,2,0,0,0,0,RETAINED_MISS,1,1,43,0,"{""too_many_voxels"": 1}","{""too_many_voxels"": 1}",0,0,0,0
+100m_cross_5,100,28,3.0,2,0,0,0,0,RETAINED_MISS,1,1,39,0,"{""too_many_voxels"": 1}","{""too_many_voxels"": 1}",0,0,0,0
+100m_cross_5,100,30,3.0,2,0,0,0,0,RETAINED_MISS,1,1,36,0,"{""too_many_voxels"": 1}","{""too_many_voxels"": 1}",0,0,0,0
+100m_cross_10,100,19,3.0,2,0,0,0,0,RETAINED_MISS,1,1,40,0,"{""too_many_voxels"": 1}","{""too_many_voxels"": 1}",0,0,0,0
+100m_cross_10,100,23,3.0,2,0,0,0,0,RETAINED_MISS,1,1,35,0,"{""too_many_voxels"": 1}","{""too_many_voxels"": 1}",0,0,0,0
+100m_cross_10,100,24,3.0,2,0,0,0,0,RETAINED_MISS,1,1,34,0,"{""too_many_voxels"": 1}","{""too_many_voxels"": 1}",0,0,0,0
+300m_cross_10,300,2,3.0,2,0,0,0,0,RETAINED_MISS,1,1,1,0,{},{},1,1,0,0

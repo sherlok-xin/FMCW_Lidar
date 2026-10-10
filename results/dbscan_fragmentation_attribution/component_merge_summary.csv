@@ -1,0 +1,5 @@
+﻿nominal_range_m,lidar_frames,newly_large_components,old_large_components_coalesced,net_large_component_change,fixed_accepted_components_absorbed_into_adaptive_large,adaptive_accepted_merges_of_2plus_fixed_components
+100,78,99,84,15,5369,502
+200,131,194,214,-20,9242,921
+300,63,97,100,-3,4573,413
+ALL,272,390,398,-8,19184,1836

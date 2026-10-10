@@ -1,0 +1,5 @@
+﻿nominal_range_m,lidar_frames,silver_frames,gained_silver_frames,lost_silver_frames,delta_candidate_count,delta_candidates_per_frame,delta_large_component_count,delta_large_components_per_frame
+100,78,30,0,0,-5720,-73.33333333333333,15,0.19230769230769232
+200,131,40,0,0,-10033,-76.58778625954199,-20,-0.15267175572519084
+300,63,10,0,0,-4907,-77.88888888888889,-3,-0.047619047619047616
+ALL,272,80,0,0,-20660,-75.95588235294117,-8,-0.029411764705882353

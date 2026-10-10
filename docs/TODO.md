@@ -6,6 +6,14 @@ The ordering below reflects dependency and scientific value. Algorithm novelty i
 
 ## P0 — Establish an auditable baseline
 
+### 2026-10-10 DBSCAN attribution diagnostic note
+
+- E16 is complete: preserve `FMCW_DBSCAN_Fragmentation_Attribution.md` and `results/dbscan_fragmentation_attribution/`; no selected/default parameter changes.
+- Do not claim adaptive fragmentation recovery: fixed/adaptive both71/80, despite increased proxy connectivity and fewer candidate outputs.
+- Keep geometric nmin2 separate from DBSCANminPts;8 fine-stage misses are max32 and1 is singleton. Record representation-dependent cell support, not just raw point count.
+- Preserve same-input4 cm→1 m collapse1→31 frames below2cells as descriptive evidence, not an authorized joint parameter/voxel sweep.
+- Operational precision and target/clutter merge identity still require independently defined point/object/negative labels and held-out evaluation. No further algorithm work was authorized by E16.
+
 ### 2026-10-10 range/sparsity diagnostic note
 
 - E15 raw audit is complete; preserve `FMCW_Range_Sparsity_Audit.md` and `results/range_sparsity_audit/` as descriptive evidence, not an adaptive-parameter selection run.

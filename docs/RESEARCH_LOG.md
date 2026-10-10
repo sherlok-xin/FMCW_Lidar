@@ -303,6 +303,22 @@ These decisions are evidence-bounded, not permanent prohibitions.
 
 **Conclusion:** Range-dependent spacing is not target-specific evidence. Merge frequency remains UNKNOWN. Preserve the temporal/DP negative results; physical sparse-support motivation is not proof of adaptive temporal gain. Historical approach “3→18 target points” is unsupported by current raw/old cluster records (1–13); exact original attribution UNKNOWN, frame15 target3/dynamic18 is only a possible confusion example.
 
+### H25 — Existing range-adaptive epsilon improves candidate recall by repairing UAV fragmentation
+
+**Status:** not supported on the frozen E16 fine-cache DEV/SILVER comparison (2026-10-10); independent point-level UAV fragmentation UNKNOWN.
+
+**Evidence:** fixed0.6 and existing scene-mean adaptive~1.678 m have identical71/80 silver matches,0 gains/0 losses.3 m proxy connectivity65→76/80 (1 m70→80) improves without recall recovery;14/15 initially fragmented3 m proxies were already matched. Candidate volume111.97→36.02/frame reflects merging and geometry, including19184 accepted fixed components entering adaptive rejected large components. Newly-large390 minus coalesced-old398 gives net−8, not evidence of no merge risk.
+
+**Conclusion / decision:** Larger connectivity scale changes scene components but does not recover new silver frames here; do not label the observation target-fragmentation treatment or precision improvement. This is one global scene-mean implementation, not a falsification of every target-range-adaptive DBSCAN. Parameters and formal methods remain frozen.
+
+### H26 — Apparent singleton sparsity is primarily physical non-return rather than representation/geometry
+
+**Status:** contradicted as a blanket interpretation by E16 support accounting; relative full-detector performance UNKNOWN.
+
+**Evidence:** On the same filtered proxy points,4 cm→1 m occupied support medians27.5→2,14→2,5→1.5; <2-cell frames1→31/80. Actual old1 m and same-fine coarsening neighborhood counts agree in this set, but their construction order differs generally.8of9 fine-stage misses exceed frozen max32; the remaining single-voxel frame is dropped by DBSCANminPts2 or geometricnmin2 even at minPts1.
+
+**Conclusion / decision:** Coarse voxel collapse and representation-dependent geometric count limits must be separated from real raw non-return. Epsilon is not the observed recall bottleneck here. No voxel/geometry/minPts default chosen or changed, and no complete coarse/fine performance experiment inferred from cell counts.
+
 ## Possible research directions
 
 Everything in this section is **PROPOSED** or **SPECULATIVE**, not an experimental result.

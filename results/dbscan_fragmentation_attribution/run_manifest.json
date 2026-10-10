@@ -1,0 +1,31 @@
+{
+  "utc_start": "2026-10-10T02:56:14.953257+00:00",
+  "utc_end": "2026-10-10T02:57:13.593113+00:00",
+  "elapsed_s": 58.63985562500602,
+  "freeze": {
+    "utc": "2026-10-10T02:56:10.507061+00:00",
+    "script_sha256": "99f21bcc1716be1bb857084f529233b0dadac4ae4133bbd1fc33c091c6e6ba26",
+    "protocol_sha256": "f74375153991a536a54a65870edb6f910937d5961806060abbabd63a8f37d418",
+    "git_head": "7e865cb55bc61b49d6debcb3ed69dd950f1d0a62",
+    "git_status": "?? .local/\n?? results/dbscan_fragmentation_attribution/\n?? scripts/dbscan_fragmentation_attribution.py\n?? tests/test_dbscan_fragmentation_attribution.py\n"
+  },
+  "environment": {
+    "python": "3.10.12",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "sklearn": "1.7.2",
+    "platform": "Linux-6.8.0-136-generic-x86_64-with-glibc2.35"
+  },
+  "command": "PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python scripts/dbscan_fragmentation_attribution.py run",
+  "input_identity_file": "input_identity.json",
+  "output_sha256": {
+    "results/dbscan_fragmentation_attribution/adaptive_transitions.csv": "3b7f2900a8f4800e356e5061d68ed774e93c24c0951f3b8d081b2a9079d731e9",
+    "results/dbscan_fragmentation_attribution/cluster_metrics.csv": "d79155df1c104dc0f30d5df3284c72bb94f172b3ef8b2103fe9bf147b2441039",
+    "results/dbscan_fragmentation_attribution/frame_metrics.csv": "c956502e43d330f1ec7361ce70365fe44c46c9c136ef40922f769b9e4276faf2",
+    "results/dbscan_fragmentation_attribution/replay_validation.csv": "17bfabc0c89b0b6ac2597ffe2daebc665a449febd9eafa72a4b3fac1c0cc7869",
+    "results/dbscan_fragmentation_attribution/representation_support.csv": "2d8a09f92c46a7becb81b73c377670c6701f11f38f3a50c24a12f20bb5ec13be",
+    "results/dbscan_fragmentation_attribution/silver_components.csv": "0fb037f61aa3080449bbe3bac029b5923e314f3029c434e30c9282ada990a775",
+    "results/dbscan_fragmentation_attribution/summary_by_range.csv": "145c016e3e46b6c50238068225e4d5e151bf2ae1106c817af208724279cd8089"
+  },
+  "protected_unchanged": true
+}

@@ -11,6 +11,12 @@ The repository contains a substantial rule-based FMCW-LiDAR processing and track
 
 The strongest current outcome is diagnostic rather than algorithmic: two successful motion sequences show that compactness, spatial isolation, temporal persistence, and agreement between Doppler and range change are more transferable cues than raw Doppler magnitude or a stable single-frame shape. The existing FMT benchmark does not demonstrate an improvement over the baseline.
 
+### 2026-10-10 frozen DBSCAN fragmentation attribution
+
+**TESTED / VERIFIED RESULT on DEV/SILVER center-neighborhood proxies only.** `FMCW_DBSCAN_Fragmentation_Attribution.md` and `results/dbscan_fragmentation_attribution/` isolate fixed eps0.6 vs the existing reconstruction's scene-mean adaptive eps (~1.678 m), each at DBSCAN minPts1/2, with the same 4 cm cache and unchanged geometric nmin2/max32. All four recover71/80:100/200/300 m22/30,40/40,9/10. Adaptive has0 gained/0 lost silver frames, but reduces accepted volume111.97→36.02/frame through full-scene component merging and geometry rejection. 3 m proxy connectivity65→76/80 does not translate to new detection matches.
+
+The9 fine-stage misses are8 near-range max32 rejections plus1 far singleton; minPts1 is still rejected by geometric nmin2. Same point-level input4 cm→1 m support<2 rises1→31/80; this is representation evidence, not a complete detector voxel sweep.390 newly-large merged components coexist with398 old-large coalescences, so net large-count−8 must not be read as reduced merge risk. No formal algorithm/parameter/label/cache changes;74 protected files unchanged,6 synthetic tests pass,272-frame original-function candidate replay is exact. No operating point selected; operational precision remains UNKNOWN.
+
 ### 2026-10-10 read-only range/sparsity audit
 
 **TESTED / VERIFIED RESULT on observed DEV/pseudo neighborhoods only.** `FMCW_Range_Sparsity_Audit.md` and `results/range_sparsity_audit/` reconstruct raw/4 cm/1 m occupied count, raw extent/NN/pairwise/MST, intensity, Doppler, and surrounding clutter from 80 frozen cross observations plus 48 legacy cross and 20 legacy approach observations. No detector/tracker or labels changed; 39 protected files retain identical SHA-256.

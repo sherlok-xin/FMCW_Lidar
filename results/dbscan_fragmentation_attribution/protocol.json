@@ -1,0 +1,140 @@
+{
+  "version": 1,
+  "status": "FROZEN_READ_ONLY_DEV_SILVER_DIAGNOSTIC_NOT_METHOD_SELECTION",
+  "conditions": [
+    "100m_cross_5",
+    "100m_cross_10",
+    "200m_cross_5",
+    "200m_cross_10",
+    "300m_cross_10"
+  ],
+  "randomness": "NONE",
+  "variants": [
+    {
+      "schedule": "fixed",
+      "dbscan_min_samples": 1
+    },
+    {
+      "schedule": "fixed",
+      "dbscan_min_samples": 2
+    },
+    {
+      "schedule": "adaptive",
+      "dbscan_min_samples": 1
+    },
+    {
+      "schedule": "adaptive",
+      "dbscan_min_samples": 2
+    }
+  ],
+  "fixed_eps_m": 0.6,
+  "adaptive_eps": "0.6+0.004*max(unweighted_mean_range_of_all_frame_fine_voxels-10,0)",
+  "adaptive_scope": "ONE_GLOBAL_SCALAR_PER_FRAME; NOT_PER_POINT_OR_TARGET_RANGE",
+  "source_published_structure": {
+    "stage_order": [
+      "ROI and VoxelGrid",
+      "range-adaptive DBSCAN",
+      "geometric validation",
+      "spatial-jump validation",
+      "M-of-K temporal consistency"
+    ],
+    "paper_reported": {
+      "source_configuration": "Table I Config C for eps0/minPts/voxel; rref from Eq. 1 text",
+      "voxel_m": 0.04,
+      "dbscan_eps0_m": 0.6,
+      "dbscan_min_pts": 2,
+      "dbscan_reference_range_m": 10.0,
+      "eps_equation": "eps(r)=eps0+alpha*max(r-rref,0)",
+      "centroid": "component-wise median for cluster size >=3; arithmetic mean below 3"
+    },
+    "paper_not_numerically_specified": [
+      "alpha",
+      "hmin",
+      "rmax",
+      "rexcl",
+      "nmin",
+      "nmax",
+      "emax",
+      "tau_min",
+      "vmax",
+      "M",
+      "K",
+      "d_cons",
+      "T_cons"
+    ],
+    "paper_configuration_limit": "Table I has range-adaptive alpha>0 only for C/D and Layer 3 only for S1/S4/MR; no reported row combines both.  The required full chain is therefore a reconstruction.",
+    "project_adapted": {
+      "coordinate_transform_rich80": "[x,z,-y]",
+      "intensity_range_inclusive": [
+        10.0,
+        250.0
+      ],
+      "broad_roi_m": {
+        "x": [
+          8.0,
+          510.0
+        ],
+        "y": [
+          -200.0,
+          200.0
+        ],
+        "z": [
+          -60.0,
+          60.0
+        ]
+      },
+      "leveled_height_gt_m": 10.0,
+      "level_transform": "R_full_6dof.T@(p_lidar-t_full_6dof)",
+      "dbscan_alpha": 0.004,
+      "dbscan_eps_cap": "NONE; follows the published equation",
+      "cluster_min_voxels": 2,
+      "cluster_max_voxels": 32,
+      "cluster_max_raw_points": 120,
+      "cluster_max_axis_extent_m": 6.0,
+      "cluster_range_m": [
+        8.0,
+        510.0
+      ],
+      "jump_tau_min_m": 3.0,
+      "jump_vmax_mps": 25.0,
+      "temporal_M": 2,
+      "temporal_K_prior_observations": 3,
+      "temporal_d_cons_m": 30.0,
+      "temporal_T_cons_s": 3.5,
+      "association": "one-to-one greedy nearest last centroid; real bag dt",
+      "M_interpretation": "current output requires at least M qualifying prior observations (M+1 total hits)"
+    }
+  },
+  "geometry": {
+    "cluster_min_voxels": 2,
+    "cluster_max_voxels": 32,
+    "cluster_max_raw_points": 120,
+    "cluster_max_axis_extent_m": 6.0,
+    "cluster_range_m": [
+      8.0,
+      510.0
+    ]
+  },
+  "geometry_nmin_independent_of_minpts": true,
+  "centroid": "unweighted component-wise median for >=3 voxels; arithmetic mean otherwise",
+  "input": "existing raw_fine_cache only; never rebuild or alter",
+  "stage": "DBSCAN -> geometric validation ONLY; no temporal/jump/tracking/Doppler gates",
+  "silver_match_radius_m": 3.0,
+  "neighborhood_radii_m": [
+    1.0,
+    3.0
+  ],
+  "connectivity": "induced epsilon graph within silver ball, min_samples=1; empty UNKNOWN; singleton connected",
+  "full_scene_components": "also report whole-frame components intersecting ball; bridges may be clutter",
+  "large_component": "union(voxels>32, raw_support>120, max_axis_extent>=6m); counts overlap individually",
+  "recall_denominator": "80 observed frozen labels only; no interpolation",
+  "volume_denominator": "all 272 LiDAR frames; not false alarms/precision",
+  "representation": [
+    "exact raw-neighborhood 4cm/1m grid occupancy on identical point-level filtered proxy support",
+    "actual whole-frame 4cm and existing postfilter 1m cache ball counts (stage-order confounded)",
+    "coarsen same whole-frame fine voxel means to 1m; no clustering (4cm means can cross 1m boundaries)"
+  ],
+  "attribution": "new silver match is proxy fragmentation repair only if adaptive matched full-scene component contains >=2 fixed induced proxy components and induced graph becomes connected",
+  "limits": "DEV/SILVER center balls are not point GT; operational precision and independent UAV fragmentation UNKNOWN",
+  "no_parameter_selection": true
+}
