@@ -9,7 +9,17 @@ Git is now initialized on branch `main` (unlike the 2026-09-20 audit). The teste
 
 The repository contains a substantial rule-based FMCW-LiDAR prototype, ROS/offline variants, retrospective archaeology, provisional calibration and frozen DEV_SILVER comparisons. It does **not** yet provide independently certified GT, reliable target-absent/long-hover labels or held-out operational evaluation needed for reliable UAV detection/tracking accuracy claims.
 
-The latest outcome is a bounded mechanism audit: E18's joint background/motion score recovers79/80 observed DEV_SILVER centers, but neither term alone reproduces this recovery, and short slow-cross windows expose relative-novelty ranking losses. Independent negative/hover generalization remains UNKNOWN. The historical FMT benchmark still does not demonstrate an improvement over its baseline.
+The latest outcome is E20's expanded existing-evidence audit: no independently timestamp-linked negative or hover/slow window qualifies, so new frozen-E18 stress tests are NOT_RUN_DATA_GAP. E18's earlier joint score recovers79/80 observed DEV_SILVER centers, but independent negative/hover generalization remains UNKNOWN. The historical FMT benchmark still does not demonstrate an improvement over its baseline.
+
+### 2026-10-11 negative / hover evidence audit — E20 complete, DATA_GAP
+
+**TESTED / VERIFIED RESULT for read-only metadata/provenance; physical state and new stress results UNKNOWN.** See `FMCW_Negative_Hover_Evidence_Audit.md` and `results/negative_hover_evidence_audit/`. E19 is already pushed as `5ad38b94b87949657f803485da129e3a738e9a64` (live remote main verified). E18 remains frozen at `a53702d`;302protected SHA and complete E18/E19 tree sets unchanged. No algorithm, weight, graph, label, gate, Doppler or threshold changes; no new solver runs.
+
+Expanded inventory:697bag/data files;14ZIP/all52non-directory members (51bags+recordscript); all51bounded1MiB prefixes;6standalone full final connection/chunk-info indexes. Only LiDAR topics, no flight-state/GNSS/video topic. ZIP footer/full payload not decoded; extracted-copy paths are not new sequences. Raw metadata before/after unchanged, not full content SHA. March filename and record date differ; names cannot provide synchronization.
+
+Excel all82nonempty cells=71flight GNSS+device+10titles, no state/events/hidden/comments. All62endpoint segments exported; minimum0.995621m/s is not instantaneous or continuous hover evidence. DeviceA85 duplicatesA2, not a not-airborne certificate. Scene photo EXIF14:16:50.957+08 precedesfirstFebbag21m19.386s and cannot certify a bag interval; its GPS EXIF clock differs. No independent timed flight-state emerged from19source entries or project-path Git history.
+
+All75silver adjacent steps/10continuous fragments retained. Three moving→slow-like shapes and prior5slow windows remain LiDAR-derivedL1, not physical hover GT. PriorE19witness trace168rows=160observed-silver+8nonlabel connectors is stored evidence, not a new run. No qualified negative or hover/slow windows: new header-only stress CSVs mean no measurements, not zero false alarms. Independent moving→hover score degradation UNKNOWN. Stop at DATA_GAP and retain freeze; any further evidence acquisition/evaluation requires a separate scoped request.
 
 ### 2026-10-11 E18 mechanism/generalization audit — frozen a53702d
 

@@ -1,0 +1,43 @@
+{
+  "experiment": "E20",
+  "version": "evidence_audit_v1",
+  "parent_commit": "5ad38b94b87949657f803485da129e3a738e9a64",
+  "frozen_E18_commit": "a53702da1dc5357149e3e472a9e489ff08e9afe4",
+  "mode": "READ_ONLY_EXISTING_EVIDENCE",
+  "randomness": "NONE",
+  "negative_qualification": [
+    "independent target identity and explicit absence evidence",
+    "bounded interval, clock linkage to a bag",
+    "LiDAR stream available",
+    "absence in LiDAR FOV established, not just missing labels/returns"
+  ],
+  "slow_hover_qualification": [
+    "independent target identity and measured/recorded motion state",
+    "bounded interval with clock linkage",
+    "target visibility in available LiDAR stream",
+    "sampling and localization uncertainty sufficient to resolve slow/hover state"
+  ],
+  "formal_evaluation_additional_requirements": [
+    "independent annotations and time/space validation",
+    "no reuse of retrospective DEV silver as final GT",
+    "held-out evaluation protocol"
+  ],
+  "evidence_levels": {
+    "L3": "independent timestamp-linked certified window",
+    "L2": "independent sensor/context record but incomplete event/identity/time/FOV linkage",
+    "L1": "LiDAR-derived DEV_SILVER or retrospective pseudo observation",
+    "L0": "name/inference/unsupported annotation"
+  },
+  "stress_execution_gate": "ONLY qualified windows with existing unchanged frozen E18 graph",
+  "if_no_qualified_window": "NOT_RUN_DATA_GAP; scores UNKNOWN, not zero",
+  "unlabelled_as_negative": "FORBIDDEN",
+  "new_graph_or_labels": "FORBIDDEN",
+  "E18_modifications": "FORBIDDEN",
+  "doppler": "NOT_USED",
+  "weight_or_threshold_selection": "FORBIDDEN",
+  "archived_bag_probe_max_uncompressed_bytes": 1048576,
+  "archive_payload_scope": "bounded prefix metadata; no full stream or tail decode",
+  "GNSS_scope": "all workbook cells/metadata; existing GPS and WGS84 conventions only",
+  "GNSS_N_E_V_Q": "OPAQUE_UNKNOWN",
+  "new_E18_solver_runs": 0
+}

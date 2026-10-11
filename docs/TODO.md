@@ -6,6 +6,14 @@ The ordering below reflects dependency and scientific value. Algorithm novelty i
 
 ## P0 — Establish an auditable baseline
 
+### 2026-10-11 E20 evidence search — complete, DATA_GAP
+
+- Preserve `FMCW_Negative_Hover_Evidence_Audit.md` / `results/negative_hover_evidence_audit/`, rejected candidates, unknowns and inventory-only failures. E19 is onGitHubmain at5ad38b9; E18a53702d fullyfrozen,302protectedfiles unchanged.
+- No independently timestamp-linked negative/hover/slow window qualifies. NewstressNOT_RUN_DATA_GAP; emptywinner/hoverCSV mean unmeasured, notzero. Topics, deviceorigin,photooutsidebagtime, GNSSchords orsilver-gaps do not certify absence/hover.
+- Keep all75silversteps/10continuousfragments andpriorE19witnesscurves asDEVmechanism evidence, notphysicalhoverGT. Do not tuneE18 orconstructnewgraphs fromthese candidates.
+- Next evidence dependency: authentic existing flight-state/RTK/video/operator records with targetidentity, interval, clockmapping, visibility/FOV and localizationuncertainty. Outside-checkout availability UNKNOWN; newacquisition/evaluation requires a separate scopedrequest.
+- Until then, negativewinnerstats,operationalprecision/FA andindependent moving→hover degradation remainUNKNOWN. Stopalgorithmwork;noDoppler/weights/thresholds/remainingmissfix.
+
 ### 2026-10-11 E18 mechanism/generalization audit — complete; retain freeze
 
 - Preserve `a53702d` E18 formulas/weights/graphs/labels/3m gate and `FMCW_E18_Mechanism_Generalization_Audit.md` / `results/e18_mechanism_generalization_audit/`; this scoped audit does not authorize a new method, threshold or remaining-miss fix.

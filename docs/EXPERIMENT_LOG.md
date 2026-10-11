@@ -31,6 +31,39 @@ This log records experiments that can be inferred from repository artifacts. It 
 | `scripts/published_baseline_dp_mvp.py` | `0601d93a804ecb66dcb1d0185fc6f2c272a5c5ac9f47674bc4d34cefa7766d9f` |
 | `scripts/dp_failure_forensics.py` | `9116d6e724b4e8460ee2914a55b83ec9f6bb9dcae50a86b6f17d5852db8be328` |
 
+## E20 — Existing negative / hover evidence audit; no new E18 stress execution
+
+**Date:** 2026-10-11. **Status:** TESTED / VERIFIED RESULT for read-only inventory and source checks; independent target absence/hover and E18 generalization UNKNOWN / DATA_GAP.
+
+**Objective:** Find independently timestamp-linked target-absent/hover/slow windows in existing data; run frozen E18 only if evidence qualifies. No unlabelled-as-negative, graph/label/score/weight/gate changes, Doppler or threshold selection.
+
+**Identity:** pushed E19 parent `5ad38b94b87949657f803485da129e3a738e9a64`, remote main live verified. E18 remains `a53702da1dc5357149e3e472a9e489ff08e9afe4`. New metadata script/input/output SHA recorded in `results/negative_hover_evidence_audit/*_execution.json` and final manifest;302protected old files and complete E18/E19 tree sets unchanged.
+
+**Commands (inventories ran in parallel):**
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python scripts/negative_hover_evidence_audit.py freeze
+PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python scripts/negative_hover_bag_inventory.py --output-dir results/negative_hover_evidence_audit --prefix-bytes 1048576
+PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python scripts/negative_hover_gnss_inventory.py
+PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python scripts/negative_hover_log_inventory.py --out results/negative_hover_evidence_audit
+PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python scripts/negative_hover_window_inventory.py
+PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python scripts/negative_hover_evidence_audit.py check
+```
+
+**Environment/configuration:** Python3.10.12/NumPy2.2.6/Pillow12.2.0, no randomness or installation. openpyxl unavailable; standard-library workbook ZIP/XML read-only fallback. Qualification fixed before synthesis, not all source exploration; not a blind experiment. Archived probes ≤1MiB/bag, no full point-cloud/archive decoding.
+
+**Verified results:**697bag/data files;14ZIP/all52members=51bags+49-byte LiDAR recordscript;6standalone bags.51prefixes observe allheader-declared connections (onlycloud0); standalone final indexes contain onlycloud0 or81/82, no flight/GNSS/video. Archived footer/end/fullintegrity UNKNOWN.697input size/mtime/mode unchanged, not fullbagSHA. Marchfilename differs fromrecordUTCdate and wrong2022header; do not join flightlogs byname.
+
+Workbook82nonempty cells=71flight GNSS+device+10titles,9conditions/62adjacent segments, no state/events. Minimumchordspeed0.995621200m/s(A2→A3:5.113035574m/5.135523s), nothovercertification;A2=deviceA85 is notnegative. Independent scenephotoEXIF14:16:50.957+08 precedesfirstFebbag21m19.386s, GPSclockdiffers, nooverlapwindow.19source entries/Gitpathhistory reveal no independent timedflightstate.
+
+All80silver observations produce75steps(5gaps)/10continuous fragments; three moving→near-static shapes remainL1. PriorE19scoretrace168rows retains160silver/8nonlabelconnectors, notnewstress. Candidateinventory80overlapping records L0/L2/L1=57/11/12 are not80independent windows/label denominators. No qualified negative/slow-hover windows; newE18solverruns0, stressNOT_RUN_DATA_GAP. Negativewinner metrics and independent moving→hover degradation UNKNOWN; header-onlyCSV are notzeroresults.
+
+**Interpretation/decision:** existing DEV mechanism evidence exists, but the next independent negative/hover evaluation gate is not met. Keep E18 frozen and stop; do not substitute pseudo-negatives or promote old slow curves to physical-hover validation.
+
+**Failure/limits:** newfreezehelper referenced a nonexistent oldinventoryscript and stopped beforefreezeoutputs; corrected onlynewhelper. Log inventory initially assumed160witnessnodes but168exist, with8nonlabels; stoppedbeforeoutputs, correctedcount/explicitmembership. Bothfailures retained; no frozeninput/scorechange. Local inventory cannot establish absence of externalrecords orUAV; sparseGNSS/time/pose/FOVremain unresolved.
+
+**Outputs:** `FMCW_Negative_Hover_Evidence_Audit.md` and separate `results/negative_hover_evidence_audit/`, fourdurabledocs updated. E19 push precondition complete; newE20files are not part of that commit.
+
 ## E19 — E18 mechanism and generalization audit, term-only frozen a53702d
 
 **Date/status:** 2026-10-11; TESTED / VERIFIED RESULT only on frozen graphs/DEV_SILVER. Freeze10:56:16.657898UTC; full label-free run10:56:22.146790–11:01:25.199857UTC,303.053s; evaluation completed11:07:04.128440UTC. Separate evaluation start/peak RSS UNKNOWN.

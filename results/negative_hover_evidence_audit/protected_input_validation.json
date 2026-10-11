@@ -1,0 +1,9 @@
+{
+  "utc": "2026-10-11T14:26:53.787604+00:00",
+  "command": "scripts/negative_hover_evidence_audit.py check",
+  "protected_files_checked": 302,
+  "changed": [],
+  "protected_trees_unchanged": true,
+  "new_E18_solver_runs": 0,
+  "status": "PASS"
+}

@@ -1,0 +1,30 @@
+{
+  "command": "PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python scripts/negative_hover_window_inventory.py",
+  "started_utc": "2026-10-11T14:25:41.387056+00:00",
+  "finished_utc": "2026-10-11T14:25:41.394771+00:00",
+  "script_sha256": "a8cb0e5da03699d4a17d3e7e34a822ed3a4ff2bab17de7c981499b62fea30ef1",
+  "environment": {
+    "python": "3.10.12 (main, Jun 22 2026, 18:55:27) [GCC 11.4.0]",
+    "platform": "Linux-6.8.0-136-generic-x86_64-with-glibc2.35"
+  },
+  "input_sha256": {
+    "results/negative_hover_evidence_audit/raw_bag_inventory.csv": "7b4786d8f5688bac83ec06476cfb93d2398eda07a5ee50339b7417b45a80e390",
+    "results/negative_hover_evidence_audit/raw_bag_inventory.json": "337b49c9830b0fc78b008a051d50d89d5f83b9380cdf083081951f9476d8f3fe",
+    "results/negative_hover_evidence_audit/gnss_condition_summary.csv": "0d19ae93d716f60cd9995ed4aaea016527599c9809a22a83ac4e53b1b4191520",
+    "results/negative_hover_evidence_audit/gnss_adjacent_segments.csv": "b85b978362a0967c198791afdb1654825cf00946b317d22769e09539992970ec",
+    "results/negative_hover_evidence_audit/protocol.json": "eaf09dbb20e6b4aa52de144f4f2faf4e0c6854115f47a3352b33c56a37962eed",
+    "gt_manifest.csv": "ece744b77b89b0306c476c66b2c6689fb9b749b08c86bc12db98b934af39a4a6",
+    "results/research_dev_v0/silver_labels.csv": "37c4452a68e544d75034389f82bbaf1e868903bb2225b395b9d66d0cdd48b8db",
+    "results/data_archaeology/cross/uav_pseudo_labels.csv": "68cbfed067244451d844e8fcb7ba0be766e7406d0d7ef3c756b9dd689bca054f",
+    "results/e18_mechanism_generalization_audit/short_slow_windows.csv": "de7d2ce800b0ca05c2bc2d75ad3bfd0cef8b02d3fc9751394d5f3d85371f9d66",
+    "results/calibration_closure/candidate_summary.csv": "74faa4a6839837e9e17123788ecd558516fd63c119cd5dad2445b8add60b8f1f"
+  },
+  "inputs_unchanged": true,
+  "new_E18_solver_runs": 0,
+  "output_hashes": {
+    "candidate_windows.csv": "5c32ad4eca3d11dd1058c63682e603c0392ed3b37a495723e03313d37e5a6343",
+    "stress_execution_decision.json": "afe570634cdbb2a80b8d8afa0905c055d3c8e3afcb837253e9431a8baca2d064",
+    "negative_stress_winners.csv": "1a4efb5d90a888a3a9760e1350ae619fd8d90ff9d180415f4c966286bce458f1",
+    "qualified_hover_score_trace.csv": "c6dc9d25cc14998b6871dea1485d32170a4386f58b1944c7b622b24df34b653e"
+  }
+}

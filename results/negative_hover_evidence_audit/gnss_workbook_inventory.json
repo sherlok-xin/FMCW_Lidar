@@ -1,0 +1,628 @@
+{
+  "status": "DATA_GAP_NO_INDEPENDENT_NEGATIVE_OR_HOVER_CERTIFICATE",
+  "reader": "Python standard-library ZIP/XML; source opened read-only",
+  "openpyxl_available_in_run_environment": false,
+  "openpyxl_fallback_reason": "ModuleNotFoundError observed in fmcw/bin/python and system python3; no installation/environment change",
+  "workbook": "bag/20260205/飞行轨迹坐标.xlsx",
+  "workbook_sha256": "5adc1f090b84731b23a2c8cd02f38c002cafef94b9bdaaee98827981a8e54c69",
+  "sheets": [
+    {
+      "name": "Sheet1",
+      "state": "visible",
+      "member": "xl/worksheets/sheet1.xml",
+      "dimension": "A1:O85",
+      "nonempty_cells": 82
+    }
+  ],
+  "all_zip_members": [
+    "_rels/.rels",
+    "xl/workbook.xml",
+    "xl/styles.xml",
+    "xl/worksheets/sheet1.xml",
+    "xl/_rels/workbook.xml.rels",
+    "xl/sharedStrings.xml",
+    "docProps/core.xml",
+    "docProps/app.xml",
+    "docProps/custom.xml",
+    "[Content_Types].xml"
+  ],
+  "extra_metadata_xml": {
+    "docProps/core.xml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<cp:coreProperties xmlns:cp=\"http://schemas.openxmlformats.org/package/2006/metadata/core-properties\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:dcterms=\"http://purl.org/dc/terms/\" xmlns:dcmitype=\"http://purl.org/dc/dcmitype/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><dcterms:created xsi:type=\"dcterms:W3CDTF\">2026-02-05T09:30:36Z</dcterms:created><dc:creator>家成 向</dc:creator><dc:description></dc:description><dc:language>zh-CN</dc:language><cp:lastModifiedBy></cp:lastModifiedBy><dcterms:modified xsi:type=\"dcterms:W3CDTF\">2026-09-19T08:37:38Z</dcterms:modified><cp:revision>1</cp:revision><dc:subject></dc:subject><dc:title></dc:title></cp:coreProperties>",
+    "docProps/app.xml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<Properties xmlns=\"http://schemas.openxmlformats.org/officeDocument/2006/extended-properties\" xmlns:vt=\"http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes\"><Template></Template><TotalTime>0</TotalTime><Application>LibreOffice/7.3.7.2$Linux_X86_64 LibreOffice_project/30$Build-2</Application><AppVersion>15.0000</AppVersion></Properties>",
+    "docProps/custom.xml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<Properties xmlns=\"http://schemas.openxmlformats.org/officeDocument/2006/custom-properties\" xmlns:vt=\"http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes\"></Properties>"
+  },
+  "all_nonempty_cells": [
+    {
+      "sheet": "Sheet1",
+      "cell": "A1",
+      "raw_value": "300m往返10m/s飞行轨迹坐标",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A2",
+      "raw_value": "1       369612.048255   [2404]      -4,N           -40,E           189,V        31.83749046,Lat 118.76606266,Lon        25.544,Ellh     0.011411, 0.013400, 0.025919    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A3",
+      "raw_value": "2       369617.183778   [2404]       0,N           -20,E           193,V        31.83746542,Lat 118.76601791,Lon        26.244,Ellh     0.011942, 0.013650, 0.027824    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A4",
+      "raw_value": "3       369625.785051   [2404]       5,N            -3,E           194,V        31.83739488,Lat 118.76573336,Lon        26.280,Ellh     0.011442, 0.013179, 0.027001    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A5",
+      "raw_value": "4       369633.298090   [2404]       3,N           -13,E           193,V        31.83736571,Lat 118.76553581,Lon        28.550,Ellh     0.010593, 0.012356, 0.025984    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A6",
+      "raw_value": "5       369641.025805   [2404]       4,N             2,E           194,V        31.83734338,Lat 118.76532145,Lon        32.342,Ellh     0.011605, 0.013322, 0.026825    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A7",
+      "raw_value": "6       369649.992187   [2404]     -11,N             8,E           193,V        31.83731511,Lat 118.76499425,Lon        33.732,Ellh     0.010977, 0.012852, 0.026859    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A8",
+      "raw_value": "7       369655.008794   [2404]      -5,N            -3,E           194,V        31.83731243,Lat 118.76493362,Lon        33.702,Ellh     0.010659, 0.012236, 0.026226    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A9",
+      "raw_value": "8       369663.643257   [2404]     -22,N             0,E           193,V        31.83729181,Lat 118.76463426,Lon        36.345,Ellh     0.011210, 0.013176, 0.025857    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A10",
+      "raw_value": "9       369671.796351   [2404]      -7,N            -8,E           194,V        31.83722122,Lat 118.76439338,Lon        39.172,Ellh     0.011329, 0.013253, 0.026764    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A11",
+      "raw_value": "10      369681.559329   [2404]       6,N             0,E           194,V        31.83697954,Lat 118.76408825,Lon        39.094,Ellh     0.011342, 0.013128, 0.026898    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A12",
+      "raw_value": "11      369691.956304   [2404]       0,N            -1,E           194,V        31.83708362,Lat 118.76361841,Lon        39.903,Ellh     0.011085, 0.012992, 0.026499    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A13",
+      "raw_value": "12      369697.807406   [2404]       0,N           -13,E           193,V        31.83711291,Lat 118.76352997,Lon        42.264,Ellh     0.011381, 0.013185, 0.027137    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A14",
+      "raw_value": "13      369706.950901   [2404]       5,N            -3,E           193,V        31.83706384,Lat 118.76318391,Lon        42.263,Ellh     0.011829, 0.013656, 0.027228    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A15",
+      "raw_value": "14      369715.877597   [2404]       2,N            -4,E           193,V        31.83692996,Lat 118.76289372,Lon        45.543,Ellh     0.011364, 0.013171, 0.026896    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A16",
+      "raw_value": "15      369723.678155   [2404]       0,N            16,E           193,V        31.83705395,Lat 118.76272125,Lon        45.506,Ellh     0.010941, 0.012913, 0.024735    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A17",
+      "raw_value": "16      369731.042868   [2404]     -19,N             3,E           193,V        31.83720947,Lat 118.76276953,Lon        45.585,Ellh     0.011134, 0.013000, 0.025328    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A18",
+      "raw_value": "17      369738.634944   [2404]      -7,N            12,E           194,V        31.83727704,Lat 118.76296527,Lon        45.590,Ellh     0.011124, 0.012858, 0.026609    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A19",
+      "raw_value": "18      369746.600245   [2404]     -14,N            -2,E           193,V        31.83731403,Lat 118.76320298,Lon        45.366,Ellh     0.010994, 0.012792, 0.025473    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A20",
+      "raw_value": "19      369756.084042   [2404]     -10,N             1,E           194,V        31.83726080,Lat 118.76358057,Lon        45.053,Ellh     0.011279, 0.012946, 0.025682    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A21",
+      "raw_value": "20      369765.046518   [2404]       0,N            -9,E           194,V        31.83717571,Lat 118.76389759,Lon        45.454,Ellh     0.010715, 0.012608, 0.025124    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A22",
+      "raw_value": "21      369773.502312   [2404]      -6,N             1,E           193,V        31.83716367,Lat 118.76417679,Lon        45.552,Ellh     0.011377, 0.013291, 0.025316    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A23",
+      "raw_value": "22      369781.966151   [2404]      -2,N            -7,E           193,V        31.83717780,Lat 118.76445761,Lon        45.565,Ellh     0.010812, 0.012449, 0.025339    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A24",
+      "raw_value": "23      369790.448847   [2404]      -2,N             1,E           194,V        31.83720831,Lat 118.76474054,Lon        45.456,Ellh     0.010843, 0.012768, 0.025170    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A25",
+      "raw_value": "24      369798.820749   [2404]      -2,N             2,E           194,V        31.83724007,Lat 118.76501145,Lon        44.489,Ellh     0.010690, 0.012415, 0.025335    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A26",
+      "raw_value": "25      369807.639313   [2404]      -1,N             4,E           193,V        31.83727550,Lat 118.76530895,Lon        37.725,Ellh     0.011977, 0.013814, 0.027705    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A27",
+      "raw_value": "26      369815.942889   [2404]      -5,N             0,E           193,V        31.83730999,Lat 118.76556612,Lon        32.803,Ellh     0.011055, 0.012813, 0.025664    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A28",
+      "raw_value": "27      369824.504774   [2404]       2,N            11,E           193,V        31.83736404,Lat 118.76584214,Lon        27.210,Ellh     0.011154, 0.012614, 0.027854    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A29",
+      "raw_value": "28      369833.166703   [2404]       8,N            29,E           192,V        31.83740302,Lat 118.76601912,Lon        24.254,Ellh     0.010490, 0.011919, 0.026364    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A30",
+      "raw_value": "300m往返13m/s飞行轨迹坐标",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A31",
+      "raw_value": "1       370274.185820   [2404]       4,N           -41,E           190,V        31.83747365,Lat 118.76606965,Lon        25.929,Ellh     0.028725, 0.030375, 0.078275    16,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A32",
+      "raw_value": "2       370289.056007   [2404]       4,N            -6,E           194,V        31.83737396,Lat 118.76498383,Lon        34.007,Ellh     0.030755, 0.032634, 0.082435    16,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A33",
+      "raw_value": "3       370301.167078   [2404]       0,N           -22,E           193,V        31.83728786,Lat 118.76427139,Lon        41.350,Ellh     0.032049, 0.033995, 0.086772    16,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A34",
+      "raw_value": "4       370314.162686   [2404]       0,N           -13,E           194,V        31.83719590,Lat 118.76351000,Lon        47.763,Ellh     0.033933, 0.035708, 0.092093    16,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A35",
+      "raw_value": "5       370325.633820   [2404]      -5,N            -1,E           194,V        31.83712399,Lat 118.76289058,Lon        52.845,Ellh     0.034827, 0.037054, 0.094088    16,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A36",
+      "raw_value": "6       370336.810703   [2404]     -16,N            -5,E           193,V        31.83705863,Lat 118.76232335,Lon        54.172,Ellh     0.034172, 0.035775, 0.094160    16,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A37",
+      "raw_value": "7       370347.606186   [2404]     -17,N           -49,E           187,V        31.83698870,Lat 118.76179171,Lon        54.275,Ellh     0.036105, 0.037867, 0.097779    16,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A38",
+      "raw_value": "8       370359.638154   [2404]     -19,N            22,E           192,V        31.83714269,Lat 118.76245363,Lon        54.275,Ellh     0.035840, 0.037520, 0.098645    16,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A39",
+      "raw_value": "9       370372.848893   [2404]       0,N             9,E           193,V        31.83723237,Lat 118.76330793,Lon        53.076,Ellh     0.038119, 0.039721, 0.104323    16,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A40",
+      "raw_value": "10      370385.210331   [2404]       0,N            15,E           194,V        31.83727263,Lat 118.76404869,Lon        51.374,Ellh     0.039418, 0.041095, 0.108007    16,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A41",
+      "raw_value": "11      370400.311915   [2404]       0,N            18,E           193,V        31.83731674,Lat 118.76517489,Lon        35.209,Ellh     0.041537, 0.043443, 0.114502    16,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A42",
+      "raw_value": "12      370414.666794   [2404]      -1,N            34,E           192,V        31.83734965,Lat 118.76600760,Lon        26.721,Ellh     0.042689, 0.044673, 0.117826    16,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A43",
+      "raw_value": "300m往返5m/s飞行轨迹坐标",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A44",
+      "raw_value": "1       371025.976310   [2404]     -11,N            -8,E           193,V        31.83747319,Lat 118.76606985,Lon        25.594,Ellh     0.011954, 0.013011, 0.032648    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A45",
+      "raw_value": "2       371042.648437   [2404]      -5,N           -13,E           193,V        31.83727684,Lat 118.76471689,Lon        35.590,Ellh     0.012718, 0.014041, 0.031962    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A46",
+      "raw_value": "3       371056.751123   [2404]      -8,N           -22,E           192,V        31.83716510,Lat 118.76370048,Lon        44.797,Ellh     0.012480, 0.013877, 0.030940    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A47",
+      "raw_value": "4       371069.786209   [2404]     -13,N           -72,E           179,V        31.83709183,Lat 118.76284079,Lon        50.763,Ellh     0.012315, 0.013635, 0.031922    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A48",
+      "raw_value": "5       371084.268518   [2404]       0,N             0,E           193,V        31.83721772,Lat 118.76371099,Lon        47.100,Ellh     0.012054, 0.012837, 0.033484    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A49",
+      "raw_value": "6       371099.518417   [2404]      -1,N            19,E           193,V        31.83731175,Lat 118.76476315,Lon        32.605,Ellh     0.011320, 0.012662, 0.029617    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A50",
+      "raw_value": "7       371117.458257   [2404]       4,N            25,E           193,V        31.83745974,Lat 118.76605667,Lon        26.544,Ellh     0.011076, 0.012614, 0.028645    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A51",
+      "raw_value": "100m横飞10m/s飞行轨迹坐标",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A52",
+      "raw_value": "1       371435.144714   [2404]     -41,N           -30,E           187,V        31.83722076,Lat 118.76499786,Lon        32.444,Ellh     0.010220, 0.012129, 0.026253    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A53",
+      "raw_value": "2       371445.462403   [2404]       4,N           -42,E           189,V        31.83760469,Lat 118.76484883,Lon        38.273,Ellh     0.010405, 0.012329, 0.027928    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A54",
+      "raw_value": "3       371456.291377   [2404]     -24,N           -45,E           187,V        31.83715141,Lat 118.76489144,Lon        38.331,Ellh     0.009962, 0.011684, 0.027163    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A55",
+      "raw_value": "4       371465.897934   [2404]      -1,N           -44,E           190,V        31.83737540,Lat 118.76485882,Lon        38.294,Ellh     0.010346, 0.012358, 0.026416    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A56",
+      "raw_value": "100m横飞5m/s飞行轨迹坐标",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A57",
+      "raw_value": "1       371660.517960   [2404]     -10,N           -43,E           189,V        31.83725857,Lat 118.76502251,Lon        37.292,Ellh     0.010326, 0.012080, 0.027173    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A58",
+      "raw_value": "2       371669.968187   [2404]      23,N           -49,E           186,V        31.83756376,Lat 118.76496002,Lon        37.269,Ellh     0.010403, 0.012428, 0.026704    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A59",
+      "raw_value": "3       371679.309892   [2404]     -30,N           -47,E           185,V        31.83726125,Lat 118.76502675,Lon        37.377,Ellh     0.009688, 0.011476, 0.026431    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A60",
+      "raw_value": "4       371687.527789   [2404]     -10,N           -46,E           189,V        31.83738788,Lat 118.76500035,Lon        37.198,Ellh     0.010047, 0.012088, 0.025668    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A61",
+      "raw_value": "200m横飞10m/s飞行轨迹坐标",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A62",
+      "raw_value": "1       371924.424961   [2404]     -13,N           -45,E           188,V        31.83692761,Lat 118.76401137,Lon        40.405,Ellh     0.010104, 0.012098, 0.026043    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A63",
+      "raw_value": "2       371937.435107   [2404]      -2,N           -43,E           189,V        31.83758498,Lat 118.76376233,Lon        40.327,Ellh     0.010346, 0.012222, 0.026787    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A64",
+      "raw_value": "3       371950.640940   [2404]     -33,N           -27,E           189,V        31.83690897,Lat 118.76402408,Lon        40.527,Ellh     0.009968, 0.011847, 0.025252    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A65",
+      "raw_value": "4       371962.894103   [2404]     -11,N           -41,E           190,V        31.83727445,Lat 118.76388320,Lon        40.401,Ellh     0.010277, 0.012328, 0.025695    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A66",
+      "raw_value": "200m横飞5m/s飞行轨迹坐标",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A67",
+      "raw_value": "1       372721.548374   [2404]     -22,N           -41,E           189,V        31.83694161,Lat 118.76404075,Lon        43.165,Ellh     0.011982, 0.013147, 0.026816    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A68",
+      "raw_value": "2       372734.454269   [2404]       8,N           -48,E           187,V        31.83754977,Lat 118.76379905,Lon        43.190,Ellh     0.011430, 0.012552, 0.026119    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A69",
+      "raw_value": "3       372746.917840   [2404]     -50,N           -35,E           183,V        31.83693558,Lat 118.76404287,Lon        43.287,Ellh     0.012093, 0.013321, 0.027117    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A70",
+      "raw_value": "4       372758.643172   [2404]     -16,N           -43,E           189,V        31.83732776,Lat 118.76388027,Lon        43.130,Ellh     0.011090, 0.012191, 0.025704    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A71",
+      "raw_value": "300m横飞10m/s飞行轨迹坐标",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A72",
+      "raw_value": "1       373063.063839   [2404]     -15,N           -38,E           189,V        31.83657380,Lat 118.76303886,Lon        48.839,Ellh     0.011635, 0.012618, 0.024187    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A73",
+      "raw_value": "2       373079.675062   [2404]      13,N           -44,E           188,V        31.83758864,Lat 118.76297709,Lon        48.716,Ellh     0.011301, 0.012338, 0.024125    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A74",
+      "raw_value": "3       373095.975777   [2404]     -39,N           -41,E           185,V        31.83647753,Lat 118.76304071,Lon        49.052,Ellh     0.011197, 0.012156, 0.024079    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A75",
+      "raw_value": "4       373110.272511   [2404]      -4,N           -45,E           189,V        31.83714811,Lat 118.76300498,Lon        48.948,Ellh     0.011492, 0.012933, 0.026471    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A76",
+      "raw_value": "300m横飞5m/s飞行轨迹坐标",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A77",
+      "raw_value": "1       373341.484796   [2404]      -9,N           -41,E           190,V        31.83653321,Lat 118.76300653,Lon        49.172,Ellh     0.011159, 0.011948, 0.023924    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A78",
+      "raw_value": "2       373357.524780   [2404]      12,N           -46,E           188,V        31.83752905,Lat 118.76296236,Lon        48.847,Ellh     0.011144, 0.012167, 0.024247    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A79",
+      "raw_value": "3       373373.099818   [2404]     -28,N           -35,E           189,V        31.83650905,Lat 118.76300817,Lon        49.118,Ellh     0.012060, 0.012961, 0.024893    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A80",
+      "raw_value": "4       373386.232060   [2404]       1,N           -43,E           190,V        31.83708586,Lat 118.76297544,Lon        49.063,Ellh     0.012355, 0.012968, 0.025898    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A84",
+      "raw_value": "设备坐标",
+      "formula": null,
+      "cell_type": "s"
+    },
+    {
+      "sheet": "Sheet1",
+      "cell": "A85",
+      "raw_value": "1       369612.048255   [2404]      -4,N           -40,E           189,V        31.83749046,Lat 118.76606266,Lon        25.544,Ellh     0.011411, 0.013400, 0.025919    50,Q",
+      "formula": null,
+      "cell_type": "s"
+    }
+  ],
+  "nonempty_cell_count": 82,
+  "flight_gnss_samples": 71,
+  "device_samples": 1,
+  "adjacent_segments": 62,
+  "conditions": 9,
+  "comments_members": [],
+  "external_link_members": [],
+  "A2_equals_device_A85_raw_text": true,
+  "interpretation_limits": [
+    "GNSS week/TOW and Lat/Lon/Ellh use existing verified code conventions, including GPS-UTC 18 s and WGS84 ENU device origin.",
+    "N/E/V/Q and three unlabelled fields remain opaque; they do not encode authenticated flight state here.",
+    "The first roundtrip10 sample exactly duplicates the device coordinate; this is not a takeoff/landed/absence event.",
+    "All endpoint chord speeds are descriptive; sparse sampling cannot authenticate hover or moving-to-hover transition.",
+    "Six cross conditions each contain four samples; roundtrip10/13/5 contain 28/12/7, with nonuniform sample intervals.",
+    "No timestamp-linked independent armed/landed/video/motion-state event exists in this workbook.",
+    "Low height, zero ENU range and provisional GNSS projection outside a chosen ROI are not certified LiDAR-FOV negatives.",
+    "Reliable per-bag clock events, surveyed extrinsic/lever arm and sensor FOV remain UNKNOWN."
+  ]
+}

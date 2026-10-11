@@ -1,0 +1,10 @@
+{
+  "phase": "E20 metadata freeze preflight",
+  "command": "PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python scripts/negative_hover_evidence_audit.py freeze",
+  "exit_code": 1,
+  "error": "FileNotFoundError: scripts/e18_generalization_inventory.py",
+  "cause": "New audit helper initially listed a nonexistent inventory script; actual E19 source paths were inspected with rg --files scripts -g '*e18*'.",
+  "resolution": "Removed only the nonexistent path from the new metadata helper and retried before any freeze outputs were written.",
+  "frozen_E18_or_E19_modified": false,
+  "E18_solver_executed": false
+}

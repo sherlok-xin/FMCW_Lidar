@@ -1,0 +1,33 @@
+{
+  "status": "READ_ONLY_FILENAME_LEVEL_GIT_HISTORY_AUDIT",
+  "queries": [
+    {
+      "command": "git log --all --name-status '--format=%h %s' -- '*.mp4' '*.avi' '*.mov' '*.mkv' '*.srt' '*.vtt' '*.xlsx' '*.xls' '*.gpx' '*.kml' '*.nmea' '*.ubx' '*.ulg' '*.tlog' '*flight*' '*hover*' '*takeoff*' '*landing*' '*GNSS*' '*RTK*' '*GPS*' ':!.local/**' ':!.claude/settings*' ':!data/.claude/settings*' ':!fmcw/**' ':!results/**'",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": "git log --all --diff-filter=D --name-status '--format=%h %s' -- '*.md' '*.csv' '*.json' '*.sh' '*.log' '*.txt' 'bag/**' 'data/**' ':!.local/**' ':!.claude/settings*' ':!data/.claude/settings*' ':!fmcw/**'",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": "git log --all --name-status '--format=%h %s' -- 'bag/**' 'data/**' ':!data/.claude/settings*'",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "history_media_or_flight_state_path_matches": false,
+  "history_deleted_project_record_path_matches": false,
+  "project_local_nonsettings_note_files": [],
+  "settings_credentials_or_local_blobs_read": false,
+  "deleted_blobs_restored": false,
+  "limitations": [
+    "Path-level Git evidence is limited to committed project records.",
+    "Raw bags and PCDs are not certified target-absent by their filenames or missing logs.",
+    "No local session history, configuration/credentials, or deleted .local blobs were opened."
+  ]
+}

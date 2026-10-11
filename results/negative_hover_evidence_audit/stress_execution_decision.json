@@ -1,0 +1,20 @@
+{
+  "status": "DATA_GAP",
+  "candidate_inventory_rows": 80,
+  "rows_are_not_independent_sequences": true,
+  "evidence_level_counts": {
+    "L0": 57,
+    "L2": 11,
+    "L1": 12
+  },
+  "qualified_negative_windows": [],
+  "qualified_slow_hover_windows": [],
+  "E18_stress_execution": "NOT_RUN_DATA_GAP",
+  "new_solver_runs": 0,
+  "negative_winner_score_duration_components": "UNKNOWN",
+  "independent_moving_slow_hover_score_degradation": "UNKNOWN",
+  "operational_false_alarms_precision": "UNKNOWN",
+  "threshold_selected": "NONE",
+  "prior_E19_traces": "OLD_STORED_DIAGNOSTIC_NOT_NEW_STRESS",
+  "reason": "No independent target-state window tied to LiDAR time/FOV; silver does not qualify"
+}

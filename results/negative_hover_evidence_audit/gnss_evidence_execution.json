@@ -1,0 +1,28 @@
+{
+  "status": "VERIFIED_DESCRIPTIVE_GNSS_INVENTORY_NOT_FORMAL_GT",
+  "started_utc": "2026-10-11T14:22:01.513378+00:00",
+  "ended_utc": "2026-10-11T14:22:01.527601+00:00",
+  "command": "PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python scripts/negative_hover_gnss_inventory.py",
+  "python": "3.10.12",
+  "numpy": "2.2.6",
+  "git_head": "5ad38b94b87949657f803485da129e3a738e9a64",
+  "script_sha256": "972cbc7949c2c9d1cec4c51ed0a959e4ab6db8283bd8ebbc1fdda637b048450f",
+  "verified_conversion_source": "scripts/build_gt_benchmark_v0.py",
+  "verified_conversion_source_sha256": "508b0264485109f75c754f05e070d4a8e1e1244569a4b9f9bd16f0c3605493d0",
+  "input_sha256": "5adc1f090b84731b23a2c8cd02f38c002cafef94b9bdaaee98827981a8e54c69",
+  "input_unchanged_after_execution": true,
+  "detector_tracker_or_E18_executed": false,
+  "output_sha256": {
+    "gnss_workbook_inventory.json": "e07d99408a6ed882fbf0e12fbf0cb17064ec7dd046701936dd7b953d145917fd",
+    "gnss_samples.csv": "a5c3edc592ff66c3364b8e44c8d194620b96eaae9e85ce1c5f719528abfb8bc8",
+    "gnss_adjacent_segments.csv": "b85b978362a0967c198791afdb1654825cf00946b317d22769e09539992970ec",
+    "gnss_condition_summary.csv": "0d19ae93d716f60cd9995ed4aaea016527599c9809a22a83ac4e53b1b4191520"
+  },
+  "counts": {
+    "all_nonempty_cells": 82,
+    "all_gnss_rows_including_device": 72,
+    "flight_gnss_rows": 71,
+    "adjacent_segments": 62,
+    "conditions": 9
+  }
+}

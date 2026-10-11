@@ -363,6 +363,16 @@ These decisions are evidence-bounded, not permanent prohibitions.
 
 **Decision:** End the requested mechanism/generalization audit without tuning, fixingframe21, Doppler or new features. Combined E18 remains a frozen DEV result, not a validated operational detector. Independent negative/hover evidence is required to answer unresolved safety/generalization claims; this requirement is not authorization to launch another experiment.
 
+### H31 — Existing independent records can certify negative and moving→hover windows
+
+**2026-10-11 status:** NOT ESTABLISHED / DATA_GAP after E20 read-only existing-evidence audit. See `FMCW_Negative_Hover_Evidence_Audit.md`. No new E18 solver run or algorithm change.
+
+**Evidence:**14ZIP/51bounded bag topic probes,6standalone final indexes,completeExcel,photoEXIF,19source entries andpath-level Git history yield no independently certified absence/hover window. Photo precedesfirstFebbag21m19.386s; minimumGNSS endpointchord speed0.996m/s and device-rowduplicate do not establish flightstate. Three continuous silver moving→near-static shapes are observed-center descriptors sharing LiDAR-derived identity/selection; they cannot independently validate E18.
+
+**Boundary:** stored200m_cross_5/7–12 novelty falls0.777778→0.142857, augmentednodesstaypositive; supports repeated-cell mechanismrisk, not new true-hover/systematicdegradation. Archivefooter/fullcloud notdecoded; outside-repositoryrecordsUNKNOWN. Missinglabels/returns andfailedclosure are notnegative.
+
+**Decision:** E18a53702d remains fullyfrozen; independent negative/slow-hover stress NOT_RUN_DATA_GAP. No threshold, Doppler, weights, features, missfix orgraph expansion. Authentic timedidentity/state/visibility records are needed before evaluation advances; thislog authorizes neither newacquisition noralgorithm.
+
 ## Possible research directions
 
 Everything in this section is **PROPOSED** or **SPECULATIVE**, not an experimental result.
