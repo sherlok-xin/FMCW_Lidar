@@ -1,10 +1,20 @@
 # Prioritized TODO
 
-Status date: **2026-10-10**
+Status date: **2026-10-11**
 
 The ordering below reflects dependency and scientific value. Algorithm novelty is intentionally placed after provenance, labels, calibration, and evaluation because the current evidence cannot otherwise distinguish improvement from additional false tracks or implementation drift.
 
 ## P0 — Establish an auditable baseline
+
+### 2026-10-11 E18 mechanism/generalization audit — complete; retain freeze
+
+- Preserve `a53702d` E18 formulas/weights/graphs/labels/3m gate and `FMCW_E18_Mechanism_Generalization_Audit.md` / `results/e18_mechanism_generalization_audit/`; this scoped audit does not authorize a new method, threshold or remaining-miss fix.
+- Four arms on same saved graph: fine56/56/0/79 of80, historical0/56/0/79. Keep motion-only regression, background-only failures and24gain/1loss interaction; static-reference demotion is not sufficient detection recovery.
+- Keep ALL5shortslow windows/22obs per family and14/12/14/12result.200m_cross_5/frames7–12 loss6/6→0/6 is relative novelty competition with positive witness background, not hard deletion or proof of true-hover systemic failure.
+- No reliable negative or independent hover certification was found in existing artifacts. Negative scores/false alarms/precision remain UNKNOWN and negative CSV is header-only, not zero. Never use outside-silver/no-return/failed-closure frames as negatives.
+- Data/evidence blocker remains independently verified target-absence/long-hover windows tied to bag timestamps and independent GT/held-out sequences. Any new acquisition/evaluation requires a separate scoped request; do not infer authorization from this TODO.
+- 12new+14E18tests/212protected hashes/20exactfullpool replays pass. Keep metadata-only run-manifest reconciliation and new-arm span-rank independent-verification limits.
+- Stop at audit handoff; no feature stacking, weight tuning, Doppler, baseline adoption or Benchmark v1 upgrade.
 
 ### 2026-10-10 one frozen background/motion DP MVP — complete
 

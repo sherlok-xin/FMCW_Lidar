@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-11T11:07:55.079408+00:00",
+  "command": "PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python scripts/e18_mechanism_summaries.py",
+  "activity": "descriptive stored-CSV accounting and identities; no solver, weight search, or new scientific experiment",
+  "source_sha256": "dd5c045898600c990198f4cee24eedbe35269531e3daff28b9d12b9db30cd2c3",
+  "fixed_path_additivity_checks": 30,
+  "output_sha256": {
+    "results/e18_mechanism_generalization_audit/fixed_component_differences.csv": "6faf1303afaa995c69d9091515d2333d059960f6f85e931efb1e6ca2a9f570c5",
+    "results/e18_mechanism_generalization_audit/matched_frame_changes.csv": "d23683eb6e1357b91d778e450753bb18d9edfe99cbcebb33fa6811305c0801b0",
+    "results/e18_mechanism_generalization_audit/term_contrasts.csv": "462e3317b6790ad77f2460b9282c7b8356bb7cb3963c205ebc9b587cb22399b7"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "checks": {
+    "protected_file_hashes": 212,
+    "manifest_output_hashes": 70,
+    "bookkeeping_reconciliation_exact_diff": 1,
+    "frozen_node_annotation_checks": 37117,
+    "selected_edge_gate_checks": 5785,
+    "selected_acceleration_gate_checks": 5545,
+    "independent_path_component_checks": 2640,
+    "full_terminal_pool_records": 3328536,
+    "exact_e18_full_pool_replays": 20,
+    "full_selected_paths": 40,
+    "fixed_reference_path_records": 120,
+    "fixed_same_span_margins": 40,
+    "existing_e18_span_pool_score_recounts": 40,
+    "existing_e18_span_rank_replays": 40,
+    "rank_semantic_checks": 80,
+    "silver_frame_checks": 640,
+    "range_group_records": 24,
+    "maximal_short_slow_descriptors": 10,
+    "short_slow_output_records": 40,
+    "short_slow_fixed_records": 40,
+    "summary_output_hashes": 3,
+    "selected_path_term_contrasts": 10
+  },
+  "coverage_limits": [
+    "No real DP rerun; no independent optimality certificate for new two ablation-arm spans.",
+    "Span rank original/E18 matched prior E18 artifacts; new arm span ranks checked for semantics only.",
+    "Cell causal annotation algebra checked on frozen nodes; original occupancy-history correctness inherited from prior E18 audit."
+  ],
+  "command": "PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python scripts/audit_e18_mechanism_outputs.py",
+  "checker_sha256": "90b204e219f31ba33512f4e17eed6080b92929d7b386d3e86dfd9a79912bd33f",
+  "utc_recorded": "2026-10-11T11:09:05Z",
+  "activity": "Independent read-only stored-artifact verification; no real-data DP, detector, tracker, or parameter search run."
+}

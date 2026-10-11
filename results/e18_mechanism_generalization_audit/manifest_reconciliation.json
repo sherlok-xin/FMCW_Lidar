@@ -1,0 +1,14 @@
+{
+  "status": "BOOKKEEPING_ONLY_RECONCILIATION",
+  "date": "2026-10-11",
+  "failed_command": "PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python scripts/e18_mechanism_audit.py evaluate",
+  "failed_at": "run-output identity precheck, before labels loaded or any evaluation solver run",
+  "cause": "inventory agent completed source metadata after the full-run manifest had hashed this descriptive CSV",
+  "affected_file": "results/e18_mechanism_generalization_audit/generalization_inventory.csv",
+  "original_sha256": "9556a4643ed8fef5b4ca420c148ffa8ac98e1e913449e47fc27c059858dca1c2",
+  "final_sha256": "aa0be06c575aa2256d13aa283e123b9edd0c5f46bfee078caeb865ff54c20cb7",
+  "original_run_manifest_sha256": "5674fff41fd1552add121b9ae7a9175e04f02f8e3d5fa7cc41d1b7dc9ec03281",
+  "original_manifest_preserved_as": "run_manifest_before_inventory_finalization.json",
+  "changes": "Only this inventory CSV SHA and a provenance note in run_manifest.json. No inference artifacts, frozen source, parameters, graph, labels, or E18 evidence changed.",
+  "all_other_output_hashes_unchanged": true
+}

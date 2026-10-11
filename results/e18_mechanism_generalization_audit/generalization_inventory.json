@@ -1,0 +1,233 @@
+{
+  "version": 1,
+  "audit_date": "2026-10-11",
+  "base_commit": "a53702da1dc5357149e3e472a9e489ff08e9afe4",
+  "artifact_type": "READ_ONLY_DATA_AND_EVIDENCE_INVENTORY",
+  "scope": {
+    "repository": "FMCW_LIDAR",
+    "zip_archives": 14,
+    "zip_bag_members": 51,
+    "february_zip_bag_members": 9,
+    "older_DronesBag_zip_bag_members": 42,
+    "standalone_bag_files": 6,
+    "standalone_extracted_February_copies": 3,
+    "other_standalone_legacy_bags": 3,
+    "pcd_directories_inspected_by_name_and_existing_metadata": 8,
+    "zip_archive_comments": "ALL_EMPTY",
+    "zip_member_comments": "ALL_EMPTY",
+    "bag_member_name_representation": "Readable normalized member names, consistent with gt_manifest.csv. Some February ZIP central-directory names are legacy GBK exposed as CP437 by Python; apply normalize_zip_member_name from scripts/build_gt_benchmark_v0.py before comparing or resolving the intended Chinese names. No archive name bytes were modified.",
+    "inventory_counts_are_file_counts_not_independent_sequence_counts": true,
+    "extracted_copy_caveat": "The three February standalone names match ZIP-contained bag paths and are treated as extracted copies, not additional independent sequences. Their full byte identity was not rehashed during this lightweight audit."
+  },
+  "negative_audit": {
+    "status": "NO_RELIABLY_CERTIFIED_TARGET_ABSENT_BAG_OR_WINDOW_FOUND",
+    "reliable_target_absence": "UNKNOWN",
+    "accepted_target_absent_bags": [],
+    "accepted_target_absent_windows": [],
+    "negative_winner_execution_status": "NOT_RUN_NO_RELIABLE_TARGET_ABSENCE",
+    "negative_winner_csv": "results/e18_mechanism_generalization_audit/reliable_negative_winners.csv",
+    "negative_winner_csv_status": "HEADER_ONLY_NO_OBSERVATIONS",
+    "e18_high_score_false_trajectory_in_target_absent_scene": "UNKNOWN",
+    "operational_precision": "UNKNOWN",
+    "false_alarms_per_frame": "UNKNOWN",
+    "operating_threshold": "NONE_SELECTED",
+    "reason": "No inspected artifact establishes synchronized true target absence. UAV-flight bags contain fragmented LiDAR-derived positive observations, not complete presence/absence labels. Missing labels, zero returns, failed closure, static-looking winners, directory names and filtered-empty frames are not absence evidence.",
+    "excluded_as_negative_evidence": [
+      "frames outside the 80 research_dev_v0 silver observations",
+      "300m_roundtrip_5 or 300m_roundtrip_13 insufficient-closure sequences",
+      "300m_cross_5 failed correspondence",
+      "300m_roundtrip_10 Doppler-closure failure",
+      "historical 100m no-return or empty-preprocessing interpretation, superseded by calibration closure",
+      "scene_a, rotate_90, rotate_90_2, rotate_90_3 or problem archive directories",
+      "low Doppler or nearly static path appearance",
+      "background-initialization frames or source bags without independently verified absent intervals"
+    ],
+    "sources": [
+      "results/temporal_evidence_mvp/negative_window_audit.json",
+      "results/published_baseline_dp_mvp/negative_window_audit.json",
+      "FMCW_Temporal_Evidence_MVP.md",
+      "FMCW_Calibration_Closure.md",
+      "gt_manifest.csv",
+      "results/research_dev_v0/dev_manifest.csv",
+      "docs/CURRENT_STATUS.md",
+      "docs/TODO.md"
+    ],
+    "missing_evidence": [
+      "explicit target-absent acquisition notes tied to bag/frame timestamps",
+      "synchronized video or flight-state/flight-controller records establishing absence",
+      "independent annotated negative windows rather than unlabelled positive-flight frames"
+    ]
+  },
+  "hover_audit": {
+    "independently_identified_dedicated_hover_or_very_slow_UAV_bag": "UNKNOWN",
+    "independent_hover_ground_truth": "UNKNOWN",
+    "accepted_independent_hover_stress_bags": [],
+    "dedicated_hover_stress_execution_status": "NOT_RUN_NO_INDEPENDENTLY_CERTIFIED_HOVER_SEQUENCE_WITH_FROZEN_GRAPH",
+    "empirical_systematic_hover_suppression": "UNKNOWN",
+    "important_qualification": "Do not say that no slow evidence exists. Existing cross DEV silver observations contain short near-stationary/slow center changes. They can support a separate retrospective short-slow descriptive stress audit, not an independent hover/generalization result.",
+    "short_slow_stress_policy_source": "results/e18_mechanism_generalization_audit/protocol.json",
+    "short_slow_stress_selection": "Use ALL maximal consecutive observed silver runs whose every geometric step speed is at most the inherited E18 static diagnostic scale 1 m / median full-bag real dt, with at least 3 observations and at least 2 s duration. Do not use a hand-selected window list. Keep the original full-bag prior occupancy history; do not reset background at subwindow boundaries.",
+    "short_slow_data_source": "results/research_dev_v0/silver_labels.csv",
+    "per_sequence_observed_adjacent_speed_descriptors_mps": [
+      {"condition_id": "100m_cross_10", "observations": 11, "consecutive_steps": 8, "minimum": 0.07890501556438873, "median": 2.532682298886757, "maximum": 7.4976450526702685},
+      {"condition_id": "100m_cross_5", "observations": 19, "consecutive_steps": 16, "minimum": 0.10147813221489865, "median": 1.9627903240683646, "maximum": 9.258869542829922},
+      {"condition_id": "200m_cross_10", "observations": 18, "consecutive_steps": 17, "minimum": 0.07955749936644585, "median": 3.6050291928888165, "maximum": 13.652469972931499},
+      {"condition_id": "200m_cross_5", "observations": 22, "consecutive_steps": 21, "minimum": 0.06991840255718294, "median": 7.390618964235442, "maximum": 11.01569546524108},
+      {"condition_id": "300m_cross_10", "observations": 10, "consecutive_steps": 8, "minimum": 0.5700728609482006, "median": 8.777041764233736, "maximum": 12.192341899312678}
+    ],
+    "speed_definition": "Euclidean displacement between consecutive observed center rows divided by their positive real bag_time_unix difference; exclude nonconsecutive frame pairs. These are observed-return center motions, not surveyed physical UAV velocities. No detector/tracker gate uses these inventory descriptors.",
+    "legacy_near_stationary_proxy": {
+      "source_bag": "bag/81-82-pm-cross-x10_2025-11-19-15-57-13.bag",
+      "source_labels": "results/data_archaeology/cross/uav_pseudo_labels.csv",
+      "frames": [0, 1, 2, 3],
+      "duration_from_bag_time_s": 3.006063938140869,
+      "end_displacement_m": 0.18430851032310783,
+      "consecutive_geometric_speed_mps": [0.09420907340639696, 0.09222916274793666, 0.09614922547609403],
+      "raw_neighborhood_support": [5, 7, 9, 2],
+      "center_observed": [true, true, true, true],
+      "label_provenance": "Manual/trajectory-guided ROI; largest DBSCAN cluster in the ROI. Observed center flags do not independently authenticate UAV identity or hovering.",
+      "label_generation_source": "scripts/uav_pseudo_label.py",
+      "frozen_e18_graph_available": false,
+      "stress_execution": "NOT_RUN_OUTSIDE_FROZEN_GRAPH_AND_NO_INDEPENDENT_HOVER_IDENTITY"
+    },
+    "unselected_slow_candidate_examples_not_authenticated_hover": [
+      {"candidate_id": "100m_cross_10_e0001", "source": "results/calibration_closure/candidate_summary.csv", "median_speed_mps": 0.6173668942270162, "observations": 19, "status": "NOT_THE_CLOSURE_SELECTED_SILVER_CANDIDATE_DO_NOT_RELABEL"},
+      {"candidate_id": "200m_cross_5_e0001", "source": "results/calibration_closure/candidate_summary.csv", "median_speed_mps": 0.6540942679246198, "observations": 21, "status": "NOT_THE_CLOSURE_SELECTED_SILVER_CANDIDATE_DO_NOT_RELABEL"},
+      {"candidate_id": "300m_roundtrip_10_e0001", "source": "results/calibration_closure/candidate_summary.csv", "median_speed_mps": 0.7261218683589364, "observations": 24, "status": "NO_COMPLETE_CLOSURE_NO_FROZEN_E18_GRAPH_NOT_HOVER_GT"}
+    ],
+    "other_legacy_trajectory": "The existing longitudinal reverse trajectory is approaching, not an authenticated hover sequence; it has no E18 frozen graph.",
+    "mechanism_boundary": "E18 causal center-cell revisit novelty decreases with repeated prior occupancy, so prolonged hover/revisit suppression is a plausible mechanism risk. A formula-level risk is not an empirical independent-hover failure result; short cross-flight slow observations do not certify long-duration hover behavior."
+  },
+  "archives": [
+    {"path": "bag/20260205/100m横飞速度10ms.zip", "bag_members": ["100m横飞速度10ms/100m_v10m_s_2026-02-05-15-08-28.bag"]},
+    {"path": "bag/20260205/100m横飞速度5ms.zip", "bag_members": ["100m横飞速度5ms/100m_v5m_s_2026-02-05-15-12-20.bag"]},
+    {"path": "bag/20260205/200m横飞速度10ms.zip", "bag_members": ["200m横飞速度10ms/200m_v10m_s_2026-02-05-15-16-40.bag"]},
+    {"path": "bag/20260205/200m横飞速度5ms.zip", "bag_members": ["200m横飞速度5ms/200m_v5m_s_2026-02-05-15-29-55.bag"]},
+    {"path": "bag/20260205/300m往返速度10ms.zip", "bag_members": ["300m往返速度10ms/10m_s_2026-02-05-14-38-09.bag"]},
+    {"path": "bag/20260205/300m往返速度13ms.zip", "bag_members": ["300m往返速度13ms/13m_s_2026-02-05-14-49-14.bag"]},
+    {"path": "bag/20260205/300m往返速度5ms.zip", "bag_members": ["300m往返速度5ms/5m_s_2026-02-05-15-01-49.bag"]},
+    {"path": "bag/20260205/300m横飞速度10ms.zip", "bag_members": ["300m横飞速度10ms/300m_v10m_s_2026-02-05-15-35-35.bag"]},
+    {"path": "bag/20260205/300m横飞速度5ms.zip", "bag_members": ["300m横飞速度5ms/300m_v5m_s_2026-02-05-15-40-13.bag"]},
+    {
+      "path": "bag/DronesBag/20251023_drones.zip",
+      "bag_members": [
+        "20251023_drones/2025-10-23-15-15-25.bag",
+        "20251023_drones/2025-10-23-15-21-11.bag",
+        "20251023_drones/2025-10-23-15-48-45.bag"
+      ]
+    },
+    {
+      "path": "bag/DronesBag/20251024_drones.zip",
+      "bag_members": [
+        "20251024_drones/drones_2025-10-24-14-03-13.bag",
+        "20251024_drones/drones_white_2025-10-24-14-17-13.bag",
+        "20251024_drones/drones_white_2025-10-24-14-51-10.bag",
+        "20251024_drones/drones_white_2025-10-24-15-18-17.bag",
+        "20251024_drones/drones_white_2025-10-24-16-47-16.bag"
+      ]
+    },
+    {
+      "path": "bag/DronesBag/20251029_drones.zip",
+      "bag_members": [
+        "20251029_drones/drones_01_2025-10-29-16-06-17.bag",
+        "20251029_drones/drones_01_2025-10-29-16-16-55.bag",
+        "20251029_drones/drones_01_2025-10-29-16-36-13.bag",
+        "20251029_drones/drones_4_2025-10-29-17-19-05.bag",
+        "20251029_drones/drones_j4_2025-10-29-17-00-19.bag",
+        "20251029_drones/drones_m200_2025-10-29-16-47-22.bag",
+        "20251029_drones/drones_m200_2025-10-29-16-52-16.bag",
+        "20251029_drones/drones_mini4_2025-10-29-17-09-51.bag"
+      ]
+    },
+    {
+      "path": "bag/DronesBag/20251031_10Hz_drones.zip",
+      "bag_members": [
+        "20251031_10Hz_drones/lidar_test_2025-10-31-16-14-25.bag",
+        "20251031_10Hz_drones/lidar_test_2025-10-31-16-15-04.bag",
+        "20251031_10Hz_drones/lidar_test_2025-10-31-16-16-51.bag",
+        "20251031_10Hz_drones/lidar_test_2025-10-31-16-19-33.bag",
+        "20251031_10Hz_drones/lidar_test_2025-10-31-16-20-36.bag",
+        "20251031_10Hz_drones/lidar_test_2025-10-31-16-21-58.bag",
+        "20251031_10Hz_drones/lidar_test_2025-10-31-16-23-37.bag",
+        "20251031_10Hz_drones/scene_a/lidar_test_2025-10-31-16-08-38.bag",
+        "20251031_10Hz_drones/scene_a/lidar_test_2025-10-31-16-10-40.bag",
+        "20251031_10Hz_drones/scene_a/lidar_test_2025-10-31-16-12-40.bag",
+        "20251031_10Hz_drones/scene_a/lidar_test_2025-10-31-16-13-08.bag"
+      ]
+    },
+    {
+      "path": "bag/DronesBag/20251031_1Hz_drones.zip",
+      "bag_members": [
+        "20251031_1Hz_drones/rotate_90/lidar_test_2025-10-31-16-47-39.bag",
+        "20251031_1Hz_drones/rotate_90/lidar_test_2025-10-31-16-48-51.bag",
+        "20251031_1Hz_drones/rotate_90_2/lidar_test_2025-10-31-16-53-14.bag",
+        "20251031_1Hz_drones/rotate_90_3/lidar_test_2025-10-31-16-56-20.bag",
+        "20251031_1Hz_drones/rotate_90_3/lidar_test_2025-10-31-16-57-28.bag",
+        "20251031_1Hz_drones/rotate_90_3/lidar_test_2025-10-31-17-14-49.bag",
+        "20251031_1Hz_drones/rotate_90_3/lidar_test_2025-10-31-17-37-09.bag",
+        "20251031_1Hz_drones/rotate_90_3/problem/lidar_test_2025-10-31-17-19-19.bag",
+        "20251031_1Hz_drones/rotate_90_3/problem/lidar_test_2025-10-31-17-22-42.bag",
+        "20251031_1Hz_drones/rotate_90_3/problem/lidar_test_2025-10-31-17-26-44.bag",
+        "20251031_1Hz_drones/rotate_90_3/problem/lidar_test_2025-10-31-17-28-12.bag",
+        "20251031_1Hz_drones/rotate_90_3/problem/lidar_test_2025-10-31-17-29-16.bag",
+        "20251031_1Hz_drones/rotate_90_3/problem/lidar_test_2025-10-31-17-30-12.bag",
+        "20251031_1Hz_drones/rotate_90_3/problem/lidar_test_2025-10-31-17-31-41.bag",
+        "20251031_1Hz_drones/rotate_90_3/problem/lidar_test_2025-10-31-17-35-27.bag"
+      ],
+      "other_file_members": ["20251031_1Hz_drones/record_bag.sh"],
+      "record_script_content": "rosbag record /aqronos_cloud_0 -o lidar_test.bag"
+    }
+  ],
+  "standalone_bags": [
+    {"path": "bag/20260205/100m横飞速度10ms/100m_v10m_s_2026-02-05-15-08-28.bag", "role": "EXTRACTED_FEBRUARY_COPY_NOT_NEW_SEQUENCE"},
+    {"path": "bag/20260205/100m横飞速度5ms/100m_v5m_s_2026-02-05-15-12-20.bag", "role": "EXTRACTED_FEBRUARY_COPY_NOT_NEW_SEQUENCE"},
+    {"path": "bag/20260205/200m横飞速度5ms/200m_v5m_s_2026-02-05-15-29-55.bag", "role": "EXTRACTED_FEBRUARY_COPY_NOT_NEW_SEQUENCE"},
+    {"path": "bag/300m_v10_ms_2026-03-19-14-11-42/300m_v10_ms_2026-03-19-14-11-42.bag", "role": "LEGACY_TARGET_LIKE_PSEUDO_NO_FROZEN_E18_GRAPH"},
+    {"path": "bag/81-82-pm-cross-x10_2025-11-19-15-57-13.bag", "role": "LEGACY_TARGET_LIKE_PSEUDO_NO_FROZEN_E18_GRAPH"},
+    {"path": "bag/81-82-pm-x10_2025-11-19-15-38-07.bag", "role": "LEGACY_APPROACH_PSEUDO_NO_FROZEN_E18_GRAPH"}
+  ],
+  "inspection": {
+    "actions": [
+      "Read AGENTS.md, current project/status/log/TODO evidence relevant to data identity and negative policy",
+      "Enumerate bag files and immediate PCD directories without deleting or extracting them",
+      "Read every ZIP central-directory member name and archive/member comment",
+      "Read the archived record_bag.sh collection command and bag/fishros installation script without executing either",
+      "Search root reports, README files, durable docs and relevant project metadata for hover, slow, target-absent, negative and corresponding Chinese terms",
+      "Read existing calibration candidate/trajectory/alignment artifacts, DEV manifest/protocol/labels and legacy pseudo/reverse-analysis records",
+      "Compute consecutive observed-center speed descriptors using existing CSV rows and real bag timestamps only"
+    ],
+    "representative_read_only_commands": [
+      "find bag -maxdepth 4 -type f -printf '%p\\n'",
+      "find data -maxdepth 3 -type d -printf '%p\\n'",
+      "zipinfo -1 bag/DronesBag/20251031_1Hz_drones.zip",
+      "unzip -p bag/DronesBag/20251031_1Hz_drones.zip 20251031_1Hz_drones/record_bag.sh",
+      "git rev-parse HEAD"
+    ],
+    "raw_cloud_full_scan": "NOT_RUN",
+    "new_candidate_generation": "NOT_RUN",
+    "new_graph_generation": "NOT_RUN",
+    "detector_tracker_changes": "NONE",
+    "labels_changed": false,
+    "sources_for_label_provenance": [
+      "scripts/uav_pseudo_label.py",
+      "results/research_dev_v0/protocol.json",
+      "results/research_dev_v0/silver_labels.csv",
+      "results/calibration_closure/alignment_results.csv",
+      "results/calibration_closure/candidate_summary.csv",
+      "results/calibration_closure/lidar_trajectories.csv",
+      "results/data_archaeology/cross/uav_pseudo_labels.csv",
+      "results/data_archaeology/300m/uav_pseudo_labels.csv",
+      "results/data_archaeology/longitudinal/baseline_reverse/longitudinal_uav_frames.csv",
+      "results/range_sparsity_audit/frame_manifest.csv",
+      "results/background_motion_dp_mvp/protocol.json"
+    ]
+  },
+  "limitations": [
+    "This is an evidence inventory, not exhaustive new inference over 51 archived raw bag contents.",
+    "No new workbook parsing, visual scene certification, raw cloud scan or archive extraction was performed for this inventory.",
+    "Unknown acquisition details may exist outside the inspected repository; absence of a note does not prove absence of a UAV or absence of hover flight.",
+    "Retrospective slow cross-silver windows are selection-conditioned observed-return evidence, not independent hover labels or negative controls.",
+    "The archive inventory distinguishes file/member counts and extracted copies; it does not create an independent train/test/generalization split.",
+    "No score threshold, weight, label, geometry gate, DBSCAN setting, graph edge or 3 m matching gate is selected or changed by this inventory."
+  ]
+}

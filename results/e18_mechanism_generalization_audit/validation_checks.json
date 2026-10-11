@@ -1,0 +1,68 @@
+{
+  "audit_date": "2026-10-11",
+  "status": "PASS_WITH_EXPLICIT_GENERALIZATION_LIMITS",
+  "base_commit": "a53702da1dc5357149e3e472a9e489ff08e9afe4",
+  "environment_changed": false,
+  "tests": [
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python -m unittest discover -s tests -p 'test_e18_mechanism_audit.py' -v",
+      "tests": 12,
+      "exit_code": 0,
+      "status": "PASS",
+      "latest_execution_test_elapsed_s": 0.013,
+      "scope": "Synthetic four-arm exhaustive reference, term routing/decomposition, real dt, nonmutation, inherited constants/gates, negative-score path qualification, static/constant-velocity penalties and no Doppler access. No DEV points used."
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python -m unittest discover -s tests -p 'test_background_motion*.py' -v",
+      "tests": 14,
+      "exit_code": 0,
+      "status": "PASS",
+      "latest_execution_test_elapsed_s": 0.008,
+      "scope": "Unchanged existing E18 core/wrapper unit tests."
+    }
+  ],
+  "ast_parse": {
+    "status": "PASS",
+    "activity": "ast.parse(Path(name).read_text(), filename=name), no bytecode/cache writes",
+    "source_sha256": {
+      "scripts/e18_mechanism_audit.py": "ba7334de48dfae21f0e5bc221b12f306ddafd18db9165f6886da8f193d70c8d4",
+      "scripts/e18_mechanism_summaries.py": "dd5c045898600c990198f4cee24eedbe35269531e3daff28b9d12b9db30cd2c3",
+      "scripts/audit_e18_mechanism_outputs.py": "90b204e219f31ba33512f4e17eed6080b92929d7b386d3e86dfd9a79912bd33f",
+      "tests/test_e18_mechanism_audit.py": "919c60e12c31b4af76f7ef6a372467950a295cf7eb59c145ffcbbbd425e8e72a"
+    }
+  },
+  "integrity": {
+    "status": "PASS",
+    "activity": "e18_mechanism_audit.check(), before and after scoring/evaluation and during final verification",
+    "protected_file_count": 212,
+    "exact_original_and_E18_full_replays": 20,
+    "silver_match_gate_m": 3.0,
+    "labels_reselected_or_changed": false,
+    "E18_sources_graphs_weights_or_formulas_changed": false,
+    "Doppler_used": false,
+    "parameter_or_threshold_search": false
+  },
+  "independent_checker": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python scripts/audit_e18_mechanism_outputs.py",
+    "status": "PASS",
+    "result": "independent_audit.json",
+    "scope_limits": "No real-data DP rerun or new-arm real-graph optimality certificate. Existing original/E18 span pools recounted; new two ablation-arm span ranks checked for scope/semantics, not independently recomputed. Frozen background algebra verified, causal raw-history reconstruction inherited from prior E18 audit."
+  },
+  "negative_execution": "NOT_RUN_NO_RELIABLE_TARGET_ABSENCE",
+  "independent_hover_execution": "NOT_RUN_NO_INDEPENDENTLY_CERTIFIED_HOVER_SEQUENCE_WITH_FROZEN_GRAPH",
+  "short_slow_stress": "TESTED_ON_ALL_FIVE_RETROSPECTIVE_CROSS_SILVER_WINDOWS; not independent hover generalization",
+  "known_execution_failure": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python scripts/e18_mechanism_audit.py evaluate",
+    "first_exit_code": 1,
+    "failed_at": "run manifest output SHA precheck before parsing labels or running evaluation",
+    "scope": "Only concurrently finalized generalization_inventory.csv metadata changed; all solver/path/score artifacts unchanged",
+    "evidence": "manifest_reconciliation.json; run_manifest_before_inventory_finalization.json",
+    "resolution": "Preserved original manifest, reconciled only inventory CSV SHA plus provenance note, then evaluation exit0. No full-bag rerun or source/parameter changes."
+  },
+  "new_test_development_note": "Before freezing, one initial synthetic-test fixture omitted a background-p field; corrected only that new fixture before the recorded 12-test pass/freeze. No E18 research source was modified.",
+  "statistical_interpretation": {
+    "coverage": "11/11 statistical-methodological fallacy types checked in report",
+    "inference": "Descriptive paired deterministic DEV graph comparisons only; no p-values, significance tests or population/operational confidence claims",
+    "confidence": "CAUTION for independent generalization"
+  }
+}

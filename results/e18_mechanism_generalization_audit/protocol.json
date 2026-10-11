@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "base_commit": "a53702da1dc5357149e3e472a9e489ff08e9afe4",
+  "status": "FROZEN_TERM_ABLATION_DEV_SILVER",
+  "arms": [
+    "original",
+    "background_only",
+    "motion_only",
+    "background_motion_E18"
+  ],
+  "families": [
+    "fine_4cm_pregeometry",
+    "historical_1m_graph"
+  ],
+  "input": "read only the ten existing E18 nodes/edges CSV snapshots",
+  "solver": "unchanged E18 eligibility-aware core.solve, identical order/gates/ties",
+  "ablation": "disable entire background or entire motion term by node score-field routing only; enabled terms retain exact E18 unit weights",
+  "graph_generation": "FORBIDDEN",
+  "new_weight_or_feature": "FORBIDDEN",
+  "doppler": "NOT_USED",
+  "silver_gate_m": 3.0,
+  "labels": "hash bytes before run; parse only after all full-bag unconditioned outputs complete",
+  "references": "reuse E18 fixed_reference_paths.csv without selecting any new witness",
+  "rank": "strict-exceedance terminal-edge winner representatives, tolerance 1e-9; exact global combinatorial rank UNKNOWN",
+  "threshold": "NONE; do not choose an operating point",
+  "negative_policy": "require explicit reliable target absence evidence; unlabelled/no-return/failed-closure windows are NOT negatives",
+  "hover_policy": "require existing identified hover/very-slow UAV evidence and frozen graph; otherwise no empirical stress run, UNKNOWN",
+  "short_slow_stress": "separate retrospective cross-silver subwindows only: ALL maximal consecutive observed runs whose EVERY segment speed <= inherited E18 static diagnostic 1m/median full-bag dt, >=3 observations and >=2s; same frozen graph and full-bag prior background, never reset occupancy; not independent hover/generalization",
+  "descriptive_comparisons": "four arms by sequence/family/range; paired incremental hit counts and fixed-path score/margin decomposition; no significance tests",
+  "randomness": "NONE"
+}

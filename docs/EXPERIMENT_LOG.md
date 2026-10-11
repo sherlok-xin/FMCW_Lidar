@@ -31,6 +31,36 @@ This log records experiments that can be inferred from repository artifacts. It 
 | `scripts/published_baseline_dp_mvp.py` | `0601d93a804ecb66dcb1d0185fc6f2c272a5c5ac9f47674bc4d34cefa7766d9f` |
 | `scripts/dp_failure_forensics.py` | `9116d6e724b4e8460ee2914a55b83ec9f6bb9dcae50a86b6f17d5852db8be328` |
 
+## E19 — E18 mechanism and generalization audit, term-only frozen a53702d
+
+**Date/status:** 2026-10-11; TESTED / VERIFIED RESULT only on frozen graphs/DEV_SILVER. Freeze10:56:16.657898UTC; full label-free run10:56:22.146790–11:01:25.199857UTC,303.053s; evaluation completed11:07:04.128440UTC. Separate evaluation start/peak RSS UNKNOWN.
+
+**Question:** Attribute E18 gains to its existing background/motion terms without retuning; locate reliable negatives and existing hover/slow stress evidence.
+
+**Identity/inputs:** Parent `a53702da1dc5357149e3e472a9e489ff08e9afe4`; new adapterSHA `ba7334de48dfae21f0e5bc221b12f306ddafd18db9165f6886da8f193d70c8d4`, testsSHA `919c60e12c31b4af76f7ef6a372467950a295cf7eb59c145ffcbbbd425e8e72a`, protocolSHA `1ff63233c8ed66a852ecd5361544113af665bf7e15444ffa745f5984432354b5`.212protected upstream/E18 result/source files unchanged. Exact saved fine20,122nodes/479,081edges and historical16,995/371,600edges;272frames/80unchanged DEV_SILVER labels, SHA `37c4452a68e544d75034389f82bbaf1e868903bb2225b395b9d66d0cdd48b8db`.
+
+**Environment/config:** Existing Python3.10.12/NumPy2.2.6/Linux6.8.0-136-generic. Same unmodified E18 solver and graph annotations; original S−G, background-only S+B−G, motion-only S−G−M, combined S+B−G−M. Enabled weights1, all original gates/3m evaluation unchanged. No random seed needed (deterministic), no parameter/threshold search, Doppler or new feature. Fixed E18 witnesses/old references reused; labels parsed only after40full-bag outputs complete.
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python -m unittest discover -s tests -p 'test_e18_mechanism_audit.py' -v
+PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python -m unittest discover -s tests -p 'test_background_motion*.py' -v
+PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python scripts/e18_mechanism_audit.py freeze
+PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python scripts/e18_mechanism_audit.py run
+PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python scripts/e18_mechanism_audit.py evaluate
+PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python scripts/e18_mechanism_summaries.py
+PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python scripts/audit_e18_mechanism_outputs.py
+```
+
+**Output:** `FMCW_E18_Mechanism_Generalization_Audit.md`, independent `results/e18_mechanism_generalization_audit/`.40full terminal-score files/3,328,536representatives;40full-path metrics,120fixed scores,80matched-span rank rows,40margins,640silver-frame rows,24range groups,10family-window descriptors/40slow stress runs; all stored with provenance.
+
+**Results/definitions:** Unconditional winner observed-frame recall at unchanged3m gate: fine original/background/motion/combined56/56/0/79 of80;100m19/19/0/30 of30,200m37/37/0/39 of40,300m0/0/0/10 of10. Historical0/56/0/79, respective groups0/19/0/30,0/37/0/39,0/0/0/10. Fine original/background hit identities identical. E18 vs background gains24/losses1 (net23) in both families. All20original/combined paths and entire qualified terminal pools exactly match E18. Fixed historical clutter losses mainly background; background-only still fails100m_cross_10/300m_cross_10, whereas motion-only selects low-motion static-like paths. Witness ranks/margins and old references retained, including fine200m negative margin−0.033916 and300m witness rank≥8.
+
+**Generalization/negative result:**14ZIP/51bag members/6standalone paths inspected by metadata/evidence inventory; no timestamp-linked absence proof. Reliable negative winners NOT_RUN_NO_RELIABLE_TARGET_ABSENCE (header-only CSV), target-absent scores/FA/precision UNKNOWN. No independently authenticated hover bag with frozen graph. ALL maximal observed-center slow runs using inherited1m/median-dt diagnostic scale,≥3obs/≥2s, yield5windows/22obs separately in each family. Four arms14/12/14/12hits;200m_cross_5/frames7–12 original/motion6/6 vs background/combined0/6. Original full-bag background annotations preserved, subwindow velocity roots unchanged; retrospective stress is not independent hover GT. Positive witness B+2.539 vs combined competitor B+4.423 demonstrates relative novelty loss, not hard deletion or negative witness term.
+
+**Validation/failures:**12newsynthetic+14oldE18tests pass; independent checkerSHA `90b204e219f31ba33512f4e17eed6080b92929d7b386d3e86dfd9a79912bd33f` passes212protected hashes,37,117node algebra checks,full/fixed/frame/slow accounting and exact20pool replay. Existing original/E18 span ranks independently recounted; new-arm span ranks scope/semantics checked, not independently rerun. Before freeze a new synthetic fixture lacked a background-p field, corrected only that fixture. First evaluate exited1 on inventory-only output SHA mismatch before labels/solver: inventory sources finalized after full manifest. Old manifest retained and only that CSV SHA/provenance note reconciled; all inference hashes/parameters/source unchanged, second evaluate exit0. Preserve reconciliation artifacts and all null/negative rows.
+
+**Interpretation/decision:** Background static demotion and final winner recovery differ; score terms are additive only on a fixed path, performance interaction is not a population causal attribution. Repeated-cell occupancy has conditional hover/revisit risk, not proven systematic real-hover failure. Keep one frame21 miss/no gate change. Mechanism audit completed; independent GT/negative/long-hover/held-out evaluation remains UNKNOWN. Stop new experiments, do not stack features, retune, select operational threshold or upgrade Benchmark v1.
+
 ## E18 — Frozen causal background-relative + motion-coherence DP MVP
 
 **Run date:** 2026-10-10. Freeze09:48:37.422UTC; unconditioned run09:49:17.523–09:51:49.360UTC,151.837s. **Status:** TESTED / VERIFIED RESULT only on80frozen DEV_SILVER observations; not independent paper GT.

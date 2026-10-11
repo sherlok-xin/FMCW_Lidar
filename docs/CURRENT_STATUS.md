@@ -1,15 +1,25 @@
 # Current Status
 
-Status date: **2026-10-10**
+Status date: **2026-10-11**
 Basis: repository-wide source and artifact inspection; no chat-history claims are treated as evidence.
 
 Git is now initialized on branch `main` (unlike the 2026-09-20 audit). The tested sparse-MVP script and tests are present in snapshot `e62848f787dcfd1bb2f91536ca23e6a50580a77b`. Necessary diagnostic CSV/JSON/report artifacts are now tracked; raw bags/PCDs, virtual environment and NPZ caches remain excluded. Run-manifest hashes remain required for provenance, including local caches.
 
 ## Executive status
 
-The repository contains a substantial rule-based FMCW-LiDAR processing and tracking prototype, several ROS/offline variants, and a useful body of retrospective data archaeology. It does **not** yet contain the ground truth, provenance, calibration, evaluation protocol, or controlled comparisons required to make reliable UAV detection/tracking accuracy claims.
+The repository contains a substantial rule-based FMCW-LiDAR prototype, ROS/offline variants, retrospective archaeology, provisional calibration and frozen DEV_SILVER comparisons. It does **not** yet provide independently certified GT, reliable target-absent/long-hover labels or held-out operational evaluation needed for reliable UAV detection/tracking accuracy claims.
 
-The strongest current outcome is diagnostic rather than algorithmic: two successful motion sequences show that compactness, spatial isolation, temporal persistence, and agreement between Doppler and range change are more transferable cues than raw Doppler magnitude or a stable single-frame shape. The existing FMT benchmark does not demonstrate an improvement over the baseline.
+The latest outcome is a bounded mechanism audit: E18's joint background/motion score recovers79/80 observed DEV_SILVER centers, but neither term alone reproduces this recovery, and short slow-cross windows expose relative-novelty ranking losses. Independent negative/hover generalization remains UNKNOWN. The historical FMT benchmark still does not demonstrate an improvement over its baseline.
+
+### 2026-10-11 E18 mechanism/generalization audit — frozen a53702d
+
+**TESTED / VERIFIED RESULT on the same frozen DEV_SILVER graphs; independent generalization UNKNOWN.** `FMCW_E18_Mechanism_Generalization_Audit.md` and `results/e18_mechanism_generalization_audit/` add only four term switches through unchanged E18 solver. No E18 source/formula/weight/graph/label/3m gate edit, Doppler, threshold selection or remaining-miss fix. Parent HEAD remains `a53702da1dc5357149e3e472a9e489ff08e9afe4`.
+
+Fine original/background-only/motion-only/E18 hits56/56/0/79 of80; historical control0/56/0/79. Background dominates fixed historical static-reference score losses, but final recovery is interactive: motion adds net23hits only with background (24gained/1lost); motion alone can favor near-static paths and erase fine old hits. Candidate volume remains identical within each graph, not precision. Same200m_cross_5/frame21 miss remains (~3.254m).
+
+Inventory14ZIP/51bag members/6standalone paths (3extracted-copy paths) provides no reliable target-absence certificate. Negative winners NOT_RUN_NO_RELIABLE_TARGET_ABSENCE, false alarms/negative scores UNKNOWN, not zero. Independent dedicated hover identity UNKNOWN. Separate ALL5short-slow cross-silver windows/22observations per family give14/12/14/12hits;200m_cross_5/frames7–12 drops6/6→0/6 with background. Its witness B remains+2.539, but a more novel competitor gets a larger reward: relative ranking failure, not negative-score hard deletion. Repeated-cell occupancy has a conditional hover/revisit penalty risk; long-hover/systematic generalization is still UNKNOWN.
+
+12new/14existing tests pass,212protected hashes unchanged,20original/E18 full pools exactly replayed; independent stored-artifact audit passes with new-arm span-rank optimality verification limits disclosed. One inventory-only manifest reconciliation is retained, all solver outputs unchanged. Audit complete; preserve negative/null results and stop, without further tuning, feature stacking, operational threshold or Benchmark v1 upgrade.
 
 ### 2026-10-10 isolated background-relative + motion-coherence DP MVP
 

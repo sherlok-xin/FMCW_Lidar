@@ -349,6 +349,20 @@ These decisions are evidence-bounded, not permanent prohibitions.
 
 **Conclusion / bounded decision:** Supported on this retrospective DEV graph for the combined score, not independent GT/negative/held-out performance, operational precision or each feature's independent value. Gate passed, so kill not triggered; end this one experiment without further feature stacking, weight changes, label edits or formal-baseline adoption. Global combinatorial rank and separate background/motion/Doppler value remain UNKNOWN. See E18 in `EXPERIMENT_LOG.md` and the independent report.
 
+### H30 — E18 static demotion, winner recovery and slow-target safety are different mechanisms
+
+**2026-10-11 status:** TESTED / VERIFIED RESULT for term ablations on frozen `a53702d` E18 graphs, not independent target/negative/hover generalization. See `FMCW_E18_Mechanism_Generalization_Audit.md`, E19 and its independent result directory.
+
+**Evidence:** Original/background-only/motion-only/combined hits are fine56/56/0/79 of80 and historical0/56/0/79. Fixed historical persistent-clutter score losses are background-dominated, yet background alone does not recover100m_cross_10 or300m_cross_10. Motion alone favors low-motion static-like paths and removes fine old hits. With background, motion gives net23hits (24gain/1loss); this is computational interaction, not an additive percentage attribution of real-world effect. Same graphs/witnesses/gates; no weights or labels changed.
+
+**Counterevidence/slow stress:** All5maximal shortslow cross-silver windows/22obs per family yield14/12/14/12hits.200m_cross_5/frames7–12 original/motion6/6→background/E180/6; witness B+2.539 stays positive but a competing winner has stronger novelty. Positive node terms do not imply target-safe ranking. Context-limited subwindow outputs differ from full offline DP, while full prior occupancy is preserved.
+
+**Conditional mechanism, not measured hover failure:** b=(F−2H)/(F+2) penalizes cells occupied in over half of prior frames; ideal continuous arrivals at f0 give b=(2f0−f)/(f+2). Persistent same-cell hover/revisit has a structural loss-of-novelty risk. Motion penalties can be zero for static and constant-velocity paths, so do not encode UAV identity or protect hover. Actual slow windows have positive witness b throughout, not observed negative-score deletion. Long-duration, independently identified hover performance UNKNOWN.
+
+**Evidence limit:**14ZIP/51bag members/6standalone paths do not provide reliable target absence; negative run not executed and FA/precision/negative winner scores UNKNOWN. Dedicated independently authenticated hover bag UNKNOWN. Existing observed slow-cross centers are not independent hover GT. Do not relabel failed closure, zero returns, outside-silver frames or selected static-looking paths as negatives.
+
+**Decision:** End the requested mechanism/generalization audit without tuning, fixingframe21, Doppler or new features. Combined E18 remains a frozen DEV result, not a validated operational detector. Independent negative/hover evidence is required to answer unresolved safety/generalization claims; this requirement is not authorization to launch another experiment.
+
 ## Possible research directions
 
 Everything in this section is **PROPOSED** or **SPECULATIVE**, not an experimental result.

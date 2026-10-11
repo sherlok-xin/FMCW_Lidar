@@ -1,0 +1,11 @@
+{
+  "utc": "2026-10-11T10:56:16.657898+00:00",
+  "command": "PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python scripts/e18_mechanism_audit.py freeze",
+  "parent_commit": "a53702da1dc5357149e3e472a9e489ff08e9afe4",
+  "dirty": true,
+  "source_sha256": {
+    "scripts/e18_mechanism_audit.py": "ba7334de48dfae21f0e5bc221b12f306ddafd18db9165f6886da8f193d70c8d4",
+    "tests/test_e18_mechanism_audit.py": "919c60e12c31b4af76f7ef6a372467950a295cf7eb59c145ffcbbbd425e8e72a"
+  },
+  "protocol_sha256": "1ff63233c8ed66a852ecd5361544113af665bf7e15444ffa745f5984432354b5"
+}
