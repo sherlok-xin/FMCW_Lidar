@@ -448,3 +448,14 @@ The preparatory entry above records the earlier pause; the user subsequently app
 **Negative/ambiguous evidence retained:** 311/318 small matched anchor controls are empty. High count AUC mainly contrasts selected return-bearing neighborhoods with empty space; reliable occupied-clutter discrimination is not established. Broad-region intensity/geometry/Doppler contrasts vary or reverse across range/recipe. Within-sequence support/spacing correlations do not consistently follow between-range trends. All nominal states remain low-eta cross motion; hover/high-eta behavior is UNKNOWN.
 
 **SPECULATIVE directions only:** range/exposure/uncertainty-conditioned observation descriptions and representation-aware support may be worth held-out falsification. Current data do not identify node likelihood ratios, physical `P_D`, transition acceleration priors or valid uncertainty bounds. No formula, weight, cutoff, detector, tracker or E18 feature was chosen. Required tests are independently synchronized dense state/point identity, occupied-clutter/negative controls, radial/cross transitions and true hover under immutable held-out splits. [Report's final observation/mechanism/falsification table](../FMCW_GNSS_CONDITIONED_UAV_PHENOTYPE.md).
+
+
+## 2026-10-13 — GNSS–anchor discrepancy decomposition（无重标定）
+
+**VERIFIED RESULT：** 在已有五个 closure-PASS sequence 的 80 个 observed DEV/SILVER anchors 上，使用 frozen ENU-Up 和原 GNSS chord 构建正交分量。各 sequence 的 along-track 平方误差占比约 95.5%–98.7%。26.575 m 的 `200m_cross_5/frame21` 由 +26.389 m along-track 主导（98.60%），不是 vertical 主导；cross −3.056 m、vertical-normal +0.719 m、严格 ENU-Up +0.629 m。
+
+**模式判断，非因果确认：** 恒定 time-offset residual 会在同一线性 chord 内表现为近恒定的 `d_parallel/v_chord`；现有序列在同一 chord 内仍有符号和幅度变化，所以该单因解释不足。frame17→21 的连续同候选误差增长更符合未解决的时间/航段对应和稀疏 GNSS chord 的速度/转弯表达问题，弱化孤立跳点解释。终点 frame21 直接对应 A70，不存在“段内插值权重误差”这一数学项，但 GNSS 采样、时间对应和参考点误差仍 UNKNOWN。+6.708 s 的局部等效时间超出支持，不能作为合法 clock correction。
+
+**保留空间可能性：** vertical-normal 80/80 为正，严格 Up 79/80 为正，量级较小；`100m_cross_10` 的 fixed-frame 方向 resultant 约 0.788，说明该序列存在较一致的全局误差方向。空间/参考点残差可共存；没有拟合或排除完整 extrinsic residual，也不能排除连续错误航段关联。没有在这些 labels 上优化任何 clock/extrinsic。
+
+**决定：** 把数学定义、signed/absolute summaries、方向一致性、支持边界、原材料复制 hash 和独立审计存入 `results/rviz_gnss_lidar_sanity/`。保持 E18、标定、offset、GNSS 插值、labels 和历史结果。唯一因果归因需要独立同步事件、较密 GNSS/RTK、明确天线/点云参考点或外部飞行记录；本轮未取得或生成这些证据，未自动升级 GT。

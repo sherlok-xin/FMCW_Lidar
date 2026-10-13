@@ -1,0 +1,184 @@
+{
+  "archive_date": "2026-10-13",
+  "created_utc": "2026-10-13T11:20:06.472570+00:00",
+  "scope": "Byte-identical curated archive of prior temporary visual diagnostics; no source bag/calibration/labels/E18 mutation.",
+  "source_root": "/tmp/fmcw_rviz_check",
+  "target_root": "/home/xin/FMCW_LIDAR/results/rviz_gnss_lidar_sanity",
+  "entries": [
+    {
+      "source_path": "/tmp/fmcw_rviz_check/REPORT.md",
+      "source_sha256": "901553a02ef2adc0e2a61997274bfbc9b492b2ea630e456dda56e0d947dedc70",
+      "target_path": "REPORT.md",
+      "target_sha256": "901553a02ef2adc0e2a61997274bfbc9b492b2ea630e456dda56e0d947dedc70",
+      "size_bytes": 14828,
+      "git_publish": true
+    },
+    {
+      "source_path": "/tmp/fmcw_rviz_check/SELECTED_FRAMES.md",
+      "source_sha256": "4603e06fcf03fcc6451cf3b1329fecbc13634ce41fa3c5758b2c6f592283e88e",
+      "target_path": "SELECTED_FRAMES.md",
+      "target_sha256": "4603e06fcf03fcc6451cf3b1329fecbc13634ce41fa3c5758b2c6f592283e88e",
+      "size_bytes": 2783,
+      "git_publish": true
+    },
+    {
+      "source_path": "/tmp/fmcw_rviz_check/markers.py",
+      "source_sha256": "99864071ed1004c21f484bf021bc6abc152a6265ba19ccea843774c93bd0a633",
+      "target_path": "markers.py",
+      "target_sha256": "99864071ed1004c21f484bf021bc6abc152a6265ba19ccea843774c93bd0a633",
+      "size_bytes": 9281,
+      "git_publish": false
+    },
+    {
+      "source_path": "/tmp/fmcw_rviz_check/selected_frames.csv",
+      "source_sha256": "1d52be9f96451db309a2d9df3db9f0f8ea73edf183ab64c6f92dd0caa08c037b",
+      "target_path": "selected_frames.csv",
+      "target_sha256": "1d52be9f96451db309a2d9df3db9f0f8ea73edf183ab64c6f92dd0caa08c037b",
+      "size_bytes": 3484,
+      "git_publish": true
+    },
+    {
+      "source_path": "/tmp/fmcw_rviz_check/selected_frames.jsonl",
+      "source_sha256": "a7e8d8418e27459e8db997c2a3269310e6c5f385554f5b2d6d4fa7228363b86e",
+      "target_path": "selected_frames.jsonl",
+      "target_sha256": "a7e8d8418e27459e8db997c2a3269310e6c5f385554f5b2d6d4fa7228363b86e",
+      "size_bytes": 6741,
+      "git_publish": true
+    },
+    {
+      "source_path": "/tmp/fmcw_rviz_check/WORKFLOW.md",
+      "source_sha256": "04cc0f41a5222699b38a7738017b1d59afc4fc4afc9fd4d89be67ade41ebd525",
+      "target_path": "WORKFLOW.md",
+      "target_sha256": "04cc0f41a5222699b38a7738017b1d59afc4fc4afc9fd4d89be67ade41ebd525",
+      "size_bytes": 8237,
+      "git_publish": true
+    },
+    {
+      "source_path": "/tmp/fmcw_rviz_check/run_manifest.json",
+      "source_sha256": "afc68d3f6a2b70c5ce5193eda72a75757223413ca35f1c6bd6f3fd81d38816e4",
+      "target_path": "visual_run_manifest.json",
+      "target_sha256": "afc68d3f6a2b70c5ce5193eda72a75757223413ca35f1c6bd6f3fd81d38816e4",
+      "size_bytes": 15335,
+      "git_publish": true
+    },
+    {
+      "source_path": "/tmp/fmcw_rviz_check/repo_integrity.json",
+      "source_sha256": "b0c507ca15e78245b26e9179eab9c93c20a2ee36d3b5c7cf65d81240a2131e52",
+      "target_path": "visual_repo_integrity.json",
+      "target_sha256": "b0c507ca15e78245b26e9179eab9c93c20a2ee36d3b5c7cf65d81240a2131e52",
+      "size_bytes": 485,
+      "git_publish": true
+    },
+    {
+      "source_path": "/tmp/fmcw_rviz_check/figures/100m_cross_5__contact_sheet.png",
+      "source_sha256": "d02a3abb022c453f4893b4b90de8250f2cdf034322bb762a43efb14458bb1f63",
+      "target_path": "figures/100m_cross_5__contact_sheet.png",
+      "target_sha256": "d02a3abb022c453f4893b4b90de8250f2cdf034322bb762a43efb14458bb1f63",
+      "size_bytes": 649728,
+      "git_publish": true
+    },
+    {
+      "source_path": "/tmp/fmcw_rviz_check/figures/100m_cross_10__contact_sheet.png",
+      "source_sha256": "c27e72a464f56c0e76bb1e08205de03e2cf2217a71602c1e53e6e5789314ef7a",
+      "target_path": "figures/100m_cross_10__contact_sheet.png",
+      "target_sha256": "c27e72a464f56c0e76bb1e08205de03e2cf2217a71602c1e53e6e5789314ef7a",
+      "size_bytes": 527525,
+      "git_publish": true
+    },
+    {
+      "source_path": "/tmp/fmcw_rviz_check/figures/200m_cross_5__contact_sheet.png",
+      "source_sha256": "d81e50ac9507b001700e4644163850bfae42fb9210e2e64b8449bca8f92b0aaa",
+      "target_path": "figures/200m_cross_5__contact_sheet.png",
+      "target_sha256": "d81e50ac9507b001700e4644163850bfae42fb9210e2e64b8449bca8f92b0aaa",
+      "size_bytes": 391642,
+      "git_publish": true
+    },
+    {
+      "source_path": "/tmp/fmcw_rviz_check/figures/200m_cross_10__contact_sheet.png",
+      "source_sha256": "1e6bb31acea7f8757e16644e937d0928c41f7e422bf014a9d5c8fb1b843dac84",
+      "target_path": "figures/200m_cross_10__contact_sheet.png",
+      "target_sha256": "1e6bb31acea7f8757e16644e937d0928c41f7e422bf014a9d5c8fb1b843dac84",
+      "size_bytes": 368607,
+      "git_publish": true
+    },
+    {
+      "source_path": "/tmp/fmcw_rviz_check/figures/300m_cross_10__contact_sheet.png",
+      "source_sha256": "ac2a925c95870bb23d1aa65a28276c1ab598b42ff88947eca0ce7630f679030f",
+      "target_path": "figures/300m_cross_10__contact_sheet.png",
+      "target_sha256": "ac2a925c95870bb23d1aa65a28276c1ab598b42ff88947eca0ce7630f679030f",
+      "size_bytes": 400324,
+      "git_publish": true
+    },
+    {
+      "source_path": "/tmp/fmcw_rviz_check/figures/200m_cross_5__frame_0021__top_side.png",
+      "source_sha256": "17f3af765f4bd495456c6d6f162f8aca2580a12faf620e12db7251d4178d3591",
+      "target_path": "figures/200m_cross_5__frame_0021__top_side.png",
+      "target_sha256": "17f3af765f4bd495456c6d6f162f8aca2580a12faf620e12db7251d4178d3591",
+      "size_bytes": 240476,
+      "git_publish": true
+    },
+    {
+      "source_path": "/tmp/fmcw_rviz_check/figures/static_diagnostics_manifest_100m.json",
+      "source_sha256": "1322dc655b7ff37a5b78d1ba1cd7750958595b1507ee32725363ffb072e5b164",
+      "target_path": "figures/static_diagnostics_manifest_100m.json",
+      "target_sha256": "1322dc655b7ff37a5b78d1ba1cd7750958595b1507ee32725363ffb072e5b164",
+      "size_bytes": 13646,
+      "git_publish": true
+    },
+    {
+      "source_path": "/tmp/fmcw_rviz_check/figures/static_diagnostics_manifest_far.json",
+      "source_sha256": "681c2b879bba53f5b92d469b7bee760c39285d3458c3d93d4ecc8b020e2aaa8a",
+      "target_path": "figures/static_diagnostics_manifest_far.json",
+      "target_sha256": "681c2b879bba53f5b92d469b7bee760c39285d3458c3d93d4ecc8b020e2aaa8a",
+      "size_bytes": 12394,
+      "git_publish": true
+    },
+    {
+      "source_path": "/tmp/fmcw_rviz_check/raw_200m5_f21_rviz.png",
+      "source_sha256": "0f8543567cea02442b4cf721f4c7a0a403153463bfa263c54bc6fcb15cec4d1b",
+      "target_path": "screenshots/raw_200m5_f21_rviz.png",
+      "target_sha256": "0f8543567cea02442b4cf721f4c7a0a403153463bfa263c54bc6fcb15cec4d1b",
+      "size_bytes": 550354,
+      "git_publish": true
+    },
+    {
+      "source_path": "/tmp/fmcw_rviz_check/raw_200m10_f40_rviz.png",
+      "source_sha256": "659bff6d90fe3f9ba3e5bb4348f18d2468ea891f0944152cc9a7c67a0540ff83",
+      "target_path": "screenshots/raw_200m10_f40_rviz.png",
+      "target_sha256": "659bff6d90fe3f9ba3e5bb4348f18d2468ea891f0944152cc9a7c67a0540ff83",
+      "size_bytes": 514291,
+      "git_publish": true
+    }
+  ],
+  "copied_file_count": 18,
+  "copied_bytes": 3730161,
+  "git_publish_files": 17,
+  "git_publish_bytes": 3720880,
+  "runtime_only": [
+    "markers.py"
+  ],
+  "excluded_patterns": [
+    "*.bag",
+    "*.db3",
+    "*.db3-wal",
+    "*.db3-shm",
+    "*.mcap",
+    "*.rviz",
+    "processed/",
+    "ros_logs/",
+    "__pycache__/",
+    "matplotlib_config/",
+    "ROS adapters and raw playback helpers"
+  ],
+  "screenshot_cautions": [
+    {
+      "source_path": "/tmp/fmcw_rviz_check/raw_100m5_f12_top.png",
+      "reason": "Black failed hardware-GL viewport; excluded from representative-success archive."
+    },
+    {
+      "source_path": "/tmp/fmcw_rviz_check/processed_100m10_f18_rviz.png",
+      "reason": "Filename disagrees with embedded identity: visible label says 100m_cross_5 frame31; excluded."
+    }
+  ],
+  "new_decomposition_artifacts": "Generated in this archive directory by the separate frozen-input decomposition command; provenance is decomposition_provenance.json, not copied source files."
+}

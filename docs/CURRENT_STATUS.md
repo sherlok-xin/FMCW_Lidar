@@ -321,3 +321,11 @@ Ranked by impact:
 - **TESTED independent QA:** all 80 anchor descriptors exactly match E15 across 1,920 comparisons; 62,832 statistical bookkeeping checks pass. Rich fields retain UNKNOWN physical semantics; acceleration/evenness are constant and direction repeats scalar sign.
 - **Next evidence requirement:** independent point/presence/FOV and positional/time evidence, occupied clutter controls, high-eta radial and hover transitions on preregistered held-out data. Do not overwrite either run, retune E18, infer physical sensor non-return from oracle-region zeros, or use descriptive AUC as independent accuracy.
 - [Report](../FMCW_GNSS_CONDITIONED_UAV_PHENOTYPE.md) / [artifact readiness](../results/gnss_conditioned_uav_phenotype/README.md). E18 scientific inputs and silver labels remain frozen; no method or benchmark result is claimed.
+
+
+## 2026-10-13 — 已完成 ROS2 目视归档与 frozen discrepancy decomposition
+
+- **IMPLEMENTED / TESTED：** `results/rviz_gnss_lidar_sanity/` 保存上一轮 `/tmp` 目视报告、17 帧表、代表图和本轮全部 80 observed anchors 的分解 CSV、sequence/chord 汇总、方向一致性与可复现纯数值脚本。临时 `markers.py` 仅本地归档并 Git 忽略；大 bag 与 ROS runtime/config/log/cache 不在 GitHub 提交范围。
+- **VERIFIED RESULT：** 26.575401 m 的 `200m_cross_5/frame21` 为 along-track 主导：+26.389269 / −3.056353 / +0.719090 m（along/horizontal-cross/vertical-normal）；等效时间 +6.707545 s，只作诊断，不应用 offset。该帧在 GNSS 最后样本 A70，正向等效查询超出支持。
+- **UNKNOWN 因果：** 同一 chord 内的误差变号及 frame17→21 连续增长不支持单一恒定 clock residual 或孤立跳点的充分解释；稀疏 chord/转弯表达、时间/航段别名与较小空间残差可共存，未重新拟合。
+- **TESTED QA：** 80 行重建、同字节归档、独立 5,815 个标量计算通过；source identity 与全 frozen inputs 最终核验存于新 archive。无 E18、外参、时间 offset、GNSS、标签、阈值或原 bag 变化，不构成新方法或 Benchmark v1。

@@ -1,0 +1,15 @@
+{
+  "source": "all_anchor_gnss_discrepancies.csv",
+  "source_sha256": "e4721d263b75963cb8c92ac1053f6abff24c152ba5c3b49c362f6a1d0892c8c1",
+  "matplotlib": "3.10.9",
+  "script_sha256": "64c67827fe7158a050f1174cfe05964b44a2750202bc6f3564f59104f5c34605",
+  "seed": null,
+  "randomness_introduced": false,
+  "plot_definition": "exact signed components; lines split across missing anchors, candidate IDs and chord boundaries; no fit",
+  "output_sha256": {
+    "figures/max_frame21_components.png": "3ccc988091a7124c6dd04a459220dcfe56bb0ed4a7c7154ffa6d44a9ae78c9f5",
+    "figures/discrepancy_components_by_time.png": "918059238211021a7e7aa8c1a0ed6f66c9ee2470a7442b47cb70f29de6afe921",
+    "figures/discrepancy_components_by_time.pdf": "7dd14a824a18d3f2d906775aa27c55e8b82407178d71b81591dd3c84de120f6f",
+    "figures/max_frame21_components.pdf": "688d39c18a58facdd379a7c83a0567df3e08bbec510bc433af635680b0a26b10"
+  }
+}

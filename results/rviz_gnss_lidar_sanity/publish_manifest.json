@@ -1,0 +1,225 @@
+{
+  "utc": "2026-10-13T13:41:40.811734+00:00",
+  "scope": "curated diagnostic archive; only documents CSV images and pure numerical scripts",
+  "github_repository": "sherlok-xin/FMCW_Lidar",
+  "user_scope": "Archive requested materials and discrepancy decomposition; user excludes large bags and temporary ROS files and said continue",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 195,
+      "sha256": "9cc6985dd671880b39a381661104e830c33935e14a529f912b9d7808188f2710"
+    },
+    {
+      "path": "docs/CURRENT_STATUS.md",
+      "bytes": 35334,
+      "sha256": "7f5fc28fbbb1c7e5dac126c1fe8c00c622dfdc90039b52e11f0b0599aea29819"
+    },
+    {
+      "path": "docs/EXPERIMENT_LOG.md",
+      "bytes": 77971,
+      "sha256": "24a5a4c1823bf5f4db5034431d2bf81ff504967618dd02d5f662b8bfe8d541b8"
+    },
+    {
+      "path": "docs/RESEARCH_LOG.md",
+      "bytes": 41811,
+      "sha256": "81f6f2e61a1ae3b505c043aa05615593ac600e9508a1d509a13ee34ccc90ee13"
+    },
+    {
+      "path": "results/rviz_gnss_lidar_sanity/.gitignore",
+      "bytes": 278,
+      "sha256": "5d47e60638524503fb74927608b792af89504bf659034fbbe70c05a70be5dbbe"
+    },
+    {
+      "path": "results/rviz_gnss_lidar_sanity/ARCHIVE_README.md",
+      "bytes": 4405,
+      "sha256": "a5c16fad76045facd44bb67470d1507709cc242252b12efb2c6c110980e232fe"
+    },
+    {
+      "path": "results/rviz_gnss_lidar_sanity/DECOMPOSITION.md",
+      "bytes": 16788,
+      "sha256": "41ccce65aed6c809d78323675c0b51160f8fae19be16b1182dfdb6ed7c2f8878"
+    },
+    {
+      "path": "results/rviz_gnss_lidar_sanity/README.md",
+      "bytes": 2361,
+      "sha256": "46b34fcd2d6b92a37aa6ac12595d3db707a53240e6c7d0893178d2238b4cd40a"
+    },
+    {
+      "path": "results/rviz_gnss_lidar_sanity/REPORT.md",
+      "bytes": 14828,
+      "sha256": "901553a02ef2adc0e2a61997274bfbc9b492b2ea630e456dda56e0d947dedc70"
+    },
+    {
+      "path": "results/rviz_gnss_lidar_sanity/SELECTED_FRAMES.md",
+      "bytes": 2783,
+      "sha256": "4603e06fcf03fcc6451cf3b1329fecbc13634ce41fa3c5758b2c6f592283e88e"
+    },
+    {
+      "path": "results/rviz_gnss_lidar_sanity/WORKFLOW.md",
+      "bytes": 8237,
+      "sha256": "04cc0f41a5222699b38a7738017b1d59afc4fc4afc9fd4d89be67ade41ebd525"
+    },
+    {
+      "path": "results/rviz_gnss_lidar_sanity/all_anchor_gnss_discrepancies.csv",
+      "bytes": 105734,
+      "sha256": "e4721d263b75963cb8c92ac1053f6abff24c152ba5c3b49c362f6a1d0892c8c1"
+    },
+    {
+      "path": "results/rviz_gnss_lidar_sanity/archive_manifest.json",
+      "bytes": 8139,
+      "sha256": "bfe901fe8e59416ec8cd392cdcc32d77101cc0b0b7654143323aafb49ebd5730"
+    },
+    {
+      "path": "results/rviz_gnss_lidar_sanity/chord_time_bias_summary.csv",
+      "bytes": 2620,
+      "sha256": "8f34e45b9885260c8ce5fc401c934c14f1bfa45ec4c12128848531c9ae3ca297"
+    },
+    {
+      "path": "results/rviz_gnss_lidar_sanity/decompose_discrepancies.py",
+      "bytes": 17720,
+      "sha256": "6a9d0249855f0bf4a63254e79706439765ddafe0175acb81957b04c432776cce"
+    },
+    {
+      "path": "results/rviz_gnss_lidar_sanity/decomposition_figure_manifest.json",
+      "bytes": 910,
+      "sha256": "e0d464d5510960e2b473f1b1d0c6e823719285af1cd6f01cd4769c037d3593db"
+    },
+    {
+      "path": "results/rviz_gnss_lidar_sanity/decomposition_provenance.json",
+      "bytes": 7602,
+      "sha256": "c893a124189c146ed7c1b328817be76a2cedb0b41858b52a78d18a1649a8d351"
+    },
+    {
+      "path": "results/rviz_gnss_lidar_sanity/figures/100m_cross_10__contact_sheet.png",
+      "bytes": 527525,
+      "sha256": "c27e72a464f56c0e76bb1e08205de03e2cf2217a71602c1e53e6e5789314ef7a"
+    },
+    {
+      "path": "results/rviz_gnss_lidar_sanity/figures/100m_cross_5__contact_sheet.png",
+      "bytes": 649728,
+      "sha256": "d02a3abb022c453f4893b4b90de8250f2cdf034322bb762a43efb14458bb1f63"
+    },
+    {
+      "path": "results/rviz_gnss_lidar_sanity/figures/200m_cross_10__contact_sheet.png",
+      "bytes": 368607,
+      "sha256": "1e6bb31acea7f8757e16644e937d0928c41f7e422bf014a9d5c8fb1b843dac84"
+    },
+    {
+      "path": "results/rviz_gnss_lidar_sanity/figures/200m_cross_5__contact_sheet.png",
+      "bytes": 391642,
+      "sha256": "d81e50ac9507b001700e4644163850bfae42fb9210e2e64b8449bca8f92b0aaa"
+    },
+    {
+      "path": "results/rviz_gnss_lidar_sanity/figures/200m_cross_5__frame_0021__top_side.png",
+      "bytes": 240476,
+      "sha256": "17f3af765f4bd495456c6d6f162f8aca2580a12faf620e12db7251d4178d3591"
+    },
+    {
+      "path": "results/rviz_gnss_lidar_sanity/figures/300m_cross_10__contact_sheet.png",
+      "bytes": 400324,
+      "sha256": "ac2a925c95870bb23d1aa65a28276c1ab598b42ff88947eca0ce7630f679030f"
+    },
+    {
+      "path": "results/rviz_gnss_lidar_sanity/figures/discrepancy_components_by_time.pdf",
+      "bytes": 51544,
+      "sha256": "7dd14a824a18d3f2d906775aa27c55e8b82407178d71b81591dd3c84de120f6f"
+    },
+    {
+      "path": "results/rviz_gnss_lidar_sanity/figures/discrepancy_components_by_time.png",
+      "bytes": 479914,
+      "sha256": "918059238211021a7e7aa8c1a0ed6f66c9ee2470a7442b47cb70f29de6afe921"
+    },
+    {
+      "path": "results/rviz_gnss_lidar_sanity/figures/max_frame21_components.pdf",
+      "bytes": 22909,
+      "sha256": "688d39c18a58facdd379a7c83a0567df3e08bbec510bc433af635680b0a26b10"
+    },
+    {
+      "path": "results/rviz_gnss_lidar_sanity/figures/max_frame21_components.png",
+      "bytes": 151172,
+      "sha256": "3ccc988091a7124c6dd04a459220dcfe56bb0ed4a7c7154ffa6d44a9ae78c9f5"
+    },
+    {
+      "path": "results/rviz_gnss_lidar_sanity/figures/static_diagnostics_manifest_100m.json",
+      "bytes": 13646,
+      "sha256": "1322dc655b7ff37a5b78d1ba1cd7750958595b1507ee32725363ffb072e5b164"
+    },
+    {
+      "path": "results/rviz_gnss_lidar_sanity/figures/static_diagnostics_manifest_far.json",
+      "bytes": 12394,
+      "sha256": "681c2b879bba53f5b92d469b7bee760c39285d3458c3d93d4ecc8b020e2aaa8a"
+    },
+    {
+      "path": "results/rviz_gnss_lidar_sanity/independent_decomposition_audit.json",
+      "bytes": 4520,
+      "sha256": "09c4153c618c05b1ff9897881b7f93006f7f11546fef266ae6c5885888248385"
+    },
+    {
+      "path": "results/rviz_gnss_lidar_sanity/independent_decomposition_audit.py",
+      "bytes": 8518,
+      "sha256": "274b3f2204a5b89d93b15e0ed1e1be1ab67753b94d04284696a5283229126ae5"
+    },
+    {
+      "path": "results/rviz_gnss_lidar_sanity/integrity_audit.json",
+      "bytes": 504,
+      "sha256": "b5dc26441db3707cfb978cb4c6ca97963b454b604764c78b535aeadf6700853c"
+    },
+    {
+      "path": "results/rviz_gnss_lidar_sanity/maximum_discrepancy_neighbors.csv",
+      "bytes": 10747,
+      "sha256": "613b2cb7062a13870aa606f534206b7a7e7cf67716d312f4bd078512c1dd71a2"
+    },
+    {
+      "path": "results/rviz_gnss_lidar_sanity/plot_discrepancies.py",
+      "bytes": 5221,
+      "sha256": "64c67827fe7158a050f1174cfe05964b44a2750202bc6f3564f59104f5c34605"
+    },
+    {
+      "path": "results/rviz_gnss_lidar_sanity/screenshots/raw_200m10_f40_rviz.png",
+      "bytes": 514291,
+      "sha256": "659bff6d90fe3f9ba3e5bb4348f18d2468ea891f0944152cc9a7c67a0540ff83"
+    },
+    {
+      "path": "results/rviz_gnss_lidar_sanity/screenshots/raw_200m5_f21_rviz.png",
+      "bytes": 550354,
+      "sha256": "0f8543567cea02442b4cf721f4c7a0a403153463bfa263c54bc6fcb15cec4d1b"
+    },
+    {
+      "path": "results/rviz_gnss_lidar_sanity/selected_frames.csv",
+      "bytes": 3484,
+      "sha256": "1d52be9f96451db309a2d9df3db9f0f8ea73edf183ab64c6f92dd0caa08c037b"
+    },
+    {
+      "path": "results/rviz_gnss_lidar_sanity/selected_frames.jsonl",
+      "bytes": 6741,
+      "sha256": "a7e8d8418e27459e8db997c2a3269310e6c5f385554f5b2d6d4fa7228363b86e"
+    },
+    {
+      "path": "results/rviz_gnss_lidar_sanity/sequence_component_summary.csv",
+      "bytes": 13514,
+      "sha256": "8cd82d8bc310dc17374596902bcfe9a99b89884d963257003332191bab131651"
+    },
+    {
+      "path": "results/rviz_gnss_lidar_sanity/sequence_direction_consistency.csv",
+      "bytes": 2665,
+      "sha256": "b02457a6f5db0aec4d5d656fa2724ae4ede3041a9c9079ac3126c4fee7c28ea5"
+    },
+    {
+      "path": "results/rviz_gnss_lidar_sanity/visual_repo_integrity.json",
+      "bytes": 485,
+      "sha256": "b0c507ca15e78245b26e9179eab9c93c20a2ee36d3b5c7cf65d81240a2131e52"
+    },
+    {
+      "path": "results/rviz_gnss_lidar_sanity/visual_run_manifest.json",
+      "bytes": 15335,
+      "sha256": "afc68d3f6a2b70c5ce5193eda72a75757223413ca35f1c6bd6f3fd81d38816e4"
+    }
+  ],
+  "total_bytes": 4793976,
+  "largest_file_bytes": 649728,
+  "local_only": [
+    "results/rviz_gnss_lidar_sanity/markers.py"
+  ],
+  "prohibited_files_present": false,
+  "self_digest_excluded": true
+}

@@ -1,0 +1,421 @@
+{
+  "scope": "static visual diagnostic only; cropped source, no point identity GT",
+  "source_sha256": {
+    "/home/xin/FMCW_LIDAR/results/gnss_conditioned_uav_phenotype/run_02/frames.csv": "d73b9620e672a64006224e65099408ea90986ddf147cbc63bea021fb23421024",
+    "/home/xin/FMCW_LIDAR/results/gnss_conditioned_uav_phenotype/run_02/region_features.csv": "1c3bc552192aa132cb0decc3f2fec6ffcd1fbd5c0cd62b596de3380bedeb37a7"
+  },
+  "display_transform": "[raw_x, raw_z, -raw_y]",
+  "display_intensity_limits": [
+    0,
+    80
+  ],
+  "filters_applied": [],
+  "frames": [
+    {
+      "condition_id": "200m_cross_5",
+      "frame_index": 3,
+      "input_path": "/home/xin/FMCW_LIDAR/results/gnss_conditioned_uav_phenotype/run_02/point_records/200m_cross_5/frame_0003.npz",
+      "input_sha256": "5af96bd2839b5ab77af4d7a37cdbb579b1dc0e95314751a97d5a6e74e7d163f6",
+      "raw_records_in_saved_union": 146,
+      "native_fields_byte_verified": [
+        "x",
+        "y",
+        "z",
+        "rgba",
+        "velocity",
+        "radius",
+        "theta",
+        "phi",
+        "intensity",
+        "ring",
+        "velocity0",
+        "time",
+        "velocity_direction",
+        "acceleration",
+        "acceleration_direction",
+        "surface_evenness"
+      ],
+      "gnss_xyz_analysis": [
+        206.47341051885505,
+        -1.849939006664556,
+        -4.497997538882759
+      ],
+      "anchor_xyz_analysis": [
+        206.1838177767667,
+        -2.4054299159483477,
+        -4.030481912873008
+      ],
+      "anchor_minus_gnss_m": 0.7816680671042393,
+      "raw_region_counts_verified": {
+        "GNSS_1m": 22,
+        "GNSS_3m": 22,
+        "GNSS_10m": 22,
+        "ANCHOR_1m": 22,
+        "ANCHOR_3m": 22
+      },
+      "bag_time_sec": "1770276600",
+      "bag_time_nsec": "312296765"
+    },
+    {
+      "condition_id": "200m_cross_5",
+      "frame_index": 10,
+      "input_path": "/home/xin/FMCW_LIDAR/results/gnss_conditioned_uav_phenotype/run_02/point_records/200m_cross_5/frame_0010.npz",
+      "input_sha256": "1313f559f45aa425688adaf98fa8a25b39048924b66d7d637b7a91ffac7e3c1e",
+      "raw_records_in_saved_union": 501,
+      "native_fields_byte_verified": [
+        "x",
+        "y",
+        "z",
+        "rgba",
+        "velocity",
+        "radius",
+        "theta",
+        "phi",
+        "intensity",
+        "ring",
+        "velocity0",
+        "time",
+        "velocity_direction",
+        "acceleration",
+        "acceleration_direction",
+        "surface_evenness"
+      ],
+      "gnss_xyz_analysis": [
+        199.38179887476994,
+        30.879071184133544,
+        -4.473263849544871
+      ],
+      "anchor_xyz_analysis": [
+        199.39349147251673,
+        31.277729851858957,
+        -4.233475753239223
+      ],
+      "anchor_minus_gnss_m": 0.46536413841695695,
+      "raw_region_counts_verified": {
+        "GNSS_1m": 21,
+        "GNSS_3m": 21,
+        "GNSS_10m": 21,
+        "ANCHOR_1m": 21,
+        "ANCHOR_3m": 21
+      },
+      "bag_time_sec": "1770276607",
+      "bag_time_nsec": "322879341"
+    },
+    {
+      "condition_id": "200m_cross_5",
+      "frame_index": 21,
+      "input_path": "/home/xin/FMCW_LIDAR/results/gnss_conditioned_uav_phenotype/run_02/point_records/200m_cross_5/frame_0021.npz",
+      "input_sha256": "f276743a22dbc5949c678eac15a72ee33e6b0ef5c06d876ccf314d8675648116",
+      "raw_records_in_saved_union": 15,
+      "native_fields_byte_verified": [
+        "x",
+        "y",
+        "z",
+        "rgba",
+        "velocity",
+        "radius",
+        "theta",
+        "phi",
+        "intensity",
+        "ring",
+        "velocity0",
+        "time",
+        "velocity_direction",
+        "acceleration",
+        "acceleration_direction",
+        "surface_evenness"
+      ],
+      "gnss_xyz_analysis": [
+        209.15285461756005,
+        -11.312744510262032,
+        -4.676603331711904
+      ],
+      "anchor_xyz_analysis": [
+        212.23568115234374,
+        -37.69139760335286,
+        -3.7201686541239423
+      ],
+      "anchor_minus_gnss_m": 26.575400763519816,
+      "raw_region_counts_verified": {
+        "GNSS_1m": 0,
+        "GNSS_3m": 0,
+        "GNSS_10m": 0,
+        "ANCHOR_1m": 15,
+        "ANCHOR_3m": 15
+      },
+      "bag_time_sec": "1770276618",
+      "bag_time_nsec": "331014269"
+    },
+    {
+      "condition_id": "200m_cross_10",
+      "frame_index": 36,
+      "input_path": "/home/xin/FMCW_LIDAR/results/gnss_conditioned_uav_phenotype/run_02/point_records/200m_cross_10/frame_0036.npz",
+      "input_sha256": "cd005701c8ecd8c055b1f0af95065f861cf9097cd81d15b96a2a3652613b5f7f",
+      "raw_records_in_saved_union": 1948,
+      "native_fields_byte_verified": [
+        "x",
+        "y",
+        "z",
+        "rgba",
+        "velocity",
+        "radius",
+        "theta",
+        "phi",
+        "intensity",
+        "ring",
+        "velocity0",
+        "time",
+        "velocity_direction",
+        "acceleration",
+        "acceleration_direction",
+        "surface_evenness"
+      ],
+      "gnss_xyz_analysis": [
+        201.2301983045186,
+        32.787545374179885,
+        -7.522006789923703
+      ],
+      "anchor_xyz_analysis": [
+        201.13799467540923,
+        34.446708497546965,
+        -7.118467512584868
+      ],
+      "anchor_minus_gnss_m": 1.7100198032529599,
+      "raw_region_counts_verified": {
+        "GNSS_1m": 0,
+        "GNSS_3m": 21,
+        "GNSS_10m": 685,
+        "ANCHOR_1m": 21,
+        "ANCHOR_3m": 21
+      },
+      "bag_time_sec": "1770275837",
+      "bag_time_nsec": "327858934"
+    },
+    {
+      "condition_id": "200m_cross_10",
+      "frame_index": 40,
+      "input_path": "/home/xin/FMCW_LIDAR/results/gnss_conditioned_uav_phenotype/run_02/point_records/200m_cross_10/frame_0040.npz",
+      "input_sha256": "edf6d3eb92ae4e0ac7c022458f6483aab2e0b448d1cfcd50ac85e3763b6d18f8",
+      "raw_records_in_saved_union": 436,
+      "native_fields_byte_verified": [
+        "x",
+        "y",
+        "z",
+        "rgba",
+        "velocity",
+        "radius",
+        "theta",
+        "phi",
+        "intensity",
+        "ring",
+        "velocity0",
+        "time",
+        "velocity_direction",
+        "acceleration",
+        "acceleration_direction",
+        "surface_evenness"
+      ],
+      "gnss_xyz_analysis": [
+        204.0688520583741,
+        19.169970059924403,
+        -7.543928262831098
+      ],
+      "anchor_xyz_analysis": [
+        203.90251617431642,
+        19.42519359588623,
+        -7.294669437408447
+      ],
+      "anchor_minus_gnss_m": 0.3936199203358316,
+      "raw_region_counts_verified": {
+        "GNSS_1m": 10,
+        "GNSS_3m": 10,
+        "GNSS_10m": 19,
+        "ANCHOR_1m": 10,
+        "ANCHOR_3m": 10
+      },
+      "bag_time_sec": "1770275841",
+      "bag_time_nsec": "322911448"
+    },
+    {
+      "condition_id": "300m_cross_10",
+      "frame_index": 0,
+      "input_path": "/home/xin/FMCW_LIDAR/results/gnss_conditioned_uav_phenotype/run_02/point_records/300m_cross_10/frame_0000.npz",
+      "input_sha256": "b07667151bb0a74383c874ed226a3c148a69e75352dac123574c497a3401aa94",
+      "raw_records_in_saved_union": 5,
+      "native_fields_byte_verified": [
+        "x",
+        "y",
+        "z",
+        "rgba",
+        "velocity",
+        "radius",
+        "theta",
+        "phi",
+        "intensity",
+        "ring",
+        "velocity0",
+        "time",
+        "velocity_direction",
+        "acceleration",
+        "acceleration_direction",
+        "surface_evenness"
+      ],
+      "gnss_xyz_analysis": [
+        293.5367583853539,
+        -8.909629821489299,
+        -8.956262169280606
+      ],
+      "anchor_xyz_analysis": [
+        293.391455078125,
+        -7.709051132202148,
+        -7.935240840911865
+      ],
+      "anchor_minus_gnss_m": 1.5827150069567106,
+      "raw_region_counts_verified": {
+        "GNSS_1m": 0,
+        "GNSS_3m": 5,
+        "GNSS_10m": 5,
+        "ANCHOR_1m": 5,
+        "ANCHOR_3m": 5
+      },
+      "bag_time_sec": "1770276937",
+      "bag_time_nsec": "305165411"
+    },
+    {
+      "condition_id": "300m_cross_10",
+      "frame_index": 4,
+      "input_path": "/home/xin/FMCW_LIDAR/results/gnss_conditioned_uav_phenotype/run_02/point_records/300m_cross_10/frame_0004.npz",
+      "input_sha256": "3c5b4f942a7981b868b3284be3da091effce89324b370551b9a1a57ec7628269",
+      "raw_records_in_saved_union": 6,
+      "native_fields_byte_verified": [
+        "x",
+        "y",
+        "z",
+        "rgba",
+        "velocity",
+        "radius",
+        "theta",
+        "phi",
+        "intensity",
+        "ring",
+        "velocity0",
+        "time",
+        "velocity_direction",
+        "acceleration",
+        "acceleration_direction",
+        "surface_evenness"
+      ],
+      "gnss_xyz_analysis": [
+        295.4093645544263,
+        21.411285100086694,
+        -9.882755746011265
+      ],
+      "anchor_xyz_analysis": [
+        295.70887451171876,
+        19.656485748291015,
+        -9.16402759552002
+      ],
+      "anchor_minus_gnss_m": 1.919790908898266,
+      "raw_region_counts_verified": {
+        "GNSS_1m": 0,
+        "GNSS_3m": 5,
+        "GNSS_10m": 5,
+        "ANCHOR_1m": 4,
+        "ANCHOR_3m": 5
+      },
+      "bag_time_sec": "1770276941",
+      "bag_time_nsec": "321487842"
+    },
+    {
+      "condition_id": "300m_cross_10",
+      "frame_index": 9,
+      "input_path": "/home/xin/FMCW_LIDAR/results/gnss_conditioned_uav_phenotype/run_02/point_records/300m_cross_10/frame_0009.npz",
+      "input_sha256": "1d5db6d6d388afcc275e0bf62d40e79785d60ded2f5c6479fa037f0b9feb87f2",
+      "raw_records_in_saved_union": 2129,
+      "native_fields_byte_verified": [
+        "x",
+        "y",
+        "z",
+        "rgba",
+        "velocity",
+        "radius",
+        "theta",
+        "phi",
+        "intensity",
+        "ring",
+        "velocity0",
+        "time",
+        "velocity_direction",
+        "acceleration",
+        "acceleration_direction",
+        "surface_evenness"
+      ],
+      "gnss_xyz_analysis": [
+        297.74242346247127,
+        59.18777106184024,
+        -11.037063644883908
+      ],
+      "anchor_xyz_analysis": [
+        299.2754405628551,
+        58.58663662997159,
+        -10.541579593311656
+      ],
+      "anchor_minus_gnss_m": 1.7195954409714584,
+      "raw_region_counts_verified": {
+        "GNSS_1m": 0,
+        "GNSS_3m": 11,
+        "GNSS_10m": 11,
+        "ANCHOR_1m": 11,
+        "ANCHOR_3m": 11
+      },
+      "bag_time_sec": "1770276946",
+      "bag_time_nsec": "325378572"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "/tmp/fmcw_rviz_check/figures/200m_cross_5__frame_0003__top_side.png",
+      "sha256": "1c6547bad9b61825cbcf93e628caf6fe21ff8b9935353aeb08655b80a4f76559"
+    },
+    {
+      "path": "/tmp/fmcw_rviz_check/figures/200m_cross_5__frame_0010__top_side.png",
+      "sha256": "d7d30e3e7633d9f7387a03dd4beb09195de5ead5b8f273d2eb52ae8941cb5452"
+    },
+    {
+      "path": "/tmp/fmcw_rviz_check/figures/200m_cross_5__frame_0021__top_side.png",
+      "sha256": "17f3af765f4bd495456c6d6f162f8aca2580a12faf620e12db7251d4178d3591"
+    },
+    {
+      "path": "/tmp/fmcw_rviz_check/figures/200m_cross_5__contact_sheet.png",
+      "sha256": "d81e50ac9507b001700e4644163850bfae42fb9210e2e64b8449bca8f92b0aaa"
+    },
+    {
+      "path": "/tmp/fmcw_rviz_check/figures/200m_cross_10__frame_0036__top_side.png",
+      "sha256": "dba748ab4f43edb1f0db5c5da7b472f833570b68e5fdf7f45c8152d4883f1d85"
+    },
+    {
+      "path": "/tmp/fmcw_rviz_check/figures/200m_cross_10__frame_0040__top_side.png",
+      "sha256": "dff032954366bcbbd10fb2656fa55e02f5c4801ebcb88fb374bfd4b43cfbd84f"
+    },
+    {
+      "path": "/tmp/fmcw_rviz_check/figures/200m_cross_10__contact_sheet.png",
+      "sha256": "1e6bb31acea7f8757e16644e937d0928c41f7e422bf014a9d5c8fb1b843dac84"
+    },
+    {
+      "path": "/tmp/fmcw_rviz_check/figures/300m_cross_10__frame_0000__top_side.png",
+      "sha256": "c250c021438f5b2dc3bf74334d94382910579516942e7d2e2d41596b5f4ac4a3"
+    },
+    {
+      "path": "/tmp/fmcw_rviz_check/figures/300m_cross_10__frame_0004__top_side.png",
+      "sha256": "e8b338937d0a21d84ba2503433c41569c5f2484580bc78f96433886500c9d7a0"
+    },
+    {
+      "path": "/tmp/fmcw_rviz_check/figures/300m_cross_10__frame_0009__top_side.png",
+      "sha256": "4d2020a24cb1afb82bfe0aedf0b2e6a12a675837b2c05c146709e650b8653136"
+    },
+    {
+      "path": "/tmp/fmcw_rviz_check/figures/300m_cross_10__contact_sheet.png",
+      "sha256": "ac2a925c95870bb23d1aa65a28276c1ab598b42ff88947eca0ce7630f679030f"
+    }
+  ]
+}

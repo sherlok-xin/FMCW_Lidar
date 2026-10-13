@@ -1,0 +1,16 @@
+# Requested ROS helper is archived locally, excluded from GitHub.
+/markers.py
+# Never publish runtime recordings, ROS configs/logs, or binary caches here.
+*.bag
+*.db3
+*.db3-wal
+*.db3-shm
+*.mcap
+*.rviz
+*.npz
+*.pyc
+__pycache__/
+ros_logs/
+processed/
+xdg_config/
+matplotlib_config/

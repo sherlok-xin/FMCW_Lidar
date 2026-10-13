@@ -1,0 +1,12 @@
+{
+  "time_utc": "2026-10-13T10:29:37.624448+00:00",
+  "tracked_count": 1181,
+  "changed": [],
+  "missing": [],
+  "git_status_unchanged": true,
+  "git_status": "?? .local/\n?? FMCW_LITERATURE_EVIDENCE_GAP_MATRIX.md\n?? FMCW_NEXT_DATA_COLLECTION_PROTOCOL.md\n?? results/next_data_collection_protocol/\n",
+  "no_commit_created": true,
+  "frozen_protected_inputs_checked": 318,
+  "frozen_protected_input_mismatches": [],
+  "protected_verification_utc": "2026-10-13T10:30:58.342791+00:00"
+}

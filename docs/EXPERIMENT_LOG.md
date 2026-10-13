@@ -855,3 +855,18 @@ Decision caused by the result:
 - **Rich audit:** ring equals organized row; float32 time is a repeated monotonic ramp with UNKNOWN units/anchor; acceleration/evenness zero, acceleration-direction −1 throughout; velocity-direction equals scalar velocity sign. Coincident XYZ rows differ in other fields, not literal raw-byte duplication. Physical semantics/return independence UNKNOWN.
 - **Validation:** 62,832 independent statistic checks pass; 1,920 E15 descriptor comparisons exactly equal. All rich NPZ/native/region counts and workbook/frame/scenario geometry checks pass. These checks validate source arithmetic, not independent point/positional GT. Full-study repeated execution not run.
 - **Interpretation/decision:** no detector/tracker/E18 change, no label/control movement or weight/threshold selection. Keep sparse/range/eta observations as hypotheses. Negative/hover/high-eta evidence and calibrated uncertainty remain DATA_GAP; acquire preregistered independent controls/GT before estimating likelihoods or physical missed detections. [Completed report](../FMCW_GNSS_CONDITIONED_UAV_PHENOTYPE.md).
+
+
+## RVIZ-GNSS-DISCREPANCY — 2026-10-13（冻结 80 anchors 的描述性分解）
+
+**TESTED / VERIFIED RESULT（数值和归档）；因果归因 UNKNOWN。** 本轮按用户请求，仅对既有 frozen calibration、GNSS chord/插值表和 80 个非插值 DEV/SILVER observed anchors 做误差分解，并归档上一轮 ROS2 目视材料。没有 bag 读取、检测/跟踪、外参或 offset 优化、GNSS 插值重算、标签/E18/阈值修改。
+
+- 输入：`results/gnss_conditioned_uav_phenotype/run_02/frames.csv`、`gnss_source_segments.csv`、`region_features.csv`、`results/research_dev_v0/silver_labels.csv`、`results/calibration_closure/alignment.json` 和 `alignment_results.csv`；确切 SHA-256 在新 provenance 中。
+- 代码：`results/rviz_gnss_lidar_sanity/decompose_discrepancies.py`，SHA-256 `6a9d0249855f0bf4a63254e79706439765ddafe0175acb81957b04c432776cce`。环境沿用 `fmcw/bin/python`；Python/NumPy 实测版本和命令记录在 `decomposition_provenance.json`。无随机性，无新 seed、权重或研究 gate。
+- 完成命令：`PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python results/rviz_gnss_lidar_sanity/decompose_discrepancies.py`；同前缀执行 `plot_discrepancies.py`。独立核验原命令是 `fmcw/bin/python /tmp/fmcw_decomposition_independent_audit.py`，同字节 validator 已归档为 `independent_decomposition_audit.py`。
+- 输出：`results/rviz_gnss_lidar_sanity/`；全部 80 行误差 CSV、sequence/chord 汇总、方向一致性、图像、独立审计及历史目视材料。`markers.py` 仅本地归档，Git 忽略；没有归档 bag、ROS 配置、日志、player/adapter 或 cache 到 GitHub 范围。
+- 定义：error=anchor−GNSS；以冻结 ENU-Up、完整三维 chord tangent、水平左向 cross-track 和正交 vertical-normal 分解；另保留严格 ENU-Up 与水平 along-track。等效时间为 `d_parallel/||v_chord||`，只作局部线性几何诊断，不作为新 offset。分位数为 equally weighted observations、linear interpolation；signed 与 absolute summaries 均保留。
+- VERIFIED RESULT：五条 sequence 的 along-track 平方误差占比分别约 95.477%、96.387%、98.714%、98.507%、95.576%。最大 `200m_cross_5/frame21`：norm 26.575401 m，along +26.389269 m，cross −3.056353 m，vertical-normal +0.719090 m，严格 Up +0.629154 m；等效时间 +6.707545 s。该帧为 GNSS 最后原始样本 A70；正向等效平移超出现有支持，不执行外推。
+- TESTED：解析/旋转/奇异方向的解析测试通过；80 行完整重建、原 anchors/velocity/chord/坐标/计数身份检查通过。独立 ENU 重算与手写 linear quantiles 共 5,815 个标量核对通过；最大标量差约 1.085e−12。
+- Interpretation：每条 sequence 至少一个相同 chord 内出现 along-track 符号改变，单一恒定 clock residual 不足。frame17→21 同一 observed candidate 的 along 差连续增大，弱化 isolated anchor mismatch；稀疏 chord 对真实速度/转弯的表达不足和时间/航段别名更符合总体结构，但不可唯一归因。小的正向 Up/空间参考点残差仍可能；不拟合或排除完整 extrinsic residual。
+- 限制与决定：选择条件为已有 closure/80 anchors；不是独立位置 GT。GNSS chord 速度不是瞬时真速度，等效时间不是 clock certificate。保持全部 frozen inputs 和失败/UNKNOWN；仅完成诊断和归档，未授权新标定、阈值、方法或评分更新。

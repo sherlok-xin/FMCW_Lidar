@@ -1,0 +1,17 @@
+{
+  "utc": "2026-10-13T13:37:32.710545+00:00",
+  "old_tracked_file_count": 1181,
+  "allowed_changed_old_files": [
+    ".gitignore",
+    "docs/CURRENT_STATUS.md",
+    "docs/EXPERIMENT_LOG.md",
+    "docs/RESEARCH_LOG.md"
+  ],
+  "unrelated_old_files_unchanged": true,
+  "historical_log_content_preserved": true,
+  "frozen_scientific_input_count": 318,
+  "frozen_scientific_mismatches": [],
+  "raw_bags_opened_this_task": false,
+  "calibration_or_offset_optimized": false,
+  "E18_or_labels_modified": false
+}

@@ -10,3 +10,5 @@ __pycache__/
 .bash_logout
 .zshrc
 .claude/settings.local.json
+/fmcw_rviz_check/
+/fmcw_range_sparsity_mpl/
