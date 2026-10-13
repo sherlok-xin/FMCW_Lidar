@@ -1,0 +1,10 @@
+﻿sequence_id,included,closure_status,reason
+300m_roundtrip_10,False,EXCLUDED_CLOSURE_FAIL_OR_AMBIGUOUS,failed/ambiguous; no raw-return analysis or negative inference
+300m_roundtrip_13,False,EXCLUDED_CLOSURE_FAIL_OR_AMBIGUOUS,failed/ambiguous; no raw-return analysis or negative inference
+300m_roundtrip_5,False,EXCLUDED_NO_QUALIFYING_ALIGNMENT,failed/ambiguous; no raw-return analysis or negative inference
+100m_cross_10,True,CLOSURE_PASS_CROSS_EXPLORATORY,five closure-PASS cross sequences
+100m_cross_5,True,CLOSURE_PASS_CROSS_EXPLORATORY,five closure-PASS cross sequences
+200m_cross_10,True,CLOSURE_PASS_CROSS_EXPLORATORY,five closure-PASS cross sequences
+200m_cross_5,True,CLOSURE_PASS_CROSS_EXPLORATORY,five closure-PASS cross sequences
+300m_cross_10,True,CLOSURE_PASS_CROSS_EXPLORATORY,five closure-PASS cross sequences
+300m_cross_5,False,EXCLUDED_CLOSURE_FAIL_OR_AMBIGUOUS,failed/ambiguous; no raw-return analysis or negative inference

@@ -1,0 +1,7 @@
+{
+  "utc": "2026-10-12T03:55:33.600916+00:00",
+  "exception": "ValueError('dtype.descr is not defined for types with overlapping or out-of-order fields')",
+  "elapsed_s": 8.352624070015736,
+  "completed_source_audits": [],
+  "frames_seen": 6
+}

@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-12T08:34:10.022939+00:00",
+  "script_sha256": "e0cc257c010a41c30676df5f7c547954f0ffc274e4d9ff464c15c919cd753d1b",
+  "command": "PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python scripts/gnss_phenotype_descriptive_figures.py",
+  "input_sha256": {
+    "region_features.csv": "1c3bc552192aa132cb0decc3f2fec6ffcd1fbd5c0cd62b596de3380bedeb37a7"
+  },
+  "figures": [
+    "figures/anchor_support_geometry_vs_range.pdf",
+    "figures/anchor_support_geometry_vs_range.png",
+    "figures/doppler_chord_reference.pdf",
+    "figures/doppler_chord_reference.png",
+    "figures/support_time_and_representation.pdf",
+    "figures/support_time_and_representation.png"
+  ],
+  "fitted_curves": false,
+  "threshold_selection": false,
+  "independent_test_evidence": false
+}

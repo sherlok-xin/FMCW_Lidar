@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-12T08:46:30.335463+00:00",
+  "script_sha256": "2ed3f30cfff44449cfb28888632b675d19beb688993549bbb681462807148abd",
+  "imported_plot_script_sha256": "e0cc257c010a41c30676df5f7c547954f0ffc274e4d9ff464c15c919cd753d1b",
+  "input_sha256": "1c3bc552192aa132cb0decc3f2fec6ffcd1fbd5c0cd62b596de3380bedeb37a7",
+  "command": "PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python scripts/gnss_phenotype_support_figure_v2.py",
+  "change": "layout labels/spacing only; original figures and all data retained",
+  "new_files": [
+    "figures/support_time_and_representation_v2.png",
+    "figures/support_time_and_representation_v2.pdf"
+  ]
+}

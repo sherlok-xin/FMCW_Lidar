@@ -1,0 +1,13 @@
+{
+  "frame_count": 272,
+  "GNSS_supported": 144,
+  "saved_anchor_frames": 80,
+  "region_count": 3602,
+  "controls": 2866,
+  "all_protected_sources_and_code_unchanged": true,
+  "no_detector_tracker_or_calibration_fit_invoked": true,
+  "negative_labels_created": 0,
+  "labels_changed": false,
+  "score_threshold_selected": false,
+  "finished_utc": "2026-10-12T08:33:24.652825+00:00"
+}

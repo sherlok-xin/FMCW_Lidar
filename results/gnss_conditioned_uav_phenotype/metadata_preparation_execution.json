@@ -1,0 +1,61 @@
+{
+  "utc": "2026-10-12T03:58:51.394656+00:00",
+  "command": "PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python scripts/gnss_phenotype_prepare_metadata.py",
+  "script_sha256": "0468305ea85133cdde17dd8c698bcfb2e19352830cdad7723cd61c3511d7a066",
+  "source_sha256": {
+    "bag/20260205/飞行轨迹坐标.xlsx": "5adc1f090b84731b23a2c8cd02f38c002cafef94b9bdaaee98827981a8e54c69",
+    "results/calibration_closure/alignment.json": "f9533b258353d6d138ae13c2f1ffd52958a08ca66419b06f0c391345d68d4a63",
+    "results/calibration_closure/alignment_results.csv": "b28b0a5ec5839e7ba5850c71928aaed16c4e7964cf2d4a74e22791d03f55121d",
+    "results/calibration_closure/offset_profiles.csv": "342ce1cdb144cd4f01647576140cbfc85762a50c7d0abf67bb171c3b2c6ffd30",
+    "results/calibration_closure/offset_diagnostics.csv": "975fca2076c7cda6e3d44dfadf81a64005a375c5568b649936e0ed5515fa648e",
+    "results/calibration_closure/extrinsic_sensitivity.csv": "1a54d3db386d6c9218e49e599c3810c96b8bb1e56fcae7eef587800420315b7b",
+    "results/research_dev_v0/silver_labels.csv": "37c4452a68e544d75034389f82bbaf1e868903bb2225b395b9d66d0cdd48b8db",
+    "results/calibration_closure/lidar_trajectories.csv": "f0362701627530d4d40886f516f341580edd6eb60a6bccfa560a181dae1b460b",
+    "results/negative_hover_evidence_audit/gnss_samples.csv": "a5c3edc592ff66c3364b8e44c8d194620b96eaae9e85ce1c5f719528abfb8bc8",
+    "scripts/build_gt_benchmark_v0.py": "508b0264485109f75c754f05e070d4a8e1e1244569a4b9f9bd16f0c3605493d0"
+  },
+  "rows": 272,
+  "accounting": [
+    {
+      "sequence_id": "100m_cross_5",
+      "inventory_frames": 32,
+      "nominal_gnss_supported": 27,
+      "observed_closure_anchors": 19,
+      "anchors_inside_existing_scenario_3m_union": 19,
+      "raw_rich_cohort_extraction_complete": false
+    },
+    {
+      "sequence_id": "200m_cross_5",
+      "inventory_frames": 83,
+      "nominal_gnss_supported": 22,
+      "observed_closure_anchors": 22,
+      "anchors_inside_existing_scenario_3m_union": 16,
+      "raw_rich_cohort_extraction_complete": false
+    },
+    {
+      "sequence_id": "100m_cross_10",
+      "inventory_frames": 46,
+      "nominal_gnss_supported": 30,
+      "observed_closure_anchors": 11,
+      "anchors_inside_existing_scenario_3m_union": 9,
+      "raw_rich_cohort_extraction_complete": false
+    },
+    {
+      "sequence_id": "200m_cross_10",
+      "inventory_frames": 48,
+      "nominal_gnss_supported": 39,
+      "observed_closure_anchors": 18,
+      "anchors_inside_existing_scenario_3m_union": 12,
+      "raw_rich_cohort_extraction_complete": false
+    },
+    {
+      "sequence_id": "300m_cross_10",
+      "inventory_frames": 63,
+      "nominal_gnss_supported": 26,
+      "observed_closure_anchors": 10,
+      "anchors_inside_existing_scenario_3m_union": 8,
+      "raw_rich_cohort_extraction_complete": false
+    }
+  ],
+  "boundary": "cached frame timestamps with unchanged GNSS/closure annotations; no new return statistics"
+}

@@ -1,0 +1,683 @@
+{
+  "status": "INDEPENDENT_STORED_ARTIFACT_AUDIT_PASS",
+  "scope": "No raw bag reread; exact exported-byte/native-field/membership reconstruction, stored stream-hash and existing archive identity comparison",
+  "checks": {
+    "named_field_byte_reconstructions": 2304,
+    "region_count_and_unique_xyz_reconstructions": 3602,
+    "point_files_checked": 144,
+    "anchor_rows_equal_existing_E15": 80
+  },
+  "union_point_rows_in_all_point_files": 76785,
+  "native_dtypes": {
+    "x": [
+      "<f4"
+    ],
+    "y": [
+      "<f4"
+    ],
+    "z": [
+      "<f4"
+    ],
+    "rgba": [
+      "<u4"
+    ],
+    "velocity": [
+      "<f4"
+    ],
+    "radius": [
+      "<f4"
+    ],
+    "theta": [
+      "<f4"
+    ],
+    "phi": [
+      "<f4"
+    ],
+    "intensity": [
+      "<f4"
+    ],
+    "ring": [
+      "<u4"
+    ],
+    "velocity0": [
+      "<f4"
+    ],
+    "time": [
+      "<f4"
+    ],
+    "velocity_direction": [
+      "<f4"
+    ],
+    "acceleration": [
+      "<f4"
+    ],
+    "acceleration_direction": [
+      "<f4"
+    ],
+    "surface_evenness": [
+      "<f4"
+    ]
+  },
+  "source_checks": [
+    {
+      "sequence_id": "100m_cross_5",
+      "archive_path": "bag/20260205/100m横飞速度5ms.zip",
+      "archive_sha_matches_E15": true,
+      "member_sha256": "518f7399a07a3d0a00067a06be35b0e165b41d086f201a8bf3111085e543a1a7",
+      "member_bytes": 3200030273,
+      "frame_count": 32,
+      "EOF_CRC_and_complete_stream_accounting": true
+    },
+    {
+      "sequence_id": "200m_cross_5",
+      "archive_path": "bag/20260205/200m横飞速度5ms.zip",
+      "archive_sha_matches_E15": true,
+      "member_sha256": "9d4745d271904f0118e50cabaf233b2bce5a6419fc55123318e7d363aaf41a69",
+      "member_bytes": 8300064137,
+      "frame_count": 83,
+      "EOF_CRC_and_complete_stream_accounting": true
+    },
+    {
+      "sequence_id": "100m_cross_10",
+      "archive_path": "bag/20260205/100m横飞速度10ms.zip",
+      "archive_sha_matches_E15": true,
+      "member_sha256": "e5488e1552e6116c72a5e630b78a6165ef4cfad8682a13eeddb5af61d92f8cde",
+      "member_bytes": 4600039569,
+      "frame_count": 46,
+      "EOF_CRC_and_complete_stream_accounting": true
+    },
+    {
+      "sequence_id": "200m_cross_10",
+      "archive_path": "bag/20260205/200m横飞速度10ms.zip",
+      "archive_sha_matches_E15": true,
+      "member_sha256": "bc2e81641f9b6a6f9e2dd5bf3974a31a9c1328036208a75ba16b13fd9aee9c7a",
+      "member_bytes": 4800040897,
+      "frame_count": 48,
+      "EOF_CRC_and_complete_stream_accounting": true
+    },
+    {
+      "sequence_id": "300m_cross_10",
+      "archive_path": "bag/20260205/300m横飞速度10ms.zip",
+      "archive_sha_matches_E15": true,
+      "member_sha256": "837f90971ea366f4a086af2bbcfa3e823fbbc3ca0ca0fa62585ac59c1abb4385",
+      "member_bytes": 6300050857,
+      "frame_count": 63,
+      "EOF_CRC_and_complete_stream_accounting": true
+    }
+  ],
+  "field_summary": {
+    "acceleration": {
+      "frame_rows": 272,
+      "native_dtypes": [
+        "<f4"
+      ],
+      "component_counts": [
+        1
+      ],
+      "semantics_status": "UNKNOWN",
+      "all_slots_value_count": 340000000,
+      "all_slots_finite_count": 340000000,
+      "all_slots_nonfinite_count": 0,
+      "all_slots_zero_count": 340000000,
+      "all_slots_minus_one_count": 0,
+      "all_slots_min": 0,
+      "all_slots_max": 0,
+      "finite_nonzero_xyz_value_count": 30941328,
+      "finite_nonzero_xyz_finite_count": 30941328,
+      "finite_nonzero_xyz_nonfinite_count": 0,
+      "finite_nonzero_xyz_zero_count": 30941328,
+      "finite_nonzero_xyz_minus_one_count": 0,
+      "finite_nonzero_xyz_min": 0,
+      "finite_nonzero_xyz_max": 0,
+      "frame_q50_min": 0,
+      "frame_q50_max": 0
+    },
+    "acceleration_direction": {
+      "frame_rows": 272,
+      "native_dtypes": [
+        "<f4"
+      ],
+      "component_counts": [
+        1
+      ],
+      "semantics_status": "UNKNOWN",
+      "all_slots_value_count": 340000000,
+      "all_slots_finite_count": 340000000,
+      "all_slots_nonfinite_count": 0,
+      "all_slots_zero_count": 0,
+      "all_slots_minus_one_count": 340000000,
+      "all_slots_min": -1,
+      "all_slots_max": -1,
+      "finite_nonzero_xyz_value_count": 30941328,
+      "finite_nonzero_xyz_finite_count": 30941328,
+      "finite_nonzero_xyz_nonfinite_count": 0,
+      "finite_nonzero_xyz_zero_count": 0,
+      "finite_nonzero_xyz_minus_one_count": 30941328,
+      "finite_nonzero_xyz_min": -1,
+      "finite_nonzero_xyz_max": -1,
+      "frame_q50_min": -1,
+      "frame_q50_max": -1
+    },
+    "intensity": {
+      "frame_rows": 272,
+      "native_dtypes": [
+        "<f4"
+      ],
+      "component_counts": [
+        1
+      ],
+      "semantics_status": "UNKNOWN",
+      "all_slots_value_count": 340000000,
+      "all_slots_finite_count": 340000000,
+      "all_slots_nonfinite_count": 0,
+      "all_slots_zero_count": 309059054,
+      "all_slots_minus_one_count": 0,
+      "all_slots_min": 0,
+      "all_slots_max": 114,
+      "finite_nonzero_xyz_value_count": 30941328,
+      "finite_nonzero_xyz_finite_count": 30941328,
+      "finite_nonzero_xyz_nonfinite_count": 0,
+      "finite_nonzero_xyz_zero_count": 382,
+      "finite_nonzero_xyz_minus_one_count": 0,
+      "finite_nonzero_xyz_min": 0,
+      "finite_nonzero_xyz_max": 114,
+      "frame_q50_min": 26,
+      "frame_q50_max": 27
+    },
+    "phi": {
+      "frame_rows": 272,
+      "native_dtypes": [
+        "<f4"
+      ],
+      "component_counts": [
+        1
+      ],
+      "semantics_status": "UNKNOWN",
+      "all_slots_value_count": 340000000,
+      "all_slots_finite_count": 340000000,
+      "all_slots_nonfinite_count": 0,
+      "all_slots_zero_count": 42048,
+      "all_slots_minus_one_count": 0,
+      "all_slots_min": -0.34369999170303345,
+      "all_slots_max": 0.21469999849796295,
+      "finite_nonzero_xyz_value_count": 30941328,
+      "finite_nonzero_xyz_finite_count": 30941328,
+      "finite_nonzero_xyz_nonfinite_count": 0,
+      "finite_nonzero_xyz_zero_count": 2776,
+      "finite_nonzero_xyz_minus_one_count": 0,
+      "finite_nonzero_xyz_min": -0.3434000015258789,
+      "finite_nonzero_xyz_max": 0.2143000066280365,
+      "frame_q50_min": -0.21289999783039093,
+      "frame_q50_max": -0.20970000326633453
+    },
+    "radius": {
+      "frame_rows": 272,
+      "native_dtypes": [
+        "<f4"
+      ],
+      "component_counts": [
+        1
+      ],
+      "semantics_status": "UNKNOWN",
+      "all_slots_value_count": 340000000,
+      "all_slots_finite_count": 340000000,
+      "all_slots_nonfinite_count": 0,
+      "all_slots_zero_count": 309058672,
+      "all_slots_minus_one_count": 0,
+      "all_slots_min": 0,
+      "all_slots_max": 517.3400268554688,
+      "finite_nonzero_xyz_value_count": 30941328,
+      "finite_nonzero_xyz_finite_count": 30941328,
+      "finite_nonzero_xyz_nonfinite_count": 0,
+      "finite_nonzero_xyz_zero_count": 0,
+      "finite_nonzero_xyz_minus_one_count": 0,
+      "finite_nonzero_xyz_min": 10.5600004196167,
+      "finite_nonzero_xyz_max": 517.3400268554688,
+      "frame_q50_min": 172.9499969482422,
+      "frame_q50_max": 190.9499969482422
+    },
+    "rgba": {
+      "frame_rows": 272,
+      "native_dtypes": [
+        "<u4"
+      ],
+      "component_counts": [
+        1
+      ],
+      "semantics_status": "UNKNOWN",
+      "all_slots_value_count": 340000000,
+      "all_slots_finite_count": 340000000,
+      "all_slots_nonfinite_count": 0,
+      "all_slots_zero_count": 340000000,
+      "all_slots_minus_one_count": 0,
+      "all_slots_min": 0,
+      "all_slots_max": 0,
+      "finite_nonzero_xyz_value_count": 30941328,
+      "finite_nonzero_xyz_finite_count": 30941328,
+      "finite_nonzero_xyz_nonfinite_count": 0,
+      "finite_nonzero_xyz_zero_count": 30941328,
+      "finite_nonzero_xyz_minus_one_count": 0,
+      "finite_nonzero_xyz_min": 0,
+      "finite_nonzero_xyz_max": 0,
+      "frame_q50_min": 0,
+      "frame_q50_max": 0
+    },
+    "ring": {
+      "frame_rows": 272,
+      "native_dtypes": [
+        "<u4"
+      ],
+      "component_counts": [
+        1
+      ],
+      "semantics_status": "UNKNOWN",
+      "all_slots_value_count": 340000000,
+      "all_slots_finite_count": 340000000,
+      "all_slots_nonfinite_count": 0,
+      "all_slots_zero_count": 42500000,
+      "all_slots_minus_one_count": 0,
+      "all_slots_min": 0,
+      "all_slots_max": 7,
+      "finite_nonzero_xyz_value_count": 30941328,
+      "finite_nonzero_xyz_finite_count": 30941328,
+      "finite_nonzero_xyz_nonfinite_count": 0,
+      "finite_nonzero_xyz_zero_count": 3128218,
+      "finite_nonzero_xyz_minus_one_count": 0,
+      "finite_nonzero_xyz_min": 0,
+      "finite_nonzero_xyz_max": 7,
+      "frame_q50_min": 4,
+      "frame_q50_max": 4
+    },
+    "surface_evenness": {
+      "frame_rows": 272,
+      "native_dtypes": [
+        "<f4"
+      ],
+      "component_counts": [
+        1
+      ],
+      "semantics_status": "UNKNOWN",
+      "all_slots_value_count": 340000000,
+      "all_slots_finite_count": 340000000,
+      "all_slots_nonfinite_count": 0,
+      "all_slots_zero_count": 340000000,
+      "all_slots_minus_one_count": 0,
+      "all_slots_min": 0,
+      "all_slots_max": 0,
+      "finite_nonzero_xyz_value_count": 30941328,
+      "finite_nonzero_xyz_finite_count": 30941328,
+      "finite_nonzero_xyz_nonfinite_count": 0,
+      "finite_nonzero_xyz_zero_count": 30941328,
+      "finite_nonzero_xyz_minus_one_count": 0,
+      "finite_nonzero_xyz_min": 0,
+      "finite_nonzero_xyz_max": 0,
+      "frame_q50_min": 0,
+      "frame_q50_max": 0
+    },
+    "theta": {
+      "frame_rows": 272,
+      "native_dtypes": [
+        "<f4"
+      ],
+      "component_counts": [
+        1
+      ],
+      "semantics_status": "UNKNOWN",
+      "all_slots_value_count": 340000000,
+      "all_slots_finite_count": 340000000,
+      "all_slots_nonfinite_count": 0,
+      "all_slots_zero_count": 189401,
+      "all_slots_minus_one_count": 0,
+      "all_slots_min": -0.09529999643564224,
+      "all_slots_max": 0.09529999643564224,
+      "finite_nonzero_xyz_value_count": 30941328,
+      "finite_nonzero_xyz_finite_count": 30941328,
+      "finite_nonzero_xyz_nonfinite_count": 0,
+      "finite_nonzero_xyz_zero_count": 2738,
+      "finite_nonzero_xyz_minus_one_count": 0,
+      "finite_nonzero_xyz_min": -0.09470000118017197,
+      "finite_nonzero_xyz_max": 0.09529999643564224,
+      "frame_q50_min": 0.07970000058412552,
+      "frame_q50_max": 0.08049999922513962
+    },
+    "time": {
+      "frame_rows": 272,
+      "native_dtypes": [
+        "<f4"
+      ],
+      "component_counts": [
+        1
+      ],
+      "semantics_status": "UNKNOWN",
+      "all_slots_value_count": 340000000,
+      "all_slots_finite_count": 340000000,
+      "all_slots_nonfinite_count": 0,
+      "all_slots_zero_count": 2176,
+      "all_slots_minus_one_count": 0,
+      "all_slots_min": 0,
+      "all_slots_max": 1.2499920129776,
+      "finite_nonzero_xyz_value_count": 30941328,
+      "finite_nonzero_xyz_finite_count": 30941328,
+      "finite_nonzero_xyz_nonfinite_count": 0,
+      "finite_nonzero_xyz_zero_count": 153,
+      "finite_nonzero_xyz_minus_one_count": 0,
+      "finite_nonzero_xyz_min": 0,
+      "finite_nonzero_xyz_max": 1.2499920129776,
+      "frame_q50_min": 0.7000560164451599,
+      "frame_q50_max": 0.9203280210494995
+    },
+    "velocity": {
+      "frame_rows": 272,
+      "native_dtypes": [
+        "<f4"
+      ],
+      "component_counts": [
+        1
+      ],
+      "semantics_status": "UNKNOWN",
+      "all_slots_value_count": 340000000,
+      "all_slots_finite_count": 340000000,
+      "all_slots_nonfinite_count": 0,
+      "all_slots_zero_count": 311641986,
+      "all_slots_minus_one_count": 28372,
+      "all_slots_min": -50,
+      "all_slots_max": 50,
+      "finite_nonzero_xyz_value_count": 30941328,
+      "finite_nonzero_xyz_finite_count": 30941328,
+      "finite_nonzero_xyz_nonfinite_count": 0,
+      "finite_nonzero_xyz_zero_count": 2583314,
+      "finite_nonzero_xyz_minus_one_count": 28372,
+      "finite_nonzero_xyz_min": -50,
+      "finite_nonzero_xyz_max": 50,
+      "frame_q50_min": -0.05000000074505806,
+      "frame_q50_max": -0.029999999329447746
+    },
+    "velocity0": {
+      "frame_rows": 272,
+      "native_dtypes": [
+        "<f4"
+      ],
+      "component_counts": [
+        1
+      ],
+      "semantics_status": "UNKNOWN",
+      "all_slots_value_count": 340000000,
+      "all_slots_finite_count": 340000000,
+      "all_slots_nonfinite_count": 0,
+      "all_slots_zero_count": 311641986,
+      "all_slots_minus_one_count": 0,
+      "all_slots_min": -52.665771484375,
+      "all_slots_max": 52.89574432373047,
+      "finite_nonzero_xyz_value_count": 30941328,
+      "finite_nonzero_xyz_finite_count": 30941328,
+      "finite_nonzero_xyz_nonfinite_count": 0,
+      "finite_nonzero_xyz_zero_count": 2583314,
+      "finite_nonzero_xyz_minus_one_count": 0,
+      "finite_nonzero_xyz_min": -52.665771484375,
+      "finite_nonzero_xyz_max": 52.89574432373047,
+      "frame_q50_min": -0.05024966038763523,
+      "frame_q50_max": -0.03093612100929022
+    },
+    "velocity_direction": {
+      "frame_rows": 272,
+      "native_dtypes": [
+        "<f4"
+      ],
+      "component_counts": [
+        1
+      ],
+      "semantics_status": "UNKNOWN",
+      "all_slots_value_count": 340000000,
+      "all_slots_finite_count": 340000000,
+      "all_slots_nonfinite_count": 0,
+      "all_slots_zero_count": 0,
+      "all_slots_minus_one_count": 329249175,
+      "all_slots_min": -1,
+      "all_slots_max": 1,
+      "finite_nonzero_xyz_value_count": 30941328,
+      "finite_nonzero_xyz_finite_count": 30941328,
+      "finite_nonzero_xyz_nonfinite_count": 0,
+      "finite_nonzero_xyz_zero_count": 0,
+      "finite_nonzero_xyz_minus_one_count": 20190503,
+      "finite_nonzero_xyz_min": -1,
+      "finite_nonzero_xyz_max": 1,
+      "frame_q50_min": -1,
+      "frame_q50_max": -1
+    },
+    "x": {
+      "frame_rows": 272,
+      "native_dtypes": [
+        "<f4"
+      ],
+      "component_counts": [
+        1
+      ],
+      "semantics_status": "UNKNOWN",
+      "all_slots_value_count": 340000000,
+      "all_slots_finite_count": 340000000,
+      "all_slots_nonfinite_count": 0,
+      "all_slots_zero_count": 309058672,
+      "all_slots_minus_one_count": 0,
+      "all_slots_min": 0,
+      "all_slots_max": 511.7689208984375,
+      "finite_nonzero_xyz_value_count": 30941328,
+      "finite_nonzero_xyz_finite_count": 30941328,
+      "finite_nonzero_xyz_nonfinite_count": 0,
+      "finite_nonzero_xyz_zero_count": 0,
+      "finite_nonzero_xyz_minus_one_count": 0,
+      "finite_nonzero_xyz_min": 10.072342872619629,
+      "finite_nonzero_xyz_max": 511.7689208984375,
+      "frame_q50_min": 165.9356460571289,
+      "frame_q50_max": 183.89763641357422
+    },
+    "y": {
+      "frame_rows": 272,
+      "native_dtypes": [
+        "<f4"
+      ],
+      "component_counts": [
+        1
+      ],
+      "semantics_status": "UNKNOWN",
+      "all_slots_value_count": 340000000,
+      "all_slots_finite_count": 340000000,
+      "all_slots_nonfinite_count": 0,
+      "all_slots_zero_count": 309061410,
+      "all_slots_minus_one_count": 0,
+      "all_slots_min": -36.30678176879883,
+      "all_slots_max": 46.81862258911133,
+      "finite_nonzero_xyz_value_count": 30941328,
+      "finite_nonzero_xyz_finite_count": 30941328,
+      "finite_nonzero_xyz_nonfinite_count": 0,
+      "finite_nonzero_xyz_zero_count": 2738,
+      "finite_nonzero_xyz_minus_one_count": 0,
+      "finite_nonzero_xyz_min": -36.30678176879883,
+      "finite_nonzero_xyz_max": 46.81862258911133,
+      "frame_q50_min": 12.218107223510742,
+      "frame_q50_max": 12.747941017150879
+    },
+    "z": {
+      "frame_rows": 272,
+      "native_dtypes": [
+        "<f4"
+      ],
+      "component_counts": [
+        1
+      ],
+      "semantics_status": "UNKNOWN",
+      "all_slots_value_count": 340000000,
+      "all_slots_finite_count": 340000000,
+      "all_slots_nonfinite_count": 0,
+      "all_slots_zero_count": 309061448,
+      "all_slots_minus_one_count": 0,
+      "all_slots_min": -127.79302215576172,
+      "all_slots_max": 80.1461181640625,
+      "finite_nonzero_xyz_value_count": 30941328,
+      "finite_nonzero_xyz_finite_count": 30941328,
+      "finite_nonzero_xyz_nonfinite_count": 0,
+      "finite_nonzero_xyz_zero_count": 2776,
+      "finite_nonzero_xyz_minus_one_count": 0,
+      "finite_nonzero_xyz_min": -127.79302215576172,
+      "finite_nonzero_xyz_max": 80.1461181640625,
+      "frame_q50_min": -22.426193237304688,
+      "frame_q50_max": -22.146114349365234
+    }
+  },
+  "relationship_summary": {
+    "frame_rows": 272,
+    "ring_row_index_equal_fractions": [
+      1
+    ],
+    "velocity_direction_nonzero_sign_equal_fractions": [
+      1
+    ],
+    "organized_row_count": 2176,
+    "time_backwards_adjacent_steps_total": 0,
+    "time_row_equal_to_first_fractions": [
+      1
+    ],
+    "time_column_correlations_min": 0.9999999999999983,
+    "time_column_correlations_max": 0.9999999999999983,
+    "time_unit_and_absolute_anchor": "UNKNOWN",
+    "velocity0_minus_velocity_global_min": -2.919525146484375,
+    "velocity0_minus_velocity_global_max": 3.0993995666503906,
+    "velocity0_equal_velocity_frame_fraction_min": 0.07788459851581551,
+    "velocity0_equal_velocity_frame_fraction_max": 0.08887522835695547,
+    "radius_minus_norm_global_min": -0.0000530377278096239,
+    "radius_minus_norm_global_max": 0.000060574935616841685
+  },
+  "anchor_duplicate_summary": {
+    "100m_cross_10": {
+      "frames": 11,
+      "frames_with_coincident_xyz": 7,
+      "stored_point_rows": 371,
+      "unique_xyz_rows": 358,
+      "coincident_excess_rows": 13,
+      "coincident_xyz_groups": 13,
+      "groups_with_different_ring": 1,
+      "groups_with_different_time": 13,
+      "groups_with_different_velocity": 5,
+      "groups_with_different_velocity0": 5,
+      "groups_with_different_intensity": 13,
+      "groups_all_named_fields_identical": 0,
+      "groups_all_raw_bytes_identical": 0,
+      "max_xyz_multiplicity": 2,
+      "max_stored_time_field_span": 0.03339201211929321
+    },
+    "100m_cross_5": {
+      "frames": 19,
+      "frames_with_coincident_xyz": 18,
+      "stored_point_rows": 755,
+      "unique_xyz_rows": 711,
+      "coincident_excess_rows": 44,
+      "coincident_xyz_groups": 44,
+      "groups_with_different_ring": 0,
+      "groups_with_different_time": 44,
+      "groups_with_different_velocity": 7,
+      "groups_with_different_velocity0": 7,
+      "groups_with_different_intensity": 43,
+      "groups_all_named_fields_identical": 0,
+      "groups_all_raw_bytes_identical": 0,
+      "max_xyz_multiplicity": 2,
+      "max_stored_time_field_span": 0.000008106231689453125
+    },
+    "200m_cross_10": {
+      "frames": 18,
+      "frames_with_coincident_xyz": 16,
+      "stored_point_rows": 396,
+      "unique_xyz_rows": 341,
+      "coincident_excess_rows": 55,
+      "coincident_xyz_groups": 49,
+      "groups_with_different_ring": 0,
+      "groups_with_different_time": 49,
+      "groups_with_different_velocity": 8,
+      "groups_with_different_velocity0": 8,
+      "groups_with_different_intensity": 49,
+      "groups_all_named_fields_identical": 0,
+      "groups_all_raw_bytes_identical": 0,
+      "max_xyz_multiplicity": 3,
+      "max_stored_time_field_span": 0.000016033649444580078
+    },
+    "200m_cross_5": {
+      "frames": 22,
+      "frames_with_coincident_xyz": 9,
+      "stored_point_rows": 295,
+      "unique_xyz_rows": 284,
+      "coincident_excess_rows": 11,
+      "coincident_xyz_groups": 10,
+      "groups_with_different_ring": 0,
+      "groups_with_different_time": 10,
+      "groups_with_different_velocity": 5,
+      "groups_with_different_velocity0": 5,
+      "groups_with_different_intensity": 10,
+      "groups_all_named_fields_identical": 0,
+      "groups_all_raw_bytes_identical": 0,
+      "max_xyz_multiplicity": 3,
+      "max_stored_time_field_span": 0.0066719651222229
+    },
+    "300m_cross_10": {
+      "frames": 10,
+      "frames_with_coincident_xyz": 3,
+      "stored_point_rows": 66,
+      "unique_xyz_rows": 62,
+      "coincident_excess_rows": 4,
+      "coincident_xyz_groups": 4,
+      "groups_with_different_ring": 0,
+      "groups_with_different_time": 4,
+      "groups_with_different_velocity": 1,
+      "groups_with_different_velocity0": 1,
+      "groups_with_different_intensity": 4,
+      "groups_all_named_fields_identical": 0,
+      "groups_all_raw_bytes_identical": 0,
+      "max_xyz_multiplicity": 2,
+      "max_stored_time_field_span": 0.000007987022399902344
+    }
+  },
+  "checked_point_files_count": 144,
+  "point_file_identity_aggregate_sha256": "03a474a9ee29b1d8c3b576493b06e68ea57013139c653b7600f86a9af1b05b4b",
+  "limitations": [
+    "No independent recomputation of whole raw member SHA; streaming records audited against existing archive identity and byte counts.",
+    "Stored point rows and coincident XYZ are not independently certified physical returns.",
+    "time field units, anchor, deskew interpretation and undocumented field physics remain UNKNOWN.",
+    "Anchor membership and exploratory controls are not independent UAV/clutter point labels.",
+    "Full-cohort field statistics mostly describe the complete scene, not target-specific characteristics."
+  ],
+  "audit_completed_utc": "2026-10-12T08:35:45.541593+00:00",
+  "input_sha256": {
+    "results/gnss_conditioned_uav_phenotype/run_02/frames.csv": "d73b9620e672a64006224e65099408ea90986ddf147cbc63bea021fb23421024",
+    "results/gnss_conditioned_uav_phenotype/run_02/region_features.csv": "1c3bc552192aa132cb0decc3f2fec6ffcd1fbd5c0cd62b596de3380bedeb37a7",
+    "results/gnss_conditioned_uav_phenotype/run_02/rich_field_distributions.csv": "ccd08edeef4ca11dc66e61647d7b42baceeed0b38eb34692aa094ffca1368248",
+    "results/gnss_conditioned_uav_phenotype/run_02/rich_field_relationships.csv": "1e4418f3daa32d0bea3155a3e9f5304f96f33cd7d671e5e7c8ea65aebdbff7f3",
+    "results/gnss_conditioned_uav_phenotype/run_02/raw_source_identity.csv": "9cabf8043de4929d80b7e7cb673ceea3715013f3926bf65c1e0d530b5f65d6cf",
+    "results/gnss_conditioned_uav_phenotype/run_02/protocol.json": "9e245d3ad895d8e0d8671c149474aa95b1d557156d81b6a66562eb8fd195502c",
+    "results/research_dev_v0/silver_labels.csv": "37c4452a68e544d75034389f82bbaf1e868903bb2225b395b9d66d0cdd48b8db",
+    "results/range_sparsity_audit/frame_metrics.csv": "597639a8d17da1e68250c693841c608f286a8d23f1b910ab491c5a4202f94d0f",
+    "results/range_sparsity_audit/run_manifest.json": "1d83b055997e26b49ce3251268a038ecd20ed2455270e8c02ee3726e0c90a12d"
+  },
+  "duplicate_csv_path": "results/gnss_conditioned_uav_phenotype/run_02/rich_duplicate_structure.csv",
+  "duplicate_csv_row_count": 80,
+  "validation_command_exact": "PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python - <<'PY'\nimport csv,json,hashlib\nfrom pathlib import Path\nfrom collections import defaultdict,Counter\nimport numpy as np\nROOT=Path('/home/xin/FMCW_LIDAR')\nOUT=ROOT/'results/gnss_conditioned_uav_phenotype/run_02'\ndef readcsv(p):\n with p.open(encoding='utf-8-sig',newline='') as f:return list(csv.DictReader(f))\ndef integer(r,k):return int(float(r[k]))\ndef finite_number(r,k):return float(r[k]) if r.get(k) not in ('',None) else None\ndef truth(v):return v in ('True','true','1',True)\ndef file_sha(p):\n h=hashlib.sha256()\n with p.open('rb') as f:\n  for b in iter(lambda:f.read(8*1024*1024),b''):h.update(b)\n return h.hexdigest()\nif not (OUT/'extraction_completed.json').exists():\n print(json.dumps({'status':'WAITING_EXTRACTION_COMPLETE','point_files':dict(Counter(p.parent.name for p in (OUT/'point_records').glob('*/*.npz')))}));raise SystemExit\nlabels=readcsv(ROOT/'results/research_dev_v0/silver_labels.csv')\nfeatures=readcsv(OUT/'region_features.csv')\nfeature_map={(r['sequence_id'],integer(r,'frame_index'),r['region_id']):r for r in features}\nchecks=Counter();npz_ids=[];rawslots=0;native_dtypes=defaultdict(set);duplicates=[]\nfor p in sorted((OUT/'point_records').glob('*/*.npz')):\n cid=p.parent.name;fi=int(p.stem.split('_')[1])\n z=np.load(p,allow_pickle=False);schema=json.loads(z['field_schema_json'].item())\n raw=z['raw_point_bytes'];n=len(z['raw_slot_indices'])\n assert raw.dtype==np.uint8 and raw.shape==(n,80)\n names=z['region_names'].tolist();offsets=z['region_offsets'];members=z['region_record_indices'];slots=z['raw_slot_indices']\n assert len(names)==len(set(names)) and len(offsets)==len(names)+1 and offsets[0]==0 and offsets[-1]==len(members)\n assert np.all(np.diff(offsets)>=0) and np.all(np.diff(slots)>0)\n assert np.all((slots>=0)&(slots<1250000)) and np.all((members>=0)&(members<n))\n dtype=np.dtype({'names':[s['name'] for s in schema],'formats':[np.dtype(s['numpy_dtype']) if s['count']==1 else (np.dtype(s['numpy_dtype']),(s['count'],)) for s in schema],'offsets':[s['offset'] for s in schema],'itemsize':80})\n reconstructed=np.frombuffer(raw.tobytes(),dtype=dtype)\n for s in schema:\n  name=s['name'];assert reconstructed[name].tobytes()==z['field__'+name].tobytes()\n  native_dtypes[name].add(z['field__'+name].dtype.str);checks['named_field_byte_reconstructions']+=1\n xyz_all=np.column_stack([z['field__'+name] for name in ['x','y','z']])\n assert np.isfinite(xyz_all).all() and np.all(np.any(xyz_all!=0,axis=1))\n for i,name in enumerate(names):\n  ii=members[offsets[i]:offsets[i+1]]\n  r=feature_map[(cid,fi,name)]\n  assert len(ii)==integer(r,'raw_points')\n  assert len(np.unique(xyz_all[ii],axis=0))==integer(r,'unique_xyz_points')\n  checks['region_count_and_unique_xyz_reconstructions']+=1\n if 'ANCHOR_3m' in names:\n  i=names.index('ANCHOR_3m');idx=members[offsets[i]:offsets[i+1]]\n  xyz=xyz_all[idx];unique,inv,counts=np.unique(xyz,axis=0,return_inverse=True,return_counts=True)\n  row={'sequence_id':cid,'frame_index':fi,'stored_point_rows':len(xyz),'unique_xyz_rows':len(unique),'coincident_excess_rows':len(xyz)-len(unique),'coincident_xyz_groups':int(np.sum(counts>1)),'max_xyz_multiplicity':int(counts.max()) if len(counts) else 0}\n  for nname in ['ring','time','velocity','velocity0','intensity']:\n   row['groups_with_different_'+nname]=0\n  row['groups_all_named_fields_identical']=0;row['groups_all_raw_bytes_identical']=0;row['max_stored_time_field_span']=0.0\n  for g in np.flatnonzero(counts>1):\n   gg=idx[inv==g]\n   for name in ['ring','time','velocity','velocity0','intensity']:\n    row['groups_with_different_'+name]+=int(len(np.unique(z['field__'+name][gg]))>1)\n   row['groups_all_named_fields_identical']+=int(all(len(np.unique(z['field__'+s['name']][gg]))==1 for s in schema))\n   row['groups_all_raw_bytes_identical']+=int(len(np.unique(raw[gg],axis=0))==1)\n   row['max_stored_time_field_span']=max(row['max_stored_time_field_span'],float(np.ptp(z['field__time'][gg])))\n  row['independent_physical_return_identity']='UNKNOWN'\n  duplicates.append(row)\n checks['point_files_checked']+=1;rawslots+=n\n npz_ids.append({'path':str(p.relative_to(ROOT)),'sha256':file_sha(p),'union_point_rows':n})\nexpected={(r['condition_id'],integer(r,'frame_index')) for r in labels}\nassert {(r['sequence_id'],r['frame_index']) for r in duplicates}==expected\nold=readcsv(ROOT/'results/range_sparsity_audit/frame_metrics.csv')\nold={(r['sequence_id'],integer(r,'frame_index')):r for r in old if r['cohort']=='feb2026_DEV_SILVER' and float(r['target_radius_m'])==3}\nfor r in duplicates:\n previous=old[(r['sequence_id'],r['frame_index'])]\n assert r['stored_point_rows']==integer(previous,'raw_points') and r['unique_xyz_rows']==integer(previous,'unique_xyz_points')\nchecks['anchor_rows_equal_existing_E15']=len(duplicates)\nduplicate_summary={}\nfor cid in sorted({r['sequence_id'] for r in duplicates}):\n rr=[r for r in duplicates if r['sequence_id']==cid]\n o={'frames':len(rr),'frames_with_coincident_xyz':sum(r['coincident_excess_rows']>0 for r in rr)}\n for k in duplicates[0]:\n  if k not in ('sequence_id','frame_index','max_xyz_multiplicity','max_stored_time_field_span','independent_physical_return_identity'):\n   o[k]=sum(r[k] for r in rr)\n o['max_xyz_multiplicity']=max(r['max_xyz_multiplicity'] for r in rr)\n o['max_stored_time_field_span']=max(r['max_stored_time_field_span'] for r in rr)\n duplicate_summary[cid]=o\nfields=readcsv(OUT/'rich_field_distributions.csv');relationships=readcsv(OUT/'rich_field_relationships.csv');frames=readcsv(OUT/'frames.csv')\nassert len(frames)==272 and len(relationships)==272 and len(fields)==4352\nfield_summary={}\nfor name in sorted({r['field'] for r in fields}):\n rr=[r for r in fields if r['field']==name]\n assert len(rr)==272\n o={'frame_rows':len(rr),'native_dtypes':sorted({r['numpy_dtype'] for r in rr}),'component_counts':sorted({integer(r,'component_count') for r in rr}),'semantics_status':'UNKNOWN'}\n for scope in ['all_slots','finite_nonzero_xyz']:\n  for k in ['value_count','finite_count','nonfinite_count','zero_count','minus_one_count']:\n   o[scope+'_'+k]=sum(integer(r,scope+'_'+k) for r in rr)\n  mins=[finite_number(r,scope+'_finite_min') for r in rr];maxs=[finite_number(r,scope+'_finite_max') for r in rr]\n  o[scope+'_min']=min(v for v in mins if v is not None);o[scope+'_max']=max(v for v in maxs if v is not None)\n o['frame_q50_min']=min(finite_number(r,'finite_nonzero_xyz_p50') for r in rr)\n o['frame_q50_max']=max(finite_number(r,'finite_nonzero_xyz_p50') for r in rr)\n field_summary[name]=o\nrelation_summary={'frame_rows':272,'ring_row_index_equal_fractions':sorted({float(r['ring_row_index_equal_fraction']) for r in relationships}),'velocity_direction_nonzero_sign_equal_fractions':sorted({float(r['velocity_direction_nonzero_sign_equal_fraction']) for r in relationships})}\ntimes=[json.loads(r['point_time_by_row']) for r in relationships]\nrelation_summary.update({'organized_row_count':sum(len(t) for t in times),'time_backwards_adjacent_steps_total':sum(t['backwards_adjacent_steps'] for tt in times for t in tt),'time_row_equal_to_first_fractions':sorted({t['exactly_equal_to_first_row_fraction'] for tt in times for t in tt}),'time_column_correlations_min':min(t['correlation_with_column_index'] for tt in times for t in tt),'time_column_correlations_max':max(t['correlation_with_column_index'] for tt in times for t in tt),'time_unit_and_absolute_anchor':'UNKNOWN'})\nv0=[json.loads(r['velocity0_minus_velocity']) for r in relationships];radius=[json.loads(r['radius_minus_xyz_norm']) for r in relationships]\nrelation_summary.update({'velocity0_minus_velocity_global_min':min(r['finite_min'] for r in v0),'velocity0_minus_velocity_global_max':max(r['finite_max'] for r in v0),'velocity0_equal_velocity_frame_fraction_min':min(float(r['velocity0_equal_velocity_fraction']) for r in relationships),'velocity0_equal_velocity_frame_fraction_max':max(float(r['velocity0_equal_velocity_fraction']) for r in relationships),'radius_minus_norm_global_min':min(r['finite_min'] for r in radius),'radius_minus_norm_global_max':max(r['finite_max'] for r in radius)})\nidentities=readcsv(OUT/'raw_source_identity.csv');old_manifest=json.loads((ROOT/'results/range_sparsity_audit/run_manifest.json').read_text())['inputs']\nsource_checks=[]\nfor r in identities:\n path=Path(r['archive_path'])\n if path.is_absolute():path=path.relative_to(ROOT)\n prior=old_manifest[str(path)]\n assert r['archive_sha256']==prior['sha256'] and integer(r,'archive_size_bytes')==prior['size_bytes']\n assert truth(r['complete_member_hash']) and truth(r['zip_crc_verified_at_eof']) and integer(r,'bytes_read')==integer(r,'bag_uncompressed_bytes')\n assert r['bag_member_sha256']==r['sha256_partial'] and json.loads(r['errors'])==[]\n source_checks.append({'sequence_id':r['sequence_id'],'archive_path':str(path),'archive_sha_matches_E15':True,'member_sha256':r['bag_member_sha256'],'member_bytes':integer(r,'bytes_read'),'frame_count':integer(r,'frames_decoded'),'EOF_CRC_and_complete_stream_accounting':True})\nout={'status':'INDEPENDENT_STORED_ARTIFACT_AUDIT_PASS','scope':'No raw bag reread; exact exported-byte/native-field/membership reconstruction, stored stream-hash and existing archive identity comparison','checks':dict(checks),'union_point_rows_in_all_point_files':rawslots,'native_dtypes':{k:sorted(v) for k,v in native_dtypes.items()},'source_checks':source_checks,'field_summary':field_summary,'relationship_summary':relation_summary,'anchor_duplicate_summary':duplicate_summary,'duplicate_csv_columns':list(duplicates[0]),'duplicate_csv_rows':[[r[k] for k in duplicates[0]] for r in sorted(duplicates,key=lambda r:(r['sequence_id'],r['frame_index']))],'checked_point_files_count':len(npz_ids),'point_file_identity_aggregate_sha256':hashlib.sha256(json.dumps(npz_ids,sort_keys=True,separators=(',',':')).encode()).hexdigest(),'limitations':['No independent recomputation of whole raw member SHA; streaming records audited against existing archive identity and byte counts.','Stored point rows and coincident XYZ are not independently certified physical returns.','time field units, anchor, deskew interpretation and undocumented field physics remain UNKNOWN.','Anchor membership and exploratory controls are not independent UAV/clutter point labels.','Full-cohort field statistics mostly describe the complete scene, not target-specific characteristics.']}\nprint(json.dumps(out,ensure_ascii=False,separators=(',',':')))\nPY",
+  "duplicate_overall": {
+    "anchor_frames": 80,
+    "frames_with_coincident_xyz": 53,
+    "stored_rows": 1883,
+    "unique_xyz_rows": 1756,
+    "coincident_excess_rows": 127,
+    "coincident_xyz_groups": 120,
+    "groups_with_different_ring": 1,
+    "groups_with_different_time": 120,
+    "groups_with_different_velocity": 26,
+    "groups_with_different_velocity0": 26,
+    "groups_with_different_intensity": 119,
+    "groups_all_named_fields_identical": 0,
+    "groups_all_raw_bytes_identical": 0,
+    "max_xyz_multiplicity": 3,
+    "stored_time_field_unit_status": "UNKNOWN"
+  },
+  "failed_validator_attempts": [
+    {
+      "type": "TOOL_OUTPUT_BUDGET_TRUNCATION",
+      "effect": "Initial read-only audit stdout included every point-file identity and exceeded tool output budget; JSON parsing stopped. No files, input data, or frozen study code changed. Same checks rerun with compact aggregate point-file identity."
+    }
+  ]
+}

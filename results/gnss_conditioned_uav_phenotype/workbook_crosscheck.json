@@ -1,0 +1,463 @@
+{
+  "checks": [
+    {
+      "condition_id": "300m_roundtrip_10",
+      "gnss_index": 1,
+      "source_cell": "A2",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_roundtrip_10",
+      "gnss_index": 2,
+      "source_cell": "A3",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_roundtrip_10",
+      "gnss_index": 3,
+      "source_cell": "A4",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_roundtrip_10",
+      "gnss_index": 4,
+      "source_cell": "A5",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_roundtrip_10",
+      "gnss_index": 5,
+      "source_cell": "A6",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_roundtrip_10",
+      "gnss_index": 6,
+      "source_cell": "A7",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_roundtrip_10",
+      "gnss_index": 7,
+      "source_cell": "A8",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_roundtrip_10",
+      "gnss_index": 8,
+      "source_cell": "A9",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_roundtrip_10",
+      "gnss_index": 9,
+      "source_cell": "A10",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_roundtrip_10",
+      "gnss_index": 10,
+      "source_cell": "A11",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_roundtrip_10",
+      "gnss_index": 11,
+      "source_cell": "A12",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_roundtrip_10",
+      "gnss_index": 12,
+      "source_cell": "A13",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_roundtrip_10",
+      "gnss_index": 13,
+      "source_cell": "A14",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_roundtrip_10",
+      "gnss_index": 14,
+      "source_cell": "A15",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_roundtrip_10",
+      "gnss_index": 15,
+      "source_cell": "A16",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_roundtrip_10",
+      "gnss_index": 16,
+      "source_cell": "A17",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_roundtrip_10",
+      "gnss_index": 17,
+      "source_cell": "A18",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_roundtrip_10",
+      "gnss_index": 18,
+      "source_cell": "A19",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_roundtrip_10",
+      "gnss_index": 19,
+      "source_cell": "A20",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_roundtrip_10",
+      "gnss_index": 20,
+      "source_cell": "A21",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_roundtrip_10",
+      "gnss_index": 21,
+      "source_cell": "A22",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_roundtrip_10",
+      "gnss_index": 22,
+      "source_cell": "A23",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_roundtrip_10",
+      "gnss_index": 23,
+      "source_cell": "A24",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_roundtrip_10",
+      "gnss_index": 24,
+      "source_cell": "A25",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_roundtrip_10",
+      "gnss_index": 25,
+      "source_cell": "A26",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_roundtrip_10",
+      "gnss_index": 26,
+      "source_cell": "A27",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_roundtrip_10",
+      "gnss_index": 27,
+      "source_cell": "A28",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_roundtrip_10",
+      "gnss_index": 28,
+      "source_cell": "A29",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_roundtrip_13",
+      "gnss_index": 1,
+      "source_cell": "A31",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_roundtrip_13",
+      "gnss_index": 2,
+      "source_cell": "A32",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_roundtrip_13",
+      "gnss_index": 3,
+      "source_cell": "A33",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_roundtrip_13",
+      "gnss_index": 4,
+      "source_cell": "A34",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_roundtrip_13",
+      "gnss_index": 5,
+      "source_cell": "A35",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_roundtrip_13",
+      "gnss_index": 6,
+      "source_cell": "A36",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_roundtrip_13",
+      "gnss_index": 7,
+      "source_cell": "A37",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_roundtrip_13",
+      "gnss_index": 8,
+      "source_cell": "A38",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_roundtrip_13",
+      "gnss_index": 9,
+      "source_cell": "A39",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_roundtrip_13",
+      "gnss_index": 10,
+      "source_cell": "A40",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_roundtrip_13",
+      "gnss_index": 11,
+      "source_cell": "A41",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_roundtrip_13",
+      "gnss_index": 12,
+      "source_cell": "A42",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_roundtrip_5",
+      "gnss_index": 1,
+      "source_cell": "A44",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_roundtrip_5",
+      "gnss_index": 2,
+      "source_cell": "A45",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_roundtrip_5",
+      "gnss_index": 3,
+      "source_cell": "A46",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_roundtrip_5",
+      "gnss_index": 4,
+      "source_cell": "A47",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_roundtrip_5",
+      "gnss_index": 5,
+      "source_cell": "A48",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_roundtrip_5",
+      "gnss_index": 6,
+      "source_cell": "A49",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_roundtrip_5",
+      "gnss_index": 7,
+      "source_cell": "A50",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "100m_cross_10",
+      "gnss_index": 1,
+      "source_cell": "A52",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "100m_cross_10",
+      "gnss_index": 2,
+      "source_cell": "A53",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "100m_cross_10",
+      "gnss_index": 3,
+      "source_cell": "A54",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "100m_cross_10",
+      "gnss_index": 4,
+      "source_cell": "A55",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "100m_cross_5",
+      "gnss_index": 1,
+      "source_cell": "A57",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "100m_cross_5",
+      "gnss_index": 2,
+      "source_cell": "A58",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "100m_cross_5",
+      "gnss_index": 3,
+      "source_cell": "A59",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "100m_cross_5",
+      "gnss_index": 4,
+      "source_cell": "A60",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "200m_cross_10",
+      "gnss_index": 1,
+      "source_cell": "A62",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "200m_cross_10",
+      "gnss_index": 2,
+      "source_cell": "A63",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "200m_cross_10",
+      "gnss_index": 3,
+      "source_cell": "A64",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "200m_cross_10",
+      "gnss_index": 4,
+      "source_cell": "A65",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "200m_cross_5",
+      "gnss_index": 1,
+      "source_cell": "A67",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "200m_cross_5",
+      "gnss_index": 2,
+      "source_cell": "A68",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "200m_cross_5",
+      "gnss_index": 3,
+      "source_cell": "A69",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "200m_cross_5",
+      "gnss_index": 4,
+      "source_cell": "A70",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_cross_10",
+      "gnss_index": 1,
+      "source_cell": "A72",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_cross_10",
+      "gnss_index": 2,
+      "source_cell": "A73",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_cross_10",
+      "gnss_index": 3,
+      "source_cell": "A74",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_cross_10",
+      "gnss_index": 4,
+      "source_cell": "A75",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_cross_5",
+      "gnss_index": 1,
+      "source_cell": "A77",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_cross_5",
+      "gnss_index": 2,
+      "source_cell": "A78",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_cross_5",
+      "gnss_index": 3,
+      "source_cell": "A79",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "300m_cross_5",
+      "gnss_index": 4,
+      "source_cell": "A80",
+      "direct_workbook_matches_E20": true
+    },
+    {
+      "condition_id": "device_origin",
+      "gnss_index": 1,
+      "source_cell": "A85",
+      "direct_workbook_matches_E20": true
+    }
+  ],
+  "source_sha256": {
+    "bag/20260205/飞行轨迹坐标.xlsx": "5adc1f090b84731b23a2c8cd02f38c002cafef94b9bdaaee98827981a8e54c69",
+    "results/calibration_closure/alignment.json": "f9533b258353d6d138ae13c2f1ffd52958a08ca66419b06f0c391345d68d4a63",
+    "results/calibration_closure/alignment_results.csv": "b28b0a5ec5839e7ba5850c71928aaed16c4e7964cf2d4a74e22791d03f55121d",
+    "results/calibration_closure/offset_profiles.csv": "342ce1cdb144cd4f01647576140cbfc85762a50c7d0abf67bb171c3b2c6ffd30",
+    "results/calibration_closure/offset_diagnostics.csv": "975fca2076c7cda6e3d44dfadf81a64005a375c5568b649936e0ed5515fa648e",
+    "results/calibration_closure/extrinsic_sensitivity.csv": "1a54d3db386d6c9218e49e599c3810c96b8bb1e56fcae7eef587800420315b7b",
+    "results/research_dev_v0/silver_labels.csv": "37c4452a68e544d75034389f82bbaf1e868903bb2225b395b9d66d0cdd48b8db",
+    "results/calibration_closure/lidar_trajectories.csv": "f0362701627530d4d40886f516f341580edd6eb60a6bccfa560a181dae1b460b",
+    "results/negative_hover_evidence_audit/gnss_samples.csv": "a5c3edc592ff66c3364b8e44c8d194620b96eaae9e85ce1c5f719528abfb8bc8",
+    "scripts/build_gt_benchmark_v0.py": "508b0264485109f75c754f05e070d4a8e1e1244569a4b9f9bd16f0c3605493d0"
+  },
+  "device_origin": {
+    "index": 1,
+    "tow_s": 369612.048255,
+    "gps_week": 2404,
+    "n_raw": -4,
+    "e_raw": -40,
+    "v_raw": 189,
+    "lat_deg": 31.83749046,
+    "lon_deg": 118.76606266,
+    "ellh_m": 25.544,
+    "unknown_1": 0.011411,
+    "unknown_2": 0.0134,
+    "unknown_3": 0.025919,
+    "q_raw": 50
+  }
+}

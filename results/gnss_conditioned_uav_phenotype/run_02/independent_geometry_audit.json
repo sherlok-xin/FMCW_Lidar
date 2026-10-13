@@ -1,0 +1,410 @@
+{
+  "status": "PASS_CALCULATION_AND_PROVENANCE_NOT_PHYSICAL_GT",
+  "created_utc": "2026-10-12T08:37:09.234697+00:00",
+  "python": "3.10.12 (main, Jun 22 2026, 18:55:27) [GCC 11.4.0]",
+  "verification_mode": "independent standard-library scalar arithmetic; no study geometry helper, detector/tracker, solver or calibration fitting imported",
+  "frames": 272,
+  "scenario_rows": 4885,
+  "direct_workbook_source_rows_crosschecked": 72,
+  "GNSS_supported_frames": 144,
+  "observed_anchor_frames": 80,
+  "anchors_in_existing_scenario_3m_union": 64,
+  "unlocalized_GNSS_supported_frames": 64,
+  "max_export_bagtime_difference_s": 0,
+  "max_independent_WGS84_ENU_component_difference_m": 5.684341886080802e-14,
+  "max_numerical_geometry_differences": {
+    "position_component_m": 5.684341886080802e-14,
+    "velocity_component_mps": 4.440892098500626e-16,
+    "range_m": 1.1368683772161603e-13,
+    "speed_mps": 0,
+    "range_rate_mps": 8.881784197001252e-16,
+    "eta": 2.220446049250313e-16
+  },
+  "sequence_summary": [
+    {
+      "sequence_id": "100m_cross_5",
+      "frames": 32,
+      "GNSS_supported": 27,
+      "observed_anchors": 19,
+      "source_cells": [
+        "A57",
+        "A58",
+        "A59",
+        "A60"
+      ],
+      "supported_segment_frame_counts": {
+        "0": 10,
+        "1": 9,
+        "2": 8
+      },
+      "GNSS_sample_interval_s": [
+        9.45022702217102,
+        9.341704845428467,
+        8.217897176742554
+      ],
+      "GNSS_device_origin_range_m": {
+        "n": 27,
+        "min": 101.67598217075374,
+        "median": 102.13678783832434,
+        "max": 105.05458695104222
+      },
+      "provisional_GNSS_sensor_range_m": {
+        "n": 27,
+        "min": 102.49436792526338,
+        "median": 103.08775662953744,
+        "max": 107.5251712093873
+      },
+      "GNSS_chord_speed_mps": {
+        "n": 27,
+        "min": 1.7356134736343467,
+        "median": 3.635255067512493,
+        "max": 3.653877630393334
+      },
+      "eta": {
+        "n": 27,
+        "min": 0.006393122691135711,
+        "median": 0.09045664248811847,
+        "max": 0.2915215629846593
+      },
+      "GNSS_chord_range_rate_mps": {
+        "n": 27,
+        "min": -1.0651841180584696,
+        "median": 0.06988677451922333,
+        "max": 1.052390773780391
+      },
+      "maximum_existing_scenario_shift_per_frame_m": {
+        "n": 27,
+        "min": 3.099764692426359,
+        "median": 5.98618127757359,
+        "max": 6.979516815806619
+      },
+      "anchor_nominal_distance_m": {
+        "n": 19,
+        "min": 0.6344059503993014,
+        "median": 3.735887247920552,
+        "max": 6.349919268487995
+      },
+      "near_best_offsets_s": [
+        94.92915320396423,
+        97.17915320396423
+      ],
+      "offset_boundary_solution": "False",
+      "offset_interior_local_minima": "1",
+      "GNSS_accuracy_status": "UNKNOWN",
+      "independent_time_anchor_status": "UNKNOWN",
+      "independent_attitude_status": "UNKNOWN"
+    },
+    {
+      "sequence_id": "200m_cross_5",
+      "frames": 83,
+      "GNSS_supported": 22,
+      "observed_anchors": 22,
+      "source_cells": [
+        "A67",
+        "A68",
+        "A69",
+        "A70"
+      ],
+      "supported_segment_frame_counts": {
+        "1": 10,
+        "2": 12
+      },
+      "GNSS_sample_interval_s": [
+        12.905894994735718,
+        12.463571071624756,
+        11.725332021713257
+      ],
+      "GNSS_device_origin_range_m": {
+        "n": 22,
+        "min": 201.6638086026603,
+        "median": 203.801969501318,
+        "max": 209.40435694327
+      },
+      "provisional_GNSS_sensor_range_m": {
+        "n": 22,
+        "min": 201.70303192601475,
+        "median": 204.5826705666356,
+        "max": 211.0171752490134
+      },
+      "GNSS_chord_speed_mps": {
+        "n": 22,
+        "min": 3.9342667513133396,
+        "median": 3.9342667513133396,
+        "max": 5.769528086612854
+      },
+      "eta": {
+        "n": 22,
+        "min": 0.05498440122610542,
+        "median": 0.17850839220215736,
+        "max": 0.2984837373750044
+      },
+      "GNSS_chord_range_rate_mps": {
+        "n": 22,
+        "min": -1.7221103064807466,
+        "median": 0.3285609729594913,
+        "max": 1.0934723824294155
+      },
+      "maximum_existing_scenario_shift_per_frame_m": {
+        "n": 22,
+        "min": 7.166570174444425,
+        "median": 9.990482128434337,
+        "max": 10.957983308065053
+      },
+      "anchor_nominal_distance_m": {
+        "n": 22,
+        "min": 0.46536413841695695,
+        "median": 5.317290189951764,
+        "max": 26.575400763519816
+      },
+      "near_best_offsets_s": [
+        121.4719409942627,
+        122.2219409942627
+      ],
+      "offset_boundary_solution": "True",
+      "offset_interior_local_minima": "2",
+      "GNSS_accuracy_status": "UNKNOWN",
+      "independent_time_anchor_status": "UNKNOWN",
+      "independent_attitude_status": "UNKNOWN"
+    },
+    {
+      "sequence_id": "100m_cross_10",
+      "frames": 46,
+      "GNSS_supported": 30,
+      "observed_anchors": 11,
+      "source_cells": [
+        "A52",
+        "A53",
+        "A54",
+        "A55"
+      ],
+      "supported_segment_frame_counts": {
+        "0": 10,
+        "1": 11,
+        "2": 9
+      },
+      "GNSS_sample_interval_s": [
+        10.317688941955566,
+        10.82897400856018,
+        9.60655689239502
+      ],
+      "GNSS_device_origin_range_m": {
+        "n": 30,
+        "min": 105.54842441207965,
+        "median": 115.09223425235211,
+        "max": 117.45561313819415
+      },
+      "provisional_GNSS_sensor_range_m": {
+        "n": 30,
+        "min": 105.94588056875358,
+        "median": 116.37572049927573,
+        "max": 118.53433205293244
+      },
+      "GNSS_chord_speed_mps": {
+        "n": 30,
+        "min": 2.605333437223922,
+        "median": 4.383310679851329,
+        "max": 4.656341648114225
+      },
+      "eta": {
+        "n": 30,
+        "min": 0.0008311121383883399,
+        "median": 0.13347761471187147,
+        "max": 0.4547903159813372
+      },
+      "GNSS_chord_range_rate_mps": {
+        "n": 30,
+        "min": -1.0234092024198047,
+        "median": 0.09646987202606798,
+        "max": 1.9934872495887461
+      },
+      "maximum_existing_scenario_shift_per_frame_m": {
+        "n": 30,
+        "min": 2.959686104768837,
+        "median": 7.336742309646061,
+        "max": 7.78520886455982
+      },
+      "anchor_nominal_distance_m": {
+        "n": 11,
+        "min": 1.8400030377110186,
+        "median": 5.83633181234504,
+        "max": 10.509431487484095
+      },
+      "near_best_offsets_s": [
+        95.07586932182312,
+        97.32586932182312
+      ],
+      "offset_boundary_solution": "False",
+      "offset_interior_local_minima": "1",
+      "GNSS_accuracy_status": "UNKNOWN",
+      "independent_time_anchor_status": "UNKNOWN",
+      "independent_attitude_status": "UNKNOWN"
+    },
+    {
+      "sequence_id": "200m_cross_10",
+      "frames": 48,
+      "GNSS_supported": 39,
+      "observed_anchors": 18,
+      "source_cells": [
+        "A62",
+        "A63",
+        "A64",
+        "A65"
+      ],
+      "supported_segment_frame_counts": {
+        "0": 13,
+        "1": 13,
+        "2": 13
+      },
+      "GNSS_sample_interval_s": [
+        13.010145902633667,
+        13.205832958221436,
+        12.25316309928894
+      ],
+      "GNSS_device_origin_range_m": {
+        "n": 39,
+        "min": 204.0101522135393,
+        "median": 206.2679572886223,
+        "max": 218.01337983384707
+      },
+      "provisional_GNSS_sensor_range_m": {
+        "n": 39,
+        "min": 203.89863044466674,
+        "median": 207.12554046802632,
+        "max": 220.16665521038962
+      },
+      "GNSS_chord_speed_mps": {
+        "n": 39,
+        "min": 3.481884708439474,
+        "median": 5.888449847300662,
+        "max": 5.9782878978651315
+      },
+      "eta": {
+        "n": 39,
+        "min": 0.02689728098296235,
+        "median": 0.17781269332211233,
+        "max": 0.3781581374020491
+      },
+      "GNSS_chord_range_rate_mps": {
+        "n": 39,
+        "min": -2.260738216688048,
+        "median": 0.3885696733282315,
+        "max": 2.1190998691655762
+      },
+      "maximum_existing_scenario_shift_per_frame_m": {
+        "n": 39,
+        "min": 7.384904884137835,
+        "median": 9.153140977425167,
+        "max": 11.63074158983724
+      },
+      "anchor_nominal_distance_m": {
+        "n": 18,
+        "min": 0.3936199203358316,
+        "median": 4.97673485588245,
+        "max": 12.16297539895824
+      },
+      "near_best_offsets_s": [
+        95.8393325805664,
+        96.3393325805664
+      ],
+      "offset_boundary_solution": "True",
+      "offset_interior_local_minima": "2",
+      "GNSS_accuracy_status": "UNKNOWN",
+      "independent_time_anchor_status": "UNKNOWN",
+      "independent_attitude_status": "UNKNOWN"
+    },
+    {
+      "sequence_id": "300m_cross_10",
+      "frames": 63,
+      "GNSS_supported": 26,
+      "observed_anchors": 10,
+      "source_cells": [
+        "A72",
+        "A73",
+        "A74",
+        "A75"
+      ],
+      "supported_segment_frame_counts": {
+        "1": 11,
+        "2": 15
+      },
+      "GNSS_sample_interval_s": [
+        16.611222982406616,
+        16.30071496963501,
+        14.296734094619751
+      ],
+      "GNSS_device_origin_range_m": {
+        "n": 26,
+        "min": 292.548509672185,
+        "median": 297.8479814054431,
+        "max": 308.03878196464746
+      },
+      "provisional_GNSS_sensor_range_m": {
+        "n": 26,
+        "min": 293.8084829595335,
+        "median": 298.18712001206677,
+        "max": 307.5756742425672
+      },
+      "GNSS_chord_speed_mps": {
+        "n": 26,
+        "min": 5.206370411943435,
+        "median": 5.206370411943435,
+        "max": 7.56732343626857
+      },
+      "eta": {
+        "n": 26,
+        "min": 0.03223284627065435,
+        "median": 0.17723250616614072,
+        "max": 0.30055988680454493
+      },
+      "GNSS_chord_range_rate_mps": {
+        "n": 26,
+        "min": -1.5648261019768106,
+        "median": -0.4848803505938747,
+        "max": 2.1109033233258843
+      },
+      "maximum_existing_scenario_shift_per_frame_m": {
+        "n": 26,
+        "min": 16.452321661177375,
+        "median": 19.175734064275186,
+        "max": 19.991521425136558
+      },
+      "anchor_nominal_distance_m": {
+        "n": 10,
+        "min": 1.5827150069567106,
+        "median": 5.060992417964318,
+        "max": 8.787090908412143
+      },
+      "near_best_offsets_s": [
+        129.00867342948914,
+        130.25867342948914
+      ],
+      "offset_boundary_solution": "False",
+      "offset_interior_local_minima": "3",
+      "GNSS_accuracy_status": "UNKNOWN",
+      "independent_time_anchor_status": "UNKNOWN",
+      "independent_attitude_status": "UNKNOWN"
+    }
+  ],
+  "inputs_sha256": {
+    "frames.csv": "d73b9620e672a64006224e65099408ea90986ddf147cbc63bea021fb23421024",
+    "alignment_scenarios.csv": "3a686c2799125d2f4ba74cde7d0c7c238a5a4c2de62716c84f99c01d606ac41d",
+    "gnss_source_samples.csv": "794bc77fee8f6e269d831a94708848b5c2ade86bc870c8e7e0d0667d4cc63b4f",
+    "raw_source_identity.csv": "9cabf8043de4929d80b7e7cb673ceea3715013f3926bf65c1e0d530b5f65d6cf",
+    "protocol.json": "9e245d3ad895d8e0d8671c149474aa95b1d557156d81b6a66562eb8fd195502c",
+    "extraction_completed.json": "0d64960adf79c8e35c17eae8ed05d2399580faee849d08bbb0d474dbf78f9cb0"
+  },
+  "limitations": [
+    "GNSS-supported occupancy is not actual UAV point identity or physical detection probability.",
+    "Saved closure anchors are selected LiDAR observations, not exact positional GT; absent anchors are not sensor misses.",
+    "Scenario envelope coverage64/80 does not establish any calibrated error bound.",
+    "All144nominal GNSS states are cross-dominant; high-eta radial, physical hover and body aspect remainUNKNOWN.",
+    "Source-cell/geodetic/numerical agreement verifies export calculations, not clocks/extrinsics/flight-state truth.",
+    "Node likelihood calibration, transition dynamics, missed-detection model and uncertainty-bounded accumulation require independent held-out evidence."
+  ],
+  "no_calibration_fit": true,
+  "no_label_changes": true,
+  "no_method_experiments": true,
+  "no_weights_or_thresholds_selected": true,
+  "verification_command": "PYTHONDONTWRITEBYTECODE=1 python3 - <<'PY'\nimport csv,json,math,statistics,hashlib,bisect,zipfile,sys\nfrom pathlib import Path\nfrom collections import Counter,defaultdict\nfrom datetime import datetime,timezone\nfrom xml.etree import ElementTree as ET\nroot=Path('.').resolve();out=root/'results/gnss_conditioned_uav_phenotype/run_02'\ndef read(p):\n with p.open(encoding='utf-8-sig',newline='') as f:return list(csv.DictReader(f))\ndef sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()\nfiles=['frames.csv','alignment_scenarios.csv','gnss_source_samples.csv','raw_source_identity.csv','protocol.json','extraction_completed.json']\nfor f in files:assert(out/f).is_file(),f\nframes=read(out/'frames.csv');scenarios=read(out/'alignment_scenarios.csv');source=read(out/'gnss_source_samples.csv')\nprotocol=json.loads((out/'protocol.json').read_text());alignment=json.loads((root/'results/calibration_closure/alignment.json').read_text())\nsilver=read(root/'results/research_dev_v0/silver_labels.csv');anchors={(r['condition_id'],int(r['frame_index'])):r for r in silver}\nprofiles=read(root/'results/calibration_closure/offset_profiles.csv');full=alignment['full_6dof']\nposes={'nominal_full_6dof':full};poses.update({'loo_omit_'+cid:m for cid,m in alignment['leave_one_out'].items()})\nwith zipfile.ZipFile(root/'bag/20260205/飞行轨迹坐标.xlsx') as z:\n n='{http://schemas.openxmlformats.org/spreadsheetml/2006/main}'\n shared=[''.join(t.text or '' for t in si.iter(n+'t')) for si in ET.fromstring(z.read('xl/sharedStrings.xml')).findall(n+'si')]\n cells={c.attrib['r']:shared[int(c.find(n+'v').text)]for c in ET.fromstring(z.read('xl/worksheets/sheet1.xml')).findall('.//'+n+'c')if c.attrib.get('t')=='s' and c.find(n+'v')is not None}\nfor s in source:\n assert cells[s['source_cell']]==s['raw_text']\n tokens=cells[s['source_cell']].replace(',',' ').split();nums={tokens[i+1]:tokens[i]for i in range(len(tokens)-1)if tokens[i+1]in{'N','E','V','Lat','Lon','Ellh','Q'}}\n for field,key in [('Lat','lat_deg'),('Lon','lon_deg'),('Ellh','ellh_m')]:assert abs(float(nums[field])-float(s[key]))<1e-10\n assert int(tokens[2].strip('[]'))==int(s['gps_week']) and float(tokens[1])==float(s['gps_tow_s'])\ndef ecef(lat,lon,h):\n la=math.radians(lat);lo=math.radians(lon);a=6378137.;f=1/298.257223563;e2=f*(2-f);N=a/math.sqrt(1-e2*math.sin(la)**2)\n return[(N+h)*math.cos(la)*math.cos(lo),(N+h)*math.cos(la)*math.sin(lo),(N*(1-e2)+h)*math.sin(la)]\nD=next(x for x in source if x['condition_id']=='device_origin');la=math.radians(float(D['lat_deg']));lo=math.radians(float(D['lon_deg']));p0=ecef(float(D['lat_deg']),float(D['lon_deg']),float(D['ellh_m']))\nB=[[-math.sin(lo),math.cos(lo),0],[-math.sin(la)*math.cos(lo),-math.sin(la)*math.sin(lo),math.cos(la)],[math.cos(la)*math.cos(lo),math.cos(la)*math.sin(lo),math.sin(la)]]\nmax_enu_error=0.\nfor s in source:\n p=ecef(float(s['lat_deg']),float(s['lon_deg']),float(s['ellh_m']));d=[x-y for x,y in zip(p,p0)];u=[sum(x*y for x,y in zip(row,d))for row in B]\n for key,v in zip(['enu_e_m','enu_n_m','enu_u_m'],u):max_enu_error=max(max_enu_error,abs(v-float(s[key])))\nnorm=lambda p:math.sqrt(sum(x*x for x in p))\nS={cid:sorted([s for s in source if s['condition_id']==cid],key=lambda s:float(s['gps_utc_unix_s']))for cid in protocol['sequences']}\ndef state(cid,q,pose):\n points=S[cid];ts=[float(s['gps_utc_unix_s'])for s in points]\n if not(ts[0]<=q<=ts[-1]):return None\n k=min(bisect.bisect_right(ts,q)-1,len(ts)-2);dt=ts[k+1]-ts[k];alpha=(q-ts[k])/dt;U=[[float(s[x])for x in ['enu_e_m','enu_n_m','enu_u_m']]for s in points]\n u=[U[k][j]+alpha*(U[k+1][j]-U[k][j])for j in range(3)];vu=[(U[k+1][j]-U[k][j])/dt for j in range(3)]\n p=[sum(x*y for x,y in zip(rr,u))+t for rr,t in zip(pose['rotation_matrix'],pose['translation_m'])];v=[sum(x*y for x,y in zip(rr,vu))for rr in pose['rotation_matrix']]\n radius=norm(p);speed=norm(v);rate=sum(x*y for x,y in zip(p,v))/radius;eta=abs(rate)/(speed+1e-9)\n return dict(p=p,v=v,k=k,dt=dt,range_m=radius,speed_mps=speed,range_rate_mps=rate,eta=eta)\ndifferences=defaultdict(float)\ndef compare(r,s):\n for keys,vals,name in [(['center_x_m','center_y_m','center_z_m'],s['p'],'position_component_m'),(['velocity_x_mps','velocity_y_mps','velocity_z_mps'],s['v'],'velocity_component_mps')]:\n  for key,val in zip(keys,vals):differences[name]=max(differences[name],abs(float(r[key])-val))\n for key in ['range_m','speed_mps','range_rate_mps','eta']:differences[key]=max(differences[key],abs(float(r[key])-s[key]))\n assert int(r['segment_index'])==s['k'] and float(r['segment_dt_s'])==s['dt']\nscenario_groups=defaultdict(list)\nfor r in scenarios:scenario_groups[(r['condition_id'],int(r['frame_index']))].append(r)\nframekeys={(r['condition_id'],int(r['frame_index']))for r in frames};assert len(framekeys)==len(frames)\nassert set(scenario_groups)<=framekeys\nsummaries=[];max_clock_error=0.;anchor_count=covered=0\nfor cid in protocol['sequences']:\n rs=[r for r in frames if r['condition_id']==cid];cache=json.loads((root/f'results/calibration_closure/raw_voxel_cache/{cid}.json').read_text())['frames'];assert len(rs)==len(cache)\n pp=[r for r in profiles if r['condition_id']==cid and r['model']=='full_6dof_frozen'];best=min(pp,key=lambda x:float(x['composite']))\n near=[float(r['time_offset_s'])for r in pp if float(r['composite'])<=float(best['composite'])+.5 and float(r['position_rmse_m'])<=float(best['position_rmse_m'])+2]\n offset=float(rs[0]['nominal_time_offset_s']);offsets=sorted(set(near+[offset]));supported=[];observed=[]\n for r,previous in zip(rs,cache):\n  fi=int(r['frame_index']);key=(cid,fi);bt=float(r['time_s']);assert fi==int(previous['frame_index']) and int(r['seq'])==int(previous['seq'])\n  for export_time in ['bag_time','bag_time_unix_s']:\n   max_clock_error=max(max_clock_error,abs(float(r[export_time])-float(previous['bag_time'])))\n  assert abs(bt-float(previous['bag_time']))<=1e-6 and abs(float(r['header_time'])-float(previous['header_time']))<=1e-6\n  assert int(r['finite_nonzero_xyz'])==int(previous['nonzero_returns']) and r['topic']=='/aqronos_cloud_0' and r['message_type']=='sensor_msgs/PointCloud2'\n  st=state(cid,bt+offset,full);assert (st is not None)==(r['gnss_nominal_supported']=='True')\n  if st is not None:\n   compare(r,st);supported.append(r)\n   assert r['regime']=='CROSS_DOMINANT' and r['independent_positional_GT']=='False'\n  else:assert r['center_x_m']==''\n  actual=scenario_groups[key];expected={f'{pid}__offset_{i:03d}'for i,o in enumerate(offsets)for pid,pose in poses.items()if state(cid,bt+o,pose)is not None}\n  assert {r['scenario_id']for r in actual}==expected and len(actual)==len(expected)==int(r['valid_scenario_count'])\n  for sr in actual:\n   o=float(sr['offset_s']);assert o in offsets and sr['pose_id']in poses and abs(float(sr['query_gps_time_unix_s'])-(bt+o))<=1e-6\n   ss=state(cid,bt+o,poses[sr['pose_id']]);assert ss is not None;compare(sr,ss)\n  assert sum(sr['is_nominal']=='True'for sr in actual)==int(st is not None)\n  assert (key in anchors)==(r['observed_closure_anchor_available']=='True')\n  if key in anchors:\n   anchor_count+=1;observed.append(r);assert st is not None\n   a=anchors[key];av=[float(a[f'center_{x}_m'])for x in 'xyz']\n   assert abs(float(a['bag_time_unix'])-bt)<=1e-6 and a['interpolated']=='False' and a['label_status']=='DEV_SILVER'\n   for x,v in zip('xyz',av):assert float(r[f'anchor_center_{x}_m'])==v\n   nominal_distance=norm([x-y for x,y in zip(av,st['p'])]);assert abs(nominal_distance-float(r['anchor_minus_nominal_center_distance_m']))<1e-8\n   minimum=min(norm([av[i]-float(sr[f'center_{x}_m'])for i,x in enumerate('xyz')])for sr in actual)\n   assert abs(minimum-float(r['anchor_min_existing_scenario_center_distance_m']))<1e-8\n   in_union=minimum<=3;assert in_union==(r['anchor_in_existing_scenario_3m_union']=='True');covered+=in_union\n assert [len(rs),len(supported),len(observed)]==protocol['expected_counts'][cid]\n def d(key,rr=supported):\n  a=[float(r[key])for r in rr if r.get(key)];return {'n':len(a),'min':min(a),'median':statistics.median(a),'max':max(a)}\n points=S[cid];dt=[float(points[i+1]['gps_utc_unix_s'])-float(points[i]['gps_utc_unix_s'])for i in range(3)]\n summaries.append(dict(sequence_id=cid,frames=len(rs),GNSS_supported=len(supported),observed_anchors=len(observed),source_cells=[r['source_cell']for r in points],supported_segment_frame_counts=dict(Counter(r['segment_index']for r in supported)),GNSS_sample_interval_s=dt,GNSS_device_origin_range_m=d('device_origin_enu_range_m'),provisional_GNSS_sensor_range_m=d('range_m'),GNSS_chord_speed_mps=d('speed_mps'),eta=d('eta'),GNSS_chord_range_rate_mps=d('range_rate_mps'),maximum_existing_scenario_shift_per_frame_m=d('scenario_center_shift_max_m'),anchor_nominal_distance_m=d('anchor_minus_nominal_center_distance_m',observed),near_best_offsets_s=[min(near),max(near)],offset_boundary_solution=rs[0]['offset_boundary_solution'],offset_interior_local_minima=rs[0]['offset_interior_local_minima'],GNSS_accuracy_status='UNKNOWN',independent_time_anchor_status='UNKNOWN',independent_attitude_status='UNKNOWN'))\nassert len(frames)==272 and sum(s['GNSS_supported']for s in summaries)==144 and anchor_count==80 and covered==64\nassert max(differences.values())<1e-8 and max_clock_error<=1e-6 and max_enu_error<1e-8\nprint(json.dumps({'status':'PASS_CALCULATION_AND_PROVENANCE_NOT_PHYSICAL_GT','created_utc':datetime.now(timezone.utc).isoformat(),'python':sys.version,'verification_mode':'independent standard-library scalar arithmetic; no study geometry helper, detector/tracker, solver or calibration fitting imported','frames':len(frames),'scenario_rows':len(scenarios),'direct_workbook_source_rows_crosschecked':len(source),'GNSS_supported_frames':144,'observed_anchor_frames':anchor_count,'anchors_in_existing_scenario_3m_union':covered,'unlocalized_GNSS_supported_frames':64,'max_export_bagtime_difference_s':max_clock_error,'max_independent_WGS84_ENU_component_difference_m':max_enu_error,'max_numerical_geometry_differences':dict(differences),'sequence_summary':summaries,'inputs_sha256':{f:sha(out/f)for f in files},'limitations':['GNSS-supported occupancy is not actual UAV point identity or physical detection probability.','Saved closure anchors are selected LiDAR observations, not exact positional GT; absent anchors are not sensor misses.','Scenario envelope coverage64/80 does not establish any calibrated error bound.','All144nominal GNSS states are cross-dominant; high-eta radial, physical hover and body aspect remainUNKNOWN.','Source-cell/geodetic/numerical agreement verifies export calculations, not clocks/extrinsics/flight-state truth.','Node likelihood calibration, transition dynamics, missed-detection model and uncertainty-bounded accumulation require independent held-out evidence.'],'no_calibration_fit':True,'no_label_changes':True,'no_method_experiments':True,'no_weights_or_thresholds_selected':True},indent=2))\n\nPY",
+  "artifact_scope": "Independent calculation/provenance validation only; descriptive outputs do not become physical GT, independent test evidence or method results."
+}

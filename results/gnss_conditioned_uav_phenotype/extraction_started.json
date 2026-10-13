@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-12T03:55:25.248310+00:00",
+  "command": [
+    "scripts/gnss_conditioned_uav_phenotype.py",
+    "extract"
+  ],
+  "python": "3.10.12 (main, Jun 22 2026, 18:55:27) [GCC 11.4.0]",
+  "numpy": "2.2.6",
+  "scipy": "1.15.3",
+  "platform": "Linux-6.8.0-136-generic-x86_64-with-glibc2.35",
+  "protocol_sha256": "86af6a96185aa1e343c0b6f8e3d5b419477296c07810c3d2b024ba4f9eb6ddcb"
+}

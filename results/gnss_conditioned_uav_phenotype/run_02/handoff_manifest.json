@@ -1,0 +1,49 @@
+{
+  "utc": "2026-10-12T09:05:13.876921+00:00",
+  "status": "COMPLETED_ORACLE_CONDITIONED_DESCRIPTIVE_STUDY",
+  "command": "PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python scripts/gnss_phenotype_finalize.py",
+  "git_head": "dfd5d78638f84e459907e34689149e79046b33aa",
+  "report_code_test_log_sha256": {
+    "FMCW_GNSS_CONDITIONED_UAV_PHENOTYPE.md": "61661babe3e34cb0f3db74f28b7631d530de627f3d474598b73fc2646e0f9593",
+    "scripts/gnss_conditioned_uav_phenotype.py": "c8e399b1ec8ab54ce86ef30706ec6f0129cc790a41b1a710cf436ee5755c58c3",
+    "scripts/gnss_phenotype_descriptive_figures.py": "e0cc257c010a41c30676df5f7c547954f0ffc274e4d9ff464c15c919cd753d1b",
+    "scripts/gnss_phenotype_finalize.py": "ab20786765be826fafdf66c97cfa3c36edad42ba3ce46cd54207818a3411b123",
+    "scripts/gnss_phenotype_geometry.py": "850424d2562eff30108c5eb5e0a55fea0966c4fe05f8f16c976019834af028eb",
+    "scripts/gnss_phenotype_io.py": "964389033d75fd6b03c4ca747b13b9737f27062828347a3410d28db210c1c030",
+    "scripts/gnss_phenotype_prepare_metadata.py": "0468305ea85133cdde17dd8c698bcfb2e19352830cdad7723cd61c3511d7a066",
+    "scripts/gnss_phenotype_statistics.py": "3c91ae93e3aabe60ae18a6def56e8f8de959754cd21985dc28918b03d8d96d41",
+    "scripts/gnss_phenotype_support_figure_v2.py": "2ed3f30cfff44449cfb28888632b675d19beb688993549bbb681462807148abd",
+    "tests/test_gnss_conditioned_uav_phenotype.py": "c8d3a6b5cc63590c6abd87dd128910ae3f1e034a89578c8f11d61bcb62b44aef",
+    "tests/test_gnss_phenotype_geometry.py": "a01431b00463a743eb936bdeb96750436c29fcaf49520c40d6e9f90c99b44180",
+    "tests/test_gnss_phenotype_io.py": "079a1653c1e6b69555881c8aa1eaea7e33e0a8250c8c56811ef7d542a318f27c",
+    "tests/test_gnss_phenotype_statistics.py": "3281f12c98521366af5ba47a125a9b107c184c2897667969a8ef8e70cb9eb8be",
+    "docs/CURRENT_STATUS.md": "5959d4f175a52f21850417b0982a9fa9efb115668e91fc87f42d46b90a26a4fd",
+    "docs/EXPERIMENT_LOG.md": "eaefcc81d2ad78788fdccd01248cebd5659c05cf6d963bb105435b8beb1cd016",
+    "docs/RESEARCH_LOG.md": "4edc5a849293c53b1dccc5843d6f2b122a5ccc95f132ea83de11bbd371c75c29",
+    "docs/TODO.md": "59a7ce5bd831125a40ea4da92dd1211656524de645622749a897b27f315fc34b"
+  },
+  "artifact_inventory_sha256": "10cb78fc027e0ebc836831b4a8c02bb6c84b68019ea31fb429b32661f07cbc0e",
+  "independent_audit_sha256": {
+    "independent_geometry_audit.json": "dc63803eb6e9cecde463130108f3ff4c1281219a153fee78cac2130ea63d27eb",
+    "independent_rich_audit.json": "2a7e1fcdff976b34eae5e01cf2676bb2259517bb689b18e6c1d177becf8132fd",
+    "independent_statistics_audit.json": "04a95eb0d331c06b24a71f78db7655e06bcda000f5675912a5a1d3d40abfa8e8"
+  },
+  "guarded_scientific_inputs_unchanged": 318,
+  "retry_scientific_definitions_equal": true,
+  "test_count": 50,
+  "method_experiments_run": 0,
+  "E18_modified": false,
+  "labels_modified": false,
+  "threshold_or_weights_selected": false,
+  "independent_test_evidence": false,
+  "full_study_second_reproduction": "NOT_RUN",
+  "remaining_data_gaps": [
+    "exact point/positional GT",
+    "calibrated localization uncertainty",
+    "independently certified negatives",
+    "populated small matched clutter controls",
+    "high-radial-observability trajectories",
+    "independently verified hover/slow transitions"
+  ],
+  "historical_failure_preserved": "../extraction_failed.json"
+}

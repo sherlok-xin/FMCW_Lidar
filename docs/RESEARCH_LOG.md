@@ -428,3 +428,23 @@ Everything in this section is **PROPOSED** or **SPECULATIVE**, not an experiment
 - Record whether evidence supports, contradicts, or leaves the hypothesis unresolved.
 - Do not delete failed ideas; mark why they were rejected or suspended.
 - Keep proposed directions clearly separate from results.
+
+## 2026-10-12 — Oracle-conditioned phenotype preparation (not a method result)
+
+**VERIFIED RESULT, metadata-only:** existing GNSS/closure sensitivity replay covers 272 cached frames, 144 nominal GNSS-supported frames and 80 observed anchors. Only 64/80 anchors lie inside the existing scenario union of 3 m balls. Nominal anchor/GNSS discrepancy reaches 26.575 m. These scenarios must not be promoted into calibrated uncertainty bounds, and small-neighborhood emptiness cannot establish physical UAV non-return.
+
+**Decision:** keep all-frame GNSS occupancy and selected observed-anchor phenotypes separate. Preserve uncertain/failed sequences outside the cross cohort and retain E20 DATA_GAP. Coarse endpoint chords, low radial observability and unknown body attitude do not justify instantaneous-state, hover or aspect conclusions.
+
+**Unresolved:** conditional target support, feature separation and Doppler residual structure await full rich extraction. The first attempt failed on output serialization, not a sensing phenomenon; an export-only fix passed tests. Retry awaits user confirmation under the academic-research-suite workflow. No E18 change, fitted weight, new detector or independent evaluation evidence was produced. [Checkpoint report](../FMCW_GNSS_CONDITIONED_UAV_PHENOTYPE.md).
+
+### Approved run_02 completion — 2026-10-12
+
+The preparatory entry above records the earlier pause; the user subsequently approved the export-only retry. Full raw extraction and independent source/statistical checks now complete in `results/gnss_conditioned_uav_phenotype/run_02`.
+
+**VERIFIED RESULT:** 103/144 GNSS 3 m regions are empty, compared with nonempty neighborhoods in all 80 previously localized observations. Existing uncertainty union covers only 64/80 centers. These results contradict treating a small GNSS tube as exact point GT or calibrated physical non-return evidence; they do not show a sensor missed-detection rate.
+
+**VERIFIED RESULT:** identical anchor children give 31 coarse singleton-cell frames but only one unique-XYZ singleton. Acceleration/evenness fields are constant; velocity-direction repeats scalar sign. Coordinate-coincident rows differ in time/intensity and are not literal byte copies. Representation/field naming can create misleading physical interpretations.
+
+**Negative/ambiguous evidence retained:** 311/318 small matched anchor controls are empty. High count AUC mainly contrasts selected return-bearing neighborhoods with empty space; reliable occupied-clutter discrimination is not established. Broad-region intensity/geometry/Doppler contrasts vary or reverse across range/recipe. Within-sequence support/spacing correlations do not consistently follow between-range trends. All nominal states remain low-eta cross motion; hover/high-eta behavior is UNKNOWN.
+
+**SPECULATIVE directions only:** range/exposure/uncertainty-conditioned observation descriptions and representation-aware support may be worth held-out falsification. Current data do not identify node likelihood ratios, physical `P_D`, transition acceleration priors or valid uncertainty bounds. No formula, weight, cutoff, detector, tracker or E18 feature was chosen. Required tests are independently synchronized dense state/point identity, occupied-clutter/negative controls, radial/cross transitions and true hover under immutable held-out splits. [Report's final observation/mechanism/falsification table](../FMCW_GNSS_CONDITIONED_UAV_PHENOTYPE.md).

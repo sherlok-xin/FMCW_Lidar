@@ -281,3 +281,10 @@ Git/provenance
     -> preprocessing/Doppler ablations
     -> only then compare FMT, probabilistic, or track-before-detect methods
 ```
+
+## 2026-10-12 active checkpoint
+
+1. **DONE:** explicit user approval received; export-only retry completed in `results/gnss_conditioned_uav_phenotype/run_02`, with original failure and frozen E18 preserved.
+2. **DONE:** raw-frame identity, full member/EOF hashes, 272/144/80 accounting, native byte export and independent descriptive arithmetic validated; completed phenotype report includes nulls and effect missingness.
+3. **NEXT DATA REQUIREMENT, not an algorithm task:** independently synchronized position/presence/FOV, populated matched clutter, certified negatives and radial/moving→hover transitions under the existing preregistration.
+4. Do not retune E18/labels/controls or estimate physical missed-detection probabilities/node likelihoods from the current oracle-region/selected-anchor data. Check the final observation→mechanism→held-out-falsification table before promoting any descriptive association.

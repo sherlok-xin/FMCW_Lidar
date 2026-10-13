@@ -1,6 +1,6 @@
 # Current Status
 
-Status date: **2026-10-11**
+Status date: **2026-10-12**
 Basis: repository-wide source and artifact inspection; no chat-history claims are treated as evidence.
 
 Git is now initialized on branch `main` (unlike the 2026-09-20 audit). The tested sparse-MVP script and tests are present in snapshot `e62848f787dcfd1bb2f91536ca23e6a50580a77b`. Necessary diagnostic CSV/JSON/report artifacts are now tracked; raw bags/PCDs, virtual environment and NPZ caches remain excluded. Run-manifest hashes remain required for provenance, including local caches.
@@ -9,7 +9,7 @@ Git is now initialized on branch `main` (unlike the 2026-09-20 audit). The teste
 
 The repository contains a substantial rule-based FMCW-LiDAR prototype, ROS/offline variants, retrospective archaeology, provisional calibration and frozen DEV_SILVER comparisons. It does **not** yet provide independently certified GT, reliable target-absent/long-hover labels or held-out operational evaluation needed for reliable UAV detection/tracking accuracy claims.
 
-The latest outcome is E20's expanded existing-evidence audit: no independently timestamp-linked negative or hover/slow window qualifies, so new frozen-E18 stress tests are NOT_RUN_DATA_GAP. E18's earlier joint score recovers79/80 observed DEV_SILVER centers, but independent negative/hover generalization remains UNKNOWN. The historical FMT benchmark still does not demonstrate an improvement over its baseline.
+The latest completed work is an oracle-conditioned rich-return phenotype study on five closure-PASS cross sequences: 272 raw frames, 144 nominal GNSS-supported frames and 80 unchanged selected observations. It exposes localization/selection sensitivity, coarse-voxel support collapse and mostly empty small clutter proxies; it is not independent detector evaluation. E20's independently timestamp-linked negative and hover/slow evidence remains DATA_GAP. E18 is unchanged, and its earlier 79/80 DEV_SILVER recovery does not establish operational or hover generalization. The historical FMT benchmark still does not demonstrate an improvement over its baseline.
 
 ### 2026-10-11 negative / hover evidence audit — E20 complete, DATA_GAP
 
@@ -311,3 +311,13 @@ Ranked by impact:
 - **Validated UAV detector/tracker:** no evidence yet.
 - **Ready for algorithm ranking:** no; truth/provenance/calibration must be addressed first.
 - **Ready for carefully scoped diagnostic experiments:** yes, provided existing data/results are preserved and limitations are recorded.
+
+## 2026-10-12 completed — GNSS-conditioned rich-return phenotype
+
+- **IMPLEMENTED / TESTED:** separate diagnostic helpers and 50 tests; original-workbook crosscheck and cached-frame geometry export. No baseline/E18 edits.
+- **VERIFIED RESULT (metadata only):** 272 cached frames / 144 nominal GNSS-supported / 80 saved observations; existing sensitivity union covers 64/80 anchors, so is not a certified location bound.
+- **FAILED attempt 01 preserved; TESTED run_02 completed after explicit user approval:** export-only correction preserves original bytes/native fields. All five full-member hashes/EOF CRC checks and frame identities validated; extraction elapsed 905.881 s.
+- **VERIFIED RESULT, descriptive:** 3,602 region records; GNSS 3 m empty in 103/144 frames versus nonempty selected anchors in 80/80. This is localization/selection sensitivity, not a physical missed-detection rate. Same-child 1 m occupancy has 31 singleton-cell observations versus one unique-XYZ singleton; 311/318 small anchor controls are empty, limiting feature separation.
+- **TESTED independent QA:** all 80 anchor descriptors exactly match E15 across 1,920 comparisons; 62,832 statistical bookkeeping checks pass. Rich fields retain UNKNOWN physical semantics; acceleration/evenness are constant and direction repeats scalar sign.
+- **Next evidence requirement:** independent point/presence/FOV and positional/time evidence, occupied clutter controls, high-eta radial and hover transitions on preregistered held-out data. Do not overwrite either run, retune E18, infer physical sensor non-return from oracle-region zeros, or use descriptive AUC as independent accuracy.
+- [Report](../FMCW_GNSS_CONDITIONED_UAV_PHENOTYPE.md) / [artifact readiness](../results/gnss_conditioned_uav_phenotype/README.md). E18 scientific inputs and silver labels remain frozen; no method or benchmark result is claimed.
