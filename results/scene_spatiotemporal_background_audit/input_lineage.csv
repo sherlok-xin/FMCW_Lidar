@@ -1,0 +1,6 @@
+condition_id,frames,nodes,raw_nonzero_returns,retained_fine_raw_support,fine_elements,component_identity_verified,e18_1m_annotations_exact,raw_volume_contains_all_nonzero
+100m_cross_5,32,2453,3633703,216290,192231,True,True,True
+100m_cross_10,46,3307,5167226,310055,274822,True,True,True
+200m_cross_5,83,6117,9427483,593719,526250,True,True,True
+200m_cross_10,48,3634,5528061,347687,309488,True,True,True
+300m_cross_10,63,4611,7184855,455127,402142,True,True,True

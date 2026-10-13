@@ -1,0 +1,11 @@
+test_aabb_and_ball_geometry_against_exhaustive_distances (__main__.SyntheticChecks) ... ok
+test_beta_prior_cannot_make_unseen_cells_persistent (__main__.SyntheticChecks) ... ok
+test_manual_count_empty_frame_age_runs_and_persistence (__main__.SyntheticChecks) ... ok
+test_node_overlap_uses_children_not_centroid (__main__.SyntheticChecks) ... ok
+test_prior_only_prefix_invariance_including_node_features (__main__.SyntheticChecks) ... ok
+test_separate_bags_reset_history (__main__.SyntheticChecks) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.028s
+
+OK

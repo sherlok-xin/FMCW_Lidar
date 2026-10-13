@@ -870,3 +870,14 @@ Decision caused by the result:
 - TESTED：解析/旋转/奇异方向的解析测试通过；80 行完整重建、原 anchors/velocity/chord/坐标/计数身份检查通过。独立 ENU 重算与手写 linear quantiles 共 5,815 个标量核对通过；最大标量差约 1.085e−12。
 - Interpretation：每条 sequence 至少一个相同 chord 内出现 along-track 符号改变，单一恒定 clock residual 不足。frame17→21 同一 observed candidate 的 along 差连续增大，弱化 isolated anchor mismatch；稀疏 chord 对真实速度/转弯的表达不足和时间/航段别名更符合总体结构，但不可唯一归因。小的正向 Up/空间参考点残差仍可能；不拟合或排除完整 extrinsic residual。
 - 限制与决定：选择条件为已有 closure/80 anchors；不是独立位置 GT。GNSS chord 速度不是瞬时真速度，等效时间不是 clock certificate。保持全部 frozen inputs 和失败/UNKNOWN；仅完成诊断和归档，未授权新标定、阈值、方法或评分更新。
+
+
+## SCENE-SPATIOTEMPORAL-AUDIT — 2026-10-13（描述性，不改 E18）
+
+- **TESTED / VERIFIED RESULT：** 新结果 `results/scene_spatiotemporal_background_audit/`；报告 `FMCW_SCENE_SPATIOTEMPORAL_BACKGROUND_AUDIT.md`。范围既有五包全部272帧、30,941,328 raw returns、20,122 fine pregeometry nodes；无新 detector/score/path search。
+- **冻结与顺序：** protocol freeze2026-10-13T14:19:28.475UTC；scene/node completion2026-10-13T14:21:17.020UTC，91.203s；receipt/hash落盘后才读80anchors与已保存路径。raw1m主、E18fine1m精确对照、唯一fine4cm尺度敏感性；p=(H+1)/(F+2)，H>=2且p>=.5为描述persistent，.25/.75固定敏感性，5m球density、精确cell-AABB距离。
+- **命令：** `PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python results/scene_spatiotemporal_background_audit/scene_audit.py freeze`，同脚本`compute`；同prefix运行`interpret_scene.py`、`supplement_summaries.py`、`plot_scene_audit.py`和`validate_scene_audit.py`。原独立contrast命令、source/输入/输出SHA保存在对应manifest，脚本已归档。Python3.10.12/NumPy2.2.6/SciPy1.15.3；无安装/随机抽样。
+- **结果与反例：** raw1m persistent回波含冷启动90.57%–95.32%，F>=2为96.60%–98.07%；fine1m97.38%–97.88%对fine4cm1.75%–2.45%，不能把细scale novelty叫dynamic。100m_cross_10同帧anchor−BGonly距离median−2.763m、300m+14.091m；100m的raw/fine/cutoff翻转保留。
+- **验证：** 6synthetic tests；4,134,250cell records、140,854nodefeature rows、20,122原E18H/p/b、3,456暴力几何check；358protected科学文件/30compute输入/33frozen输出哈希通过。84gate内matchednodes，nearest80，其中76有历史距离、4coldstartUNKNOWN。
+- **保留实现限制：** fine004m原浓度列名10m但实际0.4m；冻结原CSV保留，独立corrected_spatial_concentration.csv给统一物理10m，主raw/距离/occupancy不受影响。
+- **交付：** 18CSV、30localcompressed cell/snapshotNPZ、5组PDF/300dpiPNG、2pagePDF和验证/provenance；没有bags/PCDs/ROS临时数据，没有提交或推送。既有结果、图、labels、calibration、offset和E18保持原字节。

@@ -329,3 +329,10 @@ Ranked by impact:
 - **VERIFIED RESULT：** 26.575401 m 的 `200m_cross_5/frame21` 为 along-track 主导：+26.389269 / −3.056353 / +0.719090 m（along/horizontal-cross/vertical-normal）；等效时间 +6.707545 s，只作诊断，不应用 offset。该帧在 GNSS 最后样本 A70，正向等效查询超出支持。
 - **UNKNOWN 因果：** 同一 chord 内的误差变号及 frame17→21 连续增长不支持单一恒定 clock residual 或孤立跳点的充分解释；稀疏 chord/转弯表达、时间/航段别名与较小空间残差可共存，未重新拟合。
 - **TESTED QA：** 80 行重建、同字节归档、独立 5,815 个标量计算通过；source identity 与全 frozen inputs 最终核验存于新 archive。无 E18、外参、时间 offset、GNSS、标签、阈值或原 bag 变化，不构成新方法或 Benchmark v1。
+
+
+## 2026-10-13 — Scene Spatiotemporal Background Audit completed
+
+**TESTED / descriptive only：** 已保存 [场景审计](../FMCW_SCENE_SPATIOTEMPORAL_BACKGROUND_AUDIT.md) 和 [新结果目录](../results/scene_spatiotemporal_background_audit/README.md)。五包272帧的raw/fine因果历史和20,122fine-node特征先冻结/计算，之后才join80anchors/旧路径。原E18 H/p/b全量复现，358protected科学输入未变。
+
+1m raw scene高度persistent；distance含与occupancy不完全相同的几何信息，但100m_cross_10在raw下的competitor反例及raw/fine/cutoff翻转阻止把它升级score。4cm低revisit不等于dynamic。保持E18、标签、标定、offset、历史图/结果；没有新detector或threshold、未commit/push。下一证据需求仍是独立presence/identity、occupied negatives、exposure与heldout场景，而非在此DEV集调参。

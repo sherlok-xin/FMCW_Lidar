@@ -459,3 +459,14 @@ The preparatory entry above records the earlier pause; the user subsequently app
 **保留空间可能性：** vertical-normal 80/80 为正，严格 Up 79/80 为正，量级较小；`100m_cross_10` 的 fixed-frame 方向 resultant 约 0.788，说明该序列存在较一致的全局误差方向。空间/参考点残差可共存；没有拟合或排除完整 extrinsic residual，也不能排除连续错误航段关联。没有在这些 labels 上优化任何 clock/extrinsic。
 
 **决定：** 把数学定义、signed/absolute summaries、方向一致性、支持边界、原材料复制 hash 和独立审计存入 `results/rviz_gnss_lidar_sanity/`。保持 E18、标定、offset、GNSS 插值、labels 和历史结果。唯一因果归因需要独立同步事件、较密 GNSS/RTK、明确天线/点云参考点或外部飞行记录；本轮未取得或生成这些证据，未自动升级 GT。
+
+
+## 2026-10-13 — Scene-relative background 的描述证据与反证
+
+**VERIFIED RESULT：** 既有五cross场景在1m尺度高度重复；同fine输入4cm却低persistence，说明occupancy strongly scale-sensitive，不能把fine novelty直接当运动或UAV。E18fine background已覆盖大量重复结构，但只保留完整raw support约6.21%，其“干净”场景不等同物理自由空间。
+
+**反证保留：** 100m_cross_10的raw1m同anchor帧，anchor距persistent scene反而比BGonly路径近（paired median−2.763m），而fine1m反向；persistence cutoff.25/.5/.75在raw也有符号改变。300m同帧+14.091m且固定敏感性同方向。不能用这轮结果选择fine输入/cutoff或设“越远越UAV”的score。
+
+**非冗余，非检测效用：** rawscene距离与既有E18occupancy rho−.812至−.830，但同帧同H/F仍有距离差异；这证明非代数重复而非类别独立信息。既有300m BGonly存在低occupancy近结构连续节点片段，但大反向/步长和缺identity证据阻止把连线认证为一个coherent物体。
+
+**决定：** 维持描述性/hypothesis-generation边界；独立身份/targetabsence/occupiedclutter、scanexposure、moving-hover和不同scene/date heldout证据到位前，不改E18、不加feature、不选score或gate。80anchors为selectedDEV_SILVER，地图在feature完成后才join；4coldstartdistanceUNKNOWN与100m反例保留。

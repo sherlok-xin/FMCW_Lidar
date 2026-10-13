@@ -1,0 +1,21 @@
+{
+  "utc_started": "2026-10-13T14:24:29.837721+00:00",
+  "utc_completed": "2026-10-13T14:24:39.590950+00:00",
+  "scene_receipt_utc": "2026-10-13T14:21:17.020136+00:00",
+  "command": "PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python results/scene_spatiotemporal_background_audit/interpret_scene.py",
+  "script_sha256": "9c6083bde4c027df1a89047d516a1ddae5b18df6663bf4c4291654956126f701",
+  "scene_completion_sha256": "c030543e77bb2a0eebc9c9519fe81d28ea1d44707851f70abd9d231edc6c92a4",
+  "join_inputs_sha256": {
+    "results/research_dev_v0/silver_labels.csv": "37c4452a68e544d75034389f82bbaf1e868903bb2225b395b9d66d0cdd48b8db",
+    "results/e18_mechanism_generalization_audit/selected_paths.csv": "90abf32b7357c18f87f8521ec95db985557dfd5132e5af23c69e9d00031253ea",
+    "results/background_motion_dp_mvp/fixed_reference_paths.csv": "93e8482369cf0e2fe227dc5406aed127407a7e23c10a3b8d22375bd76ae0ac0e"
+  },
+  "labels": 80,
+  "no_rescore": true,
+  "elapsed_s": 9.793266196968034,
+  "limitations": [
+    "full-period populations differ in support/frame/range; paired same-frame contrasts separate",
+    "all candidates include anchor-matched nodes and are not certified negatives",
+    "fine4cm original concentration columns physically0.4m; corrected physical10m table supplied without overwriting frozen results"
+  ]
+}

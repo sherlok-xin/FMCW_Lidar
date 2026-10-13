@@ -1,0 +1,137 @@
+{
+  "utc": "2026-10-13T14:41:37.388029+00:00",
+  "command": "PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python results/scene_spatiotemporal_background_audit/validate_scene_audit.py --mode full",
+  "validator_sha256": "c755eeb24a8c13974a50ace636df1d68f46432c04d1464d18a96cceee354a87f",
+  "scene_source_sha256": "6875a3ec483009d2a6ae0c4c6392b3bea9a194c5131a067802eb236e33be9774",
+  "synthetic_tests": 6,
+  "synthetic_failures": 0,
+  "synthetic_errors": 0,
+  "synthetic_pass": true,
+  "mode": "full",
+  "full_artifact_validation": {
+    "protected_hashes_checked": 358,
+    "compute_input_hashes_checked": 30,
+    "scene_output_hashes_checked": 33,
+    "frame_source_records_checked": 816,
+    "occupied_cell_records_prior_only_checked": 4134250,
+    "node_feature_records_prior_only_checked": 140854,
+    "e18_1m_node_annotations_exact": 20122,
+    "saved_node_geometries_exhaustively_checked": 3456,
+    "geometry_sample_rule": "first, floor(N/2), last frame in every bag/source; cutoff .5; all existing nodes in those frames",
+    "history_scope": "Every saved occupied-cell record and all node prior histories, independent state per bag/source",
+    "no_anchor_or_gnss_outcomes_parsed": true,
+    "population": [
+      {
+        "condition_id": "100m_cross_5",
+        "source": "raw_1m",
+        "frames": 32,
+        "occupied_cell_records": 267531,
+        "distinct_cell_addresses": 18075
+      },
+      {
+        "condition_id": "100m_cross_5",
+        "source": "fine_1m",
+        "frames": 32,
+        "occupied_cell_records": 17994,
+        "distinct_cell_addresses": 1290
+      },
+      {
+        "condition_id": "100m_cross_5",
+        "source": "fine_004m",
+        "frames": 32,
+        "occupied_cell_records": 192228,
+        "distinct_cell_addresses": 99003
+      },
+      {
+        "condition_id": "100m_cross_10",
+        "source": "raw_1m",
+        "frames": 46,
+        "occupied_cell_records": 382942,
+        "distinct_cell_addresses": 17126
+      },
+      {
+        "condition_id": "100m_cross_10",
+        "source": "fine_1m",
+        "frames": 46,
+        "occupied_cell_records": 25044,
+        "distinct_cell_addresses": 1310
+      },
+      {
+        "condition_id": "100m_cross_10",
+        "source": "fine_004m",
+        "frames": 46,
+        "occupied_cell_records": 274811,
+        "distinct_cell_addresses": 124260
+      },
+      {
+        "condition_id": "200m_cross_5",
+        "source": "raw_1m",
+        "frames": 83,
+        "occupied_cell_records": 696819,
+        "distinct_cell_addresses": 20974
+      },
+      {
+        "condition_id": "200m_cross_5",
+        "source": "fine_1m",
+        "frames": 83,
+        "occupied_cell_records": 44943,
+        "distinct_cell_addresses": 1671
+      },
+      {
+        "condition_id": "200m_cross_5",
+        "source": "fine_004m",
+        "frames": 83,
+        "occupied_cell_records": 526233,
+        "distinct_cell_addresses": 177316
+      },
+      {
+        "condition_id": "200m_cross_10",
+        "source": "raw_1m",
+        "frames": 48,
+        "occupied_cell_records": 406719,
+        "distinct_cell_addresses": 18078
+      },
+      {
+        "condition_id": "200m_cross_10",
+        "source": "fine_1m",
+        "frames": 48,
+        "occupied_cell_records": 26743,
+        "distinct_cell_addresses": 1348
+      },
+      {
+        "condition_id": "200m_cross_10",
+        "source": "fine_004m",
+        "frames": 48,
+        "occupied_cell_records": 309481,
+        "distinct_cell_addresses": 142061
+      },
+      {
+        "condition_id": "300m_cross_10",
+        "source": "raw_1m",
+        "frames": 63,
+        "occupied_cell_records": 526696,
+        "distinct_cell_addresses": 18619
+      },
+      {
+        "condition_id": "300m_cross_10",
+        "source": "fine_1m",
+        "frames": 63,
+        "occupied_cell_records": 33932,
+        "distinct_cell_addresses": 1442
+      },
+      {
+        "condition_id": "300m_cross_10",
+        "source": "fine_004m",
+        "frames": 63,
+        "occupied_cell_records": 402134,
+        "distinct_cell_addresses": 157608
+      }
+    ],
+    "limitations": [
+      "Component membership replay assertions are in the frozen compute; this validator independently checks source cell lineage and all node histories, and synthetic child overlap, without re-running the saved component extraction.",
+      "The frozen fine_004m spatial-concentration columns aggregate 0.4m cubes despite the 10m name; corrected 10m summaries must be reported separately."
+    ]
+  },
+  "elapsed_s": 19.86616396397585,
+  "status": "TESTED_PASSED"
+}

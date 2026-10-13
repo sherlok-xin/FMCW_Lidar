@@ -1,0 +1,362 @@
+{
+  "utc": "2026-10-13T14:30:33.131558+00:00",
+  "python": "3.10.12",
+  "matplotlib": "3.10.9",
+  "numpy": "2.2.6",
+  "command": "PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python results/scene_spatiotemporal_background_audit/plot_scene_audit.py",
+  "plot_source_sha256": "1a1bc838daea45f7d3f1cf0ac61e6165618f8735028acc2be0e18c9f27d18e24",
+  "scene_receipt_verified_before_anchor_read": true,
+  "scene_complete_utc": "2026-10-13T14:21:17.020136+00:00",
+  "selected_frames": [
+    {
+      "condition_id": "100m_cross_5",
+      "frame_index": 16,
+      "bag_time": 1770275557.3242788,
+      "selection_rule": "floor(nframes/2)",
+      "current_anchor_count": 1
+    },
+    {
+      "condition_id": "100m_cross_10",
+      "frame_index": 23,
+      "bag_time": 1770275332.31876,
+      "selection_rule": "floor(nframes/2)",
+      "current_anchor_count": 1
+    },
+    {
+      "condition_id": "200m_cross_5",
+      "frame_index": 41,
+      "bag_time": 1770276637.3020985,
+      "selection_rule": "floor(nframes/2)",
+      "current_anchor_count": 0
+    },
+    {
+      "condition_id": "200m_cross_10",
+      "frame_index": 24,
+      "bag_time": 1770275825.322195,
+      "selection_rule": "floor(nframes/2)",
+      "current_anchor_count": 0
+    },
+    {
+      "condition_id": "300m_cross_10",
+      "frame_index": 31,
+      "bag_time": 1770276968.3302352,
+      "selection_rule": "floor(nframes/2)",
+      "current_anchor_count": 0
+    }
+  ],
+  "descriptive_contrast_finite_and_missing_counts": [
+    {
+      "condition_id": "100m_cross_5",
+      "population": "all_fine_nodes",
+      "finite_distance_n": 2301,
+      "missing_distance_n": 152,
+      "population_n": 2453,
+      "missing_frame_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "condition_id": "100m_cross_5",
+      "population": "nearest_anchor_node",
+      "finite_distance_n": 19,
+      "missing_distance_n": 0,
+      "population_n": 19,
+      "missing_frame_indices": []
+    },
+    {
+      "condition_id": "100m_cross_5",
+      "population": "winner_original",
+      "finite_distance_n": 30,
+      "missing_distance_n": 2,
+      "population_n": 32,
+      "missing_frame_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "condition_id": "100m_cross_5",
+      "population": "winner_background_only",
+      "finite_distance_n": 29,
+      "missing_distance_n": 2,
+      "population_n": 31,
+      "missing_frame_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "condition_id": "100m_cross_5",
+      "population": "winner_background_motion_E18",
+      "finite_distance_n": 30,
+      "missing_distance_n": 2,
+      "population_n": 32,
+      "missing_frame_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "condition_id": "100m_cross_10",
+      "population": "all_fine_nodes",
+      "finite_distance_n": 3168,
+      "missing_distance_n": 139,
+      "population_n": 3307,
+      "missing_frame_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "condition_id": "100m_cross_10",
+      "population": "nearest_anchor_node",
+      "finite_distance_n": 11,
+      "missing_distance_n": 0,
+      "population_n": 11,
+      "missing_frame_indices": []
+    },
+    {
+      "condition_id": "100m_cross_10",
+      "population": "winner_original",
+      "finite_distance_n": 44,
+      "missing_distance_n": 1,
+      "population_n": 45,
+      "missing_frame_indices": [
+        1
+      ]
+    },
+    {
+      "condition_id": "100m_cross_10",
+      "population": "winner_background_only",
+      "finite_distance_n": 44,
+      "missing_distance_n": 2,
+      "population_n": 46,
+      "missing_frame_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "condition_id": "100m_cross_10",
+      "population": "winner_background_motion_E18",
+      "finite_distance_n": 41,
+      "missing_distance_n": 2,
+      "population_n": 43,
+      "missing_frame_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "condition_id": "200m_cross_5",
+      "population": "all_fine_nodes",
+      "finite_distance_n": 5962,
+      "missing_distance_n": 155,
+      "population_n": 6117,
+      "missing_frame_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "condition_id": "200m_cross_5",
+      "population": "nearest_anchor_node",
+      "finite_distance_n": 20,
+      "missing_distance_n": 2,
+      "population_n": 22,
+      "missing_frame_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "condition_id": "200m_cross_5",
+      "population": "winner_original",
+      "finite_distance_n": 80,
+      "missing_distance_n": 2,
+      "population_n": 82,
+      "missing_frame_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "condition_id": "200m_cross_5",
+      "population": "winner_background_only",
+      "finite_distance_n": 80,
+      "missing_distance_n": 2,
+      "population_n": 82,
+      "missing_frame_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "condition_id": "200m_cross_5",
+      "population": "winner_background_motion_E18",
+      "finite_distance_n": 80,
+      "missing_distance_n": 2,
+      "population_n": 82,
+      "missing_frame_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "condition_id": "200m_cross_10",
+      "population": "all_fine_nodes",
+      "finite_distance_n": 3468,
+      "missing_distance_n": 166,
+      "population_n": 3634,
+      "missing_frame_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "condition_id": "200m_cross_10",
+      "population": "nearest_anchor_node",
+      "finite_distance_n": 18,
+      "missing_distance_n": 0,
+      "population_n": 18,
+      "missing_frame_indices": []
+    },
+    {
+      "condition_id": "200m_cross_10",
+      "population": "winner_original",
+      "finite_distance_n": 46,
+      "missing_distance_n": 2,
+      "population_n": 48,
+      "missing_frame_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "condition_id": "200m_cross_10",
+      "population": "winner_background_only",
+      "finite_distance_n": 46,
+      "missing_distance_n": 2,
+      "population_n": 48,
+      "missing_frame_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "condition_id": "200m_cross_10",
+      "population": "winner_background_motion_E18",
+      "finite_distance_n": 46,
+      "missing_distance_n": 2,
+      "population_n": 48,
+      "missing_frame_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "condition_id": "300m_cross_10",
+      "population": "all_fine_nodes",
+      "finite_distance_n": 4460,
+      "missing_distance_n": 151,
+      "population_n": 4611,
+      "missing_frame_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "condition_id": "300m_cross_10",
+      "population": "nearest_anchor_node",
+      "finite_distance_n": 8,
+      "missing_distance_n": 2,
+      "population_n": 10,
+      "missing_frame_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "condition_id": "300m_cross_10",
+      "population": "winner_original",
+      "finite_distance_n": 61,
+      "missing_distance_n": 2,
+      "population_n": 63,
+      "missing_frame_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "condition_id": "300m_cross_10",
+      "population": "winner_background_only",
+      "finite_distance_n": 61,
+      "missing_distance_n": 2,
+      "population_n": 63,
+      "missing_frame_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "condition_id": "300m_cross_10",
+      "population": "winner_background_motion_E18",
+      "finite_distance_n": 53,
+      "missing_distance_n": 2,
+      "population_n": 55,
+      "missing_frame_indices": [
+        0,
+        1
+      ]
+    }
+  ],
+  "spatial_crop": "full persistent/current scene extent; no GNSS or anchor ROI",
+  "maps": "past-only causal snapshots",
+  "paths_and_anchor_overlays": "offline, interpretation only",
+  "skipped_metric": "fine_004m spatial_concentration is omitted (stored cube is 0.4m)",
+  "input_sha256": {
+    "results/scene_spatiotemporal_background_audit/SCENE_FEATURES_COMPLETE.json": "c030543e77bb2a0eebc9c9519fe81d28ea1d44707851f70abd9d231edc6c92a4",
+    "results/scene_spatiotemporal_background_audit/frame_scene_statistics.csv": "d8dee9b0ab731a6eaf48ab9de7e3536fb348a2701827aec71c6bf811e2b3c854",
+    "results/scene_spatiotemporal_background_audit/node_scene_features.csv": "bf7e5a80b44373c23d91a1ada4019ec884ea2aef347750819fed9233b31adddd",
+    "results/scene_spatiotemporal_background_audit/cell_history__raw_1m__100m_cross_5.npz": "8c0b988b47685e021256bf849c329d1769ffe6e91b1a124cd81ea22da7b3298b",
+    "results/scene_spatiotemporal_background_audit/persistent_snapshots__raw_1m__100m_cross_5.npz": "3bc7fe1770e1e5d8413c43d2db2aeffd382f9c9553819a63cf78d240878b3393",
+    "results/scene_spatiotemporal_background_audit/cell_history__fine_1m__100m_cross_5.npz": "57468263ce9307b8f08df7804d863fe23ac64784602a3d45bc7f340a89b1b739",
+    "results/scene_spatiotemporal_background_audit/persistent_snapshots__fine_1m__100m_cross_5.npz": "7465df4a06fa9cad45b81f3272da7dac1764e9f902b369c36668a9b276b23e57",
+    "results/scene_spatiotemporal_background_audit/cell_history__raw_1m__100m_cross_10.npz": "2cfc7c969cc5deb9ee76aa01dc1003c87da7e5945986fa3050d31240174d32df",
+    "results/scene_spatiotemporal_background_audit/persistent_snapshots__raw_1m__100m_cross_10.npz": "0b011428dfdf0e4f052175621f53c2811392c08d30149a42d861f8f6275ac296",
+    "results/scene_spatiotemporal_background_audit/cell_history__fine_1m__100m_cross_10.npz": "1bbe628dd2d615d785f2a8bad77e3f6f4827b56ac198e8f561ce954e4327fd39",
+    "results/scene_spatiotemporal_background_audit/persistent_snapshots__fine_1m__100m_cross_10.npz": "8996321e8ba5ff375f9008f59e616d4d49d8e7d6a9a8a039a2d4583ed571f982",
+    "results/scene_spatiotemporal_background_audit/cell_history__raw_1m__200m_cross_5.npz": "3e3572c3d7a807c9d5fd7b872f1b586c80d10e349166d4251b1c6613fd3f74db",
+    "results/scene_spatiotemporal_background_audit/persistent_snapshots__raw_1m__200m_cross_5.npz": "ee479e7f62e7337ea3492e499628ae762843422e4a3849d8a24e51400d4e70d2",
+    "results/scene_spatiotemporal_background_audit/cell_history__fine_1m__200m_cross_5.npz": "133a8a4350c8c3672e205f5e42fcbfa9f24a6af4632eaa0e4e58d05e0a4da77d",
+    "results/scene_spatiotemporal_background_audit/persistent_snapshots__fine_1m__200m_cross_5.npz": "3c1122d2d774e7fb72c2ebe5dadb53d79b199507e199746966f3a6a43c26e475",
+    "results/scene_spatiotemporal_background_audit/cell_history__raw_1m__200m_cross_10.npz": "6e3d3107f8b410c1417f3c32a2436d76eca33f211fb484a0aa249b327a07fb26",
+    "results/scene_spatiotemporal_background_audit/persistent_snapshots__raw_1m__200m_cross_10.npz": "87b22d64e2e712cd9dd9895225c8374e62aa3e7c57669faa24139bde364014d1",
+    "results/scene_spatiotemporal_background_audit/cell_history__fine_1m__200m_cross_10.npz": "e09d987f07a04f32cc956c5d2f0333e71e6b3c4f69ba2e0b2934df3eadd26007",
+    "results/scene_spatiotemporal_background_audit/persistent_snapshots__fine_1m__200m_cross_10.npz": "378a5b52d24f483a860eb377c66e09da485e505617c858be039d968d90586433",
+    "results/scene_spatiotemporal_background_audit/cell_history__raw_1m__300m_cross_10.npz": "dd22e97f07d7a46a36e0ddb740b7d8738da147c680da54504145a05fc48ddc44",
+    "results/scene_spatiotemporal_background_audit/persistent_snapshots__raw_1m__300m_cross_10.npz": "7e20598497ffed2787614ce89c05aae7f99a622c92bb7d1d7e22445d4dcc7d09",
+    "results/scene_spatiotemporal_background_audit/cell_history__fine_1m__300m_cross_10.npz": "d83fe6151554147cafa9fcbd2b43178f5e94699eb4b6931644bad28acb82d5db",
+    "results/scene_spatiotemporal_background_audit/persistent_snapshots__fine_1m__300m_cross_10.npz": "6ab0d7cb7a4ade40cb289ad004b2057530d393aac954996d982c74f0772585a8",
+    "results/research_dev_v0/silver_labels.csv": "37c4452a68e544d75034389f82bbaf1e868903bb2225b395b9d66d0cdd48b8db",
+    "results/e18_mechanism_generalization_audit/selected_paths.csv": "90abf32b7357c18f87f8521ec95db985557dfd5132e5af23c69e9d00031253ea",
+    "results/scene_spatiotemporal_background_audit/population_scene_features.csv": "c96635b7e4f6af0a6526063a268f71a96ac272e1744e997ffff8e0099cf6a456",
+    "results/scene_spatiotemporal_background_audit/occupancy_distance_associations.csv": "199f74ed64bcb79763e84cd363b3be38bdb6f50f559fc8ad4b333b7afa607293",
+    "results/scene_spatiotemporal_background_audit/population_distribution_summary.csv": "0165e5ea16bc220315fb0e103af930dc796ad793d6a510fd17ff9449845fd0db",
+    "results/scene_spatiotemporal_background_audit/anchor_same_frame_contrasts.csv": "e6c2389161d9398d61c2d2ff82fc81d7aa7030f96b49f9fce041dbfba08049ef"
+  },
+  "figure_sha256": {
+    "competitor_scene_profiles.pdf": "3258674d87f971fde347750fd11f9d9c7cdd7458fba78198dd5637d4ba34c2d2",
+    "competitor_scene_profiles.png": "d82a68e8a77ca71d5fd2a1cdd71b33e1ddfc6aec9d8927cb19d7b604b94180b6",
+    "descriptive_scene_contrasts.pdf": "e51297cc837f58240872d4308421e715f207be3773210e6e9ef9820452641420",
+    "distance_population_contrasts.pdf": "b7ea5e059db968866a71a6eaa6c5f944be22bd0be637328d3f9a4f7c20d6e5e3",
+    "distance_population_contrasts.png": "2933ca63c4771d6bed82a746064c9bb85a86be219258dbeec8b4444360ebc907",
+    "occupancy_distance_nonredundancy.pdf": "87d8ad889da873aa4302b0b6e47b4601f05b3515694b4f03d3de58a9a5d3528e",
+    "occupancy_distance_nonredundancy.png": "0ad4ce4bbc8b948ddda1edd07391733172b1c3c68a7dee6309a1712a9877c2cc",
+    "raw_scene_fixed_midpoint_projections.pdf": "605b8a8c2f4e9840d7f994b53240bc9bd29a09c7ffe6aee0687f48cb3e2f86f6",
+    "raw_scene_fixed_midpoint_projections.png": "fb313eaa9ffe560000daaed7a70fbd85725a0bbef5fb4cb85fe74687ab5c38e0",
+    "scene_persistence_trajectories.pdf": "cc4947c8d0f617789e004b67f027febeba250e05231f6f13c26bcbadd75eb480",
+    "scene_persistence_trajectories.png": "4f0a0d7509c471ad1c753439485b14e988a98c6b4a6c99b3a9c2d12dd8c52970"
+  }
+}

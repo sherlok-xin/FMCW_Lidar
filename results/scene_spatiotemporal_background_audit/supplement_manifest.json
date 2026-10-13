@@ -1,0 +1,13 @@
+{
+  "utc": "2026-10-13T14:27:46.506132+00:00",
+  "command": "PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python results/scene_spatiotemporal_background_audit/supplement_summaries.py",
+  "source_sha256": "7816d70d17958036724bf24800d962735365c264f003f95221849ba49beca29b",
+  "phase": "POST_SCENE_FEATURE_RECEIPT_FIXED_RULE_DESCRIPTIVE_SUMMARIES",
+  "rules_unchanged": true,
+  "outputs_sha256": {
+    "anchor_vs_winner_same_frame.csv": "edd468bd5de50b423aed89f2aea130ecb46fadde3671a53b2e7db1a371d93604",
+    "same_frame_winner_contrast_summary.csv": "443c209d84e3a7c182b27f83dc7188d1d98e74788f2ff6de09e6e80bb83e3ede",
+    "persistent_cutoff_scene_sensitivity.csv": "ca986e28441f64d9bb2f238b218c342c5d9b29ba20fb418bc061cea19250a5c6",
+    "fixed_causal_time_milestones.csv": "15afb4d7f320d03107253c5c6ad9156732da663f0fbc1bea59e0bd6254ef7648"
+  }
+}
