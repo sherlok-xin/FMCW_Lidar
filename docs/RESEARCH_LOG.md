@@ -479,3 +479,14 @@ The preparatory entry above records the earlier pause; the user subsequently app
 **SPECULATIVE局部解释：** 100m frame22–24与300m frame10的anchor-associated过去占用更近期，可能反映局部时间排列；同表面扫描、不同对象混occupancy、DEV选择或路径co-association也兼容。单cell history不认证同一对象，4个局部帧不能解释jointE18完整路径胜出；未rescore或干预。
 
 **决定：strict kill触发。** 当前证据层面E18occupancy足够，不提出E21backgroundmodel、新score或feature组合。该表述是研究证据门槛而非数学充分性证明，也不把共同支持缺失当零效应。需要独立identity/presence、occupied动态clutter/negative、moving-hover/revisit和不同scene/date heldout数据，在同H/F有非退化共同支持情况下证伪；保持唯一5priorframes定义，不用当前silver选择窗口/阈值。
+
+
+## 2026-10-14 — 项目级 STOP_DEV_FEATURE_MINING；转向外部复现规划
+
+**用户决定，已生效：STOP_DEV_FEATURE_MINING。** 现有五条cross-flight DEV bags与80 DEV_SILVER anchors不得再用于提出/调节新的E18背景feature、weight、window、threshold或E21/E22 score。不是仅冻结某一公式：不能换子集、表示、组合或外部tracker继续原DEV探索。E18、labels、calibration、offset、graphs、阈值及历史结果保持冻结。[准确范围](DEV_FEATURE_MINING_STOP.md)。
+
+**证据与不确定性：** temporal audit strict kill保留局部效应/缺共同支持/反向，并不证明时间结构数学冗余；但现有DEV证据不足以支持继续背景特征挖掘。其完成报告/37文件结果已先原样发布至main `92cf79d01bbb84eee52dde7fd22210f78067d6cd`，不为了更新发布状态改写旧快照。
+
+**下一步仅为PROPOSED外部理解任务：** [三项目路线图](../FMCW_EXTERNAL_REPRODUCTION_ROADMAP.md)。唯一优先项是Stone Soup最小synthetic-clutter Bernoulli例：补存在/缺失推断的概念与数值证据，先检查合法empty-scan更新、birth/survival与clutter语义。合成真值只用于评价，非oracle birth；合成成功不证明真实FMCW likelihood/P_D或存在概率已校准，也不解除DEV停止决定。
+
+DopplerTrack保留为作者支持道路FMCW tracking参考，先解决数据访问和帧/GT对应；UnLiDAR官方有局部片段但完整可运行发布未建立，官方复现BLOCKED。未来需自行补方法时只能标PAPER-STRUCTURE RECONSTRUCTION，不能替换第三方后称官方复现。本轮未实现/运行方法、未安装大依赖或下载数据集。

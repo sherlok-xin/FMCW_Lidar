@@ -69,3 +69,7 @@ Choose validation proportional to the change:
 ## Communication
 
 Match the user's language. Lead with the observed outcome, then evidence and uncertainty. If a requested conclusion cannot be supported, write `UNKNOWN` and identify the artifact or experiment needed to resolve it.
+
+## Project decision — STOP_DEV_FEATURE_MINING (2026-10-14)
+
+The existing five cross-flight DEV bags (`100m_cross_5`, `100m_cross_10`, `200m_cross_5`, `200m_cross_10`, `300m_cross_10`) and 80 DEV_SILVER anchors must no longer be used to propose or tune new E18 background features, weights, windows, thresholds, or an E21/E22 score. Do not reopen this search through new subsets, feature combinations, representations, or external tracker ports. Preserve E18. Read-only preservation and verification of completed results remain allowed. External author-data/synthetic reproduction does not lift this decision. The user-directed decision and scope are recorded in `docs/DEV_FEATURE_MINING_STOP.md`.

@@ -1,0 +1,368 @@
+{
+  "status": "VERIFIED_RESULT_public_source_inspection_only_NOT_TESTED_runtime",
+  "compiled_at_utc": "2026-10-14T04:33:23.259020+00:00",
+  "timezone_for_project_date": "Asia/Shanghai",
+  "project_date": "2026-10-14",
+  "scope_exactly": [
+    "dstl/Stone-Soup",
+    "12w2/DopplerTrack",
+    "lianghanfang/UnLiDAR-UAV-Est"
+  ],
+  "decision": "STOP_DEV_FEATURE_MINING",
+  "environment": {
+    "python": "3.10.12",
+    "platform": "Linux-6.8.0-136-generic-x86_64-with-glibc2.35"
+  },
+  "actions": {
+    "public_repository_metadata_tree_release_and_small_sources_read": true,
+    "small_author_preprint_read": true,
+    "dependencies_installed": false,
+    "large_datasets_downloaded": false,
+    "methods_implemented": false,
+    "method_builds_or_tests_run": false,
+    "authors_contacted_or_access_forms_submitted": false,
+    "FMCW_DEV_used_for_methods": false
+  },
+  "retrieval_method": "Read-only HTTP GET to official GitHub API, GitHub/raw pinned source and author paper/data pages; parse metadata/tree locally. No repository source copied to project.",
+  "query_command_template": "curl -fLsS https://api.github.com/repos/OWNER/REPO (and commits/main, git/trees/SHA?recursive=1, releases); source GET https://raw.githubusercontent.com/OWNER/REPO/SHA/PATH",
+  "access_notes": [
+    "Some later anonymous API requests encountered rate limiting (403); completed metadata/tree snapshots and identical pinned-source local caches were used. This does not establish author-data availability.",
+    "Snapshot hashes identify source evidence; full temporary API/source caches are not required runtime project inputs and are not added to Git.",
+    "Difficulty/success/stop judgments are plans/inferences, not measured reproduction outcomes."
+  ],
+  "repositories": [
+    {
+      "repository": "dstl/Stone-Soup",
+      "checked_at_utc": "2026-10-14T04:22:38.036894+00:00",
+      "repository_url": "https://github.com/dstl/Stone-Soup",
+      "public": true,
+      "fork": false,
+      "archived": false,
+      "disabled": false,
+      "default_branch": "main",
+      "head_sha": "56f711c50cb577276dc0e4d95c09998acbb15c08",
+      "head_committer_date_utc": "2026-10-13T14:40:18Z",
+      "pushed_at_utc": "2026-10-13T14:40:18Z",
+      "api_license_spdx": "MIT",
+      "tree_entries": 880,
+      "tree_truncated": false,
+      "github_releases": [
+        {
+          "tag_name": "v1.9.1",
+          "published_at_utc": "2026-06-24T13:57:38Z",
+          "html_url": "https://github.com/dstl/Stone-Soup/releases/tag/v1.9.1"
+        },
+        {
+          "tag_name": "v1.9",
+          "published_at_utc": "2026-06-18T15:03:25Z",
+          "html_url": "https://github.com/dstl/Stone-Soup/releases/tag/v1.9"
+        },
+        {
+          "tag_name": "v1.8",
+          "published_at_utc": "2025-10-07T12:31:22Z",
+          "html_url": "https://github.com/dstl/Stone-Soup/releases/tag/v1.8"
+        },
+        {
+          "tag_name": "v1.7",
+          "published_at_utc": "2025-06-30T14:35:59Z",
+          "html_url": "https://github.com/dstl/Stone-Soup/releases/tag/v1.7"
+        },
+        {
+          "tag_name": "v1.6",
+          "published_at_utc": "2025-03-12T15:41:56Z",
+          "html_url": "https://github.com/dstl/Stone-Soup/releases/tag/v1.6"
+        }
+      ],
+      "primary_query_urls": [
+        "https://api.github.com/repos/dstl/Stone-Soup",
+        "https://api.github.com/repos/dstl/Stone-Soup/commits/main",
+        "https://api.github.com/repos/dstl/Stone-Soup/git/trees/56f711c50cb577276dc0e4d95c09998acbb15c08?recursive=1",
+        "https://api.github.com/repos/dstl/Stone-Soup/releases"
+      ],
+      "source_metadata_snapshot_sha256": "e4643c66292c6b7fb8820f117bffe139d6e07324c7a5ac2f6304b577d57dfb00",
+      "official_status": "Official DSTL Stone Soup framework implementation, not original Ristic-author standalone code",
+      "license": "MIT",
+      "planned_execution_pin": {
+        "tag": "v1.9.1",
+        "commit_sha": "a4336b920a799cfe0a77ecb05867c5deeb371c7a"
+      },
+      "release_status": "Official components and synthetic component tests exist; complete minimal Bernoulli clutter gallery entrypoint not verified",
+      "source_sha256": {
+        "stone_soup_docs_examples_sensormanagement_bayesian_search_example_1.py": "69a3dbf662e13db81d6205ff8234547120f1f97dfbf195d42b0544b7b3f85715",
+        "stone_soup_stonesoup_predictor_tests_test_particle.py": "20e46361ec66d7d9cde3d852a1e17a02efccbfe512b4331eda19226a755097d3",
+        "stone_soup_stonesoup_tracker_particle.py": "129aea3cdf862ae193adba2bd858815c3558d05c61d2b5235ecf5eb7a002798f",
+        "stone_soup_LICENSE": "2462f3d8a857f601e266f048a4ff051366c1e05f098cf3a1524eaf922f879815",
+        "stone_soup_docs_examples_filters_Multi_Tracker_Example.py": "a9715a58ec808f906ff8ef68ace8faf263acd6d7daa60e5ece2201594dbb414e",
+        "stone_soup_stonesoup_updater_tests_test_particle.py": "9162380ccfce2276856b38c5d88a7998908ee7b0aac5db992b2242b63f6a676c",
+        "stone_soup_pyproject.toml": "24241ef61623d860dd9cacf45f2122960dd9525fafcd0f899d9f09520c9d1460",
+        "stone_soup_docs_examples_sensormanagement_bayesian_search_example_2.py": "92db86c842626a281434022984213dddc3f339b5546681d3d31ec59202075b2c",
+        "stone_soup_v1.9.1_pyproject.toml": "0d4e2865a0c0fb3440da9670f9a82095d91c786e9c92fb54288e83aed5d79492",
+        "stone_soup_v1.9.1_stonesoup_updater_particle.py": "b9f1321f2e389bcdc70bc5dc5b7eacc35fa869a0e2532014ed5e3bdca8ed9c73",
+        "stone_soup_stonesoup_tracker_tests_test_particle.py": "d54d1ef9f710883bc91d2a865aa0789ba081804fad1a66542165ee1fe47587f6",
+        "stone_soup_stonesoup_updater_particle.py": "687d16c705b002dc7e99e1bfbf2fdeb7772101d8c988fc934a90af967960feda",
+        "stone_soup_v1.9.1_stonesoup_predictor_tests_test_particle.py": "20e46361ec66d7d9cde3d852a1e17a02efccbfe512b4331eda19226a755097d3",
+        "stone_soup_v1.9.1_stonesoup_updater_tests_test_particle.py": "9162380ccfce2276856b38c5d88a7998908ee7b0aac5db992b2242b63f6a676c"
+      },
+      "first_data": "synthetic_only",
+      "difficulty": "low_to_medium_inferred_not_measured",
+      "runtime_test_performed": false,
+      "empty_scan_gate": "Source inspection only: existence measurement correction inside if any(hypotheses); future legal missed-detection-input test must verify Bernoulli empty-measurement Bayesian update. No runtime bug claim.",
+      "method_runtime_dependencies": [
+        "Python>=3.10",
+        "numpy>=1.17",
+        "scipy",
+        "matplotlib",
+        "ordered-set",
+        "plotly>=5",
+        "pymap3d",
+        "rtree",
+        "ruamel.yaml>=0.16.5",
+        "utm"
+      ],
+      "component_test_dependencies": [
+        "pytest"
+      ],
+      "build_dependencies": [
+        "setuptools>=64",
+        "setuptools_scm>=8"
+      ]
+    },
+    {
+      "repository": "12w2/DopplerTrack",
+      "checked_at_utc": "2026-10-14T04:22:36.763863+00:00",
+      "repository_url": "https://github.com/12w2/DopplerTrack",
+      "public": true,
+      "fork": false,
+      "archived": false,
+      "disabled": false,
+      "default_branch": "main",
+      "head_sha": "780d0e47c629e21df35c026b9de1313e6d3ee167",
+      "head_committer_date_utc": "2025-07-18T08:09:43Z",
+      "pushed_at_utc": "2025-07-18T08:09:44Z",
+      "api_license_spdx": "MIT",
+      "tree_entries": 117,
+      "tree_truncated": false,
+      "github_releases": [],
+      "primary_query_urls": [
+        "https://api.github.com/repos/12w2/DopplerTrack",
+        "https://api.github.com/repos/12w2/DopplerTrack/commits/main",
+        "https://api.github.com/repos/12w2/DopplerTrack/git/trees/780d0e47c629e21df35c026b9de1313e6d3ee167?recursive=1",
+        "https://api.github.com/repos/12w2/DopplerTrack/releases"
+      ],
+      "source_metadata_snapshot_sha256": "798c4ede4949932b929ed92bc087696436f03b4e77e280b685bb35a4398b30ff",
+      "official_status": "Author-supported official implementation; author preprint links this repository",
+      "license": {
+        "root_code": "MIT, Copyright (c) 2025 12w2",
+        "data": "CC BY-NC-SA 4.0; Aeva-car derived from HeLiPR/SNU RPM Labs",
+        "package_metadata_caveat": "package.xml license remains TODO, root LICENSE explicitly MIT",
+        "urls": [
+          "https://github.com/12w2/DopplerTrack/blob/780d0e47c629e21df35c026b9de1313e6d3ee167/LICENSE",
+          "https://github.com/12w2/DopplerTrack/blob/780d0e47c629e21df35c026b9de1313e6d3ee167/DATA_LICENSE.md",
+          "https://github.com/12w2/DopplerTrack/blob/780d0e47c629e21df35c026b9de1313e6d3ee167/package.xml"
+        ]
+      },
+      "dependencies": {
+        "documented_tested": [
+          "Ubuntu20.04",
+          "ROS1 Noetic/catkin",
+          "PCL1.10",
+          "OpenCV4.2"
+        ],
+        "cmake": [
+          "message_generation",
+          "pcl_conversions",
+          "pcl_ros",
+          "roscpp",
+          "sensor_msgs",
+          "std_msgs",
+          "tf",
+          "geometry_msgs",
+          "OpenCV"
+        ],
+        "source_extra": [
+          "nlohmann/json.hpp (not vendored in tree or declared in package/CMake)"
+        ],
+        "eval_requirements": [
+          "numpy>=1.12.1",
+          "pandas>=0.23.1",
+          "scipy>=0.19.0",
+          "xmltodict>=0.12.0",
+          "python-dateutil>=2.8.2",
+          "pytz>=2020.1",
+          "tzdata>=2022.1",
+          "six>=1.5",
+          "opencv-python",
+          "open3d",
+          "shapely"
+        ],
+        "version_pinning": "OS/ROS/PCL/OpenCV tested versions documented; evaluation lower bounds/unpinned extras, no lockfile/container in observed tree.",
+        "hardware": "Offline C++ CPU implementation. No GPU/training dependency declared. Paper 120Hz is author result, not reproduced here."
+      },
+      "data": {
+        "datasets": [
+          "Straight",
+          "Intersection",
+          "Aq-car",
+          "Aeva-car"
+        ],
+        "download": "https://docs.google.com/forms/d/e/1FAIpQLSc2T57lVPA2QQ2BXVziZfxVbae0rwpnx1lm-ydJEMg_J5TYSQ/viewform?usp=dialog",
+        "access": "Request form, link sent by authors. Form not submitted in this task.",
+        "in_git": "data contains README only; four groundtruth .txt files are committed in eval/groundtruth; py-motmetrics fixture datasets are not DopplerTrack LiDAR samples.",
+        "size": "UNKNOWN; no dataset downloaded.",
+        "formats": [
+          "original_bin/<dataset>",
+          "dynamic_pcd/<dataset>",
+          "original_annotation/<dataset>"
+        ],
+        "aq_bin_schema": "6 float32 x,y,z,intensity,velocity,time (24 bytes/point)",
+        "topic": "/fmcw_pc",
+        "frame": "fmcw_lidar"
+      },
+      "author_supported_path": {
+        "build": "catkin_make in isolated author workspace (PROPOSED only; not run)",
+        "launch": "roslaunch dopplertrack dopplertarck_aq_car.launch",
+        "launch_path": "launch/dopplertarck_aq_car.launch",
+        "input": "data/original_bin/Aq-car",
+        "output": "eval/output/<six-digit-counter>.json",
+        "eval": "cd eval && python eval.py Aq-car",
+        "eval_requirements_path": "eval/requirements.txt (README pip command assumes current eval directory; no root requirements.txt exists)",
+        "evaluation_also_requires": [
+          "data/dynamic_pcd/Aq-car",
+          "eval/groundtruth/Aq-car.txt"
+        ],
+        "blocking_alignment_question": "launch start_frame=500 skips the first500 lexicographically sorted .bin inputs; tracker output starts at1 per received detection callback; eval.py selects Aq-car frames70..140. Preprint describes Aq-car350frames. Need authors/data-manifest mapping before interpreting any metric. This is a source-level risk, not a failed execution or proven dataset inconsistency."
+      },
+      "first_data": "author_Aq-car_not_FMCW_DEV",
+      "source_sha256": {
+        "dopplertrack_source/DATA_LICENSE.md": "2bb44a52bd8974f01c5c18912c1b51398ceeb61a395b74bc19f185deed94ef1a",
+        "dopplertrack_source/README.md": "fba109f0ab1cd82e59899a18d4d0e81123490a024321367d2d2cd13166a3cadf",
+        "dopplertrack_source/package.xml": "3a612d95590f28e8dfecc59a658b6f4dce15bb13c9978d7ce707eca19dd6b7ab",
+        "dopplertrack_source/CMakeLists.txt": "9a04e1ae6f5c4a274ad9c2d4341a7dafc8a9427d864ab0c6211a3b5d5bc77bb6",
+        "dopplertrack_source/LICENSE": "a32e7d3cb2fdcd25610794f3af0431bd0d98269a7dd812a9990dd1d6ccfb560b",
+        "dopplertrack_source/preprint_paper/README.md": "bf11776e55f1c33098053abcd8cb639aedb52176d5ad9480dcf75e4a8aa56a76",
+        "dopplertrack_source/data/README.md": "edb595572d86ad94689d45195f257e1cb36b208b6d85222df801e68f51a1a3a6",
+        "dopplertrack_source/include/fmcw_lidar.hpp": "505e5ae344c3404943e30fb9d2e68717e65a8f00e892d81234b3a13c9a62f214",
+        "dopplertrack_source/eval/eval.py": "d3b6df33862de714c1f7f3c1ef197ba69e5f063be9a2835f3f8d7ddc70346a79",
+        "dopplertrack_source/eval/requirements.txt": "b594d6993052deb9cae166b4430eca1b48edbb90694503669c9cbd43dec44e88",
+        "dopplertrack_source/launch/dopplertarck_aq_car.launch": "3a9ed84c1212917990a4ff2e8dccbf0c2a74417d79e70c3995bb63414c41000d",
+        "dopplertrack_source/src/detector_node.cpp": "bcf86d76a90980f3c617f3838edccb3ab62e40d1bad63b74abbae36f2b063640",
+        "dopplertrack_source/src/publisher_node.cpp": "8644341980c4b7d7868270aa63d76252169804a52a906f7ae5967a3cf17bcff3",
+        "dopplertrack_source/src/tracker_node.cpp": "d6eaccef4ebbb7e798076f9d2cd8b9db81091252cac8369478b40263d4c104eb",
+        "dopplertrack_paper.pdf": "fbadb84bccf81d5bb7c2e3a9f16c6a3b2edc396908260ce546f16dd713103f81"
+      },
+      "release_status": "Publisher, detector, tracker, launches and evaluation source available; not built/run here",
+      "difficulty": "medium_to_high_inferred_not_measured",
+      "gate": "Obtain author-supported input manifest and verify input-frame/output-counter/GT mapping. No silent start-frame or metric adjustment."
+    },
+    {
+      "repository": "lianghanfang/UnLiDAR-UAV-Est",
+      "checked_at_utc": "2026-10-14T04:22:36.738107+00:00",
+      "repository_url": "https://github.com/lianghanfang/UnLiDAR-UAV-Est",
+      "public": true,
+      "fork": false,
+      "archived": false,
+      "disabled": false,
+      "default_branch": "main",
+      "head_sha": "2b8e7ba10c2e6883899adc88f4b6455bfd3e5bc9",
+      "head_committer_date_utc": "2024-08-03T09:02:30Z",
+      "pushed_at_utc": "2024-08-03T09:02:30Z",
+      "api_license_spdx": null,
+      "tree_entries": 6,
+      "tree_truncated": false,
+      "github_releases": [],
+      "primary_query_urls": [
+        "https://api.github.com/repos/lianghanfang/UnLiDAR-UAV-Est",
+        "https://api.github.com/repos/lianghanfang/UnLiDAR-UAV-Est/commits/main",
+        "https://api.github.com/repos/lianghanfang/UnLiDAR-UAV-Est/git/trees/2b8e7ba10c2e6883899adc88f4b6455bfd3e5bc9?recursive=1",
+        "https://api.github.com/repos/lianghanfang/UnLiDAR-UAV-Est/releases"
+      ],
+      "source_metadata_snapshot_sha256": "4d1d5ccc385d5d2b2a98fd956f087780ad0c0b7cc3dc265608ef2fae3ed4d45d",
+      "official_status": "Official repository directly linked by author paper; no third-party substitution",
+      "official_paper_urls": [
+        "https://arxiv.org/abs/2412.12716",
+        "https://arxiv.org/html/2412.12716v5"
+      ],
+      "license": "UNKNOWN_NOT_DECLARED",
+      "full_tree": [
+        {
+          "path": "README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "73f9266e07d51281dca2a06218013a6ef304a96c",
+          "size": 89,
+          "url": "https://api.github.com/repos/lianghanfang/UnLiDAR-UAV-Est/git/blobs/73f9266e07d51281dca2a06218013a6ef304a96c"
+        },
+        {
+          "path": "includes",
+          "mode": "040000",
+          "type": "tree",
+          "sha": "b8d76bc8378818320eee5e112d0b738feebc6c11",
+          "url": "https://api.github.com/repos/lianghanfang/UnLiDAR-UAV-Est/git/trees/b8d76bc8378818320eee5e112d0b738feebc6c11"
+        },
+        {
+          "path": "includes/Readme.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "size": 0,
+          "url": "https://api.github.com/repos/lianghanfang/UnLiDAR-UAV-Est/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+        },
+        {
+          "path": "src",
+          "mode": "040000",
+          "type": "tree",
+          "sha": "97456a8f16e5c28fa02e23337238ef54bc59bf07",
+          "url": "https://api.github.com/repos/lianghanfang/UnLiDAR-UAV-Est/git/trees/97456a8f16e5c28fa02e23337238ef54bc59bf07"
+        },
+        {
+          "path": "src/motion detect.py",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "dc8d8200c317f7e361220f4deddafc1ffffd1b41",
+          "size": 3149,
+          "url": "https://api.github.com/repos/lianghanfang/UnLiDAR-UAV-Est/git/blobs/dc8d8200c317f7e361220f4deddafc1ffffd1b41"
+        },
+        {
+          "path": "src/voxel compare.py",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "93a92e203ba621aa0c9cc1c29b8e956974bfec5d",
+          "size": 2968,
+          "url": "https://api.github.com/repos/lianghanfang/UnLiDAR-UAV-Est/git/blobs/93a92e203ba621aa0c9cc1c29b8e956974bfec5d"
+        }
+      ],
+      "inspected_files": {
+        "README.md": {
+          "url": "https://api.github.com/repos/lianghanfang/UnLiDAR-UAV-Est/contents/README.md?ref=2b8e7ba10c2e6883899adc88f4b6455bfd3e5bc9",
+          "blob_sha": "73f9266e07d51281dca2a06218013a6ef304a96c",
+          "sha256": "3e8e67add3074f249715d7e76eacd2c9a233b3ecdc0395af1a2a303074b4a64c"
+        },
+        "src/motion detect.py": {
+          "url": "https://api.github.com/repos/lianghanfang/UnLiDAR-UAV-Est/contents/src/motion%20detect.py?ref=2b8e7ba10c2e6883899adc88f4b6455bfd3e5bc9",
+          "blob_sha": "dc8d8200c317f7e361220f4deddafc1ffffd1b41",
+          "sha256": "56114a97e15f91f74c3b1513905b64ab9215beea681104b9a1113c23a8d4e3ac"
+        },
+        "src/voxel compare.py": {
+          "url": "https://api.github.com/repos/lianghanfang/UnLiDAR-UAV-Est/contents/src/voxel%20compare.py?ref=2b8e7ba10c2e6883899adc88f4b6455bfd3e5bc9",
+          "blob_sha": "93a92e203ba621aa0c9cc1c29b8e956974bfec5d",
+          "sha256": "31bd1ffc39e33d0b325f6e9fe80d73dfed2ae7cdca26ba325d8de9c3a54a2159"
+        }
+      },
+      "release_status": "Official partial snippets exist; complete runnable released paper method not established",
+      "imports_only_dependency_sketch": [
+        "numpy",
+        "scipy",
+        "scikit-learn",
+        "open3d"
+      ],
+      "environment_and_versions": "UNKNOWN",
+      "dataset_sample_in_method_repo": false,
+      "author_dataset_entry": "https://github.com/ntu-aris/MMAUD",
+      "dataset_external_downloads_verified": false,
+      "first_data": "author_data_only_after_complete_official_release",
+      "difficulty": "BLOCKED_OFFICIAL_REPRODUCTION",
+      "gate": "Need complete official code/license/environment/input/config/eval. If missing method must be supplied locally, stop official reproduction; any later authorized implementation is PAPER-STRUCTURE RECONSTRUCTION."
+    }
+  ],
+  "unique_first_reproduction_task": "Stone Soup v1.9.1 official Bernoulli component tests, then only if gates pass a clearly identified local minimal synthetic-clutter existence harness. No FMCW or DEV hookup."
+}

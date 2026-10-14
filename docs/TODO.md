@@ -1,5 +1,13 @@
 # Prioritized TODO
 
+## Binding decision — 2026-10-14: STOP_DEV_FEATURE_MINING
+
+The existing five cross-flight DEV bags and 80 DEV_SILVER anchors are closed to proposing/tuning E18 background features, weights, windows, thresholds, or E21/E22 scores. Preserve E18 and all frozen scientific inputs/results. This user-directed decision overrides any older feature-exploration suggestions retained below; external reproduction does not reopen DEV. See [decision and exact scope](DEV_FEATURE_MINING_STOP.md).
+
+The completed occupancy temporal audit was committed and pushed unchanged at `92cf79d01bbb84eee52dde7fd22210f78067d6cd`. The [external roadmap](../FMCW_EXTERNAL_REPRODUCTION_ROADMAP.md) covers exactly Stone Soup, DopplerTrack and official UnLiDAR. **Only first task recommended:** Stone Soup Bernoulli component tests followed, if gates pass, by a minimal synthetic-clutter existence example. This remains a plan: no implementation, installation, method execution or DEV hookup was performed in this roadmap task.
+
+## Historical priorities (preserved)
+
 Status date: **2026-10-11**
 
 The ordering below reflects dependency and scientific value. Algorithm novelty is intentionally placed after provenance, labels, calibration, and evaluation because the current evidence cannot otherwise distinguish improvement from additional false tracks or implementation drift.

@@ -343,3 +343,14 @@ Ranked by impact:
 **TESTED / descriptive：** [时间结构审计](../FMCW_OCCUPANCY_TEMPORAL_STRUCTURE_AUDIT.md) 和 [新结果目录](../results/occupancy_temporal_structure_audit/README.md) 已完成。原fine_1m cell history查询37,117nodes，E18 p/原时间字段精确复现；同frame/H配对和strict kill独立复核通过，437protected文件未变。
 
 局部100m3帧与300m1帧有recency/recent差异，但没有跨五包稳定共同支持。**当前证据层面E18occupancy足够，不提出E21backgroundmodel。** 不代表时间排列数学冗余或零效应；UNKNOWN/cold-start/辅助bin反向保留。未改E18、score、graphs、labels/calibration/offset/历史结果，未跑DP/路径rescore；新审计未commit/push。
+
+
+## 2026-10-14 — STOP_DEV_FEATURE_MINING；外部复现路线图完成
+
+**VERIFIED RESULT（发布/保存）：** 先将完整occupancy temporal报告和37文件结果目录原样提交并推送至GitHub main，commit `92cf79d01bbb84eee52dde7fd22210f78067d6cd`；SSH `ls-remote`核验相同SHA。报告/目录38个文件与该commit字节一致，437个protected科学文件hash一致。[独立发布收据](../results/external_reproduction_roadmap/audit_publication_receipt.json)。原审计中的未推送文字保留为当时快照。
+
+**项目决定已生效：STOP_DEV_FEATURE_MINING。** 既有五条cross DEV bags及80 DEV_SILVER anchors不再用于提出/调节E18 background features、weights、windows、thresholds或E21/E22 score。E18保持冻结；新表示/子段/外部tracker不能绕过该决定。详见 [决策文件](DEV_FEATURE_MINING_STOP.md)、`AGENTS.md`与TODO顶部。
+
+**VERIFIED RESULT（公开源核查），非方法TESTED：** [路线图](../FMCW_EXTERNAL_REPRODUCTION_ROADMAP.md)仅含三个指定项目。Stone Soup官方组件/合成测试存在，未来锁定v1.9.1；DopplerTrack官方代码存在，需作者数据和帧号对应；UnLiDAR有两个官方局部片段，但完整可运行方法发布未建立、许可未声明，官方完整复现BLOCKED。未来补写必须标PAPER-STRUCTURE RECONSTRUCTION。[当前公开metadata/源码证据](../results/external_reproduction_roadmap/repository_verification.json)。
+
+**唯一首个任务推荐（PROPOSED）：** Stone Soup最小synthetic-clutter Bernoulli存在性复现，先官方组件测试与empty-scan Bayes gate，再明确标注本地连接的synthetic harness；不连接FMCW/DEV。当前仅路线图，无方法实现/执行、大依赖安装或数据集下载，不构成E21/E22授权。

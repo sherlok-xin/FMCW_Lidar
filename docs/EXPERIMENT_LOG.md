@@ -892,3 +892,13 @@ Decision caused by the result:
 - **kill结论：** 没有单quantity通过全部五包；`E18_OCCUPANCY_SUFFICIENT_AT_CURRENT_EVIDENCE_LEVEL_NO_E21_BACKGROUND_MODEL`。数值非冗余存在，但不是检测增益；缺支持UNKNOWN，不记0，不证明数学充分性。
 - **验证/边界：** 8synthetic tests；独立37,117nodes/148,656原cell记录、1,600pairs/320killframes/20summaries精确复核；437protected文件/18compute输入哈希不变。2个F0anchor结构量UNKNOWN、10个F<5anchor近期窗UNKNOWN；原结果/图/E18/calibration/offset/labels未改。
 - **交付：** 15CSV、5Python、2组PDF/300dpiPNG、protocol/kill/validation/manifests；数据依赖原本地NPZ，不包含bag/PCD/ROS。新审计未commit/push。
+
+
+## EXTERNAL-REPRODUCTION-ROADMAP — 2026-10-14（只读核查/计划，无新实验）
+
+- **用户授权与顺序：** 首先原样提交/推送已完成occupancy temporal audit；commit `92cf79d01bbb84eee52dde7fd22210f78067d6cd`，41文件（报告、37结果文件、3个原有append-only项目日志）。`git ls-remote`验证远端main相同SHA。随后记录STOP_DEV_FEATURE_MINING与外部路线图，未回写旧审计文件。
+- **TESTED（保存验证）：** 38个报告/结果文件与archive commit SHA-256一致；437个`protected_inputs.json`科学文件hash一致。无bag/PCD/ROS临时文件加入该commit。[发布核验收据](../results/external_reproduction_roadmap/audit_publication_receipt.json)。
+- **VERIFIED RESULT（公开源检查）：** 读取官方GitHub metadata、HEAD、完整recursive tree、releases和小源码/作者论文。三个HEAD为Stone Soup `56f711c50cb577276dc0e4d95c09998acbb15c08`、DopplerTrack `780d0e47c629e21df35c026b9de1313e6d3ee167`、UnLiDAR `2b8e7ba10c2e6883899adc88f4b6455bfd3e5bc9`。Stone Soup最新release v1.9.1 commit `a4336b920a799cfe0a77ecb05867c5deeb371c7a`；其余无GitHub release。时间/URL/源文件hash/依赖及核查环境保存于 [metadata摘要](../results/external_reproduction_roadmap/repository_verification.json)，不是runtime成功证据。
+- **命令/方法：** 只读GET `https://api.github.com/repos/{owner}/{repo}`、`commits/main`、`git/trees/{SHA}?recursive=1`、`releases`和对应pinned raw source；本地Python解析JSON/计算SHA-256。后续部分匿名API出现403 rate limit，使用已完成snapshot及相同commit源码cache；不能由此推断作者数据可用性。远端命令为 `GIT_SSH_COMMAND='ssh -o BatchMode=yes -o StrictHostKeyChecking=yes -o ConnectTimeout=10' git ls-remote git@github.com:sherlok-xin/FMCW_Lidar.git refs/heads/main`。
+- **边界：** 没有方法实现、build/test运行、依赖安装、数据集下载、数据申请表提交、作者联系或FMCW/DEV输入连接。UnLiDAR只有局部片段，完整官方复现BLOCKED；DopplerTrack作者数据/帧号对应未取得。Stone Soup empty-scan修正仅为源码检查gate，未声称运行bug。
+- **交付/决定：** [FMCW_EXTERNAL_REPRODUCTION_ROADMAP.md](../FMCW_EXTERNAL_REPRODUCTION_ROADMAP.md)；STOP_DEV_FEATURE_MINING写入独立决策、AGENTS、状态、TODO和research log。唯一首个任务为synthetic-only Stone Soup Bernoulli存在性小例，仍为PROPOSED；E18与全部冻结科学结果不变。
