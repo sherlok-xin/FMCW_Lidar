@@ -1,0 +1,47 @@
+{
+  "utc": "2026-10-13T15:22:28.663990+00:00",
+  "command": "PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python results/occupancy_temporal_structure_audit/plot_temporal.py",
+  "source_sha256": "1934efb1f1454327a34e657324e9549638dd4b8768814e32c217733569194eda",
+  "input_sha256": {
+    "protocol.json": "9e55f7dcb6237c2d874ba18012df04e9ec9749dfd850d9ef6b128cc21e940184",
+    "TEMPORAL_FEATURES_COMPLETE.json": "f18cae829db6fd767f2a21f4351c7e3dc0f4abc7080068bf68ace7d9784e5fec",
+    "interpretation_manifest.json": "5d6fcaf2aeb3f71b9f4a6e73efa7d7f6c531ca6abdf35daae69889d68842b2d0",
+    "kill_sequence_summary.csv": "efe3deb31a57b04ba3cb0d42d8dff6c808e53546919c8d85c9f937f23c20611a",
+    "frequency_bin_contrasts.csv": "f1692b6d6cf42cd1cf4bfc07d79992508571df7b9b166f55ba8c32817bb02d32",
+    "same_frame_exact_H_pairs.csv": "27656d0fa2807e33f0e0cc45501f3505bf3ff0532b82fa348487ceed3757025c"
+  },
+  "output_sha256": {
+    "temporal_support_direction.pdf": "22dbee279066cb82907b24fd649ddfdf5fddc3db473b7e4353385a0b3b694fd2",
+    "temporal_support_direction.png": "86949a7c17b11dedc915599fd594f5bff162a0e335d468203e310b7d9ff19cd1",
+    "temporal_bins_vs_exact_frequency.pdf": "5e6200878d0dbf52de22a8eeb97acb05f84605cceb2af58cf4cebf083109fc13",
+    "temporal_bins_vs_exact_frequency.png": "69b70747a45490171b7b124a3ed33b6611e1311641d8f4d188fc4941b7bbaa98"
+  },
+  "figures": {
+    "temporal_support_direction": "Frozen kill-pool per-frame median contrasts, support denominator, missing support, and low-n flags; no cross-feature magnitude colour scale",
+    "temporal_bins_vs_exact_frequency": "Fixed warm p-bin median differences versus nondegenerate same-frame/H distinct-cell paired differences against background-only winners; entire p range shown, blanks preserved"
+  },
+  "not_claimed": [
+    "classification performance",
+    "statistical significance",
+    "independent object identity",
+    "zero effect from missing support",
+    "held-out preregistration"
+  ],
+  "visual_qa": {
+    "status": "TESTED_RENDERED_PNGS_REVIEWED",
+    "utc": "2026-10-13T15:22:28.837513+00:00",
+    "reviewed": [
+      "temporal_support_direction.png",
+      "temporal_bins_vs_exact_frequency.png"
+    ],
+    "checks": [
+      "No title/legend/axis/caption clipping or overlap after wording and layout correction",
+      "Second subtitle accurately states no path rescoring or score changes",
+      "UNKNOWN denotes absent finite distinct-cell support; low-n contrasts hatched and labelled",
+      "Exact pairs retain H>=1 for recency/recent and require H>=2 for run/episodes; same-cell ties excluded",
+      "Selected DEV_SILVER limitation and lack of certified object/sample independence displayed on both figures",
+      "All five sequences, four preregistered temporal quantities, zero bin differences and missing support retained",
+      "300 dpi PNGs and vector PDFs saved"
+    ]
+  }
+}

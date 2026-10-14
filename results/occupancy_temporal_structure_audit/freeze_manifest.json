@@ -1,0 +1,30 @@
+{
+  "utc": "2026-10-13T15:04:49.863421+00:00",
+  "git_head": "cb0c2a9298c30d8eb1868f96c9dd2acf7fe030b0",
+  "git_status": "?? .local/\n?? FMCW_LITERATURE_EVIDENCE_GAP_MATRIX.md\n?? FMCW_NEXT_DATA_COLLECTION_PROTOCOL.md\n?? results/next_data_collection_protocol/\n?? results/occupancy_temporal_structure_audit/\n",
+  "python": "3.10.12",
+  "numpy": "2.2.6",
+  "command": "PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python results/occupancy_temporal_structure_audit/temporal_audit.py freeze",
+  "script_sha256": "a793c48299d90dffc1b7266e202b5b98b26906023a51b57a5fe6fdae936e8f30",
+  "protocol_sha256": "9e55f7dcb6237c2d874ba18012df04e9ec9749dfd850d9ef6b128cc21e940184",
+  "compute_inputs": {
+    "results/scene_spatiotemporal_background_audit/SCENE_FEATURES_COMPLETE.json": "c030543e77bb2a0eebc9c9519fe81d28ea1d44707851f70abd9d231edc6c92a4",
+    "results/scene_spatiotemporal_background_audit/protocol.json": "955298bee0ee6a132c7923540ed31ed1d3b3a888b9c49f597a30d8d3898b7e03",
+    "results/scene_spatiotemporal_background_audit/node_scene_features.csv": "bf7e5a80b44373c23d91a1ada4019ec884ea2aef347750819fed9233b31adddd",
+    "results/scene_spatiotemporal_background_audit/cell_history__fine_1m__100m_cross_5.npz": "57468263ce9307b8f08df7804d863fe23ac64784602a3d45bc7f340a89b1b739",
+    "results/background_motion_dp_mvp/graphs/fine_4cm_pregeometry__100m_cross_5__nodes.csv": "13662e7fa493b275db4ce30bd5bee3e710ffcad2e2b53a0907285330e30d415e",
+    "results/background_motion_dp_mvp/graphs/historical_1m_graph__100m_cross_5__nodes.csv": "424026b4a91295dee337d720deed56d66057a9aca0e9bb0b8af79d4fd508c46c",
+    "results/scene_spatiotemporal_background_audit/cell_history__fine_1m__100m_cross_10.npz": "1bbe628dd2d615d785f2a8bad77e3f6f4827b56ac198e8f561ce954e4327fd39",
+    "results/background_motion_dp_mvp/graphs/fine_4cm_pregeometry__100m_cross_10__nodes.csv": "2d0c1f31c937e85cb2c36474a8cd3005c5dad3ab6f6a2892b1f220a34afb6692",
+    "results/background_motion_dp_mvp/graphs/historical_1m_graph__100m_cross_10__nodes.csv": "202af3cfed87def102ccc9f05073cacd793f5c66a9da23ad2abcdbcbad126e1e",
+    "results/scene_spatiotemporal_background_audit/cell_history__fine_1m__200m_cross_5.npz": "133a8a4350c8c3672e205f5e42fcbfa9f24a6af4632eaa0e4e58d05e0a4da77d",
+    "results/background_motion_dp_mvp/graphs/fine_4cm_pregeometry__200m_cross_5__nodes.csv": "7cc55e16a34890e57dbf2be615083bec341922c37307cbfe3583dcfb0b5bb4f4",
+    "results/background_motion_dp_mvp/graphs/historical_1m_graph__200m_cross_5__nodes.csv": "218db0dc1586e5fddb00d86a1b532103c93202b690be0821b888101a4c999aca",
+    "results/scene_spatiotemporal_background_audit/cell_history__fine_1m__200m_cross_10.npz": "e09d987f07a04f32cc956c5d2f0333e71e6b3c4f69ba2e0b2934df3eadd26007",
+    "results/background_motion_dp_mvp/graphs/fine_4cm_pregeometry__200m_cross_10__nodes.csv": "7cb0675a257af06c9fe71d899be17a6fecba89831f2472ec1498017c3c0fc07b",
+    "results/background_motion_dp_mvp/graphs/historical_1m_graph__200m_cross_10__nodes.csv": "de5fbf414f115f30cb477df8a98ebafea00a28ae698a98f4a485259177bbbeeb",
+    "results/scene_spatiotemporal_background_audit/cell_history__fine_1m__300m_cross_10.npz": "d83fe6151554147cafa9fcbd2b43178f5e94699eb4b6931644bad28acb82d5db",
+    "results/background_motion_dp_mvp/graphs/fine_4cm_pregeometry__300m_cross_10__nodes.csv": "f86d15aeadb29b5d24926349c4c5b88d5c1e8d3b2a65f01c36fd667a1cc3cf87",
+    "results/background_motion_dp_mvp/graphs/historical_1m_graph__300m_cross_10__nodes.csv": "c90e9549f2c33b9dae5344f45e0602c91ac1f08a41d18d61007a44420ced0c81"
+  }
+}

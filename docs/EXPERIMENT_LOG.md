@@ -881,3 +881,14 @@ Decision caused by the result:
 - **验证：** 6synthetic tests；4,134,250cell records、140,854nodefeature rows、20,122原E18H/p/b、3,456暴力几何check；358protected科学文件/30compute输入/33frozen输出哈希通过。84gate内matchednodes，nearest80，其中76有历史距离、4coldstartUNKNOWN。
 - **保留实现限制：** fine004m原浓度列名10m但实际0.4m；冻结原CSV保留，独立corrected_spatial_concentration.csv给统一物理10m，主raw/距离/occupancy不受影响。
 - **交付：** 18CSV、30localcompressed cell/snapshotNPZ、5组PDF/300dpiPNG、2pagePDF和验证/provenance；没有bags/PCDs/ROS临时数据，没有提交或推送。既有结果、图、labels、calibration、offset和E18保持原字节。
+
+
+## OCCUPANCY-TEMPORAL-STRUCTURE-AUDIT — 2026-10-13（描述性，strict kill）
+
+- **TESTED / VERIFIED RESULT：** 新报告 `FMCW_OCCUPANCY_TEMPORAL_STRUCTURE_AUDIT.md`、目录 `results/occupancy_temporal_structure_audit/`。只查询已冻结 fine_1m scene occupancy events；无bag读取/重建候选/scene map/DP/路径rescore/E18或score变化。
+- **定义/顺序：** 2026-10-13T15:04:49.863UTC固定 p、bag-time recency、longest prior cell run、episodes、唯一前5帧recent fraction；cadence median约1s，实际5帧elapsed4.005–5.043s。固定width.05辅助bins，主检验sameframe exactH/F/p、different cell，F>=5和H>=1/2控制退化；最低3finite配对/包及至少2/3同方向，必须五包同方向才通过。
+- **运行：** `PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python results/occupancy_temporal_structure_audit/temporal_audit.py freeze`；同脚本`compute`，3.789s，37,117nodes（20,122fine+16,995historical）；完成receipt15:05:39.743UTC，之后15:08:41.416UTC才join。另同prefix运行`interpret_temporal.py`、`independent_temporal_validation.py`、`independent_conditioning_audit.py`、`plot_temporal.py`。Source/protocol/input/output SHA与环境记录在各manifest；Python3.10.12/NumPy2.2.6，无随机性/安装。
+- **局部现象：** 100m_cross_10 frames22–24同H/F的age difference median−7.986s、recent+.2；run+1/episodes−1仅frame23。300m只有frame10：age−9.020s/recent+.2；另外三包缺非退化不同cell同频率control共同支持。
+- **kill结论：** 没有单quantity通过全部五包；`E18_OCCUPANCY_SUFFICIENT_AT_CURRENT_EVIDENCE_LEVEL_NO_E21_BACKGROUND_MODEL`。数值非冗余存在，但不是检测增益；缺支持UNKNOWN，不记0，不证明数学充分性。
+- **验证/边界：** 8synthetic tests；独立37,117nodes/148,656原cell记录、1,600pairs/320killframes/20summaries精确复核；437protected文件/18compute输入哈希不变。2个F0anchor结构量UNKNOWN、10个F<5anchor近期窗UNKNOWN；原结果/图/E18/calibration/offset/labels未改。
+- **交付：** 15CSV、5Python、2组PDF/300dpiPNG、protocol/kill/validation/manifests；数据依赖原本地NPZ，不包含bag/PCD/ROS。新审计未commit/push。

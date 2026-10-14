@@ -1,0 +1,60 @@
+{
+  "status": "TESTED_INDEPENDENT_VALIDATION_PASS",
+  "utc": "2026-10-13T15:08:09.693979+00:00",
+  "command": "PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python results/occupancy_temporal_structure_audit/independent_temporal_validation.py",
+  "validator_sha256": "1f8fc394c5c9a87544b09aed1608efddf2b28257051fa2ea2224d37da6355e2c",
+  "synthetic_tests_run": 8,
+  "synthetic_failures": 0,
+  "synthetic_errors": 0,
+  "synthetic_tests_sha256": "61c3f2812d3d7c119478bdc1abdfb004e1cd57be2684b8e4e493ee96f4257f3c",
+  "independent_method": "complete immutable per-cell event arrays; strict-left search boundary; binary past prefix; run transitions; no incremental production-state reuse",
+  "anchor_path_outcomes_read": false,
+  "nodes_checked": 37117,
+  "cell_records_checked": 148656,
+  "per_sequence": [
+    {
+      "condition_id": "100m_cross_5",
+      "frames": 32,
+      "nodes_checked": 4525,
+      "cell_records_checked": 17994,
+      "unique_scene_cells": 1290
+    },
+    {
+      "condition_id": "100m_cross_10",
+      "frames": 46,
+      "nodes_checked": 6088,
+      "cell_records_checked": 25044,
+      "unique_scene_cells": 1310
+    },
+    {
+      "condition_id": "200m_cross_5",
+      "frames": 83,
+      "nodes_checked": 11319,
+      "cell_records_checked": 44943,
+      "unique_scene_cells": 1671
+    },
+    {
+      "condition_id": "200m_cross_10",
+      "frames": 48,
+      "nodes_checked": 6702,
+      "cell_records_checked": 26743,
+      "unique_scene_cells": 1348
+    },
+    {
+      "condition_id": "300m_cross_10",
+      "frames": 63,
+      "nodes_checked": 8483,
+      "cell_records_checked": 33932,
+      "unique_scene_cells": 1442
+    }
+  ],
+  "feature_receipt_sha256": "f18cae829db6fd767f2a21f4351c7e3dc0f4abc7080068bf68ace7d9784e5fec",
+  "feature_table_sha256": "20b2d2c5526a5ee1db2b8b949c4c0b9667612948e05a6b1733aef6a880621113",
+  "original_scene_receipt_sha256": "c030543e77bb2a0eebc9c9519fe81d28ea1d44707851f70abd9d231edc6c92a4",
+  "protected_files_checked": 437,
+  "protected_files_changed": [],
+  "compute_input_files_checked": 18,
+  "protocol_sha256": "9e55f7dcb6237c2d874ba18012df04e9ec9749dfd850d9ef6b128cc21e940184",
+  "production_script_sha256": "a793c48299d90dffc1b7266e202b5b98b26906023a51b57a5fe6fdae936e8f30",
+  "elapsed_s": 6.039538381039165
+}

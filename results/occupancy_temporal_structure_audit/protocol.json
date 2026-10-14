@@ -1,0 +1,63 @@
+{
+  "purpose": "DESCRIPTIVE_OCCUPANCY_CONDITIONAL_AUDIT_NO_E18_CHANGE_NO_E21_MODEL",
+  "sequences": [
+    "100m_cross_5",
+    "100m_cross_10",
+    "200m_cross_5",
+    "200m_cross_10",
+    "300m_cross_10"
+  ],
+  "history_source": "existing frozen fine_1m cell-history events only, exactly E18 historical input; no bags/cache rebuilding or new scene map",
+  "frequency_reference": "E18 centroid-cell H/F and p_beta11=(H+1)/(F+2); b=1-2p unchanged",
+  "quantities": [
+    "p_beta11",
+    "age_s",
+    "longest_previous_run",
+    "previous_episodes",
+    "recent_5_prior_frame_fraction"
+  ],
+  "recency": "bag_record_time[f]-time[last occupied frame <f]; UNKNOWN if never previously occupied",
+  "run": "longest previously consecutive occupied-frame run in the centroid cell, not path or physical object persistence",
+  "episodes": "previous maximal occupied-frame episodes separated by >=1 nonoccupied recorded frame",
+  "recent_window_frames": 5,
+  "recent_window": "frames f-5,...,f-1, each cell counted once per frame; fraction hits/5; no current frame",
+  "window_justification": "five preceding acquisition frames at approx1Hz give short approx5s history; timestamps/cadence only before new contrasts, no other length tested; actual bag-time span retained including0.296s intervals",
+  "cold_start": "F=0 age/run/episodes/recent all UNKNOWN; recent UNKNOWN for F<5; H=0 with F>0 has known run=episodes=0 but recency UNKNOWN, not infinitely old",
+  "primary_conditioning": "same sequence, SAME FRAME and EXACT H; hence identical F and p; no regression, classifier, score, gate or DP",
+  "auxiliary_bins": "fixed width0.05 p bins [0,.05),...,[.95,1]; F=0 explicitly COLD_PRIOR instead of observed-frequency bin",
+  "duration_controls": "same-frame exact-H contrasts; separate F>=5 complete-window restriction; fixed chronological thirds; full-path summaries explicitly exposure-confounded",
+  "populations": [
+    "all_observed_anchor_matched_fine_nodes",
+    "nearest_observed_anchor_node",
+    "fixed_silver_feasibility_witness",
+    "original_unconditional_winner",
+    "background_only_winner",
+    "joint_E18_winner",
+    "historical_persistent_clutter_reference"
+  ],
+  "joins": "reuse existing scene anchor_node_join IDs and existing fixed/selected paths ONLY after all fine+historical graph temporal features complete; no label moving/new match radius/path optimization",
+  "independent_contrast": "same centroid cell pairs recorded as deterministic ties but excluded from distinct-cell evidence; cell distinction does NOT certify independent object identity or negative class",
+  "kill_pool": "original/background_only/historical_reference cells at each observed frame with exact H, excluding anchor cell and deduplicating same control cell; per-frame median comparator equal frame weight, not path-length weight",
+  "kill_min_support": "at least3 distinct finite paired observed frames in EACH of five sequences, F>=5; recency/recent additionally H>=1; run/episodes additionally H>=2 to exclude degeneracy",
+  "kill_direction": "one individual quantity must have nonzero median contrast with SAME sign in all five, with >=2/3 paired frames having that sign in every sequence; both+and- allowed, no combinations/selection of windows/bins",
+  "kill_action": "if no individual quantity meets this fixed rule: E18 occupancy sufficient AT CURRENT EVIDENCE LEVEL; DO_NOT_PROPOSE_E21_BACKGROUND_MODEL; unsupported comparisons UNKNOWN, not proven mathematical sufficiency",
+  "numerical_zero_tolerance": {
+    "age_s": 1e-09,
+    "longest_previous_run": 1e-12,
+    "previous_episodes": 1e-12,
+    "recent_5_prior_frame_fraction": 1e-12
+  },
+  "uncertainty": "dependent selected DEV_SILVER; no p-values/AUC/precision/accuracy/operational or scene-generalization claims",
+  "prior_knowledge": "historical scene/E18/anchor reports known; this is not blind held-out preregistration; new feature/window/bin/kill rules fixed before this task temporal joined outcomes",
+  "randomness": "none",
+  "forbidden": [
+    "new_score",
+    "classifier",
+    "threshold_tuning",
+    "regression",
+    "feature_combination_search",
+    "DP",
+    "path_rescoring",
+    "future_cell_evidence"
+  ]
+}

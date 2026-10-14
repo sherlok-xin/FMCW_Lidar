@@ -1,0 +1,13 @@
+test_empty_frame_breaks_run_and_bag_reset_discards_history (__main__.SyntheticTemporalTests) ... ok
+test_f0_prior_not_observed_history (__main__.SyntheticTemporalTests) ... ok
+test_h0_recency_unknown_counts_degenerate (__main__.SyntheticTemporalTests) ... ok
+test_h1_run_episode_deterministic_recency_not (__main__.SyntheticTemporalTests) ... ok
+test_manual_counts_irregular_time_and_recent_window (__main__.SyntheticTemporalTests) ... ok
+test_prefix_current_future_hits_cannot_change_query (__main__.SyntheticTemporalTests) ... ok
+test_same_frequency_distinct_run_episode_structure_possible (__main__.SyntheticTemporalTests) ... ok
+test_window_is_exactly_five_past_frames (__main__.SyntheticTemporalTests) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.018s
+
+OK

@@ -1,0 +1,14 @@
+{
+  "utc": "2026-10-13T15:05:39.743001+00:00",
+  "command": "PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python results/occupancy_temporal_structure_audit/temporal_audit.py compute",
+  "elapsed_s": 3.789287637977395,
+  "script_sha256": "a793c48299d90dffc1b7266e202b5b98b26906023a51b57a5fe6fdae936e8f30",
+  "protocol_sha256": "9e55f7dcb6237c2d874ba18012df04e9ec9749dfd850d9ef6b128cc21e940184",
+  "original_scene_receipt_sha256": "c030543e77bb2a0eebc9c9519fe81d28ea1d44707851f70abd9d231edc6c92a4",
+  "new_anchor_or_selected_path_used": false,
+  "rows": 37117,
+  "outputs": {
+    "all_node_temporal_features.csv": "20b2d2c5526a5ee1db2b8b949c4c0b9667612948e05a6b1733aef6a880621113",
+    "feature_identity.csv": "0bbbc59667373578c07b35bfdcb1d960cd14ab21c1ec7b90c7008d080da47d9f"
+  }
+}

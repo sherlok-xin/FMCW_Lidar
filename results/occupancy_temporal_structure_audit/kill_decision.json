@@ -1,0 +1,61 @@
+{
+  "utc": "2026-10-13T15:08:42.166497+00:00",
+  "status": "E18_OCCUPANCY_SUFFICIENT_AT_CURRENT_EVIDENCE_LEVEL_NO_E21_BACKGROUND_MODEL",
+  "criteria": {
+    "kill_pool": "original/background_only/historical_reference cells at each observed frame with exact H, excluding anchor cell and deduplicating same control cell; per-frame median comparator equal frame weight, not path-length weight",
+    "kill_min_support": "at least3 distinct finite paired observed frames in EACH of five sequences, F>=5; recency/recent additionally H>=1; run/episodes additionally H>=2 to exclude degeneracy",
+    "kill_direction": "one individual quantity must have nonzero median contrast with SAME sign in all five, with >=2/3 paired frames having that sign in every sequence; both+and- allowed, no combinations/selection of windows/bins",
+    "kill_action": "if no individual quantity meets this fixed rule: E18 occupancy sufficient AT CURRENT EVIDENCE LEVEL; DO_NOT_PROPOSE_E21_BACKGROUND_MODEL; unsupported comparisons UNKNOWN, not proven mathematical sufficiency"
+  },
+  "features": [
+    {
+      "feature": "age_s",
+      "passes_all_five": false,
+      "same_nonzero_direction_all_five": false,
+      "sequence_directions": [
+        0,
+        -1,
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "feature": "longest_previous_run",
+      "passes_all_five": false,
+      "same_nonzero_direction_all_five": false,
+      "sequence_directions": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "feature": "previous_episodes",
+      "passes_all_five": false,
+      "same_nonzero_direction_all_five": false,
+      "sequence_directions": [
+        0,
+        -1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "feature": "recent_5_prior_frame_fraction",
+      "passes_all_five": false,
+      "same_nonzero_direction_all_five": false,
+      "sequence_directions": [
+        0,
+        1,
+        0,
+        0,
+        1
+      ]
+    }
+  ],
+  "interpretation": "insufficient support is UNKNOWN, not zero effect; decision is evidence-level adequacy, not mathematical sufficiency; no E21 implementation"
+}

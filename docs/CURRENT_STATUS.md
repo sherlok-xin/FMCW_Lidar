@@ -336,3 +336,10 @@ Ranked by impact:
 **TESTED / descriptive only：** 已保存 [场景审计](../FMCW_SCENE_SPATIOTEMPORAL_BACKGROUND_AUDIT.md) 和 [新结果目录](../results/scene_spatiotemporal_background_audit/README.md)。五包272帧的raw/fine因果历史和20,122fine-node特征先冻结/计算，之后才join80anchors/旧路径。原E18 H/p/b全量复现，358protected科学输入未变。
 
 1m raw scene高度persistent；distance含与occupancy不完全相同的几何信息，但100m_cross_10在raw下的competitor反例及raw/fine/cutoff翻转阻止把它升级score。4cm低revisit不等于dynamic。保持E18、标签、标定、offset、历史图/结果；没有新detector或threshold、未commit/push。下一证据需求仍是独立presence/identity、occupied negatives、exposure与heldout场景，而非在此DEV集调参。
+
+
+## 2026-10-13 — Occupancy Temporal-Structure Audit completed; no E21
+
+**TESTED / descriptive：** [时间结构审计](../FMCW_OCCUPANCY_TEMPORAL_STRUCTURE_AUDIT.md) 和 [新结果目录](../results/occupancy_temporal_structure_audit/README.md) 已完成。原fine_1m cell history查询37,117nodes，E18 p/原时间字段精确复现；同frame/H配对和strict kill独立复核通过，437protected文件未变。
+
+局部100m3帧与300m1帧有recency/recent差异，但没有跨五包稳定共同支持。**当前证据层面E18occupancy足够，不提出E21backgroundmodel。** 不代表时间排列数学冗余或零效应；UNKNOWN/cold-start/辅助bin反向保留。未改E18、score、graphs、labels/calibration/offset/历史结果，未跑DP/路径rescore；新审计未commit/push。

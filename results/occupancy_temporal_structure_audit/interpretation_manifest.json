@@ -1,0 +1,16 @@
+{
+  "utc_started": "2026-10-13T15:08:41.415803+00:00",
+  "utc_completed": "2026-10-13T15:08:43.089052+00:00",
+  "feature_receipt_utc": "2026-10-13T15:05:39.743001+00:00",
+  "command": "PYTHONDONTWRITEBYTECODE=1 fmcw/bin/python results/occupancy_temporal_structure_audit/interpret_temporal.py",
+  "source_sha256": "810e2da89cfcd08fce8b851d6eb3ae6177627bd8016da2ff04bfd1ba1c8da23e",
+  "join_inputs": {
+    "results/scene_spatiotemporal_background_audit/anchor_node_join.csv": "df62f5c065d09827f9bbf9626d6dd0f66216122f83aef19854cbf527b53e9646",
+    "results/e18_mechanism_generalization_audit/selected_paths.csv": "90abf32b7357c18f87f8521ec95db985557dfd5132e5af23c69e9d00031253ea",
+    "results/background_motion_dp_mvp/fixed_reference_paths.csv": "93e8482369cf0e2fe227dc5406aed127407a7e23c10a3b8d22375bd76ae0ac0e"
+  },
+  "features_sha256": "20b2d2c5526a5ee1db2b8b949c4c0b9667612948e05a6b1733aef6a880621113",
+  "no_path_search_or_rescore": true,
+  "kill_status": "E18_OCCUPANCY_SUFFICIENT_AT_CURRENT_EVIDENCE_LEVEL_NO_E21_BACKGROUND_MODEL",
+  "elapsed_s": 1.7074383230064996
+}

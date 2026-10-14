@@ -470,3 +470,12 @@ The preparatory entry above records the earlier pause; the user subsequently app
 **非冗余，非检测效用：** rawscene距离与既有E18occupancy rho−.812至−.830，但同帧同H/F仍有距离差异；这证明非代数重复而非类别独立信息。既有300m BGonly存在低occupancy近结构连续节点片段，但大反向/步长和缺identity证据阻止把连线认证为一个coherent物体。
 
 **决定：** 维持描述性/hypothesis-generation边界；独立身份/targetabsence/occupiedclutter、scanexposure、moving-hover和不同scene/date heldout证据到位前，不改E18、不加feature、不选score或gate。80anchors为selectedDEV_SILVER，地图在feature完成后才join；4coldstartdistanceUNKNOWN与100m反例保留。
+
+
+## 2026-10-13 — Occupancy temporal structure：局部非冗余，跨五包证据不足
+
+**VERIFIED RESULT：** 固定同frame/H/F下，recency/run/episodes/前5帧recent仍有数值展开，不是E18 background term1−2p的确定函数；H0/H1时run/episodes退化。对既有selectedanchor与competitor的主比较，100m_cross_10只有3个非退化帧、300m只有1帧，其余三包没有不同cell共同支持。窄frequency bins的方向有混杂和反向，不能替代同帧exactH主检验。
+
+**SPECULATIVE局部解释：** 100m frame22–24与300m frame10的anchor-associated过去占用更近期，可能反映局部时间排列；同表面扫描、不同对象混occupancy、DEV选择或路径co-association也兼容。单cell history不认证同一对象，4个局部帧不能解释jointE18完整路径胜出；未rescore或干预。
+
+**决定：strict kill触发。** 当前证据层面E18occupancy足够，不提出E21backgroundmodel、新score或feature组合。该表述是研究证据门槛而非数学充分性证明，也不把共同支持缺失当零效应。需要独立identity/presence、occupied动态clutter/negative、moving-hover/revisit和不同scene/date heldout数据，在同H/F有非退化共同支持情况下证伪；保持唯一5priorframes定义，不用当前silver选择窗口/阈值。

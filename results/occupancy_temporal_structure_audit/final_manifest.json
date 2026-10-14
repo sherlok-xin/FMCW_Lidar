@@ -1,0 +1,87 @@
+{
+  "status": "TESTED_DESCRIPTIVE_KILL_TRIGGERED_NO_E21",
+  "utc": "2026-10-13T15:24:15.997214+00:00",
+  "git_parent": "cb0c2a9298c30d8eb1868f96c9dd2acf7fe030b0",
+  "report_sha256": "471469a6a82958449310b4af6d4919ac26e7086af1f1d7c9841f207f5dad62d3",
+  "files_sha256": {
+    "FROZEN": "99ca633cba176e3f617b873bde0497523495333bfd15e8248f7b5a342d039d70",
+    "H_stratum_support.csv": "c202f2104efead96c8544925b419d2b083750b34b76791ab944156f189b95a6a",
+    "README.md": "d1f705ce1f640efe2e470ec2a2663c6aba2bb4079c08fba126d3e90efd53fdb3",
+    "TEMPORAL_FEATURES_COMPLETE.json": "f18cae829db6fd767f2a21f4351c7e3dc0f4abc7080068bf68ace7d9784e5fec",
+    "acquisition_cadence.csv": "19012d286323430ea3b6a8ea41d46d79094b19fa1cbd3eb81fef7e4c91dae91d",
+    "all_fine_same_frame_H_structure_spread.csv": "0771e0ef2c13c27d6f0044a65597a9feef19849c96e42f4741d61d928ac4f1d1",
+    "all_node_temporal_features.csv": "20b2d2c5526a5ee1db2b8b949c4c0b9667612948e05a6b1733aef6a880621113",
+    "exact_frequency_contrast_summary.csv": "a7d371897c73b58a7c8e0dbb8df3cb710c03b9e6e88bfce8aadf84dd7bda691c",
+    "feature_identity.csv": "0bbbc59667373578c07b35bfdcb1d960cd14ab21c1ec7b90c7008d080da47d9f",
+    "figure_manifest.json": "5711bfc884bbb6af66adf89b96559b0244849d231fee041e1d478aecb6deb414",
+    "freeze_manifest.json": "5516b28c0e6d7144018eb052476392f74192aae53d10f8de4e3fa27dff6d374a",
+    "frequency_bin_contrasts.csv": "f1692b6d6cf42cd1cf4bfc07d79992508571df7b9b166f55ba8c32817bb02d32",
+    "frequency_bin_distributions.csv": "b0817417d10cdbce3a5abd64124d3dd229dd38cb3ad8e33895ea8aa54527a12e",
+    "frequency_bin_support.csv": "e63869eb14e7a1c90406f6eb2facfcb1332cc099d3fd1204f233cf05fb0f03a0",
+    "global_reference_associations.csv": "be669f065bc32f690c472c82e5398fb3a3cecdee54f192bea8312175511cfb2e",
+    "independent_conditioning_audit.json": "355dfd26bc4b66e43399060e51bfaec66fe1cd6600f0013ee2bf5ee969efcd3e",
+    "independent_conditioning_audit.py": "af2a3653441f36fed023c5c38e559885f849c5bcfd708ff65c67819dde4b0ea9",
+    "independent_temporal_validation.py": "1f8fc394c5c9a87544b09aed1608efddf2b28257051fa2ea2224d37da6355e2c",
+    "interpret_temporal.py": "810e2da89cfcd08fce8b851d6eb3ae6177627bd8016da2ff04bfd1ba1c8da23e",
+    "interpretation_manifest.json": "5d6fcaf2aeb3f71b9f4a6e73efa7d7f6c531ca6abdf35daae69889d68842b2d0",
+    "kill_decision.json": "b2f2fa2fe1bad6221862e20384dd0fb310b86e077b7c4eeaa0af9737607fed25",
+    "kill_frame_contrasts.csv": "7b90d6a0878af71652fe29310164fb9045de37096f1921485cf02e3e2b9f4068",
+    "kill_sequence_summary.csv": "efe3deb31a57b04ba3cb0d42d8dff6c808e53546919c8d85c9f937f23c20611a",
+    "plot_temporal.py": "1934efb1f1454327a34e657324e9549638dd4b8768814e32c217733569194eda",
+    "population_exposure.csv": "ae1af08a441fde9066aebd9c6d9f9d30571d855994323c9ce96072ca0b0dd371",
+    "population_temporal_features.csv": "2f972aa18f8ac6a13c2fa19c0643b70bd337c118c69099f0d511f1334202d5e7",
+    "protected_inputs.json": "9dfd9873f39197842130f2b3e856a349405fe4a3a80030eb30701dbaf78122e9",
+    "protocol.json": "9e55f7dcb6237c2d874ba18012df04e9ec9749dfd850d9ef6b128cc21e940184",
+    "same_frame_exact_H_pairs.csv": "27656d0fa2807e33f0e0cc45501f3505bf3ff0532b82fa348487ceed3757025c",
+    "temporal_audit.py": "a793c48299d90dffc1b7266e202b5b98b26906023a51b57a5fe6fdae936e8f30",
+    "temporal_bins_vs_exact_frequency.pdf": "5e6200878d0dbf52de22a8eeb97acb05f84605cceb2af58cf4cebf083109fc13",
+    "temporal_bins_vs_exact_frequency.png": "69b70747a45490171b7b124a3ed33b6611e1311641d8f4d188fc4941b7bbaa98",
+    "temporal_support_direction.pdf": "22dbee279066cb82907b24fd649ddfdf5fddc3db473b7e4353385a0b3b694fd2",
+    "temporal_support_direction.png": "86949a7c17b11dedc915599fd594f5bff162a0e335d468203e310b7d9ff19cd1",
+    "tests.txt": "61c3f2812d3d7c119478bdc1abdfb004e1cd57be2684b8e4e493ee96f4257f3c",
+    "validation.json": "905e75609c5c739f8df8ab0421146b8d77c54a917f2acb70025d694fc25924c9"
+  },
+  "local_bytes": 14954121,
+  "csv_files": 15,
+  "python_scripts_parsed_compiled": [
+    "plot_temporal.py",
+    "independent_conditioning_audit.py",
+    "independent_temporal_validation.py",
+    "temporal_audit.py",
+    "interpret_temporal.py"
+  ],
+  "protected_files_unchanged": 437,
+  "compute_inputs_unchanged": 18,
+  "original_feature_outputs_unchanged": true,
+  "docs_append_only": {
+    "docs/CURRENT_STATUS.md": {
+      "original_sha256": "a3854f7588570c5fa1dc5e26e8a20c568be0a708dfdb4f3a44b89f4dec6b4ba9",
+      "current_sha256": "204b066ab705c1916853ea43c8ee0f6bb08ba1b397543c91f1e0dfd0d9a060d2",
+      "appended_bytes": 797
+    },
+    "docs/EXPERIMENT_LOG.md": {
+      "original_sha256": "9f9967e9f39765139ce7fdcf1ed20dd16be298d3b3f39ac24ca636329a412147",
+      "current_sha256": "425ad8d3a1de09f36c4b6dc9c1574a961d5ee89aed799ac924c8cc84c0df2865",
+      "appended_bytes": 2224
+    },
+    "docs/RESEARCH_LOG.md": {
+      "original_sha256": "ac6d8a062f302b5d2287f0773dbe6e639bd9014fac4e16593d634af8c738d895",
+      "current_sha256": "39a5356e2f47a8da6b05f43288f3a15e8f76da0e1e8ad45958effe26e2279e31",
+      "appended_bytes": 1330
+    }
+  },
+  "no_bags_new_maps_DP_rescore_or_new_score": true,
+  "no_commit_push": true,
+  "kill_status": "E18_OCCUPANCY_SUFFICIENT_AT_CURRENT_EVIDENCE_LEVEL_NO_E21_BACKGROUND_MODEL",
+  "independent_temporal_validation": "TESTED_INDEPENDENT_VALIDATION_PASS",
+  "independent_conditioning_validation": "TESTED_INDEPENDENT_CONDITIONING_AUDIT_PASS",
+  "limitations": [
+    "prior outcomes known, not blind heldout",
+    "F0 UNKNOWN for structure; recent UNKNOWN F<5; never-hit recency UNKNOWN",
+    "samecell deterministic ties excluded from incremental evidence; differentcell not physical/sample independence",
+    "five-sequence common support lacking; adequacy decision not mathematical sufficiency",
+    "no certified negatives or operational performance"
+  ],
+  "local_links_verified": 46,
+  "missing_links": []
+}

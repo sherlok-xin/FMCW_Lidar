@@ -1,0 +1,6 @@
+condition_id,frames,fine_plus_historical_nodes,original_cell_records,existing_h_p_and_temporal_fields_exact
+100m_cross_5,32,4525,17994,True
+100m_cross_10,46,6088,25044,True
+200m_cross_5,83,11319,44943,True
+200m_cross_10,48,6702,26743,True
+300m_cross_10,63,8483,33932,True
