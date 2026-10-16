@@ -1,0 +1,50 @@
+{
+  "source_and_frozen_artifacts_unchanged": true,
+  "original_pending_block_only_no_filter_or_full_tracker_run": true,
+  "all_52_end_scan_pending_tables_exact": true,
+  "all_local_and_remaining_DBSCAN_counts_match_frozen": true,
+  "all_promoted_birth_positions_match_frozen": true,
+  "promotions": [
+    {
+      "track_id": 15,
+      "pending_id": 9,
+      "promotion_scan": 15,
+      "stored_observations": 6,
+      "distinct_scan_indices": 3,
+      "all_scan_indices_json": "[13, 14, 14, 14, 15, 15]",
+      "last6_scan_indices_json": "[13, 14, 14, 14, 15, 15]",
+      "last6_distinct_scans": 3,
+      "promoted_without_6_distinct_total_frames": true,
+      "repeated_same_scan_observations": 3,
+      "verified_against_frozen_pending_and_birth_logs": true
+    },
+    {
+      "track_id": 16,
+      "pending_id": 6,
+      "promotion_scan": 47,
+      "stored_observations": 50,
+      "distinct_scan_indices": 27,
+      "all_scan_indices_json": "[12, 13, 13, 17, 17, 17, 17, 17, 19, 19, 20, 21, 21, 22, 23, 24, 24, 24, 25, 26, 27, 27, 28, 28, 29, 29, 29, 31, 32, 32, 33, 34, 34, 35, 35, 37, 37, 39, 40, 41, 43, 43, 44, 44, 44, 45, 45, 45, 47, 47]",
+      "last6_scan_indices_json": "[44, 45, 45, 45, 47, 47]",
+      "last6_distinct_scans": 3,
+      "promoted_without_6_distinct_total_frames": false,
+      "repeated_same_scan_observations": 23,
+      "verified_against_frozen_pending_and_birth_logs": true
+    },
+    {
+      "track_id": 17,
+      "pending_id": 18,
+      "promotion_scan": 47,
+      "stored_observations": 7,
+      "distinct_scan_indices": 4,
+      "all_scan_indices_json": "[44, 44, 45, 46, 46, 47, 47]",
+      "last6_scan_indices_json": "[44, 45, 46, 46, 47, 47]",
+      "last6_distinct_scans": 4,
+      "promoted_without_6_distinct_total_frames": true,
+      "repeated_same_scan_observations": 3,
+      "verified_against_frozen_pending_and_birth_logs": true
+    }
+  ],
+  "duplicate_reuse_events": 4,
+  "lifecycle_ids": 18
+}

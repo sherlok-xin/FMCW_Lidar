@@ -1,0 +1,22 @@
+{
+  "source_and_frozen_inputs_sha256_unchanged": true,
+  "all18_ids_in_all_tables": true,
+  "47_actual_RViz_captures_all18_ids": true,
+  "five_zero_postupdate_observed_tracks_birth_seed_only_not_prediction_objects": true,
+  "lifecycle_states_78_observed_106_predicted_including_terminals": true,
+  "pending_distinct_frames": [
+    3,
+    27,
+    4
+  ],
+  "all_local_links_resolve": true,
+  "no_source_PCD_bags_or_temporary_ROS_bags_in_archive": true,
+  "no_algorithmic_modification_or_parameter_tuning": true,
+  "no_commit_or_push": true,
+  "manual_classes": {
+    "DUPLICATE_OR_FRAGMENT": 3,
+    "UAV_OPERATOR_CONFIRMED": 1,
+    "UNKNOWN": 10,
+    "VEGETATION_ASSOCIATED": 4
+  }
+}

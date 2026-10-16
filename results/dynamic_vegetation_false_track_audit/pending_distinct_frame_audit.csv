@@ -1,0 +1,4 @@
+track_id,pending_id,promotion_scan,stored_observations,distinct_scan_indices,all_scan_indices_json,last6_scan_indices_json,last6_distinct_scans,promoted_without_6_distinct_total_frames,repeated_same_scan_observations,verified_against_frozen_pending_and_birth_logs
+15,9,15,6,3,"[13, 14, 14, 14, 15, 15]","[13, 14, 14, 14, 15, 15]",3,True,3,True
+16,6,47,50,27,"[12, 13, 13, 17, 17, 17, 17, 17, 19, 19, 20, 21, 21, 22, 23, 24, 24, 24, 25, 26, 27, 27, 28, 28, 29, 29, 29, 31, 32, 32, 33, 34, 34, 35, 35, 37, 37, 39, 40, 41, 43, 43, 44, 44, 44, 45, 45, 45, 47, 47]","[44, 45, 45, 45, 47, 47]",3,False,23,True
+17,18,47,7,4,"[44, 44, 45, 46, 46, 47, 47]","[44, 45, 46, 46, 47, 47]",4,True,3,True

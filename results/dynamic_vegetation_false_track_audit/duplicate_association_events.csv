@@ -1,0 +1,5 @@
+frame_index,track_id_a,track_id_b,shared_refined_point_count,same_point_set,point_indices_json
+10,2,4,5,True,"[15, 16, 17, 18, 19]"
+11,2,4,3,True,"[28, 29, 30]"
+12,2,4,2,True,"[14, 15]"
+13,2,4,1,True,[19]

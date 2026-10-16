@@ -1,0 +1,19 @@
+track_id,visual_class,confidence,representative_frames,scene_location_description,reason,identity_basis,independent_ground_truth
+0,UNKNOWN,LOW,9 birth seed,"x415,y-36,z14附近稀疏/杆状及冠层边缘场景",仅第9帧真实seed单点；之后均预测。无法区分植被、杆状结构或离群返回。,ASSISTANT_RVIZ_CONTEXT_REVIEW,False
+1,UAV_OPERATOR_CONFIRMED,OPERATOR_REPORT,"9,30,60; operator inspected trajectory",中央上方开放空域，约x220，左右往返,用户明确逐轨迹指认为实际UAV；身份来源OPERATOR_VISUAL_IDENTITY，不是独立GT。,OPERATOR_VISUAL_IDENTITY,False
+2,VEGETATION_ASSOCIATED,MEDIUM,"9,10,11,12,13",中央场景树冠/枝状返回带附近,实际关联点在冠层及其邻近；多帧位置切换不能解释为同一叶片的真实运动。,ASSISTANT_RVIZ_CONTEXT_REVIEW,False
+3,VEGETATION_ASSOCIATED,LOW,"9,10,11,12,13",中央树列上缘及邻近空间,初始和多帧关联邻近冠层，但部分点离开密集表面；仅空间关联，不能认证叶片或单个物体。,ASSISTANT_RVIZ_CONTEXT_REVIEW,False
+4,DUPLICATE_OR_FRAGMENT,HIGH_FOR_REUSE,"9,10,11,12,13",与ID2相同冠层邻近场景,第10–13帧与ID2使用完全相同的实际refined点集；这是关联重复，不是两个独立物体证据。,FROZEN_POINT_MEMBERSHIP_REUSE_PLUS_RVIZ,False
+5,UNKNOWN,LOW,"9 seed;12,13 observed","x330,y-32,z10附近细竖向结构",两次实际关联仅相距约0.44m；背景可能是枝干或杆，不能确定植被。,ASSISTANT_RVIZ_CONTEXT_REVIEW,False
+6,DUPLICATE_OR_FRAGMENT,HIGH_FOR_REUSE,9 seed and observed,远端x446至471附近高处细竖向结构,第9帧实际关联点等于ID8的真实birth seed；不以之后预测位置判断物体身份。,FROZEN_POINT_MEMBERSHIP_REUSE_PLUS_RVIZ,False
+7,UNKNOWN,LOW,"9 seed;11,12 observed",远端x470至450附近高位稀疏结构,只有两次observed关联，邻近高处竖向细结构；不足区分枝叶、杆或离群点。,ASSISTANT_RVIZ_CONTEXT_REVIEW,False
+8,UNKNOWN,LOW,9 birth seed,"x471,y19,z48附近高处竖向细结构",只有真实birth seed；post-update从未OBSERVED，不能用预测延续认证植被或物体。,ASSISTANT_RVIZ_CONTEXT_REVIEW,False
+9,UNKNOWN,LOW,9 seed and observed,"近端x102,y25,z10附近平坦/低密集场景边缘",仅同一扫描seed和关联；地形/结构/植被身份不清，不能解释为长时运动。,ASSISTANT_RVIZ_CONTEXT_REVIEW,False
+10,UNKNOWN,LOW,9 birth seed,"近端x124,y-24,z10附近细竖向结构",单点seed邻近杆状/枝状返回，之后全预测；无足够物体身份依据。,ASSISTANT_RVIZ_CONTEXT_REVIEW,False
+11,VEGETATION_ASSOCIATED,MEDIUM,9 seed;13 observed,第13帧中央冠层/枝状表面附近,唯一后续实际关联落在冠层邻近；seed位置不同，不能当成同一片植被的连续物理轨迹。,ASSISTANT_RVIZ_CONTEXT_REVIEW,False
+12,UNKNOWN,LOW,9 birth seed,"x378,y-38,z15附近稀疏与细竖向场景",单点seed；之后无OBSERVED，不能将整条预测线称为植被运动。,ASSISTANT_RVIZ_CONTEXT_REVIEW,False
+13,UNKNOWN,LOW,9 birth seed,"x472,y17,z20附近竖向结构",只有seed，结构性质不清；没有后续观测支持。,ASSISTANT_RVIZ_CONTEXT_REVIEW,False
+14,DUPLICATE_OR_FRAGMENT,HIGH_FOR_REUSE,9 seed and observed,远端细竖向结构，seed与关联高度不同,第9帧实际关联点等于ID6的真实birth seed；同一扫描跨点/跨高度换配不能解释为真实物体位移。,FROZEN_POINT_MEMBERSHIP_REUSE_PLUS_RVIZ,False
+15,UNKNOWN,LOW,15 pending birth;19 observed,"远端x490,z10附近稀疏/细竖向结构",两次真实支持，中间有缺测；不能确认枝叶、其它结构或离群返回。,ASSISTANT_RVIZ_CONTEXT_REVIEW,False
+16,UNKNOWN,LOW,"47 pending birth;48,49,53 observed",x308至386附近多个稀疏/竖向及冠层邻近区域,实际关联位置跳变大，空间来源混杂；不把大跨度当成一个物体的真实运动，也不强行判植被。,ASSISTANT_RVIZ_CONTEXT_REVIEW,False
+17,VEGETATION_ASSOCIATED,MEDIUM,47 pending birth,"x264,y-41,z11附近圆团状冠层返回",晋升当帧支持点邻近冠层；没有后续OBSERVED。仅空间植被关联，叶片运动未独立确认。,ASSISTANT_RVIZ_CONTEXT_REVIEW,False

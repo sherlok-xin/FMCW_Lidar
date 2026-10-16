@@ -1,0 +1,12 @@
+{
+ "scope": "Read-only frozen historical output forensics; no filter/full tracker rerun, no score or parameter change",
+ "sequence": "81-pm-cross-x10_2025-11-19-15-57-13_filtered_data",
+ "population": "All historical IDs0 through17; no selection by desired result",
+ "identity": {"ID1": "OPERATOR_VISUAL_IDENTITY from user RViz observation; not independent GT", "non_ID1": "manual RViz visual association only, UNKNOWN if unresolved"},
+ "states": "Primary metrics use frozen OBSERVED association and frozen terminal states; predictions counted separately; initial single-scan birth seeds recorded separately and never double-counted as associations",
+ "spatial_metrics": "Observed states only; all-state extents separately to expose prediction extrapolation",
+ "long_observation_gap": "scan-index difference >1 between successive OBSERVED associations, i.e. at least one missing scan; all gap sizes reported, no optimized cutoff",
+ "motion_metrics": "XY endpoint displacement between successive observations, including gaps; not calibrated speed or certified physical path",
+ "birth_and_pending": "Reconstruct membership of frozen selected clusters using original fixed DBSCAN eps2/min1 and30m query; preserve frozen choices. Audit original pending block verbatim with scan metadata attached. Compare all post-scan pending rows, DBSCAN counts and births exactly. No filter/full tracker execution",
+ "visual_protocol": "All IDs: birth seed and all non-ID1 OBSERVED states, initial/middle/final ID1 views plus its known trajectory; 3D context, no predicted-only locations used to label objects; no photomask/no GNSS/no silver"
+}
