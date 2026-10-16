@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/home/xin/FMCW_LIDAR/external_reproductions/stonesoup_bernoulli_v191/check_empty_scan.py", line 149, in <module>
+    sys.exit(main())
+  File "/home/xin/FMCW_LIDAR/external_reproductions/stonesoup_bernoulli_v191/check_empty_scan.py", line 71, in main
+    prior = BernoulliParticleState(
+  File "/home/xin/FMCW_LIDAR/external_reproductions/stonesoup_bernoulli_v191/.venv/lib/python3.10/site-packages/stonesoup/types/state.py", line 963, in __init__
+    super().__init__(*args, **kwargs)
+  File "/home/xin/FMCW_LIDAR/external_reproductions/stonesoup_bernoulli_v191/.venv/lib/python3.10/site-packages/stonesoup/types/state.py", line 700, in __init__
+    super().__init__(*args, **kwargs)
+  File "/home/xin/FMCW_LIDAR/external_reproductions/stonesoup_bernoulli_v191/.venv/lib/python3.10/site-packages/stonesoup/types/state.py", line 31, in __init__
+    state_vector = StateVector(state_vector)
+  File "/home/xin/FMCW_LIDAR/external_reproductions/stonesoup_bernoulli_v191/.venv/lib/python3.10/site-packages/stonesoup/types/array.py", line 93, in __new__
+    raise ValueError(
+ValueError: state vector shape should be Nx1 dimensions: got (2, 9)

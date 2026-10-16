@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-16",
+  "activity": "READ_ONLY_SOURCE_HISTORY_REPORT_AUDIT_NO_NEW_EXPERIMENT",
+  "prior_tracked_files_checked": 1312,
+  "prior_tracked_scientific_and_source_bytes_unchanged": 1308,
+  "only_changed_existing_files": [
+    "docs/CURRENT_STATUS.md",
+    "docs/EXPERIMENT_LOG.md",
+    "docs/RESEARCH_LOG.md",
+    "docs/TODO.md"
+  ],
+  "existing_four_docs_prior_bytes_preserved_as_prefix": true,
+  "local_markdown_links_checked": true,
+  "csv_rows": {
+    "pipeline_provenance.csv": 27,
+    "old_vs_current_preprocessing.csv": 14,
+    "conclusion_reassessment.csv": 19,
+    "misunderstanding_ledger.csv": 10
+  },
+  "group_brief_slides": 8,
+  "existing_evaluation_csv_crosscheck": {
+    "frames": 272,
+    "anchors": 80,
+    "original_hits": 56,
+    "joint_hits": 79
+  },
+  "historical_full_chain": "BLOCKED",
+  "historical_reproduction": "NOT_RUN",
+  "new_bags_read": false,
+  "new_algorithms_or_thresholds": false,
+  "committed": false,
+  "pushed": false,
+  "head": "9461d06f227746bf40b12b43be28625fa88ebb88"
+}

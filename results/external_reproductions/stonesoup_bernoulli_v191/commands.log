@@ -1,0 +1,31 @@
+# Actual execution sequence; cwd=/home/xin/FMCW_LIDAR unless stated.
+# No git commit/push was performed.
+git clone --depth 1 --branch v1.9.1 --single-branch https://github.com/dstl/Stone-Soup.git external_reproductions/stonesoup_bernoulli_v191/upstream
+git -C external_reproductions/stonesoup_bernoulli_v191/upstream rev-parse HEAD refs/tags/v1.9.1 'refs/tags/v1.9.1^{commit}'
+python3 -m venv external_reproductions/stonesoup_bernoulli_v191/.venv
+# FAILED: ensurepip unavailable; venv_creation.log preserved. No apt/sudo.
+virtualenv --version
+virtualenv --clear --no-download --python /usr/bin/python3 external_reproductions/stonesoup_bernoulli_v191/.venv
+# cwd=/home/xin/FMCW_LIDAR/external_reproductions/stonesoup_bernoulli_v191
+.venv/bin/python -m pip install ./upstream pytest
+# INTERRUPTED due to sustained low download throughput. install.log preserved.
+.venv/bin/python -m pip install --index-url https://pypi.tuna.tsinghua.edu.cn/simple ./upstream pytest
+# SUCCEEDED; install_mirror.log preserved.
+# cwd=/home/xin/FMCW_LIDAR
+PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=191 MPLBACKEND=Agg MPLCONFIGDIR=/home/xin/FMCW_LIDAR/external_reproductions/stonesoup_bernoulli_v191/.mplconfig external_reproductions/stonesoup_bernoulli_v191/.venv/bin/python external_reproductions/stonesoup_bernoulli_v191/run_official_tests.py
+external_reproductions/stonesoup_bernoulli_v191/.venv/bin/python -m pip check
+external_reproductions/stonesoup_bernoulli_v191/.venv/bin/python -m pip freeze --all
+# Protocol written and SHA-256 receipt saved BEFORE scalar execution.
+PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=191 external_reproductions/stonesoup_bernoulli_v191/.venv/bin/python external_reproductions/stonesoup_bernoulli_v191/check_empty_scan.py
+# Attempt01 exit1: local StateVectors container missing, before predictor/updater execution.
+# Traceback, scalar reference and original helper preserved; only container corrected.
+PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=191 external_reproductions/stonesoup_bernoulli_v191/.venv/bin/python external_reproductions/stonesoup_bernoulli_v191/check_empty_scan.py
+# Attempt02 exit2: STOPPED_AT_EMPTY_SCAN_SEMANTIC_GATE, not an unhandled exception.
+# No further filtering experiments performed.
+PYTHONDONTWRITEBYTECODE=1 MPLBACKEND=Agg MPLCONFIGDIR=/home/xin/FMCW_LIDAR/external_reproductions/stonesoup_bernoulli_v191/.mplconfig external_reproductions/stonesoup_bernoulli_v191/.venv/bin/python external_reproductions/stonesoup_bernoulli_v191/plot_closed_form.py
+PYTHONDONTWRITEBYTECODE=1 external_reproductions/stonesoup_bernoulli_v191/.venv/bin/python external_reproductions/stonesoup_bernoulli_v191/validate_artifacts.py
+# 23 evidence-integrity checks passed; full reproduction remains unsuccessful.
+git diff --check
+git -C external_reproductions/stonesoup_bernoulli_v191/upstream status --porcelain
+git rev-parse HEAD
+# PNG visually inspected; independent final read-only review approved; no filtering rerun.

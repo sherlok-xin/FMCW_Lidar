@@ -490,3 +490,19 @@ The preparatory entry above records the earlier pause; the user subsequently app
 **下一步仅为PROPOSED外部理解任务：** [三项目路线图](../FMCW_EXTERNAL_REPRODUCTION_ROADMAP.md)。唯一优先项是Stone Soup最小synthetic-clutter Bernoulli例：补存在/缺失推断的概念与数值证据，先检查合法empty-scan更新、birth/survival与clutter语义。合成真值只用于评价，非oracle birth；合成成功不证明真实FMCW likelihood/P_D或存在概率已校准，也不解除DEV停止决定。
 
 DopplerTrack保留为作者支持道路FMCW tracking参考，先解决数据访问和帧/GT对应；UnLiDAR官方有局部片段但完整可运行发布未建立，官方复现BLOCKED。未来需自行补方法时只能标PAPER-STRUCTURE RECONSTRUCTION，不能替换第三方后称官方复现。本轮未实现/运行方法、未安装大依赖或下载数据集。
+
+
+## 2026-10-14 — 外部Bernoulli复现：合法空扫描数值不一致
+
+**REPRODUCED：** 锁定Stone Soup v1.9.1 standard组件7项官方测试通过，但只含合法MissedDetection的有效空扫描，在固定正Pd=.9时返回与prediction相同r=.495，而独立Bernoulli Bayes后验=.08926961226330025。条件粒子权重归一仍正常；这说明存在概率与条件状态的数值存储可分离，却没有完成所需漏检存在性更新复现。
+
+**VERIFIED 源码 / scoped解释：** `if any(hypotheses)`检验是否有真实测量，missed-only为False，显式r修正分支跳过。Poisson空杂波因子在存在/缺席似然中抵消，不是可调lambda/c问题；sensor-off/Pd0与协议规定的有效观测/Pd.9不等价。没有依据把差异归于FMCW，或推广为所有Stone Soup组件/版本错误。
+
+**决定：** 按用户stop条件保留单步反例，不修改上游/手工替代r，不继续多帧A/B/C，完整复现未成功。参数仅取官方defaults/tests和预定外部定义，未以FMCW bags/anchors/scores/GNSS/calibration选择/判断。STOP_DEV_FEATURE_MINING与E18保持，未commit/push。报告末A–F解释所需独立presence/absence、曝光、Pd/likelihood/clutter与heldout证据；不授权当前Bernoulli接入。见 [报告](../FMCW_STONESOUP_BERNOULLI_REPRODUCTION.md)。
+
+
+## 2026-10-16 — Interpretation reset: stationary sensor / historical preprocessing first
+
+Accept user-supplied static-platform/open-airspace/~0.5m UAV context as acquisition testimony, without claiming measured pose/AGL. Dense low raw surfaces and filtered surveillance volume are different populations. Existing Sparse-UAV report already documented the colleague chain; the missing item is verified end-to-end version/export/display lineage. Current fine/E18 embeds ROI/intensity/provisional closure-height/4cm, so pregeometry is not raw. GNSS remains coarse reference; DEV_SILVER anchors are selected LiDAR evidence rather than exhaustive independent GT. Preserve voxel, hard-geometry, DP, scene/temporal-occupancy and Stone Soup negative/ambiguous results.
+
+Reposition E18 as frozen downstream temporal path-selection mechanism; pause Bernoulli and further external reproductions pending basic pipeline clarity. This decision adds no E21/E22, score, threshold or calibration. Full senior replay BLOCKED until actual version/exporter/filtered-RViz publication is recovered. Sole proposed technical priority: provenance lock then faithful stagewise point/support retention and correct-axis visualization, not DEV optimization. See new root report for classifications and exact three final questions.

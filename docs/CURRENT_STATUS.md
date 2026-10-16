@@ -354,3 +354,19 @@ Ranked by impact:
 **VERIFIED RESULT（公开源核查），非方法TESTED：** [路线图](../FMCW_EXTERNAL_REPRODUCTION_ROADMAP.md)仅含三个指定项目。Stone Soup官方组件/合成测试存在，未来锁定v1.9.1；DopplerTrack官方代码存在，需作者数据和帧号对应；UnLiDAR有两个官方局部片段，但完整可运行方法发布未建立、许可未声明，官方完整复现BLOCKED。未来补写必须标PAPER-STRUCTURE RECONSTRUCTION。[当前公开metadata/源码证据](../results/external_reproduction_roadmap/repository_verification.json)。
 
 **唯一首个任务推荐（PROPOSED）：** Stone Soup最小synthetic-clutter Bernoulli存在性复现，先官方组件测试与empty-scan Bayes gate，再明确标注本地连接的synthetic harness；不连接FMCW/DEV。当前仅路线图，无方法实现/执行、大依赖安装或数据集下载，不构成E21/E22授权。
+
+
+## 2026-10-14 — Stone Soup v1.9.1：单步空扫描门槛失败，停止
+
+**REPRODUCED / TESTED：** 第一项外部复现锁定官方v1.9.1 commit `a4336b920a799cfe0a77ecb05867c5deeb371c7a`；独立virtualenv内7项standard Bernoulli官方测试全部通过。合法MissedDetection容器、固定P_D=.9的有效空扫描，predictor r=.495匹配公式，updater仍=.495，而独立Bayes后验=.08926961226330025；粒子权重正常归一。
+
+**STOPPED_AT_EMPTY_SCAN_SEMANTIC_GATE：完整复现未成功。** 固定模型中未发现附加项解释差异，按用户停止条件不改上游、不覆盖r、不继续多帧A/B/C；schedule/traces仅header并标NOT_RUN，不是阴性实验。独立源码/算术审阅支持停止。见 [报告](../FMCW_STONESOUP_BERNOULLI_REPRODUCTION.md) / [证据](../results/external_reproductions/stonesoup_bernoulli_v191/README.md)。
+
+首次venv缺ensurepip用已有virtualenv绕过，无系统更改；默认PyPI慢下载取消后镜像成功。保留首次本地StateVectors输入容器错误及原脚本，修正后同一协议执行；无参数/上游算法变化。没有FMCW输入/结果用于选择参数或成功判断，E18和STOP_DEV_FEATURE_MINING不变。未commit/push，待用户审阅；此结果不授权Bernoulli接入或换版本/自修补。
+
+
+## 2026-10-16 — Project reinterpretation / historical preprocessing audit
+
+**Documentation audit complete; no new point-cloud experiment.** User acquisition context is stationary vehicle-mounted sensor, open elevated surveillance airspace and approximately half-metre UAV. [Reinterpretation](../FMCW_PROJECT_REINTERPRETATION_2026-10-16.md), [historical pipeline audit](../FMCW_HISTORICAL_PREPROCESSING_AUDIT.md), [8-slide group brief](../FMCW_GROUP_MEETING_RESET_BRIEF.md), [evidence tables/plan](../results/project_reinterpretation_20261016/README.md). Existing batch filter is q=[x,z,-y]+I10..250 only; current fine/E18 additionally inherits research ROI/provisional closure-height/4cm representation. E18 is downstream offline candidate-path selection, not a raw-scene detector. 56/80 and79/80 remain selected-anchor3m agreement, not independent recall/precision.
+
+Exact full senior workflow **BLOCKED** by missing exporter/actual spatial-filter configuration/cleaned-RViz publication provenance. Recoverable batch subset is separate from exact full reproduction. No stage-retention run or new screenshots were generated. Next priority is provenance recovery then one fixed historical replay/axis/accounting validation, only after exact version frozen. Bernoulli and further external reproductions paused; previous Stone Soup STOP retained. STOP_DEV_FEATURE_MINING/E18/labels/calibration/thresholds/history remain unchanged. No commit/push; await user review.

@@ -1,0 +1,5 @@
+created virtual environment CPython3.10.12.final.0-64-x86_64 in 182ms
+  creator CPython3Posix(dest=/home/xin/FMCW_LIDAR/external_reproductions/stonesoup_bernoulli_v191/.venv, clear=True, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, via=copy, app_data_dir=/home/xin/.cache/virtualenv)
+    added seed packages: pip==26.2.1, setuptools==84.0.0
+  activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator,XonshActivator

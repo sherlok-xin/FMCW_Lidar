@@ -1,0 +1,15 @@
+operation,historical_senior_source,current_fine_e18,comparison,implication
+field retention,get_lidar named xyz/I/v,direct raw bag named xyz/I/v,SAME_SEMANTICS_DIFFERENT_ROUTE,current cache does not consume _81 or filtered PCD
+axis transform,"q=[x,z,-y]",same on verified rich80 packets,SAME,permutation is not measured leveling; non80 branch differs
+finite validity,read_points skip_nans with field_names unspecified over full message tuple,finite xyz/I/v plus norm2>1e-8,DIFFERENT,not identical invalid/placeholder policy
+intensity limits,inclusive10..250,inclusive10..250 at point level before4cm,SAME,numerical derivation UNKNOWN; no retuning
+ROI,none in available multi_filter,x8..510 y±200 z±60,DIFFERENT,later research branch; not inferred senior choice
+height,none in available multi_filter; separate z5/z10 trackers,(R.T@(q-t))_z>10,DIFFERENT,legacy10m cutoff but later provisional closure mask
+stored coordinates,q after axis transform,q after transform; mask only uses level frame,SAME_WITH_DIFFERENT_MASK,do not display cache as gravity-leveled XYZ
+fine representation,compressed PCD retained points,4cm means + raw_count/I/v means,DIFFERENT,one cell does not imply one return
+old coarse branch,later closure1m cache -> sparse/E13 means then mean-I cutoff,fine raw-point-I before4cm,DIFFERENT,coarse-vs-fine not score-only comparison
+background,absent in multi_filter; separate trackers init/occupancy,all fine voxels past-only1m beta occupancy,DIFFERENT,historical grid/frame variants vs current sensor-relative zero-origin map
+geometry acceptance,not in multi_filter; trackers cluster/filter,E18 uses all saved E16 pregeometry components,DIFFERENT,includes rejected flags; does not restore upstream points
+velocity,retained; active single_filter colors only,retained/finite-checked/averaged; E18 Doppler notused,SAME_RETENTION_DIFFERENT_USAGE,later tracking association is separate
+visualization,PCD/Open3D confirmed; exact cleaned RViz publisher UNKNOWN,recent raw/repacked ROS2 _0/_81,UNKNOWN,repack topic is not clean filtered topic
+full scene,historical PCD after I only in available source,fine support6.2146% of raw in archived scene audit,DIFFERENT,E18 filtered operational scene; raw diagnostics distinct

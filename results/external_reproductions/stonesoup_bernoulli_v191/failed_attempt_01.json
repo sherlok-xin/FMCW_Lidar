@@ -1,0 +1,9 @@
+{
+  "recorded_at_utc": "2026-10-14T10:26:23.726782+00:00",
+  "status": "LOCAL_INPUT_CONSTRUCTION_ERROR_BEFORE_PREDICTOR_OR_UPDATER",
+  "script_sha256": "5d86e2878f4eb73d949f67dc7dbd2d4e00c4e3b5af76282ca9094c9505aafe81",
+  "error": "ValueError: state vector shape should be Nx1 dimensions: got (2, 9)",
+  "resolution": "Wrap multi-particle array with official StateVectors type; no numerical input, model parameter or upstream change",
+  "scalar_reference_completed_before_error": true,
+  "existence_trajectory_inspected": false
+}

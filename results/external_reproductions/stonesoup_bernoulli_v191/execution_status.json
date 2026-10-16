@@ -1,0 +1,31 @@
+{
+  "utc": "2026-10-14T10:28:17.316751+00:00",
+  "overall": "STOPPED_AT_EMPTY_SCAN_SEMANTIC_GATE",
+  "full_reproduction_success": false,
+  "single_scalar_gate_executed": true,
+  "multi_frame_scenario_frozen": false,
+  "control_C_short_interval_executed": false,
+  "figure_scope": "single scalar gate only, not existence versus scan trajectory",
+  "files": {
+    "synthetic_schedule.csv": {
+      "status": "NOT_RUN",
+      "data_rows": 0,
+      "reason": "STOPPED_AT_EMPTY_SCAN_SEMANTIC_GATE before full scenario freeze/generation. Header-only means no experiment, not zero measurements or a negative-performance result."
+    },
+    "existence_trace.csv": {
+      "status": "NOT_RUN",
+      "data_rows": 0,
+      "reason": "STOPPED_AT_EMPTY_SCAN_SEMANTIC_GATE before full scenario freeze/generation. Header-only means no experiment, not zero measurements or a negative-performance result."
+    },
+    "control_trace_clutter_only.csv": {
+      "status": "NOT_RUN",
+      "data_rows": 0,
+      "reason": "STOPPED_AT_EMPTY_SCAN_SEMANTIC_GATE before full scenario freeze/generation. Header-only means no experiment, not zero measurements or a negative-performance result."
+    },
+    "control_trace_empty_scan.csv": {
+      "status": "NOT_RUN",
+      "data_rows": 0,
+      "reason": "STOPPED_AT_EMPTY_SCAN_SEMANTIC_GATE before full scenario freeze/generation. Header-only means no experiment, not zero measurements or a negative-performance result."
+    }
+  }
+}

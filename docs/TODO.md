@@ -2,6 +2,8 @@
 
 ## Binding decision — 2026-10-14: STOP_DEV_FEATURE_MINING
 
+**External reproduction update (2026-10-14):** the first Stone Soup v1.9.1 task reached a legal empty-scan posterior mismatch after 7 official component tests passed. [Report](../FMCW_STONESOUP_BERNOULLI_REPRODUCTION.md). Stop before multi-frame A/B/C; no upstream patch, version substitution or FMCW hookup is authorized. The first-task recommendation below is the preserved pre-execution roadmap, not a request to repeat or extend the stopped experiment. Report and evidence remain uncommitted for user review.
+
 The existing five cross-flight DEV bags and 80 DEV_SILVER anchors are closed to proposing/tuning E18 background features, weights, windows, thresholds, or E21/E22 scores. Preserve E18 and all frozen scientific inputs/results. This user-directed decision overrides any older feature-exploration suggestions retained below; external reproduction does not reopen DEV. See [decision and exact scope](DEV_FEATURE_MINING_STOP.md).
 
 The completed occupancy temporal audit was committed and pushed unchanged at `92cf79d01bbb84eee52dde7fd22210f78067d6cd`. The [external roadmap](../FMCW_EXTERNAL_REPRODUCTION_ROADMAP.md) covers exactly Stone Soup, DopplerTrack and official UnLiDAR. **Only first task recommended:** Stone Soup Bernoulli component tests followed, if gates pass, by a minimal synthetic-clutter existence example. This remains a plan: no implementation, installation, method execution or DEV hookup was performed in this roadmap task.
@@ -296,3 +298,8 @@ Git/provenance
 2. **DONE:** raw-frame identity, full member/EOF hashes, 272/144/80 accounting, native byte export and independent descriptive arithmetic validated; completed phenotype report includes nulls and effect missingness.
 3. **NEXT DATA REQUIREMENT, not an algorithm task:** independently synchronized position/presence/FOV, populated matched clutter, certified negatives and radial/moving→hover transitions under the existing preregistration.
 4. Do not retune E18/labels/controls or estimate physical missed-detection probabilities/node likelihoods from the current oracle-region/selected-anchor data. Check the final observation→mechanism→held-out-falsification table before promoting any descriptive association.
+
+
+## Current steering — 2026-10-16 project reinterpretation
+
+The user-directed [historical pipeline audit](../FMCW_HISTORICAL_PREPROCESSING_AUDIT.md) supersedes the next-step priority of older external-roadmap text: pause Bernoulli/other external reproductions; do not continue Stone Soup or install another repo. STOP_DEV_FEATURE_MINING remains binding. Sole proposed next technical task: recover actual historical exporter/filter config/filtered-RViz chain, freeze it, then a separately authorized faithful stagewise accounting/axis validation on fixed representative ranges. Exact full pipeline currently BLOCKED; no parameter selection, E18 changes or new algorithm. Report/plan are uncommitted for review.

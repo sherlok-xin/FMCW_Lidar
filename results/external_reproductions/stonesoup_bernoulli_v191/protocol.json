@@ -1,0 +1,70 @@
+{
+  "status": "FROZEN_PREREQUISITE_EMPTY_SCAN_GATE_ONLY",
+  "frozen_at_utc": "2026-10-14T10:25:02.578754+00:00",
+  "source_commit": "a4336b920a799cfe0a77ecb05867c5deeb371c7a",
+  "source_tag": "v1.9.1",
+  "question": "Does a legal observed-empty-scan update implement Bernoulli Bayes existence arithmetic independently of normalized conditional state weights?",
+  "prerequisite_official_tests": "7 passed before this protocol and before creation of local scalar harness",
+  "rng_seed": 191,
+  "r_prev": 0.5,
+  "p_birth": 0.01,
+  "p_survival": 0.98,
+  "P_D": 0.9,
+  "parameter_basis": "r/P_D chosen as official Bernoulli component-test values; birth/survival equal locked official defaults. No FMCW evidence or outcome tuning. Other settings only define a small scalar semantic check.",
+  "state_model": "1D constant velocity state [position_m, velocity_m_per_s]",
+  "prior": {
+    "particle_count": 9,
+    "position_grid_m": [
+      -4,
+      -3,
+      -2,
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "velocity_m_per_s": 0.0,
+    "weights": "uniform normalized; conditional on existence, not truth"
+  },
+  "birth_model": {
+    "sampler": "SwitchingDetectionSampler with GaussianDetectionParticleSampler, predefined uniform backup on state rectangle",
+    "birth_particle_count": 9,
+    "uniform_low": [
+      -10,
+      -1
+    ],
+    "uniform_high": [
+      10,
+      1
+    ],
+    "reads_future_truth": false
+  },
+  "process_noise_diffusion": 0.0,
+  "measurement_noise_variance_m2": 1.0,
+  "clutter_rate_per_scan": 2,
+  "clutter_spatial_density_per_m": 0.05,
+  "clutter_spatial_model": "uniform over [-10,10] m; no realized measurements in the empty-set gate",
+  "timestamp_prev": "2000-01-01T00:00:00",
+  "dt_seconds": 1.0,
+  "measurement_set": [],
+  "sensor_observation_executed": true,
+  "P_D_constant_over_all_particles": true,
+  "updater": {
+    "resampler": "SystematicResampler",
+    "nsurv_particles": 9,
+    "regulariser": null,
+    "constraint_func": null
+  },
+  "tolerance_absolute": 1e-12,
+  "tolerance_relative": 1e-12,
+  "legal_input": "MultipleHypothesis([SingleHypothesis(prediction, MissedDetection(timestamp=prediction.timestamp))])",
+  "stop_if_empty_scan_disagrees_without_model_dependent_explanation": true,
+  "do_not_patch_or_force_posterior": true,
+  "multi_frame_scenario": null,
+  "multi_frame_status": "NOT_YET_FROZEN_OR_GENERATED: permitted only after the prerequisite gate passes",
+  "controls_A_B_C": "NOT_RUN until the prerequisite gate passes",
+  "no_FMCW_inputs_or_results_used": true,
+  "no_presence_threshold": true
+}

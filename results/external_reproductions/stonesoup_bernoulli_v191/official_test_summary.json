@@ -1,0 +1,157 @@
+{
+  "utc": "2026-10-14T10:24:06.498224+00:00",
+  "seed": 191,
+  "pytest_arguments": [
+    "-vv",
+    "-ra",
+    "--tb=long",
+    "--junitxml=/home/xin/FMCW_LIDAR/results/external_reproductions/stonesoup_bernoulli_v191/official_tests.junit.xml",
+    "-k",
+    "(bernoulli and not vis_informed) or BernoulliParticleState",
+    "stonesoup/predictor/tests/test_particle.py",
+    "stonesoup/updater/tests/test_particle.py",
+    "stonesoup/types/tests/test_state.py",
+    "stonesoup/types/tests/test_prediction.py"
+  ],
+  "exit_code": 0,
+  "node_ids": [
+    "stonesoup/predictor/tests/test_particle.py::test_bernoulli_particle_no_detection[standard_bernoulli]",
+    "stonesoup/predictor/tests/test_particle.py::test_bernoulli_particle_detection[standard_bernoulli]",
+    "stonesoup/updater/tests/test_particle.py::test_bernoulli_particle[True-standard_bernoulli]",
+    "stonesoup/updater/tests/test_particle.py::test_bernoulli_particle[False-standard_bernoulli]",
+    "stonesoup/types/tests/test_state.py::test_particle_get_item[BernoulliParticleState]",
+    "stonesoup/types/tests/test_state.py::test_particle_parent_parent[BernoulliParticleState]",
+    "stonesoup/types/tests/test_prediction.py::test_particle_parent_parent[BernoulliParticleStatePrediction]"
+  ],
+  "reports": [
+    {
+      "nodeid": "stonesoup/predictor/tests/test_particle.py::test_bernoulli_particle_no_detection[standard_bernoulli]",
+      "when": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0006209199782460928
+    },
+    {
+      "nodeid": "stonesoup/predictor/tests/test_particle.py::test_bernoulli_particle_no_detection[standard_bernoulli]",
+      "when": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0022883269703015685
+    },
+    {
+      "nodeid": "stonesoup/predictor/tests/test_particle.py::test_bernoulli_particle_no_detection[standard_bernoulli]",
+      "when": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.00011086300946772099
+    },
+    {
+      "nodeid": "stonesoup/predictor/tests/test_particle.py::test_bernoulli_particle_detection[standard_bernoulli]",
+      "when": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.00019028998212888837
+    },
+    {
+      "nodeid": "stonesoup/predictor/tests/test_particle.py::test_bernoulli_particle_detection[standard_bernoulli]",
+      "when": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.002010387019254267
+    },
+    {
+      "nodeid": "stonesoup/predictor/tests/test_particle.py::test_bernoulli_particle_detection[standard_bernoulli]",
+      "when": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 9.893003152683377e-05
+    },
+    {
+      "nodeid": "stonesoup/updater/tests/test_particle.py::test_bernoulli_particle[True-standard_bernoulli]",
+      "when": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.00041454500751569867
+    },
+    {
+      "nodeid": "stonesoup/updater/tests/test_particle.py::test_bernoulli_particle[True-standard_bernoulli]",
+      "when": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.003669116005767137
+    },
+    {
+      "nodeid": "stonesoup/updater/tests/test_particle.py::test_bernoulli_particle[True-standard_bernoulli]",
+      "when": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 9.595399023965001e-05
+    },
+    {
+      "nodeid": "stonesoup/updater/tests/test_particle.py::test_bernoulli_particle[False-standard_bernoulli]",
+      "when": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0002321290085092187
+    },
+    {
+      "nodeid": "stonesoup/updater/tests/test_particle.py::test_bernoulli_particle[False-standard_bernoulli]",
+      "when": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.003462149004917592
+    },
+    {
+      "nodeid": "stonesoup/updater/tests/test_particle.py::test_bernoulli_particle[False-standard_bernoulli]",
+      "when": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 9.758601663634181e-05
+    },
+    {
+      "nodeid": "stonesoup/types/tests/test_state.py::test_particle_get_item[BernoulliParticleState]",
+      "when": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0003572779824025929
+    },
+    {
+      "nodeid": "stonesoup/types/tests/test_state.py::test_particle_get_item[BernoulliParticleState]",
+      "when": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0009351270273327827
+    },
+    {
+      "nodeid": "stonesoup/types/tests/test_state.py::test_particle_get_item[BernoulliParticleState]",
+      "when": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 8.24590097181499e-05
+    },
+    {
+      "nodeid": "stonesoup/types/tests/test_state.py::test_particle_parent_parent[BernoulliParticleState]",
+      "when": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.00014606199692934752
+    },
+    {
+      "nodeid": "stonesoup/types/tests/test_state.py::test_particle_parent_parent[BernoulliParticleState]",
+      "when": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0002283549983985722
+    },
+    {
+      "nodeid": "stonesoup/types/tests/test_state.py::test_particle_parent_parent[BernoulliParticleState]",
+      "when": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 7.574399933218956e-05
+    },
+    {
+      "nodeid": "stonesoup/types/tests/test_prediction.py::test_particle_parent_parent[BernoulliParticleStatePrediction]",
+      "when": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.00012994400458410382
+    },
+    {
+      "nodeid": "stonesoup/types/tests/test_prediction.py::test_particle_parent_parent[BernoulliParticleStatePrediction]",
+      "when": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0002067500026896596
+    },
+    {
+      "nodeid": "stonesoup/types/tests/test_prediction.py::test_particle_parent_parent[BernoulliParticleStatePrediction]",
+      "when": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 7.285800529643893e-05
+    }
+  ],
+  "stonesoup_import_path": "/home/xin/FMCW_LIDAR/external_reproductions/stonesoup_bernoulli_v191/upstream/stonesoup/__init__.py",
+  "excluded_scope": "VisibilityInformed Bernoulli extension and non-Bernoulli components; the task uses the standard scalar-P_D Bernoulli model only.",
+  "upstream_source_modified": false
+}

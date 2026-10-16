@@ -1,0 +1,40 @@
+{
+  "verified_at_utc": "2026-10-14T10:14:18.764758+00:00",
+  "official_repository": "https://github.com/dstl/Stone-Soup.git",
+  "tag": "v1.9.1",
+  "expected_commit": "a4336b920a799cfe0a77ecb05867c5deeb371c7a",
+  "head_commit": "a4336b920a799cfe0a77ecb05867c5deeb371c7a",
+  "tag_object": "d9e6fb16f5ae176817aeb6a6fc3a39f544694408",
+  "tag_peeled_commit": "a4336b920a799cfe0a77ecb05867c5deeb371c7a",
+  "tree_object": "16ce4e7829788af536c6c4b43f3578215994211a",
+  "tag_verified_before_execution": true,
+  "upstream_worktree_clean_before_install": true,
+  "source_files_sha256": {
+    "pyproject.toml": "0d4e2865a0c0fb3440da9670f9a82095d91c786e9c92fb54288e83aed5d79492",
+    "LICENSE": "2462f3d8a857f601e266f048a4ff051366c1e05f098cf3a1524eaf922f879815",
+    "stonesoup/predictor/particle.py": "db8611e6ea0101afbb320edca2f1c7de2bca68080a72ca5d30e2aa53c6a86ddf",
+    "stonesoup/updater/particle.py": "b9f1321f2e389bcdc70bc5dc5b7eacc35fa869a0e2532014ed5e3bdca8ed9c73",
+    "stonesoup/types/state.py": "f4f28319cfb3bb2982af9fea799ea5a2dcc74a274d1a8dbade4d9429a29f5d1e",
+    "stonesoup/types/hypothesis.py": "a525c1b7ef170281a72ead11bda727a572ccc37810e09b0a2c9c650000355d10",
+    "stonesoup/types/detection.py": "465f980c10bfb5ac3324250a3bb01b7fa9f5a50e6eba7225014f3978e50d46c3",
+    "stonesoup/types/multihypothesis.py": "6711c275ab863d3b4d807192b8d1a83c0f43564b7199dcc87f57b5c2ee23749c",
+    "stonesoup/predictor/tests/test_particle.py": "20e46361ec66d7d9cde3d852a1e17a02efccbfe512b4331eda19226a755097d3",
+    "stonesoup/updater/tests/test_particle.py": "9162380ccfce2276856b38c5d88a7998908ee7b0aac5db992b2242b63f6a676c",
+    "stonesoup/types/tests/test_state.py": "58c22ccc4e4c3cbf35c945a6d82e39246f477b83974320dd02566df65fe61f37",
+    "stonesoup/tracker/particle.py": "129aea3cdf862ae193adba2bd858815c3558d05c61d2b5235ecf5eb7a002798f"
+  },
+  "tag_verification_command": "git -C external_reproductions/stonesoup_bernoulli_v191/upstream rev-parse HEAD refs/tags/v1.9.1 'refs/tags/v1.9.1^{commit}'",
+  "installed_package_version": "1.9.1",
+  "installed_package_import_path": "/home/xin/FMCW_LIDAR/external_reproductions/stonesoup_bernoulli_v191/.venv/lib/python3.10/site-packages/stonesoup",
+  "installed_core_source_sha256": {
+    "stonesoup/predictor/particle.py": "db8611e6ea0101afbb320edca2f1c7de2bca68080a72ca5d30e2aa53c6a86ddf",
+    "stonesoup/updater/particle.py": "b9f1321f2e389bcdc70bc5dc5b7eacc35fa869a0e2532014ed5e3bdca8ed9c73",
+    "stonesoup/types/state.py": "f4f28319cfb3bb2982af9fea799ea5a2dcc74a274d1a8dbade4d9429a29f5d1e",
+    "stonesoup/types/hypothesis.py": "a525c1b7ef170281a72ead11bda727a572ccc37810e09b0a2c9c650000355d10",
+    "stonesoup/types/detection.py": "465f980c10bfb5ac3324250a3bb01b7fa9f5a50e6eba7225014f3978e50d46c3",
+    "stonesoup/types/multihypothesis.py": "6711c275ab863d3b4d807192b8d1a83c0f43564b7199dcc87f57b5c2ee23749c",
+    "stonesoup/tracker/particle.py": "129aea3cdf862ae193adba2bd858815c3558d05c61d2b5235ecf5eb7a002798f"
+  },
+  "installed_core_matches_locked_source": true,
+  "root_project_head_before_report_changes": "9461d06f227746bf40b12b43be28625fa88ebb88"
+}

@@ -1,0 +1,21 @@
+Official unmodified source tests; NumPy seed: 191
+pytest arguments: ["-vv", "-ra", "--tb=long", "--junitxml=/home/xin/FMCW_LIDAR/results/external_reproductions/stonesoup_bernoulli_v191/official_tests.junit.xml", "-k", "(bernoulli and not vis_informed) or BernoulliParticleState", "stonesoup/predictor/tests/test_particle.py", "stonesoup/updater/tests/test_particle.py", "stonesoup/types/tests/test_state.py", "stonesoup/types/tests/test_prediction.py"]
+============================= test session starts ==============================
+platform linux -- Python 3.10.12, pytest-9.1.1, pluggy-1.6.0 -- /home/xin/FMCW_LIDAR/external_reproductions/stonesoup_bernoulli_v191/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /home/xin/FMCW_LIDAR/external_reproductions/stonesoup_bernoulli_v191/upstream
+configfile: pyproject.toml
+collecting ... collected 78 items / 71 deselected / 7 selected
+
+Imported official package: /home/xin/FMCW_LIDAR/external_reproductions/stonesoup_bernoulli_v191/upstream/stonesoup/__init__.py
+
+stonesoup/predictor/tests/test_particle.py::test_bernoulli_particle_no_detection[standard_bernoulli] PASSED [ 14%]
+stonesoup/predictor/tests/test_particle.py::test_bernoulli_particle_detection[standard_bernoulli] PASSED [ 28%]
+stonesoup/updater/tests/test_particle.py::test_bernoulli_particle[True-standard_bernoulli] PASSED [ 42%]
+stonesoup/updater/tests/test_particle.py::test_bernoulli_particle[False-standard_bernoulli] PASSED [ 57%]
+stonesoup/types/tests/test_state.py::test_particle_get_item[BernoulliParticleState] PASSED [ 71%]
+stonesoup/types/tests/test_state.py::test_particle_parent_parent[BernoulliParticleState] PASSED [ 85%]
+stonesoup/types/tests/test_prediction.py::test_particle_parent_parent[BernoulliParticleStatePrediction] PASSED [100%]
+
+- generated xml file: /home/xin/FMCW_LIDAR/results/external_reproductions/stonesoup_bernoulli_v191/official_tests.junit.xml -
+======================= 7 passed, 71 deselected in 0.24s =======================
